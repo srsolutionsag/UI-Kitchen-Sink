@@ -1,4 +1,4 @@
-<div id="ilHeader" >
+<div id="ilHeader" ng-controller="HeaderController" >
     <!-- TopBar ================================================== -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html">UI-Kitchen-Sink</a>
+                <a class="navbar-brand" href="#/index.html">UI-Kitchen-Sink</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <form class="navbar-form navbar-right">
@@ -24,5 +24,18 @@
             <h1>UI-Kitchen-Sink</h1>
             <p>The UI-Kitchen-Sink demonstrates the varius UI-Elements directly in the futre Layout of ILIAS 5.X.</p>
         </div>
+    </div>
+    <div id="ilContent" class="container">
+        <!-- Dropdown Section ================================================== -->
+        <dropdown-content>
+            <dropdown-categories ng-repeat="(categoryIndex,category) in categories"
+                                 title="{{category.title}}">
+                <dropdown-entry ng-repeat="(entryIndex,entry) in category.subCategories"
+                                title="{{entry.title}}"
+                                index="{{entryIndex}}"
+                                on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
+                </dropdown-entry>
+            </dropdown-categories>
+        </dropdown-content>
     </div>
 </div>

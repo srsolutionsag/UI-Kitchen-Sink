@@ -1,50 +1,30 @@
-<span>
 <div id="ilContent" class="container">
-
-
-    <!-- Dropdown Section ================================================== -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/Home">Information</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <dropdown-categories ng-repeat="(categoryIndex,category) in categories" category="category" index="categoryIndex">
-                        <dropdown-entry ng-repeat="(entryIndex,entry) in category.subCategories"
-                                        entry="entry"
-                                        category-index="categoryIndex"
-                                        index="entryIndex"
-                                        on-entry-selected="onEntrySelected(categoryIndex,entryIndex,null)">
-                        </dropdown-entry>
-                    </dropdown-categories>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
     <!-- Breadcrumb Section ================================================== -->
-    <breadcrumb-content category-selected="{{categorySelected.title}}" entry-selected="{{subCategorySelected.title}}"></breadcrumb-content>
+    <breadcrumb-content
+            category-selected="{{categorySelected.title}}"
+            entry-selected="{{subCategorySelected.title}}"
+            tab-selected="{{tabSelected.title}}">
+    </breadcrumb-content>
 
     <!-- Title Section ================================================== -->
-    <h1>{{subCategorySelected.title}}</h1>
+    <title-content
+            title="{{subCategorySelected.title}}">
+    </title-content>
+
 
     <!-- Tabs Section ================================================== -->
-    <div role="tabpanel">
-        <!-- Nav tabs -->
-        <ul id="Tablist" class="nav nav-tabs" role="tablist">
+    <tabs-content>
+        <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
+                         title="{{itemGroup.title}}"
+                         index="{{index}}"
+                         on-tab-selected="onTabSelected(index)">
+        </tabs-categories>
+    </tabs-content>
 
-        </ul>
-    </div>
     <!-- Entry Section ================================================== -->
-    <entry-content ng-repeat="(index,subItem) in entrySelected.SubItems" entry="subItem" index="index"></entry-content>
+    <entry-content ng-repeat="(index,entry) in tabSelected.items"
+                   entry="entry"
+                   index="{{index}}"
+                   tab-path="{{tabSelected.path}}">
+    </entry-content>
 </div>
-</span>

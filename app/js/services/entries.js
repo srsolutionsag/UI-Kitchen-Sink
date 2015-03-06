@@ -17,16 +17,11 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
         return defer.promise;
     };
 
-    this.changeSelection = function (category,subCategory,itemGroup) {
-        if(!category){
-
-        } else{
-            this.categorySelected = category;
-        }
-
-        this.subCategorySelected = subCategory;
-        this.itemGroupSelected = itemGroup;
-        $rootScope.$broadcast('changeSelection', category,subCategory,itemGroup);
+    this.changeSelection = function (categoryIndex,subCategoryIndex,tabIndex) {
+        this.categoryIndexSelected = categoryIndex;
+        this.subCategoryIndexSelected = subCategoryIndex;
+        this.tabIndexSelected = tabIndex;
+        $rootScope.$broadcast('changeSelection', categoryIndex,subCategoryIndex,tabIndex);
     };
 
     return this;

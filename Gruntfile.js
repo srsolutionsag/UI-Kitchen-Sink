@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        //JSHint is a community-driven tool to detect errors and potential problems in JavaScript code and to enforce your team's coding conventions.
+        //JSHint detects errors and potential problems in JavaScript code
         jshint: {
             all: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js',"app/**/*.json" ]
         },

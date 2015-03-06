@@ -2,9 +2,6 @@
     "name": "UI-Kitchen-Sink",
     "description": "UI-Documentation for the ILIAS Open Source project",
     "repository": "https://github.com/studer-raimann/UI-Kitchen-Sink.git",
-    "dependencies": {
-        "express" : "~4.5.1"
-    },
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-jshint": "~0.10.0",

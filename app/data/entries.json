@@ -1,400 +1,513 @@
 {
-    "categories": {
-        "elements": {
-            "title": "Elements",
-            "order": 10,
-            "subCategories": {
-                "subCategory1": {
-                    "title": "Sub Category 1",
-                    "order": 10,
-                    "itemGroups":{
-                        "itemGroup1":{
-                            "title": "Item Group 1",
-                            "order": 10,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                },
-                                "item3": {
-                                    "title": "Item 3",
-                                    "order": 20,
-                                    "description": "Description Item 3.",
-                                    "lessVariables": "Less Variables Item 3",
-                                    "guiClass": "GUI Class Item 3",
-                                    "context": "Known Uses Item 3",
-                                    "knownUses": "Known Uses Item 3"
-                                }
-                            }
-                        },
-                        "itemGroup2":{
-                            "title": "Item Group 2",
-                            "order": 20,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                }
-                            }
-                        }
-                    }
+  "categories": [{
+      "title": "Elements",
+      "id":"elements",
+      "subCategories": [
+        {
+          "title": "Sub Category 1",
+          "id":"subCategory1",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
                 },
-                "subCategory2": {
-                    "title": "Sub Category 2",
-                    "order": 20,
-                    "itemGroups":{
-                        "itemGroup1":{
-                            "title": "Item Group 1",
-                            "order": 10,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                },
-                                "item3": {
-                                    "title": "Item 3",
-                                    "order": 20,
-                                    "description": "Description Item 3.",
-                                    "lessVariables": "Less Variables Item 3",
-                                    "guiClass": "GUI Class Item 3",
-                                    "context": "Known Uses Item 3",
-                                    "knownUses": "Known Uses Item 3"
-                                }
-                            }
-                        },
-                        "itemGroup2":{
-                            "title": "Item Group 2",
-                            "order": 20,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                }
-                            }
-                        }
-                    }
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
                 }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
             }
+          ]
         },
-        "collections": {
-            "title": "Collections",
-            "order": 10,
-            "subCategories": {
-                "subCategory1": {
-                    "title": "Sub Category 1",
-                    "order": 10,
-                    "itemGroups":{
-                        "itemGroup1":{
-                            "title": "Item Group 1",
-                            "order": 10,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                },
-                                "item3": {
-                                    "title": "Item 3",
-                                    "order": 20,
-                                    "description": "Description Item 3.",
-                                    "lessVariables": "Less Variables Item 3",
-                                    "guiClass": "GUI Class Item 3",
-                                    "context": "Known Uses Item 3",
-                                    "knownUses": "Known Uses Item 3"
-                                }
-                            }
-                        },
-                        "itemGroup2":{
-                            "title": "Item Group 2",
-                            "order": 20,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                }
-                            }
-                        }
-                    }
+        {
+          "title": "Sub Category 2",
+          "id":"subCategory2",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
                 },
-                "subCategory2": {
-                    "title": "Sub Category 2",
-                    "order": 20,
-                    "itemGroups":{
-                        "itemGroup1":{
-                            "title": "Item Group 1",
-                            "order": 10,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                },
-                                "item3": {
-                                    "title": "Item 3",
-                                    "order": 20,
-                                    "description": "Description Item 3.",
-                                    "lessVariables": "Less Variables Item 3",
-                                    "guiClass": "GUI Class Item 3",
-                                    "context": "Known Uses Item 3",
-                                    "knownUses": "Known Uses Item 3"
-                                }
-                            }
-                        },
-                        "itemGroup2":{
-                            "title": "Item Group 2",
-                            "order": 20,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "views": {
-            "title": "Views",
-            "order": 10,
-            "subCategories": {
-                "subCategory1": {
-                    "title": "Sub Category 1",
-                    "order": 10,
-                    "itemGroups":{
-                        "itemGroup1":{
-                            "title": "Item Group 1",
-                            "order": 10,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                },
-                                "item3": {
-                                    "title": "Item 3",
-                                    "order": 20,
-                                    "description": "Description Item 3.",
-                                    "lessVariables": "Less Variables Item 3",
-                                    "guiClass": "GUI Class Item 3",
-                                    "context": "Known Uses Item 3",
-                                    "knownUses": "Known Uses Item 3"
-                                }
-                            }
-                        },
-                        "itemGroup2":{
-                            "title": "Item Group 2",
-                            "order": 20,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                }
-                            }
-                        }
-                    }
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
                 },
-                "subCategory2": {
-                    "title": "Sub Category 2",
-                    "order": 20,
-                    "itemGroups":{
-                        "itemGroup1":{
-                            "title": "Item Group 1",
-                            "order": 10,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                },
-                                "item3": {
-                                    "title": "Item 3",
-                                    "order": 20,
-                                    "description": "Description Item 3.",
-                                    "lessVariables": "Less Variables Item 3",
-                                    "guiClass": "GUI Class Item 3",
-                                    "context": "Known Uses Item 3",
-                                    "knownUses": "Known Uses Item 3"
-                                }
-                            }
-                        },
-                        "itemGroup2":{
-                            "title": "Item Group 2",
-                            "order": 20,
-                            "items":{
-                                "item1": {
-                                    "title": "Item 1",
-                                    "order": 10,
-                                    "description": "Description Item 1.",
-                                    "lessVariables": "Less Variables Item 1",
-                                    "guiClass": "GUI Class Item 1",
-                                    "context": "Known Uses Item 1",
-                                    "knownUses": "Known Uses Item 1"
-                                },
-                                "item2": {
-                                    "title": "Item 2",
-                                    "order": 20,
-                                    "description": "Description Item 2.",
-                                    "lessVariables": "Less Variables Item 2",
-                                    "guiClass": "GUI Class Item 2",
-                                    "context": "Known Uses Item 2",
-                                    "knownUses": "Known Uses Item 2"
-                                }
-                            }
-                        }
-                    }
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
                 }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
             }
+          ]
         }
+      ]
+    },
+    {
+      "title": "Collections",
+      "id": "collections",
+      "subCategories": [
+        {
+          "title": "Sub Category 1",
+          "id":"subCategory1",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sub Category 2",
+          "id":"subCategory2",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Views",
+      "id": "views",
+      "subCategories": [
+        {
+          "title": "Sub Category 1",
+          "id":"subCategory1",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sub Category 2",
+          "id":"subCategory2",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2",
+              "items": [
+                {
+                  "title": "Item 1",
+                  "id": "item1",
+                  "description": "Description Item 1.",
+                  "lessVariables": "Less Variables Item 1",
+                  "guiClass": "GUI Class Item 1",
+                  "context": "Context Item 1",
+                  "knownUses": "Known uses Item 1",
+                  "relations": "Relations Item 1"
+                },
+                {
+                  "title": "Item 2",
+                  "id": "item2",
+                  "description": "Description Item 2.",
+                  "lessVariables": "Less Variables Item 2",
+                  "guiClass": "GUI Class Item 2",
+                  "context": "Known Uses Item 2",
+                  "knownUses": "Known Uses Item 2",
+                  "relations": "Relations Item 2"
+
+                },
+                {
+                  "title": "Item 3",
+                  "id": "item3",
+                  "description": "Description Item 3.",
+                  "lessVariables": "Less Variables Item 3",
+                  "guiClass": "GUI Class Item 3",
+                  "context": "Known Uses Item 3",
+                  "knownUses": "Known Uses Item 3",
+                  "relations": "Relations Item 3"
+
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
+  ]
 }
