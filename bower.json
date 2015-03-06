@@ -1,6 +1,6 @@
 {
-	"name": "angular",
-	"version": "1.0.0",
+	"name": "UI-Kitchen-Sink",
+	"version": "0.0.1",
 	"dependencies": {
 		"bootstrap": "latest",
 		"angular": "latest",
