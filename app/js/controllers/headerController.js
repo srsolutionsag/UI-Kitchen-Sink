@@ -1,6 +1,4 @@
 angular.module('uiKitchenSink').controller('HeaderController', function($scope, Entries) {
-
-
     $scope.onDropdownEntrySelected = function (categoryIndex,subCategoryIndex) {
         Entries.changeSelection(categoryIndex,subCategoryIndex,0);
     };

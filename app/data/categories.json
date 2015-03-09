@@ -1,0 +1,106 @@
+{
+  "categories": [{
+      "title": "Elements",
+      "id":"elements",
+      "subCategories": [
+        {
+          "title": "Sub Category 1",
+          "id":"subCategory1",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1"
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2"
+            }
+          ]
+        },
+        {
+          "title": "Sub Category 2",
+          "id":"subCategory2",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1"
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Collections",
+      "id": "collections",
+      "subCategories": [
+        {
+          "title": "Sub Category 1",
+          "id":"subCategory1",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1"
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2"
+            }
+          ]
+        },
+        {
+          "title": "Sub Category 2",
+          "id":"subCategory2",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1"
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Views",
+      "id": "views",
+      "subCategories": [
+        {
+          "title": "Sub Category 1",
+          "id":"subCategory1",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1"
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2"
+            }
+          ]
+        },
+        {
+          "title": "Sub Category 2",
+          "id":"subCategory2",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "id":"itemGroup1"
+            },
+            {
+              "title": "Item Group 2",
+              "id":"itemGroup2"
+
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

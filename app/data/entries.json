@@ -1,85 +1,42 @@
 {
-  "categories": [{
+  "categories": [
+    {
       "title": "Elements",
-      "id":"elements",
+      "id": "elements",
       "subCategories": [
         {
           "title": "Sub Category 1",
-          "id":"subCategory1",
+          "id": "subCategory1",
           "itemGroups": [
             {
               "title": "Item Group 1",
-              "id":"itemGroup1",
+              "id": "itemGroup1",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             },
             {
               "title": "Item Group 2",
-              "id":"itemGroup2",
+              "id": "itemGroup2",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             }
@@ -87,81 +44,37 @@
         },
         {
           "title": "Sub Category 2",
-          "id":"subCategory2",
+          "id": "subCategory2",
           "itemGroups": [
             {
               "title": "Item Group 1",
-              "id":"itemGroup1",
+              "id": "itemGroup1",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             },
             {
               "title": "Item Group 2",
-              "id":"itemGroup2",
+              "id": "itemGroup2",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             }
@@ -175,81 +88,47 @@
       "subCategories": [
         {
           "title": "Sub Category 1",
-          "id":"subCategory1",
+          "id": "subCategory1",
           "itemGroups": [
             {
               "title": "Item Group 1",
-              "id":"itemGroup1",
+              "id": "itemGroup1",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
+                  "id": "example",
+                  "title": "Test title",
+                  "description": "Description of the new item test description",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 },
                 {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example2",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             },
             {
               "title": "Item Group 2",
-              "id":"itemGroup2",
+              "id": "itemGroup2",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             }
@@ -257,81 +136,37 @@
         },
         {
           "title": "Sub Category 2",
-          "id":"subCategory2",
+          "id": "subCategory2",
           "itemGroups": [
             {
               "title": "Item Group 1",
-              "id":"itemGroup1",
+              "id": "itemGroup1",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             },
             {
               "title": "Item Group 2",
-              "id":"itemGroup1",
+              "id": "itemGroup2",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             }
@@ -345,81 +180,37 @@
       "subCategories": [
         {
           "title": "Sub Category 1",
-          "id":"subCategory1",
+          "id": "subCategory1",
           "itemGroups": [
             {
               "title": "Item Group 1",
-              "id":"itemGroup1",
+              "id": "itemGroup1",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             },
             {
               "title": "Item Group 2",
-              "id":"itemGroup2",
+              "id": "itemGroup2",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             }
@@ -427,81 +218,37 @@
         },
         {
           "title": "Sub Category 2",
-          "id":"subCategory2",
+          "id": "subCategory2",
           "itemGroups": [
             {
               "title": "Item Group 1",
-              "id":"itemGroup1",
+              "id": "itemGroup1",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             },
             {
               "title": "Item Group 2",
-              "id":"itemGroup2",
+              "id": "itemGroup2",
               "items": [
                 {
-                  "title": "Item 1",
-                  "id": "item1",
-                  "description": "Description Item 1.",
-                  "lessVariables": "Less Variables Item 1",
-                  "guiClass": "GUI Class Item 1",
-                  "context": "Context Item 1",
-                  "knownUses": "Known uses Item 1",
-                  "relations": "Relations Item 1"
-                },
-                {
-                  "title": "Item 2",
-                  "id": "item2",
-                  "description": "Description Item 2.",
-                  "lessVariables": "Less Variables Item 2",
-                  "guiClass": "GUI Class Item 2",
-                  "context": "Known Uses Item 2",
-                  "knownUses": "Known Uses Item 2",
-                  "relations": "Relations Item 2"
-
-                },
-                {
-                  "title": "Item 3",
-                  "id": "item3",
-                  "description": "Description Item 3.",
-                  "lessVariables": "Less Variables Item 3",
-                  "guiClass": "GUI Class Item 3",
-                  "context": "Known Uses Item 3",
-                  "knownUses": "Known Uses Item 3",
-                  "relations": "Relations Item 3"
-
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
                 }
               ]
             }
