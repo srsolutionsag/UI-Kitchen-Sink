@@ -12,7 +12,7 @@ UI-Documentation for the ILIAS-Open-Source Project
 8. View in browser at http://localhost:8080
 
 ## Defining the content structure
-1. Define the organization of your UI-Kitchen-Sink in 'app/data/categories.json' according to the following structure:
+Define the organization of your UI-Kitchen-Sink in 'app/data/categories.json' according to the following structure:
 ```javascript
 {
   "categories": [{
@@ -52,5 +52,5 @@ Folder that are not listed anymore in 'app/data/categories.json' are no longer d
 ## Adding entries
 1. Create a someEntryName.html in the according folder (e.g.: 'app/data/someCategory/someSubCategory/someItemGroup/')
 2. Run 'grunt' to automatically create the according json file.
-3. Change to meta data n the json file.
+3. Change to meta data in the json file.
 4. Checkout 'http://localhost:8080' to see the changes made on the UI-Kitchen-Sink
