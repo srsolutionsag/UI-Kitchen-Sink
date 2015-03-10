@@ -18,6 +18,7 @@
             <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
                              title="{{itemGroup.title}}"
                              index="{{index}}"
+                             tab-active="{{itemGroup.id==tabSelected.id}}"
                              on-tab-selected="onTabSelected(index)">
             </tabs-categories>
         </tabs-content>

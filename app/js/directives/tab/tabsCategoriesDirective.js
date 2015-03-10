@@ -4,9 +4,17 @@ module.directive('tabsCategories', function () {
         scope: {
             title: '@',
             index:'@',
-            onTabSelected:"&"
+            onTabSelected:"&",
+            tabActive: '@'
         },
         templateUrl: 'app/views/tabs/tabsCategories.html',
-        replace: true
+        replace: true,
+        link: function(scope, element){
+            if(scope.tabActive == "true"){
+                scope.active = "active";
+            }else{
+                scope.active = "";
+            }
+        }
     };
 });
