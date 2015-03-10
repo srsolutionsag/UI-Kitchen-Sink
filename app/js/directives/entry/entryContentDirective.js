@@ -10,7 +10,6 @@ module.directive('entryContent', function () {
         replace: true,
         link: function (scope, element) {
             scope.path = scope.tabPath+'/'+scope.entry.id+'.html';
-            console.log(scope.path);
         }
     };
 });

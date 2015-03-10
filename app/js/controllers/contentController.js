@@ -13,4 +13,7 @@ angular.module('uiKitchenSink').controller('ContentController', function($scope,
         $scope.tabSelected.index = tabIndex;
         $scope.tabSelected.path = 'app/data/'+$scope.categorySelected.id+'/'+$scope.subCategorySelected.id+'/'+$scope.tabSelected.id;
     });
+    Entries.promisedData().then(function(){
+        Entries.changeSelection(0,0,0);
+    });
 });
