@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
     var host = 'localhost';
-    var port = 8080;
+    var port = 7979;
 
     var dataDir = 'app/data';
     var jsonOutputPath = dataDir+'/entries.json';
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         watch: {
             default: {
                 files: [ 'Gruntfile.js', 'app/**/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
-                tasks: [ 'jshint','includeSource', 'wiredep','buildEntriesJson','info:running'],
+                tasks: [ 'jshint','includeSource', 'wiredep','buildEntriesJson'],
                 options: {
                     atBegin: true,
                     debounceDelay: 550
