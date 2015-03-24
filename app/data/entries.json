@@ -95,16 +95,6 @@
               "id": "itemGroup1",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Test title",
-                  "description": "Description of the new item test description",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                },
-                {
                   "id": "example2",
                   "title": "Title of the new item",
                   "description": "Description of the new item",
@@ -175,16 +165,32 @@
       ]
     },
     {
-      "title": "Views",
-      "id": "views",
+      "title": "Layouts",
+      "id": "layouts",
       "subCategories": [
         {
-          "title": "Sub Category 1",
-          "id": "subCategory1",
+          "title": "Main Structure",
+          "id": "mainStructure",
           "itemGroups": [
             {
-              "title": "Item Group 1",
-              "id": "itemGroup1",
+              "title": "ILIAS Main Structure",
+              "id": "iliasMainStructure",
+              "items": [
+                {
+                  "id": "iliasMainStructureEntry",
+                  "title": "Dom Structure of ILIAS Main Page Layout",
+                  "description": "The main layout of the ILIAS Page contains four sections: the Header section, the Sidebar section, the content section and the footer section",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Header",
+              "id": "header",
               "items": [
                 {
                   "id": "example",
@@ -199,8 +205,24 @@
               ]
             },
             {
-              "title": "Item Group 2",
-              "id": "itemGroup2",
+              "title": "Content",
+              "id": "content",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Footer",
+              "id": "footer",
               "items": [
                 {
                   "id": "example",
@@ -217,12 +239,12 @@
           ]
         },
         {
-          "title": "Sub Category 2",
-          "id": "subCategory2",
+          "title": "Content Area",
+          "id": "ContentArea",
           "itemGroups": [
             {
-              "title": "Item Group 1",
-              "id": "itemGroup1",
+              "title": "Types",
+              "id": "contentAreaTypes",
               "items": [
                 {
                   "id": "example",
@@ -237,8 +259,8 @@
               ]
             },
             {
-              "title": "Item Group 2",
-              "id": "itemGroup2",
+              "title": "Column Layouts",
+              "id": "columnLayouts",
               "items": [
                 {
                   "id": "example",

@@ -68,35 +68,42 @@
       ]
     },
     {
-      "title": "Views",
-      "id": "views",
+      "title": "Layouts",
+      "id": "layouts",
       "subCategories": [
         {
-          "title": "Sub Category 1",
-          "id":"subCategory1",
+          "title": "Main Structure",
+          "id":"mainStructure",
           "itemGroups": [
             {
-              "title": "Item Group 1",
-              "id":"itemGroup1"
+              "title": "ILIAS Main Structure",
+              "id":"iliasMainStructure"
             },
             {
-              "title": "Item Group 2",
-              "id":"itemGroup2"
+              "title": "Header",
+              "id":"header"
+            },
+            {
+                "title": "Content",
+                "id":"content"
+            },
+            {
+                  "title": "Footer",
+                  "id":"footer"
             }
           ]
         },
         {
-          "title": "Sub Category 2",
-          "id":"subCategory2",
+          "title": "Content Area",
+          "id":"ContentArea",
           "itemGroups": [
             {
-              "title": "Item Group 1",
-              "id":"itemGroup1"
+                "title": "Types",
+                "id":"contentAreaTypes"
             },
             {
-              "title": "Item Group 2",
-              "id":"itemGroup2"
-
+              "title": "Column Layouts",
+              "id":"columnLayouts"
             }
           ]
         }
