@@ -91,6 +91,47 @@
           ]
         },
         {
+          "title": "Colors",
+          "id": "colors",
+          "description": "Colors to be used in ILIAS",
+          "itemGroups": [
+            {
+              "title": "Standard Colors",
+              "id": "standardColors",
+              "description": "Standard colors to be used in ILIAS",
+              "items": [
+                {
+                  "id": "colors",
+                  "title": "Standard Colors",
+                  "description": "Standard colors to be used in ILIAS",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Shades",
+              "id": "shades",
+              "description": "Shades of colors to be used",
+              "items": [
+                {
+                  "id": "shades",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "title": "Lists",
           "id": "lists",
           "description": "Description of this sub Category",

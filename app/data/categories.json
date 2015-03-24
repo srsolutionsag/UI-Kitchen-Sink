@@ -32,6 +32,24 @@
           ]
         },
           {
+              "title": "Colors",
+              "id":"colors",
+              "description": "Colors to be used in ILIAS",
+              "itemGroups": [
+                  {
+                      "title": "Standard Colors",
+                      "id":"standardColors",
+                      "description": "Standard colors to be used in ILIAS"
+
+                  },
+                  {
+                      "title": "Shades",
+                      "id":"shades",
+                      "description": "Shades of colors to be used"
+                  }
+              ]
+          },
+          {
               "title": "Lists",
               "id":"lists",
               "description": "Description of this sub Category",
