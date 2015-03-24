@@ -17,7 +17,6 @@ module.directive('entryContent', function ($http) {
                         data =data.slice(0,data.length-7)
                     }
                     scope.htmlCode = data;
-                    console.log(scope.htmlCode);
                 })
                 .error(function() {
                     console.log('could not find '+scope.path);

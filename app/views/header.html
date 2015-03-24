@@ -29,10 +29,14 @@
         <!-- Dropdown Section ================================================== -->
         <dropdown-content>
             <dropdown-categories ng-repeat="(categoryIndex,category) in categories"
-                                 title="{{category.title}}">
+                                 title="{{category.title}}"
+                                 is-active="{{categorySelected.index == categoryIndex}}"
+                    >
                 <dropdown-entry ng-repeat="(entryIndex,entry) in category.subCategories"
                                 title="{{entry.title}}"
                                 index="{{entryIndex}}"
+                                category-index="{{categoryIndex}}"
+                                is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
                                 on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
                 </dropdown-entry>
             </dropdown-categories>

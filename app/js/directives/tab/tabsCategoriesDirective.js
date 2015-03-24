@@ -4,6 +4,8 @@ module.directive('tabsCategories', function () {
         scope: {
             title: '@',
             index:'@',
+            categoryIndex: "@",
+            subCategoryIndex: "@",
             onTabSelected:"&",
             tabActive: '@'
         },

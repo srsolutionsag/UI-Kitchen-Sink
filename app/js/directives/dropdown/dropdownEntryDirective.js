@@ -4,9 +4,20 @@ module.directive('dropdownEntry', function () {
         scope: {
             title: '@',
             index:'@',
+            categoryIndex:'@',
+            isActive:'@',
             onDropdownEntrySelected:"&"
         },
         templateUrl: 'app/views/dropdown/dropdownEntry.html',
-        replace: true
+        replace: true,
+        link: function(scope, element){
+            scope.$watch("isActive",function(newValue,oldValue) {
+                if(scope.isActive == "true"){
+                    scope.active = "active";
+                }else{
+                    scope.active = "";
+                }
+            });
+        }
     };
 });

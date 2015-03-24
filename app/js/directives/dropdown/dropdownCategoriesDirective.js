@@ -2,10 +2,22 @@ module.directive('dropdownCategories', function () {
     return {
         restrict: 'AEC',
         scope: {
-            title : '@'
+            title : '@',
+            isActive:'@'
         },
         transclude: true,
         templateUrl: 'app/views/dropdown/dropdownCategories.html',
-        replace: true
+        replace: true,
+
+        link: function(scope, element){
+            scope.$watch("isActive",function(newValue,oldValue) {
+                console.log("isActive");
+                if(scope.isActive == "true"){
+                    scope.active = "active";
+                }else{
+                    scope.active = "";
+                }
+            });
+        }
     };
 });

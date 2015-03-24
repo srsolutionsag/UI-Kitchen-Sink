@@ -1,15 +1,28 @@
 angular.module('uiKitchenSink').controller('HeaderController', function($scope, Entries) {
+
+    console.log("start");
+
     $scope.onDropdownEntrySelected = function (categoryIndex,subCategoryIndex) {
         Entries.changeSelection(categoryIndex,subCategoryIndex,0);
     };
 
     $scope.$on('changeSelection', function (d,categoryIndex,subCategoryIndex,tabIndex) {
-        $scope.categorySelected = {"index":categoryIndex,"title":$scope.categories[categoryIndex].title,"id":$scope.categories[categoryIndex].id};
-        $scope.subCategorySelected = $scope.categories[categoryIndex].subCategories[subCategoryIndex];
-        $scope.subCategorySelected.index = subCategoryIndex;
+        if(categoryIndex!=-1){
+            $scope.categorySelected = {"index":categoryIndex,"title":$scope.categories[categoryIndex].title,"id":$scope.categories[categoryIndex].id};
+            $scope.subCategorySelected = $scope.categories[categoryIndex].subCategories[subCategoryIndex];
+            $scope.subCategorySelected.index = subCategoryIndex;
+        }
+        else{
+            $scope.categorySelected ={};
+            $scope.categorySelected.index = -1;
+        }
+        console.log("changeSelection");
     });
     Entries.promisedData().then(function(){
         $scope.categories = Entries.categories;
-        Entries.changeSelection(0,0,0);
+        $scope.categorySelected ={};
+        $scope.categorySelected.index = -1;
+        console.log("promisedData");
     });
+    $scope.onDropdownEntrySelected(-1,0);
 });

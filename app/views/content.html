@@ -4,7 +4,11 @@
         <breadcrumb-content
                 category-selected="{{categorySelected.title}}"
                 entry-selected="{{subCategorySelected.title}}"
-                tab-selected="{{tabSelected.title}}">
+                tab-selected="{{tabSelected.title}}"
+                category-index="{{categorySelected.index}}"
+                sub-category-index="{{subCategorySelected.index}}"
+                tab-index="{{tabSelected.index}}"
+                >
         </breadcrumb-content>
 
         <!-- Title Section ================================================== -->
@@ -18,6 +22,8 @@
             <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
                              title="{{itemGroup.title}}"
                              index="{{index}}"
+                             category-index="{{categorySelected.index}}"
+                             sub-category-index="{{subCategorySelected.index}}"
                              tab-active="{{itemGroup.id==tabSelected.id}}"
                              on-tab-selected="onTabSelected(index)">
             </tabs-categories>

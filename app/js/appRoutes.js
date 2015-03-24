@@ -10,7 +10,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
                 }
             }
 		})
-        .when('/content', {
+        .when('/content/:categoryIndex?/:subCategoryIndex?/:itemGroupIndex?', {
             templateUrl: 'app/views/content.html',
             controller: 'ContentController',
             resolve: {

@@ -4,7 +4,10 @@ module.directive('breadcrumbContent', function () {
         scope: {
             categorySelected:'@',
             entrySelected:'@',
-            tabSelected:'@'
+            tabSelected:'@',
+            categoryIndex: "@",
+            subCategoryIndex: "@",
+            tabIndex: "@"
         },
         templateUrl: 'app/views/breadcrumb/breadcrumbContent.html',
         replace: true
