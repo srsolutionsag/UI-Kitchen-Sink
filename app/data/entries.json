@@ -6,8 +6,93 @@
       "description": "Description of this Category",
       "subCategories": [
         {
-          "title": "Sub Category 1",
-          "id": "subCategory1",
+          "title": "Typography",
+          "id": "typography",
+          "description": "Typography to be used in ILIAS",
+          "itemGroups": [
+            {
+              "title": "Headings",
+              "description": "Description of this Item Group",
+              "id": "headings",
+              "items": [
+                {
+                  "id": "heading",
+                  "title": "Standard Heading",
+                  "description": "Standard heading in ILIAS",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                },
+                {
+                  "id": "headingSecondary",
+                  "title": "Heading with secondary text",
+                  "description": "Headings with attached secondary text",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Text",
+              "description": "Description of this Item Group",
+              "id": "typographyText",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Text Alignments",
+              "description": "Description of this Item Group",
+              "id": "textAlignments",
+              "items": [
+                {
+                  "id": "textAlignments",
+                  "title": "Text Alignments",
+                  "description": "Text alignments to use",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Labeling",
+              "description": "Description of this Item Group",
+              "id": "typographyLabeling",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lists",
+          "id": "lists",
           "description": "Description of this sub Category",
           "itemGroups": [
             {
@@ -47,8 +132,148 @@
           ]
         },
         {
-          "title": "Sub Category 2",
-          "id": "subCategory2",
+          "title": "Images",
+          "id": "images",
+          "description": "Description of this sub Category",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "description": "Description of this Item Group",
+              "id": "itemGroup1",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "description": "Description of this Item Group",
+              "id": "itemGroup2",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dropdowns",
+          "id": "dropdowns",
+          "description": "Description of this sub Category",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "description": "Description of this Item Group",
+              "id": "itemGroup1",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "description": "Description of this Item Group",
+              "id": "itemGroup2",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Buttons",
+          "id": "buttons",
+          "description": "Description of this sub Category",
+          "itemGroups": [
+            {
+              "title": "Standard",
+              "id": "standard",
+              "description": "Description of this Item Group",
+              "items": [
+                {
+                  "id": "standard",
+                  "title": "Standard Buttons in ILIAS",
+                  "description": "A set of standard Buttons to be used in ILIAS",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Size Modifications",
+              "id": "sizeModifications",
+              "description": "Description of this Item Group",
+              "items": [
+                {
+                  "id": "sizeModifications",
+                  "title": "Size Modifications",
+                  "description": "Size Modifications of buttons",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "States",
+              "id": "states",
+              "description": "Description of this Item Group",
+              "items": [
+                {
+                  "id": "states",
+                  "title": "Deactivated State",
+                  "description": "How a button should lookk like if deactivated",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Form Elements",
+          "id": "formElements",
           "description": "Description of this sub Category",
           "itemGroups": [
             {

@@ -1,0 +1,10 @@
+{
+  "id": "states",
+  "title": "Deactivated State",
+  "description": "How a button should lookk like if deactivated",
+  "lessVariables": "Less Variable used of the new item",
+  "guiClass": "GUI Class that the new item uses",
+  "context": "Context of the new item",
+  "knownUses": "Knonwn uses of the new item",
+  "relations": "Relations of the new item"
+}

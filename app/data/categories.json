@@ -5,25 +5,108 @@
       "description": "Description of this Category",
       "subCategories": [
         {
-          "title": "Sub Category 1",
-          "id":"subCategory1",
-          "description": "Description of this sub Category",
+          "title": "Typography",
+          "id":"typography",
+          "description": "Typography to be used in ILIAS",
           "itemGroups": [
             {
-              "title": "Item Group 1",
+              "title": "Headings",
               "description": "Description of this Item Group",
-              "id":"itemGroup1"
+              "id":"headings"
             },
             {
-              "title": "Item Group 2",
+              "title": "Text",
               "description": "Description of this Item Group",
-              "id":"itemGroup2"
-            }
+              "id":"typographyText"
+            },
+              {
+                  "title": "Text Alignments",
+                  "description": "Description of this Item Group",
+                  "id":"textAlignments"
+              },
+              {
+                  "title": "Labeling",
+                  "description": "Description of this Item Group",
+                  "id":"typographyLabeling"
+              }
           ]
         },
+          {
+              "title": "Lists",
+              "id":"lists",
+              "description": "Description of this sub Category",
+              "itemGroups": [
+                  {
+                      "title": "Item Group 1",
+                      "description": "Description of this Item Group",
+                      "id":"itemGroup1"
+                  },
+                  {
+                      "title": "Item Group 2",
+                      "description": "Description of this Item Group",
+                      "id":"itemGroup2"
+                  }
+              ]
+          },
+          {
+              "title": "Images",
+              "id":"images",
+              "description": "Description of this sub Category",
+              "itemGroups": [
+                  {
+                      "title": "Item Group 1",
+                      "description": "Description of this Item Group",
+                      "id":"itemGroup1"
+                  },
+                  {
+                      "title": "Item Group 2",
+                      "description": "Description of this Item Group",
+                      "id":"itemGroup2"
+                  }
+              ]
+          },
+          {
+              "title": "Dropdowns",
+              "id":"dropdowns",
+              "description": "Description of this sub Category",
+              "itemGroups": [
+                  {
+                      "title": "Item Group 1",
+                      "description": "Description of this Item Group",
+                      "id":"itemGroup1"
+                  },
+                  {
+                      "title": "Item Group 2",
+                      "description": "Description of this Item Group",
+                      "id":"itemGroup2"
+                  }
+              ]
+          },
+          {
+              "title": "Buttons",
+              "id":"buttons",
+              "description": "Description of this sub Category",
+              "itemGroups": [
+                  {
+                      "title": "Standard",
+                      "id":"standard",
+                      "description": "Description of this Item Group"
+                 },
+                  {
+                      "title": "Size Modifications",
+                      "id":"sizeModifications",
+                      "description": "Description of this Item Group"
+                  },
+                  {
+                      "title": "States",
+                      "id":"states",
+                      "description": "Description of this Item Group"
+                  }
+              ]
+          },
         {
-          "title": "Sub Category 2",
-          "id":"subCategory2",
+          "title": "Form Elements",
+          "id":"formElements",
           "description": "Description of this sub Category",
           "itemGroups": [
             {
