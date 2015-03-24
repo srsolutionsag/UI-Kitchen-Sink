@@ -7,14 +7,30 @@
 </div>
 <div class="panel-group" id="accordion{{index}}" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingZero">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseZero{{index}}" aria-expanded="true" aria-controls="collapseZero">
+                    Code
+                </a>
+            </h4>
+        </div>
+        <div id="collapseZero{{index}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero">
+            <div class="panel-body">
+                <code>
+                    <pre>{{htmlCode}}</pre>
+                </code>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseOne{{index}}" aria-expanded="true" aria-controls="collapseOne">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseOne{{index}}" aria-controls="collapseOne">
                     Description
                 </a>
             </h4>
         </div>
-        <div id="collapseOne{{index}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div id="collapseOne{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
                 {{entry.description}}
             </div>
