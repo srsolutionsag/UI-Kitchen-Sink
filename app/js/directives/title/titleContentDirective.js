@@ -2,7 +2,8 @@ module.directive('titleContent', function () {
     return {
         restrict: 'AEC',
         scope: {
-            title : '@'
+            title : '@',
+            description: '@'
         },
         transclude: true,
         templateUrl: 'app/views/title/titleContent.html',

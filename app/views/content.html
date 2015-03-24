@@ -11,29 +11,36 @@
                 >
         </breadcrumb-content>
 
-        <!-- Title Section ================================================== -->
-        <title-content
-                title="{{subCategorySelected.title}}">
-        </title-content>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <!-- Title Section ================================================== -->
+                <title-content
+                        title="{{subCategorySelected.title}}"
+                        description="{{subCategorySelected.description}}"
+                        >
+                </title-content>
+            </div>
+            <div class="panel-body">
+                <!-- Tabs Section ================================================== -->
+                <tabs-content>
+                    <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
+                                     title="{{itemGroup.title}}"
+                                     index="{{index}}"
+                                     category-index="{{categorySelected.index}}"
+                                     sub-category-index="{{subCategorySelected.index}}"
+                                     tab-active="{{itemGroup.id==tabSelected.id}}"
+                                     on-tab-selected="onTabSelected(index)">
+                    </tabs-categories>
+                </tabs-content>
 
-
-        <!-- Tabs Section ================================================== -->
-        <tabs-content>
-            <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
-                             title="{{itemGroup.title}}"
-                             index="{{index}}"
-                             category-index="{{categorySelected.index}}"
-                             sub-category-index="{{subCategorySelected.index}}"
-                             tab-active="{{itemGroup.id==tabSelected.id}}"
-                             on-tab-selected="onTabSelected(index)">
-            </tabs-categories>
-        </tabs-content>
-
-        <!-- Entry Section ================================================== -->
-        <entry-content ng-repeat="(index,entry) in tabSelected.items"
-                       entry="entry"
-                       index="{{index}}"
-                       tab-path="{{tabSelected.path}}">
-        </entry-content>
+                <!-- Entry Section ================================================== -->
+                <entry-content ng-repeat="(index,entry) in tabSelected.items"
+                               entry="entry"
+                               index="{{index}}"
+                               tab-path="{{tabSelected.path}}">
+                </entry-content>
+            </div>
+        </div>
     </div>
 </span>

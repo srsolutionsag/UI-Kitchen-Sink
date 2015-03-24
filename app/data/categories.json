@@ -2,17 +2,21 @@
   "categories": [{
       "title": "Elements",
       "id":"elements",
+      "description": "Description of this Category",
       "subCategories": [
         {
           "title": "Sub Category 1",
           "id":"subCategory1",
+          "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "Item Group 1",
+              "description": "Description of this Item Group",
               "id":"itemGroup1"
             },
             {
               "title": "Item Group 2",
+              "description": "Description of this Item Group",
               "id":"itemGroup2"
             }
           ]
@@ -20,13 +24,16 @@
         {
           "title": "Sub Category 2",
           "id":"subCategory2",
+          "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "Item Group 1",
+              "description": "Description of this Item Group",
               "id":"itemGroup1"
             },
             {
               "title": "Item Group 2",
+              "description": "Description of this Item Group",
               "id":"itemGroup2"
             }
           ]
@@ -36,17 +43,21 @@
     {
       "title": "Collections",
       "id": "collections",
+      "description": "Description of this Category",
       "subCategories": [
         {
           "title": "Sub Category 1",
           "id":"subCategory1",
+          "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "Item Group 1",
+              "description": "Description of this Item Group",
               "id":"itemGroup1"
             },
             {
               "title": "Item Group 2",
+              "description": "Description of this Item Group",
               "id":"itemGroup2"
             }
           ]
@@ -57,6 +68,7 @@
           "itemGroups": [
             {
               "title": "Item Group 1",
+              "description": "Description of this Item Group",
               "id":"itemGroup1"
             },
             {
@@ -70,25 +82,31 @@
     {
       "title": "Layouts",
       "id": "layouts",
+      "description": "Description of this Category",
       "subCategories": [
         {
           "title": "Main Structure",
           "id":"mainStructure",
+          "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "ILIAS Main Structure",
-              "id":"iliasMainStructure"
+              "id":"iliasMainStructure",
+              "description": "Description of this Item Group"
             },
             {
               "title": "Header",
+              "description": "Description of this Item Group",
               "id":"header"
             },
             {
                 "title": "Content",
+                "description": "Description of this Item Group",
                 "id":"content"
             },
             {
                   "title": "Footer",
+                  "description": "Description of this Item Group",
                   "id":"footer"
             }
           ]
@@ -96,14 +114,18 @@
         {
           "title": "Content Area",
           "id":"ContentArea",
+          "description": "Description of this sub Category",
           "itemGroups": [
             {
                 "title": "Types",
-                "id":"contentAreaTypes"
+                "id":"contentAreaTypes",
+                "description": "Description of this Item Group"
+
             },
             {
               "title": "Column Layouts",
-              "id":"columnLayouts"
+              "id":"columnLayouts",
+              "description": "Description of this Item Group"
             }
           ]
         }

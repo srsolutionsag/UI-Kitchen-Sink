@@ -14,7 +14,7 @@ module.directive('entryContent', function ($http) {
                 .success(function(data) {
                     if(data.indexOf("<span ng-non-bindable>")>-1){
                         data = data.replace("<span ng-non-bindable>", "");
-                        data =data.slice(0,data.length-7)
+                        data =data.slice(0,data.length-7);
                     }
                     scope.htmlCode = data;
                 })
