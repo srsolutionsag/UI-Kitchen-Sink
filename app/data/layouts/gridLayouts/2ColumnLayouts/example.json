@@ -1,6 +1,6 @@
 {
-  "id": "example2",
-  "title": "Title of the new item",
+  "id": "example",
+  "title": "Standard 2 Column Layout",
   "description": "Description of the new item",
   "lessVariables": "Less Variable used of the new item",
   "guiClass": "GUI Class that the new item uses",
