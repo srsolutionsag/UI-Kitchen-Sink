@@ -10,7 +10,23 @@ module.directive('search', function ($http) {
         replace: true,
         link: function (scope, element) {
             scope.categories = ["test1","test2"];
-            $(".js-example-basic-single").select2();
+            function format(data,container) {
+                console.log(data);
+                console.log(container);
+                if(data){
+                    return data.text + ": <b>test</b>";
+                } else{
+                    return "";
+                }
+
+            }
+
+            $(".select2-append").select2({
+                placeholder: "Search Kitchen-Sink",
+                allowClear: true,
+                formatSelection: format,
+                formatResult: format
+            });
         }
     };
 });

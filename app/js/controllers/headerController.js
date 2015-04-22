@@ -1,7 +1,5 @@
 angular.module('uiKitchenSink').controller('HeaderController', function($scope, Entries) {
 
-    console.log("start");
-
     $scope.onDropdownEntrySelected = function (categoryIndex,subCategoryIndex) {
         Entries.changeSelection(categoryIndex,subCategoryIndex,0);
     };
@@ -16,13 +14,11 @@ angular.module('uiKitchenSink').controller('HeaderController', function($scope, 
             $scope.categorySelected ={};
             $scope.categorySelected.index = -1;
         }
-        console.log("changeSelection");
     });
     Entries.promisedData().then(function(){
         $scope.categories = Entries.categories;
         $scope.categorySelected ={};
         $scope.categorySelected.index = -1;
-        console.log("promisedData");
     });
     $scope.onDropdownEntrySelected(-1,0);
 });

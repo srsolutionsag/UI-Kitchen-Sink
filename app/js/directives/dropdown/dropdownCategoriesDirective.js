@@ -11,7 +11,6 @@ module.directive('dropdownCategories', function () {
 
         link: function(scope, element){
             scope.$watch("isActive",function(newValue,oldValue) {
-                console.log("isActive");
                 if(scope.isActive == "true"){
                     scope.active = "active";
                 }else{
