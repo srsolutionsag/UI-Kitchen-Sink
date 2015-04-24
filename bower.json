@@ -5,6 +5,7 @@
 		"bootstrap": "latest",
 		"angular": "latest",
 		"angular-route": "latest",
-        "select2-bootstrap-css": "latest"
+        "select2-bootstrap-css": "latest",
+        "jstree": "latest"
 	}
 }
