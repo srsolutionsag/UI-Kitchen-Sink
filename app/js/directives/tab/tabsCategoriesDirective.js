@@ -12,11 +12,13 @@ module.directive('tabsCategories', function () {
         templateUrl: 'app/views/tabs/tabsCategories.html',
         replace: true,
         link: function(scope, element){
-            if(scope.tabActive == "true"){
-                scope.active = "active";
-            }else{
-                scope.active = "";
-            }
+            scope.$watch("tabActive",function(newValue,oldValue) {
+                if(scope.tabActive == "true"){
+                    scope.active = "active";
+                }else{
+                    scope.active = "";
+                }
+            });
         }
     };
 });
