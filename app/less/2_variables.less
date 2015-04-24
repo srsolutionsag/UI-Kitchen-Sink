@@ -893,15 +893,53 @@
 //== Iconography
 @icon-font-path:            "/libs/bootstrap/dist/fonts/";
 
-
 //== ILIAS Main Menu
-//
-@il-top-bar-height: @navbar-height;
-@il-top-header-height: 80px;
-@il-main-menu-background-color:	lighten(@brand-primary, 10%);
-@il-top-bar-background-color: lighten(@il-main-menu-background-color, 40%);
+
+// Basics of a navbar
+@navbar-height:                             44px;
+
+// Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color:                      lighten(@gray-light, 15%);
+@navbar-inverse-bg:                         #444;//#222;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 lighten(@gray-light, 15%);
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                #fff;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
+
+
+
+@il-main-menu-background-color:	#444;//lighten(@brand-primary, 10%);
+
+@il-page-padding: @padding-large-horizontal;
+@il-page-padding-left: @il-page-padding;
+@il-page-padding-right: @il-page-padding;
 
 //== ILIAS Sidebar
 //
 @il-explorer-top: @navbar-height+264px;
 @il-explorer-width: 650px;
+
+//== ILIAS Footer
+//
+@il-footer-bg: @navbar-inverse-bg;
+@il-footer-color: @navbar-inverse-color;
+@il-footer-height: 30px;
+@il-footer-padding-horizontal: @navbar-padding-horizontal;
+@il-footer-padding-vertical: @navbar-padding-vertical;

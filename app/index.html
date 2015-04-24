@@ -17,9 +17,21 @@
 <body ng-app="uiKitchenSink">
 
     <header></header>
-    <div id="wrapper">
-        <sidebar></sidebar>
-    <content ng-view data-autoscroll="false"></content>
+    <div class="container-fluid" ng-controller="MainController">
+        <sidebar-left
+                class="col-lg-3 col-md-2 col-xs-1 il-sidebar-left"
+                ng-click="onAreaSelected('left')">
+        </sidebar-left>
+        <content
+                ng-view
+                class="col-lg-6  col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-xs-offset-1"
+                ng-click="onAreaSelected('center')">
+        </content>
+        <sidebar-right
+                class="col-lg-3 col-md-2 col-xs-1 il-sidebar-right"
+                ng-click="onAreaSelected('right')">
+        </sidebar-right>
+    </div>
     <footer></footer>
     </div>
     <!-- JS includes automatically generated with grunt, do not enter sources by hand-->

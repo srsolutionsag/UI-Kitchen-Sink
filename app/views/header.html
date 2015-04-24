@@ -1,7 +1,7 @@
 <span  ng-controller="HeaderController" >
     <!-- TopBar ================================================== -->
-    <nav class="il-top-bar navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -9,10 +9,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#/index.html">UI-Kitchen-Sink</a>
+                <a class="il-navbar-logo" href="#/index.html">
+                    <img src="/app/img/HeaderIcon.svg" alt="Logo" class="noMirror">
+                </a>
+                <a class="navbar-brand" href="#/index.html">UI-Kitchen-Sink
+                </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-
                 <form class="navbar-form navbar-right" ng-controller="SearchController">
                     <search
                             categories="searchCategories"
@@ -25,28 +28,19 @@
             </div><!--/.navbar-collapse -->
         </div>
     </nav>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="il-main-header">
-        <div class="container">
-            <h1>UI-Kitchen-Sink</h1>
-            <p>The UI-Kitchen-Sink demonstrates the varius UI-Elements directly in the futre Layout of ILIAS 5.X.</p>
-        </div>
-        <div class="container">
-            <!-- Dropdown Section ================================================== -->
-            <dropdown-content>
-                <dropdown-categories ng-repeat="(categoryIndex,category) in categories"
-                                     title="{{category.title}}"
-                                     is-active="{{categorySelected.index == categoryIndex}}"
-                        >
-                    <dropdown-entry ng-repeat="(entryIndex,entry) in category.subCategories"
-                                    title="{{entry.title}}"
-                                    index="{{entryIndex}}"
-                                    category-index="{{categoryIndex}}"
-                                    is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
-                                    on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
-                    </dropdown-entry>
-                </dropdown-categories>
-            </dropdown-content>
-        </div>
-    </div>
+    <!-- Dropdown Section ================================================== -->
+        <dropdown-content>
+            <dropdown-categories ng-repeat="(categoryIndex,category) in categories"
+                                 title="{{category.title}}"
+                                 is-active="{{categorySelected.index == categoryIndex}}"
+                    >
+                <dropdown-entry ng-repeat="(entryIndex,entry) in category.subCategories"
+                                title="{{entry.title}}"
+                                index="{{entryIndex}}"
+                                category-index="{{categoryIndex}}"
+                                is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
+                                on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
+                </dropdown-entry>
+            </dropdown-categories>
+        </dropdown-content>
 </span>
