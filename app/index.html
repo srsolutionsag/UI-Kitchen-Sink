@@ -11,13 +11,13 @@
     <!-- CSS includes automatically generated with grunt, do not enter sources by hand-->
     <!-- bower:css -->
     <!-- endbower -->
-    <!-- include: "type": "css", "files": "css/**/*.css" -->
+    <!-- include: "type": "css", "files": "static/css/**/*.css" -->
 
 </head>
-<body ng-app="uiKitchenSink">
+<body ng-app="uiKitchenSink" ng-controller="MainController">
 
     <header></header>
-    <div class="container-fluid" ng-controller="MainController">
+    <div class="container-fluid">
         <sidebar-left
                 class="col-lg-3 col-md-2 col-xs-1 il-sidebar-left"
                 ng-click="onAreaSelected('left')">
