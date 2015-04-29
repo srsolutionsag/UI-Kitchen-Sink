@@ -9,7 +9,6 @@ module.directive('search', function ($http) {
         replace: true,
         templateUrl: 'app/views/search/search.html',
         link: function (scope, element) {
-            console.log(scope.selectedElement);
             scope.onSearchClicked = function(){
                 console.log(scope.selectedElement);
                 if(!$.isEmptyObject(scope.selectedElement)){

@@ -1,11 +1,9 @@
-angular.module('uiKitchenSink').controller('SearchController', function($scope,  $routeParams, Entries) {
+angular.module('uiKitchenSink').controller('SearchController', function($scope,  $routeParams, Entries,$location) {
     $scope.searchCategories = {};
     $scope.searchCategories.selectedElement = {};
 
     $scope.onSearch = function () {
-        console.log($scope.searchCategories.selectedElement);
-        Entries.changeSelection($scope.searchCategories.selectedElement.categoryIndex,$scope.searchCategories.selectedElement.subCategoryIndex,$scope.searchCategories.selectedElement.itemGroupIndex);
-        Entries.changeSelection($scope.searchCategories.selectedElement.categoryIndex,$scope.searchCategories.selectedElement.subCategoryIndex,$scope.searchCategories.selectedElement.itemGroupIndex);
+        $location.path("/content/"+$scope.searchCategories.selectedElement.categoryIndex+"/"+$scope.searchCategories.selectedElement.subCategoryIndex+"/"+$scope.searchCategories.selectedElement.itemGroupIndex);
     };
 
     Entries.promisedData().then(function(){

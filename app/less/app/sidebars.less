@@ -12,12 +12,11 @@
 @media (min-width: @screen-sm-min) {
   .il-sidebar-right, .il-sidebar-left {
     position: fixed;
-    top: 2 * @navbar-height;
+    top: @il-header-height;
     bottom: 0;
     display: block;
     overflow-x: hidden;
     margin-top: -@line-height-computed;
-    margin-left: -@grid-gutter-width/2;
     padding: @grid-gutter-width/2;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
