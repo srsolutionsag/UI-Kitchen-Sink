@@ -15,6 +15,12 @@
             <ul class="nav navbar-nav" ng-transclude>
 
             </ul>
+            <form class="navbar-form navbar-right">
+                <a type="submit" ng-click="onViewChange('full')" class="btn btn-default">Full</a>
+                <a type="submit" ng-click="onViewChange('left')" class="btn btn-default">Left</a>
+                <a type="submit" ng-click="onViewChange('right')" class="btn btn-default">Right</a>
+                <a type="submit" ng-click="onViewChange('three')" class="btn btn-default">Three</a>
+            </form>
         </div><!-- /.navbar-collapse -->
     </div>
 </nav>

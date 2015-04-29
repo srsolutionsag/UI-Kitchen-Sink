@@ -14,21 +14,21 @@
     <!-- include: "type": "css", "files": "css/**/*.css" -->
 
 </head>
-<body ng-app="uiKitchenSink">
+<body ng-app="uiKitchenSink" ng-controller="MainController">
 
     <header></header>
-    <div class="container-fluid" ng-controller="MainController">
+    <div class="container-fluid">
         <sidebar-left
-                class="col-lg-3 col-md-2 col-xs-1 il-sidebar-left"
+                ng-class="contentClasses.current.left"
                 ng-click="onAreaSelected('left')">
         </sidebar-left>
         <content
-                ng-view
-                class="col-lg-6  col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-xs-offset-1"
-                ng-click="onAreaSelected('center')">
+                ng-class="contentClasses.current.center"
+                ng-click="onAreaSelected('center')"
+                ng-view>
         </content>
         <sidebar-right
-                class="col-lg-3 col-md-2 col-xs-1 il-sidebar-right"
+                ng-class="contentClasses.current.right"
                 ng-click="onAreaSelected('right')">
         </sidebar-right>
     </div>

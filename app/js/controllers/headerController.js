@@ -21,4 +21,5 @@ angular.module('uiKitchenSink').controller('HeaderController', function($scope, 
         $scope.categorySelected.index = -1;
     });
     $scope.onDropdownEntrySelected(-1,0);
+
 });
