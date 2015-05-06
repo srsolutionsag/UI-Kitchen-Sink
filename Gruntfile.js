@@ -48,6 +48,7 @@ module.exports = function(grunt) {
         // Automatically inject Bower components into the app
         wiredep: {
             default: {
+                exclude: [ 'libs/bootstrap/dist/css/bootstrap.css','libs/jstree/dist/themes/default/style.css' ],
                 src: [
                     'index.html'
                 ]
@@ -69,7 +70,7 @@ module.exports = function(grunt) {
         //Automatically detect file changes and take according actions
         watch: {
             default: {
-                files: [ 'Gruntfile.js','app/**/*.less', 'app/**/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
+                files: [ 'Gruntfile.js','app/less/**/*.less', 'app/**/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
                 tasks: [ 'jshint','less_imports','less','includeSource', 'wiredep','buildEntriesJson'],
                 options: {
                     atBegin: true,

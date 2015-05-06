@@ -15,11 +15,15 @@
     top: @il-header-height;
     bottom: 0;
     display: block;
-    overflow-x: hidden;
+    overflow-x: auto;
     margin-top: -@line-height-computed;
     padding: @grid-gutter-width/2;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
+
+  }
+  .il-column-sortable{
+    padding-bottom: @il-sidebar-padding-bottom;
   }
   .il-sidebar-left{
     left: 0;

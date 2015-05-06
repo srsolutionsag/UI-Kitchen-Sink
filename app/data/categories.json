@@ -1,5 +1,26 @@
 {
-  "categories": [{
+  "categories": [
+      {
+          "title": "Information",
+          "id": "information",
+          "description": "General Informations about UI-Kitchen-Sink",
+          "subCategories": [
+              {
+                  "title": "Overview",
+                  "id":"overview",
+                  "description": "Description of this sub Category",
+                  "itemGroups": [
+                      {
+                          "title": "ILIAS Main Structure",
+                          "id":"iliasMainStructure",
+                          "description": "Description of this Item Group",
+                          "type": "html"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
       "title": "Elements",
       "id":"elements",
       "description": "Description of this Category",

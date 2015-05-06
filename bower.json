@@ -6,6 +6,7 @@
 		"angular": "latest",
 		"angular-route": "latest",
         "select2-bootstrap-css": "latest",
-        "jstree": "latest"
+        "jstree": "latest",
+        "jquery-ui": "latest"
 	}
 }

@@ -17,26 +17,28 @@
 <body ng-app="uiKitchenSink" ng-controller="MainController">
 
     <header></header>
-    <div class="container-fluid">
-        <sidebar-left
+    <div class="container-fluid" ng-controller="ContentController">
+        <sidebars
+                position="left"
                 ng-class="contentClasses.current.left"
                 ng-click="onAreaSelected('left')">
-        </sidebar-left>
-        <content
+        </sidebars>
+        <center-content
                 ng-class="contentClasses.current.center"
                 ng-click="onAreaSelected('center')"
                 ng-view>
-        </content>
-        <sidebar-right
+        </center-content>
+        <sidebars
+                position="right"
                 ng-class="contentClasses.current.right"
                 ng-click="onAreaSelected('right')">
-        </sidebar-right>
+        </sidebars>
     </div>
     <footer></footer>
     </div>
     <!-- JS includes automatically generated with grunt, do not enter sources by hand-->
     <!-- bower:js -->
     <!-- endbower -->
-    <!-- include: "type": "js", "files": "js/**/*.js" -->
+    <!-- include: "type": "js", "files": "src/**/*.js" -->
 </body>
 </html>

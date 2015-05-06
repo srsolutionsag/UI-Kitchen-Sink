@@ -885,7 +885,9 @@
 * To use the delos background images in your skin,
 * please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
 */
-@background-images-path: "images/";
+
+//==Base ILIAS
+@il-background-images-path: "/app/static/img/";
 
 
 
@@ -932,11 +934,15 @@
 @il-page-padding-right: @il-page-padding;
 
 //== ILIAS Sidebar
-//
-@il-explorer-top: @navbar-height+264px;
-@il-explorer-width: 650px;
+@il-sidebar-padding-bottom: 100px;
 
-//== ILIAS Header
+//== ILIAS Block
+@il-panel-sortable-placeholder-panel-bg: transparent;
+@il-panel-sortable-placeholder-panel-border-radius:         @border-radius-base;
+@il-panel-sortable-placeholder-border:  3px #C0C0C0 dashed;
+@il-panel-sortable-placeholder-height: 75px;
+
+  //== ILIAS Header
 //
 @il-header-height: 2 * @navbar-height + @navbar-margin-bottom;
 
@@ -944,7 +950,7 @@
 //
 @il-footer-bg: @navbar-inverse-bg;
 @il-footer-color: @navbar-inverse-color;
-@il-footer-height: 40px;
+@il-footer-height: 45px;
 @il-footer-padding-horizontal: @navbar-padding-horizontal;
 @il-footer-padding-vertical: @navbar-padding-vertical;
 
@@ -963,3 +969,42 @@
 @font-size-h4:            ceil((@font-size-base * 1.2));
 @font-size-h5:            ceil((@font-size-base * 1.1));
 @font-size-h6:            @font-size-base;
+
+
+
+
+
+
+
+//== Icons
+@il-logo-color1: @brand-primary;
+@il-logo-color2: @brand-primary;
+
+
+//== Explorer
+/**Changed**/
+/* jsTree default theme */
+@theme-name:				default;
+@hovered-bg-color:			@dropdown-link-hover-bg;
+@hovered-shadow-color:		@dropdown-link-hover-bg;
+@disabled-color:			@dropdown-link-disabled-color;
+@disabled-bg-color:			@dropdown-link-disabled-color;
+@clicked-bg-color:			@dropdown-link-active-bg;
+@clicked-shadow-color:		@dropdown-link-active-bg;
+@clicked-gradient-color-1:	@dropdown-link-active-bg;
+@clicked-gradient-color-2:	@dropdown-link-active-bg;
+
+/**Custom**/
+@il-explorer-clicked-color: @dropdown-link-active-color;
+
+  /**Original**/
+@search-result-color:		#8b0000;
+@mobile-wholerow-bg-color:	#ebebeb;
+@mobile-wholerow-shadow:	#666666;
+@mobile-wholerow-bordert:	rgba(255,255,255,0.7);
+@mobile-wholerow-borderb:	rgba(64,64,64,0.2);
+@responsive:				true;
+@image-path:				"@{il-background-images-path}services/explorer/";
+@base-height:				@input-height-base;
+
+
