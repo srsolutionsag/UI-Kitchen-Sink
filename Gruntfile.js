@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         //Automatically detect file changes and take according actions
         watch: {
             default: {
-                files: [ 'Gruntfile.js','app/less/**/*.less', 'app/**/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
+                files: [ 'Gruntfile.js','app/less/**/*.less','app/less/services/**/*.less', 'app/**/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
                 tasks: [ 'jshint','less_imports','less','includeSource', 'wiredep','buildEntriesJson'],
                 options: {
                     atBegin: true,
@@ -180,8 +180,18 @@ module.exports = function(grunt) {
                     var itemGroup = subCategory.itemGroups[itemGroupIndex];
                     var itemGroupPath = subCategoryPath+itemGroup.id+'/';
                     this.createFolderIfNotExists(itemGroupPath);
-                    this.generateJsonsForDirectory(itemGroupPath);
-                    this.addJsonsToOutputForDirectory(itemGroupPath,categoryIndex,subCategoryIndex,itemGroupIndex);
+                    if(itemGroup.type != "html"){
+                        this.generateJsonsForDirectory(itemGroupPath);
+                        this.addJsonsToOutputForDirectory(itemGroupPath,categoryIndex,subCategoryIndex,itemGroupIndex);
+                    }
+                    else{
+                        var existingHtmlsAsArray = grunt.file.expand(itemGroupPath+'/*.html');
+                        if(existingHtmlsAsArray.length === 0){
+                            grunt.file.copy(this.data.htmlTemplatePath,itemGroupPath+'/'+itemGroup.id+'.html');
+                        }
+
+                    }
+
                 }
             }
         }

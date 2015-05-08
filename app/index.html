@@ -16,23 +16,25 @@
 </head>
 <body ng-app="uiKitchenSink" ng-controller="MainController">
 
-    <header></header>
-    <div class="container-fluid" ng-controller="ContentController">
-        <sidebars
-                position="left"
-                ng-class="contentClasses.current.left"
-                ng-click="onAreaSelected('left')">
-        </sidebars>
-        <center-content
-                ng-class="contentClasses.current.center"
-                ng-click="onAreaSelected('center')"
-                ng-view>
-        </center-content>
-        <sidebars
-                position="right"
-                ng-class="contentClasses.current.right"
-                ng-click="onAreaSelected('right')">
-        </sidebars>
+    <header ng-controller="HeaderController"></header>
+    <div class="il-content-container container-fluid" ng-controller="ContentController">
+        <row>
+            <sidebars
+                    position="left"
+                    ng-class="contentClasses.current.left"
+                    ng-click="onAreaSelected('left')">
+            </sidebars>
+            <center-content
+                    ng-class="contentClasses.current.center"
+                    ng-click="onAreaSelected('center')"
+                    ng-view>
+            </center-content>
+            <sidebars
+                    position="right"
+                    ng-class="contentClasses.current.right"
+                    ng-click="onAreaSelected('right')">
+            </sidebars>
+        </row>
     </div>
     <footer></footer>
     </div>

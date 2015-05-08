@@ -1,4 +1,4 @@
-module.directive('entryContent', function ($http) {
+module.directive('entryJsonContent', function ($http) {
     return {
         restrict: 'AEC',
         scope: {
@@ -6,7 +6,7 @@ module.directive('entryContent', function ($http) {
             index: '@',
             tabPath: '@'
         },
-        templateUrl: 'app/src/content/center/entry/entryContent.tpl.html',
+        templateUrl: 'app/src/content/center/entry/entryJsonContent.tpl.html',
         replace: true,
         link: function (scope, element) {
             scope.path = scope.tabPath+'/'+scope.entry.id+'.html';

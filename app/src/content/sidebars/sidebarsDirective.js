@@ -12,7 +12,7 @@ module.directive('sidebars', function ($timeout) {
                 $(function() {
                     $( ".il-column-sortable" ).sortable({
                         connectWith: ".il-column-sortable",
-                        handle: ".il-panel-sortable-heading",
+                        handle: ".il-panel-sortable",
                         cancel: ".il-panel-sortable-toggle",
                         placeholder: "il-panel-sortable-placeholder ui-corner-all",
                         appendTo: ".container-fluid",
@@ -21,7 +21,7 @@ module.directive('sidebars', function ($timeout) {
 
                     $( ".il-panel-sortable" )
                         .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
-                        .find( ".il-panel-sortable-heading" )
+                        .find( ".il-panel-sortable" )
                         .addClass( "ui-widget-header ui-corner-all" )
                         .prepend( "<span class='ui-icon ui-icon-minusthick il-panel-sortable-toggle'></span>");
 
@@ -31,7 +31,7 @@ module.directive('sidebars', function ($timeout) {
                         icon.closest( ".il-panel-sortable" ).find( ".il-panel-sortable-content" ).toggle();
                     });
                 });
-            });
+            },10);
 
         }
     };

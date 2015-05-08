@@ -1,5 +1,5 @@
-<span>
-    <div class="row il-content">
+<div>
+    <div class="row il-center-content">
         <!-- Breadcrumb Section ================================================== -->
         <breadcrumb-content
                 category-selected="{{categorySelected.title}}"
@@ -35,12 +35,21 @@
                 </tabs-content>
 
                 <!-- Entry Section ================================================== -->
-                <entry-content ng-repeat="(index,entry) in tabSelected.items"
-                               entry="entry"
-                               index="{{index}}"
-                               tab-path="{{tabSelected.path}}">
-                </entry-content>
+                <span ng-if="tabSelected.type=='html'">
+                    <entry-html-content
+                                        item-group="tabSelected"
+                                        index="{{index}}"
+                                        tab-path="{{tabSelected.path}}">
+                    </entry-html-content>
+                </span>
+                <span ng-if="tabSelected!='html'">
+                    <entry-json-content ng-repeat="(index,entry) in tabSelected.items"
+                                        entry="entry"
+                                        index="{{index}}"
+                                        tab-path="{{tabSelected.path}}">
+                    </entry-json-content>
+                </span>
             </div>
         </div>
     </div>
-</span>
+</div>
