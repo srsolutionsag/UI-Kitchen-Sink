@@ -6667,11 +6667,6 @@ body {
   height: auto;
   padding-top: 64px;
 }
-@media (min-width: 768px) {
-  body {
-    padding-top: 108px;
-  }
-}
 /* select2 */
 @media (min-width: 768px) {
   .navbar-form .input-group > .form-control {
@@ -7787,11 +7782,6 @@ body {
   padding-bottom: 100px;
   background-color: #8198b7;
   transition: width 0s;
-}
-@media (min-width: 768px) {
-  .il-sidebar {
-    top: 108px;
-  }
 }
 .il-sidebar .il-sidebar-toggle-button {
   display: none;

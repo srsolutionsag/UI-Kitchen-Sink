@@ -1,15 +1,5 @@
 <!-- TopBar ================================================== -->
 <top-bar>
-    <search ng-controller="SearchController"
-            categories="searchCategories"
-            on-search="onSearch()"
-            selected-element="searchCategories.selectedElement"
-            >
-    </search>
-</top-bar>
-
-<!-- Dropdown Section ================================================== -->
-<top-nav-content>
     <top-nav-categories ng-repeat="(categoryIndex,category) in categories"
                         title="{{category.title}}"
                         is-active="{{categorySelected.index == categoryIndex}}"
@@ -22,5 +12,4 @@
                        on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
         </top-nav-entry>
     </top-nav-categories>
-</top-nav-content>
-
+</top-bar>

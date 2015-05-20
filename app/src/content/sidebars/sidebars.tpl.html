@@ -15,7 +15,12 @@
                       is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
                       ng-click="onBlockClicked()"
                       >
-                      Search Content
+                  <search ng-controller="SearchController"
+                          categories="searchCategories"
+                          on-search="onSearch()"
+                          selected-element="searchCategories.selectedElement"
+                          >
+                  </search>
               </block>
               <block
                       icon="list"
