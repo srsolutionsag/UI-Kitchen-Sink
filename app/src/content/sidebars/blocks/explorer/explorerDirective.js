@@ -3,7 +3,7 @@ module.directive('explorer', function () {
         restrict: 'AEC',
         scope: {
         },
-        templateUrl: 'app/src/content/sidebars/explorer/explorer.tpl.html',
+        templateUrl: 'app/src/content/sidebars/blocks/explorer/explorer.tpl.html',
         replace: true,
         link: function(scope, element){
             $(document).ready(function () {

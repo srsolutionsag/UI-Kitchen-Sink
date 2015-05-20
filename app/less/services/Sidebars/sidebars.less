@@ -1,0 +1,155 @@
+.il-sidebar{
+  position: absolute;
+  .ilCalcHeaderHeight();
+  top: @il-header-height-small;
+  @media (min-width: @screen-sm-min) {
+    top: @il-header-height-large;
+  }
+  bottom: 0;
+  display: block;
+  margin-top: -@line-height-computed;
+  padding: @grid-gutter-width/2;
+  padding-bottom: @il-sidebar-padding-bottom;
+  background-color: @il-sidebar-bg-color;
+  transition: width 0s;
+
+  //Buttons to toggle sidebars in and aout
+  .il-sidebar-toggle-button{
+    display: none;
+  }
+
+  &:hover{
+    .il-sidebar-toggle-button{
+      display: inherit;
+      position: absolute;
+      top: 40vh;
+      height: @il-sidebar-toggle-button-height;
+      border: none;
+      color: @link-color;
+      background-color: @il-sidebar-toggle-button-bg-color;
+      font-size: @il-sidebar-toggle-button-font-size;
+
+      &:hover{
+        background-color: @link-color;
+        color: white;
+      }
+
+      &.il-sidebar-toggle-button-left{
+        right: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      &.il-sidebar-toggle-button-right{
+        left: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    }
+  }
+
+  //Blocks inside the sidebar
+  .il-sidebar-block-group{
+    .il-sidebar-block{
+      position: relative;
+      overflow: scroll;
+      margin-bottom: @grid-gutter-width/2;
+      .il-sidebar-block-heading{
+        .glyphicon{
+          font-size: @il-flap-icon-font-size-lg;
+        }
+        .il-sidebar-block-heading-text{
+          position: absolute;
+          font-size: @il-flap-text-font-size-lg;
+        }
+      }
+    }
+  }
+  &.il-sidebar-minified{
+    .il-sidebar-block-group{
+      .il-sidebar-block{
+        z-index: 1;
+        font-size: @il-flap-icon-font-size-lg;
+        width: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
+        overflow: hidden;
+        transition: width @il-flap-animation-speed;
+
+        &:hover, .active {
+          width: @il-flap-hover-size-lg;
+          transition: width @il-flap-animation-speed;
+        }
+      }
+    }
+  }
+  &.il-sidebar-left{
+    left: 0;
+    border-right: 1px solid #eee;
+    padding-right: @il-sidebar-padding-content;
+    .il-sidebar-block-group{
+      margin-left: -@grid-gutter-width/2;
+      .il-sidebar-block{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        .il-sidebar-block-heading{
+          .glyphicon{
+            float: left;
+          }
+          .il-sidebar-block-heading-text{
+            left: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
+          }
+        }
+      }
+    }
+  }
+  &.il-sidebar-right{
+    right: 0;
+    border-left: 1px solid #eee;
+    padding-left: @il-sidebar-padding-content;
+    .il-sidebar-block-group{
+      margin-right: -@grid-gutter-width/2;
+      .il-sidebar-block{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        .il-sidebar-block-heading{
+          .glyphicon{
+            float: right;
+          }
+          .il-sidebar-block-heading-text{
+            right: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
+          }
+        }
+      }
+    }
+  }
+  &.il-sidebar-minified.il-sidebar-right{
+    .il-sidebar-block-group{
+      .il-sidebar-block{
+        float: right;
+        clear:both;
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-min) {
+    //Buttons to toggle sidebars in and out
+    &.il-sidebar-minified:hover{
+          .il-sidebar-toggle-button{
+            top: 0;
+            height: 100vh;
+            padding: 1px;
+      }
+
+    }
+
+    &.il-sidebar-minified{
+      width: @il-sidebar-padding-content-sm;
+      padding: 0;
+      .il-sidebar-toggle-button{
+        width: 100%;
+      }
+      .il-sidebar-block-group{
+        display: none;
+      }
+    }
+
+  }
+}

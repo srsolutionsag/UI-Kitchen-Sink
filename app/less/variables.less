@@ -926,7 +926,8 @@
 @navbar-inverse-toggle-border-color:        #333;
 
 
-
+//== ILIAS min height
+@il-content-min-height: 600px;
 @il-main-menu-background-color:	#444;//lighten(@brand-primary, 10%);
 
 @il-page-padding: @padding-large-horizontal;
@@ -935,6 +936,7 @@
 
 //== ILIAS Sidebar
 @il-sidebar-padding-bottom: 100px;
+@il-sidebar-bg-color: lighten(@brand-primary, 20%);
 
 //== ILIAS Block
 @il-panel-sortable-placeholder-panel-bg: transparent;
@@ -942,9 +944,7 @@
 @il-panel-sortable-placeholder-border:  3px #C0C0C0 dashed;
 @il-panel-sortable-placeholder-height: 45px;
 
-  //== ILIAS Header
-//
-@il-header-height: 2 * @navbar-height + @navbar-margin-bottom;
+
 
 //== ILIAS Footer
 //
@@ -971,15 +971,30 @@
 @font-size-h6:            @font-size-base;
 
 
-
-
-
-
-
 //== Icons
 @il-logo-color1: @brand-primary;
 @il-logo-color2: @brand-primary;
 
+
+
+
+
+//== Sidebar
+@il-sidebar-padding-content: 50px;
+@il-sidebar-padding-content-sm: 20px;
+
+//== Flaps
+@il-flap-icon-font-size-lg: 30px;
+@il-flap-text-font-size-lg: @il-flap-icon-font-size-lg/1.2;
+@il-flap-hover-size-lg: @il-flap-text-font-size-lg*8;
+@il-flap-animation-speed: 0.3s;
+
+@il-sidebar-toggle-button-link-color: @link-color;
+@il-sidebar-toggle-button-bg-color: transparent;
+@il-sidebar-toggle-button-link-hover-color: white;
+@il-sidebar-toggle-button-bg-hover-color: @btn-primary-bg;
+@il-sidebar-toggle-button-height: 200px;
+@il-sidebar-toggle-button-font-size: @font-size-large;
 
 //== Explorer
 /**Changed**/
@@ -993,11 +1008,9 @@
 @clicked-shadow-color:		@dropdown-link-active-bg;
 @clicked-gradient-color-1:	@dropdown-link-active-bg;
 @clicked-gradient-color-2:	@dropdown-link-active-bg;
-
 /**Custom**/
 @il-explorer-clicked-color: @dropdown-link-active-color;
-
-  /**Original**/
+/**Original**/
 @search-result-color:		#8b0000;
 @mobile-wholerow-bg-color:	#ebebeb;
 @mobile-wholerow-shadow:	#666666;
@@ -1006,5 +1019,3 @@
 @responsive:				true;
 @image-path:				"@{il-background-images-path}services/explorer/";
 @base-height:				@input-height-base;
-
-

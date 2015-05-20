@@ -1,159 +1,92 @@
 <div>
   <div ng-if="position=='left'">
-      <div class="il-column-sortable"  ng-if="!$parent.$parent.isLeftSidebarOpen()">
-          <div>
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <div class="glyphicon glyphicon-search" aria-hidden="true"></div><div class="il-sidebar-preview-button-text">Search</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
+      <button type="button"
+              ng-click="onToggleSidebar();"
+              class="btn btn-default il-sidebar-toggle-button il-sidebar-toggle-button-left">
+          <span class="glyphicon glyphicon-chevron-{{glyphiconStatus}}  " aria-hidden="true"></span>
+      </button>
 
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-list" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Navigation</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-          <div class="il-panel-sortable">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button il-panel-sortable">
-                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><div class="il-sidebar-preview-button-text">Help</div>
-              </button>
-          </div>
-      </div>
-      <span ng-if="$parent.$parent.isLeftSidebarOpen()">
-            Content
-      </span>
+      <div class="il-column-sortable panel-group il-sidebar-block-group" id="il-left-sidebar-blocks-accordion" role="tablist" aria-multiselectable="true">
+              <block
+                      id="search"
+                      icon="search"
+                      title="Search"
+                      open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                      is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                      ng-click="onBlockClicked()"
+                      >
+                      Search Content
+              </block>
+              <block
+                      icon="list"
+                      id="navigation"
+                      title="Navigation"
+                      open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                      is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                      ng-click="onBlockClicked()"
+                      >
+                      <explorer></explorer>
+              </block>
+              <block
+                      icon="question-sign"
+                      id="help"
+                      title="Help"
+                      open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                      is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                      ng-click="onBlockClicked()"
+                      >
+                      Help Content
+              </block>
+        </div>
   </div>
-  <div ng-if="position=='right'">
-      <div class="il-column-sortable"  ng-if="!$parent.$parent.isRightSidebarOpen()">
-          <div class="clearfix">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button">
-                  <div class="glyphicon glyphicon-bullhorn" aria-hidden="true"></div><div class="il-sidebar-preview-button-text il-panel-sortable ">Messages</div>
-              </button>
-          </div>
-          <div class="clearfix">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button">
-                  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span><div class="il-sidebar-preview-button-text il-panel-sortable ">Comments</div>
-              </button>
-          </div>
-          <div class="clearfix">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button">
-                  <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span><div class="il-sidebar-preview-button-text il-panel-sortable ">Notes</div>
-              </button>
-          </div>
-          <div class="clearfix">
-              <button type="button" class="btn btn-default btn-lg il-sidebar-preview-button">
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><div class="il-sidebar-preview-button-text il-panel-sortable ">Calendar</div>
-              </button>
-          </div>
-      </div>
-  </div>
+    <div ng-if="position=='right'">
+        <button type="button"
+                ng-click="onToggleSidebar();"
+                class="btn btn-default il-sidebar-toggle-button il-sidebar-toggle-button-right">
+            <span class="glyphicon glyphicon-chevron-{{glyphiconStatus}}  " aria-hidden="true"></span>
+        </button>
+        <div class="il-column-sortable panel-group il-sidebar-block-group" id="il-right-sidebar-blocks-accordion" role="tablist" aria-multiselectable="true">
+            <block
+                    id="messages"
+                    icon="bullhorn"
+                    title="Messages"
+                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                    ng-click="onBlockClicked()"
+                    >
+                Messages Content
+            </block>
+            <block
+                    icon="comment"
+                    id="comments"
+                    title="Comment"
+                    open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                    ng-click="onBlockClicked()"
+                    >
+                Comments Content
+            </block>
+            <block
+                    icon="pushpin"
+                    id="notes"
+                    title="Notes"
+                    open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                    ng-click="onBlockClicked()"
+                    >
+                Notes Content
+            </block>
+            <block
+                    icon="calendar"
+                    id="calendar"
+                    title="Calendar"
+                    open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                    ng-click="onBlockClicked()"
+                    >
+                Calendar Content
+            </block>
+        </div>
+    </div>
 </div>
+
+
