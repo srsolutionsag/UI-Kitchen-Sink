@@ -13,7 +13,7 @@
                       title="Search"
                       open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
                       is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                      ng-click="onBlockClicked()"
+                      on-block-clicked-fn="onBlockClicked()"
                       >
                   <search ng-controller="SearchController"
                           categories="searchCategories"

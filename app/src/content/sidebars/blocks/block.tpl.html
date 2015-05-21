@@ -1,7 +1,7 @@
 <div class="clearfix">
     <div id="{{collapseId}}" class="panel panel-default il-sidebar-block">
-        <div class="panel-heading il-sidebar-block-heading" role="tab" id="heading-sidebar-block-{{id}}">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{collapseContentId}}" aria-expanded="false" aria-controls="{{collapseContentId}}">
+        <div class="panel-heading il-sidebar-block-heading" role="tab" id="heading-sidebar-block-{{id}}" ng-click="onClick($event)">
+            <a class="collapsed clearfix" data-toggle="collapse" data-parent="#accordion" href="#{{collapseContentId}}" aria-expanded="false" aria-controls="{{collapseContentId}}">
                 <div class="glyphicon glyphicon-{{icon}}" aria-hidden="true"></div><div class="il-sidebar-block-heading-text">{{title}}</div>
             </a>
             <div class="clearfix"></div>

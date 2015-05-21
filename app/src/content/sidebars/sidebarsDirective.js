@@ -23,7 +23,7 @@ module.directive('sidebars', function ($timeout) {
                 scope.toggleGlyphiconStatus();
             }
 
-            scope.onBlockClicked = function($event){
+            scope.onBlockClicked = function(){
                 if(!scope.isSidebarOpenFn()){
                     scope.onToggleSidebar();
                 }

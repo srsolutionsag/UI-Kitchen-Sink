@@ -7714,64 +7714,6 @@ body {
 .jstree-wholerow-ul .jstree-clicked {
   color: #ffffff;
 }
-/**
-.il-sidebar-preview-button{
-  position: relative;
-  font-size: @il-flap-icon-font-size-lg;
-  width: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
-
-  margin-bottom: @grid-gutter-width/2;
-  overflow: hidden;
-
-  transition: width @il-flap-animation-speed;
-
-  &:hover, .active {
-    width: @il-flap-hover-size-lg;
-    transition: width @il-flap-animation-speed;
-  }
-
-  .glyphicon{
-    font-size: @il-flap-icon-font-size-lg;
-  }
-
-  .il-sidebar-preview-button-text{
-    position: absolute;
-    font-size: @il-flap-text-font-size-lg;
-  }
-}
-.il-flap-active {
-  width: @il-flap-hover-size-lg;
-  transition: width @il-flap-animation-speed;
-}
-.il-sidebar-left .il-sidebar-preview-button{
-  float: left;
-  margin-left: -@grid-gutter-width/2;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-
-  .glyphicon{
-    float: left;
-  }
-  .il-sidebar-preview-button-text{
-    left: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
-
-  }
-}
-
-.il-sidebar-right .il-sidebar-preview-button{
-  float: right;
-  margin-right: -@grid-gutter-width/2;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-
-  .glyphicon{
-    float: right;
-  }
-
-  .il-sidebar-preview-button-text{
-    right: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
-  }
-}**/
 .il-sidebar {
   position: absolute;
   top: 64px;
@@ -7815,6 +7757,10 @@ body {
   overflow: scroll;
   margin-bottom: 15px;
 }
+.il-sidebar .il-sidebar-block-group .il-sidebar-block .il-sidebar-block-heading a {
+  width: 100%;
+  clear: both;
+}
 .il-sidebar .il-sidebar-block-group .il-sidebar-block .il-sidebar-block-heading .glyphicon {
   font-size: 30px;
 }
@@ -7827,7 +7773,6 @@ body {
   font-size: 30px;
   width: 62px;
   overflow: hidden;
-  transition: width 0.3s;
 }
 .il-sidebar.il-sidebar-minified .il-sidebar-block-group .il-sidebar-block:hover,
 .il-sidebar.il-sidebar-minified .il-sidebar-block-group .il-sidebar-block .active {
