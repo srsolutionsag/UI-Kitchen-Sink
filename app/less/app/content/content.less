@@ -1,0 +1,16 @@
+.il-content{
+  .make-row();
+  &:extend(.container-fluid);
+  .ilCalcHeaderHeight(small);
+  @il-content-height-substraction: @il-header-height  +  @il-footer-height;
+  min-height: calc(~"100%" -  @il-content-height-substraction);
+  height: auto;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  border-bottom-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background: @il-sidebar-bg-color;
+  overflow: auto;
+}

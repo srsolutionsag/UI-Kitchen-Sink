@@ -32,6 +32,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
         this.categoryIndexSelected = categoryIndex;
         this.subCategoryIndexSelected = subCategoryIndex;
         this.tabIndexSelected = tabIndex;
+        console.log(categoryIndex,subCategoryIndex,tabIndex);
         $rootScope.$broadcast('changeSelection', categoryIndex,subCategoryIndex,tabIndex);
     };
 

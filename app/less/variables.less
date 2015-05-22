@@ -1,7 +1,8 @@
 //
 // Variables
 // --------------------------------------------------
-
+//ILIAS Padding
+@il-content-padding: 15px;
 
 //== Colors
 //
@@ -886,11 +887,21 @@
 * please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
 */
 
+
 //==Base ILIAS
 @il-background-images-path: "/app/static/img/";
+@il-page-bg: @navbar-inverse-bg;
 
+//Header
+@il-header-custom-branding-height: 0px;
+@il-header-custom-branding-bg: @brand-primary;
 
+//Content
+@il-content-padding-top: @il-content-padding;
+@il-content-padding-bottom: @il-content-padding;
 
+@il-content-min-height: 600px;
+@il-content-bg: white;
 
 //== Iconography
 @icon-font-path:            "/libs/bootstrap/dist/fonts/";
@@ -925,18 +936,26 @@
 @navbar-inverse-toggle-icon-bar-bg:         #fff;
 @navbar-inverse-toggle-border-color:        #333;
 
+//== ILIAS content grid
+@il-sidebar-closed-xs: 0;
+@il-sidebar-closed-sm: 1;
+@il-sidebar-closed-md: 1;
+@il-sidebar-closed-lg: 2;
 
-//== ILIAS min height
-@il-content-min-height: 600px;
+@il-sidebar-open-xs: 6;
+@il-sidebar-open-sm: 3;
+@il-sidebar-open-md: 3;
+@il-sidebar-open-lg: 3;
+
+
+
 @il-main-menu-background-color:	#444;//lighten(@brand-primary, 10%);
 
-@il-page-padding: @padding-large-horizontal;
-@il-page-padding-left: @il-page-padding;
-@il-page-padding-right: @il-page-padding;
-
 //== ILIAS Sidebar
-@il-sidebar-padding-bottom: 100px;
+@il-sidebar-padding-bottom: 15px;
 @il-sidebar-bg-color: lighten(@brand-primary, 20%);
+@il-sidebar-padding-content: 50px;
+@il-sidebar-padding-content-sm: 20px;
 
 //== ILIAS Block
 @il-panel-sortable-placeholder-panel-bg: transparent;
@@ -979,12 +998,9 @@
 
 
 
-//== Sidebar
-@il-sidebar-padding-content: 50px;
-@il-sidebar-padding-content-sm: 20px;
-
 //== Flaps
 @il-flap-icon-font-size-lg: 30px;
+@il-flap-minified-width: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
 @il-flap-text-font-size-lg: @il-flap-icon-font-size-lg/1.2;
 @il-flap-hover-size-lg: @il-flap-text-font-size-lg*8;
 @il-flap-animation-speed: 0.3s;
@@ -993,7 +1009,8 @@
 @il-sidebar-toggle-button-bg-color: transparent;
 @il-sidebar-toggle-button-link-hover-color: white;
 @il-sidebar-toggle-button-bg-hover-color: @btn-primary-bg;
-@il-sidebar-toggle-button-height: 200px;
+@il-sidebar-toggle-button-height: 75px;
+@il-sidebar-toggle-button-width: @il-sidebar-toggle-button-height/2;
 @il-sidebar-toggle-button-font-size: @font-size-large;
 
 //== Explorer

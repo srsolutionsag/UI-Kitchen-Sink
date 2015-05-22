@@ -1,0 +1,46 @@
+//Buttons to toggle sidebars in and aout
+.il-sidebar-toggle-button{
+  &:extend(.btn all);
+  &:extend(.btn-primary all);
+
+  position: absolute;
+  width: @il-sidebar-toggle-button-width;
+  height: @il-sidebar-toggle-button-height;
+  border-radius: 0;
+}
+.il-sidebar-left{
+  .il-sidebar-toggle-button{
+    left: 0;
+  }
+}
+.il-sidebar-right{
+  .il-sidebar-toggle-button{
+    right: 0;
+  }
+}
+
+.il-sidebar-open{
+  &.il-sidebar-left{
+    .il-sidebar-toggle-button{
+      left: auto;
+      right: -@il-sidebar-toggle-button-width;
+    }
+  }
+
+  &.il-sidebar-right{
+    .il-sidebar-toggle-button{
+      left: -@il-sidebar-toggle-button-width;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .il-sidebar-toggle-button{
+    display: none;
+  }
+  .il-sidebar:hover{
+    .il-sidebar-toggle-button{
+      display: inherit;
+    }
+  }
+}

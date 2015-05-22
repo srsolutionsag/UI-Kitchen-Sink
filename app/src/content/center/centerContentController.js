@@ -1,5 +1,6 @@
 angular.module('uiKitchenSink').controller('CenterContentController', function($scope, Entries) {
     $scope.$on('changeSelection', function (d,categoryIndex,subCategoryIndex,tabIndex) {
+        console.log(categoryIndex,subCategoryIndex,tabIndex);
         $scope.setContent(categoryIndex,subCategoryIndex,tabIndex);
     });
 
@@ -15,7 +16,5 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
         $scope.tabSelected.path = 'app/data/'+$scope.categorySelected.id+'/'+$scope.subCategorySelected.id+'/'+$scope.tabSelected.id;
     };
 
-    Entries.promisedData().then(function(){
-        $scope.doRouting();
-    });
+    $scope.setContent(Entries.categoryIndexSelected,Entries.subCategoryIndexSelected,Entries.tabIndexSelected);
 });

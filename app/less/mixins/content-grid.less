@@ -1,0 +1,63 @@
+.il-make-columns-sidebar-minified(){
+  .make-xs-column(@il-sidebar-closed-xs);
+  .make-sm-column(@il-sidebar-closed-sm);
+  .make-md-column(@il-sidebar-closed-md);
+  .make-lg-column(@il-sidebar-closed-lg);
+}
+
+.il-make-columns-sidebar-open(){
+  .make-xs-column(@il-sidebar-open-xs);
+  .make-sm-column(@il-sidebar-open-sm);
+  .make-md-column(@il-sidebar-open-md);
+  .make-lg-column(@il-sidebar-open-lg);
+}
+
+.il-make-columns-center-content-full(){
+  .make-xs-column(@grid-columns - 2 * @il-sidebar-closed-xs);
+  .make-sm-column(@grid-columns - 2 * @il-sidebar-closed-sm);
+  .make-md-column(@grid-columns - 2 * @il-sidebar-closed-md);
+  .make-lg-column(@grid-columns - 2 * @il-sidebar-closed-lg);
+}
+
+.il-make-columns-center-content-left(){
+  .make-xs-column(@grid-columns - @il-sidebar-open-xs - @il-sidebar-closed-xs);
+  .make-sm-column(@grid-columns - @il-sidebar-open-sm - @il-sidebar-closed-sm);
+  .make-md-column(@grid-columns - @il-sidebar-open-md - @il-sidebar-closed-md);
+  .make-lg-column(@grid-columns - @il-sidebar-open-lg - @il-sidebar-closed-lg);
+}
+
+.il-make-columns-center-content-right(){
+  .il-make-columns-center-content-left();
+}
+
+.il-make-columns-center-content-three(){
+  .make-xs-column(@grid-columns - 2 * @il-sidebar-open-xs);
+  .make-sm-column(@grid-columns - 2 * @il-sidebar-open-sm);
+  .make-md-column(@grid-columns - 2 * @il-sidebar-open-md);
+  .make-lg-column(@grid-columns - 2 * @il-sidebar-open-lg);
+}
+
+.il-sidebar-minified{
+  .il-make-columns-sidebar-minified();
+}
+
+.il-sidebar-open{
+  .il-make-columns-sidebar-open();
+}
+
+.il-make-fixed-block-open-width(){
+  width: percentage((@il-sidebar-open-xs / @grid-columns));
+
+  @media (min-width: @screen-sm-min) {
+    width: percentage((@il-sidebar-open-xs / @grid-columns));
+  }
+  @media (min-width: @screen-sm-min) {
+    width: percentage((@il-sidebar-open-sm / @grid-columns));
+  }
+  @media (min-width: @screen-sm-min) {
+    width: percentage((@il-sidebar-open-md / @grid-columns));
+  }
+  @media (min-width: @screen-sm-min) {
+    width: percentage((@il-sidebar-open-lg / @grid-columns));
+  }
+}
