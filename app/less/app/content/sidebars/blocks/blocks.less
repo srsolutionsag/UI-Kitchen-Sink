@@ -12,16 +12,21 @@
     //margin-bottom: @grid-gutter-width/2;
     border-radius: 0;
     border: none;
+    background-color: @il-sidebar-body-bg-color;
+
     .il-sidebar-block-heading{
-      background: darken(@il-header-custom-branding-bg,10%);
+      background:  @il-sidebar-bg-color;
       border-radius: 0;
+      &:hover{
+        background-color: @il-sidebar-hover-bg-color;
+      }
       a{
-        color: @navbar-inverse-color;
+        color: @il-sidebar-heading-link-color;
         width: 100%;
         clear:both;
       }
       a:hover{
-        color: lighten(@navbar-inverse-brand-hover-color,10%);
+        color: @il-sidebar-heading-link-hover-color;
       }
       .glyphicon{
         font-size: @il-flap-icon-font-size-lg;

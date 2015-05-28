@@ -22,7 +22,7 @@
 .il-sidebar-open{
   .il-sidebar-blocks-wrapper{
     .il-make-fixed-block-open-width();
-    background: darken(@il-header-custom-branding-bg,10%);
+    background: @il-sidebar-bg-color;
   }
   .il-sidebar-left{
     .il-sidebar-blocks-wrapper{
@@ -39,7 +39,7 @@
 
 @media (min-width: @screen-sm-min) {
   .il-sidebar-blocks-wrapper{
-    border:  0 solid darken(@il-header-custom-branding-bg,10%);
+    border:  0 solid @il-sidebar-bg-color;
   }
 
   .il-sidebar-left{
