@@ -1,31 +1,53 @@
 angular.module('uiKitchenSink').controller('ContentController', function($scope,  $routeParams, Entries, $timeout) {
-    $scope.onAreaSelected = function (event,id) {
-        console.log(event,id);
-        $scope.onViewChange("left");
+    $scope.contentClasses = {};
 
-        $timeout(function() {
-            if(!$( ".il-column-sortable" ).sortable( "instance" )){
+    $scope.contentClasses.full = {
+        id:     "full",
+        left:   "il-sidebar il-sidebar-left il-sidebar-minified",
+        center: "il-content-center il-content-center-full",
+        right:  "il-sidebar il-sidebar-right il-sidebar-minified"
+    };
+    $scope.contentClasses.three = {
+        id:     "three",
+        left:   "il-sidebar il-sidebar-left il-sidebar-open",
+        center: "il-content-center il-content-center-three",
+        right:  "il-sidebar il-sidebar-right il-sidebar-open"
+    };
+    $scope.contentClasses.left = {
+        id:     "left",
+        left:   "il-sidebar il-sidebar-left il-sidebar-open",
+        center: "il-content-center il-content-center-left",
+        right:  "il-sidebar il-sidebar-right il-sidebar-minified"
+    };
+    $scope.contentClasses.right = {
+        id:     "right",
+        left:    "il-sidebar il-sidebar-left il-sidebar-minified",
+        center:  "il-content-center il-content-center-right",
+        right:   "il-sidebar il-sidebar-right il-sidebar-open"
+    };
 
-                $(function() {
-                    $( ".il-column-sortable" ).sortable({
-                        connectWith: ".il-column-sortable",
-                        handle: ".il-panel-sortable",
-                        cancel: ".il-panel-sortable-toggle",
-                        placeholder: "il-panel-sortable-placeholder",
-                        appendTo: ".container-fluid",
-                        helper: "clone"
-                    });
-                });
-            }
-            console.log( $( ".il-column-sortable" ).sortable( "instance" ));
-            $( ".il-column-sortable" ).sortable( "enable" );
+    $scope.contentClasses.current = $scope.contentClasses.full;
 
-        },10);
+    $scope.onViewChange = function(type){
+        switch(type){
+            case "full":
+                $scope.contentClasses.current = $scope.contentClasses.full;
+                break;
+            case "left":
+                $scope.contentClasses.current = $scope.contentClasses.left;
+                break;
+            case "right":
+                $scope.contentClasses.current = $scope.contentClasses.right;
+                break;
+            case "three":
+                $scope.contentClasses.current = $scope.contentClasses.three;
+                break;
+
+        }
+
     };
 
     $scope.openCurrentSidebar = function(position){
-        console.log(position);
-        console.log();
         if(position=='left'){
             return $scope.openLeftSidebar();
         }else{
@@ -101,6 +123,9 @@ angular.module('uiKitchenSink').controller('ContentController', function($scope,
         }
     };
 
+    Entries.promisedData().then(function(){
+        $scope.doRouting();
+    });
 });
 
 

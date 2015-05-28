@@ -1,4 +1,4 @@
-module.directive('sidebars', function ($timeout) {
+module.directive('sidebars', function ($timeout, $window) {
     return {
         restrict: 'AEC',
         scope: {
@@ -7,8 +7,11 @@ module.directive('sidebars', function ($timeout) {
             isSidebarOpenFn: '&'
         },
         templateUrl: 'app/src/content/sidebars/sidebars.tpl.html',
-        replace: true,
+        replace: false,
+
         link: function(scope, element){
+
+
             scope.glyphiconStatus = scope.position;
 
             scope.toggleGlyphiconStatus = function(){
@@ -23,7 +26,7 @@ module.directive('sidebars', function ($timeout) {
                 scope.toggleGlyphiconStatus();
             }
 
-            scope.onBlockClicked = function($event){
+            scope.onBlockClicked = function(){
                 if(!scope.isSidebarOpenFn()){
                     scope.onToggleSidebar();
                 }

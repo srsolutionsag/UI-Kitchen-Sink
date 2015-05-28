@@ -1,18 +1,9 @@
 angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider
-		.when('/home', {
-			templateUrl: 'app/src/content/home.html',
-            controller: 'HeaderController',
-            resolve: {
-                initializeData: function($q, $timeout, Entries) {
-                    return Entries.promisedData();
-                }
-            }
-		})
         .when('/content/:categoryIndex?/:subCategoryIndex?/:itemGroupIndex?', {
-            templateUrl: 'app/src/content/center/centerContent.tpl.html',
-            controller: 'CenterContentController',
+            templateUrl: 'app/src/content/content.tpl.html',
+            controller: 'ContentController',
             resolve: {
                 initializeData: function($q, $timeout, Entries) {
                     return Entries.promisedData();
@@ -21,6 +12,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
         })
         .otherwise({
-            redirectTo: '/home'
+            redirectTo: '/content/0/0/0'
         });
 }]);

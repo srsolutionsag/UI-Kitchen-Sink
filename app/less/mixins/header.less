@@ -1,4 +1,6 @@
-.ilCalcHeaderHeight() {
-  @il-header-height-large: 2 * @navbar-height + @navbar-margin-bottom;
-  @il-header-height-small: @navbar-height + @navbar-margin-bottom;
+.ilCalcHeaderHeight(@size: small) when (@size = small) {
+  @il-header-height: @navbar-height + @il-header-custom-branding-height;
+}
+.ilCalcHeaderHeight(@size: small) when (@size = large) {
+  @il-header-height: 2 * @navbar-height + @navbar-margin-bottom + @il-header-custom-branding-height;
 }

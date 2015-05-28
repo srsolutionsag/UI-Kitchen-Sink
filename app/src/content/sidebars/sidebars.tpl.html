@@ -1,92 +1,166 @@
-<div>
-  <div ng-if="position=='left'">
-      <button type="button"
-              ng-click="onToggleSidebar();"
-              class="btn btn-default il-sidebar-toggle-button il-sidebar-toggle-button-left">
-          <span class="glyphicon glyphicon-chevron-{{glyphiconStatus}}  " aria-hidden="true"></span>
-      </button>
 
-      <div class="il-column-sortable panel-group il-sidebar-block-group" id="il-left-sidebar-blocks-accordion" role="tablist" aria-multiselectable="true">
-              <block
-                      id="search"
-                      icon="search"
-                      title="Search"
-                      open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
-                      is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                      ng-click="onBlockClicked()"
-                      >
-                      Search Content
-              </block>
-              <block
-                      icon="list"
-                      id="navigation"
-                      title="Navigation"
-                      open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
-                      is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                      ng-click="onBlockClicked()"
-                      >
-                      <explorer></explorer>
-              </block>
-              <block
-                      icon="question-sign"
-                      id="help"
-                      title="Help"
-                      open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
-                      is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                      ng-click="onBlockClicked()"
-                      >
-                      Help Content
-              </block>
-        </div>
-  </div>
-    <div ng-if="position=='right'">
-        <button type="button"
-                ng-click="onToggleSidebar();"
-                class="btn btn-default il-sidebar-toggle-button il-sidebar-toggle-button-right">
-            <span class="glyphicon glyphicon-chevron-{{glyphiconStatus}}  " aria-hidden="true"></span>
-        </button>
-        <div class="il-column-sortable panel-group il-sidebar-block-group" id="il-right-sidebar-blocks-accordion" role="tablist" aria-multiselectable="true">
-            <block
-                    id="messages"
-                    icon="bullhorn"
-                    title="Messages"
-                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                    ng-click="onBlockClicked()"
+<div class="il-sidebar-blocks-wrapper" ng-if="position=='left'">
+    <button type="button"
+            ng-click="onToggleSidebar();"
+            class="il-sidebar-toggle-button">
+        <span class="glyphicon glyphicon-chevron-{{glyphiconStatus}}  " aria-hidden="true"></span>
+    </button>
+    <div class="il-column-sortable panel-group il-sidebar-block-group" id="il-left-sidebar-blocks-accordion" role="tablist" aria-multiselectable="true" ng-style="style()">
+        <block
+                id="search"
+                icon="search"
+                title="Search"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                on-block-clicked-fn="onBlockClicked()"
+                >
+            <search ng-controller="SearchController"
+                    categories="searchCategories"
+                    on-search="onSearch()"
+                    selected-element="searchCategories.selectedElement"
                     >
-                Messages Content
-            </block>
-            <block
-                    icon="comment"
-                    id="comments"
-                    title="Comment"
-                    open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
-                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                    ng-click="onBlockClicked()"
-                    >
-                Comments Content
-            </block>
-            <block
-                    icon="pushpin"
-                    id="notes"
-                    title="Notes"
-                    open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
-                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                    ng-click="onBlockClicked()"
-                    >
-                Notes Content
-            </block>
-            <block
-                    icon="calendar"
-                    id="calendar"
-                    title="Calendar"
-                    open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
-                    is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
-                    ng-click="onBlockClicked()"
-                    >
-                Calendar Content
-            </block>
-        </div>
+            </search>
+        </block>
+        <block
+                icon="list"
+                id="navigation"
+                title="Navigation"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            <explorer></explorer>
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
+        <block
+                icon="question-sign"
+                id="help"
+                title="Help"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Help Content
+        </block>
     </div>
 </div>
+<div class="il-sidebar-blocks-wrapper" ng-if="position=='right'">
+    <button type="button"
+            ng-click="onToggleSidebar();"
+            class="il-sidebar-toggle-button">
+        <span class="glyphicon glyphicon-chevron-{{glyphiconStatus}}  " aria-hidden="true"></span>
+    </button>
+    <div class="il-column-sortable panel-group il-sidebar-block-group" id="il-right-sidebar-blocks-accordion" role="tablist" aria-multiselectable="true" ng-style="style()">
+        <block
+                id="messages"
+                icon="bullhorn"
+                title="Messages"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Messages Content
+        </block>
+        <block
+                icon="comment"
+                id="comments"
+                title="Comment"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Comments Content
+        </block>
+        <block
+                icon="pushpin"
+                id="notes"
+                title="Notes"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Notes Content
+        </block>
+        <block
+                icon="calendar"
+                id="calendar"
+                title="Calendar"
+                open-sidebar-fn = "$parent.$parent.openCurrentSidebar(position)"
+                is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
+                ng-click="onBlockClicked()"
+                >
+            Calendar Content
+        </block>
+    </div>
+</div>
+
 
 

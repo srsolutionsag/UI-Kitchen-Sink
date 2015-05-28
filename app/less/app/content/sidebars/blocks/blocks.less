@@ -1,0 +1,138 @@
+//Blocks inside the wrapper
+.il-sidebar-block-group{
+  position: absolute;
+
+  height: 100%;
+  padding-bottom: @il-footer-height;
+  overflow-y: scroll;
+
+  .il-sidebar-block{
+    position: relative;
+    overflow: scroll;
+    //margin-bottom: @grid-gutter-width/2;
+    border-radius: 0;
+    border: none;
+    .il-sidebar-block-heading{
+      background: darken(@il-header-custom-branding-bg,10%);
+      border-radius: 0;
+      a{
+        color: @navbar-inverse-color;
+        width: 100%;
+        clear:both;
+      }
+      a:hover{
+        color: lighten(@navbar-inverse-brand-hover-color,10%);
+      }
+      .glyphicon{
+        font-size: @il-flap-icon-font-size-lg;
+      }
+      .il-sidebar-block-heading-text{
+        position: absolute;
+        font-size: @il-flap-text-font-size-lg;
+      }
+    }
+
+  }
+}
+.il-sidebar-minified{
+  .il-sidebar-block-group{
+    display: none;
+  }
+}
+
+.il-sidebar-open{
+  .il-sidebar-block-group{
+    right: 0;
+    left: 0;
+  }
+}
+
+
+.il-sidebar-minified{
+  .il-sidebar-block-group{
+    .il-sidebar-block{
+      z-index: 1;
+      font-size: @il-flap-icon-font-size-lg;
+      width: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
+      overflow: hidden;
+
+      &:hover, .active {
+        width: @il-flap-hover-size-lg;
+        transition: width @il-flap-animation-speed;
+      }
+    }
+  }
+}
+.il-sidebar-left{
+  .il-sidebar-block-group{
+    left: 0;
+    .il-sidebar-block{
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      .il-sidebar-block-heading{
+        .glyphicon{
+          float: left;
+        }
+        .il-sidebar-block-heading-text{
+          left: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
+        }
+      }
+    }
+  }
+}
+&.il-sidebar-right{
+  .il-sidebar-block-group{
+    right: 0;
+    .il-sidebar-block{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      .il-sidebar-block-heading{
+        .glyphicon{
+          float: right;
+        }
+        .il-sidebar-block-heading-text{
+          right: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
+        }
+      }
+    }
+  }
+}
+&.il-sidebar-minified.il-sidebar-right{
+  .il-sidebar-block-group{
+    .il-sidebar-block{
+      float: right;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .il-sidebar-minified{
+    .il-sidebar-block-group{
+      display: inherit;
+    }
+  }
+
+  .il-sidebar-left{
+    .il-sidebar-block-group{
+      margin-left: -@il-flap-minified-width;
+    }
+  }
+
+  .il-sidebar-right{
+    .il-sidebar-block-group{
+      margin-right: -@il-flap-minified-width;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

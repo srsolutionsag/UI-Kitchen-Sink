@@ -1,26 +1,35 @@
-<!-- TopBar ================================================== -->
-<top-bar>
-    <search ng-controller="SearchController"
-            categories="searchCategories"
-            on-search="onSearch()"
-            selected-element="searchCategories.selectedElement"
-            >
-    </search>
-</top-bar>
-
-<!-- Dropdown Section ================================================== -->
-<top-nav-content>
-    <top-nav-categories ng-repeat="(categoryIndex,category) in categories"
-                        title="{{category.title}}"
-                        is-active="{{categorySelected.index == categoryIndex}}"
-            >
-        <top-nav-entry ng-repeat="(entryIndex,entry) in category.subCategories"
-                       title="{{entry.title}}"
-                       index="{{entryIndex}}"
-                       category-index="{{categoryIndex}}"
-                       is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
-                       on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
-        </top-nav-entry>
-    </top-nav-categories>
-</top-nav-content>
-
+<div class="il-header">
+    <!-- TopBar ================================================== -->
+    <div class="il-header-fixed">
+        <top-bar>
+            <top-nav-categories ng-repeat="(categoryIndex,category) in categories"
+                                title="{{category.title}}"
+                                is-active="{{categorySelected.index == categoryIndex}}"
+                    >
+                <top-nav-entry ng-repeat="(entryIndex,entry) in category.subCategories"
+                               title="{{entry.title}}"
+                               index="{{entryIndex}}"
+                               category-index="{{categoryIndex}}"
+                               is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
+                               on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
+                </top-nav-entry>
+            </top-nav-categories>
+        </top-bar>
+    </div>
+    <!-- Dropdown Section ==================================================
+    <top-nav-content>
+        <top-nav-categories ng-repeat="(categoryIndex,category) in categories"
+                            title="{{category.title}}"
+                            is-active="{{categorySelected.index == categoryIndex}}"
+                >
+            <top-nav-entry ng-repeat="(entryIndex,entry) in category.subCategories"
+                           title="{{entry.title}}"
+                           index="{{entryIndex}}"
+                           category-index="{{categoryIndex}}"
+                           is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
+                           on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
+            </top-nav-entry>
+        </top-nav-categories>
+    </top-nav-content>-->
+    <div class="il-header-custom-branding"></div>
+</div>
