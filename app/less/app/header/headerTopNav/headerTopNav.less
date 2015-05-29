@@ -1,0 +1,94 @@
+.il-header-top-nav{
+  position: absolute;
+
+  top: @il-header-top-nav-top;
+  bottom: auto;
+  left: @il-header-top-nav-left;
+  right: @il-header-top-nav-right;
+
+  height: @il-header-top-nav-height;
+  float: right;
+  padding: auto;
+  margin-right: 14px;
+  list-style: none outside none;
+
+  .badge {
+    font-size: 9px;
+    padding: 2px 4px;
+    margin-top: -3px;
+    margin-left: -5px;
+    position: absolute;
+  }
+  .ilBadgeSpacer {
+    font-size: 8px;
+    padding: 0;
+    visibility: hidden;
+  }
+  .dropdown-menu {
+    background-color: lighten(@il-header-bg, 42%);
+    border-radius: 0;
+    margin: 0;
+    color: lighten(@il-header-bg, 70%);
+    a {
+      color: lighten(@il-header-bg, 70%);
+      &:hover,
+      &:active,
+      &:focus {
+        color: lighten(@il-header-bg, 42%);
+      }
+    }
+  }
+  > li {
+    float: left;
+    display: block;
+    position: relative;
+  }
+  > li > a {
+    margin-right: 1px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    min-width: 40px;
+    text-align: center;
+    background-color: lighten(@il-header-bg, 20%);
+    color: lighten(@il-header-bg, 70%);
+    &:hover,
+    &:active,
+    &:focus {
+      outline: 0;
+      color: white;
+      text-decoration: none;
+      background-color: lighten(@il-header-bg, 42%);
+    }
+  }
+  > .active > a,
+  > .open > a {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      outline: 0;
+      color: white;
+      text-decoration: none;
+      background-color: lighten(@il-header-bg, 42%);
+    }
+  }
+  #userlog {
+    > a {
+      padding: 0 10px 0 0;
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 0px;
+        padding: 5px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 100%;
+      > li > a {
+        padding-left: 50px;
+      }
+    }
+  }
+
+}

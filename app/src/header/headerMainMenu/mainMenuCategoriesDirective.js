@@ -1,17 +1,20 @@
-module.directive('topNavEntry', function () {
+module.directive('mainMenuCategories', function () {
     return {
         restrict: 'AEC',
         scope: {
-            title: '@',
-            index:'@',
-            categoryIndex:'@',
-            isActive:'@',
-            onDropdownEntrySelected:"&"
+            title : '@',
+            isActive:'@'
         },
-        templateUrl: 'app/src/header/topNav/topNavEntry.tpl.html',
+        transclude: true,
+        templateUrl: 'app/src/header/headerMainMenu/mainMenuCategories.tpl.html',
         replace: true,
+
         link: function(scope, element){
             scope.$watch("isActive",function(newValue,oldValue) {
+                scope.brandClass = "";
+                if(scope.title=='Information'){
+                    scope.brandClass="navbar-brand";
+                }
                 if(scope.isActive == "true"){
                     scope.active = "active";
                 }else{

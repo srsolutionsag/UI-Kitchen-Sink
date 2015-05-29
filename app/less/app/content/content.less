@@ -1,9 +1,8 @@
 .il-content{
   .make-row();
   &:extend(.container-fluid);
-  .ilCalcHeaderHeight(small);
-  @il-content-height-substraction: @il-header-height  +  @il-footer-height;
-  min-height: calc(~"100%" -  @il-content-height-substraction);
+  padding-top: @il-header-height;
+  min-height: calc(~"100%" -  @il-footer-height);
   height: auto;
   padding-left: 0;
   padding-right: 0;

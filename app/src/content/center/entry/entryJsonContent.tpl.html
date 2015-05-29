@@ -1,7 +1,7 @@
 <span>
 <h2 id="contentTitle">{{entry.title}}</h2>
 <div class="panel panel-default">
-    <div id="{{index}}HtmlExample" class="panel-body">
+    <div id="{{index}}HtmlExample" class="uiks-iframe-container panel-body">
         <div ng-include="path"></div>
     </div>
 </div>
@@ -16,9 +16,7 @@
         </div>
         <div id="collapseZero{{index}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero">
             <div class="panel-body">
-                <code>
                     <pre>{{htmlCode}}</pre>
-                </code>
             </div>
         </div>
     </div>

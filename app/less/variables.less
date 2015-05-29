@@ -862,55 +862,12 @@
 @hr-border:                   @gray-lighter;
 
 
-//== Colors
-
-/*		Color scheme
-		Dark BLue: #0f2152;
-		Mid Blue: #4c6586;
-		Green: #6ea03c;
-		Light Brown: #dcb496;
-		Dark Brown: #523228;
-		Orange: #fa8228;
-		External Blue: #21c5d8;
-		ILIAS 4 MainMenu Color: #c8e6ff;
-*/
-
-@brand-primary:         #4c6586;
-@brand-secondary:       #6ea03c;
-@brand-success:         #6ea03c;
-@brand-info:            #dcb496;
-@brand-warning:         #fa8228;
-@brand-danger:          #fa8228;
-
-/** if left unchanged, you have to copy all the background images to your skin/images folder.
-* To use the delos background images in your skin,
-* please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
-*/
 
 
-//==Base ILIAS
-@il-background-images-path: "/app/static/img/";
-@il-page-bg: @navbar-inverse-bg;
 
-//Header
-@il-header-custom-branding-height: 0px;
-@il-header-custom-branding-bg: @brand-primary;
-
-//Content
-@il-content-padding-top: @il-content-padding;
-@il-content-padding-bottom: @il-content-padding;
-
-@il-content-min-height: 600px;
-@il-content-bg: white;
-
-//== Iconography
-@icon-font-path:            "/libs/bootstrap/dist/fonts/";
-
-//== ILIAS Main Menu
-
-// Basics of a navbar
-@navbar-height:                             44px;
-
+/********************************************************************************************/
+/*************************************** Overrides ******************************************/
+/********************************************************************************************/
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
@@ -936,47 +893,10 @@
 @navbar-inverse-toggle-icon-bar-bg:         #fff;
 @navbar-inverse-toggle-border-color:        #333;
 
-//== ILIAS content grid
-@il-sidebar-closed-xs: 0;
-@il-sidebar-closed-sm: 1;
-@il-sidebar-closed-md: 1;
-@il-sidebar-closed-lg: 2;
-
-@il-sidebar-open-xs: 6;
-@il-sidebar-open-sm: 3;
-@il-sidebar-open-md: 3;
-@il-sidebar-open-lg: 3;
-
-
-
-@il-main-menu-background-color:	#444;//lighten(@brand-primary, 10%);
-@il-content-bg-color: @gray-light;
-
-//== ILIAS Sidebar
-@il-sidebar-padding-bottom: 15px;
-@il-sidebar-bg-color:  @brand-primary;
-@il-sidebar-hover-bg-color:  darken(@brand-primary,10%);
-@il-sidebar-body-bg-color:  lighten(@brand-primary,10%);
-@il-sidebar-heading-link-color: @navbar-inverse-color;
-@il-sidebar-heading-link-hover-color: @navbar-inverse-link-hover-color;
-@il-sidebar-padding-content: 50px;
-@il-sidebar-padding-content-sm: 20px;
-
-//== ILIAS Block
-@il-panel-sortable-placeholder-panel-bg: transparent;
-@il-panel-sortable-placeholder-panel-border-radius:         @border-radius-base;
-@il-panel-sortable-placeholder-border:  3px #C0C0C0 dashed;
-@il-panel-sortable-placeholder-height: 45px;
-
-
-
-//== ILIAS Footer
-//
-@il-footer-bg: @navbar-inverse-bg;
-@il-footer-color: @navbar-inverse-color;
-@il-footer-height: 45px;
-@il-footer-padding-horizontal: @navbar-padding-horizontal;
-@il-footer-padding-vertical: @navbar-padding-vertical;
+// Basics of a navbar
+@navbar-height:                             44px;
+//== Iconography
+@icon-font-path:            "/libs/bootstrap/dist/fonts/";
 
 //== ILIAS Fonts
 @web-font-path: "/app/static/fonts/";
@@ -994,14 +914,130 @@
 @font-size-h5:            ceil((@font-size-base * 1.1));
 @font-size-h6:            @font-size-base;
 
+@brand-primary:         #4c6586;
+@brand-secondary:       #6ea03c;
+@brand-success:         #6ea03c;
+@brand-info:            #dcb496;
+@brand-warning:         #fa8228;
+@brand-danger:          #fa8228;
+
+/********************************************************************************************/
+/********************************************************************************************/
+/*************************************** ILIAS Section **************************************/
+/********************************************************************************************/
+/********************************************************************************************/
+
+//== ILIAS Main
+//==Base ILIAS
+@il-background-images-path: "/app/static/img/";
+@il-page-bg: @navbar-inverse-bg;
+
 
 //== Icons
 @il-logo-color1: @brand-primary;
 @il-logo-color2: @brand-primary;
 
+/********************************************************************************************/
+/*************************************** ILIAS Header **************************************/
+/********************************************************************************************/
+//== ILIAS Header
+@il-header-height: 100px;
+@il-header-height-sm: 100px;
+@il-header-bg: @navbar-inverse-bg;
+
+
+/*************************************** Header Main Menu **************************************/
+//== Header Main Menu
+@il-header-main-menu-height: @navbar-height;
+@il-header-main-menu-bottom: 0px;
+@il-header-main-menu-left: 0;
+@il-header-main-menu-right: 0;
+
+@il-header-main-menu-height-sm: @navbar-height;
+@il-main-menu-bottom-sm: 0px;
+@il-header-main-menu-left-sm: 0;
+@il-header-main-menu-right-sm: 0;
+
+
+@il-header-main-menu-float: left;
+
+
+@il-header-main-menu-color: @navbar-inverse-color;
+@il-header-main-menu-active-color: #fff;
+@il-header-main-menu-open-color: @navbar-inverse-color;
+
+@il-header-main-menu-bg: @navbar-inverse-bg;
+@il-header-main-menu-active-bg: darken(@navbar-inverse-bg, 10%);
+@il-header-main-menu-open-bg: darken(@navbar-inverse-bg, 10%);
+
+@il-header-main-menu-border: 1px solid darken(@il-header-main-menu-bg, 10%);
+@il-header-main-menu-border-radius: 0;//@border-radius-base;
+
+/*************************************** Header Branding **************************************/
+//== Header Branding
+@il-header-branding-height: @il-header-height - @il-header-main-menu-height;
+@il-header-branding-height-sm: 0px;
+
+@il-header-branding-bg: @il-header-bg;
+
+
+/*************************************** Header Top Nav **************************************/
+//== Top Nav
+@il-header-top-nav-height: @navbar-height;
+@il-header-top-nav-top: 0px;
+@il-header-top-nav-left: auto;
+@il-header-top-nav-right: 0;
 
 
 
+
+
+
+/********************************************************************************************/
+/*************************************** ILIAS Content **************************************/
+/********************************************************************************************/
+
+//== ILIAS content grid
+@il-sidebar-closed-xs: 0;
+@il-sidebar-closed-sm: 1;
+@il-sidebar-closed-md: 1;
+@il-sidebar-closed-lg: 3;
+
+@il-sidebar-open-xs: 6;
+@il-sidebar-open-sm: 3;
+@il-sidebar-open-md: 3;
+@il-sidebar-open-lg: 3;
+
+@il-content-bg-color: @gray-light;
+
+//Content
+@il-content-padding-top: @il-content-padding;
+@il-content-padding-bottom: @il-content-padding;
+
+@il-content-min-height: 600px;
+@il-content-bg: white;
+
+/*************************************** ILIAS Sidebars **************************************/
+
+
+
+
+
+//== ILIAS Sidebar
+@il-sidebar-padding-bottom: 15px;
+@il-sidebar-bg-color:  @brand-primary;
+@il-sidebar-hover-bg-color:  darken(@brand-primary,10%);
+@il-sidebar-body-bg-color:  lighten(@brand-primary,10%);
+@il-sidebar-heading-link-color: @navbar-inverse-color;
+@il-sidebar-heading-link-hover-color: @navbar-inverse-link-hover-color;
+@il-sidebar-padding-content: 50px;
+@il-sidebar-padding-content-sm: 20px;
+
+//== ILIAS Block
+@il-panel-sortable-placeholder-panel-bg: transparent;
+@il-panel-sortable-placeholder-panel-border-radius:         @border-radius-base;
+@il-panel-sortable-placeholder-border:  3px #C0C0C0 dashed;
+@il-panel-sortable-placeholder-height: 45px;
 
 //== Flaps
 @il-flap-icon-font-size-lg: 30px;
@@ -1041,3 +1077,11 @@
 @responsive:				true;
 @image-path:				"@{il-background-images-path}services/explorer/";
 @base-height:				@input-height-base;
+
+/*************************************** ILIAS Footer **************************************/
+//== ILIAS Footer
+@il-footer-bg: @navbar-inverse-bg;
+@il-footer-color: @navbar-inverse-color;
+@il-footer-height: 45px;
+@il-footer-padding-horizontal: @navbar-padding-horizontal;
+@il-footer-padding-vertical: @navbar-padding-vertical;
