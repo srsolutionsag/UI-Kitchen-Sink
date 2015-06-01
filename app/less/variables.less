@@ -941,23 +941,85 @@
 /*************************************** ILIAS Header **************************************/
 /********************************************************************************************/
 //== ILIAS Header
-@il-header-height: 100px;
-@il-header-height-sm: 100px;
+@il-header-height: 115px;
 @il-header-bg: @navbar-inverse-bg;
 
+@il-header-border-vertical: 0;
+@il-header-border-horizontal: 0;
+
+@il-header-border-top: @il-header-border-vertical solid transparent;//currently implemented as transparent border due to abolute positioning;
+@il-header-border-bottom: @il-header-border-vertical solid transparent;
+@il-header-border-left: @il-header-border-horizontal solid transparent;
+@il-header-border-right: @il-header-border-horizontal solid transparent;
+
+//== ILIAS Header small
+@il-header-height-sm: @navbar-height;
+
+
+/*************************************** Header Top Nav **************************************/
+//== Top Nav
+@il-header-top-nav-top: 0px;
+@il-header-top-nav-left: auto;
+@il-header-top-nav-right: @padding-base-horizontal;
+
+@il-header-top-nav-float: right;
+
+@il-header-top-nav-box-margin-right: 2px;
+@il-header-top-nav-box-min-height: 50px;
+@il-header-top-nav-box-min-width: 50px;
+@il-header-top-nav-box-font-size: 20px;
+
+@il-header-top-nav-box-color: lighten(@il-header-bg, 70%);
+@il-header-top-nav-box-hover-color: white;
+@il-header-top-nav-box-bg: lighten(@il-header-bg, 20%);
+@il-header-top-nav-box-hover-bg:lighten(@il-header-bg, 42%);
+
+//== Top Nav small
+@il-header-top-nav-top-sm: 0;
+@il-header-top-nav-left-sm: 0;
+@il-header-top-nav-right-sm: @padding-base-horizontal;
+
+@il-header-top-nav-box-margin-right-sm: 1px;
+@il-header-top-nav-box-min-height-sm: @il-header-height-sm;
+@il-header-top-nav-box-min-width-sm: @il-header-height-sm;
+@il-header-top-nav-box-font-size-sm: 15px;
+
+/*************************************** Header Branding **************************************/
+//== Header Branding
+@il-header-branding-top: @padding-large-vertical;
+@il-header-branding-left: @padding-base-horizontal;
+@il-header-branding-right: 0;
+@il-header-branding-height: auto;
+
+@il-header-branding-right: auto;
+@il-header-branding-bg: transparent;
+
+@il-header-branding-font-size: 30px;
+@il-header-branding-logo-font-size: @il-header-branding-font-size * 1.5;
+
+@il-header-branding-text-logo-padding: @padding-large-horizontal;
+
+//== Header Branding sm
+@il-header-branding-top-sm: @padding-small-vertical;
+@il-header-branding-left-sm: @padding-base-horizontal;
+@il-header-branding-right-sm: 0;
+@il-header-branding-height-sm: auto;
+
+@il-header-branding-right-sm: auto;
+
+@il-header-branding-font-size-sm: 0;
+@il-header-branding-logo-font-size-sm: 32px;
+
+@il-header-branding-text-logo-padding-sm: @padding-small-horizontal;
+@il-header-branding-text-display-sm: none;
 
 /*************************************** Header Main Menu **************************************/
 //== Header Main Menu
-@il-header-main-menu-height: @navbar-height;
-@il-header-main-menu-bottom: 0px;
+@il-header-main-border-width: 1px;
+
+@il-header-main-menu-top: @il-header-height - @navbar-height - @il-header-border-vertical - 2 * @il-header-main-border-width;
 @il-header-main-menu-left: 0;
 @il-header-main-menu-right: 0;
-
-@il-header-main-menu-height-sm: @navbar-height;
-@il-main-menu-bottom-sm: 0px;
-@il-header-main-menu-left-sm: 0;
-@il-header-main-menu-right-sm: 0;
-
 
 @il-header-main-menu-float: left;
 
@@ -970,27 +1032,19 @@
 @il-header-main-menu-active-bg: darken(@navbar-inverse-bg, 10%);
 @il-header-main-menu-open-bg: darken(@navbar-inverse-bg, 10%);
 
-@il-header-main-menu-border: 1px solid darken(@il-header-main-menu-bg, 10%);
+@il-header-main-menu-border: @il-header-main-border-width solid darken(@il-header-main-menu-bg, 10%);
 @il-header-main-menu-border-radius: 0;//@border-radius-base;
 
-/*************************************** Header Branding **************************************/
-//== Header Branding
-@il-header-branding-height: @il-header-height - @il-header-main-menu-height;
-@il-header-branding-height-sm: 0px;
+//== Header Main Menu sm
+@il-header-main-menu-border-sm: 0px;
+@il-header-main-menu-border-width-sm: 0;
 
-@il-header-branding-bg: @il-header-bg;
+@il-header-main-menu-top-sm: 0;
+@il-header-main-menu-left-sm: 50px;
+@il-header-main-menu-right-sm: auto;
 
-
-/*************************************** Header Top Nav **************************************/
-//== Top Nav
-@il-header-top-nav-height: @navbar-height;
-@il-header-top-nav-top: 0px;
-@il-header-top-nav-left: auto;
-@il-header-top-nav-right: 0;
-
-
-
-
+@il-header-main-menu-border-radius-sm: 0;//@border-radius-base;
+@il-header-main-menu-border-sm: @il-header-main-menu-border-width-sm solid darken(@il-header-main-menu-bg, 10%);
 
 
 /********************************************************************************************/

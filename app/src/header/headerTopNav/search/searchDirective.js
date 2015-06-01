@@ -7,7 +7,7 @@ module.directive('search', function ($http) {
             onSearch:'&'
         },
         replace: true,
-        templateUrl: 'app/src/header/mainHeader/search/search.tpl.html',
+        templateUrl: 'app/src/header/headerTopNav/search/search.tpl.html',
         link: function (scope, element) {
             scope.onSearchClicked = function(){
                 console.log(scope.onSearch);

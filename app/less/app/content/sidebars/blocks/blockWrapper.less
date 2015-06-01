@@ -1,6 +1,6 @@
 .il-sidebar-blocks-wrapper{
   position: fixed;
-  top: @il-header-height;
+  top: @il-header-height-sm;
   z-index: 1000;
   bottom: 0;
   width: 0;
@@ -39,6 +39,7 @@
 @media (min-width: @screen-sm-min) {
   .il-sidebar-blocks-wrapper{
     border:  0 solid @il-sidebar-bg-color;
+    top: @il-header-height;
   }
 
   .il-sidebar-left{

@@ -1,10 +1,49 @@
 .il-header-branding{
-  top: 0;
+  position: absolute;
 
-  height: @il-header-branding-height;
+  top: @il-header-branding-top-sm;
+  bottom: auto;
+  left: @il-header-branding-left-sm;
+  right: @il-header-branding-right-sm;
+
+  height: @il-header-branding-height-sm;
+
   background-color: @il-header-branding-bg;
 
   overflow: hidden;
 
   color: white;
+
+
+  .il-header-branding-text{
+    display: @il-header-branding-text-display-sm;
+    font-size: @il-header-branding-font-size-sm;
+    padding-left: @il-header-branding-text-logo-padding-sm;
+  }
+
+  .il-logo{
+    font-size: @il-header-branding-logo-font-size-sm;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    top: @il-header-branding-top;
+    left: @il-header-branding-left;
+    right: @il-header-branding-right;
+    height: @il-header-branding-height;
+
+
+
+    .il-header-branding-text{
+      display: inline-block;
+      font-size: @il-header-branding-font-size;
+      padding-left: @il-header-branding-text-logo-padding;
+    }
+
+    .il-logo{
+      font-size: @il-header-branding-logo-font-size;
+    }
+  }
 }
+
+
+

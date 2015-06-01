@@ -1,64 +1,40 @@
 .il-header-top-nav{
   position: absolute;
 
-  top: @il-header-top-nav-top;
+  top: @il-header-top-nav-top-sm;
   bottom: auto;
-  left: @il-header-top-nav-left;
-  right: @il-header-top-nav-right;
+  left: @il-header-top-nav-left-sm;
+  right: @il-header-top-nav-right-sm;
 
-  height: @il-header-top-nav-height;
-  float: right;
-  padding: auto;
-  margin-right: 14px;
   list-style: none outside none;
 
-  .badge {
-    font-size: 9px;
-    padding: 2px 4px;
-    margin-top: -3px;
-    margin-left: -5px;
-    position: absolute;
-  }
-  .ilBadgeSpacer {
-    font-size: 8px;
-    padding: 0;
-    visibility: hidden;
-  }
-  .dropdown-menu {
-    background-color: lighten(@il-header-bg, 42%);
-    border-radius: 0;
-    margin: 0;
-    color: lighten(@il-header-bg, 70%);
-    a {
-      color: lighten(@il-header-bg, 70%);
-      &:hover,
-      &:active,
-      &:focus {
-        color: lighten(@il-header-bg, 42%);
-      }
-    }
-  }
+
   > li {
-    float: left;
+    float: @il-header-top-nav-float;
     display: block;
     position: relative;
   }
   > li > a {
-    margin-right: 1px;
+    margin-right: @il-header-top-nav-box-margin-right-sm;
     display: block;
-    padding: 10px;
     position: relative;
-    min-width: 40px;
+    min-height: @il-header-top-nav-box-min-height-sm;
+    min-width: @il-header-top-nav-box-min-width-sm;
+
     text-align: center;
-    background-color: lighten(@il-header-bg, 20%);
-    color: lighten(@il-header-bg, 70%);
+    line-height: @il-header-top-nav-box-min-height-sm;
+    font-size: @il-header-top-nav-box-font-size-sm;
+
+    background-color: @il-header-top-nav-box-bg;
+    color: @il-header-top-nav-box-color;
+
     &:hover,
     &:active,
     &:focus {
       outline: 0;
-      color: white;
+      color: @il-header-top-nav-box-hover-color;
       text-decoration: none;
-      background-color: lighten(@il-header-bg, 42%);
+      background-color: @il-header-top-nav-box-hover-bg;
     }
   }
   > .active > a,
@@ -68,27 +44,26 @@
     &:active,
     &:focus {
       outline: 0;
-      color: white;
+      color: @il-header-top-nav-box-hover-color;
       text-decoration: none;
-      background-color: lighten(@il-header-bg, 42%);
-    }
-  }
-  #userlog {
-    > a {
-      padding: 0 10px 0 0;
-      img {
-        height: 40px;
-        width: 40px;
-        margin-right: 0px;
-        padding: 5px;
-      }
-    }
-    .dropdown-menu {
-      min-width: 100%;
-      > li > a {
-        padding-left: 50px;
-      }
+      background-color:  @il-header-top-nav-box-hover-bg;
     }
   }
 
+  @media (min-width: @screen-sm-min) {
+    top: @il-header-top-nav-top;
+    left: @il-header-top-nav-left;
+    right: @il-header-top-nav-right;
+
+
+    > li > a {
+      min-height: @il-header-top-nav-box-min-height;
+      min-width: @il-header-top-nav-box-min-width;
+
+      margin-right: @il-header-top-nav-box-margin-right;
+
+      line-height: @il-header-top-nav-box-min-height;
+      font-size: @il-header-top-nav-box-font-size;
+    }
+  }
 }
