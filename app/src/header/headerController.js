@@ -2,7 +2,7 @@ angular.module('uiKitchenSink').controller('HeaderController', function($scope, 
     $scope.categorySelected = {};
     $scope.categorySelected.index = -1;
 
-    $scope.$on('changeSelection', function (d,categoryIndex,subCategoryIndex,tabIndex) {
+    $scope.$on('changeSelection', function (d,categoryIndex,subCategoryIndex,tabIndex,subTabIndex) {
         if(typeof $scope.categories === 'undefined'){
             $scope.categories = Entries.categories;
 

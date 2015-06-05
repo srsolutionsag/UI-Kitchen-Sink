@@ -3,7 +3,8 @@ module.directive('tabsCategories', function () {
         restrict: 'AEC',
         scope: {
             title: '@',
-            index:'@',
+            tabIndex:'@',
+            subTabIndex:'@',
             categoryIndex: "@",
             subCategoryIndex: "@",
             onTabSelected:"&",
@@ -18,6 +19,7 @@ module.directive('tabsCategories', function () {
                 }else{
                     scope.active = "";
                 }
+                console.log(scope.title + " " + scope.active);
             });
         }
     };

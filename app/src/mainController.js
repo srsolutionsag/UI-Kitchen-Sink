@@ -13,7 +13,10 @@ angular.module('uiKitchenSink').controller('MainController', function($scope,  $
         if(!$routeParams.itemGroupIndex){
             $routeParams.itemGroupIndex = 0;
         }
-        Entries.changeSelection($routeParams.categoryIndex,$routeParams.subCategoryIndex,$routeParams.itemGroupIndex);
+        if(!$routeParams.itemIndex){
+            $routeParams.itemIndex = 0;
+        }
+        Entries.changeSelection($routeParams.categoryIndex,$routeParams.subCategoryIndex,$routeParams.itemGroupIndex,$routeParams.itemIndex);
     };
 });
 

@@ -7,7 +7,7 @@ module.directive('entryJsonContent', function ($http) {
             tabPath: '@'
         },
         templateUrl: 'app/src/content/center/entry/entryJsonContent.tpl.html',
-        replace: true,
+        replace: false,
         link: function (scope, element) {
             scope.path = scope.tabPath+'/'+scope.entry.id+'.html';
             $http.get(scope.path)

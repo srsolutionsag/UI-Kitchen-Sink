@@ -1,358 +1,364 @@
 {
-  "categories": [
-      {
-          "title": "Information",
-          "id": "information",
-          "description": "General Informations about UI-Kitchen-Sink",
-          "subCategories": [
-              {
-                  "title": "Overview",
-                  "id":"overview",
-                  "description": "Description of this sub Category",
-                  "itemGroups": [
-                      {
-                          "title": "Overview",
-                          "id":"overview",
-                          "description": "Description of this Item Group",
-                          "type": "html"
-                      }
-                  ]
-              }
-          ]
-      },
-      {
-      "title": "Elements",
-      "id":"elements",
-      "description": "Description of this Category",
-      "subCategories": [
+    "categories": [
         {
-          "title": "Typography",
-          "id":"typography",
-          "description": "Typography to be used in ILIAS",
-          "itemGroups": [
-              {
-                  "title": "Overview",
-                  "description": "Overview of typography elements",
-                  "id":"typographyOverview",
-                  "type": "html"
-              },
-            {
-              "title": "Headings",
-              "description": "Description of this Item Group",
-              "id":"headings"
-            },
-            {
-              "title": "Text",
-              "description": "Description of this Item Group",
-              "id":"typographyText"
-            },
-              {
-                  "title": "Text Alignments",
-                  "description": "Description of this Item Group",
-                  "id":"textAlignments"
-              },
-              {
-                  "title": "Labeling",
-                  "description": "Description of this Item Group",
-                  "id":"typographyLabeling"
-              }
-          ]
+            "title": "Information",
+            "id": "information",
+            "description": "General Informations about UI-Kitchen-Sink",
+            "subCategories": [
+                {
+                    "title": "Overview",
+                    "id":"overview",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Overview",
+                            "id":"overview",
+                            "description": "Description of this Item Group",
+                            "type": "html"
+                        }
+                    ]
+                }
+            ]
         },
-          {
-              "title": "Colors",
-              "id":"colors",
-              "description": "Colors to be used in ILIAS",
-              "itemGroups": [
-                  {
-                      "title": "Standard Colors",
-                      "id":"standardColors",
-                      "description": "Standard colors to be used in ILIAS"
+        {
+            "title": "Elements",
+            "id":"elements",
+            "description": "Description of this Category",
+            "subCategories": [
+                {
+                    "title": "Typography",
+                    "id":"typography",
+                    "description": "Typography to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "Overview",
+                            "description": "Overview of typography elements",
+                            "id":"typographyOverview",
+                            "type": "html"
+                        },
+                        {
+                            "title": "Headings",
+                            "description": "Description of this Item Group",
+                            "id":"headings"
+                        },
+                        {
+                            "title": "Text",
+                            "description": "Description of this Item Group",
+                            "id":"typographyText"
+                        },
+                        {
+                            "title": "Text Alignments",
+                            "description": "Description of this Item Group",
+                            "id":"textAlignments"
+                        },
+                        {
+                            "title": "Labeling",
+                            "description": "Description of this Item Group",
+                            "id":"typographyLabeling"
+                        }
+                    ]
+                },
+                {
+                    "title": "Colors",
+                    "id":"colors",
+                    "description": "Colors to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "Standard Colors",
+                            "id":"standardColors",
+                            "description": "Standard colors to be used in ILIAS"
 
-                  },
-                  {
-                      "title": "Shades",
-                      "id":"shades",
-                      "description": "Shades of colors to be used"
-                  }
-              ]
-          },
-          {
-              "title": "Lists",
-              "id":"lists",
-              "description": "Description of this sub Category",
-              "itemGroups": [
-                  {
-                      "title": "Item Group 1",
-                      "description": "Description of this Item Group",
-                      "id":"itemGroup1"
-                  },
-                  {
-                      "title": "Item Group 2",
-                      "description": "Description of this Item Group",
-                      "id":"itemGroup2"
-                  }
-              ]
-          },
-          {
-              "title": "Images",
-              "id":"images",
-              "description": "Description of this sub Category",
-              "itemGroups": [
-                  {
-                      "title": "Item Group 1",
-                      "description": "Description of this Item Group",
-                      "id":"itemGroup1"
-                  },
-                  {
-                      "title": "Item Group 2",
-                      "description": "Description of this Item Group",
-                      "id":"itemGroup2"
-                  }
-              ]
-          },
-          {
-              "title": "Dropdowns",
-              "id":"dropdowns",
-              "description": "Description of this sub Category",
-              "itemGroups": [
-                  {
-                      "title": "Item Group 1",
-                      "description": "Description of this Item Group",
-                      "id":"itemGroup1"
-                  },
-                  {
-                      "title": "Item Group 2",
-                      "description": "Description of this Item Group",
-                      "id":"itemGroup2"
-                  }
-              ]
-          },
-          {
-              "title": "Buttons",
-              "id":"buttons",
-              "description": "Description of this sub Category",
-              "itemGroups": [
-                  {
-                      "title": "Standard",
-                      "id":"standard",
-                      "description": "Description of this Item Group"
-                 },
-                  {
-                      "title": "Size Modifications",
-                      "id":"sizeModifications",
-                      "description": "Description of this Item Group"
-                  },
-                  {
-                      "title": "States",
-                      "id":"states",
-                      "description": "Description of this Item Group"
-                  }
-              ]
-          },
-        {
-          "title": "Form Elements",
-          "id":"formElements",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "title": "Item Group 1",
-              "description": "Description of this Item Group",
-              "id":"itemGroup1"
-            },
-            {
-              "title": "Item Group 2",
-              "description": "Description of this Item Group",
-              "id":"itemGroup2"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Collections",
-      "id": "collections",
-      "description": "Description of this Category",
-      "subCategories": [
-        {
-          "title": "Forms",
-          "id":"forms",
-          "description": "Types of forms to be used in ILIAS",
-          "itemGroups": [
-            {
-              "title": "Basic Form",
-              "description": "The standard ILIAS Form",
-              "id":"basicForm"
-            },
-            {
-              "title": "File Upload",
-              "description": "Forms with file upload elements",
-              "id":"fileUpload"
-            },
-            {
-               "title": "Date/Color Picker",
-               "description": "Forms with date or color picker",
-               "id":"dateColorPicker"
-            },
-            {
-                "title": "WYSIWYG",
-                "description": "Forms with an included WYSWYIG editor",
-                "id":"wysiwyg"
-            }
-          ]
-        },
-          {
-              "title": "Tables",
-              "id":"forms",
-              "description": "Types of tables to be used in ILIAS",
-              "itemGroups": [
-                  {
-                      "title": "Basic Table",
-                      "description": "The standard ILIAS Form",
-                      "id":"basicTable"
-                  },
-                  {
-                      "title": "Filtered Table",
-                      "description": "Forms with file upload elements",
-                      "id":"filteredTable"
-                  },
-                  {
-                      "title": "Sortable Table",
-                      "description": "Forms with date or color picker",
-                      "id":"sortableTable"
-                  },
-                  {
-                      "title": "Table with Actions",
-                      "description": "Forms with an included WYSWYIG editor",
-                      "id":"tableWithActions"
-                  },
-                  {
-                      "title": "Multi-Select Table",
-                      "description": "Forms with an included WYSWYIG editor",
-                      "id":"multiSelectTable"
-                  }
-              ]
-          },
-          {
-              "title": "Container Lists",
-              "id":"containerLists",
-              "description": "Container Lists to show Repository Items",
-              "itemGroups": [
-                  {
-                      "title": "Basic Container List",
-                      "description": "The standard ILIAS Form",
-                      "id":"basicTable"
-                  },
-                  {
-                      "title": "Container List including Actions",
-                      "description": "The standard ILIAS Form",
-                      "id":"basicTable"
-                  }
-              ]
-          },
-        {
-          "title": "Calendars",
-          "id":"calendars",
-          "description": "Types of calendars to be used in ILIAS",
-          "itemGroups": [
-            {
-              "title": "Standard Calendar",
-              "description": "Description of this Item Group",
-              "id":"itemGroup1"
-            },
-            {
-              "title": "Calendar in block",
-              "id":"itemGroup2"
-            }
-          ]
-        },
-          {
-              "title": "Blocks",
-              "description": "Blocks that can be used to group elements in views",
-              "itemGroups": [
-                  {
-                      "title": "Side-Block",
-                      "description": "Description of this Item Group",
-                      "id":"sideBlock"
-                  },
-                  {
-                      "title": "Center-Block",
-                      "id":"centerBlock"
-                  }
-              ]
-          },
-          {
-              "title": "Modals",
-              "id":"modals",
-              "description": "Types of overlays to be used in ILIAS",
-              "itemGroups": [
-                  {
-                      "title": "Standard Modal",
-                      "description": "Description of this Item Group",
-                      "id":"standardModal"
-                  },
-                  {
-                      "title": "Small Modal",
-                      "id":"smallModal"
-                  },
-                  {
-                      "title": "Modal with Form",
-                      "id":"modalWithForm"
-                  }
-              ]
-          }
-      ]
-    },
-    {
-      "title": "Layouts",
-      "id": "layouts",
-      "description": "Description of this Category",
-      "subCategories": [
-        {
-          "title": "Main Structure",
-          "id":"mainStructure",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "title": "ILIAS Main Structure",
-              "id":"iliasMainStructure",
-              "description": "Description of this Item Group"
-            },
-            {
-              "title": "Header",
-              "description": "Description of this Item Group",
-              "id":"header"
-            },
-            {
-                "title": "Content",
-                "description": "Description of this Item Group",
-                "id":"content"
-            },
-            {
-                  "title": "Footer",
-                  "description": "Description of this Item Group",
-                  "id":"footer"
-            }
-          ]
+                        },
+                        {
+                            "title": "Shades",
+                            "id":"shades",
+                            "description": "Shades of colors to be used"
+                        }
+                    ]
+                },
+                {
+                    "title": "Lists",
+                    "id":"lists",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Item Group 1",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup1"
+                        },
+                        {
+                            "title": "Item Group 2",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Images",
+                    "id":"images",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Item Group 1",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup1"
+                        },
+                        {
+                            "title": "Item Group 2",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Dropdowns",
+                    "id":"dropdowns",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Item Group 1",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup1"
+                        },
+                        {
+                            "title": "Item Group 2",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Buttons",
+                    "id":"buttons",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Standard",
+                            "id":"standard",
+                            "description": "Description of this Item Group"
+                        },
+                        {
+                            "title": "Size Modifications",
+                            "id":"sizeModifications",
+                            "description": "Description of this Item Group"
+                        },
+                        {
+                            "title": "States",
+                            "id":"states",
+                            "description": "Description of this Item Group"
+                        }
+                    ]
+                },
+                {
+                    "title": "Form Elements",
+                    "id":"formElements",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Item Group 1",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup1"
+                        },
+                        {
+                            "title": "Item Group 2",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup2"
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "title": "Grid Layouts",
-          "id":"gridLayouts",
-          "description": "Grid Layouts that can be used in ILIAS",
-          "itemGroups": [
-            {
-                "title": "2-Column Layouts",
-                "id":"2ColumnLayouts",
-                "description": "Description of this Item Group"
+            "title": "Collections",
+            "id": "collections",
+            "description": "Description of this Category",
+            "subCategories": [
+                {
+                    "title": "Forms",
+                    "id":"forms",
+                    "description": "Types of forms to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "Basic Form",
+                            "description": "The standard ILIAS Form",
+                            "id":"basicForm"
+                        },
+                        {
+                            "title": "File Upload",
+                            "description": "Forms with file upload elements",
+                            "id":"fileUpload"
+                        },
+                        {
+                            "title": "Date/Color Picker",
+                            "description": "Forms with date or color picker",
+                            "id":"dateColorPicker"
+                        },
+                        {
+                            "title": "WYSIWYG",
+                            "description": "Forms with an included WYSWYIG editor",
+                            "id":"wysiwyg"
+                        }
+                    ]
+                },
+                {
+                    "title": "Tables",
+                    "id":"forms",
+                    "description": "Types of tables to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "Basic Table",
+                            "description": "The standard ILIAS Form",
+                            "id":"basicTable"
+                        },
+                        {
+                            "title": "Filtered Table",
+                            "description": "Forms with file upload elements",
+                            "id":"filteredTable"
+                        },
+                        {
+                            "title": "Sortable Table",
+                            "description": "Forms with date or color picker",
+                            "id":"sortableTable"
+                        },
+                        {
+                            "title": "Table with Actions",
+                            "description": "Forms with an included WYSWYIG editor",
+                            "id":"tableWithActions"
+                        },
+                        {
+                            "title": "Multi-Select Table",
+                            "description": "Forms with an included WYSWYIG editor",
+                            "id":"multiSelectTable"
+                        }
+                    ]
+                },
+                {
+                    "title": "Container Lists",
+                    "id":"containerLists",
+                    "description": "Container Lists to show Repository Items",
+                    "itemGroups": [
+                        {
+                            "title": "Basic Container List",
+                            "description": "The standard ILIAS Form",
+                            "id":"basicTable"
+                        },
+                        {
+                            "title": "Container List including Actions",
+                            "description": "The standard ILIAS Form",
+                            "id":"basicTable"
+                        }
+                    ]
+                },
+                {
+                    "title": "Calendars",
+                    "id":"calendars",
+                    "description": "Types of calendars to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "Standard Calendar",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup1"
+                        },
+                        {
+                            "title": "Calendar in block",
+                            "id":"itemGroup2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Blocks",
+                    "description": "Blocks that can be used to group elements in views",
+                    "itemGroups": [
+                        {
+                            "title": "Side-Block",
+                            "description": "Description of this Item Group",
+                            "id":"sideBlock"
+                        },
+                        {
+                            "title": "Center-Block",
+                            "id":"centerBlock"
+                        }
+                    ]
+                },
+                {
+                    "title": "Modals",
+                    "id":"modals",
+                    "description": "Types of overlays to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "Standard Modal",
+                            "description": "Description of this Item Group",
+                            "id":"standardModal"
+                        },
+                        {
+                            "title": "Small Modal",
+                            "id":"smallModal"
+                        },
+                        {
+                            "title": "Modal with Form",
+                            "id":"modalWithForm"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Layouts",
+            "id": "layouts",
+            "description": "Description of this Category",
+            "subCategories": [
+                {
+                    "title": "Main Structure",
+                    "id":"mainStructure",
+                    "description": "Main skeleton of the ILIAS Dom structure",
+                    "itemGroups": [
+                        {
+                            "title": "Overview",
+                            "id":"mainStructureOverview",
+                            "description": "Overview of the main Structure in ILIAS",
+                            "type": "html"
+                        },
+                        {
+                            "title": "ILIAS Main Structure",
+                            "id":"iliasMainStructure",
+                            "description": "Description of this Item Group"
+                        },
+                        {
+                            "title": "Header",
+                            "description": "Description of this Item Group",
+                            "id":"header"
+                        },
+                        {
+                            "title": "Content",
+                            "description": "Description of this Item Group",
+                            "id":"content"
+                        },
+                        {
+                            "title": "Footer",
+                            "description": "Description of this Item Group",
+                            "id":"footer"
+                        }
+                    ]
+                },
+                {
+                    "title": "Grid Layouts",
+                    "id":"gridLayouts",
+                    "description": "Grid Layouts that can be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "2-Column Layouts",
+                            "id":"2ColumnLayouts",
+                            "description": "Description of this Item Group"
 
-            },
-            {
-              "title": "3-Column Layouts",
-              "id":"3ColumnLayouts",
-              "description": "Description of this Item Group"
-            }
-          ]
+                        },
+                        {
+                            "title": "3-Column Layouts",
+                            "id":"3ColumnLayouts",
+                            "description": "Description of this Item Group"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

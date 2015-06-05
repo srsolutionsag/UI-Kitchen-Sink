@@ -1,4 +1,35 @@
-<div>
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
+<div class="il-content-title-section panel-heading">
+
+    <img class="il-content-title-section-icon" src="/app/static/img/modules/LearningModule/icon_lm.svg" alt="Symbol Kurs" title="Symbol Kurs">
+
+    <div class="il-content-title-section-properties">
+        <h1 class="il-content-title-section-title"><a>{{title}}</a></h1>
+        <div class="il-content-title-section-description">
+            <div class="il-content-title-section-description">{{description}}</div>
+            <div class="il-content-title-section-state">State: not available {{status}}</div>
+        </div>
+    </div>
+
+
+    <div class="il-content-title-section-actions">
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" data-container="body" id="ilAdvSelListAnchorText_act_102_pref_102">
+                <span><span class="hidden-xs">Aktionen</span></span> <span class="caret"></span>
+            </button>
+
+
+            <ul class="dropdown-menu pull-right" role="menu" id="ilAdvSelListTable_act_102_pref_102">
+                <li>
+                    <a>Kommentare</a>
+                </li>
+                <li>
+                    <a>Notizen</a>
+                </li>
+                <li>
+                    <a>Tags</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
 </div>

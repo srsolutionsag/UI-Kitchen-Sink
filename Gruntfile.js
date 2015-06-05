@@ -186,6 +186,9 @@ module.exports = function(grunt) {
                     }
                     else{
                         var existingHtmlsAsArray = grunt.file.expand(itemGroupPath+'/*.html');
+                        console.log(itemGroupPath+'/*.html');
+                        console.log(existingHtmlsAsArray);
+                        console.log(existingHtmlsAsArray.length);
                         if(existingHtmlsAsArray.length === 0){
                             grunt.file.copy(this.data.htmlTemplatePath,itemGroupPath+'/'+itemGroup.id+'.html');
                         }

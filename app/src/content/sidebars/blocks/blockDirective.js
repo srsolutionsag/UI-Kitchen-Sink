@@ -14,6 +14,7 @@ module.directive('block', function ($timeout) {
         link: function(scope, element){
             scope.collapseId = "collapse-sidebar-block-"+scope.id;
             scope.collapseContentId = "collapse-sidebar-block-content"+scope.id;
+            scope.open = "";
             var isOpening = 0;
 
             scope.onClick = function(event){
@@ -31,7 +32,15 @@ module.directive('block', function ($timeout) {
                 if(isOpening){
                     e.preventDefault();
                 }
+                else{           
+                    scope.open = "";
+                }
                 isOpening = 0;
+            });});
+
+            $timeout(function(){$("#"+scope.collapseId).on('show.bs.collapse',function(e){
+                scope.open = "il-sidebar-block-open";
+
             });});
 
             scope.isContentShowable = function(){

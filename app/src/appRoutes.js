@@ -1,7 +1,7 @@
 angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider
-        .when('/content/:categoryIndex?/:subCategoryIndex?/:itemGroupIndex?', {
+        .when('/content/:categoryIndex?/:subCategoryIndex?/:itemGroupIndex?/:itemIndex?', {
             templateUrl: 'app/src/content/content.tpl.html',
             controller: 'ContentController',
             resolve: {
@@ -12,6 +12,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
         })
         .otherwise({
-            redirectTo: '/content/0/0/0'
+            redirectTo: '/content/0/0/0/0'
         });
 }]);

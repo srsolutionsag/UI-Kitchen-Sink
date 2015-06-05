@@ -739,8 +739,14 @@
         {
           "title": "Main Structure",
           "id": "mainStructure",
-          "description": "Description of this sub Category",
+          "description": "Main skeleton of the ILIAS Dom structure",
           "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "mainStructureOverview",
+              "description": "Overview of the main Structure in ILIAS",
+              "type": "html"
+            },
             {
               "title": "ILIAS Main Structure",
               "id": "iliasMainStructure",

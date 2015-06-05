@@ -12,42 +12,56 @@
 
     <div class="panel panel-default">
         <!-- Default panel contents -->
-        <div class="panel-heading">
-            <!-- Title Section ================================================== -->
-            <title-content
-                    title="{{subCategorySelected.title}}"
-                    description="{{subCategorySelected.description}}"
-                    >
-            </title-content>
-        </div>
-        <div class="panel-body">
+        <!-- Title Section ================================================== -->
+        <title-content
+                title="{{subCategorySelected.title}}"
+                description="{{subCategorySelected.description}}"
+                >
+        </title-content>
+
             <!-- Tabs Section ================================================== -->
             <tabs-content>
                 <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
                                  title="{{itemGroup.title}}"
-                                 index="{{index}}"
+                                 tab-index="{{index}}"
+                                 sub-tab-index="0"
                                  category-index="{{categorySelected.index}}"
                                  sub-category-index="{{subCategorySelected.index}}"
-                                 tab-active="{{itemGroup.id==tabSelected.id}}"
-                                 on-tab-selected="onTabSelected(index)">
+                                 tab-active="{{itemGroup.index==tabSelected.index}}"
+                                 on-tab-selected="onTabSelected(index,0)">
                 </tabs-categories>
             </tabs-content>
 
+            <!-- Tabs sub Section ================================================== -->
+            <div ng-if="tabSelected.type!='html'">
+                <tabs-content>
+                    <tabs-categories ng-repeat="(index,entry) in tabSelected.items"
+                                     title="{{entry.title}}"
+                                     sub-tab-index="{{index}}"
+                                     tab-index="{{tabSelected.index}}"
+                                     category-index="{{categorySelected.index}}"
+                                     sub-category-index="{{subCategorySelected.index}}"
+                                     tab-active="{{entry.index==subTabSelected.index}}"
+                                     on-tab-selected="onTabSelected(tabIndex,index)">
+                    </tabs-categories>
+                </tabs-content>
+            </div>
+
+
             <!-- Entry Section ================================================== -->
-                <span ng-if="tabSelected.type=='html'">
-                    <entry-html-content
-                            item-group="tabSelected"
-                            index="{{index}}"
-                            tab-path="{{tabSelected.path}}">
-                    </entry-html-content>
-                </span>
-                <span ng-if="tabSelected!='html'">
-                    <entry-json-content ng-repeat="(index,entry) in tabSelected.items"
-                                        entry="entry"
-                                        index="{{index}}"
-                                        tab-path="{{tabSelected.path}}">
-                    </entry-json-content>
-                </span>
-        </div>
+            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type=='html'">
+                <entry-html-content
+                    item-group="tabSelected"
+                    index="{{index}}"
+                    tab-path="{{tabSelected.path}}">
+                </entry-html-content>
+            </div>
+            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type!='html'">
+                <entry-json-content
+                    entry="subTabSelected"
+                    index="{{subTabSelected.index}}"
+                    tab-path="{{tabSelected.path}}">
+                </entry-json-content>
+            </div>
     </div>
 </div>

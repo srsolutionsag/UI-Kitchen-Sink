@@ -6,6 +6,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
     this.categoryIndexSelected = 0;
     this.subCategoryIndexSelected = 0;
     this.tabIndexSelected = 0;
+    this.subTabIndexSelected = 0;
 
     this.promisedData = function() {
         var defer = $q.defer();
@@ -28,12 +29,13 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
         return defer.promise;
     };
 
-    this.changeSelection = function (categoryIndex,subCategoryIndex,tabIndex) {
+    this.changeSelection = function (categoryIndex,subCategoryIndex,tabIndex,subTabIndex) {
         this.categoryIndexSelected = categoryIndex;
         this.subCategoryIndexSelected = subCategoryIndex;
         this.tabIndexSelected = tabIndex;
-        console.log(categoryIndex,subCategoryIndex,tabIndex);
-        $rootScope.$broadcast('changeSelection', categoryIndex,subCategoryIndex,tabIndex);
+        this.subTabIndexSelected = subTabIndex;
+        console.log(subTabIndex);
+        $rootScope.$broadcast('changeSelection', categoryIndex,subCategoryIndex,tabIndex,subTabIndex);
     };
 
     return this;
