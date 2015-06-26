@@ -1,12 +1,17 @@
 {
-	"name": "UI-Kitchen-Sink",
-	"version": "0.0.1",
-	"dependencies": {
-		"bootstrap": "latest",
-		"angular": "latest",
-		"angular-route": "latest",
-        "select2-bootstrap-css": "latest",
-        "jstree": "latest",
-        "jquery-ui": "latest"
-	}
+  "name": "UI-Kitchen-Sink",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-sanitize": "latest",
+    "select2-bootstrap-css": "latest",
+    "jstree": "latest",
+    "jquery-ui": "latest",
+    "blueimp-file-upload": "9.5.5"
+  },
+  "resolutions": {
+    "angular": "1.3.15"
+  }
 }

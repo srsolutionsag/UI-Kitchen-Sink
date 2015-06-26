@@ -103,9 +103,9 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -1072,6 +1072,26 @@
 
 @il-content-min-height: 600px;
 @il-content-bg: white;
+
+
+//==Buttons
+@il-toolbar-link-gap: 15px;
+
+//== Forms
+//
+//##
+@input-border-radius:	0;
+@input-border:			#ccc;
+@input-border-focus:	lighten(@brand-primary, 20%);
+@ilFormInputFontSize: @font-size-small;
+@input-height-base:	(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2);
+
+@ilFormColor:            	#808080;
+@ilFormBgColor:            	#fdfdfd;
+
+/* ILIAS variables candidates */
+@ilMainMenuColor:			lighten(@brand-primary, 10%);
+@ilButtonFontSize: 	@font-size-small;
 
 /*************************************** ILIAS Sidebars **************************************/
 

@@ -240,47 +240,6 @@
           ]
         },
         {
-          "title": "Dropdowns",
-          "id": "dropdowns",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "title": "Item Group 1",
-              "description": "Description of this Item Group",
-              "id": "itemGroup1",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Item Group 2",
-              "description": "Description of this Item Group",
-              "id": "itemGroup2",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title": "Buttons",
           "id": "buttons",
           "description": "Description of this sub Category",
@@ -337,47 +296,6 @@
               ]
             }
           ]
-        },
-        {
-          "title": "Form Elements",
-          "id": "formElements",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "title": "Item Group 1",
-              "description": "Description of this Item Group",
-              "id": "itemGroup1",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Item Group 2",
-              "description": "Description of this Item Group",
-              "id": "itemGroup2",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -414,9 +332,10 @@
               "id": "fileUpload",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
+                  "id": "fileUpload",
+                  "title": "File Upload",
+                  "state": "Proposal",
+                  "description": "File Upload",
                   "lessVariables": "Less Variable used of the new item",
                   "guiClass": "GUI Class that the new item uses",
                   "context": "Context of the new item",
@@ -446,6 +365,123 @@
               "title": "WYSIWYG",
               "description": "Forms with an included WYSWYIG editor",
               "id": "wysiwyg",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Navigation",
+          "id": "navigation",
+          "description": "Elements used to navigate",
+          "itemGroups": [
+            {
+              "title": "Navbars",
+              "description": "Deviations of the Bootstrap Navbar",
+              "id": "navbars",
+              "items": [
+                {
+                  "id": "toolbar",
+                  "title": "Toolbar",
+                  "state": "Proposal",
+                  "description": "<a href='http://www.ilias.de/docu/goto_docu_frm_3814_3100.html'>http://www.ilias.de/docu/goto_docu_frm_3814_3100.html</a>",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Tabs",
+              "description": "Deviations of Bootstrap tabs",
+              "id": "tabs",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Tree",
+              "description": "Deviations of the jsTree",
+              "id": "tree",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Breadcrumbs",
+              "description": "Deviations of Bootstrap Breadcrums",
+              "id": "breacrumbs",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dropdowns",
+          "id": "dropdowns",
+          "description": "Description of this sub Category",
+          "itemGroups": [
+            {
+              "title": "Item Group 1",
+              "description": "Description of this Item Group",
+              "id": "itemGroup1",
+              "items": [
+                {
+                  "id": "example",
+                  "title": "Title of the new item",
+                  "description": "Description of the new item",
+                  "lessVariables": "Less Variable used of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                }
+              ]
+            },
+            {
+              "title": "Item Group 2",
+              "description": "Description of this Item Group",
+              "id": "itemGroup2",
               "items": [
                 {
                   "id": "example",

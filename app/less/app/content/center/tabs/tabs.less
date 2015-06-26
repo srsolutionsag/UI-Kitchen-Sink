@@ -22,3 +22,19 @@
 .il-content-tabs > li:first-child > a {
   margin-left: @padding-base-horizontal;
 }
+
+
+
+.il-content-sub-tabs > li > a {
+  color: @link-color;
+  border: none;
+  cursor: pointer;
+}
+
+.il-content-sub-tabs > li.active > a, .il-content-sub-tabs > li.active > a:hover, .il-content-sub-tabs > li.active > a:focus {
+  /* color: #555555; */
+  color: @link-hover-color;
+  background-color: transparent;
+  border: none;
+  /* cursor: default; */
+}

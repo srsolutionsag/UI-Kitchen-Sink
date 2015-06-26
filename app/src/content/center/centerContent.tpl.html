@@ -20,7 +20,7 @@
         </title-content>
 
             <!-- Tabs Section ================================================== -->
-            <tabs-content>
+            <tabs-content type="tabs">
                 <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
                                  title="{{itemGroup.title}}"
                                  tab-index="{{index}}"
@@ -34,7 +34,7 @@
 
             <!-- Tabs sub Section ================================================== -->
             <div ng-if="tabSelected.type!='html'">
-                <tabs-content>
+                <tabs-content type="sub-tabs">
                     <tabs-categories ng-repeat="(index,entry) in tabSelected.items"
                                      title="{{entry.title}}"
                                      sub-tab-index="{{index}}"

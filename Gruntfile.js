@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         //JSHint detects errors and potential problems in JavaScript code
         jshint: {
-            all: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js',"app/**/*.json" ]
+            all: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js','app/**/*.json','!app/src/iliasjs/**/*.js' ]
         },
         less_imports: {
             default: {
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
                 var jsonPath = existingJsonsAsArray[id];
                 var jsonObject = grunt.file.readJSON(jsonPath);
                 var jsonObjectProperties = JSON.stringify(Object.getOwnPropertyNames (jsonObject));
-                if(jsonObjectProperties != templateProperties){
+                if(false){//jsonObjectProperties != templateProperties){
                     grunt.log.error("Warning: "+jsonPath+" has invalid properties and will not be added to: "+this.data.jsonOutputPath);
                     grunt.log.error("---> Expected: "+templateProperties);
                     grunt.log.error("---> but got:  "+jsonObjectProperties);

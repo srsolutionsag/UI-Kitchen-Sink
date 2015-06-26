@@ -1,5 +1,7 @@
-
-<h2 id="contentTitle">{{entry.title}}</h2>
+<div class="alert alert-{{stateType}}" role="alert">
+    State: {{entry.state}}
+</div>
+<h3 id="il-content-title" class="il-heading">{{entry.title}}</h3>
 <div class="panel panel-default">
     <div id="{{index}}HtmlExample" class="uiks-iframe-container panel-body">
         <div ng-include="path"></div>
@@ -30,7 +32,7 @@
         </div>
         <div id="collapseOne{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-                {{entry.description}}
+                <div ng-bind-html="entry.description"></div>
             </div>
         </div>
     </div>

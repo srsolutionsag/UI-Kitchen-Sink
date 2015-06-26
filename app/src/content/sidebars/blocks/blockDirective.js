@@ -32,7 +32,7 @@ module.directive('block', function ($timeout) {
                 if(isOpening){
                     e.preventDefault();
                 }
-                else{           
+                else{
                     scope.open = "";
                 }
                 isOpening = 0;

@@ -111,23 +111,6 @@
                     ]
                 },
                 {
-                    "title": "Dropdowns",
-                    "id":"dropdowns",
-                    "description": "Description of this sub Category",
-                    "itemGroups": [
-                        {
-                            "title": "Item Group 1",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup1"
-                        },
-                        {
-                            "title": "Item Group 2",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup2"
-                        }
-                    ]
-                },
-                {
                     "title": "Buttons",
                     "id":"buttons",
                     "description": "Description of this sub Category",
@@ -146,23 +129,6 @@
                             "title": "States",
                             "id":"states",
                             "description": "Description of this Item Group"
-                        }
-                    ]
-                },
-                {
-                    "title": "Form Elements",
-                    "id":"formElements",
-                    "description": "Description of this sub Category",
-                    "itemGroups": [
-                        {
-                            "title": "Item Group 1",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup1"
-                        },
-                        {
-                            "title": "Item Group 2",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup2"
                         }
                     ]
                 }
@@ -197,6 +163,50 @@
                             "title": "WYSIWYG",
                             "description": "Forms with an included WYSWYIG editor",
                             "id":"wysiwyg"
+                        }
+                    ]
+                },
+                {
+                    "title": "Navigation",
+                    "id":"navigation",
+                    "description": "Elements used to navigate",
+                    "itemGroups": [
+                        {
+                            "title": "Navbars",
+                            "description": "Deviations of the Bootstrap Navbar",
+                            "id":"navbars"
+                        },
+                        {
+                            "title": "Tabs",
+                            "description": "Deviations of Bootstrap tabs",
+                            "id":"tabs"
+                        },
+                        {
+                            "title": "Tree",
+                            "description": "Deviations of the jsTree",
+                            "id":"tree"
+                        },
+                        {
+                            "title": "Breadcrumbs",
+                            "description": "Deviations of Bootstrap Breadcrums",
+                            "id":"breacrumbs"
+                        }
+                    ]
+                },
+                {
+                    "title": "Dropdowns",
+                    "id":"dropdowns",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Item Group 1",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup1"
+                        },
+                        {
+                            "title": "Item Group 2",
+                            "description": "Description of this Item Group",
+                            "id":"itemGroup2"
                         }
                     ]
                 },

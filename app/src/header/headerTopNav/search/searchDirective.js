@@ -64,6 +64,8 @@ module.directive('search', function ($http) {
                                     categoryIndex: categoryIndex,
                                     subCategoryIndex: subCategoryIndex,
                                     itemGroupIndex: itemGroupIndex,
+                                    itemIndex: itemIndex,
+                                    state: item.state,
                                     text: item.title,
                                     type: "",
                                     children: []
@@ -74,6 +76,38 @@ module.directive('search', function ($http) {
                 }
 
                 function formatResult(data,container) {
+                    var html = data.text;
+                    if(data.itemIndex !== undefined){
+                        var stateType = "";
+                        if(data.state === undefined){
+                            data.state = "Empty";
+                        }
+                        switch(data.state){
+                            case "Empty":
+                            case "Concept":
+                                stateType = "danger";
+                                break;
+                            case "Proposal":
+                                stateType = "warning";
+                                break;
+                            case "Implemented":
+                                stateType = "info";
+                                break;
+                            default:
+                                stateType = "success";
+                        }
+                        html = "<div class='alert il-search-alert alert-"+stateType+"'>"+html+"</div>";
+                    }
+
+
+                    if(data && data.type){
+                        return data.type + ": " +html;
+                    } else{
+                        return html;
+                    }
+                }
+
+                function formatSelection(data,container) {
                     if(data && data.type){
                         return data.type + ": " +data.text;
                     } else{
@@ -85,7 +119,7 @@ module.directive('search', function ($http) {
                 select2Element.select2({
                     placeholder: "Search Kitchen-Sink",
                     allowClear: true,
-                    formatSelection: formatResult,
+                    formatSelection: formatSelection,
                     formatResult: formatResult,
                     data: data
 

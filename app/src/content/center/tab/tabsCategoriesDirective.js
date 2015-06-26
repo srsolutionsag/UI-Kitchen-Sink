@@ -19,7 +19,6 @@ module.directive('tabsCategories', function () {
                 }else{
                     scope.active = "";
                 }
-                console.log(scope.title + " " + scope.active);
             });
         }
     };

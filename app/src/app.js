@@ -1,1 +1,1 @@
-var module = angular.module('uiKitchenSink', ['ngRoute', 'appRoutes']);
+var module = angular.module('uiKitchenSink', ['ngRoute', 'appRoutes','ngSanitize']);

@@ -1,6 +1,5 @@
 angular.module('uiKitchenSink').controller('CenterContentController', function($scope, Entries) {
     $scope.$on('changeSelection', function (d,categoryIndex,subCategoryIndex,tabIndex, subTabIndex) {
-        console.log(subTabIndex);
         $scope.setContent(categoryIndex,subCategoryIndex,tabIndex,subTabIndex);
     });
 
@@ -8,11 +7,8 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
         if(typeof $scope.categories === 'undefined'){
             $scope.categories = Entries.categories;
         }
-        console.log(subTabIndex);
-        console.log($scope.categories);
         $scope.categorySelected = $scope.categories[categoryIndex];
         $scope.categorySelected.index = categoryIndex;
-        console.log($scope.categorySelected);
         $scope.subCategorySelected = $scope.categorySelected.subCategories[subCategoryIndex];
         $scope.subCategorySelected.index = subCategoryIndex;
         $scope.tabSelected = $scope.subCategorySelected.itemGroups[tabIndex];
