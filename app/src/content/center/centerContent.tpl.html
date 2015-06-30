@@ -4,9 +4,9 @@
             category-selected="{{categorySelected.title}}"
             entry-selected="{{subCategorySelected.title}}"
             tab-selected="{{tabSelected.title}}"
-            category-index="{{categorySelected.index}}"
-            sub-category-index="{{subCategorySelected.index}}"
-            tab-index="{{tabSelected.index}}"
+            category-id="{{categorySelected.id}}"
+            sub-category-id="{{subCategorySelected.id}}"
+            tab-id="{{tabSelected.id}}"
             >
     </breadcrumb-content>
 
@@ -23,10 +23,11 @@
             <tabs-content type="tabs">
                 <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
                                  title="{{itemGroup.title}}"
-                                 tab-index="{{index}}"
-                                 sub-tab-index="0"
-                                 category-index="{{categorySelected.index}}"
-                                 sub-category-index="{{subCategorySelected.index}}"
+                                 tab-id="{{itemGroup.id}}"
+                                 index="index"
+                                 sub-tab-id=""
+                                 category-id="{{categorySelected.id}}"
+                                 sub-category-id="{{subCategorySelected.id}}"
                                  tab-active="{{itemGroup.index==tabSelected.index}}"
                                  on-tab-selected="onTabSelected(index,0)">
                 </tabs-categories>
@@ -36,11 +37,12 @@
             <div ng-if="tabSelected.type!='html'">
                 <tabs-content type="sub-tabs">
                     <tabs-categories ng-repeat="(index,entry) in tabSelected.items"
+                                     index="index"
                                      title="{{entry.title}}"
-                                     sub-tab-index="{{index}}"
-                                     tab-index="{{tabSelected.index}}"
-                                     category-index="{{categorySelected.index}}"
-                                     sub-category-index="{{subCategorySelected.index}}"
+                                     sub-tab-id="{{entry.id}}"
+                                     tab-id="{{tabSelected.id}}"
+                                     category-id="{{categorySelected.id}}"
+                                     sub-category-id="{{subCategorySelected.id}}"
                                      tab-active="{{entry.index==subTabSelected.index}}"
                                      on-tab-selected="onTabSelected(tabIndex,index)">
                     </tabs-categories>

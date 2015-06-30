@@ -9,7 +9,8 @@
     "select2-bootstrap-css": "latest",
     "jstree": "latest",
     "jquery-ui": "latest",
-    "blueimp-file-upload": "9.5.5"
+    "blueimp-file-upload": "latest",
+    "angular-highlightjs": "latest"
   },
   "resolutions": {
     "angular": "1.3.15"

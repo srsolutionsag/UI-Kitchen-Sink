@@ -7,10 +7,9 @@ module.directive('search', function ($http) {
             onSearch:'&'
         },
         replace: true,
-        templateUrl: 'app/src/header/headerTopNav/search/search.tpl.html',
+        templateUrl: 'app/src/content/sidebars/blocks/search/search.tpl.html',
         link: function (scope, element) {
             scope.onSearchClicked = function(){
-                console.log(scope.onSearch);
                 if(!$.isEmptyObject(scope.selectedElement)){
                     scope.onSearch();
                 }
@@ -26,9 +25,9 @@ module.directive('search', function ($http) {
                     var category = scope.categories[categoryIndex];
                     data[categoryIndex] = {
                         id: category.id,
-                        categoryIndex: categoryIndex,
-                        subCategoryIndex: 0,
-                        itemGroupIndex: 0,
+                        categoryId: category.id,
+                        subCategoryId: "",
+                        itemGroupId: "",
                         text: category.title,
                         type: "Category",
                         children: []
@@ -37,9 +36,8 @@ module.directive('search', function ($http) {
                         var subCategory = category.subCategories[subCategoryIndex];
                         data[categoryIndex].children.push({
                             id: subCategory.id,
-                            categoryIndex: categoryIndex,
-                            subCategoryIndex: subCategoryIndex,
-                            itemGroupIndex: 0,
+                            categoryId: category.id,
+                            subCategoryId: subCategory.id,
                             itemGroupId: "",
                             text: subCategory.title,
                             type: "Sub Category",
@@ -50,9 +48,9 @@ module.directive('search', function ($http) {
                             var itemGroup= subCategory.itemGroups[itemGroupIndex];
                             data[categoryIndex].children[subCategoryIndex].children.push({
                                 id: itemGroup.id,
-                                categoryIndex: categoryIndex,
-                                subCategoryIndex: subCategoryIndex,
-                                itemGroupIndex: itemGroupIndex,
+                                categoryId: category.id,
+                                subCategoryId: subCategory.id,
+                                itemGroupId: itemGroup.id,
                                 text: itemGroup.title,
                                 type: "",
                                 children: []
@@ -61,10 +59,10 @@ module.directive('search', function ($http) {
                                 var item= itemGroup.items[itemIndex];
                                 data[categoryIndex].children[subCategoryIndex].children[itemGroupIndex].children.push({
                                     id: item.id,
-                                    categoryIndex: categoryIndex,
-                                    subCategoryIndex: subCategoryIndex,
-                                    itemGroupIndex: itemGroupIndex,
-                                    itemIndex: itemIndex,
+                                    categoryId: category.id,
+                                    subCategoryId: subCategory.id,
+                                    itemGroupId: itemGroup.id,
+                                    itemId: item.id,
                                     state: item.state,
                                     text: item.title,
                                     type: "",
@@ -77,7 +75,7 @@ module.directive('search', function ($http) {
 
                 function formatResult(data,container) {
                     var html = data.text;
-                    if(data.itemIndex !== undefined){
+                    if(data.itemId !== undefined){
                         var stateType = "";
                         if(data.state === undefined){
                             data.state = "Empty";

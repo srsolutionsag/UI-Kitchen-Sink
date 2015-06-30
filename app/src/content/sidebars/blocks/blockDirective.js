@@ -29,18 +29,22 @@ module.directive('block', function ($timeout) {
             };
 
             $timeout(function(){$("#"+scope.collapseId).on('hide.bs.collapse',function(e){
+                console.log(isOpening);
                 if(isOpening){
+                    scope.open = "il-sidebar-block-open";
                     e.preventDefault();
                 }
                 else{
                     scope.open = "";
                 }
                 isOpening = 0;
+                scope.$apply();
             });});
 
             $timeout(function(){$("#"+scope.collapseId).on('show.bs.collapse',function(e){
+                console.log("show");
                 scope.open = "il-sidebar-block-open";
-
+                scope.$apply();
             });});
 
             scope.isContentShowable = function(){

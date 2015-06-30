@@ -15,8 +15,9 @@
                 >
             <main-menu-entry ng-repeat="(entryIndex,entry) in category.subCategories"
                            title="{{entry.title}}"
-                           index="{{entryIndex}}"
-                           category-index="{{categoryIndex}}"
+                           index="entryIndex"
+                           sub-category-id="{{entry.id}}"
+                           category-id="{{category.id}}"
                            is-active="{{categorySelected.index == categoryIndex && subCategorySelected.index == entryIndex}}"
                            on-dropdown-entry-selected="onDropdownEntrySelected(categoryIndex,entryIndex)">
             </main-menu-entry>

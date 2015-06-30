@@ -5,9 +5,9 @@ module.directive('breadcrumbContent', function () {
             categorySelected:'@',
             entrySelected:'@',
             tabSelected:'@',
-            categoryIndex: "@",
-            subCategoryIndex: "@",
-            tabIndex: "@"
+            categoryId: "@",
+            subCategoryId: "@",
+            tabId: "@"
         },
         templateUrl: 'app/src/content/center/breadcrumb/breadcrumbContent.tpl.html',
         replace: true

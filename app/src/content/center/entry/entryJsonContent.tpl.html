@@ -4,7 +4,7 @@
 <h3 id="il-content-title" class="il-heading">{{entry.title}}</h3>
 <div class="panel panel-default">
     <div id="{{index}}HtmlExample" class="uiks-iframe-container panel-body">
-        <div ng-include="path"></div>
+        <div ng-include="htmlPath"></div>
     </div>
 </div>
 <div class="panel-group" id="accordion{{index}}" role="tablist" aria-multiselectable="true">
@@ -12,13 +12,41 @@
         <div class="panel-heading" role="tab" id="headingZero">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseZero{{index}}" aria-expanded="true" aria-controls="collapseZero">
-                    Code
+                    DOM Structure
                 </a>
             </h4>
         </div>
-        <div id="collapseZero{{index}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero">
+        <div id="collapseZero{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingZero">
             <div class="panel-body">
-                <pre>{{htmlCode}}</pre>
+                <div hljs source="htmlCode" language="html"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingLess">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseLess{{index}}" aria-expanded="true" aria-controls="collapseLess">
+                    Less Code
+                </a>
+            </h4>
+        </div>
+        <div id="collapseLess{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLess">
+            <div class="panel-body">
+                <div hljs source="lessCode" language="css"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingJS">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseJS{{index}}" aria-expanded="true" aria-controls="collapseJS">
+                    JS Code
+                </a>
+            </h4>
+        </div>
+        <div id="collapseJS{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingJS">
+            <div class="panel-body">
+                <div hljs source="jsCode" language="javascript"></div>
             </div>
         </div>
     </div>

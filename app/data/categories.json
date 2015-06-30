@@ -212,7 +212,7 @@
                 },
                 {
                     "title": "Tables",
-                    "id":"forms",
+                    "id":"tables",
                     "description": "Types of tables to be used in ILIAS",
                     "itemGroups": [
                         {

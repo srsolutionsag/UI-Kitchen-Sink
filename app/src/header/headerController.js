@@ -17,8 +17,4 @@ angular.module('uiKitchenSink').controller('HeaderController', function($scope, 
             $scope.categorySelected.index = -1;
         }
     });
-
-    Entries.promisedData().then(function(){
-        $scope.searchCategories = Entries.categories;
-    });
 });

@@ -457,6 +457,7 @@ ilDragContent = function(id, sGroup, config)
 	this.initDragContent(id, sGroup, config);
 };
 
+/**
 // We are extending DDProxy now
 YAHOO.extend(ilDragContent, YAHOO.util.DDProxy,
 {
@@ -513,8 +514,8 @@ YAHOO.extend(ilDragContent, YAHOO.util.DDProxy,
 		}
 	}
 	
-}
-);
+
+);}**/
 
 
 
@@ -626,7 +627,7 @@ ilDragTarget = function(id, sGroup, config)
 };
 
 // We are extending DDProxy now
-YAHOO.extend(ilDragTarget, YAHOO.util.DDTarget);
+//YAHOO.extend(ilDragTarget, YAHOO.util.DDTarget);
 
 // protype: all instances will get this functions
 ilDragTarget.prototype.dInit = function(id, sGroup, config)

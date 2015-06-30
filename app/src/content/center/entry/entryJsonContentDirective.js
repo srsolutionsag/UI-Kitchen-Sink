@@ -29,8 +29,8 @@ module.directive('entryJsonContent', function ($http) {
                     scope.stateType = "success";
             }
 
-            scope.path = scope.tabPath+'/'+scope.entry.id+'.html';
-            $http.get(scope.path)
+            scope.htmlPath = scope.tabPath+'/'+scope.entry.id+'.html';
+            $http.get(scope.htmlPath)
                 .success(function(data) {
                     if(data.indexOf("<span ng-non-bindable>")>-1){
                         data = data.replace("<span ng-non-bindable>", "");
@@ -39,7 +39,25 @@ module.directive('entryJsonContent', function ($http) {
                     scope.htmlCode = data;
                 })
                 .error(function() {
-                    console.log('could not find '+scope.path);
+                    console.log('could not find '+scope.htmlPath);
+                });
+
+            scope.lessPath = scope.tabPath+'/'+scope.entry.id+'.less';
+            $http.get(scope.lessPath)
+                .success(function(data) {
+                    scope.lessCode = data;
+                })
+                .error(function() {
+                    console.log('could not find '+scope.lessPath);
+                });
+
+            scope.jsPath = scope.tabPath+'/'+scope.entry.id+'.js';
+            $http.get(scope.jsPath)
+                .success(function(data) {
+                    scope.jsCode = data;
+                })
+                .error(function() {
+                    console.log('could not find '+scope.jsPath);
                 });
         }
     };

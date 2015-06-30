@@ -4,7 +4,8 @@ module.directive('mainMenuEntry', function () {
         scope: {
             title: '@',
             index:'@',
-            categoryIndex:'@',
+            subCategoryId: '@',
+            categoryId:'@',
             isActive:'@',
             onDropdownEntrySelected:"&"
         },
