@@ -1,6 +1,7 @@
 {
-  "id": "example",
-  "title": "Title of the new item",
+  "id": "filter",
+  "title": "Table Filter",
+  "state": "Proposal",
   "description": "Description of the new item",
   "lessVariables": "Less Variable used of the new item",
   "guiClass": "GUI Class that the new item uses",

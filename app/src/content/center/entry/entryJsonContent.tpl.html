@@ -3,8 +3,9 @@
 </div>
 <h3 id="il-content-title" class="il-heading">{{entry.title}}</h3>
 <div class="panel panel-default">
-    <div id="{{index}}HtmlExample" class="uiks-iframe-container panel-body">
-        <div ng-include="htmlPath"></div>
+    <div id="{{index}}HtmlExample" class="uiks-content-demo-container panel-body">
+        <div ng-include src="htmlPath" onload="onHtmlLoaded()"></div>
+        <script></script>
     </div>
 </div>
 <div class="panel-group" id="accordion{{index}}" role="tablist" aria-multiselectable="true">
@@ -23,6 +24,20 @@
         </div>
     </div>
     <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingLessVariables">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseLessVariables{{index}}" aria-expanded="false" aria-controls="collapseLessVariables">
+                    Less Variables
+                </a>
+            </h4>
+        </div>
+        <div id="collapseLessVariables{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLessVariables">
+            <div class="panel-body">
+                <div hljs source="lessVariables" language="less"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingLess">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseLess{{index}}" aria-expanded="true" aria-controls="collapseLess">
@@ -32,7 +47,7 @@
         </div>
         <div id="collapseLess{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLess">
             <div class="panel-body">
-                <div hljs source="lessCode" language="css"></div>
+                <div hljs source="lessCode" language="less"></div>
             </div>
         </div>
     </div>
@@ -74,7 +89,7 @@
         </div>
         <div id="collapseTwo{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-                {{entry.context}}
+                <div ng-bind-html="entry.context"></div>
             </div>
         </div>
     </div>
@@ -88,24 +103,11 @@
         </div>
         <div id="collapseThree{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
-                {{entry.knownUses}}
+                <div ng-bind-html="entry.knownUses"></div>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFour">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseFour{{index}}" aria-expanded="false" aria-controls="collapseFour">
-                    Less Variables
-                </a>
-            </h4>
-        </div>
-        <div id="collapseFour{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="panel-body">
-                {{entry.lessVariables}}
-            </div>
-        </div>
-    </div>
+
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFive">
             <h4 class="panel-title">
@@ -130,7 +132,7 @@
         </div>
         <div id="collapseSix{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
             <div class="panel-body">
-                {{entry.relations}}
+                <div ng-bind-html="entry.relations"></div>
             </div>
         </div>
     </div>

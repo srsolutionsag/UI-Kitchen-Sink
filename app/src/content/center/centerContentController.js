@@ -19,6 +19,5 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
         }
         $scope.tabSelected.path = 'app/data/'+$scope.categorySelected.id+'/'+$scope.subCategorySelected.id+'/'+$scope.tabSelected.id;
     };
-
     $scope.setContent(Entries.categoryIndexSelected,Entries.subCategoryIndexSelected,Entries.tabIndexSelected,Entries.subTabIndexSelected);
 });

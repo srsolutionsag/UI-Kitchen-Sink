@@ -7,7 +7,6 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
     this.subCategoryIndexSelected = 0;
     this.tabIndexSelected = 0;
     this.subTabIndexSelected = 0;
-
     this.changeSelection = function (categoryIndex,subCategoryIndex,tabIndex,subTabIndex) {
         this.categoryIndexSelected = categoryIndex;
         this.subCategoryIndexSelected = subCategoryIndex;

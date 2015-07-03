@@ -59,6 +59,18 @@ module.directive('entryJsonContent', function ($http) {
                 .error(function() {
                     console.log('could not find '+scope.jsPath);
                 });
+            scope.jsVariables = scope.tabPath+'/'+scope.entry.id+'.variables.less';
+            $http.get(scope.jsVariables)
+                .success(function(data) {
+                    scope.lessVariables = data;
+                })
+                .error(function() {
+                    console.log('could not find '+scope.jsVariables);
+                });
+
+            scope.onHtmlLoaded = function(){
+                $.getScript(scope.jsPath, function(){});
+            };
         }
     };
 });

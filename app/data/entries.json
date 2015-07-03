@@ -347,19 +347,30 @@
               ]
             },
             {
-              "title": "Date/Color Picker",
+              "title": "Picker",
               "description": "Forms with date or color picker",
               "id": "dateColorPicker",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
+                  "id": "dateTimePicker",
+                  "title": "Date Time picker",
+                  "state": "Proposal",
+                  "description": "Description of the new item",
+                  "guiClass": "GUI Class that the new item uses",
+                  "context": "Context of the new item",
+                  "knownUses": "Knonwn uses of the new item",
+                  "relations": "Relations of the new item"
+                },
+                {
+                  "id": "dateTimeRangePicker",
+                  "title": "Date Time Range Picker",
+                  "state": "Proposal",
                   "description": "Description of the new item",
                   "lessVariables": "Less Variable used of the new item",
                   "guiClass": "GUI Class that the new item uses",
                   "context": "Context of the new item",
                   "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "relations": "<a href='#/content/collections/forms/dateColorPicker/dateTimePicker'>Date Time Picker</a>"
                 }
               ]
             },
@@ -459,47 +470,6 @@
           ]
         },
         {
-          "title": "Dropdowns",
-          "id": "dropdowns",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "title": "Item Group 1",
-              "description": "Description of this Item Group",
-              "id": "itemGroup1",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Item Group 2",
-              "description": "Description of this Item Group",
-              "id": "itemGroup2",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title": "Tables",
           "id": "tables",
           "description": "Types of tables to be used in ILIAS",
@@ -522,64 +492,14 @@
               ]
             },
             {
-              "title": "Filtered Table",
+              "title": "Table Filter",
               "description": "Forms with file upload elements",
               "id": "filteredTable",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Sortable Table",
-              "description": "Forms with date or color picker",
-              "id": "sortableTable",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Table with Actions",
-              "description": "Forms with an included WYSWYIG editor",
-              "id": "tableWithActions",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Multi-Select Table",
-              "description": "Forms with an included WYSWYIG editor",
-              "id": "multiSelectTable",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
+                  "id": "filter",
+                  "title": "Table Filter",
+                  "state": "Proposal",
                   "description": "Description of the new item",
                   "lessVariables": "Less Variable used of the new item",
                   "guiClass": "GUI Class that the new item uses",
@@ -617,46 +537,6 @@
               "title": "Container List including Actions",
               "description": "The standard ILIAS Form",
               "id": "basicTable",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Calendars",
-          "id": "calendars",
-          "description": "Types of calendars to be used in ILIAS",
-          "itemGroups": [
-            {
-              "title": "Standard Calendar",
-              "description": "Description of this Item Group",
-              "id": "itemGroup1",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Calendar in block",
-              "id": "itemGroup2",
               "items": [
                 {
                   "id": "example",

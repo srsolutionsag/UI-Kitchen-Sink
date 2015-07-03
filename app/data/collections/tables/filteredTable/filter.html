@@ -1,0 +1,129 @@
+<div>
+    <div class="il-table-filter-section well collapse">
+        <div class="il-table-filter-items">
+            <div id="il-table-filter-1" class="il-table-filter-item collapse">
+                <div class="row filter-row">
+                    <div class="col-md-3">
+                        <label for="il-table-filter-input-1">Filter 1</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="input" class="form-control" id="il-table-filter-input-1" placeholder="Filter 1 Placeholder">
+                    </div>
+                    <div class="col-md-1">
+                        <a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-toggle="collapse" data-target="#il-table-filter-1, #il-table-filter-toggler-1"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="il-table-filter-2" class="il-table-filter-item collapse">
+                <div class="row filter-row">
+                    <div class="col-md-3">
+                        <label for="il-table-filter-input-2">Filter 2</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="checkbox" id="il-table-filter-input-2"  value="1">
+                    </div>
+                    <div class="col-md-1">
+                        <a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-toggle="collapse" data-target="#il-table-filter-2, #il-table-filter-toggler-2"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="il-table-filter-3" class="il-table-filter-item collapse">
+                <div class="row filter-row">
+                    <div class="col-md-3">
+                        <label for="il-table-filter-input-1">Filter 3</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class='col-md-5'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='bs-date-time-picker-from'>
+                                        <input type='text' class="form-control" placeholder='DD/MM/YYYY HH:mm'/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"><label>To:</label></div>
+                            <div class='col-md-5'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='bs-date-time-picker-to'>
+                                        <input type='text' class="form-control" placeholder='DD/MM/YYYY HH:mm'/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-toggle="collapse" data-target="#il-table-filter-3, #il-table-filter-toggler-3"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input class="btn btn-default" type="button" value="Apply Filter">
+    </div>
+
+    <div class="il-table-top-bar row">
+        <div class="col-md-12">
+            <div class="il-table-nav pull-right">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-link dropdown-toggle btn-sm" data-toggle="dropdown" data-target="#il-table-filter-add-dropdown-1">
+                        <span>Add Filter</span> <span class="caret" alt=""></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="#il-table-filter-add-dropdown-1">
+                        <li class="collapse in" id="il-table-filter-toggler-1"><a data-toggle="collapse" data-target="#il-table-filter-1, #il-table-filter-toggler-1">Filter 1</a></li>
+                        <li class="collapse in" id="il-table-filter-toggler-2"><a data-toggle="collapse" data-target="#il-table-filter-2, #il-table-filter-toggler-2">Filter 2</a></li>
+                        <li class="collapse in" id="il-table-filter-toggler-3"><a data-toggle="collapse" data-target="#il-table-filter-3, #il-table-filter-toggler-3">Filter 3</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-link dropdown-toggle btn-sm" data-toggle="dropdown" disabled="disabled">
+                        <span>Columns</span> <span class="caret" alt=""></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-link dropdown-toggle btn-sm" data-toggle="dropdown" disabled="disabled">
+                        <span>Rows</span> <span class="caret" alt=""></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="il-table-content table-responsive">
+        <table class="table table-striped" id="user7" datatable="1">
+            <thead>
+                <tr>
+                    <th>
+                        <a class="tblheader"><span id="thc_user7_3">Vorname</span></a>
+                    </th>
+                    <th>
+                        <a class="tblheader"><span id="thc_user7_4">Nachname</span></a>
+                    </th>
+                    <th>
+                        <a class="tblheader"><span id="thc_user7_5">E-Mail</span></a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tblrow1">
+                    <td class="std"><span class="small">Timon</span></td>
+                    <td class="std"><span class="small">Amstutz</span></td><td class="std">
+                    <span class="small">timon.amstutz@ilub.unibe.ch</span></td>
+                </tr>
+                <tr class="tblrow2">
+                    <td class="std"><span class="small">Timon</span></td>
+                    <td class="std"><span class="small">Amstutz</span></td><td class="std">
+                    <span class="small">timon.amstutz@ilub.unibe.ch</span></td>
+                </tr>
+                <tr class="tblrow1">
+                    <td class="std"><span class="small">Timon</span></td>
+                    <td class="std"><span class="small">Amstutz</span></td><td class="std">
+                    <span class="small">timon.amstutz@ilub.unibe.ch</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

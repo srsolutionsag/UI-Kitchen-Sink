@@ -122,7 +122,6 @@ angular.module('uiKitchenSink').controller('ContentController', function($scope,
             $scope.onViewChange("right");
         }
     };
-
     Entries.promisedData().then(function(){
         $scope.doRouting();
     });

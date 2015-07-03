@@ -10,7 +10,8 @@
     "jstree": "latest",
     "jquery-ui": "latest",
     "blueimp-file-upload": "latest",
-    "angular-highlightjs": "latest"
+    "angular-highlightjs": "latest",
+    "eonasdan-bootstrap-datetimepicker": "latest"
   },
   "resolutions": {
     "angular": "1.3.15"

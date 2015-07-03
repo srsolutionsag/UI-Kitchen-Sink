@@ -155,7 +155,7 @@
                             "id":"fileUpload"
                         },
                         {
-                            "title": "Date/Color Picker",
+                            "title": "Picker",
                             "description": "Forms with date or color picker",
                             "id":"dateColorPicker"
                         },
@@ -194,23 +194,6 @@
                     ]
                 },
                 {
-                    "title": "Dropdowns",
-                    "id":"dropdowns",
-                    "description": "Description of this sub Category",
-                    "itemGroups": [
-                        {
-                            "title": "Item Group 1",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup1"
-                        },
-                        {
-                            "title": "Item Group 2",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup2"
-                        }
-                    ]
-                },
-                {
                     "title": "Tables",
                     "id":"tables",
                     "description": "Types of tables to be used in ILIAS",
@@ -221,24 +204,9 @@
                             "id":"basicTable"
                         },
                         {
-                            "title": "Filtered Table",
+                            "title": "Table Filter",
                             "description": "Forms with file upload elements",
                             "id":"filteredTable"
-                        },
-                        {
-                            "title": "Sortable Table",
-                            "description": "Forms with date or color picker",
-                            "id":"sortableTable"
-                        },
-                        {
-                            "title": "Table with Actions",
-                            "description": "Forms with an included WYSWYIG editor",
-                            "id":"tableWithActions"
-                        },
-                        {
-                            "title": "Multi-Select Table",
-                            "description": "Forms with an included WYSWYIG editor",
-                            "id":"multiSelectTable"
                         }
                     ]
                 },
@@ -256,22 +224,6 @@
                             "title": "Container List including Actions",
                             "description": "The standard ILIAS Form",
                             "id":"basicTable"
-                        }
-                    ]
-                },
-                {
-                    "title": "Calendars",
-                    "id":"calendars",
-                    "description": "Types of calendars to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                            "title": "Standard Calendar",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup1"
-                        },
-                        {
-                            "title": "Calendar in block",
-                            "id":"itemGroup2"
                         }
                     ]
                 },
