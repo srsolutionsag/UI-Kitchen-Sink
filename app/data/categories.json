@@ -17,6 +17,24 @@
                             "type": "html"
                         }
                     ]
+                },
+                {
+                    "title": "Less",
+                    "id":"less",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "About",
+                            "id":"aboutLess",
+                            "description": "Description of this Item Group",
+                            "type": "html"
+                        },
+                        {
+                            "title": "Variables",
+                            "id":"lessVariables",
+                            "description": "Description of this Item Group"
+                        }
+                    ]
                 }
             ]
         },
