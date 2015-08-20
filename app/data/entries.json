@@ -17,6 +17,228 @@
               "type": "html"
             }
           ]
+        },
+        {
+          "title": "Less",
+          "id": "less",
+          "description": "Description of this sub Category",
+          "itemGroups": [
+            {
+              "title": "About",
+              "id": "aboutLess",
+              "description": "Description of this Item Group",
+              "type": "html"
+            },
+            {
+              "title": "Variables",
+              "id": "lessVariables",
+              "description": "Description of this Item Group",
+              "items": [
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Alerts",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Badges",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Breadcrumbs",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Buttons",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Close",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesDropdowns",
+                  "title": "Code",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesColor",
+                  "title": "Color",
+                  "type": "less",
+                  "description": "Some description",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "brand-secondary",
+                        "description": "some Description1",
+                        "state": "Implemented"
+                      }
+                    ],
+                    "bootstrap": [
+                      {
+                        "title": "brand-primary",
+                        "description": "some bs Description",
+                        "state": "Implemented"
+                      },
+                      {
+                        "title": "brand-success",
+                        "description": "some bs Description 2",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "brand-info",
+                        "description": "some bs Description 2",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "brand-warning",
+                        "description": "some bs Description 2",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "brand-danger",
+                        "description": "some bs Description 2",
+                        "state": "Proposal"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Components",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Container Sizes",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesDropdowns",
+                  "title": "Dropdowns",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesForms",
+                  "title": "FormStates",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesForms",
+                  "title": "Forms",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Grid System",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTables",
+                  "title": "Tables",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Jumbotron",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesForms",
+                  "title": "List Group",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesZIndex",
+                  "title": "Carousel",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesZIndex",
+                  "title": "MediaQueries",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Modals",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Navbar",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Navs",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Pager",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Pagination",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Panels",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesForms",
+                  "title": "Popover",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Progress Bars",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Scaffolding",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Typography",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Thumbnails",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesForms",
+                  "title": "FormTooltips",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Type",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Wells",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesZIndex",
+                  "title": "ZIndex",
+                  "type": "less"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
