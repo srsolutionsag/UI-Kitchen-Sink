@@ -1,4 +1,4 @@
-module.directive('entryJsonContent', function ($http) {
+module.directive('entryJsonContent', function ($http,state) {
     return {
         restrict: 'AEC',
         scope: {
@@ -14,20 +14,8 @@ module.directive('entryJsonContent', function ($http) {
             }
             scope.stateType = "success";
 
-            switch(scope.entry.state){
-                case "Empty":
-                case "Concept":
-                    scope.stateType = "danger";
-                    break;
-                case "Proposal":
-                    scope.stateType = "warning";
-                    break;
-                case "Implemented":
-                    scope.stateType = "info";
-                    break;
-                default:
-                    scope.stateType = "success";
-            }
+            scope.stateType = state.getStateAlert(scope.entry.state);
+
 
             scope.htmlPath = scope.tabPath+'/'+scope.entry.id+'.html';
             $http.get(scope.htmlPath)
