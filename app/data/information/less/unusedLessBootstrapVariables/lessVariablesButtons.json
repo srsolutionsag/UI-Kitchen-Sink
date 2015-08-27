@@ -1,0 +1,105 @@
+{
+  "id": "lessVariablesButtons",
+  "title": "Buttons",
+  "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
+  "type": "less",
+    "variables":{
+        "bootstrap":[
+            {
+                "title":"btn-link-disabled-color",
+                "description":"Implemented in variables.less in Bootstrap but not used, colors are injected in Button/delos.less manualy directly instead. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-font-weight",
+                "description":"Implemented in variables.less in Bootstrap but not used. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-default-color",
+                "description":"Implemented in variables.less in ILIAS but not used, color 'white' directly instead. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-default-border",
+                "description":"Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-default-bg",
+                "description":"Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-primary-color",
+                "description":"Implemented in variables.less in Bootstrap but not used, color 'white' directly instead. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-primary-bg",
+                "description":"Implemented in variables.less in Bootstrap but not used, color brand-secondary is used directly instead. This should be fixed.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-success-border",
+                "description":"No usage of btn-success known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-success-color",
+                "description":"No usage of btn-success known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-success-bg",
+                "description":"No usage of btn-success known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-info-border",
+                "description":"No usage of btn-info known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-info-color",
+                "description":"No usage of btn-info known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-info-bg",
+                "description":"No usage of btn-info known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-warning-border",
+                "description":"No usage of btn-warning known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-warning-color",
+                "description":"No usage of btn-warning known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-warning-bg",
+                "description":"No usage of btn-warning known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-danger-border",
+                "description":"No usage of btn-danger known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-danger-color",
+                "description":"No usage of btn-danger known.",
+                "state":"Not Used"
+            },
+            {
+                "title":"btn-danger-bg",
+                "description":"No usage of btn-danger known.",
+                "state":"Not Used"
+            }
+        ]
+    }
+}

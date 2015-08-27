@@ -13,62 +13,115 @@
             {
               "title": "Overview",
               "id": "overview",
-              "description": "Description of this Item Group",
               "type": "html"
+            },
+            {
+              "title": "Terms",
+              "id": "importantTerms",
+              "items": [
+                {
+                  "id": "termsCategories",
+                  "title": "Categories",
+                  "type": "html"
+                },
+                {
+                  "id": "termsKeyWords",
+                  "title": "Key Words",
+                  "type": "html"
+                },
+                {
+                  "id": "termsStates",
+                  "title": "States",
+                  "type": "html"
+                }
+              ]
+            },
+            {
+              "title": "Workflows",
+              "id": "kitchenSinkWorkflows",
+              "items": [
+                {
+                  "id": "workflowAddElements",
+                  "title": "New Element",
+                  "type": "html"
+                },
+                {
+                  "id": "workflowChangeElements",
+                  "title": "Change Element",
+                  "type": "html"
+                },
+                {
+                  "id": "workflowImportElements",
+                  "title": "Import Element",
+                  "type": "html"
+                },
+                {
+                  "id": "z_workflowChecklist",
+                  "title": "Checklist",
+                  "type": "html"
+                },
+                {
+                  "id": "z_workflowTemplate",
+                  "title": "Template",
+                  "type": "html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Accessability",
+          "id": "accessability",
+          "description": "ILIAS takes accessability seriously. Accessability guidelines presented in this section MUST be followed if new elements are added.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "accessabilityOverview",
+              "type": "html"
+            },
+            {
+              "title": "Guidelines",
+              "id": "accessabilityGuidelines",
+              "items": [
+                {
+                  "id": "accessabilityAriaRoles",
+                  "title": "Aria Roles",
+                  "type": "html"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Less",
           "id": "less",
-          "description": "Description of this sub Category",
+          "description": "ILIAS uses less as css pre-processor. This section introduces all used less variables and guidelines of less.",
           "itemGroups": [
             {
-              "title": "About",
-              "id": "aboutLess",
-              "description": "Description of this Item Group",
-              "type": "html"
-            },
-            {
-              "title": "Variables",
-              "id": "lessVariables",
-              "description": "Description of this Item Group",
+              "title": "Overview",
+              "id": "lessOverview",
               "items": [
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Alerts",
-                  "type": "less"
+                  "id": "aboutLess",
+                  "title": "About LESS",
+                  "type": "html"
                 },
                 {
-                  "id": "lessVariablesTypography",
-                  "title": "Badges",
-                  "type": "less"
-                },
+                  "id": "lessILIAS",
+                  "title": "Less in ILIAS",
+                  "type": "html"
+                }
+              ]
+            },
+            {
+              "title": "Base",
+              "id": "lessBaseVariables",
+              "items": [
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Breadcrumbs",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Buttons",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Close",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesDropdowns",
-                  "title": "Code",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesColor",
-                  "title": "Color",
+                  "id": "lessVariablesColors",
+                  "title": "Colors",
                   "type": "less",
-                  "description": "Some description",
+                  "description": "Color definitions to be used. In some cases",
                   "variables": {
                     "ilias": [
                       {
@@ -80,6 +133,9 @@
                     "bootstrap": [
                       {
                         "title": "brand-primary",
+                        "value": "",
+                        "overriden": "",
+                        "usesInIlias": "",
                         "description": "some bs Description",
                         "state": "Implemented"
                       },
@@ -117,6 +173,83 @@
                   "type": "less"
                 },
                 {
+                  "id": "lessVariablesTables",
+                  "title": "Tables",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesZIndex",
+                  "title": "MediaQueries",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Scaffolding",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesZIndex",
+                  "title": "ZIndex",
+                  "type": "less"
+                }
+              ]
+            },
+            {
+              "title": "Elements",
+              "id": "lessElementsVariables",
+              "items": [
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Alerts",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Badges",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Close",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesDropdowns",
+                  "title": "Code",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesForms",
+                  "title": "List Group",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Progress Bars",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Thumbnails",
+                  "type": "less"
+                },
+                {
+                  "id": "lessVariablesTypography",
+                  "title": "Type",
+                  "type": "less"
+                }
+              ]
+            },
+            {
+              "title": "Collection",
+              "id": "lessCollectionVariables",
+              "items": [
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Breadcrumbs",
+                  "type": "less"
+                },
+                {
                   "id": "lessVariablesDropdowns",
                   "title": "Dropdowns",
                   "type": "less"
@@ -129,36 +262,6 @@
                 {
                   "id": "lessVariablesForms",
                   "title": "Forms",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Grid System",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesTables",
-                  "title": "Tables",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Jumbotron",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesForms",
-                  "title": "List Group",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesZIndex",
-                  "title": "Carousel",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesZIndex",
-                  "title": "MediaQueries",
                   "type": "less"
                 },
                 {
@@ -198,22 +301,7 @@
                 },
                 {
                   "id": "lessVariablesTypography",
-                  "title": "Progress Bars",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Scaffolding",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesTypography",
                   "title": "Typography",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Thumbnails",
                   "type": "less"
                 },
                 {
@@ -223,18 +311,528 @@
                 },
                 {
                   "id": "lessVariablesTypography",
-                  "title": "Type",
-                  "type": "less"
-                },
-                {
-                  "id": "lessVariablesTypography",
                   "title": "Wells",
                   "type": "less"
+                }
+              ]
+            },
+            {
+              "title": "Layout",
+              "id": "lessLayoutVariables",
+              "items": [
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Grid System",
+                  "type": "less"
                 },
                 {
-                  "id": "lessVariablesZIndex",
-                  "title": "ZIndex",
+                  "id": "lessVariablesHeader",
+                  "title": "Main Header",
+                  "type": "less",
+                  "description": "Variables used to customize the ILIAS Header section",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "il-header-height",
+                        "description": "Total height of all three header sections",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-height-sm",
+                        "description": "Total height of all three header sections in the responsive view",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-bg",
+                        "description": "Background color of the header section",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-vertical",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-horizontal",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-top",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-vertical",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-bottom",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-left",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-right",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "lessVariablesHeaderBranding",
+                  "title": "Header Branding",
+                  "type": "less",
+                  "description": "Variables used to customize the ILIAS Header section",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "il-header-branding-top",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-left",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-right",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-height",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-top-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-left-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-right-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-height-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-height-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-font-size",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-font-size-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-logo-size",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-logo-size-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-text-logo-padding",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-text-logo-padding-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-branding-bg",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "lessVariablesHeaderMainMenu",
+                  "title": "Header Main Menu",
+                  "type": "less",
+                  "description": "Variables used to customize the ILIAS Header section",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "il-header-main-border-width",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-border-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-border-width-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-top",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-top-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-left",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-left-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-right",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-right-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-float",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-color",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-active-color",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-open-color",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-bg",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-active-bg",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-open-bg",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-border",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-border-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-border-radius",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-main-menu-border-radius-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "lessVariablesHeaderTopNavigation",
+                  "title": "Header Top Navigation",
+                  "type": "less",
+                  "description": "Variables used to customize the ILIAS Header section",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "l-header-top-nav-top",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-top-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-left",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-left-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-right",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-border-right-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-float",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-margin-right",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-margin-right-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-min-width",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-min-width-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-min-height",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-min-height-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-font-size",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-font-size-sm",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-color",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-hover-color",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-bg",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      },
+                      {
+                        "title": "il-header-top-nav-box-hover-bg",
+                        "description": "Todo, add description",
+                        "state": "Proposal"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Unused Bootstrap Components",
+              "id": "unusedLessBootstrapVariables",
+              "items": [
+                {
+                  "id": "lessVariablesButtons",
+                  "title": "Buttons",
+                  "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
+                  "type": "less",
+                  "variables": {
+                    "bootstrap": [
+                      {
+                        "title": "btn-link-disabled-color",
+                        "description": "Implemented in variables.less in Bootstrap but not used, colors are injected in Button/delos.less manualy directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-font-weight",
+                        "description": "Implemented in variables.less in Bootstrap but not used. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-default-color",
+                        "description": "Implemented in variables.less in ILIAS but not used, color 'white' directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-default-border",
+                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-default-bg",
+                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-primary-color",
+                        "description": "Implemented in variables.less in Bootstrap but not used, color 'white' directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-primary-bg",
+                        "description": "Implemented in variables.less in Bootstrap but not used, color brand-secondary is used directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-success-border",
+                        "description": "No usage of btn-success known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-success-color",
+                        "description": "No usage of btn-success known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-success-bg",
+                        "description": "No usage of btn-success known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-info-border",
+                        "description": "No usage of btn-info known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-info-color",
+                        "description": "No usage of btn-info known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-info-bg",
+                        "description": "No usage of btn-info known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-warning-border",
+                        "description": "No usage of btn-warning known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-warning-color",
+                        "description": "No usage of btn-warning known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-warning-bg",
+                        "description": "No usage of btn-warning known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-danger-border",
+                        "description": "No usage of btn-danger known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-danger-color",
+                        "description": "No usage of btn-danger known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-danger-bg",
+                        "description": "No usage of btn-danger known.",
+                        "state": "Not Used"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "lessVariablesJumbotron",
+                  "title": "Jumbotron",
                   "type": "less"
+                },
+                {
+                  "id": "lessVariablesCarousel",
+                  "title": "Carousel",
+                  "type": "less"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Javascript",
+          "id": "javascript",
+          "description": "Javascript Guidelines in ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "javascriptOverview",
+              "type": "html"
+            },
+            {
+              "title": "Guidelines",
+              "id": "javascriptGuidelines",
+              "items": [
+                {
+                  "id": "javascriptGuidelines",
+                  "title": "Javascript Guidelines",
+                  "type": "html"
                 }
               ]
             }
@@ -467,36 +1065,60 @@
           "description": "Description of this sub Category",
           "itemGroups": [
             {
-              "title": "Standard",
-              "id": "standard",
+              "title": "Types",
+              "id": "buttonTypes",
               "description": "Description of this Item Group",
               "items": [
                 {
-                  "id": "standard",
-                  "title": "Standard Buttons in ILIAS",
-                  "description": "A set of standard Buttons to be used in ILIAS",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Size Modifications",
-              "id": "sizeModifications",
-              "description": "Description of this Item Group",
-              "items": [
+                  "id": "buttonDefault",
+                  "title": "Default",
+                  "description": "Default Button in ILIAS. This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance. Buttons are either of type input (with some cmd) or link (with some href).",
+                  "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "brand-primary",
+                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "il-button-color",
+                      "description": "Text Color of the button",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "usedBy": [
+                    "modal"
+                  ]
+                },
                 {
-                  "id": "sizeModifications",
-                  "title": "Size Modifications",
-                  "description": "Size Modifications of buttons",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "buttonPrimary",
+                  "title": "Primary",
+                  "description": "According to <a href='http://www.ilias.de/docu/goto_docu_wiki_wpage_1441_1357.html'>Emphasized Buttons for Primary Action</a> 'Buttons for a common and important next action that tend to be overlooked, should get a special emphasized style'. This style is currently named as 'Primary Button'. There should only be one 'Primary Button' per page and each use must be confirmed by the JF. In Toolbars primary actions will be sticky, meaning they will not be disappear in the responsive view.",
+                  "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "brand-secondary",
+                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value",
+                      "state": "Implemented"
+                    },
+                    {
+                      "title": "il-button-color",
+                      "description": "Text Color of the button",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "uses": "",
+                  "usedBy": [
+                    "Test/Survey (Start Test)",
+                    "File > Info (Download File)",
+                    "Exercise (Hand In)",
+                    "Exercise (Give Feedback)",
+                    "Repository (Add New Item)",
+                    "Course/Group > Session > Info (Join)",
+                    "Learning Modules > Info (View)"
+                  ]
                 }
               ]
             },
@@ -506,14 +1128,11 @@
               "description": "Description of this Item Group",
               "items": [
                 {
-                  "id": "states",
-                  "title": "Deactivated State",
-                  "description": "How a button should lookk like if deactivated",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "buttonDisabled",
+                  "title": "Disabled",
+                  "description": "If an action is temporarily not available, actions (buttons) might be disabled. Only disable actions that can be enabled by some action of the user. If they are not available due to some setting, do not display them.",
+                  "state": "Implemented for 5.0",
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
                 }
               ]
             }
@@ -531,23 +1150,6 @@
           "id": "forms",
           "description": "Types of forms to be used in ILIAS",
           "itemGroups": [
-            {
-              "title": "Basic Form",
-              "description": "The standard ILIAS Form",
-              "id": "basicForm",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
             {
               "title": "File Upload",
               "description": "Forms with file upload elements",
@@ -593,23 +1195,6 @@
                   "context": "Context of the new item",
                   "knownUses": "Knonwn uses of the new item",
                   "relations": "<a href='#/content/collections/forms/dateColorPicker/dateTimePicker'>Date Time Picker</a>"
-                }
-              ]
-            },
-            {
-              "title": "WYSIWYG",
-              "description": "Forms with an included WYSWYIG editor",
-              "id": "wysiwyg",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
                 }
               ]
             }
@@ -742,35 +1327,13 @@
               "title": "Basic Container List",
               "description": "The standard ILIAS Form",
               "id": "basicTable",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Container List including Actions",
               "description": "The standard ILIAS Form",
               "id": "basicTable",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             }
           ]
         },
@@ -882,31 +1445,17 @@
           "description": "Main skeleton of the ILIAS Dom structure",
           "itemGroups": [
             {
-              "title": "Overview",
-              "id": "mainStructureOverview",
-              "description": "Overview of the main Structure in ILIAS",
-              "type": "html"
-            },
-            {
               "title": "ILIAS Main Structure",
               "id": "iliasMainStructure",
               "description": "Description of this Item Group",
               "items": [
                 {
-                  "id": "iliasMainStructureEntry",
-                  "title": "Dom Structure of ILIAS Main Page Layout",
-                  "description": "The main layout of the ILIAS Page contains four sections: the Header section, the Sidebar section, the content section and the footer section",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                },
-                {
-                  "id": "pageLayout",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
+                  "id": "iliasMainStructureOverview",
+                  "title": "Overview",
+                  "description": "The main layout of the ILIAS Page contains three sections: the header section, the content section and the footer section",
+                  "lessVariables": [],
+                  "isIframe": true,
+                  "state": "Proposal",
                   "guiClass": "GUI Class that the new item uses",
                   "context": "Context of the new item",
                   "knownUses": "Knonwn uses of the new item",
@@ -920,14 +1469,132 @@
               "id": "header",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "0_iliasHeaderOverview",
+                  "title": "Overview",
+                  "isIframe": true,
+                  "description": "Overview of the ILIAS header area",
+                  "state": "proposal",
+                  "lessVariables": [
+                    {
+                      "title": "il-header-height",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-height-sm",
+                      "description": "Total height of all three header sections in the responsive view",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-bg",
+                      "description": "Background color of the header section",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-border-vertical",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-border-horizontal",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-border-top",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-border-bottom",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-border-left",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-header-border-right",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "zindex-navbar-fixed",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "Todo",
+                  "uses": "",
+                  "usedBy": []
+                },
+                {
+                  "id": "iliasHeaderBranding",
+                  "title": "Branding",
+                  "isIframe": true,
+                  "description": "The branding area SHOULD contain the logo of the application and its title.",
+                  "state": "Proposal",
+                  "lessVariables": [
+                    {
+                      "title": "il-header-border-right",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "zindex-navbar-fixed",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "Todo",
+                  "uses": "",
+                  "usedBy": []
+                },
+                {
+                  "id": "iliasHeaderMainMenu",
+                  "title": "Main Menu",
+                  "isIframe": true,
+                  "description": "The main menu handles the main navigation in ILIAS.",
+                  "state": "Proposal",
+                  "lessVariables": [
+                    {
+                      "title": "il-header-border-right",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "zindex-navbar-fixed",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "Todo",
+                  "uses": "",
+                  "usedBy": []
+                },
+                {
+                  "id": "iliasHeaderTopNav",
+                  "title": "Top Nav",
+                  "isIframe": true,
+                  "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen",
+                  "state": "Proposal",
+                  "lessVariables": [
+                    {
+                      "title": "il-header-border-right",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "zindex-navbar-fixed",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "Todo",
+                  "uses": "",
+                  "usedBy": []
                 }
               ]
             },
@@ -937,14 +1604,57 @@
               "id": "content",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "0_iliasContentOverview",
+                  "isIframe": true,
+                  "title": "Overview",
+                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example",
+                  "state": "Proposal",
+                  "lessVariables": [
+                    {
+                      "title": "il-header-height-sm",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-footer-height",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-content-bg-color",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "Todo",
+                  "uses": "",
+                  "usedBy": []
+                },
+                {
+                  "id": "iliasContentCenter",
+                  "title": "Center Content",
+                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example",
+                  "state": "Proposal",
+                  "lessVariables": [
+                    {
+                      "title": "il-header-height-sm",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-footer-height",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-content-bg-color",
+                      "description": "Total height of all three header sections",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "Todo",
+                  "uses": "",
+                  "usedBy": []
                 }
               ]
             },
@@ -954,10 +1664,33 @@
               "id": "footer",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
+                  "id": "iliasMainStructureFooter",
+                  "title": "Overview",
+                  "description": "The footer mostly displays some meta information about the page.",
+                  "lessVariables": [
+                    {
+                      "title": "il-footer-height",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-footer-color",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-footer-padding-horizontal",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    },
+                    {
+                      "title": "il-footer-padding-vertical",
+                      "description": "Todo, add description",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "isIframe": true,
+                  "state": "Proposal",
                   "guiClass": "GUI Class that the new item uses",
                   "context": "Context of the new item",
                   "knownUses": "Knonwn uses of the new item",

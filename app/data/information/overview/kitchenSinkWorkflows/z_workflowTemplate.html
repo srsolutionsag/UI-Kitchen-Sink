@@ -1,0 +1,34 @@
+<p>If the workflow for adding/updating/importing instructs to implement a new component for the UI-Kitchen-Sink, use the following template to create the JSON object for the component.
+You MUST also provide an html file name {idOfComponent}.html with the DOM structure of the new component. If custom less or JS code is needed to render the element, according {idOfComponent}.less
+    or {idOfComponent}.js file MUST also be provided.
+</p>
+
+<pre class="javascript">
+{
+        "id": "idOfComponent", //id of the new component, entries will be sorted according the component id
+        "title": "nameOfComponent", //name of the component, appearing in the tab section
+        "description": "Some useful description. The context of where and how to use this component should be made clear.",
+        "state": "Implemented for 5.0", //State of the component (see "States" for more information about states
+        "lessVariables": //List of all the less variables in use.
+        [
+            {
+                "title": "brand-primary",
+                "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
+                "state": "Implemented for 5.0"
+            },{
+                "title": "il-button-color",
+                "description": "Text Color of the button", "state": "Proposal"
+            }
+        ],
+        "guiClass": "ilLinkButton (ilButton),
+        ilSubmitButton (ilButton)",
+        "uses": ["modal"]
+}
+</pre>
+<script>
+    $(document).ready(function() {
+        $('.javascript').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    });
+</script>

@@ -13,26 +13,78 @@
                         {
                             "title": "Overview",
                             "id":"overview",
-                            "description": "Description of this Item Group",
                             "type": "html"
+                        },
+                        {
+                            "title": "Terms",
+                            "id":"importantTerms"
+                        },
+                        {
+                            "title": "Workflows",
+                            "id":"kitchenSinkWorkflows"
+                        }
+                    ]
+                },
+                {
+                    "title": "Accessability",
+                    "id":"accessability",
+                    "description": "ILIAS takes accessability seriously. Accessability guidelines presented in this section MUST be followed if new elements are added.",
+                    "itemGroups": [
+                        {
+                            "title": "Overview",
+                            "id":"accessabilityOverview",
+                            "type": "html"
+                        },
+                        {
+                            "title": "Guidelines",
+                            "id":"accessabilityGuidelines"
                         }
                     ]
                 },
                 {
                     "title": "Less",
                     "id":"less",
-                    "description": "Description of this sub Category",
+                    "description": "ILIAS uses less as css pre-processor. This section introduces all used less variables and guidelines of less.",
                     "itemGroups": [
                         {
-                            "title": "About",
-                            "id":"aboutLess",
-                            "description": "Description of this Item Group",
+                            "title": "Overview",
+                            "id":"lessOverview"
+                        },
+                        {
+                            "title": "Base",
+                            "id":"lessBaseVariables"
+                        },
+                        {
+                            "title": "Elements",
+                            "id":"lessElementsVariables"
+                        },
+                        {
+                            "title": "Collection",
+                            "id":"lessCollectionVariables"
+                        },
+                        {
+                            "title": "Layout",
+                            "id":"lessLayoutVariables"
+                        },
+                        {
+                            "title": "Unused Bootstrap Components",
+                            "id":"unusedLessBootstrapVariables"
+                        }
+                    ]
+                },
+                {
+                    "title": "Javascript",
+                    "id":"javascript",
+                    "description": "Javascript Guidelines in ILIAS.",
+                    "itemGroups": [
+                        {
+                            "title": "Overview",
+                            "id":"javascriptOverview",
                             "type": "html"
                         },
                         {
-                            "title": "Variables",
-                            "id":"lessVariables",
-                            "description": "Description of this Item Group"
+                            "title": "Guidelines",
+                            "id":"javascriptGuidelines"
                         }
                     ]
                 }
@@ -134,13 +186,8 @@
                     "description": "Description of this sub Category",
                     "itemGroups": [
                         {
-                            "title": "Standard",
-                            "id":"standard",
-                            "description": "Description of this Item Group"
-                        },
-                        {
-                            "title": "Size Modifications",
-                            "id":"sizeModifications",
+                            "title": "Types",
+                            "id":"buttonTypes",
                             "description": "Description of this Item Group"
                         },
                         {
@@ -163,11 +210,6 @@
                     "description": "Types of forms to be used in ILIAS",
                     "itemGroups": [
                         {
-                            "title": "Basic Form",
-                            "description": "The standard ILIAS Form",
-                            "id":"basicForm"
-                        },
-                        {
                             "title": "File Upload",
                             "description": "Forms with file upload elements",
                             "id":"fileUpload"
@@ -176,11 +218,6 @@
                             "title": "Picker",
                             "description": "Forms with date or color picker",
                             "id":"dateColorPicker"
-                        },
-                        {
-                            "title": "WYSIWYG",
-                            "description": "Forms with an included WYSWYIG editor",
-                            "id":"wysiwyg"
                         }
                     ]
                 },
@@ -292,12 +329,6 @@
                     "id":"mainStructure",
                     "description": "Main skeleton of the ILIAS Dom structure",
                     "itemGroups": [
-                        {
-                            "title": "Overview",
-                            "id":"mainStructureOverview",
-                            "description": "Overview of the main Structure in ILIAS",
-                            "type": "html"
-                        },
                         {
                             "title": "ILIAS Main Structure",
                             "id":"iliasMainStructure",

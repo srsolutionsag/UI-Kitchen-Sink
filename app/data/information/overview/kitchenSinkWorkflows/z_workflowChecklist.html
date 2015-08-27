@@ -1,0 +1,25 @@
+<p>If the workflow for adding/updating/importing instructs to implement a new component for the UI-Kitchen-Sink, the following points must be checked:</p>
+
+<dl class="dl-horizontal">
+    <dt>Point 1:</dt>
+    <dd>Make sure there does not exist already a UI-Kitchen-Sink Element that can be used for the targeted use case.</dd>
+    <dt>Point 2:</dt>
+    <dd>Check on <a href="http://getbootstrap.com/">Bootstrap 3</a> if there exists a Bootstrap component that could be used or just slightly modified.</dd>
+    <dt>Point 3:</dt>
+    <dd>Write your own DOM structure. Be sure to follow the guidelines concerning <a href="/#content/information/accessability/guidelines">accessibility</a>.</dd>
+    <dt>Point 4:</dt>
+    <dd>Check if there are existing bootstrap or ILIAS less classes that could be used or extended.</dd>
+    <dt>Point 5:</dt>
+    <dd>Check if there are existing bootstrap or ILIAS less mixins that could be used.</dd>
+    <dt>Point 6:</dt>
+    <dd>Write your own less. Less variables presented in the UI-Kitchen-Sink SHOULD be used if they fit the context of a given class. You MUST check if variables exists for often used
+        attributes such as color or padding. Be sure to design your classes mobile-first, meaning first define the class for a mobile device using a media query and in a second step
+        add the exceptions for a bigger screen. If custom classes or variables are needed, be sure to follow the <a href="/#content/information/less/Overview/lessNamingConvention">naming conventions</a> for less variables and classnames.
+    </dd>
+    <dt>Point 7:</dt>
+    <dd>You SHOULD try to avoid JS as much as possible. Often JS code can be avoided by using attributes such as data-toggle and data-target offered by <a href="http://getbootstrap.com/javascript/#js-overview">bootstrap approprietly.</a>
+        See <a href="#/content/collections/tables/filteredTable/">Table Filter</a> as example. If you need to implement JS, you MUST respect the <a href="#/content/information/javascript/javascriptGuidelines/">JS Guidelines</a>.
+    </dd>
+    <dt>Point 8:</dt>
+    <dd>You MUST use the <a href="#/content/information/overview/kitchenSinkWorkflows/kitchenSinkTemplate">'UI-Kitchen-Sink Template'</a> to create your pull request for the UI-Kitchen-Sink.</dd>
+</dl>

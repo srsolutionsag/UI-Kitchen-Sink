@@ -1,0 +1,27 @@
+{
+  "id": "0_iliasContentOverview",
+  "isIframe": true,
+  "title": "Overview",
+  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example",
+    "state": "Proposal",
+    "lessVariables": [
+        {
+            "title":"il-header-height-sm",
+            "description":"Total height of all three header sections",
+            "state":"Proposal"
+        },
+        {
+            "title":"il-footer-height",
+            "description":"Total height of all three header sections",
+            "state":"Proposal"
+        },
+        {
+            "title":"il-content-bg-color",
+            "description":"Total height of all three header sections",
+            "state":"Proposal"
+        }
+    ],
+    "guiClass": "Todo",
+    "uses": "",
+    "usedBy": []
+}
