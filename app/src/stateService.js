@@ -1,15 +1,14 @@
 angular.module('uiKitchenSink').factory('state', function () {
     this.getStateAlert = function (state) {
         switch(state){
-            case "Empty":
-            case "Deprecated":
-                return "danger";
             case "Proposal":
             case "Concept":
                 return "warning";
-            case "Version 5.2":
+            case "Accepted":
                 return "info";
-            case "Implemented":
+            case "Implemented for 5.0":
+            case "Implemented for 5.1":
+            case "Implemented for 5.2":
                 return "success";
             default:
                 return "danger";
