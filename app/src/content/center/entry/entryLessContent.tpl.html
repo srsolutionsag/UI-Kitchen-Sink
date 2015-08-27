@@ -1,13 +1,21 @@
 <div class="well">{{item.description}}</div>
-<h4>ILIAS</h4>
-<div ng-repeat="(id,variable) in item.variables.ilias">
-    <div class="alert alert-{{getStateAlert(variable.state)}}" role="alert">
-        <strong>{{variable.title}}: </strong>{{variable.description}}
+<div ng-if="item.variables.ilias">
+    <h4>ILIAS</h4>
+    <div ng-repeat="(id,variable) in item.variables.ilias" >
+        <less-variable
+                variable="variable"
+                show-relations="true"
+                >
+        </less-variable>
     </div>
 </div>
-<h4>Bootstrap</h4>
-<div ng-repeat="(id,variable) in item.variables.bootstrap">
-    <div class="alert alert-{{getStateAlert(variable.state)}}" role="alert">
-        <strong>{{variable.title}}: </strong>{{variable.description}}
+<div ng-if="item.variables.bootstrap"">
+    <h4>Bootstrap</h4>
+    <div ng-repeat="(id,variable) in item.variables.bootstrap">
+        <less-variable
+                variable="variable"
+                show-relations="true"
+                >
+        </less-variable>
     </div>
 </div>

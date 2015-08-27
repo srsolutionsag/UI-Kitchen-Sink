@@ -53,17 +53,30 @@
             <!-- Entry Section ================================================== -->
             <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type=='html'">
                 <entry-html-content
-                    item-group="tabSelected"
+                    item="tabSelected"
                     index="{{index}}"
                     tab-path="{{tabSelected.path}}">
                 </entry-html-content>
             </div>
             <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type!='html'">
-                <entry-json-content
-                    entry="subTabSelected"
-                    index="{{subTabSelected.index}}"
-                    tab-path="{{tabSelected.path}}">
-                </entry-json-content>
+                <div ng-if="subTabSelected.type=='less'">
+                    <entry-less-content
+                            item="subTabSelected">
+                    </entry-less-content>
+                </div>
+                <div ng-if="subTabSelected.type=='html'">
+                    <entry-html-content
+                            item="subTabSelected"
+                            tab-path="{{tabSelected.path}}">
+                    </entry-html-content>
+                </div>
+                <div ng-if="subTabSelected.type!='html' && subTabSelected.type!='less'">
+                    <entry-json-content
+                            entry="subTabSelected"
+                            index="{{subTabSelected.index}}"
+                            tab-path="{{tabSelected.path}}">
+                    </entry-json-content>
+                </div>
             </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-module.directive('entryJsonContent', function ($http,state) {
+module.directive('entryJsonContent', function ($http,state,$timeout) {
     return {
         restrict: 'AEC',
         scope: {
@@ -17,6 +17,9 @@ module.directive('entryJsonContent', function ($http,state) {
             scope.stateType = state.getStateAlert(scope.entry.state);
 
 
+            if(scope.entry.lessVariables && scope.entry.lessVariables.length === 0){
+                scope.entry.lessVariables = undefined;
+            }
             scope.htmlPath = scope.tabPath+'/'+scope.entry.id+'.html';
             $http.get(scope.htmlPath)
                 .success(function(data) {
@@ -47,18 +50,33 @@ module.directive('entryJsonContent', function ($http,state) {
                 .error(function() {
                     console.log('could not find '+scope.jsPath);
                 });
-            scope.jsVariables = scope.tabPath+'/'+scope.entry.id+'.variables.less';
-            $http.get(scope.jsVariables)
-                .success(function(data) {
-                    scope.lessVariables = data;
-                })
-                .error(function() {
-                    console.log('could not find '+scope.jsVariables);
-                });
+
 
             scope.onHtmlLoaded = function(){
                 $.getScript(scope.jsPath, function(){});
             };
+            scope.addCSSToIframe = function(counts){
+                $timeout(function(){
+                    if(scope.entry.isIframe){
+                        $('#'+scope.index+'-iframe-example').load(function(){
+                            console.log("loading iframe");
+                        });
+                        if($('#'+scope.index+'-iframe-example').contents().find("body").html() !== undefined && $('#'+scope.index+'-iframe-example').contents().find("body").html() !== ""){
+                            $('#'+scope.index+'-iframe-example').contents().find("head").append('<link href="/app/static/css/app.css" rel="stylesheet" type="text/css" />');
+                            //$('#'+scope.index+'-iframe-example').contents().find("body").append('<script src="/libs/jquery/dist/jquery.js"></script>');
+                            //$('#'+scope.index+'-iframe-example').contents().find("body").append('<script src="/libs/bootstrap/dist/js/bootstrap.js"></script>');
+                            //$('#'+scope.index+'-iframe-example').contents().find("body").append('<script>$("#testing").html("test")</script>');
+                            return;
+                        }
+                        if(counts > 0){
+                            scope.addCSSToIframe(counts-1);
+                        }
+                    }
+                },25);
+            };
+
+            scope.addCSSToIframe(100);
+
         }
     };
 });

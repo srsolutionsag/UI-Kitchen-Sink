@@ -1,11 +1,12 @@
+<div class="well" ng-bind-html="entry.description"></div>
 <div class="alert alert-{{stateType}}" role="alert">
-    State: {{entry.state}}
+    <p class="lead">State: {{entry.state}}</p>
+    <p ng-if="entry.guiClass">GUI-Class: {{entry.guiClass}}</p>
 </div>
-<h3 id="il-content-title" class="il-heading">{{entry.title}}</h3>
 <div class="panel panel-default">
-    <div id="{{index}}HtmlExample" class="uiks-content-demo-container panel-body">
-        <div ng-include src="htmlPath" onload="onHtmlLoaded()"></div>
-        <script></script>
+    <div id="{{index}}-html-example" class="uiks-content-demo-container panel-body">
+        <iframe id='{{index}}-iframe-example' src="{{htmlPath}}" width="100%" height="500px" ng-if="entry.isIframe"> </iframe>
+        <div ng-include src="htmlPath" onload="onHtmlLoaded()" ng-if="!entry.isIframe"></div>
     </div>
 </div>
 <div class="panel-group" id="accordion{{index}}" role="tablist" aria-multiselectable="true">
@@ -23,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default"  ng-if='entry.lessVariables !== undefined'>
         <div class="panel-heading" role="tab" id="headingLessVariables">
             <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseLessVariables{{index}}" aria-expanded="false" aria-controls="collapseLessVariables">
@@ -33,11 +34,15 @@
         </div>
         <div id="collapseLessVariables{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLessVariables">
             <div class="panel-body">
-                <div hljs source="lessVariables" language="less"></div>
+                <div ng-repeat="(id, variable) in entry.lessVariables">
+                    <less-variable
+                            variable="variable">
+                    </less-variable>
+                </div>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-if='lessCode !== undefined'>
         <div class="panel-heading" role="tab" id="headingLess">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseLess{{index}}" aria-expanded="true" aria-controls="collapseLess">
@@ -51,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-if='jsCode !== undefined'>
         <div class="panel-heading" role="tab" id="headingJS">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseJS{{index}}" aria-expanded="true" aria-controls="collapseJS">
@@ -65,64 +70,7 @@
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseOne{{index}}" aria-controls="collapseOne">
-                    Description
-                </a>
-            </h4>
-        </div>
-        <div id="collapseOne{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-                <div ng-bind-html="entry.description"></div>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseTwo{{index}}" aria-expanded="false" aria-controls="collapseTwo">
-                    Context
-                </a>
-            </h4>
-        </div>
-        <div id="collapseTwo{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-                <div ng-bind-html="entry.context"></div>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseThree{{index}}" aria-expanded="false" aria-controls="collapseThree">
-                    Known Uses
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                <div ng-bind-html="entry.knownUses"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFive">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseFive{{index}}" aria-expanded="false" aria-controls="collapseFive">
-                    GUI Class
-                </a>
-            </h4>
-        </div>
-        <div id="collapseFive{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-            <div class="panel-body">
-                {{entry.guiClass}}
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-if="entry.usedBy || entry.uses">
         <div class="panel-heading" role="tab" id="headingSix">
             <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseSix{{index}}" aria-expanded="false" aria-controls="collapseSix">
@@ -132,7 +80,18 @@
         </div>
         <div id="collapseSix{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
             <div class="panel-body">
-                <div ng-bind-html="entry.relations"></div>
+                Used By:
+                <p ng-if="entry.usedBy">
+                    <ul ng-repeat="(id,usage) in entry.usedBy">
+                        <li>{{usage}}</li>
+                    </ul>
+                </p>
+                Uses:
+                <p ng-if="entry.uses">
+                    <ul ng-repeat="(id,usage) in entry.uses">
+                        <li>{{usage}}</li>
+                    </ul>
+                </p>
             </div>
         </div>
     </div>
