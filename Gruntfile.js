@@ -160,7 +160,11 @@ module.exports = function(grunt) {
             for(var id in existingJsonsAsArray){
                 var jsonPath = existingJsonsAsArray[id];
                 var jsonObject = grunt.file.readJSON(jsonPath);
-                var jsonObjectProperties = JSON.stringify(Object.getOwnPropertyNames (jsonObject));
+                jsonObject.fullPath = path+jsonObject.id;
+
+                jsonObject.path = jsonObject.fullPath.substr(this.data.dataDir.length);
+
+                //var jsonObjectProperties = JSON.stringify(Object.getOwnPropertyNames (jsonObject));
                 if(false){//jsonObjectProperties != templateProperties){
                     grunt.log.error("Warning: "+jsonPath+" has invalid properties and will not be added to: "+this.data.jsonOutputPath);
                     grunt.log.error("---> Expected: "+templateProperties);
