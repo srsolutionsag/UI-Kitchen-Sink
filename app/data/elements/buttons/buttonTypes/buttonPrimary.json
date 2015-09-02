@@ -12,15 +12,5 @@
         "description": "Text Color of the button",
         "state": "Proposal"
     }],
-    "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-    "uses": "",
-    "usedBy": [
-        "Test/Survey (Start Test)",
-        "File > Info (Download File)",
-        "Exercise (Hand In)",
-        "Exercise (Give Feedback)",
-        "Repository (Add New Item)",
-        "Course/Group > Session > Info (Join)",
-        "Learning Modules > Info (View)"
-    ]
+    "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
 }

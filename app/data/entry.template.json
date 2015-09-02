@@ -1,10 +1,32 @@
 {
-    "id": "Will be overwritten by name of matching html file",
-    "title": "Title of the new item",
-    "description": "Description of the new item",
-    "lessVariables": "Less Variable used of the new item",
-    "guiClass": "GUI Class that the new item uses",
-    "context": "Context of the new item",
-    "knownUses": "Knonwn uses of the new item",
-    "relations": "Relations of the new item"
+    "id": "idOfComponentCamelCase",
+    "title": "Name of Component",
+    "description": "Some useful description",
+    "state": "Implemented for 5.0",
+    "lessVariables":
+        [
+            {
+                "title": "bootstrap-variable",
+                "description": "Usage description",
+                "state": "Implemented for 5.0"
+            },{
+            "title": "il-ilias-variable",
+            "description": "Usage description",
+            "state": "Implemented for 5.0"
+        }
+        ],
+    "guiClass": "ilSomeILIASGUIClass",
+    "relations": {
+        "isA":[
+            "idOfParentComponent"
+        ],
+        "mustUse":[
+            "idOfComponentA",
+            "idOfComponentB"
+        ],
+        "mayUse":[
+            "idOfComponentC",
+            "idOfComponentD"
+        ]
+    }
 }

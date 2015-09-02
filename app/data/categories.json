@@ -96,8 +96,25 @@
             "description": "Description of this Category",
             "subCategories": [
                 {
+                    "title": "Grid",
+                    "id":"elementsGrid",
+                    "description": "Description of this sub Category",
+                    "itemGroups": [
+                        {
+                            "title": "Container",
+                            "description": "Forms with file upload elements",
+                            "id":"fileUpload"
+                        },
+                        {
+                            "title": "Grid",
+                            "description": "Forms with file upload elements",
+                            "id":"fileUpload"
+                        }
+                    ]
+                },
+                {
                     "title": "Typography",
-                    "id":"typography",
+                    "id":"elementsTypography",
                     "description": "Typography to be used in ILIAS",
                     "itemGroups": [
                         {
@@ -130,7 +147,7 @@
                 },
                 {
                     "title": "Colors",
-                    "id":"colors",
+                    "id":"elementsColors",
                     "description": "Colors to be used in ILIAS",
                     "itemGroups": [
                         {
@@ -148,7 +165,7 @@
                 },
                 {
                     "title": "Lists",
-                    "id":"lists",
+                    "id":"elementsLists",
                     "description": "Description of this sub Category",
                     "itemGroups": [
                         {
@@ -165,7 +182,7 @@
                 },
                 {
                     "title": "Images",
-                    "id":"images",
+                    "id":"elementsImages",
                     "description": "Description of this sub Category",
                     "itemGroups": [
                         {
@@ -182,7 +199,7 @@
                 },
                 {
                     "title": "Buttons",
-                    "id":"buttons",
+                    "id":"elementsButtons",
                     "description": "Description of this sub Category",
                     "itemGroups": [
                         {
@@ -205,25 +222,8 @@
             "description": "Description of this Category",
             "subCategories": [
                 {
-                    "title": "Forms",
-                    "id":"forms",
-                    "description": "Types of forms to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                            "title": "File Upload",
-                            "description": "Forms with file upload elements",
-                            "id":"fileUpload"
-                        },
-                        {
-                            "title": "Picker",
-                            "description": "Forms with date or color picker",
-                            "id":"dateColorPicker"
-                        }
-                    ]
-                },
-                {
                     "title": "Navigation",
-                    "id":"navigation",
+                    "id":"collectionsNavigation",
                     "description": "Elements used to navigate",
                     "itemGroups": [
                         {
@@ -249,8 +249,52 @@
                     ]
                 },
                 {
+                    "title": "Actions Menus",
+                    "id":"collectionsActions",
+                    "description": "Elements used to navigate",
+                    "itemGroups": [
+                        {
+                            "title": "Navbars",
+                            "description": "Deviations of the Bootstrap Navbar",
+                            "id":"navbars"
+                        },
+                        {
+                            "title": "Tabs",
+                            "description": "Deviations of Bootstrap tabs",
+                            "id":"tabs"
+                        },
+                        {
+                            "title": "Tree",
+                            "description": "Deviations of the jsTree",
+                            "id":"tree"
+                        },
+                        {
+                            "title": "Breadcrumbs",
+                            "description": "Deviations of Bootstrap Breadcrums",
+                            "id":"breacrumbs"
+                        }
+                    ]
+                },
+                {
+                    "title": "Forms",
+                    "id":"collectionsForms",
+                    "description": "Types of forms to be used in ILIAS",
+                    "itemGroups": [
+                        {
+                            "title": "File Upload",
+                            "description": "Forms with file upload elements",
+                            "id":"fileUpload"
+                        },
+                        {
+                            "title": "Picker",
+                            "description": "Forms with date or color picker",
+                            "id":"dateColorPicker"
+                        }
+                    ]
+                },
+                {
                     "title": "Tables",
-                    "id":"tables",
+                    "id":"collectionsTables",
                     "description": "Types of tables to be used in ILIAS",
                     "itemGroups": [
                         {
@@ -266,55 +310,63 @@
                     ]
                 },
                 {
-                    "title": "Container Lists",
-                    "id":"containerLists",
-                    "description": "Container Lists to show Repository Items",
+                    "title": "Dialogs",
+                    "id":"dialogsCategory",
+                    "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
                     "itemGroups": [
                         {
-                            "title": "Basic Container List",
-                            "description": "The standard ILIAS Form",
-                            "id":"basicTable"
+                            "title": "Overview",
+                            "id":"dialogsOverview"
                         },
                         {
-                            "title": "Container List including Actions",
-                            "description": "The standard ILIAS Form",
-                            "id":"basicTable"
+                            "title": "Modals",
+                            "id":"dialogsModals"
+                        },
+                        {
+                            "title": "Non-Modals",
+                            "id":"dialogsNonModals"
                         }
                     ]
                 },
                 {
-                    "title": "Blocks",
-                    "description": "Blocks that can be used to group elements in views",
+                    "title": "Callouts",
+                    "id":"dialogsCategory",
+                    "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
                     "itemGroups": [
                         {
-                            "title": "Side-Block",
-                            "description": "Description of this Item Group",
-                            "id":"sideBlock"
+                            "title": "Overview",
+                            "id":"dialogsOverview"
                         },
                         {
-                            "title": "Center-Block",
-                            "id":"centerBlock"
+                            "title": "Modals",
+                            "id":"dialogsModals"
+                        },
+                        {
+                            "title": "Non-Modals",
+                            "id":"dialogsNonModals"
                         }
                     ]
                 },
                 {
-                    "title": "Modals",
-                    "id":"modals",
-                    "description": "Types of overlays to be used in ILIAS",
+                    "title": "Content",
+                    "id":"collectionsContent",
+                    "description": "Types of forms to be used in ILIAS",
                     "itemGroups": [
                         {
-                            "title": "Standard Modal",
-                            "description": "Description of this Item Group",
-                            "id":"standardModal"
+                            "id":"contentContainerLists",
+                            "title": "Container Lists",
+                            "description": "Container Lists to show Repository Items"
                         },
                         {
-                            "title": "Small Modal",
-                            "id":"smallModal"
+                            "title": "contentBlocks",
+                            "description": "Blocks that can be used to group elements in views"
+
                         },
                         {
-                            "title": "Modal with Form",
-                            "id":"modalWithForm"
+                            "title": "contentPanels",
+                            "description": "Blocks that can be used to group elements in views"
                         }
+
                     ]
                 }
             ]
@@ -352,19 +404,25 @@
                     ]
                 },
                 {
-                    "title": "Grid Layouts",
-                    "id":"gridLayouts",
-                    "description": "Grid Layouts that can be used in ILIAS",
+                    "title": "Repository",
+                    "id":"repositoryObjects",
+                    "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
-                            "title": "2-Column Layouts",
-                            "id":"2ColumnLayouts",
+                            "title": "Content Tab",
+                            "id":"structureGrids",
                             "description": "Description of this Item Group"
-
-                        },
+                        }
+                    ]
+                },
+                {
+                    "title": "Sidebar Elements",
+                    "id":"layoutsSidebarElements",
+                    "description": "Layouts used in the Sidebar of the Content section.",
+                    "itemGroups": [
                         {
-                            "title": "3-Column Layouts",
-                            "id":"3ColumnLayouts",
+                            "title": "Grids",
+                            "id":"structureGrids",
                             "description": "Description of this Item Group"
                         }
                     ]

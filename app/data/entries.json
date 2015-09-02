@@ -22,17 +22,23 @@
                 {
                   "id": "termsCategories",
                   "title": "Categories",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/importantTerms/termsCategories",
+                  "path": "/information/overview/importantTerms/termsCategories"
                 },
                 {
                   "id": "termsKeyWords",
                   "title": "Key Words",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/importantTerms/termsKeyWords",
+                  "path": "/information/overview/importantTerms/termsKeyWords"
                 },
                 {
                   "id": "termsStates",
                   "title": "States",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/importantTerms/termsStates",
+                  "path": "/information/overview/importantTerms/termsStates"
                 }
               ]
             },
@@ -43,27 +49,37 @@
                 {
                   "id": "workflowAddElements",
                   "title": "New Element",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/workflowAddElements",
+                  "path": "/information/overview/kitchenSinkWorkflows/workflowAddElements"
                 },
                 {
                   "id": "workflowChangeElements",
                   "title": "Change Element",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/workflowChangeElements",
+                  "path": "/information/overview/kitchenSinkWorkflows/workflowChangeElements"
                 },
                 {
                   "id": "workflowImportElements",
                   "title": "Import Element",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/workflowImportElements",
+                  "path": "/information/overview/kitchenSinkWorkflows/workflowImportElements"
                 },
                 {
                   "id": "z_workflowChecklist",
                   "title": "Checklist",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/z_workflowChecklist",
+                  "path": "/information/overview/kitchenSinkWorkflows/z_workflowChecklist"
                 },
                 {
                   "id": "z_workflowTemplate",
                   "title": "Template",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/z_workflowTemplate",
+                  "path": "/information/overview/kitchenSinkWorkflows/z_workflowTemplate"
                 }
               ]
             }
@@ -86,7 +102,9 @@
                 {
                   "id": "accessabilityAriaRoles",
                   "title": "Aria Roles",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/accessability/accessabilityGuidelines/accessabilityAriaRoles",
+                  "path": "/information/accessability/accessabilityGuidelines/accessabilityAriaRoles"
                 }
               ]
             }
@@ -104,12 +122,16 @@
                 {
                   "id": "aboutLess",
                   "title": "About LESS",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/less/lessOverview/aboutLess",
+                  "path": "/information/less/lessOverview/aboutLess"
                 },
                 {
                   "id": "lessILIAS",
                   "title": "Less in ILIAS",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/less/lessOverview/lessILIAS",
+                  "path": "/information/less/lessOverview/lessILIAS"
                 }
               ]
             },
@@ -160,37 +182,51 @@
                         "state": "Proposal"
                       }
                     ]
-                  }
+                  },
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesColors",
+                  "path": "/information/less/lessBaseVariables/lessVariablesColors"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Components",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesTypography",
+                  "path": "/information/less/lessBaseVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Container Sizes",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesButtons",
+                  "path": "/information/less/lessBaseVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesTables",
                   "title": "Tables",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesTables",
+                  "path": "/information/less/lessBaseVariables/lessVariablesTables"
                 },
                 {
                   "id": "lessVariablesZIndex",
                   "title": "MediaQueries",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesZIndex",
+                  "path": "/information/less/lessBaseVariables/lessVariablesZIndex"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Scaffolding",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesTypography",
+                  "path": "/information/less/lessBaseVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesZIndex",
                   "title": "ZIndex",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesZIndex",
+                  "path": "/information/less/lessBaseVariables/lessVariablesZIndex"
                 }
               ]
             },
@@ -201,42 +237,58 @@
                 {
                   "id": "lessVariablesButtons",
                   "title": "Alerts",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/less/lessElementsVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Badges",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesTypography",
+                  "path": "/information/less/lessElementsVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Close",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/less/lessElementsVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesDropdowns",
                   "title": "Code",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesDropdowns",
+                  "path": "/information/less/lessElementsVariables/lessVariablesDropdowns"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "List Group",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesForms",
+                  "path": "/information/less/lessElementsVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Progress Bars",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesTypography",
+                  "path": "/information/less/lessElementsVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Thumbnails",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/less/lessElementsVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Type",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesTypography",
+                  "path": "/information/less/lessElementsVariables/lessVariablesTypography"
                 }
               ]
             },
@@ -247,72 +299,100 @@
                 {
                   "id": "lessVariablesButtons",
                   "title": "Breadcrumbs",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesDropdowns",
                   "title": "Dropdowns",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesDropdowns",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesDropdowns"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "FormStates",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "Forms",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Modals",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Navbar",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Navs",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Pager",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Pagination",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Panels",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "Popover",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Typography",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesTypography",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "FormTooltips",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Wells",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesTypography",
+                  "path": "/information/less/lessCollectionVariables/lessVariablesTypography"
                 }
               ]
             },
@@ -323,7 +403,9 @@
                 {
                   "id": "lessVariablesButtons",
                   "title": "Grid System",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesButtons",
+                  "path": "/information/less/lessLayoutVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesHeader",
@@ -383,7 +465,9 @@
                         "state": "Proposal"
                       }
                     ]
-                  }
+                  },
+                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeader",
+                  "path": "/information/less/lessLayoutVariables/lessVariablesHeader"
                 },
                 {
                   "id": "lessVariablesHeaderBranding",
@@ -473,7 +557,9 @@
                         "state": "Proposal"
                       }
                     ]
-                  }
+                  },
+                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeaderBranding",
+                  "path": "/information/less/lessLayoutVariables/lessVariablesHeaderBranding"
                 },
                 {
                   "id": "lessVariablesHeaderMainMenu",
@@ -583,7 +669,9 @@
                         "state": "Proposal"
                       }
                     ]
-                  }
+                  },
+                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeaderMainMenu",
+                  "path": "/information/less/lessLayoutVariables/lessVariablesHeaderMainMenu"
                 },
                 {
                   "id": "lessVariablesHeaderTopNavigation",
@@ -688,7 +776,9 @@
                         "state": "Proposal"
                       }
                     ]
-                  }
+                  },
+                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeaderTopNavigation",
+                  "path": "/information/less/lessLayoutVariables/lessVariablesHeaderTopNavigation"
                 }
               ]
             },
@@ -799,17 +889,23 @@
                         "state": "Not Used"
                       }
                     ]
-                  }
+                  },
+                  "fullPath": "app/data/information/less/unusedLessBootstrapVariables/lessVariablesButtons",
+                  "path": "/information/less/unusedLessBootstrapVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesJumbotron",
                   "title": "Jumbotron",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/unusedLessBootstrapVariables/lessVariablesJumbotron",
+                  "path": "/information/less/unusedLessBootstrapVariables/lessVariablesJumbotron"
                 },
                 {
                   "id": "lessVariablesCarousel",
                   "title": "Carousel",
-                  "type": "less"
+                  "type": "less",
+                  "fullPath": "app/data/information/less/unusedLessBootstrapVariables/lessVariablesCarousel",
+                  "path": "/information/less/unusedLessBootstrapVariables/lessVariablesCarousel"
                 }
               ]
             }
@@ -832,7 +928,9 @@
                 {
                   "id": "javascriptGuidelines",
                   "title": "Javascript Guidelines",
-                  "type": "html"
+                  "type": "html",
+                  "fullPath": "app/data/information/javascript/javascriptGuidelines/javascriptGuidelines",
+                  "path": "/information/javascript/javascriptGuidelines/javascriptGuidelines"
                 }
               ]
             }
@@ -846,8 +944,27 @@
       "description": "Description of this Category",
       "subCategories": [
         {
+          "title": "Grid",
+          "id": "elementsGrid",
+          "description": "Description of this sub Category",
+          "itemGroups": [
+            {
+              "title": "Container",
+              "description": "Forms with file upload elements",
+              "id": "fileUpload",
+              "items": []
+            },
+            {
+              "title": "Grid",
+              "description": "Forms with file upload elements",
+              "id": "fileUpload",
+              "items": []
+            }
+          ]
+        },
+        {
           "title": "Typography",
-          "id": "typography",
+          "id": "elementsTypography",
           "description": "Typography to be used in ILIAS",
           "itemGroups": [
             {
@@ -860,281 +977,101 @@
               "title": "Headings",
               "description": "Description of this Item Group",
               "id": "headings",
-              "items": [
-                {
-                  "id": "heading",
-                  "title": "Standard Heading",
-                  "description": "Standard heading in ILIAS",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                },
-                {
-                  "id": "headingSecondary",
-                  "title": "Heading with secondary text",
-                  "description": "Headings with attached secondary text",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Text",
               "description": "Description of this Item Group",
               "id": "typographyText",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Text Alignments",
               "description": "Description of this Item Group",
               "id": "textAlignments",
-              "items": [
-                {
-                  "id": "textAlignments",
-                  "title": "Text Alignments",
-                  "description": "Text alignments to use",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Labeling",
               "description": "Description of this Item Group",
               "id": "typographyLabeling",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             }
           ]
         },
         {
           "title": "Colors",
-          "id": "colors",
+          "id": "elementsColors",
           "description": "Colors to be used in ILIAS",
           "itemGroups": [
             {
               "title": "Standard Colors",
               "id": "standardColors",
               "description": "Standard colors to be used in ILIAS",
-              "items": [
-                {
-                  "id": "colors",
-                  "title": "Standard Colors",
-                  "description": "Standard colors to be used in ILIAS",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Shades",
               "id": "shades",
               "description": "Shades of colors to be used",
-              "items": [
-                {
-                  "id": "shades",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             }
           ]
         },
         {
           "title": "Lists",
-          "id": "lists",
+          "id": "elementsLists",
           "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "Item Group 1",
               "description": "Description of this Item Group",
               "id": "itemGroup1",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Item Group 2",
               "description": "Description of this Item Group",
               "id": "itemGroup2",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             }
           ]
         },
         {
           "title": "Images",
-          "id": "images",
+          "id": "elementsImages",
           "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "Item Group 1",
               "description": "Description of this Item Group",
               "id": "itemGroup1",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Item Group 2",
               "description": "Description of this Item Group",
               "id": "itemGroup2",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             }
           ]
         },
         {
           "title": "Buttons",
-          "id": "buttons",
+          "id": "elementsButtons",
           "description": "Description of this sub Category",
           "itemGroups": [
             {
               "title": "Types",
               "id": "buttonTypes",
               "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "buttonDefault",
-                  "title": "Default",
-                  "description": "Default Button in ILIAS. This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance. Buttons are either of type input (with some cmd) or link (with some href).",
-                  "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "brand-primary",
-                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "il-button-color",
-                      "description": "Text Color of the button",
-                      "state": "Proposal"
-                    }
-                  ],
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-                  "usedBy": [
-                    "modal"
-                  ]
-                },
-                {
-                  "id": "buttonPrimary",
-                  "title": "Primary",
-                  "description": "According to <a href='http://www.ilias.de/docu/goto_docu_wiki_wpage_1441_1357.html'>Emphasized Buttons for Primary Action</a> 'Buttons for a common and important next action that tend to be overlooked, should get a special emphasized style'. This style is currently named as 'Primary Button'. There should only be one 'Primary Button' per page and each use must be confirmed by the JF. In Toolbars primary actions will be sticky, meaning they will not be disappear in the responsive view.",
-                  "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "brand-secondary",
-                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value",
-                      "state": "Implemented"
-                    },
-                    {
-                      "title": "il-button-color",
-                      "description": "Text Color of the button",
-                      "state": "Proposal"
-                    }
-                  ],
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-                  "uses": "",
-                  "usedBy": [
-                    "Test/Survey (Start Test)",
-                    "File > Info (Download File)",
-                    "Exercise (Hand In)",
-                    "Exercise (Give Feedback)",
-                    "Repository (Add New Item)",
-                    "Course/Group > Session > Info (Join)",
-                    "Learning Modules > Info (View)"
-                  ]
-                }
-              ]
+              "items": []
             },
             {
               "title": "States",
               "id": "states",
               "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "buttonDisabled",
-                  "title": "Disabled",
-                  "description": "If an action is temporarily not available, actions (buttons) might be disabled. Only disable actions that can be enabled by some action of the user. If they are not available due to some setting, do not display them.",
-                  "state": "Implemented for 5.0",
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
-                }
-              ]
+              "items": []
             }
           ]
         }
@@ -1146,289 +1083,265 @@
       "description": "Description of this Category",
       "subCategories": [
         {
-          "title": "Forms",
-          "id": "forms",
-          "description": "Types of forms to be used in ILIAS",
-          "itemGroups": [
-            {
-              "title": "File Upload",
-              "description": "Forms with file upload elements",
-              "id": "fileUpload",
-              "items": [
-                {
-                  "id": "fileUpload",
-                  "title": "File Upload",
-                  "state": "Proposal",
-                  "description": "File Upload",
-                  "lessVariables": "Less Variable used of the new item",
-                  "lessCode": "fileUpload.less",
-                  "jsCode": "fileUpload.js",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
-            {
-              "title": "Picker",
-              "description": "Forms with date or color picker",
-              "id": "dateColorPicker",
-              "items": [
-                {
-                  "id": "dateTimePicker",
-                  "title": "Date Time picker",
-                  "state": "Proposal",
-                  "description": "Description of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                },
-                {
-                  "id": "dateTimeRangePicker",
-                  "title": "Date Time Range Picker",
-                  "state": "Proposal",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "<a href='#/content/collections/forms/dateColorPicker/dateTimePicker'>Date Time Picker</a>"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title": "Navigation",
-          "id": "navigation",
+          "id": "collectionsNavigation",
           "description": "Elements used to navigate",
           "itemGroups": [
             {
               "title": "Navbars",
               "description": "Deviations of the Bootstrap Navbar",
               "id": "navbars",
-              "items": [
-                {
-                  "id": "toolbar",
-                  "title": "Toolbar",
-                  "state": "Proposal",
-                  "description": "<a href='http://www.ilias.de/docu/goto_docu_frm_3814_3100.html'>http://www.ilias.de/docu/goto_docu_frm_3814_3100.html</a>",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Tabs",
               "description": "Deviations of Bootstrap tabs",
               "id": "tabs",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Tree",
               "description": "Deviations of the jsTree",
               "id": "tree",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Breadcrumbs",
               "description": "Deviations of Bootstrap Breadcrums",
               "id": "breacrumbs",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Actions Menus",
+          "id": "collectionsActions",
+          "description": "Elements used to navigate",
+          "itemGroups": [
+            {
+              "title": "Navbars",
+              "description": "Deviations of the Bootstrap Navbar",
+              "id": "navbars",
+              "items": []
+            },
+            {
+              "title": "Tabs",
+              "description": "Deviations of Bootstrap tabs",
+              "id": "tabs",
+              "items": []
+            },
+            {
+              "title": "Tree",
+              "description": "Deviations of the jsTree",
+              "id": "tree",
+              "items": []
+            },
+            {
+              "title": "Breadcrumbs",
+              "description": "Deviations of Bootstrap Breadcrums",
+              "id": "breacrumbs",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Forms",
+          "id": "collectionsForms",
+          "description": "Types of forms to be used in ILIAS",
+          "itemGroups": [
+            {
+              "title": "File Upload",
+              "description": "Forms with file upload elements",
+              "id": "fileUpload",
+              "items": []
+            },
+            {
+              "title": "Picker",
+              "description": "Forms with date or color picker",
+              "id": "dateColorPicker",
+              "items": []
             }
           ]
         },
         {
           "title": "Tables",
-          "id": "tables",
+          "id": "collectionsTables",
           "description": "Types of tables to be used in ILIAS",
           "itemGroups": [
             {
               "title": "Basic Table",
               "description": "The standard ILIAS Form",
               "id": "basicTable",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             },
             {
               "title": "Table Filter",
               "description": "Forms with file upload elements",
               "id": "filteredTable",
-              "items": [
-                {
-                  "id": "filter",
-                  "title": "Table Filter",
-                  "state": "Proposal",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Container Lists",
-          "id": "containerLists",
-          "description": "Container Lists to show Repository Items",
-          "itemGroups": [
-            {
-              "title": "Basic Container List",
-              "description": "The standard ILIAS Form",
-              "id": "basicTable",
-              "items": []
-            },
-            {
-              "title": "Container List including Actions",
-              "description": "The standard ILIAS Form",
-              "id": "basicTable",
               "items": []
             }
           ]
         },
         {
-          "title": "Blocks",
-          "description": "Blocks that can be used to group elements in views",
+          "title": "Dialogs",
+          "id": "dialogsCategory",
+          "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
           "itemGroups": [
             {
-              "title": "Side-Block",
-              "description": "Description of this Item Group",
-              "id": "sideBlock",
+              "title": "Overview",
+              "id": "dialogsOverview",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "dialog",
+                  "title": "Dialog",
+                  "type": "abstract",
+                  "description": "external",
+                  "state": "Implemented for 5.0",
+                  "fullPath": "app/data/collections/dialogsCategory/dialogsOverview/dialog",
+                  "path": "/collections/dialogsCategory/dialogsOverview/dialog"
                 }
               ]
             },
             {
-              "title": "Center-Block",
-              "id": "centerBlock",
+              "title": "Modals",
+              "id": "dialogsModals",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "modal",
+                  "title": "Modal",
+                  "description": "Base form of a modal adopted from ",
+                  "guiClass": "ilModalGUI",
+                  "state": "Implemented for 5.0",
+                  "relations": {
+                    "isA": "dialog",
+                    "mustUse": [
+                      "buttonDefault",
+                      "buttonPrimary"
+                    ],
+                    "mayUse": [
+                      "buttonPrimary"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modal",
+                  "path": "/collections/dialogsCategory/dialogsModals/modal"
+                },
+                {
+                  "id": "modalWithForm",
+                  "title": "Modal with Form",
+                  "description": "A modal containing a form",
+                  "state": "Implemented for 5.0",
+                  "relations": {
+                    "isA": [
+                      "modal"
+                    ],
+                    "mustUse": [
+                      "primaryButton",
+                      "form"
+                    ],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modalWithForm",
+                  "path": "/collections/dialogsCategory/dialogsModals/modalWithForm"
                 }
               ]
+            },
+            {
+              "title": "Non-Modals",
+              "id": "dialogsNonModals",
+              "items": []
             }
           ]
         },
         {
-          "title": "Modals",
-          "id": "modals",
-          "description": "Types of overlays to be used in ILIAS",
+          "title": "Callouts",
+          "id": "dialogsCategory",
+          "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
           "itemGroups": [
             {
-              "title": "Standard Modal",
-              "description": "Description of this Item Group",
-              "id": "standardModal",
+              "title": "Overview",
+              "id": "dialogsOverview",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "dialog",
+                  "title": "Dialog",
+                  "type": "abstract",
+                  "description": "external",
+                  "state": "Implemented for 5.0",
+                  "fullPath": "app/data/collections/dialogsCategory/dialogsOverview/dialog",
+                  "path": "/collections/dialogsCategory/dialogsOverview/dialog"
                 }
               ]
             },
             {
-              "title": "Small Modal",
-              "id": "smallModal",
+              "title": "Modals",
+              "id": "dialogsModals",
               "items": [
                 {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "id": "modal",
+                  "title": "Modal",
+                  "description": "Base form of a modal adopted from ",
+                  "guiClass": "ilModalGUI",
+                  "state": "Implemented for 5.0",
+                  "relations": {
+                    "isA": "dialog",
+                    "mustUse": [
+                      "buttonDefault",
+                      "buttonPrimary"
+                    ],
+                    "mayUse": [
+                      "buttonPrimary"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modal",
+                  "path": "/collections/dialogsCategory/dialogsModals/modal"
+                },
+                {
+                  "id": "modalWithForm",
+                  "title": "Modal with Form",
+                  "description": "A modal containing a form",
+                  "state": "Implemented for 5.0",
+                  "relations": {
+                    "isA": [
+                      "modal"
+                    ],
+                    "mustUse": [
+                      "primaryButton",
+                      "form"
+                    ],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modalWithForm",
+                  "path": "/collections/dialogsCategory/dialogsModals/modalWithForm"
                 }
               ]
             },
             {
-              "title": "Modal with Form",
-              "id": "modalWithForm",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Title of the new item",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "title": "Non-Modals",
+              "id": "dialogsNonModals",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Content",
+          "id": "collectionsContent",
+          "description": "Types of forms to be used in ILIAS",
+          "itemGroups": [
+            {
+              "id": "contentContainerLists",
+              "title": "Container Lists",
+              "description": "Container Lists to show Repository Items",
+              "items": []
+            },
+            {
+              "title": "contentBlocks",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "contentPanels",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
             }
           ]
         }
@@ -1459,7 +1372,9 @@
                   "guiClass": "GUI Class that the new item uses",
                   "context": "Context of the new item",
                   "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "relations": "Relations of the new item",
+                  "fullPath": "app/data/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
+                  "path": "/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview"
                 }
               ]
             },
@@ -1528,7 +1443,9 @@
                   ],
                   "guiClass": "Todo",
                   "uses": "",
-                  "usedBy": []
+                  "usedBy": [],
+                  "fullPath": "app/data/layouts/mainStructure/header/0_iliasHeaderOverview",
+                  "path": "/layouts/mainStructure/header/0_iliasHeaderOverview"
                 },
                 {
                   "id": "iliasHeaderBranding",
@@ -1550,7 +1467,9 @@
                   ],
                   "guiClass": "Todo",
                   "uses": "",
-                  "usedBy": []
+                  "usedBy": [],
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
+                  "path": "/layouts/mainStructure/header/iliasHeaderBranding"
                 },
                 {
                   "id": "iliasHeaderMainMenu",
@@ -1572,7 +1491,9 @@
                   ],
                   "guiClass": "Todo",
                   "uses": "",
-                  "usedBy": []
+                  "usedBy": [],
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
+                  "path": "/layouts/mainStructure/header/iliasHeaderMainMenu"
                 },
                 {
                   "id": "iliasHeaderTopNav",
@@ -1594,7 +1515,9 @@
                   ],
                   "guiClass": "Todo",
                   "uses": "",
-                  "usedBy": []
+                  "usedBy": [],
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
+                  "path": "/layouts/mainStructure/header/iliasHeaderTopNav"
                 }
               ]
             },
@@ -1628,7 +1551,9 @@
                   ],
                   "guiClass": "Todo",
                   "uses": "",
-                  "usedBy": []
+                  "usedBy": [],
+                  "fullPath": "app/data/layouts/mainStructure/content/0_iliasContentOverview",
+                  "path": "/layouts/mainStructure/content/0_iliasContentOverview"
                 },
                 {
                   "id": "iliasContentCenter",
@@ -1654,7 +1579,9 @@
                   ],
                   "guiClass": "Todo",
                   "uses": "",
-                  "usedBy": []
+                  "usedBy": [],
+                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
+                  "path": "/layouts/mainStructure/content/iliasContentCenter"
                 }
               ]
             },
@@ -1694,50 +1621,37 @@
                   "guiClass": "GUI Class that the new item uses",
                   "context": "Context of the new item",
                   "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
+                  "relations": "Relations of the new item",
+                  "fullPath": "app/data/layouts/mainStructure/footer/iliasMainStructureFooter",
+                  "path": "/layouts/mainStructure/footer/iliasMainStructureFooter"
                 }
               ]
             }
           ]
         },
         {
-          "title": "Grid Layouts",
-          "id": "gridLayouts",
-          "description": "Grid Layouts that can be used in ILIAS",
+          "title": "Repository",
+          "id": "repositoryObjects",
+          "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
-              "title": "2-Column Layouts",
-              "id": "2ColumnLayouts",
+              "title": "Content Tab",
+              "id": "structureGrids",
               "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Standard 2 Column Layout",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
-            },
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Sidebar Elements",
+          "id": "layoutsSidebarElements",
+          "description": "Layouts used in the Sidebar of the Content section.",
+          "itemGroups": [
             {
-              "title": "3-Column Layouts",
-              "id": "3ColumnLayouts",
+              "title": "Grids",
+              "id": "structureGrids",
               "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "example",
-                  "title": "Standard 3 Column Layout",
-                  "description": "Description of the new item",
-                  "lessVariables": "Less Variable used of the new item",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item"
-                }
-              ]
+              "items": []
             }
           ]
         }

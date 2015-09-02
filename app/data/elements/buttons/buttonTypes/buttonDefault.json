@@ -13,6 +13,5 @@
           "state": "Proposal"
       }
   ],
-  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-  "usedBy": ["modal"]
+  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
 }
