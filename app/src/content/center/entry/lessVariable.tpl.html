@@ -3,7 +3,7 @@
     <p ng-if="relations">
         Used in:
         <span ng-repeat="(id,relation) in relations">
-                    <a href="#/content/{{relation.category.id}}/{{relation.subCategory.id}}/{{relation.itemGroup.id}}/{{relation.item.id}}" >
+                    <a href="#/content/{{relation.item.path}}" >
                         {{relation.subCategory.title}}: {{relation.itemGroup.title}} {{relation.item.title}};
                     </a>
         </span>

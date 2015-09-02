@@ -1,4 +1,4 @@
-module.directive('entryJsonContent', function ($http,state,$timeout) {
+module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
     return {
         restrict: 'AEC',
         scope: {
@@ -13,6 +13,7 @@ module.directive('entryJsonContent', function ($http,state,$timeout) {
                 scope.entry.state = "Empty";
             }
             scope.stateType = "success";
+            scope.renderHtml = true;
 
             scope.stateType = state.getStateAlert(scope.entry.state);
 
@@ -20,7 +21,25 @@ module.directive('entryJsonContent', function ($http,state,$timeout) {
             if(scope.entry.lessVariables && scope.entry.lessVariables.length === 0){
                 scope.entry.lessVariables = undefined;
             }
+
+            if(scope.entry.type == "abstract"){
+                scope.renderHtml = false;
+            }
+
+            if(scope.entry.description == "external"){
+                scope.descriptionPath = scope.tabPath+'/'+scope.entry.id+'.description.html';
+
+                $http.get(scope.descriptionPath)
+                    .success(function(data) {
+                        scope.entry.description = data;
+                    })
+                    .error(function() {
+                        console.log('could not find '+scope.htmlPath);
+                    });
+            }
+
             scope.htmlPath = scope.tabPath+'/'+scope.entry.id+'.html';
+
             $http.get(scope.htmlPath)
                 .success(function(data) {
                     if(data.indexOf("<span ng-non-bindable>")>-1){
@@ -50,7 +69,6 @@ module.directive('entryJsonContent', function ($http,state,$timeout) {
                 .error(function() {
                     console.log('could not find '+scope.jsPath);
                 });
-
 
             scope.onHtmlLoaded = function(){
                 $.getScript(scope.jsPath, function(){});

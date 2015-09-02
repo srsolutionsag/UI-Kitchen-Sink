@@ -55,6 +55,171 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
         $rootScope.$broadcast('changeSelection', this.categoryIndexSelected,this.subCategoryIndexSelected ,this.tabIndexSelected,this.subTabIndexSelected);
     };
 
+    this.getComponentRelations = function(component){
+        var relations = {};
+
+        if(component.relations){
+            if(component.relations.isA){
+                relations.isA = this.getComponentById("dialog");
+            }
+            if(component.relations.mustUse){
+                relations.mustUse = {};
+                for(var indexMust in component.relations.mustUse){
+                    relations.mustUse[indexMust] = this.getComponentById(component.relations.mustUse[indexMust]);
+                }
+            }
+
+            if(component.relations.mayUse){
+                relations.mayUse = {};
+                for(var indexMay in component.relations.mayUse){
+                    relations.mayUse[indexMay] = this.getComponentById(component.relations.mayUse[indexMay]);
+                }
+            }
+        }
+
+        relations.children = {};
+        relations.mayBeUsedBy = {};
+        relations.mustBeUsedBy = {};
+
+        for(var categoryIndex in this.categories){
+            var category = this.categories[categoryIndex];
+            this.categoryIndexSelected = categoryIndex;
+            for(var subCategoryIndex in category.subCategories){
+                var subCategory = category.subCategories[subCategoryIndex];
+                this.subCategoryIndexSelected = subCategoryIndex;
+                for(var itemGroupIndex in subCategory.itemGroups){
+                    var itemGroup = subCategory.itemGroups[itemGroupIndex];
+                    if(itemGroup.type != 'less' && itemGroup.type != 'html'){
+                        this.tabIndexSelected = itemGroupIndex;
+                        for(var itemIndex in itemGroup.items){
+                            var item = itemGroup.items[itemIndex];
+                            if(item.relations){
+                                console.log(item);
+                                console.log(component);
+                                if(item.relations.isA == component.id){
+                                    var child = {
+                                        "category" : {
+                                            "id":category.id,
+                                            "title": category.title
+                                        },
+                                        "subCategory" : {
+                                            "id":subCategory.id,
+                                            "title": subCategory.title
+                                        },
+                                        "itemGroup" : {
+                                            "id":itemGroup.id,
+                                            "title": itemGroup.title
+                                        },
+                                        "item" : item
+                                    };
+                                    relations.children[item.id] = child;
+                                }
+
+                                for(var mayBeUsedByIndex in item.relations.mayUse)
+                                {
+                                    if(item.relations.mayUse[mayBeUsedByIndex] == component.id){
+                                        var mayBeUsedBy = {
+                                            "category" : {
+                                                "id":category.id,
+                                                "title": category.title
+                                            },
+                                            "subCategory" : {
+                                                "id":subCategory.id,
+                                                "title": subCategory.title
+                                            },
+                                            "itemGroup" : {
+                                                "id":itemGroup.id,
+                                                "title": itemGroup.title
+                                            },
+                                            "item" : item
+                                        };
+                                        relations.mayBeUsedBy[item.id] = mayBeUsedBy;
+                                    }
+                                }
+                                for(var mustBeUsedByIndex in item.relations.mustUse)
+                                {
+                                    if(item.relations.mayUse[mustBeUsedByIndex] == component.id){
+                                        var mustBeUsed = {
+                                            "category" : {
+                                                "id":category.id,
+                                                "title": category.title
+                                            },
+                                            "subCategory" : {
+                                                "id":subCategory.id,
+                                                "title": subCategory.title
+                                            },
+                                            "itemGroup" : {
+                                                "id":itemGroup.id,
+                                                "title": itemGroup.title
+                                            },
+                                            "item" : item,
+                                        };
+                                        relations.mustBeUsedBy[item.id] = mustBeUsed;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(relations);
+        if(Object.keys(relations.children).length === 0){
+            relations.children =  false;
+        }
+        if(Object.keys(relations.mayBeUsedBy).length === 0){
+            relations.mayBeUsedBy =  false;
+        }
+        if(Object.keys(relations.mustBeUsedBy).length === 0){
+            relations.mustBeUsedBy =  false;
+        }
+
+        return relations;
+    };
+
+
+
+    this.getComponentById = function(componentId){
+        for(var categoryIndex in this.categories){
+            var category = this.categories[categoryIndex];
+            this.categoryIndexSelected = categoryIndex;
+            for(var subCategoryIndex in category.subCategories){
+                var subCategory = category.subCategories[subCategoryIndex];
+                this.subCategoryIndexSelected = subCategoryIndex;
+                for(var itemGroupIndex in subCategory.itemGroups){
+                    var itemGroup = subCategory.itemGroups[itemGroupIndex];
+                    if(itemGroup.type != 'less' && itemGroup.type != 'html'){
+                        this.tabIndexSelected = itemGroupIndex;
+                        for(var itemIndex in itemGroup.items){
+                            var item = itemGroup.items[itemIndex];
+                            if(item.type != 'less' && item.type != 'html'){
+                                if(item.id == componentId){
+                                    return {
+                                        "category" : {
+                                            "id":category.id,
+                                            "title": category.title
+                                        },
+                                        "subCategory" : {
+                                            "id":subCategory.id,
+                                            "title": subCategory.title
+                                        },
+                                        "itemGroup" : {
+                                            "id":itemGroup.id,
+                                            "title": itemGroup.title
+                                        },
+                                        "item": item
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    };
+
     this.returnLessVariableUsages = function(lessId){
         var lessUsages = {};
         for(var categoryIndex in this.categories){

@@ -1,0 +1,67 @@
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+        <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseSix{{index}}" aria-expanded="false" aria-controls="collapseSix">
+                Relations
+            </a>
+        </h4>
+    </div>
+    <div id="collapseSix{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
+        <dl class="dl-horizontal">
+            <dt ng-if="entry.fullRelations.isA">Is a</dt>
+            <dd>
+                <a href="#content/{{entry.fullRelations.isA.item.path}}">{{entry.fullRelations.isA.item.title}}</a>
+            </dd>
+            <dt ng-if="entry.fullRelations.children">Children</dt>
+            <dd>
+                <span ng-repeat="(id,usage) in entry.fullRelations.children">
+                    <li>
+                        <a href="#content/{{usage.item.path}}">
+                            {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
+                        </a>
+                    </li>
+                </span>
+            </dd>
+            <dt ng-if="entry.fullRelations.mustUse">Must use</dt>
+            <dd>
+                <span ng-repeat="(id,usage) in entry.fullRelations.mustUse">
+                    <li>
+                        <a href="#content/{{usage.item.path}}">
+                            {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
+                        </a>
+                    </li>
+                </span>
+            </dd>
+            <dt ng-if="entry.fullRelations.mayUse">May use</dt>
+            <dd>
+                <span ng-repeat="(id,usage) in entry.fullRelations.mayUse">
+                    <li>
+                        <a href="#content/{{usage.item.path}}">
+                            {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
+                        </a>
+                    </li>
+                </span>
+            </dd>
+            <dt ng-if="entry.fullRelations.mustBeUsedBy">Must be used by</dt>
+            <dd>
+                <span ng-repeat="(id,usage) in entry.fullRelations.mustBeUsedBy">
+                    <li>
+                        <a href="#content/{{usage.item.path}}">
+                            {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
+                        </a>
+                    </li>
+                </span>
+            </dd>
+            <dt ng-if="entry.fullRelations.mayBeUsedBy">May be used by</dt>
+            <dd>
+                <span ng-repeat="(id,usage) in entry.fullRelations.mayBeUsedBy">
+                    <li>
+                        <a href="#content/{{usage.item.path}}">
+                            {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
+                        </a>
+                    </li>
+                </span>
+            </dd>
+        </dl>
+    </div>
+</div>
