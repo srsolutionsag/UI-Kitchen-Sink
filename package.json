@@ -11,7 +11,8 @@
         "grunt-contrib-watch": "~0.6.1",
         "grunt-contrib-connect": "~0.8.0",
         "grunt-contrib-less": "latest",
-        "grunt-less-imports": "latest"
+        "grunt-less-imports": "latest",
+        "coffee-script": "~1.6.3"
     }
 }
 
