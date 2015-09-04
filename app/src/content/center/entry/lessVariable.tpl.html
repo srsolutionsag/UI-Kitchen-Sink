@@ -1,9 +1,12 @@
 <div class="alert alert-{{getStateAlert(variable.state)}}" role="alert" data-toggle="popover" placement="bottom" data-target="#{{variable.title}}Usages">
-    <strong>{{variable.title}}: </strong>{{variable.description}}
+    <p>
+        <strong>{{variable.title}}: </strong>
+        <span ng-if="{{variable.value}}">[default: {{variable.value}}]</span>{{variable.description}}
+    </p>
     <p ng-if="relations">
         Used in:
         <span ng-repeat="(id,relation) in relations">
-                    <a href="#/content/{{relation.item.path}}" >
+                    <a href="#/content{{relation.item.path}}" >
                         {{relation.subCategory.title}}: {{relation.itemGroup.title}} {{relation.item.title}};
                     </a>
         </span>
