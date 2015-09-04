@@ -7,79 +7,79 @@
       "subCategories": [
         {
           "title": "Overview",
-          "id": "overview",
+          "id": "informationOverview",
           "description": "Description of this sub Category",
           "itemGroups": [
             {
+              "id": "overviewOverview",
               "title": "Overview",
-              "id": "overview",
               "type": "html"
             },
             {
+              "id": "overviewTerms",
               "title": "Terms",
-              "id": "importantTerms",
               "items": [
                 {
                   "id": "termsCategories",
                   "title": "Categories",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/importantTerms/termsCategories",
-                  "path": "/information/overview/importantTerms/termsCategories"
+                  "fullPath": "app/data/information/informationOverview/overviewTerms/termsCategories",
+                  "path": "/information/informationOverview/overviewTerms/termsCategories"
                 },
                 {
                   "id": "termsKeyWords",
                   "title": "Key Words",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/importantTerms/termsKeyWords",
-                  "path": "/information/overview/importantTerms/termsKeyWords"
+                  "fullPath": "app/data/information/informationOverview/overviewTerms/termsKeyWords",
+                  "path": "/information/informationOverview/overviewTerms/termsKeyWords"
                 },
                 {
                   "id": "termsStates",
                   "title": "States",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/importantTerms/termsStates",
-                  "path": "/information/overview/importantTerms/termsStates"
+                  "fullPath": "app/data/information/informationOverview/overviewTerms/termsStates",
+                  "path": "/information/informationOverview/overviewTerms/termsStates"
                 }
               ]
             },
             {
+              "id": "overviewWorkflows",
               "title": "Workflows",
-              "id": "kitchenSinkWorkflows",
               "items": [
                 {
                   "id": "workflowAddElements",
                   "title": "New Element",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/workflowAddElements",
-                  "path": "/information/overview/kitchenSinkWorkflows/workflowAddElements"
+                  "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowAddElements",
+                  "path": "/information/informationOverview/overviewWorkflows/workflowAddElements"
                 },
                 {
                   "id": "workflowChangeElements",
                   "title": "Change Element",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/workflowChangeElements",
-                  "path": "/information/overview/kitchenSinkWorkflows/workflowChangeElements"
+                  "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowChangeElements",
+                  "path": "/information/informationOverview/overviewWorkflows/workflowChangeElements"
                 },
                 {
                   "id": "workflowImportElements",
                   "title": "Import Element",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/workflowImportElements",
-                  "path": "/information/overview/kitchenSinkWorkflows/workflowImportElements"
+                  "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowImportElements",
+                  "path": "/information/informationOverview/overviewWorkflows/workflowImportElements"
                 },
                 {
                   "id": "z_workflowChecklist",
                   "title": "Checklist",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/z_workflowChecklist",
-                  "path": "/information/overview/kitchenSinkWorkflows/z_workflowChecklist"
+                  "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowChecklist",
+                  "path": "/information/informationOverview/overviewWorkflows/z_workflowChecklist"
                 },
                 {
                   "id": "z_workflowTemplate",
                   "title": "Template",
                   "type": "html",
-                  "fullPath": "app/data/information/overview/kitchenSinkWorkflows/z_workflowTemplate",
-                  "path": "/information/overview/kitchenSinkWorkflows/z_workflowTemplate"
+                  "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowTemplate",
+                  "path": "/information/informationOverview/overviewWorkflows/z_workflowTemplate"
                 }
               ]
             }
@@ -87,7 +87,7 @@
         },
         {
           "title": "Accessability",
-          "id": "accessability",
+          "id": "informationAccessability",
           "description": "ILIAS takes accessability seriously. Accessability guidelines presented in this section MUST be followed if new elements are added.",
           "itemGroups": [
             {
@@ -96,15 +96,15 @@
               "type": "html"
             },
             {
-              "title": "Guidelines",
+              "title": "accessabilityGuidelines",
               "id": "accessabilityGuidelines",
               "items": [
                 {
                   "id": "accessabilityAriaRoles",
                   "title": "Aria Roles",
                   "type": "html",
-                  "fullPath": "app/data/information/accessability/accessabilityGuidelines/accessabilityAriaRoles",
-                  "path": "/information/accessability/accessabilityGuidelines/accessabilityAriaRoles"
+                  "fullPath": "app/data/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
+                  "path": "/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles"
                 }
               ]
             }
@@ -112,7 +112,7 @@
         },
         {
           "title": "Less",
-          "id": "less",
+          "id": "overviewLess",
           "description": "ILIAS uses less as css pre-processor. This section introduces all used less variables and guidelines of less.",
           "itemGroups": [
             {
@@ -123,15 +123,15 @@
                   "id": "aboutLess",
                   "title": "About LESS",
                   "type": "html",
-                  "fullPath": "app/data/information/less/lessOverview/aboutLess",
-                  "path": "/information/less/lessOverview/aboutLess"
+                  "fullPath": "app/data/information/overviewLess/lessOverview/aboutLess",
+                  "path": "/information/overviewLess/lessOverview/aboutLess"
                 },
                 {
                   "id": "lessILIAS",
                   "title": "Less in ILIAS",
                   "type": "html",
-                  "fullPath": "app/data/information/less/lessOverview/lessILIAS",
-                  "path": "/information/less/lessOverview/lessILIAS"
+                  "fullPath": "app/data/information/overviewLess/lessOverview/lessILIAS",
+                  "path": "/information/overviewLess/lessOverview/lessILIAS"
                 }
               ]
             },
@@ -183,50 +183,43 @@
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesColors",
-                  "path": "/information/less/lessBaseVariables/lessVariablesColors"
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesColors",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesColors"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Components",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesTypography",
-                  "path": "/information/less/lessBaseVariables/lessVariablesTypography"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Container Sizes",
-                  "type": "less",
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesButtons",
-                  "path": "/information/less/lessBaseVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesTables",
                   "title": "Tables",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesTables",
-                  "path": "/information/less/lessBaseVariables/lessVariablesTables"
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesTables",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesTables"
                 },
                 {
                   "id": "lessVariablesZIndex",
                   "title": "MediaQueries",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesZIndex",
-                  "path": "/information/less/lessBaseVariables/lessVariablesZIndex"
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesZIndex",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesZIndex"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Scaffolding",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesTypography",
-                  "path": "/information/less/lessBaseVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesZIndex",
                   "title": "ZIndex",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessBaseVariables/lessVariablesZIndex",
-                  "path": "/information/less/lessBaseVariables/lessVariablesZIndex"
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesZIndex",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesZIndex"
                 }
               ]
             },
@@ -238,57 +231,105 @@
                   "id": "lessVariablesButtons",
                   "title": "Alerts",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesButtons",
-                  "path": "/information/less/lessElementsVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Badges",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesTypography",
-                  "path": "/information/less/lessElementsVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Close",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesButtons",
-                  "path": "/information/less/lessElementsVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesDropdowns",
                   "title": "Code",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesDropdowns",
-                  "path": "/information/less/lessElementsVariables/lessVariablesDropdowns"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesDropdowns",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesDropdowns"
+                },
+                {
+                  "id": "lessVariablesContainerSizes",
+                  "title": "Container Sizes",
+                  "type": "less",
+                  "description": "Color definitions to be used. In some cases",
+                  "variables": {
+                    "bootstrap": [
+                      {
+                        "title": "container-tablet",
+                        "value": "720px + @grid-gutter-width",
+                        "description": "The size of the container on a tablet",
+                        "state": "Implemented for 5.0"
+                      },
+                      {
+                        "title": "container-sm",
+                        "value": "@container-tablet",
+                        "description": "Same as container-tablet",
+                        "state": "Implemented for 5.0"
+                      },
+                      {
+                        "title": "container-desktop",
+                        "value": "940px + @grid-gutter-width",
+                        "description": "The size of the container on a desktop",
+                        "state": "Implemented for 5.0"
+                      },
+                      {
+                        "title": "container-md",
+                        "value": "@container-desktop",
+                        "description": "Same as container-desktop",
+                        "state": "Implemented for 5.0"
+                      },
+                      {
+                        "title": "container-large-desktop",
+                        "value": "1140px + @grid-gutter-width",
+                        "description": "The size of the container on a tablet",
+                        "state": "Implemented for 5.0"
+                      },
+                      {
+                        "title": "container-lg",
+                        "value": "@container-large-desktop",
+                        "description": "Same as container-large-desktop",
+                        "state": "Implemented for 5.0"
+                      }
+                    ]
+                  },
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesContainerSizes",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesContainerSizes"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "List Group",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesForms",
-                  "path": "/information/less/lessElementsVariables/lessVariablesForms"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesForms",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Progress Bars",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesTypography",
-                  "path": "/information/less/lessElementsVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Thumbnails",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesButtons",
-                  "path": "/information/less/lessElementsVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Type",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessElementsVariables/lessVariablesTypography",
-                  "path": "/information/less/lessElementsVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesTypography"
                 }
               ]
             },
@@ -300,99 +341,99 @@
                   "id": "lessVariablesButtons",
                   "title": "Breadcrumbs",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesDropdowns",
                   "title": "Dropdowns",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesDropdowns",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesDropdowns"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesDropdowns",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesDropdowns"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "FormStates",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "Forms",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Modals",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Navbar",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Navs",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Pager",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Pagination",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesButtons",
                   "title": "Panels",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "Popover",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Typography",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesTypography",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTypography"
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "FormTooltips",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesForms"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
                 },
                 {
                   "id": "lessVariablesTypography",
                   "title": "Wells",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessCollectionVariables/lessVariablesTypography",
-                  "path": "/information/less/lessCollectionVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTypography",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTypography"
                 }
               ]
             },
@@ -404,8 +445,8 @@
                   "id": "lessVariablesButtons",
                   "title": "Grid System",
                   "type": "less",
-                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesButtons",
-                  "path": "/information/less/lessLayoutVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesHeader",
@@ -466,8 +507,8 @@
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeader",
-                  "path": "/information/less/lessLayoutVariables/lessVariablesHeader"
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeader",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeader"
                 },
                 {
                   "id": "lessVariablesHeaderBranding",
@@ -558,8 +599,8 @@
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeaderBranding",
-                  "path": "/information/less/lessLayoutVariables/lessVariablesHeaderBranding"
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding"
                 },
                 {
                   "id": "lessVariablesHeaderMainMenu",
@@ -670,8 +711,8 @@
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeaderMainMenu",
-                  "path": "/information/less/lessLayoutVariables/lessVariablesHeaderMainMenu"
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu"
                 },
                 {
                   "id": "lessVariablesHeaderTopNavigation",
@@ -777,14 +818,14 @@
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/less/lessLayoutVariables/lessVariablesHeaderTopNavigation",
-                  "path": "/information/less/lessLayoutVariables/lessVariablesHeaderTopNavigation"
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation"
                 }
               ]
             },
             {
               "title": "Unused Bootstrap Components",
-              "id": "unusedLessBootstrapVariables",
+              "id": "lessUnusedLessBootstrapVariables",
               "items": [
                 {
                   "id": "lessVariablesButtons",
@@ -890,22 +931,22 @@
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/less/unusedLessBootstrapVariables/lessVariablesButtons",
-                  "path": "/information/less/unusedLessBootstrapVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesButtons"
                 },
                 {
                   "id": "lessVariablesJumbotron",
                   "title": "Jumbotron",
                   "type": "less",
-                  "fullPath": "app/data/information/less/unusedLessBootstrapVariables/lessVariablesJumbotron",
-                  "path": "/information/less/unusedLessBootstrapVariables/lessVariablesJumbotron"
+                  "fullPath": "app/data/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesJumbotron",
+                  "path": "/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesJumbotron"
                 },
                 {
                   "id": "lessVariablesCarousel",
                   "title": "Carousel",
                   "type": "less",
-                  "fullPath": "app/data/information/less/unusedLessBootstrapVariables/lessVariablesCarousel",
-                  "path": "/information/less/unusedLessBootstrapVariables/lessVariablesCarousel"
+                  "fullPath": "app/data/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesCarousel",
+                  "path": "/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesCarousel"
                 }
               ]
             }
@@ -913,7 +954,7 @@
         },
         {
           "title": "Javascript",
-          "id": "javascript",
+          "id": "overviewJavascript",
           "description": "Javascript Guidelines in ILIAS.",
           "itemGroups": [
             {
@@ -929,8 +970,8 @@
                   "id": "javascriptGuidelines",
                   "title": "Javascript Guidelines",
                   "type": "html",
-                  "fullPath": "app/data/information/javascript/javascriptGuidelines/javascriptGuidelines",
-                  "path": "/information/javascript/javascriptGuidelines/javascriptGuidelines"
+                  "fullPath": "app/data/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
+                  "path": "/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines"
                 }
               ]
             }
@@ -944,20 +985,69 @@
       "description": "Description of this Category",
       "subCategories": [
         {
-          "title": "Grid",
           "id": "elementsGrid",
-          "description": "Description of this sub Category",
+          "title": "Grid",
+          "description": "Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts. In ILIAS the Bootstrap Grid MUST be used for all arrangements of components in a grid like structure.",
           "itemGroups": [
             {
-              "title": "Container",
-              "description": "Forms with file upload elements",
-              "id": "fileUpload",
+              "title": "Containers",
+              "description": "All rows must be placed inside a container",
+              "id": "gridContainers",
+              "items": [
+                {
+                  "id": "containerFixed",
+                  "title": "Default",
+                  "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
+                  "context": "Use a container as outer element, wherever to boostrap grid system is to be used.",
+                  "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "container-tablet",
+                      "description": "The size of the container on a tablet",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-sm",
+                      "description": "Same as container-tablet",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-desktop",
+                      "description": "The size of the container on a desktop",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-md",
+                      "description": "Same as container-desktop",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-large-desktop",
+                      "description": "The size of the container on a tablet",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-lg",
+                      "description": "Same as container-large-desktop",
+                      "state": "Implemented for 5.0"
+                    }
+                  ],
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "fullPath": "app/data/elements/elementsGrid/gridContainers/containerFixed",
+                  "path": "/elements/elementsGrid/gridContainers/containerFixed"
+                }
+              ]
+            },
+            {
+              "title": "Rows",
+              "description": "Rows are used to create horizontal groups of columns",
+              "id": "gridGridCells",
               "items": []
             },
             {
-              "title": "Grid",
-              "description": "Forms with file upload elements",
-              "id": "fileUpload",
+              "title": "Columns",
+              "description": "Columns create gutters with padding",
+              "id": "gridGridColumns",
               "items": []
             }
           ]
@@ -1094,32 +1184,7 @@
               "items": []
             },
             {
-              "title": "Tabs",
-              "description": "Deviations of Bootstrap tabs",
-              "id": "tabs",
-              "items": []
-            },
-            {
-              "title": "Tree",
-              "description": "Deviations of the jsTree",
-              "id": "tree",
-              "items": []
-            },
-            {
-              "title": "Breadcrumbs",
-              "description": "Deviations of Bootstrap Breadcrums",
-              "id": "breacrumbs",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Actions Menus",
-          "id": "collectionsActions",
-          "description": "Elements used to navigate",
-          "itemGroups": [
-            {
-              "title": "Navbars",
+              "title": "Fat Menus",
               "description": "Deviations of the Bootstrap Navbar",
               "id": "navbars",
               "items": []
@@ -1131,9 +1196,9 @@
               "items": []
             },
             {
-              "title": "Tree",
-              "description": "Deviations of the jsTree",
               "id": "tree",
+              "title": "Two Panels Selector",
+              "description": "Deviations of the jsTree",
               "items": []
             },
             {
@@ -1150,13 +1215,37 @@
           "description": "Types of forms to be used in ILIAS",
           "itemGroups": [
             {
-              "title": "File Upload",
+              "title": "Binary Choice",
               "description": "Forms with file upload elements",
               "id": "fileUpload",
               "items": []
             },
             {
-              "title": "Picker",
+              "title": "One of N",
+              "description": "Forms with date or color picker",
+              "id": "dateColorPicker",
+              "items": []
+            },
+            {
+              "title": "N of N",
+              "description": "Forms with date or color picker",
+              "id": "dateColorPicker",
+              "items": []
+            },
+            {
+              "title": "Text",
+              "description": "Forms with date or color picker",
+              "id": "dateColorPicker",
+              "items": []
+            },
+            {
+              "title": "Numbers",
+              "description": "Forms with date or color picker",
+              "id": "dateColorPicker",
+              "items": []
+            },
+            {
+              "title": "Date/Time",
               "description": "Forms with date or color picker",
               "id": "dateColorPicker",
               "items": []
@@ -1253,12 +1342,49 @@
           ]
         },
         {
+          "title": "Actions",
+          "id": "collectionsActions",
+          "description": "Elements used to navigate",
+          "itemGroups": [
+            {
+              "title": "Button Groups",
+              "description": "Deviations of the Bootstrap Navbar",
+              "id": "navbars",
+              "items": []
+            },
+            {
+              "title": "Hover Tools",
+              "description": "Deviations of Bootstrap tabs",
+              "id": "tabs",
+              "items": []
+            },
+            {
+              "title": "Action Panels",
+              "description": "Deviations of the jsTree",
+              "id": "tree",
+              "items": []
+            },
+            {
+              "title": "Previews",
+              "description": "Deviations of Bootstrap Breadcrums",
+              "id": "breacrumbs",
+              "items": []
+            },
+            {
+              "title": "Previews",
+              "description": "Deviations of Bootstrap Breadcrums",
+              "id": "breacrumbs",
+              "items": []
+            }
+          ]
+        },
+        {
           "title": "Callouts",
           "id": "dialogsCategory",
           "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
           "itemGroups": [
             {
-              "title": "Overview",
+              "title": "Progress Bars",
               "id": "dialogsOverview",
               "items": [
                 {
@@ -1273,7 +1399,7 @@
               ]
             },
             {
-              "title": "Modals",
+              "title": "Alerts",
               "id": "dialogsModals",
               "items": [
                 {
@@ -1316,14 +1442,72 @@
               ]
             },
             {
-              "title": "Non-Modals",
+              "title": "Tooltips",
               "id": "dialogsNonModals",
               "items": []
             }
           ]
         },
         {
-          "title": "Content",
+          "title": "Containers",
+          "id": "collectionsContainers",
+          "description": "Types of forms to be used in ILIAS",
+          "itemGroups": [
+            {
+              "id": "structureBlocks",
+              "title": "Blocks",
+              "description": "Container Lists to show Repository Items",
+              "items": []
+            },
+            {
+              "id": "containerLists",
+              "title": "Container List",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "Accordion",
+              "id": "containersAccordion",
+              "description": "Layouts used in the Content section of ILIAS.",
+              "itemGroups": [
+                {
+                  "title": "Overview",
+                  "id": "structureGrids",
+                  "description": "Description of this Item Group"
+                }
+              ],
+              "items": []
+            },
+            {
+              "title": "Collapsible Panels",
+              "id": "layoutsGridOfEquals",
+              "description": "Layouts used in the Content section of ILIAS.",
+              "itemGroups": [
+                {
+                  "title": "Overview",
+                  "id": "structureGrids",
+                  "description": "Description of this Item Group"
+                }
+              ],
+              "items": []
+            },
+            {
+              "title": "Movable Panels",
+              "id": "layoutsGridOfEquals",
+              "description": "Layouts used in the Content section of ILIAS.",
+              "itemGroups": [
+                {
+                  "title": "Overview",
+                  "id": "structureGrids",
+                  "description": "Description of this Item Group"
+                }
+              ],
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Media",
           "id": "collectionsContent",
           "description": "Types of forms to be used in ILIAS",
           "itemGroups": [
@@ -1340,6 +1524,85 @@
             },
             {
               "title": "contentPanels",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Calendars",
+          "id": "collectionsCalendar",
+          "description": "Types of forms to be used in ILIAS",
+          "itemGroups": [
+            {
+              "id": "contentContainerLists",
+              "title": "Container Lists",
+              "description": "Container Lists to show Repository Items",
+              "items": []
+            },
+            {
+              "title": "contentBlocks",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "contentPanels",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Charts",
+          "id": "collectionsCalendar",
+          "description": "Types of forms to be used in ILIAS",
+          "itemGroups": [
+            {
+              "id": "Radial Table",
+              "title": "Container Lists",
+              "description": "Container Lists to show Repository Items",
+              "items": []
+            },
+            {
+              "title": "Multy Y-Graph",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "Treemap",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "Small Multiples",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Maps",
+          "id": "collectionsCalendar",
+          "description": "Types of forms to be used in ILIAS",
+          "itemGroups": [
+            {
+              "id": "Radial Table",
+              "title": "Container Lists",
+              "description": "Container Lists to show Repository Items",
+              "items": []
+            },
+            {
+              "title": "Multy Y-Graph",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "contentPanels",
+              "description": "Blocks that can be used to group elements in views",
+              "items": []
+            },
+            {
+              "title": "Small Multiples",
               "description": "Blocks that can be used to group elements in views",
               "items": []
             }
@@ -1630,12 +1893,12 @@
           ]
         },
         {
-          "title": "Repository",
-          "id": "repositoryObjects",
+          "title": "Center Stage",
+          "id": "layoutsCenterStage",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
-              "title": "Content Tab",
+              "title": "Overview",
               "id": "structureGrids",
               "description": "Description of this Item Group",
               "items": []
@@ -1643,12 +1906,90 @@
           ]
         },
         {
-          "title": "Sidebar Elements",
-          "id": "layoutsSidebarElements",
-          "description": "Layouts used in the Sidebar of the Content section.",
+          "title": "Grid of Equals",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
-              "title": "Grids",
+              "title": "Overview",
+              "id": "structureGrids",
+              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Responsive Disclosure",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "structureGrids",
+              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Wizzards",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "structureGrids",
+              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Drilldown",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "structureGrids",
+              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "List Inlay",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "structureGrids",
+              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Carousel",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
+              "id": "structureGrids",
+              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Timeline",
+          "id": "layoutsGridOfEquals",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "title": "Overview",
               "id": "structureGrids",
               "description": "Description of this Item Group",
               "items": []

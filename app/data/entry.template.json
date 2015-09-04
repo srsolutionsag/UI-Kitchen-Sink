@@ -2,6 +2,7 @@
     "id": "idOfComponentCamelCase",
     "title": "Name of Component",
     "description": "Some useful description",
+    "context": "description of the context, where this element is to be used",
     "state": "Implemented for 5.0",
     "lessVariables":
         [
