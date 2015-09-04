@@ -94,8 +94,6 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                         for(var itemIndex in itemGroup.items){
                             var item = itemGroup.items[itemIndex];
                             if(item.relations){
-                                console.log(item);
-                                console.log(component);
                                 if(item.relations.isA == component.id){
                                     var child = {
                                         "category" : {
@@ -164,7 +162,6 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
             }
         }
 
-        console.log(relations);
         if(Object.keys(relations.children).length === 0){
             relations.children =  false;
         }
