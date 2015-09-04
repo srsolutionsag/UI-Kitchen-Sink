@@ -1,17 +1,22 @@
-module.directive('search', function ($http) {
+module.directive('search', function ($location, Entries) {
     return {
         restrict: 'AEC',
         scope: {
-            categories:'=',
-            selectedElement: '=',
-            onSearch:'&'
         },
         replace: true,
         templateUrl: 'app/src/content/sidebars/blocks/search/search.tpl.html',
         link: function (scope, element) {
+            scope.categories = Entries.categories;
+            scope.selectedElement = {};
+
+            scope.searchCategories = Entries.categories;
+
             scope.onSearchClicked = function(){
                 if(!$.isEmptyObject(scope.selectedElement)){
-                    scope.onSearch();
+                    $location.path("/content/"+scope.selectedElement.categoryId+"/"+
+                        scope.selectedElement.subCategoryId+"/"+
+                        scope.selectedElement.itemGroupId+"/"+
+                        scope.selectedElement.itemId);
                 }
             };
 

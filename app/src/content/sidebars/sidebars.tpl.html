@@ -14,11 +14,7 @@
                 is-sidebar-open-fn="$parent.$parent.isCurrentSidebarOpen(position)"
                 on-block-clicked-fn="onBlockClicked()"
                 >
-            <search ng-controller="SearchController"
-                    categories="searchCategories"
-                    on-search="doSearch()"
-                    selected-element="searchCategories.selectedElement"
-                    >
+            <search>
             </search>
         </block>
         <block
