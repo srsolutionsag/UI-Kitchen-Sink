@@ -69,6 +69,10 @@
                         {
                             "title": "Unused Bootstrap Components",
                             "id":"lessUnusedLessBootstrapVariables"
+                        },
+                        {
+                            "title": "Todo",
+                            "id":"lessTodo"
                         }
                     ]
                 },
@@ -123,48 +127,19 @@
                     "description": "Typography to be used in ILIAS",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "description": "Overview of typography elements",
                             "id":"typographyOverview",
-                            "type": "html"
+                            "title": "Overview",
+                            "description": "Overview of typography elements"
                         },
                         {
+                            "id":"typographyHeadings",
                             "title": "Headings",
-                            "description": "Description of this Item Group",
-                            "id":"headings"
+                            "description": "Description of this Item Group"
                         },
                         {
-                            "title": "Text",
+                            "title": "Code",
                             "description": "Description of this Item Group",
-                            "id":"typographyText"
-                        },
-                        {
-                            "title": "Text Alignments",
-                            "description": "Description of this Item Group",
-                            "id":"textAlignments"
-                        },
-                        {
-                            "title": "Labeling",
-                            "description": "Description of this Item Group",
-                            "id":"typographyLabeling"
-                        }
-                    ]
-                },
-                {
-                    "title": "Colors",
-                    "id":"elementsColors",
-                    "description": "Colors to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                            "title": "Standard Colors",
-                            "id":"standardColors",
-                            "description": "Standard colors to be used in ILIAS"
-
-                        },
-                        {
-                            "title": "Shades",
-                            "id":"shades",
-                            "description": "Shades of colors to be used"
+                            "id":"typographyCode"
                         }
                     ]
                 },

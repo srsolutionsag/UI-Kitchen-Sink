@@ -1,5 +1,52 @@
 {
   "id": "lessVariablesZIndex",
-  "title": "ZIndex",
-  "type": "less"
+  "title": "Z-Index",
+  "description": "Warning from the Bootstrap documentation: Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together.",
+  "type": "less",
+    "variables":{
+        "bootstrap":[
+            {
+                "title":"zindex-navbar",
+                "description":"z-index of the navbar",
+                "value":"1000",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"zindex-dropdown",
+                "description":"z-index of the dropdowns",
+                "value":"1000",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"zindex-popover",
+                "description":"z-index for popovers",
+                "value":"1060",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"zindex-tooltip",
+                "description":"z-index for tooltips",
+                "value":"1070",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"zindex-navbar-fixed",
+                "description":"z-index of the for the fixed navbar",
+                "value":"1030",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"zindex-modal-background",
+                "description":"z-index for the background of modals",
+                "value":"1040",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"zindex-modal",
+                "description":"z-index of modals",
+                "value":"1050",
+                "state":"Implemented for 5.0"
+            }
+        ]
+    }
 }

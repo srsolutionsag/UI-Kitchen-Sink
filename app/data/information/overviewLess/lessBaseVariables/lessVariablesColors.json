@@ -2,42 +2,39 @@
   "id": "lessVariablesColors",
   "title": "Colors",
   "type": "less",
-  "description":"Color definitions to be used. In some cases",
+  "description":"Color definitions to be used.",
   "variables":{
       "ilias":[
           {
               "title":"brand-secondary",
-              "description":"some Description1",
-              "state":"Implemented"
+              "description":"Todo: Exact description of where to use brand-secondary",
+              "state":"Implemented for 5.0"
           }
       ],
       "bootstrap":[
           {
               "title":"brand-primary",
-              "value":"",
-              "overriden":"",
-              "usesInIlias":"",
-              "description":"some bs Description",
-              "state":"Implemented"
+              "description":"Exact description of where to use brand-primary",
+              "state":"Implemented for 5.0"
           },
           {
               "title":"brand-success",
-              "description":"some bs Description 2",
+              "description":"Color used to display success messages",
               "state":"Proposal"
           },
           {
               "title":"brand-info",
-              "description":"some bs Description 2",
+              "description":"Color used to display info messages",
               "state":"Proposal"
           },
           {
               "title":"brand-warning",
-              "description":"some bs Description 2",
+              "description":"Color used to display warning messages",
               "state":"Proposal"
           },
           {
               "title":"brand-danger",
-              "description":"some bs Description 2",
+              "description":"Color used to display danger messages",
               "state":"Proposal"
           }
       ]

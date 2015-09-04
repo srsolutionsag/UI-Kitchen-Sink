@@ -1,0 +1,40 @@
+{
+  "id": "01_lessVariablesTypography",
+  "title": "Scaffolding",
+  "description":"Bootstrap Variables for the most basic styles",
+  "type": "less",
+    "variables":{
+        "bootstrap":[
+            {
+                "title":"body-bg",
+                "description":"Background color for `<body>`",
+                "value":"#fff",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"text-color",
+                "description":"Global text color on `<body>`",
+                "value":"@gray-dark",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"link-color",
+                "description":"Global textual link color",
+                "value":"@brand-primary",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"link-hover-color",
+                "description":"Link hover color set via `darken()` function",
+                "value":"darken(@link-color, 15%)",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"link-hover-decoration",
+                "description":"Link hover decoration.",
+                "value":"underline",
+                "state":"Implemented for 5.0"
+            }
+        ]
+    }
+}

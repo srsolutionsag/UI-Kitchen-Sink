@@ -1,0 +1,41 @@
+{
+    "id": "baseText",
+    "title": "Base version of Text",
+    "description": "Base version of Text in ILIAS.",
+    "state": "Implemented for 5.0",
+    "lessVariables": [
+        {
+            "title": "font-family-base",
+            "description": "Default font",
+            "value":"@font-family-sans-serif",
+            "state": "Implemented for 5.0"
+        },{
+            "title": "font-size-base",
+            "description": "Bootstrap's global default font-size is 14px, with a line-height of 1.428. This is applied to the <body> and all paragraphs. In addition, <p> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).",
+            "value": "14px",
+            "state": "Implemented for 5.0"
+        },{
+            "title": "line-height-base",
+            "description": "Unit-less `line-height` for use in components like buttons.",
+            "value": "1.428571429 (=20/14)",
+            "state": "Implemented for 5.0"
+        },{
+            "title": "line-height-computed",
+            "description": "Computed 'line-height' (`font-size` * `line-height`) for use with `margin`, `padding`, etc.",
+            "value": "floor((@font-size-base * @line-height-base))",
+            "state": "Implemented for 5.0"
+        },
+        {
+            "title": "font-family-sans-serif",
+            "description": "Default font for sans-serfis",
+            "value": "@font-family-sans-serif:  'Helvetica Neue', Helvetica, Arial, sans-serif;",
+            "state": "Implemented for 5.0"
+        },{
+            "title": "font-family-serif",
+            "description": "Default font for serfis",
+            "value": "Georgia, 'Times New Roman', Times, serif",
+            "state": "Implemented for 5.0"
+        }
+
+    ]
+}
