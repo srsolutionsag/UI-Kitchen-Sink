@@ -9,14 +9,14 @@
     <div id="collapseSix{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
         <dl class="dl-horizontal">
             <dt ng-if="entry.fullRelations.isA">Is a</dt>
-            <dd>
-                <a href="#content/{{entry.fullRelations.isA.item.path}}">{{entry.fullRelations.isA.item.title}}</a>
+            <dd ng-if="entry.fullRelations.isA">
+                <a href="#content{{entry.fullRelations.isA.item.path}}">{{entry.fullRelations.isA.subCategory.title}}: {{entry.fullRelations.isA.itemGroup.title}} {{entry.fullRelations.isA.item.title}}</a>
             </dd>
             <dt ng-if="entry.fullRelations.children">Children</dt>
             <dd>
                 <span ng-repeat="(id,usage) in entry.fullRelations.children">
                     <li>
-                        <a href="#content/{{usage.item.path}}">
+                        <a href="#content{{usage.item.path}}">
                             {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
                         </a>
                     </li>
@@ -26,7 +26,7 @@
             <dd>
                 <span ng-repeat="(id,usage) in entry.fullRelations.mustUse">
                     <li>
-                        <a href="#content/{{usage.item.path}}">
+                        <a href="#content{{usage.item.path}}">
                             {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
                         </a>
                     </li>
@@ -36,7 +36,7 @@
             <dd>
                 <span ng-repeat="(id,usage) in entry.fullRelations.mayUse">
                     <li>
-                        <a href="#content/{{usage.item.path}}">
+                        <a href="#content{{usage.item.path}}">
                             {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
                         </a>
                     </li>
@@ -46,7 +46,7 @@
             <dd>
                 <span ng-repeat="(id,usage) in entry.fullRelations.mustBeUsedBy">
                     <li>
-                        <a href="#content/{{usage.item.path}}">
+                        <a href="#content{{usage.item.path}}">
                             {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
                         </a>
                     </li>
@@ -56,7 +56,7 @@
             <dd>
                 <span ng-repeat="(id,usage) in entry.fullRelations.mayBeUsedBy">
                     <li>
-                        <a href="#content/{{usage.item.path}}">
+                        <a href="#content{{usage.item.path}}">
                             {{usage.subCategory.title}}: {{usage.itemGroup.title}} {{usage.item.title}}
                         </a>
                     </li>

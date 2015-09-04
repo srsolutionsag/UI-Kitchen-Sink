@@ -1,0 +1,10 @@
+{
+  "id": "gridRow",
+  "title": "Default",
+  "description": "Rows are used to create horizontal groups of columns.",
+  "context":"Rows MUST be placed inside a container",
+  "state": "Implemented for 5.0",
+    "relations": {
+        "mayUse":"gridColumns"
+    }
+}

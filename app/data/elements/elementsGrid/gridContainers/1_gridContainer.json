@@ -1,5 +1,5 @@
 {
-  "id": "containerFixed",
+  "id": "1_gridContainer",
   "title": "Default",
   "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
   "context":"Use a container as outer element, wherever to boostrap grid system is to be used.",
@@ -37,5 +37,9 @@
       }
 
   ],
-  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
+    "relations": {
+        "mayUse":[
+            "gridRow"
+        ]
+    }
 }

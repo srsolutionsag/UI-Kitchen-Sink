@@ -995,7 +995,7 @@
               "id": "gridContainers",
               "items": [
                 {
-                  "id": "containerFixed",
+                  "id": "1_gridContainer",
                   "title": "Default",
                   "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
                   "context": "Use a container as outer element, wherever to boostrap grid system is to be used.",
@@ -1032,23 +1032,63 @@
                       "state": "Implemented for 5.0"
                     }
                   ],
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-                  "fullPath": "app/data/elements/elementsGrid/gridContainers/containerFixed",
-                  "path": "/elements/elementsGrid/gridContainers/containerFixed"
+                  "relations": {
+                    "mayUse": [
+                      "gridRow"
+                    ]
+                  },
+                  "fullPath": "app/data/elements/elementsGrid/gridContainers/1_gridContainer",
+                  "path": "/elements/elementsGrid/gridContainers/1_gridContainer"
+                },
+                {
+                  "id": "gridContainerFluid",
+                  "title": "Fluid",
+                  "description": "All rows of the grid system must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
+                  "context": "Turn any fixed-width grid layout into a full-width layout by changing your outermost .container to .container-fluid. There should only be one fluid container in the DOM of ILIAS.",
+                  "state": "Implemented for 5.0",
+                  "relations": {
+                    "isA": "1_gridContainer"
+                  },
+                  "fullPath": "app/data/elements/elementsGrid/gridContainers/gridContainerFluid",
+                  "path": "/elements/elementsGrid/gridContainers/gridContainerFluid"
                 }
               ]
             },
             {
               "title": "Rows",
               "description": "Rows are used to create horizontal groups of columns",
-              "id": "gridGridCells",
-              "items": []
+              "id": "gridRows",
+              "items": [
+                {
+                  "id": "gridRow",
+                  "title": "Default",
+                  "description": "Rows are used to create horizontal groups of columns.",
+                  "context": "Rows MUST be placed inside a container",
+                  "state": "Implemented for 5.0",
+                  "relations": {
+                    "mayUse": "gridColumns"
+                  },
+                  "fullPath": "app/data/elements/elementsGrid/gridRows/gridRow",
+                  "path": "/elements/elementsGrid/gridRows/gridRow"
+                }
+              ]
             },
             {
               "title": "Columns",
               "description": "Columns create gutters with padding",
-              "id": "gridGridColumns",
-              "items": []
+              "id": "gridColumns",
+              "items": [
+                {
+                  "id": "gridColumn",
+                  "title": "Default",
+                  "description": "Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows. Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4. Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.",
+                  "context": "Columns MUST be placed inside a row",
+                  "state": "Implemented for 5.0",
+                  "relations": {},
+                  "fullPath": "app/data/elements/elementsGrid/gridColumns/gridColumn",
+                  "path": "/elements/elementsGrid/gridColumns/gridColumn"
+                }
+              ]
             }
           ]
         },

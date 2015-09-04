@@ -60,7 +60,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
 
         if(component.relations){
             if(component.relations.isA){
-                relations.isA = this.getComponentById("dialog");
+                relations.isA = this.getComponentById(component.relations.isA);
             }
             if(component.relations.mustUse){
                 relations.mustUse = {};

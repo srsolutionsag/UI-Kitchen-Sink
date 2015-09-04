@@ -108,12 +108,12 @@
                         {
                             "title": "Rows",
                             "description": "Rows are used to create horizontal groups of columns",
-                            "id":"gridGridCells"
+                            "id":"gridRows"
                         },
                         {
                             "title": "Columns",
                             "description": "Columns create gutters with padding",
-                            "id":"gridGridColumns"
+                            "id":"gridColumns"
                         }
                     ]
                 },
