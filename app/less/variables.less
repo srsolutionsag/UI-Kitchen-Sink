@@ -1,7 +1,8 @@
 //
 // Variables
 // --------------------------------------------------
-
+//ILIAS Padding
+@il-content-padding: 15px;
 
 //== Colors
 //
@@ -102,9 +103,9 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -861,45 +862,12 @@
 @hr-border:                   @gray-lighter;
 
 
-//== Colors
-
-/*		Color scheme
-		Dark BLue: #0f2152;
-		Mid Blue: #4c6586;
-		Green: #6ea03c;
-		Light Brown: #dcb496;
-		Dark Brown: #523228;
-		Orange: #fa8228;
-		External Blue: #21c5d8;
-		ILIAS 4 MainMenu Color: #c8e6ff;
-*/
-
-@brand-primary:         #4c6586;
-@brand-secondary:       #6ea03c;
-@brand-success:         #6ea03c;
-@brand-info:            #dcb496;
-@brand-warning:         #fa8228;
-@brand-danger:          #fa8228;
-
-/** if left unchanged, you have to copy all the background images to your skin/images folder.
-* To use the delos background images in your skin,
-* please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
-*/
-
-//==Base ILIAS
-@il-background-images-path: "/app/static/img/";
 
 
 
-
-//== Iconography
-@icon-font-path:            "/libs/bootstrap/dist/fonts/";
-
-//== ILIAS Main Menu
-
-// Basics of a navbar
-@navbar-height:                             44px;
-
+/********************************************************************************************/
+/*************************************** Overrides ******************************************/
+/********************************************************************************************/
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
@@ -925,34 +893,10 @@
 @navbar-inverse-toggle-icon-bar-bg:         #fff;
 @navbar-inverse-toggle-border-color:        #333;
 
-
-//== ILIAS min height
-@il-content-min-height: 600px;
-@il-main-menu-background-color:	#444;//lighten(@brand-primary, 10%);
-
-@il-page-padding: @padding-large-horizontal;
-@il-page-padding-left: @il-page-padding;
-@il-page-padding-right: @il-page-padding;
-
-//== ILIAS Sidebar
-@il-sidebar-padding-bottom: 100px;
-@il-sidebar-bg-color: lighten(@brand-primary, 20%);
-
-//== ILIAS Block
-@il-panel-sortable-placeholder-panel-bg: transparent;
-@il-panel-sortable-placeholder-panel-border-radius:         @border-radius-base;
-@il-panel-sortable-placeholder-border:  3px #C0C0C0 dashed;
-@il-panel-sortable-placeholder-height: 45px;
-
-
-
-//== ILIAS Footer
-//
-@il-footer-bg: @navbar-inverse-bg;
-@il-footer-color: @navbar-inverse-color;
-@il-footer-height: 45px;
-@il-footer-padding-horizontal: @navbar-padding-horizontal;
-@il-footer-padding-vertical: @navbar-padding-vertical;
+// Basics of a navbar
+@navbar-height:                             44px;
+//== Iconography
+@icon-font-path:            "/libs/bootstrap/dist/fonts/";
 
 //== ILIAS Fonts
 @web-font-path: "/app/static/fonts/";
@@ -970,21 +914,212 @@
 @font-size-h5:            ceil((@font-size-base * 1.1));
 @font-size-h6:            @font-size-base;
 
+@brand-primary:         #4c6586;
+@brand-secondary:       #6ea03c;
+@brand-success:         #6ea03c;
+@brand-info:            #dcb496;
+@brand-warning:         #fa8228;
+@brand-danger:          #fa8228;
+
+/********************************************************************************************/
+/********************************************************************************************/
+/*************************************** ILIAS Section **************************************/
+/********************************************************************************************/
+/********************************************************************************************/
+
+//== ILIAS Main
+//==Base ILIAS
+@il-background-images-path: "/app/static/img/";
+@il-content-bg: @navbar-inverse-bg;
+
 
 //== Icons
 @il-logo-color1: @brand-primary;
 @il-logo-color2: @brand-primary;
 
+@il-icons-size-lg: 45px;
+
+/********************************************************************************************/
+/*************************************** ILIAS Header **************************************/
+/********************************************************************************************/
+//== ILIAS Header
+@il-header-height: 115px;
+@il-header-bg: @navbar-inverse-bg;
+
+@il-header-border-vertical: 0;
+@il-header-border-horizontal: 0;
+
+@il-header-border-top: @il-header-border-vertical solid transparent;//currently implemented as transparent border due to abolute positioning;
+@il-header-border-bottom: @il-header-border-vertical solid transparent;
+@il-header-border-left: @il-header-border-horizontal solid transparent;
+@il-header-border-right: @il-header-border-horizontal solid transparent;
+
+//== ILIAS Header small
+@il-header-height-sm: @navbar-height;
+
+
+/*************************************** Header Top Nav **************************************/
+//== ILIAS Header Top Nav
+@il-header-top-nav-top: 0px;
+@il-header-top-nav-left: auto;
+@il-header-top-nav-right: @padding-base-horizontal;
+
+@il-header-top-nav-float: right;
+
+@il-header-top-nav-box-margin-right: 2px;
+@il-header-top-nav-box-min-height: 50px;
+@il-header-top-nav-box-min-width: 50px;
+@il-header-top-nav-box-font-size: 20px;
+
+@il-header-top-nav-box-color: lighten(@il-header-bg, 70%);
+@il-header-top-nav-box-hover-color: white;
+@il-header-top-nav-box-bg: lighten(@il-header-bg, 20%);
+@il-header-top-nav-box-hover-bg:lighten(@il-header-bg, 42%);
+
+//== ILIAS Header Top Nav small
+@il-header-top-nav-top-sm: 0;
+@il-header-top-nav-left-sm: 0;
+@il-header-top-nav-right-sm: @padding-base-horizontal;
+
+@il-header-top-nav-box-margin-right-sm: 1px;
+@il-header-top-nav-box-min-height-sm: @il-header-height-sm;
+@il-header-top-nav-box-min-width-sm: @il-header-height-sm;
+@il-header-top-nav-box-font-size-sm: 15px;
+
+/*************************************** Header Branding **************************************/
+//== ILIAS Header Branding
+@il-header-branding-top: @padding-large-vertical;
+@il-header-branding-left: @padding-base-horizontal;
+@il-header-branding-right: 0;
+@il-header-branding-height: auto;
+
+@il-header-branding-right: auto;
+@il-header-branding-bg: transparent;
+
+@il-header-branding-font-size: 30px;
+@il-header-branding-logo-font-size: @il-header-branding-font-size * 1.5;
+
+@il-header-branding-text-logo-padding: @padding-large-horizontal;
+
+//== ILIAS Header Branding sm
+@il-header-branding-top-sm: @padding-small-vertical;
+@il-header-branding-left-sm: @padding-base-horizontal;
+@il-header-branding-right-sm: 0;
+@il-header-branding-height-sm: auto;
+
+@il-header-branding-right-sm: auto;
+
+@il-header-branding-font-size-sm: 0;
+@il-header-branding-logo-font-size-sm: 32px;
+
+@il-header-branding-text-logo-padding-sm: @padding-small-horizontal;
+@il-header-branding-text-display-sm: none;
+
+/*************************************** Header Main Menu **************************************/
+//== ILIAS Header Main Menu
+@il-header-main-border-width: 1px;
+
+@il-header-main-menu-top: @il-header-height - @navbar-height - @il-header-border-vertical - 2 * @il-header-main-border-width;
+@il-header-main-menu-left: 0;
+@il-header-main-menu-right: 0;
+
+@il-header-main-menu-float: left;
+
+
+@il-header-main-menu-color: @navbar-inverse-color;
+@il-header-main-menu-active-color: #fff;
+@il-header-main-menu-open-color: @navbar-inverse-color;
+
+@il-header-main-menu-bg: @navbar-inverse-bg;
+@il-header-main-menu-active-bg: darken(@navbar-inverse-bg, 10%);
+@il-header-main-menu-open-bg: darken(@navbar-inverse-bg, 10%);
+
+@il-header-main-menu-border: @il-header-main-border-width solid darken(@il-header-main-menu-bg, 10%);
+@il-header-main-menu-border-radius: 0;//@border-radius-base;
+
+//== ILIAS Header Main Menu sm
+@il-header-main-menu-border-sm: 0px;
+@il-header-main-menu-border-width-sm: 0;
+
+@il-header-main-menu-top-sm: 0;
+@il-header-main-menu-left-sm: 50px;
+@il-header-main-menu-right-sm: auto;
+
+@il-header-main-menu-border-radius-sm: 0;//@border-radius-base;
+@il-header-main-menu-border-sm: @il-header-main-menu-border-width-sm solid darken(@il-header-main-menu-bg, 10%);
+
+
+/********************************************************************************************/
+/*************************************** ILIAS Content **************************************/
+/********************************************************************************************/
+
+//== ILIAS content grid
+@il-sidebar-closed-xs: 0;
+@il-sidebar-closed-sm: 1;
+@il-sidebar-closed-md: 1;
+@il-sidebar-closed-lg: 2;
+
+@il-sidebar-open-xs: 6;
+@il-sidebar-open-sm: 4;
+@il-sidebar-open-md: 3;
+@il-sidebar-open-lg: 3;
+
+@il-content-bg-color: @gray-light;
+
+//Content
+@il-content-padding-top: @il-content-padding;
+@il-content-padding-bottom: @il-content-padding;
+
+@il-content-min-height: 600px;
+@il-content-bg: white;
+
+
+//==Buttons
+@il-toolbar-link-gap: 15px;
+
+//== Forms
+//
+//##
+@input-border-radius:	0;
+@input-border:			#ccc;
+@input-border-focus:	lighten(@brand-primary, 20%);
+@ilFormInputFontSize: @font-size-small;
+@input-height-base:	(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2);
+
+@ilFormColor:            	#808080;
+@ilFormBgColor:            	#fdfdfd;
+
+/* ILIAS variables candidates */
+@ilMainMenuColor:			lighten(@brand-primary, 10%);
+@ilButtonFontSize: 	@font-size-small;
+
+/*************************************** ILIAS Sidebars **************************************/
 
 
 
 
-//== Sidebar
+
+//== ILIAS Sidebar
+@il-sidebar-padding-bottom: 15px;
+@il-sidebar-bg-color:  #2F4050;
+@il-sidebar-hover-bg-color:  darken(@il-sidebar-bg-color,3%);
+@il-sidebar-body-bg-color:  lighten(@il-sidebar-bg-color,20%);
+@il-sidebar-block-active-border-width: 4px;
+@il-sidebar-block-active-border-color: darken(@il-sidebar-bg-color,10%);
+@il-sidebar-heading-link-color: @navbar-inverse-color;
+@il-sidebar-heading-link-hover-color: @navbar-inverse-link-hover-color;
 @il-sidebar-padding-content: 50px;
 @il-sidebar-padding-content-sm: 20px;
 
+//== ILIAS Block
+@il-panel-sortable-placeholder-panel-bg: transparent;
+@il-panel-sortable-placeholder-panel-border-radius:         @border-radius-base;
+@il-panel-sortable-placeholder-border:  3px #C0C0C0 dashed;
+@il-panel-sortable-placeholder-height: 45px;
+
 //== Flaps
 @il-flap-icon-font-size-lg: 30px;
+@il-flap-minified-width: @il-flap-icon-font-size-lg + 2*@padding-large-horizontal;
 @il-flap-text-font-size-lg: @il-flap-icon-font-size-lg/1.2;
 @il-flap-hover-size-lg: @il-flap-text-font-size-lg*8;
 @il-flap-animation-speed: 0.3s;
@@ -993,7 +1128,8 @@
 @il-sidebar-toggle-button-bg-color: transparent;
 @il-sidebar-toggle-button-link-hover-color: white;
 @il-sidebar-toggle-button-bg-hover-color: @btn-primary-bg;
-@il-sidebar-toggle-button-height: 200px;
+@il-sidebar-toggle-button-height: 75px;
+@il-sidebar-toggle-button-width: @il-sidebar-toggle-button-height/2;
 @il-sidebar-toggle-button-font-size: @font-size-large;
 
 //== Explorer
@@ -1019,3 +1155,13 @@
 @responsive:				true;
 @image-path:				"@{il-background-images-path}services/explorer/";
 @base-height:				@input-height-base;
+
+
+@il-btn-default-color: white;
+/*************************************** ILIAS Footer **************************************/
+//== ILIAS Footer
+@il-footer-bg: @navbar-inverse-bg;
+@il-footer-color: @navbar-inverse-color;
+@il-footer-height: 45px;
+@il-footer-padding-horizontal: @navbar-padding-horizontal;
+@il-footer-padding-vertical: @navbar-padding-vertical;

@@ -1,0 +1,22 @@
+{
+    "id": "iliasHeaderBranding",
+    "title": "Branding",
+    "isIframe": true,
+    "description": "The branding area SHOULD contain the logo of the application and its title.",
+    "state":"Proposal",
+    "lessVariables": [
+        {
+            "title":"il-header-border-right",
+            "description":"Todo, add description",
+            "state":"Proposal"
+        },
+        {
+            "title":"zindex-navbar-fixed",
+            "description":"Todo, add description",
+            "state":"Proposal"
+        }
+    ],
+    "guiClass": "Todo",
+    "uses": "",
+    "usedBy": []
+}

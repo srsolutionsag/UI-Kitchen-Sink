@@ -1,0 +1,79 @@
+//Buttons to toggle sidebars in and aout
+.il-sidebar-toggle-button{
+  &:extend(.btn all);
+  &:extend(.btn-default all);
+
+  position: absolute;
+  padding: 0;
+  width: @padding-large-horizontal;
+  height: @il-sidebar-toggle-button-height;
+  border-radius: 0;
+}
+.il-sidebar-left{
+  .il-sidebar-toggle-button{
+    left: 0;
+  }
+}
+.il-sidebar-right{
+  .il-sidebar-toggle-button{
+    right: 0;
+  }
+}
+
+.il-sidebar-open{
+  &.il-sidebar-left{
+    .il-sidebar-toggle-button{
+      left: auto;
+      right: -@padding-large-horizontal;
+    }
+  }
+
+  &.il-sidebar-right{
+    .il-sidebar-toggle-button{
+      left: -@padding-large-horizontal;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+
+  .il-sidebar-toggle-button{
+    display: none;
+    padding: inherit;
+    width: @il-sidebar-toggle-button-width;
+    height: @il-sidebar-toggle-button-height;
+  }
+  .il-sidebar-open{
+    &.il-sidebar-left{
+      .il-sidebar-toggle-button{
+        left: auto;
+        right: -@il-sidebar-toggle-button-width;
+      }
+    }
+
+    &.il-sidebar-right{
+      .il-sidebar-toggle-button{
+        left: -@il-sidebar-toggle-button-width;
+      }
+    }
+  }
+  .il-sidebar:hover{
+    .il-sidebar-toggle-button{
+      display: inherit;
+    }
+  }
+  .il-sidebar-minified{
+    .il-sidebar-blocks-wrapper:hover {
+      .il-sidebar-toggle-button {
+        display: none;
+      }
+    }
+  }
+  .il-sidebar-minified:hover {
+    .il-sidebar-blocks-wrapper {
+      .il-sidebar-toggle-button{
+        display: none;//display: inherit;
+      }
+    }
+  }
+}

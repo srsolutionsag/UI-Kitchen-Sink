@@ -3,6 +3,9 @@ module.directive('tabsContent', function () {
         restrict: 'AEC',
         transclude: true,
         templateUrl: 'app/src/content/center/tab/tabsContent.tpl.html',
+        scope: {
+            type: '@'
+        },
         replace: true
     };
 });

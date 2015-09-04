@@ -1,0 +1,11 @@
+{
+  "id": "dateTimeRangePicker",
+  "title": "Date Time Range Picker",
+  "state": "Proposal",
+  "description": "Description of the new item",
+  "lessVariables": "Less Variable used of the new item",
+  "guiClass": "GUI Class that the new item uses",
+  "context": "Context of the new item",
+  "knownUses": "Knonwn uses of the new item",
+  "relations": "<a href='#/content/collections/forms/dateColorPicker/dateTimePicker'>Date Time Picker</a>"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "0_iliasHeaderOverview",
+  "title": "Overview",
+  "isIframe": true,
+  "description": "Overview of the ILIAS header area",
+  "state": "proposal",
+  "lessVariables": [
+      {
+          "title":"il-header-height",
+          "description":"Total height of all three header sections",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-height-sm",
+          "description":"Total height of all three header sections in the responsive view",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-bg",
+          "description":"Background color of the header section",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-border-vertical",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-border-horizontal",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-border-top",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-border-bottom",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-border-left",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      },
+      {
+          "title":"il-header-border-right",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      },
+      {
+          "title":"zindex-navbar-fixed",
+          "description":"Todo, add description",
+          "state":"Proposal"
+      }
+  ],
+  "guiClass": "Todo",
+  "uses": "",
+  "usedBy": []
+}

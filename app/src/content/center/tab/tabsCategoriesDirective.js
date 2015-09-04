@@ -3,9 +3,11 @@ module.directive('tabsCategories', function () {
         restrict: 'AEC',
         scope: {
             title: '@',
-            index:'@',
-            categoryIndex: "@",
-            subCategoryIndex: "@",
+            tabId:'@',
+            subTabId:'@',
+            categoryId: "@",
+            subCategoryId: "@",
+            index: "@",
             onTabSelected:"&",
             tabActive: '@'
         },

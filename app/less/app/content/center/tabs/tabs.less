@@ -1,0 +1,40 @@
+.il-content-tabs{
+  margin-left: 0;
+  margin-right: 0;
+  background: @gray-lighter;
+  border-top: none;
+}
+
+.il-content-tabs > li > a {
+  border-radius: 0;
+  margin-right: 0;
+
+}
+.il-content-tabs > li > a:hover {
+  background: darken(@gray-lighter,5%);
+}
+
+.il-content-tabs > li.active > a,.il-content-tabs > li.active > a:hover  {
+   border-radius: none;
+   border-top: 1px solid white;
+ }
+
+.il-content-tabs > li:first-child > a {
+  margin-left: @padding-base-horizontal;
+}
+
+
+
+.il-content-sub-tabs > li > a {
+  color: @link-color;
+  border: none;
+  cursor: pointer;
+}
+
+.il-content-sub-tabs > li.active > a, .il-content-sub-tabs > li.active > a:hover, .il-content-sub-tabs > li.active > a:focus {
+  /* color: #555555; */
+  color: @link-hover-color;
+  background-color: transparent;
+  border: none;
+  /* cursor: default; */
+}

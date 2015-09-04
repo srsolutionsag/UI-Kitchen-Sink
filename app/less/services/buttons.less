@@ -1,0 +1,36 @@
+/* Services/UIComponent/Button */
+
+.btn {
+  font-size: @ilButtonFontSize;
+}
+
+input.btn,
+button.btn:not(.btn-link) > span:first-child:not(:empty) {
+  display: inline-block;
+  min-width: 60px;
+  vertical-align: top;
+}
+
+//overwrite buttons styles + add new one
+//@color @background @border
+.btn-default {
+  .button-variant(white; lighten(@brand-primary, 15%); lighten(@brand-primary, 15%));
+}
+.btn-primary {
+  .button-variant(white; @brand-secondary; @brand-secondary);
+}
+.btn-info {
+  .button-variant(@link-color; white; lighten(@link-color, 35%));
+}
+.btn-link {
+  color: @link-color;
+  border: none;
+  background-color: transparent;
+  &:hover,
+  &:focus,
+  &:active {
+    color: @link-hover-color;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}

@@ -17,7 +17,6 @@ module.directive('explorer', function () {
                     ]
                 });
                 $('.il-explorer').on("changed.jstree", function (e, data) {
-                    console.log(data.selected);
                 });
             });
         }

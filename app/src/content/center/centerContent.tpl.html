@@ -1,55 +1,84 @@
-<div>
-    <div class="row il-center-content">
-        <!-- Breadcrumb Section ================================================== -->
-        <breadcrumb-content
-                category-selected="{{categorySelected.title}}"
-                entry-selected="{{subCategorySelected.title}}"
-                tab-selected="{{tabSelected.title}}"
-                category-index="{{categorySelected.index}}"
-                sub-category-index="{{subCategorySelected.index}}"
-                tab-index="{{tabSelected.index}}"
-                >
-        </breadcrumb-content>
+<div class="row il-content-center">
+    <!-- Breadcrumb Section ================================================== -->
+    <breadcrumb-content
+            category-selected="{{categorySelected.title}}"
+            entry-selected="{{subCategorySelected.title}}"
+            tab-selected="{{tabSelected.title}}"
+            category-id="{{categorySelected.id}}"
+            sub-category-id="{{subCategorySelected.id}}"
+            tab-id="{{tabSelected.id}}"
+            >
+    </breadcrumb-content>
 
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">
-                <!-- Title Section ================================================== -->
-                <title-content
-                        title="{{subCategorySelected.title}}"
-                        description="{{subCategorySelected.description}}"
-                        >
-                </title-content>
-            </div>
-            <div class="panel-body">
-                <!-- Tabs Section ================================================== -->
-                <tabs-content>
-                    <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
-                                     title="{{itemGroup.title}}"
-                                     index="{{index}}"
-                                     category-index="{{categorySelected.index}}"
-                                     sub-category-index="{{subCategorySelected.index}}"
-                                     tab-active="{{itemGroup.id==tabSelected.id}}"
-                                     on-tab-selected="onTabSelected(index)">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <!-- Title Section ================================================== -->
+        <title-content
+                title="{{subCategorySelected.title}}"
+                description="{{subCategorySelected.description}}"
+                >
+        </title-content>
+
+            <!-- Tabs Section ================================================== -->
+            <tabs-content type="tabs">
+                <tabs-categories ng-repeat="(index,itemGroup) in subCategorySelected.itemGroups"
+                                 title="{{itemGroup.title}}"
+                                 tab-id="{{itemGroup.id}}"
+                                 index="index"
+                                 sub-tab-id=""
+                                 category-id="{{categorySelected.id}}"
+                                 sub-category-id="{{subCategorySelected.id}}"
+                                 tab-active="{{itemGroup.index==tabSelected.index}}"
+                                 on-tab-selected="onTabSelected(index,0)">
+                </tabs-categories>
+            </tabs-content>
+
+            <!-- Tabs sub Section ================================================== -->
+            <div ng-if="tabSelected.type!='html'">
+                <tabs-content type="sub-tabs">
+                    <tabs-categories ng-repeat="(index,entry) in tabSelected.items"
+                                     index="index"
+                                     title="{{entry.title}}"
+                                     sub-tab-id="{{entry.id}}"
+                                     tab-id="{{tabSelected.id}}"
+                                     category-id="{{categorySelected.id}}"
+                                     sub-category-id="{{subCategorySelected.id}}"
+                                     tab-active="{{entry.index==subTabSelected.index}}"
+                                     on-tab-selected="onTabSelected(tabIndex,index)">
                     </tabs-categories>
                 </tabs-content>
-
-                <!-- Entry Section ================================================== -->
-                <span ng-if="tabSelected.type=='html'">
-                    <entry-html-content
-                                        item-group="tabSelected"
-                                        index="{{index}}"
-                                        tab-path="{{tabSelected.path}}">
-                    </entry-html-content>
-                </span>
-                <span ng-if="tabSelected!='html'">
-                    <entry-json-content ng-repeat="(index,entry) in tabSelected.items"
-                                        entry="entry"
-                                        index="{{index}}"
-                                        tab-path="{{tabSelected.path}}">
-                    </entry-json-content>
-                </span>
             </div>
-        </div>
+
+
+            <!-- Entry Section ================================================== -->
+            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type=='html'">
+                <entry-html-content
+                    item="tabSelected"
+                    index="{{index}}"
+                    tab-path="{{tabSelected.path}}">
+                </entry-html-content>
+            </div>
+            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type!='html'">
+                <div ng-switch on="subTabSelected.type">
+                    <div ng-switch-when="less">
+                        <entry-less-content
+                                item="subTabSelected">
+                        </entry-less-content>
+                    </div>
+                    <div ng-switch-when="html">
+                        <entry-html-content
+                                item="subTabSelected"
+                                tab-path="{{tabSelected.path}}">
+                        </entry-html-content>
+                    </div>
+                    <div ng-switch-default>
+                        <entry-json-content
+                                entry="subTabSelected"
+                                index="{{subTabSelected.index}}"
+                                tab-path="{{tabSelected.path}}">
+                        </entry-json-content>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>

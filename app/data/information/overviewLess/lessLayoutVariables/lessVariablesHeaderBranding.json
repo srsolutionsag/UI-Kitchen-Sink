@@ -1,0 +1,91 @@
+{
+  "id": "lessVariablesHeaderBranding",
+  "title": "Header Branding",
+  "type": "less",
+  "description":"Variables used to customize the ILIAS Header section",
+  "variables":{
+      "ilias":[
+          {
+              "title":"il-header-branding-top",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-left",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-right",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-height",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-top-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-left-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-right-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-height-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-height-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-font-size",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-font-size-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-logo-size",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-logo-size-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-text-logo-padding",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-text-logo-padding-sm",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          },
+          {
+              "title":"il-header-branding-bg",
+              "description":"Todo, add description",
+              "state":"Proposal"
+          }
+      ]
+  }
+}
+

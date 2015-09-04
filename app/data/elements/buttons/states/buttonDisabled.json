@@ -1,0 +1,7 @@
+{
+    "id": "buttonDisabled",
+    "title": "Disabled",
+    "description": "If an action is temporarily not available, actions (buttons) might be disabled. Only disable actions that can be enabled by some action of the user. If they are not available due to some setting, do not display them.",
+    "state": "Implemented for 5.0",
+    "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
+}

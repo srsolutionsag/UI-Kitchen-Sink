@@ -1,0 +1,46 @@
+{
+    "id": "lessVariablesContainerSizes",
+    "title": "Container Sizes",
+    "type": "less",
+    "description":"Color definitions to be used. In some cases",
+    "variables":{
+        "bootstrap":[
+            {
+                "title":"container-tablet",
+                "value":"720px + @grid-gutter-width",
+                "description":"The size of the container on a tablet",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"container-sm",
+                "value":"@container-tablet",
+                "description":"Same as container-tablet",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"container-desktop",
+                "value":"940px + @grid-gutter-width",
+                "description":"The size of the container on a desktop",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"container-md",
+                "value":"@container-desktop",
+                "description":"Same as container-desktop",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"container-large-desktop",
+                "value":"1140px + @grid-gutter-width",
+                "description":"The size of the container on a tablet",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"container-lg",
+                "value":"@container-large-desktop",
+                "description":"Same as container-large-desktop",
+                "state":"Implemented for 5.0"
+            }
+        ]
+    }
+}

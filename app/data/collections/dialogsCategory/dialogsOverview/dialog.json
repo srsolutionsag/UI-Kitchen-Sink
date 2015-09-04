@@ -1,0 +1,7 @@
+{
+  "id": "dialog",
+  "title": "Dialog",
+  "type": "abstract",
+  "description": "external",
+  "state": "Implemented for 5.0"
+}

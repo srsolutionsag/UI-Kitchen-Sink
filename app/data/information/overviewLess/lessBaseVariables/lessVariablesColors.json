@@ -1,0 +1,45 @@
+{
+  "id": "lessVariablesColors",
+  "title": "Colors",
+  "type": "less",
+  "description":"Color definitions to be used. In some cases",
+  "variables":{
+      "ilias":[
+          {
+              "title":"brand-secondary",
+              "description":"some Description1",
+              "state":"Implemented"
+          }
+      ],
+      "bootstrap":[
+          {
+              "title":"brand-primary",
+              "value":"",
+              "overriden":"",
+              "usesInIlias":"",
+              "description":"some bs Description",
+              "state":"Implemented"
+          },
+          {
+              "title":"brand-success",
+              "description":"some bs Description 2",
+              "state":"Proposal"
+          },
+          {
+              "title":"brand-info",
+              "description":"some bs Description 2",
+              "state":"Proposal"
+          },
+          {
+              "title":"brand-warning",
+              "description":"some bs Description 2",
+              "state":"Proposal"
+          },
+          {
+              "title":"brand-danger",
+              "description":"some bs Description 2",
+              "state":"Proposal"
+          }
+      ]
+  }
+}

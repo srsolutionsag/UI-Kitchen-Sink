@@ -1,0 +1,147 @@
+<form id="form_" role="form" class="form-horizontal preventDoubleSubmission" enctype="multipart/form-data" method="post" action="#/content/2/0/1/0">
+
+    <div class="form-horizontal">
+        <!-- todo: HIDE_LABELS_STYLE -->
+
+        <!-- Please note the usage of datatable attribute which is non-standard
+            but ensures that JAWS treats this table as a layout table -->
+        <!-- removed a width="100%" -->
+        <div class="form-group" id="il_prop_cont_upload_files">
+            <label for="upload_files" class="col-sm-3 control-label">Files <span class="ilAccHeadingHidden">(File Input)</span></label>
+            <div class="col-sm-9">
+                <div class="ilFileUploadContainer">
+                    <div id="ilFileUploadDropArea_1" class="ilFileUploadDropArea">
+                        <div id="ilFileUploadDropZone_1" class="ilFileUploadDropZone ilFileDropTarget">
+                            <i class="ilFileDropTargetOverlayImage">
+
+                            </i> Drag-and-drop your files here<br>&nbsp;<span class="ilFileUploadFileCount" style="display: none;">%s file(s) selected</span>&nbsp;
+                        </div>
+                        <br>- or -
+                    </div>
+                    <div class="ilFileUploadDropAlternative">
+                        <a id="ilFileUploadFileSelect_1" class="submit omitPreventDoubleSubmission">
+                            <span><img src="/app/static/img/services/forms/icon_fold.svg"> Select the files from your computer</span>
+                            <input id="ilFileUploadInput_1" type="file" name="upload_files" accept="" multiple=""></a>
+                        </a>
+                    </div>
+                    <div id="ilFileUploadList_1" class="ilFileUploadList" style="display: none;">
+                        <div class="ilFileUploadListTitle">Selected files:
+                            <div class="ilFileUploadToggleOptions">
+                                <a class="ilFileUploadShowOptions">Show all details
+                                </a>
+                                <a class="ilFileUploadHideOptions" style="display: none;">Hide all details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-block">Maximum upload size: 400.0 MB</div>
+                </div>
+
+                <script type="text/javascript">
+
+                </script>
+
+                <script type="text/x-tmpl" id="fileupload_row_tmpl">
+<table id="{%=o.id%}" class="ilFileUploadEntry {% o.canUpload ? print('') : print('ilFileUploadNoUpload'); %}" datatable="0">
+	<tbody>
+		<tr class="ilFileUploadEntryHeader">
+			<td class="ilFileUploadEntryFileName">
+				<span class="ilFileUploadEntryError"><span class="ilFileUploadEntryErrorText"></span><br /></span>{%=o.name%}
+			</td>
+			<td class="ilFileUploadEntryProgress">
+				<span class="ilFileUploadEntryProgressBack">
+					&nbsp;
+					<span class="ilFileUploadEntryProgressBar"></span>
+					<span class="ilFileUploadEntryProgressPercent">{% (o.size === null && o.canUpload) ? print("Pending") : print(o.sizeFormatted); %}</span>
+				</span>
+			</td>
+			<td class="ilFileUploadEntryCancel"><button id="cancel_{%=o.id%}" class="btn btn-link" src=""><span class="glyphicon glyphicon-remove"></span></button></td>
+		</tr>
+		{% if (o.canUpload) { %}
+		<tr class="ilFileUploadEntryOptions">
+			<td colspan="3">
+				{% if (o.canExtract) { %}
+				<div class="ilFileUploadEntryExtract form-group">
+					<label class="col-sm-3 control-label" for="extract_{%=o.id%}">Unzip</label>
+					<div class="col-sm-9">
+						<input type="checkbox" id="extract_{%=o.id%}" name="extract_{%=o.id%}" value="false">
+					</div>
+				</div>
+				<div class="ilFileUploadEntryKeepStructure form-group">
+					<label class="col-sm-3 control-label" for="keepstructure_{%=o.id%}">Adopt Structure</label>
+					<div class="col-sm-9">
+						<input type="checkbox" id="keepstructure_{%=o.id%}" name="keepstructure_{%=o.id%}" value="true" checked>
+						<div class="help-block">If activated, directories in the zip file will be mapped to categories or, if used in groups or courses, to folders.</div>
+					</div>
+				</div>
+				{% } %}
+				<div class="ilFileUploadEntryTitle form-group">
+					<label class="col-sm-3 control-label" for="title_{%=o.id%}">Title</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" size="40" id="title_{%=o.id%}" maxlength="128" name="title" value="{%=o.name%}">
+					</div>
+				</div>
+				<div  class="ilFileUploadEntryDescription form-group">
+					<label class="col-sm-3 control-label" for="desc_{%=o.id%}">Description</label>
+					<div class="col-sm-9">
+						<textarea name="description" class="form-control" id="desc_{%=o.id%}" class="noRTEditor" wrap="virtual" rows="" style="width:90%;"></textarea>
+					</div>
+				</div>
+			</td>
+		</tr>
+		{% } %}
+	</tbody>
+</table>
+</script>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div> <!-- end of ilFormRow -->
+        <!-- <script type="text/javascript">
+        $(function() {
+            il.Form.initItem('', );
+        });
+        </script> -->
+
+
+
+
+
+
+        <div class="ilFormFooter clearfix">
+            <div class="col-sm-6 ilFormRequired">
+
+                <input type="hidden" id="ilfilehash" name="ilfilehash" value="7007e3ca314a2526b4c7769e6511ca90">
+
+
+                &nbsp;</div>
+            <div class="col-sm-6 ilFormCmds">
+
+                <input class="btn btn-default btn-sm" type="submit" name="cmd[uploadFiles]" value="Upload files" disabled="">
+
+                <input class="btn btn-default btn-sm" type="submit" name="cmd[cancel]" value="Cancel">
+
+            </div>
+        </div><!-- end of ilFormRow -->
+
+    </div>
+</form>
+<script>
+    il.Util.addOnLoad(function() {
+        var fileUpload1;
+        var explode = function(){
+            fileUpload1 = new ilFileUpload(1, {"dropZone":"#ilFileUploadDropZone_1","fileInput":"#ilFileUploadInput_1","submitButton":"uploadFiles","cancelButton":"cancel","dropArea":"#ilFileUploadDropArea_1","fileList":"#ilFileUploadList_1","fileSelectButton":"#ilFileUploadFileSelect_1"});
+        }
+        setTimeout(explode,1000);
+
+    });
+
+</script>
