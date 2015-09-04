@@ -1597,13 +1597,66 @@
               "title": "Types",
               "id": "buttonTypes",
               "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "buttonDefault",
+                  "title": "Default",
+                  "description": "Default Button in ILIAS. This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance. Buttons are either of type input (with some cmd) or link (with some href).",
+                  "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "brand-primary",
+                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "il-button-color",
+                      "description": "Text Color of the button",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonDefault",
+                  "path": "/elements/elementsButtons/buttonTypes/buttonDefault"
+                },
+                {
+                  "id": "buttonPrimary",
+                  "title": "Primary",
+                  "description": "According to <a href='http://www.ilias.de/docu/goto_docu_wiki_wpage_1441_1357.html'>Emphasized Buttons for Primary Action</a> 'Buttons for a common and important next action that tend to be overlooked, should get a special emphasized style'. This style is currently named as 'Primary Button'. There should only be one 'Primary Button' per page and each use must be confirmed by the JF. In Toolbars primary actions will be sticky, meaning they will not be disappear in the responsive view.",
+                  "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "brand-secondary",
+                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value",
+                      "state": "Implemented"
+                    },
+                    {
+                      "title": "il-button-color",
+                      "description": "Text Color of the button",
+                      "state": "Proposal"
+                    }
+                  ],
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonPrimary",
+                  "path": "/elements/elementsButtons/buttonTypes/buttonPrimary"
+                }
+              ]
             },
             {
               "title": "States",
               "id": "states",
               "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "buttonDisabled",
+                  "title": "Disabled",
+                  "description": "If an action is temporarily not available, actions (buttons) might be disabled. Only disable actions that can be enabled by some action of the user. If they are not available due to some setting, do not display them.",
+                  "state": "Implemented for 5.0",
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "fullPath": "app/data/elements/elementsButtons/states/buttonDisabled",
+                  "path": "/elements/elementsButtons/states/buttonDisabled"
+                }
+              ]
             }
           ]
         }
