@@ -2,7 +2,7 @@ angular.module('uiKitchenSink').controller('SearchController', function($scope, 
     $scope.searchCategories = {};
     $scope.searchCategories.selectedElement = {};
 
-    $scope.onSearch = function () {
+    $scope.doSearch = function () {
         $location.path("/content/"+$scope.searchCategories.selectedElement.categoryId+"/"+
             $scope.searchCategories.selectedElement.subCategoryId+"/"+
             $scope.searchCategories.selectedElement.itemGroupId+"/"+
