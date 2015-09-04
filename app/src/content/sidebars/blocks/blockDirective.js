@@ -9,7 +9,7 @@ module.directive('block', function ($timeout) {
             onBlockClickedFn: '&'
         },
         templateUrl: 'app/src/content/sidebars/blocks/block.tpl.html',
-        replace: true,
+        replace: false,
         transclude: true,
         link: function(scope, element){
             scope.collapseId = "collapse-sidebar-block-"+scope.id;
