@@ -13,6 +13,7 @@
         "grunt-contrib-less": "latest",
         "grunt-less-imports": "latest",
         "grunt-legacy-util": "latest",
+        "grunt-legacy-log": "latest",
         "coffee-script": "~1.6.3"
     }
 }
