@@ -1,0 +1,17 @@
+{
+  "id": "gridOfEqualsBase",
+  "title": "Base Example",
+  "description": "external",
+  "context":"external",
+  "state": "Proposal",
+  "relations": {
+    "mustUse":[
+      "gridContainerFluid",
+      "gridColumn",
+      "gridRow"
+    ],
+    "mayUse":[
+      "panelBase"
+    ]
+  }
+}

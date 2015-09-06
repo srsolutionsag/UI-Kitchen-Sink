@@ -1,0 +1,15 @@
+{
+  "id": "lessVariablesFooter",
+  "title": "Footer",
+  "type": "less",
+  "description":"Variables used to customize the ILIAS Footer",
+  "variables":{
+    "ilias":[
+      {
+        "title":"Todo",
+        "description":"Todo",
+        "state":"Proposal"
+      }
+    ]
+  }
+}

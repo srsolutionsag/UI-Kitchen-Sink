@@ -1,25 +1,55 @@
 <p>If the workflow for adding/updating/importing instructs to implement a new component for the UI-Kitchen-Sink, the following points must be checked:</p>
 
 <dl class="dl-horizontal">
-    <dt>Point 1:</dt>
-    <dd>Make sure there does not exist already a UI-Kitchen-Sink Element that can be used for the targeted use case.</dd>
-    <dt>Point 2:</dt>
+    <dt>Point 1, JSON:</dt>
+    <dd>Make sure there does not exist already a UI-Kitchen-Sink Element that can be used for the targeted use case.
+    If this is not the case you MUST apply the following rules:
+        <ul>
+            <li>
+                Check for the right category in the kitchen sink for your new component. If you think,
+                a new category needs to be created, propose it the the UI-Kitchen-Sink group along with a description of this new
+                category.
+            </li>
+            <li>
+                You MUST use the <a href="#/content/information/overview/kitchenSinkWorkflows/kitchenSinkTemplate">'UI-Kitchen-Sink Template'</a> to create your pull request for the UI-Kitchen-Sink.
+            </li>
+            <li>
+                Chose an id for your new component. You MUST make sure, the id does not already exist.
+            </li>
+            <li>
+                You SHOULD chose an id, describing the functionality of your component well. If possible, look for a naming that already exists (such as Modal, Popover, etc.).
+            </li>
+            <li>
+                If your component is a special version of an existing one, you SHOULD set the id to [existingComponentNewFunctionality]. Example: modalWithForm.
+            </li>
+        </ul>
+    </dd>
+    <dt>Point 2, Bootstrap:</dt>
     <dd>Check on <a href="http://getbootstrap.com/">Bootstrap 3</a> if there exists a Bootstrap component that could be used or just slightly modified.</dd>
-    <dt>Point 3:</dt>
+    <dt>Point 3, DOM:</dt>
     <dd>Write your own DOM structure. Be sure to follow the guidelines concerning <a href="/#content/information/accessability/guidelines">accessibility</a>.</dd>
-    <dt>Point 4:</dt>
-    <dd>Check if there are existing bootstrap or ILIAS less classes that could be used or extended.</dd>
-    <dt>Point 5:</dt>
-    <dd>Check if there are existing bootstrap or ILIAS less mixins that could be used.</dd>
-    <dt>Point 6:</dt>
-    <dd>Write your own less. Less variables presented in the UI-Kitchen-Sink SHOULD be used if they fit the context of a given class. You MUST check if variables exists for often used
-        attributes such as color or padding. Be sure to design your classes mobile-first, meaning first define the class for a mobile device using a media query and in a second step
-        add the exceptions for a bigger screen. If custom classes or variables are needed, be sure to follow the <a href="/#content/information/less/Overview/lessNamingConvention">naming conventions</a> for less variables and classnames.
+    <dt>Point 4, LESS:</dt>
+    <dd>Write your own less. You MUST apply the following rules:
+        <ul>
+            <li>Check if there are existing bootstrap or ILIAS less classes that could be used or extended.</li>
+            <li>Check if there are existing bootstrap or ILIAS less mixins that could be used.</li>
+            <li>Less variables presented in the UI-Kitchen-Sink SHOULD be used if they fit the context of a given class.</li>
+            <li>You MUST check if variables exists for often used attributes such as color or padding.</li>
+            <li>Be sure to design your classes mobile-first, meaning first define the class for a mobile device using a media query and in a second step
+                add the exceptions for a bigger screen.</li>
+            <li>Components MUST have an outermost DOM element with at least the following classes: [il-id-of-parent-1-if-any] [il-id-of-parent-2-if-any] [il-id-component]. Example: il-dialog il-modal il-modal-with-form</li>
+            <li>New classes must precede bootstrap classses.</li>
+            <li>You SHOULD not use id's for styling. Only use id's for aria-roles and labels or js.</li>
+            <li>id's MUST be named in lower comal case. Example: mySpecialModalTitle.</li>
+            <li>id's MUST be unique.</li>
+            <li>id's MUST proceed any other attributes, followed by classes.</li>
+            <li>If custom classes or variables are needed, be sure to follow the <a href="/#content/information/overviewLess/lessOverview/lessNamingConventions">naming conventions</a> for less variables and classnames.</li>
+        </ul>
+
+
     </dd>
-    <dt>Point 7:</dt>
+    <dt>Point 5, JS:</dt>
     <dd>You SHOULD try to avoid JS as much as possible. Often JS code can be avoided by using attributes such as data-toggle and data-target offered by <a href="http://getbootstrap.com/javascript/#js-overview">bootstrap approprietly.</a>
-        See <a href="#/content/collections/tables/filteredTable/">Table Filter</a> as example. If you need to implement JS, you MUST respect the <a href="#/content/information/javascript/javascriptGuidelines/">JS Guidelines</a>.
+        See <a href="#/content/collections/tables/filteredTable/">Table Filter</a> as example. If you need to implement JS, you MUST respect the <a href="#/content/information/overviewJavascript/javascriptGuidelines/">JS Guidelines</a>.
     </dd>
-    <dt>Point 8:</dt>
-    <dd>You MUST use the <a href="#/content/information/overview/kitchenSinkWorkflows/kitchenSinkTemplate">'UI-Kitchen-Sink Template'</a> to create your pull request for the UI-Kitchen-Sink.</dd>
 </dl>

@@ -96,7 +96,7 @@
               "type": "html"
             },
             {
-              "title": "accessabilityGuidelines",
+              "title": "Accessability Guidelines",
               "id": "accessabilityGuidelines",
               "items": [
                 {
@@ -132,6 +132,13 @@
                   "type": "html",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessILIAS",
                   "path": "/information/overviewLess/lessOverview/lessILIAS"
+                },
+                {
+                  "id": "lessNamingConventions",
+                  "title": "Less Naming Conventions",
+                  "type": "html",
+                  "fullPath": "app/data/information/overviewLess/lessOverview/lessNamingConventions",
+                  "path": "/information/overviewLess/lessOverview/lessNamingConventions"
                 }
               ]
             },
@@ -224,6 +231,17 @@
                   },
                   "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesColors",
                   "path": "/information/overviewLess/lessBaseVariables/lessVariablesColors"
+                },
+                {
+                  "id": "lessVariablesComponents",
+                  "title": "Components",
+                  "description": "Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).",
+                  "type": "less",
+                  "variables": {
+                    "bootstrap": []
+                  },
+                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesComponents",
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesComponents"
                 },
                 {
                   "id": "lessMediaQueries",
@@ -322,10 +340,117 @@
               "id": "lessElementsVariables",
               "items": [
                 {
-                  "id": "lessVariablesContainerSizes",
-                  "title": "Container Sizes",
+                  "id": "lessVariablesButtons",
+                  "title": "Buttons",
+                  "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
                   "type": "less",
-                  "description": "Color definitions to be used. In some cases",
+                  "variables": {
+                    "bootstrap": [
+                      {
+                        "title": "btn-link-disabled-color",
+                        "description": "Implemented in variables.less in Bootstrap but not used, colors are injected in Button/delos.less manualy directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-font-weight",
+                        "description": "Implemented in variables.less in Bootstrap but not used. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-default-color",
+                        "description": "Implemented in variables.less in ILIAS but not used, color 'white' directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-default-border",
+                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-default-bg",
+                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-primary-color",
+                        "description": "Implemented in variables.less in Bootstrap but not used, color 'white' directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-primary-bg",
+                        "description": "Implemented in variables.less in Bootstrap but not used, color brand-secondary is used directly instead. This should be fixed.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-success-border",
+                        "description": "No usage of btn-success known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-success-color",
+                        "description": "No usage of btn-success known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-success-bg",
+                        "description": "No usage of btn-success known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-info-border",
+                        "description": "No usage of btn-info known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-info-color",
+                        "description": "No usage of btn-info known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-info-bg",
+                        "description": "No usage of btn-info known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-warning-border",
+                        "description": "No usage of btn-warning known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-warning-color",
+                        "description": "No usage of btn-warning known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-warning-bg",
+                        "description": "No usage of btn-warning known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-danger-border",
+                        "description": "No usage of btn-danger known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-danger-color",
+                        "description": "No usage of btn-danger known.",
+                        "state": "Not Used"
+                      },
+                      {
+                        "title": "btn-danger-bg",
+                        "description": "No usage of btn-danger known.",
+                        "state": "Not Used"
+                      }
+                    ]
+                  },
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesButtons",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons"
+                },
+                {
+                  "id": "lessVariablesGrid",
+                  "title": "Grid System",
+                  "type": "less",
+                  "description": "Variables used to define the responsive grid and container sizes",
                   "variables": {
                     "bootstrap": [
                       {
@@ -363,19 +488,7 @@
                         "value": "@container-large-desktop",
                         "description": "Same as container-large-desktop",
                         "state": "Implemented for 5.0"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesContainerSizes",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesContainerSizes"
-                },
-                {
-                  "id": "lessVariablesGrid",
-                  "title": "Grid System",
-                  "type": "less",
-                  "description": "Variables used to define the responsive grid",
-                  "variables": {
-                    "bootstrap": [
+                      },
                       {
                         "title": "grid-columns",
                         "value": "12",
@@ -404,6 +517,20 @@
                   },
                   "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesGrid",
                   "path": "/information/overviewLess/lessElementsVariables/lessVariablesGrid"
+                },
+                {
+                  "id": "lessVariablesImages",
+                  "title": "Images",
+                  "type": "less",
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesImages",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesImages"
+                },
+                {
+                  "id": "lessVariablesLists",
+                  "title": "Lists",
+                  "type": "less",
+                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesLists",
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesLists"
                 },
                 {
                   "id": "lessVariablesTypography",
@@ -522,29 +649,50 @@
               ]
             },
             {
-              "title": "Collection",
+              "title": "Collections",
               "id": "lessCollectionVariables",
               "items": [
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Breadcrumbs",
+                  "id": "lessVariablesActions",
+                  "title": "Actions",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesActions",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesActions"
                 },
                 {
-                  "id": "lessVariablesDropdowns",
-                  "title": "Dropdowns",
+                  "id": "lessVariablesCalendars",
+                  "title": "Calendars",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesDropdowns",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesDropdowns"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCalendars",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCalendars"
                 },
                 {
-                  "id": "lessVariablesForms",
-                  "title": "FormStates",
+                  "id": "lessVariablesCallouts",
+                  "title": "Callouts",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCallouts",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCallouts"
+                },
+                {
+                  "id": "lessVariablesCharts",
+                  "title": "Charts",
+                  "type": "less",
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCharts",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCharts"
+                },
+                {
+                  "id": "lessVariablesContainers",
+                  "title": "Containers",
+                  "type": "less",
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesContainers",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesContainers"
+                },
+                {
+                  "id": "lessVariablesDialogs",
+                  "title": "Dialogs",
+                  "type": "less",
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesDialogs",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesDialogs"
                 },
                 {
                   "id": "lessVariablesForms",
@@ -554,91 +702,76 @@
                   "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
                 },
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Modals",
+                  "id": "lessVariablesMaps",
+                  "title": "Maps",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesMaps",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMaps"
                 },
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Navbar",
+                  "id": "lessVariablesMedia",
+                  "title": "Media",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesMedia",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMedia"
                 },
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Navs",
+                  "id": "lessVariablesNavigation",
+                  "title": "Navigation",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesNavigation",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesNavigation"
                 },
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Pager",
+                  "id": "lessVariablesTables",
+                  "title": "Tables",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Pagination",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Panels",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesForms",
-                  "title": "Popover",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Typography",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTypography"
-                },
-                {
-                  "id": "lessVariablesForms",
-                  "title": "FormTooltips",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Wells",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTables",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTables"
                 }
               ]
             },
             {
-              "title": "Layout",
+              "title": "Layouts",
               "id": "lessLayoutVariables",
               "items": [
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Grid System",
+                  "id": "lessVariablesContent",
+                  "title": "Content Section",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesButtons"
+                  "description": "Variables used to customize the ILIAS Content section",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "Todo",
+                        "description": "Todo",
+                        "state": "Proposal"
+                      }
+                    ]
+                  },
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesContent",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesContent"
+                },
+                {
+                  "id": "lessVariablesFooter",
+                  "title": "Footer",
+                  "type": "less",
+                  "description": "Variables used to customize the ILIAS Footer",
+                  "variables": {
+                    "ilias": [
+                      {
+                        "title": "Todo",
+                        "description": "Todo",
+                        "state": "Proposal"
+                      }
+                    ]
+                  },
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesFooter",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesFooter"
                 },
                 {
                   "id": "lessVariablesHeader",
-                  "title": "Main Header",
+                  "title": "Header Main",
                   "type": "less",
                   "description": "Variables used to customize the ILIAS Header section",
                   "variables": {
@@ -1008,209 +1141,23 @@
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation",
                   "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation"
-                }
-              ]
-            },
-            {
-              "title": "Unused Bootstrap Components",
-              "id": "lessUnusedLessBootstrapVariables",
-              "items": [
+                },
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Buttons",
-                  "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
+                  "id": "lessVariablesSidebars",
+                  "title": "Sidebars",
                   "type": "less",
+                  "description": "Variables used to customize the ILIAS Sidebars",
                   "variables": {
-                    "bootstrap": [
+                    "ilias": [
                       {
-                        "title": "btn-link-disabled-color",
-                        "description": "Implemented in variables.less in Bootstrap but not used, colors are injected in Button/delos.less manualy directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-font-weight",
-                        "description": "Implemented in variables.less in Bootstrap but not used. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-default-color",
-                        "description": "Implemented in variables.less in ILIAS but not used, color 'white' directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-default-border",
-                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-default-bg",
-                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-primary-color",
-                        "description": "Implemented in variables.less in Bootstrap but not used, color 'white' directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-primary-bg",
-                        "description": "Implemented in variables.less in Bootstrap but not used, color brand-secondary is used directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-success-border",
-                        "description": "No usage of btn-success known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-success-color",
-                        "description": "No usage of btn-success known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-success-bg",
-                        "description": "No usage of btn-success known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-info-border",
-                        "description": "No usage of btn-info known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-info-color",
-                        "description": "No usage of btn-info known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-info-bg",
-                        "description": "No usage of btn-info known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-warning-border",
-                        "description": "No usage of btn-warning known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-warning-color",
-                        "description": "No usage of btn-warning known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-warning-bg",
-                        "description": "No usage of btn-warning known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-danger-border",
-                        "description": "No usage of btn-danger known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-danger-color",
-                        "description": "No usage of btn-danger known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-danger-bg",
-                        "description": "No usage of btn-danger known.",
-                        "state": "Not Used"
+                        "title": "Todo",
+                        "description": "Todo",
+                        "state": "Proposal"
                       }
                     ]
                   },
-                  "fullPath": "app/data/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesJumbotron",
-                  "title": "Jumbotron",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesJumbotron",
-                  "path": "/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesJumbotron"
-                },
-                {
-                  "id": "lessVariablesCarousel",
-                  "title": "Carousel",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesCarousel",
-                  "path": "/information/overviewLess/lessUnusedLessBootstrapVariables/lessVariablesCarousel"
-                }
-              ]
-            },
-            {
-              "title": "Todo",
-              "id": "lessTodo",
-              "items": [
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Alerts",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Badges",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesTypography"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Close",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesDropdowns",
-                  "title": "Code",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesDropdowns",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesDropdowns"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Components",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesTypography"
-                },
-                {
-                  "id": "lessVariablesTables",
-                  "title": "Tables",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesTables",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesTables"
-                },
-                {
-                  "id": "lessVariablesForms",
-                  "title": "List Group",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesForms",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesForms"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Progress Bars",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesTypography"
-                },
-                {
-                  "id": "lessVariablesButtons",
-                  "title": "Thumbnails",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesButtons"
-                },
-                {
-                  "id": "lessVariablesTypography",
-                  "title": "Type",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessTodo/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessTodo/lessVariablesTypography"
+                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesSidebars",
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesSidebars"
                 }
               ]
             }
@@ -1259,50 +1206,18 @@
               "id": "gridContainers",
               "items": [
                 {
-                  "id": "1_gridContainer",
+                  "id": "centerStageBase",
                   "title": "Default",
-                  "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
+                  "description": "Put the most important part of the content into the largest subsection of the section; cluster secondary tools and content around it in smaller panels.",
                   "context": "Use a container as outer element, wherever to boostrap grid system is to be used.",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "container-tablet",
-                      "description": "The size of the container on a tablet",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-sm",
-                      "description": "Same as container-tablet",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-desktop",
-                      "description": "The size of the container on a desktop",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-md",
-                      "description": "Same as container-desktop",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-large-desktop",
-                      "description": "The size of the container on a tablet",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-lg",
-                      "description": "Same as container-large-desktop",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "relations": {
                     "mayUse": [
                       "gridRow"
                     ]
                   },
-                  "fullPath": "app/data/elements/elementsGrid/gridContainers/1_gridContainer",
-                  "path": "/elements/elementsGrid/gridContainers/1_gridContainer"
+                  "fullPath": "app/data/elements/elementsGrid/gridContainers/centerStageBase",
+                  "path": "/elements/elementsGrid/gridContainers/centerStageBase"
                 },
                 {
                   "id": "gridContainerFluid",
@@ -1949,13 +1864,50 @@
           "description": "Types of forms to be used in ILIAS",
           "itemGroups": [
             {
-              "id": "structureBlocks",
-              "title": "Blocks",
-              "description": "Container Lists to show Repository Items",
-              "items": []
+              "id": "containersPanels",
+              "title": "Panels",
+              "description": "Panels to stack content into",
+              "items": [
+                {
+                  "id": "panelBase",
+                  "title": "Default",
+                  "description": "Description of Panels",
+                  "context": "Content of Panels",
+                  "lessVariables": [
+                    {
+                      "title": "grid-columns",
+                      "value": "12",
+                      "description": "Number of columns in the grid",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "grid-gutter-width",
+                      "value": "30px",
+                      "description": "Padding between columns. Gets divided in half for the left and right",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "grid-float-breakpoint",
+                      "value": "@screen-sm-min",
+                      "description": "Point at which the navbar becomes uncollapsed",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "grid-float-breakpoint-max",
+                      "value": "(@grid-float-breakpoint - 1)",
+                      "description": "Point at which the navbar begins collapsing",
+                      "state": "Implemented for 5.0"
+                    }
+                  ],
+                  "state": "Implemented for 5.0",
+                  "relations": {},
+                  "fullPath": "app/data/collections/collectionsContainers/containersPanels/panelBase",
+                  "path": "/collections/collectionsContainers/containersPanels/panelBase"
+                }
+              ]
             },
             {
-              "id": "containerLists",
+              "id": "containersLists",
               "title": "Container List",
               "description": "Blocks that can be used to group elements in views",
               "items": []
@@ -2390,32 +2342,67 @@
         {
           "title": "Center Stage",
           "id": "layoutsCenterStage",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "description": "A big central stage in the middle of the content.",
           "itemGroups": [
             {
+              "id": "centerStageOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "centerStageBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "relations": {
+                    "mustUse": [
+                      "gridContainerFluid",
+                      "gridColumn",
+                      "gridRow"
+                    ]
+                  },
+                  "fullPath": "app/data/layouts/layoutsCenterStage/centerStageOverview/centerStageBase",
+                  "path": "/layouts/layoutsCenterStage/centerStageOverview/centerStageBase"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Grid of Equals",
           "id": "layoutsGridOfEquals",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "description": "Items order in a matrix in equal size and shape.",
           "itemGroups": [
             {
+              "id": "gridOfEqualsOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "gridOfEqualsBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "relations": {
+                    "mustUse": [
+                      "gridContainerFluid",
+                      "gridColumn",
+                      "gridRow"
+                    ],
+                    "mayUse": [
+                      "panelBase"
+                    ]
+                  },
+                  "fullPath": "app/data/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase",
+                  "path": "/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Responsive Disclosure",
-          "id": "layoutsGridOfEquals",
+          "id": "layoutsResponsiveDisclosure",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
@@ -2428,7 +2415,7 @@
         },
         {
           "title": "Wizzards",
-          "id": "layoutsGridOfEquals",
+          "id": "layoutsWizzards",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
@@ -2441,7 +2428,7 @@
         },
         {
           "title": "Drilldown",
-          "id": "layoutsGridOfEquals",
+          "id": "layoutsDrilldown",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
@@ -2454,7 +2441,7 @@
         },
         {
           "title": "List Inlay",
-          "id": "layoutsGridOfEquals",
+          "id": "layoutsListInlay",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
@@ -2467,7 +2454,7 @@
         },
         {
           "title": "Carousel",
-          "id": "layoutsGridOfEquals",
+          "id": "layoutsCarousel",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
@@ -2480,7 +2467,7 @@
         },
         {
           "title": "Timeline",
-          "id": "layoutsGridOfEquals",
+          "id": "layoutsTimeline",
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {

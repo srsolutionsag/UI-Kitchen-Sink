@@ -1,6 +1,6 @@
 {
   "id": "lessVariablesHeader",
-  "title": "Main Header",
+  "title": "Header Main",
   "type": "less",
   "description":"Variables used to customize the ILIAS Header section",
   "variables":{

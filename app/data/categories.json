@@ -36,7 +36,7 @@
                             "type": "html"
                         },
                         {
-                            "title": "accessabilityGuidelines",
+                            "title": "Accessability Guidelines",
                             "id":"accessabilityGuidelines"
                         }
                     ]
@@ -59,20 +59,12 @@
                             "id":"lessElementsVariables"
                         },
                         {
-                            "title": "Collection",
+                            "title": "Collections",
                             "id":"lessCollectionVariables"
                         },
                         {
-                            "title": "Layout",
+                            "title": "Layouts",
                             "id":"lessLayoutVariables"
-                        },
-                        {
-                            "title": "Unused Bootstrap Components",
-                            "id":"lessUnusedLessBootstrapVariables"
-                        },
-                        {
-                            "title": "Todo",
-                            "id":"lessTodo"
                         }
                     ]
                 },
@@ -363,12 +355,12 @@
                     "description": "Types of forms to be used in ILIAS",
                     "itemGroups": [
                         {
-                            "id":"structureBlocks",
-                            "title": "Blocks",
-                            "description": "Container Lists to show Repository Items"
+                            "id":"containersPanels",
+                            "title": "Panels",
+                            "description": "Panels to stack content into"
                         },
                         {
-                            "id":"containerLists",
+                            "id":"containersLists",
                             "title": "Container List",
                             "description": "Blocks that can be used to group elements in views"
 
@@ -545,30 +537,28 @@
                 {
                     "title": "Center Stage",
                     "id":"layoutsCenterStage",
-                    "description": "Layouts used in the Content section of ILIAS.",
+                    "description": "A big central stage in the middle of the content.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                          "id":"centerStageOverview",
+                          "title": "Overview"
                         }
                     ]
                 },
                 {
                     "title": "Grid of Equals",
                     "id":"layoutsGridOfEquals",
-                    "description": "Layouts used in the Content section of ILIAS.",
+                    "description": "Items order in a matrix in equal size and shape.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                            "id":"gridOfEqualsOverview",
+                            "title": "Overview"
                         }
                     ]
                 },
                 {
                     "title": "Responsive Disclosure",
-                    "id":"layoutsGridOfEquals",
+                    "id":"layoutsResponsiveDisclosure",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
@@ -580,7 +570,7 @@
                 },
                 {
                     "title": "Wizzards",
-                    "id":"layoutsGridOfEquals",
+                    "id":"layoutsWizzards",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
@@ -592,7 +582,7 @@
                 },
                 {
                     "title": "Drilldown",
-                    "id":"layoutsGridOfEquals",
+                    "id":"layoutsDrilldown",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
@@ -604,7 +594,7 @@
                 },
                 {
                     "title": "List Inlay",
-                    "id":"layoutsGridOfEquals",
+                    "id":"layoutsListInlay",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
@@ -616,7 +606,7 @@
                 },
                 {
                     "title": "Carousel",
-                    "id":"layoutsGridOfEquals",
+                    "id":"layoutsCarousel",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
@@ -628,7 +618,7 @@
                 },
                 {
                     "title": "Timeline",
-                    "id":"layoutsGridOfEquals",
+                    "id":"layoutsTimeline",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {

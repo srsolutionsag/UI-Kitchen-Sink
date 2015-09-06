@@ -1,0 +1,15 @@
+{
+  "id": "lessVariablesContent",
+  "title": "Content Section",
+  "type": "less",
+  "description":"Variables used to customize the ILIAS Content section",
+  "variables":{
+    "ilias":[
+      {
+        "title":"Todo",
+        "description":"Todo",
+        "state":"Proposal"
+      }
+    ]
+  }
+}
