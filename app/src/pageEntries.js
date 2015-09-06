@@ -136,7 +136,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                                 }
                                 for(var mustBeUsedByIndex in item.relations.mustUse)
                                 {
-                                    if(item.relations.mayUse[mustBeUsedByIndex] == component.id){
+                                    if(item.relations.mustUse[mustBeUsedByIndex] == component.id){
                                         var mustBeUsed = {
                                             "category" : {
                                                 "id":category.id,
