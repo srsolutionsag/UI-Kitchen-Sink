@@ -26,8 +26,10 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
                 scope.renderHtml = false;
             }
 
+            var basePath = scope.tabPath+'/'+scope.entry.id;
+
             if(scope.entry.description == "external"){
-                scope.descriptionPath = scope.tabPath+'/'+scope.entry.id+'.description.html';
+                scope.descriptionPath = basePath +'.description.html';
 
                 $http.get(scope.descriptionPath)
                     .success(function(data) {
@@ -37,9 +39,19 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
                         console.log('could not find '+scope.htmlPath);
                     });
             }
+            if(scope.entry.context == "external"){
+                scope.contextPath = basePath +'.context.html';
 
-            scope.htmlPath = scope.tabPath+'/'+scope.entry.id+'.html';
+                $http.get(scope.contextPath)
+                    .success(function(data) {
+                        scope.entry.context = data;
+                    })
+                    .error(function() {
+                        console.log('could not find '+scope.htmlPath);
+                    });
+            }
 
+            scope.htmlPath = basePath+'.html';
             $http.get(scope.htmlPath)
                 .success(function(data) {
                     if(data.indexOf("<span ng-non-bindable>")>-1){
@@ -52,7 +64,7 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
                     console.log('could not find '+scope.htmlPath);
                 });
 
-            scope.lessPath = scope.tabPath+'/'+scope.entry.id+'.less';
+            scope.lessPath = basePath+'.less';
             $http.get(scope.lessPath)
                 .success(function(data) {
                     scope.lessCode = data;
@@ -61,7 +73,7 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
                     console.log('could not find '+scope.lessPath);
                 });
 
-            scope.jsPath = scope.tabPath+'/'+scope.entry.id+'.js';
+            scope.jsPath = basePath+'.js';
             $http.get(scope.jsPath)
                 .success(function(data) {
                     scope.jsCode = data;

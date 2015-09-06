@@ -1,4 +1,9 @@
-<div class="well" ng-bind-html="entry.description"></div>
+<div class="well">
+    <span ng-bind-html="entry.description"></span>
+    <p ng-if="entry.context"></p>
+    <em ng-bind-html="entry.context">rendered as italicized text</em>
+</div>
+
 <div class="alert alert-{{stateType}}" role="alert">
     <p class="lead">State: {{entry.state}}</p>
     <p ng-if="entry.guiClass">GUI-Class: {{entry.guiClass}}</p>
