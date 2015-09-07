@@ -157,16 +157,6 @@
                     "id":"elementsImages",
                     "description": "Description of this sub Category",
                     "itemGroups": [
-                        {
-                            "title": "Item Group 1",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup1"
-                        },
-                        {
-                            "title": "Item Group 2",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup2"
-                        }
                     ]
                 },
                 {
@@ -175,14 +165,12 @@
                     "description": "Description of this sub Category",
                     "itemGroups": [
                         {
-                            "title": "Types",
-                            "id":"buttonTypes",
-                            "description": "Description of this Item Group"
+                          "id":"buttonOverview",
+                          "title": "Overview"
                         },
                         {
-                            "title": "States",
-                            "id":"states",
-                            "description": "Description of this Item Group"
+                          "id":"buttonTypes",
+                          "title": "Types"
                         }
                     ]
                 }
@@ -559,36 +547,44 @@
                 {
                     "title": "Responsive Disclosure",
                     "id":"layoutsResponsiveDisclosure",
-                    "description": "Layouts used in the Content section of ILIAS.",
+                    "description": "Starting with a very minimal UI, guide a user through a series of steps by showing more of the UI as he completes each step.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                          "id":"responsiveDisclosureOverview",
+                          "title": "Overview"
                         }
                     ]
                 },
                 {
-                    "title": "Wizzards",
-                    "id":"layoutsWizzards",
-                    "description": "Layouts used in the Content section of ILIAS.",
+                    "title": "Wizards",
+                    "id":"layoutsWizards",
+                    "description": "Lead the user through the interface step by step to do tasks in a prescribed order.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                          "id":"wizardsOverview",
+                          "title": "Overview"
                         }
                     ]
+                },
+                {
+                  "title": "Joyrides",
+                  "id":"layoutsJoyrides",
+                  "description": "Help the user by step by step guiding through a new complex workflow.",
+                  "itemGroups": [
+                    {
+                      "id":"joyridesOverview",
+                      "title": "Overview"
+                    }
+                  ]
                 },
                 {
                     "title": "Drilldown",
                     "id":"layoutsDrilldown",
-                    "description": "Layouts used in the Content section of ILIAS.",
+                    "description": "When the user selects an item from the list, show the details or contents of that item in the window, replacing the list.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                          "id":"drilldownOverview",
+                          "title": "Overview"
                         }
                     ]
                 },
@@ -597,11 +593,10 @@
                     "id":"layoutsListInlay",
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
-                        {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
-                        }
+                      {
+                        "id":"listInlayOverview",
+                        "title": "Overview"
+                      }
                     ]
                 },
                 {
@@ -610,9 +605,8 @@
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                          "id":"carouselOverview",
+                          "title": "Overview"
                         }
                     ]
                 },
@@ -622,11 +616,21 @@
                     "description": "Layouts used in the Content section of ILIAS.",
                     "itemGroups": [
                         {
-                            "title": "Overview",
-                            "id":"structureGrids",
-                            "description": "Description of this Item Group"
+                          "id":"timelineOverview",
+                          "title": "Overview"
                         }
                     ]
+                },
+                {
+                  "title": "Alternative Views",
+                  "id":"layoutsAlternativeViews",
+                  "description": "Layouts used in the Content section of ILIAS.",
+                  "itemGroups": [
+                    {
+                      "id":"alternativeViewsOverview",
+                      "title": "Overview"
+                    }
+                  ]
                 }
             ]
         }

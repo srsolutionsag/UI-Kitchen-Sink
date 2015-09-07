@@ -1,0 +1,8 @@
+{
+        "id": "1_baseList",
+        "title": "Base version of Lists",
+        "type": "abstract",
+        "description": "Simple lists that can be ordered or unordered.",
+        "context":"You MIGHT use simple lists if you have a limited number of items to display.",
+        "state": "Implemented for 5.0"
+}

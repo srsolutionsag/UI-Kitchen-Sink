@@ -15,6 +15,8 @@ module.directive('lessVariable', function (state, Entries) {
             if(scope.showRelations){
                 scope.relations = Entries.returnLessVariableUsages(scope.variable.title);
 
+            }else{
+                //scope.link = Entries.getComponentById(scope.variable.title);
             }
         }
     };

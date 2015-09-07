@@ -1,17 +1,17 @@
 {
   "id": "buttonDefault",
   "title": "Default",
-  "description": "Default Button in ILIAS. This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance. Buttons are either of type input (with some cmd) or link (with some href).",
+  "description": "Default Button in ILIAS. Buttons are either of type input (with some cmd) or link (with some href).",
+  "context": "This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance.",
   "state": "Implemented for 5.0",
   "lessVariables": [{
           "title": "brand-primary",
           "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
           "state": "Implemented for 5.0"
-      },{
-          "title": "il-button-color",
-          "description": "Text Color of the button",
-          "state": "Proposal"
       }
   ],
-  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
+  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+  "relations":{
+    "isA":"button"
+  }
 }

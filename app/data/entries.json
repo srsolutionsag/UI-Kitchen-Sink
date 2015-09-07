@@ -1488,20 +1488,7 @@
           "title": "Images",
           "id": "elementsImages",
           "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "title": "Item Group 1",
-              "description": "Description of this Item Group",
-              "id": "itemGroup1",
-              "items": []
-            },
-            {
-              "title": "Item Group 2",
-              "description": "Description of this Item Group",
-              "id": "itemGroup2",
-              "items": []
-            }
-          ]
+          "itemGroups": []
         },
         {
           "title": "Buttons",
@@ -1509,21 +1496,17 @@
           "description": "Description of this sub Category",
           "itemGroups": [
             {
-              "title": "Types",
-              "id": "buttonTypes",
-              "description": "Description of this Item Group",
+              "id": "buttonOverview",
+              "title": "Overview",
               "items": [
                 {
-                  "id": "buttonDefault",
-                  "title": "Default",
-                  "description": "Default Button in ILIAS. This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance. Buttons are either of type input (with some cmd) or link (with some href).",
+                  "id": "button",
+                  "title": "Button",
+                  "type": "abstract",
+                  "description": "Buttons are either of an input elemen (with some cmd) or or a link (with some href). So far ILIAS does not support the <button> type.",
+                  "context": "Use buttons to initiate an action of some sort. If an action is temporarily not available, actions (buttons) might be disabled by setting as type 'disabled'.",
                   "state": "Implemented for 5.0",
                   "lessVariables": [
-                    {
-                      "title": "brand-primary",
-                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
-                      "state": "Implemented for 5.0"
-                    },
                     {
                       "title": "il-button-color",
                       "description": "Text Color of the button",
@@ -1531,6 +1514,32 @@
                     }
                   ],
                   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "fullPath": "app/data/elements/elementsButtons/buttonOverview/button",
+                  "path": "/elements/elementsButtons/buttonOverview/button"
+                }
+              ]
+            },
+            {
+              "id": "buttonTypes",
+              "title": "Types",
+              "items": [
+                {
+                  "id": "buttonDefault",
+                  "title": "Default",
+                  "description": "Default Button in ILIAS. Buttons are either of type input (with some cmd) or link (with some href).",
+                  "context": "This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance.",
+                  "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "brand-primary",
+                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
+                      "state": "Implemented for 5.0"
+                    }
+                  ],
+                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "relations": {
+                    "isA": "button"
+                  },
                   "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonDefault",
                   "path": "/elements/elementsButtons/buttonTypes/buttonDefault"
                 },
@@ -1543,33 +1552,15 @@
                     {
                       "title": "brand-secondary",
                       "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value",
-                      "state": "Implemented"
-                    },
-                    {
-                      "title": "il-button-color",
-                      "description": "Text Color of the button",
-                      "state": "Proposal"
+                      "state": "Implemented for 5.0"
                     }
                   ],
                   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "relations": {
+                    "isA": "button"
+                  },
                   "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonPrimary",
                   "path": "/elements/elementsButtons/buttonTypes/buttonPrimary"
-                }
-              ]
-            },
-            {
-              "title": "States",
-              "id": "states",
-              "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "buttonDisabled",
-                  "title": "Disabled",
-                  "description": "If an action is temporarily not available, actions (buttons) might be disabled. Only disable actions that can be enabled by some action of the user. If they are not available due to some setting, do not display them.",
-                  "state": "Implemented for 5.0",
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-                  "fullPath": "app/data/elements/elementsButtons/states/buttonDisabled",
-                  "path": "/elements/elementsButtons/states/buttonDisabled"
                 }
               ]
             }
@@ -1714,8 +1705,7 @@
                   "relations": {
                     "isA": "dialog",
                     "mustUse": [
-                      "buttonDefault",
-                      "buttonPrimary"
+                      "buttonDefault"
                     ],
                     "mayUse": [
                       "buttonPrimary"
@@ -1821,8 +1811,7 @@
                   "relations": {
                     "isA": "dialog",
                     "mustUse": [
-                      "buttonDefault",
-                      "buttonPrimary"
+                      "buttonDefault"
                     ],
                     "mayUse": [
                       "buttonPrimary"
@@ -2403,39 +2392,88 @@
         {
           "title": "Responsive Disclosure",
           "id": "layoutsResponsiveDisclosure",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "description": "Starting with a very minimal UI, guide a user through a series of steps by showing more of the UI as he completes each step.",
           "itemGroups": [
             {
+              "id": "responsiveDisclosureOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "responsiveDisclosureBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase",
+                  "path": "/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase"
+                }
+              ]
             }
           ]
         },
         {
-          "title": "Wizzards",
-          "id": "layoutsWizzards",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "title": "Wizards",
+          "id": "layoutsWizards",
+          "description": "Lead the user through the interface step by step to do tasks in a prescribed order.",
           "itemGroups": [
             {
+              "id": "wizardsOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "wizardsBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/layoutsWizards/wizardsOverview/wizardsBase",
+                  "path": "/layouts/layoutsWizards/wizardsOverview/wizardsBase"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Joyrides",
+          "id": "layoutsJoyrides",
+          "description": "Help the user by step by step guiding through a new complex workflow.",
+          "itemGroups": [
+            {
+              "id": "joyridesOverview",
+              "title": "Overview",
+              "items": [
+                {
+                  "id": "joyridesBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/layoutsJoyrides/joyridesOverview/joyridesBase",
+                  "path": "/layouts/layoutsJoyrides/joyridesOverview/joyridesBase"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Drilldown",
           "id": "layoutsDrilldown",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "description": "When the user selects an item from the list, show the details or contents of that item in the window, replacing the list.",
           "itemGroups": [
             {
+              "id": "drilldownOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
-              "items": []
+              "items": [
+                {
+                  "id": "drilldownBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/layoutsDrilldown/drilldownOverview/drilldownBase",
+                  "path": "/layouts/layoutsDrilldown/drilldownOverview/drilldownBase"
+                }
+              ]
             }
           ]
         },
@@ -2445,9 +2483,8 @@
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
+              "id": "listInlayOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
               "items": []
             }
           ]
@@ -2458,9 +2495,8 @@
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
+              "id": "carouselOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
               "items": []
             }
           ]
@@ -2471,9 +2507,20 @@
           "description": "Layouts used in the Content section of ILIAS.",
           "itemGroups": [
             {
+              "id": "timelineOverview",
               "title": "Overview",
-              "id": "structureGrids",
-              "description": "Description of this Item Group",
+              "items": []
+            }
+          ]
+        },
+        {
+          "title": "Alternative Views",
+          "id": "layoutsAlternativeViews",
+          "description": "Layouts used in the Content section of ILIAS.",
+          "itemGroups": [
+            {
+              "id": "alternativeViewsOverview",
+              "title": "Overview",
               "items": []
             }
           ]

@@ -12,6 +12,8 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
             if(scope.entry.state === undefined){
                 scope.entry.state = "Empty";
             }
+            scope.entry.fullRelations  = Entries.getComponentRelations(scope.entry);
+            console.log(scope.entry.fullRelations.isA);
             scope.stateType = "success";
             scope.renderHtml = true;
 

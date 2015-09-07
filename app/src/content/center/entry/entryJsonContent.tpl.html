@@ -45,6 +45,14 @@
                             variable="variable">
                     </less-variable>
                 </div>
+                <span ng-if="entry.fullRelations.isA">
+                    <p>Variables inherited from {{entry.fullRelations.isA.item.title}}</p>
+                    <div ng-repeat="(id, variable) in entry.fullRelations.isA.item.lessVariables">
+                       <less-variable
+                               variable="variable">
+                       </less-variable>
+                    </div>
+                </span>
             </div>
         </div>
     </div>

@@ -3,6 +3,9 @@
 <dl class="dl-horizontal">
     <dt>Point 1, JSON:</dt>
     <dd>Make sure there does not exist already a UI-Kitchen-Sink Element that can be used for the targeted use case.
+        You MUST create a new entry if the DOM structure needs to be changed for the specific component only,
+        new less code or component specific JS needs to be added. If the change is usable for all existing
+        objects of an entry, then you SHOULD just change the existing one.
     If this is not the case you MUST apply the following rules:
         <ul>
             <li>
@@ -20,7 +23,8 @@
                 You SHOULD chose an id, describing the functionality of your component well. If possible, look for a naming that already exists (such as Modal, Popover, etc.).
             </li>
             <li>
-                If your component is a special version of an existing one, you SHOULD set the id to [existingComponentNewFunctionality]. Example: modalWithForm.
+                If your component is a special version of an existing one, you MUST set the id to [existingComponentNewFunctionality]. Example: modalWithForm. You MUST set the relation of the new
+                component with the 'isA' attribute.
             </li>
         </ul>
     </dd>

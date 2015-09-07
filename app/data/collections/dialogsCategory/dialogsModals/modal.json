@@ -7,8 +7,7 @@
   "relations": {
         "isA":"dialog",
         "mustUse":[
-            "buttonDefault",
-            "buttonPrimary"
+            "buttonDefault"
         ],
         "mayUse":[
             "buttonPrimary"
