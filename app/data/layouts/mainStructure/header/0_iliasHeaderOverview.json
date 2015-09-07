@@ -2,7 +2,7 @@
   "id": "0_iliasHeaderOverview",
   "title": "Overview",
   "isIframe": true,
-  "description": "Overview of the ILIAS header area",
+  "description": "Overview of the ILIAS header area.",
   "state": "proposal",
   "lessVariables": [
       {
@@ -55,8 +55,5 @@
           "description":"Todo, add description",
           "state":"Proposal"
       }
-  ],
-  "guiClass": "Todo",
-  "uses": "",
-  "usedBy": []
+  ]
 }

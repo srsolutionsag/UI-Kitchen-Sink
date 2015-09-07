@@ -15,7 +15,16 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
         $scope.tabSelected.index = tabIndex;
         if($scope.tabSelected.type != "html"){
             $scope.subTabSelected = $scope.tabSelected.items[subTabIndex];
-            $scope.subTabSelected.index = subTabIndex;
+            if(!$scope.subTabSelected){
+                $scope.subTabSelected = {};
+                $scope.subTabSelected.title = "Empty Entry";
+                $scope.subTabSelected.description = "Todo";
+                $scope.subTabSelected.id = "noID";
+            }else{
+                $scope.subTabSelected.index = subTabIndex;
+            }
+
+
         }
         $scope.tabSelected.path = 'app/data/'+$scope.categorySelected.id+'/'+$scope.subCategorySelected.id+'/'+$scope.tabSelected.id;
     };

@@ -1503,15 +1503,29 @@
           "description": "Description of this sub Category",
           "itemGroups": [
             {
-              "title": "Item Group 1",
-              "description": "Description of this Item Group",
-              "id": "itemGroup1",
+              "id": "listsBaseLists",
+              "title": "Ordered Lists",
+              "items": [
+                {
+                  "id": "1_baseList",
+                  "title": "Base version of Lists",
+                  "type": "abstract",
+                  "description": "Simple lists that can be ordered or unordered.",
+                  "context": "You MIGHT use simple lists if you have a limited number of items to display.",
+                  "state": "Implemented for 5.0",
+                  "fullPath": "app/data/elements/elementsLists/listsBaseLists/1_baseList",
+                  "path": "/elements/elementsLists/listsBaseLists/1_baseList"
+                }
+              ]
+            },
+            {
+              "id": "listsOrderedLists",
+              "title": "Ordered Lists",
               "items": []
             },
             {
-              "title": "Item Group 2",
-              "description": "Description of this Item Group",
-              "id": "itemGroup2",
+              "id": "listsUnorderedLists",
+              "title": "UnorderedLists",
               "items": []
             }
           ]
@@ -1519,8 +1533,19 @@
         {
           "title": "Images",
           "id": "elementsImages",
-          "description": "Description of this sub Category",
-          "itemGroups": []
+          "description": "Types of Images to be used in ILIAS",
+          "itemGroups": [
+            {
+              "id": "imagesThumbnails",
+              "title": "Thumbnails",
+              "items": []
+            },
+            {
+              "id": "imagesIcons",
+              "title": "Icons",
+              "items": []
+            }
+          ]
         },
         {
           "title": "Buttons",
@@ -1608,36 +1633,31 @@
         {
           "title": "Navigation",
           "id": "collectionsNavigation",
-          "description": "Elements used to navigate",
+          "description": "Elements used to navigate.",
           "itemGroups": [
             {
+              "id": "navigationNavbars",
               "title": "Navbars",
-              "description": "Deviations of the Bootstrap Navbar",
-              "id": "navbars",
               "items": []
             },
             {
+              "id": "navigationFatMenus",
               "title": "Fat Menus",
-              "description": "Deviations of the Bootstrap Navbar",
-              "id": "navbars",
               "items": []
             },
             {
+              "id": "navigationTabs",
               "title": "Tabs",
-              "description": "Deviations of Bootstrap tabs",
-              "id": "tabs",
               "items": []
             },
             {
-              "id": "tree",
-              "title": "Two Panels Selector",
+              "id": "navigationTree",
               "description": "Deviations of the jsTree",
               "items": []
             },
             {
+              "id": "navigationBreacrumbs",
               "title": "Breadcrumbs",
-              "description": "Deviations of Bootstrap Breadcrums",
-              "id": "breacrumbs",
               "items": []
             }
           ]
@@ -1645,43 +1665,83 @@
         {
           "title": "Forms",
           "id": "collectionsForms",
-          "description": "Types of forms to be used in ILIAS",
+          "description": "Types of forms and form items to be used in ILIAS",
           "itemGroups": [
             {
+              "id": "formsBinaryChoice",
               "title": "Binary Choice",
-              "description": "Forms with file upload elements",
-              "id": "fileUpload",
               "items": []
             },
             {
+              "id": "formsOneofN",
               "title": "One of N",
-              "description": "Forms with date or color picker",
-              "id": "dateColorPicker",
               "items": []
             },
             {
+              "id": "formsNofN",
               "title": "N of N",
-              "description": "Forms with date or color picker",
-              "id": "dateColorPicker",
               "items": []
             },
             {
+              "id": "formsText",
               "title": "Text",
-              "description": "Forms with date or color picker",
-              "id": "dateColorPicker",
               "items": []
             },
             {
+              "id": "formsNumbers",
               "title": "Numbers",
-              "description": "Forms with date or color picker",
-              "id": "dateColorPicker",
               "items": []
             },
             {
+              "id": "formsDateTime",
               "title": "Date/Time",
-              "description": "Forms with date or color picker",
-              "id": "dateColorPicker",
+              "items": [
+                {
+                  "id": "formsDateTimePicker",
+                  "title": "Date Time picker",
+                  "state": "Proposal",
+                  "description": "Form item to pick a date and/or time.",
+                  "context": "Use whenever a date or/and time is needed from the user.",
+                  "guiClass": "ilDateTimeInputGUI",
+                  "status": "proposal",
+                  "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimePicker",
+                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimePicker"
+                },
+                {
+                  "id": "formsDateTimeRangePicker",
+                  "title": "Date Time Range Picker",
+                  "state": "Proposal",
+                  "description": "Form item to let the user pick a date/time range.",
+                  "context": "Use where are range From - To is needed. Often used in filters.",
+                  "guiClass": "ilDateTimeInputGUI",
+                  "status": "Proposal",
+                  "relations": {
+                    "isA": "formsDateTimePicker"
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker",
+                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker"
+                }
+              ]
+            },
+            {
+              "id": "formsWYSIWYG",
+              "title": "WYSIWYG",
               "items": []
+            },
+            {
+              "id": "formsFileUpload",
+              "title": "File Upload",
+              "items": [
+                {
+                  "id": "formsFileUpload",
+                  "title": "File Upload",
+                  "state": "Deprecated",
+                  "description": "Current version of the File Upload.",
+                  "guiClass": "ilFileUploadGUI",
+                  "fullPath": "app/data/collections/collectionsForms/formsFileUpload/formsFileUpload",
+                  "path": "/collections/collectionsForms/formsFileUpload/formsFileUpload"
+                }
+              ]
             }
           ]
         },
@@ -1691,22 +1751,31 @@
           "description": "Types of tables to be used in ILIAS",
           "itemGroups": [
             {
+              "id": "tableBase",
               "title": "Basic Table",
-              "description": "The standard ILIAS Form",
-              "id": "basicTable",
               "items": []
             },
             {
+              "id": "tableFilter",
               "title": "Table Filter",
-              "description": "Forms with file upload elements",
-              "id": "filteredTable",
-              "items": []
+              "items": [
+                {
+                  "id": "tableFilter",
+                  "title": "Table Filter",
+                  "state": "Proposal",
+                  "description": "Proposal of table filter",
+                  "lessVariables": "Less Variable used of the new item",
+                  "status": "Proposal",
+                  "fullPath": "app/data/collections/collectionsTables/tableFilter/tableFilter",
+                  "path": "/collections/collectionsTables/tableFilter/tableFilter"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Dialogs",
-          "id": "dialogsCategory",
+          "id": "collectionsDialogs",
           "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
           "itemGroups": [
             {
@@ -1719,8 +1788,8 @@
                   "type": "abstract",
                   "description": "external",
                   "state": "Implemented for 5.0",
-                  "fullPath": "app/data/collections/dialogsCategory/dialogsOverview/dialog",
-                  "path": "/collections/dialogsCategory/dialogsOverview/dialog"
+                  "fullPath": "app/data/collections/collectionsDialogs/dialogsOverview/dialog",
+                  "path": "/collections/collectionsDialogs/dialogsOverview/dialog"
                 }
               ]
             },
@@ -1733,36 +1802,31 @@
                   "title": "Modal",
                   "description": "Base form of a modal adopted from ",
                   "guiClass": "ilModalGUI",
-                  "state": "Implemented for 5.0",
+                  "state": "Implemented for 5.1",
                   "relations": {
                     "isA": "dialog",
                     "mustUse": [
                       "buttonDefault"
-                    ],
-                    "mayUse": [
-                      "buttonPrimary"
                     ]
                   },
-                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modal",
-                  "path": "/collections/dialogsCategory/dialogsModals/modal"
+                  "fullPath": "app/data/collections/collectionsDialogs/dialogsModals/modal",
+                  "path": "/collections/collectionsDialogs/dialogsModals/modal"
                 },
                 {
                   "id": "modalWithForm",
                   "title": "Modal with Form",
                   "description": "A modal containing a form",
-                  "state": "Implemented for 5.0",
+                  "state": "Implemented for 5.1",
                   "relations": {
                     "isA": [
                       "modal"
                     ],
                     "mustUse": [
-                      "primaryButton",
-                      "form"
-                    ],
-                    "mayUse": []
+                      "buttonPrimary"
+                    ]
                   },
-                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modalWithForm",
-                  "path": "/collections/dialogsCategory/dialogsModals/modalWithForm"
+                  "fullPath": "app/data/collections/collectionsDialogs/dialogsModals/modalWithForm",
+                  "path": "/collections/collectionsDialogs/dialogsModals/modalWithForm"
                 }
               ]
             },
@@ -1776,105 +1840,48 @@
         {
           "title": "Actions",
           "id": "collectionsActions",
-          "description": "Elements used to navigate",
+          "description": "Components used to initiate actions of some sort. Other components used for navigation, those components to no just redirect to user to some other part of the application, but actually let the user manipulate the data.",
           "itemGroups": [
             {
+              "id": "actionsButtonGroups",
               "title": "Button Groups",
-              "description": "Deviations of the Bootstrap Navbar",
-              "id": "navbars",
               "items": []
             },
             {
-              "title": "Hover Tools",
-              "description": "Deviations of Bootstrap tabs",
-              "id": "tabs",
-              "items": []
-            },
-            {
-              "title": "Action Panels",
-              "description": "Deviations of the jsTree",
-              "id": "tree",
-              "items": []
-            },
-            {
-              "title": "Previews",
-              "description": "Deviations of Bootstrap Breadcrums",
-              "id": "breacrumbs",
-              "items": []
-            },
-            {
-              "title": "Previews",
-              "description": "Deviations of Bootstrap Breadcrums",
-              "id": "breacrumbs",
-              "items": []
+              "id": "actionsToolbar",
+              "title": "Toolbar",
+              "items": [
+                {
+                  "id": "toolbar",
+                  "title": "Toolbar",
+                  "description": "Complete description to be found at: <a href='http://www.ilias.de/docu/goto_docu_frm_3814_3100.html'>http://www.ilias.de/docu/goto_docu_frm_3814_3100.html</a>",
+                  "guiClass": "ilToolbarGUI",
+                  "state": "Implemented for 5.1",
+                  "fullPath": "app/data/collections/collectionsActions/actionsToolbar/toolbar",
+                  "path": "/collections/collectionsActions/actionsToolbar/toolbar"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Callouts",
-          "id": "dialogsCategory",
-          "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
+          "id": "collectionsCallouts",
+          "description": "Callouts give the user easily visible feedback of some sort.",
           "itemGroups": [
             {
+              "id": "calloutsProgressBars",
               "title": "Progress Bars",
-              "id": "dialogsOverview",
-              "items": [
-                {
-                  "id": "dialog",
-                  "title": "Dialog",
-                  "type": "abstract",
-                  "description": "external",
-                  "state": "Implemented for 5.0",
-                  "fullPath": "app/data/collections/dialogsCategory/dialogsOverview/dialog",
-                  "path": "/collections/dialogsCategory/dialogsOverview/dialog"
-                }
-              ]
+              "items": []
             },
             {
+              "id": "calloutsAlerts",
               "title": "Alerts",
-              "id": "dialogsModals",
-              "items": [
-                {
-                  "id": "modal",
-                  "title": "Modal",
-                  "description": "Base form of a modal adopted from ",
-                  "guiClass": "ilModalGUI",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "isA": "dialog",
-                    "mustUse": [
-                      "buttonDefault"
-                    ],
-                    "mayUse": [
-                      "buttonPrimary"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modal",
-                  "path": "/collections/dialogsCategory/dialogsModals/modal"
-                },
-                {
-                  "id": "modalWithForm",
-                  "title": "Modal with Form",
-                  "description": "A modal containing a form",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "isA": [
-                      "modal"
-                    ],
-                    "mustUse": [
-                      "primaryButton",
-                      "form"
-                    ],
-                    "mayUse": []
-                  },
-                  "fullPath": "app/data/collections/dialogsCategory/dialogsModals/modalWithForm",
-                  "path": "/collections/dialogsCategory/dialogsModals/modalWithForm"
-                }
-              ]
+              "items": []
             },
             {
+              "id": "calloutsTooltips",
               "title": "Tooltips",
-              "id": "dialogsNonModals",
               "items": []
             }
           ]
@@ -1882,12 +1889,11 @@
         {
           "title": "Containers",
           "id": "collectionsContainers",
-          "description": "Types of forms to be used in ILIAS",
+          "description": "Containers build a frame around other components. They group items to make them easy to identify as cluster.",
           "itemGroups": [
             {
               "id": "containersPanels",
               "title": "Panels",
-              "description": "Panels to stack content into",
               "items": [
                 {
                   "id": "panelBase",
@@ -1920,7 +1926,7 @@
                       "state": "Implemented for 5.0"
                     }
                   ],
-                  "state": "Implemented for 5.0",
+                  "state": "Proposal",
                   "relations": {},
                   "fullPath": "app/data/collections/collectionsContainers/containersPanels/panelBase",
                   "path": "/collections/collectionsContainers/containersPanels/panelBase"
@@ -1930,69 +1936,11 @@
             {
               "id": "containersLists",
               "title": "Container List",
-              "description": "Blocks that can be used to group elements in views",
               "items": []
             },
             {
               "title": "Accordion",
               "id": "containersAccordion",
-              "description": "Layouts used in the Content section of ILIAS.",
-              "itemGroups": [
-                {
-                  "title": "Overview",
-                  "id": "structureGrids",
-                  "description": "Description of this Item Group"
-                }
-              ],
-              "items": []
-            },
-            {
-              "title": "Collapsible Panels",
-              "id": "layoutsGridOfEquals",
-              "description": "Layouts used in the Content section of ILIAS.",
-              "itemGroups": [
-                {
-                  "title": "Overview",
-                  "id": "structureGrids",
-                  "description": "Description of this Item Group"
-                }
-              ],
-              "items": []
-            },
-            {
-              "title": "Movable Panels",
-              "id": "layoutsGridOfEquals",
-              "description": "Layouts used in the Content section of ILIAS.",
-              "itemGroups": [
-                {
-                  "title": "Overview",
-                  "id": "structureGrids",
-                  "description": "Description of this Item Group"
-                }
-              ],
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Media",
-          "id": "collectionsContent",
-          "description": "Types of forms to be used in ILIAS",
-          "itemGroups": [
-            {
-              "id": "contentContainerLists",
-              "title": "Container Lists",
-              "description": "Container Lists to show Repository Items",
-              "items": []
-            },
-            {
-              "title": "contentBlocks",
-              "description": "Blocks that can be used to group elements in views",
-              "items": []
-            },
-            {
-              "title": "contentPanels",
-              "description": "Blocks that can be used to group elements in views",
               "items": []
             }
           ]
@@ -2000,78 +1948,50 @@
         {
           "title": "Calendars",
           "id": "collectionsCalendar",
-          "description": "Types of forms to be used in ILIAS",
+          "description": "Calendars to view appointements",
           "itemGroups": [
             {
-              "id": "contentContainerLists",
-              "title": "Container Lists",
-              "description": "Container Lists to show Repository Items",
-              "items": []
-            },
-            {
-              "title": "contentBlocks",
-              "description": "Blocks that can be used to group elements in views",
-              "items": []
-            },
-            {
-              "title": "contentPanels",
-              "description": "Blocks that can be used to group elements in views",
+              "id": "calendarsBase",
+              "title": "Base Calendar",
               "items": []
             }
           ]
         },
         {
           "title": "Charts",
-          "id": "collectionsCalendar",
-          "description": "Types of forms to be used in ILIAS",
+          "id": "collectionsCharts",
+          "description": "Charts used to display large amount of data in limited space.",
           "itemGroups": [
             {
-              "id": "Radial Table",
-              "title": "Container Lists",
-              "description": "Container Lists to show Repository Items",
+              "id": "chartsRadialTable",
+              "title": "Radial Table",
               "items": []
             },
             {
+              "id": "chartschartsMultyYGraph",
               "title": "Multy Y-Graph",
-              "description": "Blocks that can be used to group elements in views",
               "items": []
             },
             {
+              "id": "chartsTreemap",
               "title": "Treemap",
-              "description": "Blocks that can be used to group elements in views",
               "items": []
             },
             {
+              "id": "chartsSmallMultiples",
               "title": "Small Multiples",
-              "description": "Blocks that can be used to group elements in views",
               "items": []
             }
           ]
         },
         {
           "title": "Maps",
-          "id": "collectionsCalendar",
-          "description": "Types of forms to be used in ILIAS",
+          "id": "collectionsMaps",
+          "description": "Used to show locations.",
           "itemGroups": [
             {
-              "id": "Radial Table",
-              "title": "Container Lists",
-              "description": "Container Lists to show Repository Items",
-              "items": []
-            },
-            {
-              "title": "Multy Y-Graph",
-              "description": "Blocks that can be used to group elements in views",
-              "items": []
-            },
-            {
-              "title": "contentPanels",
-              "description": "Blocks that can be used to group elements in views",
-              "items": []
-            },
-            {
-              "title": "Small Multiples",
-              "description": "Blocks that can be used to group elements in views",
+              "id": "mapsGoogleMaps",
+              "title": "Google Maps",
               "items": []
             }
           ]
@@ -2096,14 +2016,10 @@
                 {
                   "id": "iliasMainStructureOverview",
                   "title": "Overview",
-                  "description": "The main layout of the ILIAS Page contains three sections: the header section, the content section and the footer section",
+                  "description": "The main layout of the ILIAS Page contains three sections: the header section, the content section and the footer section.",
                   "lessVariables": [],
                   "isIframe": true,
                   "state": "Proposal",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item",
                   "fullPath": "app/data/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
                   "path": "/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview"
                 }
@@ -2118,7 +2034,7 @@
                   "id": "0_iliasHeaderOverview",
                   "title": "Overview",
                   "isIframe": true,
-                  "description": "Overview of the ILIAS header area",
+                  "description": "Overview of the ILIAS header area.",
                   "state": "proposal",
                   "lessVariables": [
                     {
@@ -2172,9 +2088,6 @@
                       "state": "Proposal"
                     }
                   ],
-                  "guiClass": "Todo",
-                  "uses": "",
-                  "usedBy": [],
                   "fullPath": "app/data/layouts/mainStructure/header/0_iliasHeaderOverview",
                   "path": "/layouts/mainStructure/header/0_iliasHeaderOverview"
                 },
@@ -2196,9 +2109,6 @@
                       "state": "Proposal"
                     }
                   ],
-                  "guiClass": "Todo",
-                  "uses": "",
-                  "usedBy": [],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
                   "path": "/layouts/mainStructure/header/iliasHeaderBranding"
                 },
@@ -2220,9 +2130,6 @@
                       "state": "Proposal"
                     }
                   ],
-                  "guiClass": "Todo",
-                  "uses": "",
-                  "usedBy": [],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
                   "path": "/layouts/mainStructure/header/iliasHeaderMainMenu"
                 },
@@ -2230,7 +2137,7 @@
                   "id": "iliasHeaderTopNav",
                   "title": "Top Nav",
                   "isIframe": true,
-                  "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen",
+                  "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen.",
                   "state": "Proposal",
                   "lessVariables": [
                     {
@@ -2244,9 +2151,6 @@
                       "state": "Proposal"
                     }
                   ],
-                  "guiClass": "Todo",
-                  "uses": "",
-                  "usedBy": [],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
                   "path": "/layouts/mainStructure/header/iliasHeaderTopNav"
                 }
@@ -2261,7 +2165,7 @@
                   "id": "0_iliasContentOverview",
                   "isIframe": true,
                   "title": "Overview",
-                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example",
+                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
                   "state": "Proposal",
                   "lessVariables": [
                     {
@@ -2280,16 +2184,13 @@
                       "state": "Proposal"
                     }
                   ],
-                  "guiClass": "Todo",
-                  "uses": "",
-                  "usedBy": [],
                   "fullPath": "app/data/layouts/mainStructure/content/0_iliasContentOverview",
                   "path": "/layouts/mainStructure/content/0_iliasContentOverview"
                 },
                 {
                   "id": "iliasContentCenter",
                   "title": "Center Content",
-                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example",
+                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
                   "state": "Proposal",
                   "lessVariables": [
                     {
@@ -2308,11 +2209,19 @@
                       "state": "Proposal"
                     }
                   ],
-                  "guiClass": "Todo",
-                  "uses": "",
-                  "usedBy": [],
                   "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
                   "path": "/layouts/mainStructure/content/iliasContentCenter"
+                },
+                {
+                  "id": "iliasContentSidebars",
+                  "title": "Sidebars",
+                  "isIframe": "true",
+                  "description": "The right sidebar could be used to provide the user meta-information about ILIAS such as mail, global calendar, help, tree etc.. The right sidebar could be used to provide content specific meta information such as tags, comments etc..",
+                  "context": " The sidebars are accessible at all time.",
+                  "state": "Proposal",
+                  "lessVariables": [],
+                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentSidebars",
+                  "path": "/layouts/mainStructure/content/iliasContentSidebars"
                 }
               ]
             },
@@ -2349,10 +2258,6 @@
                   ],
                   "isIframe": true,
                   "state": "Proposal",
-                  "guiClass": "GUI Class that the new item uses",
-                  "context": "Context of the new item",
-                  "knownUses": "Knonwn uses of the new item",
-                  "relations": "Relations of the new item",
                   "fullPath": "app/data/layouts/mainStructure/footer/iliasMainStructureFooter",
                   "path": "/layouts/mainStructure/footer/iliasMainStructureFooter"
                 }
@@ -2510,50 +2415,46 @@
           ]
         },
         {
-          "title": "List Inlay",
-          "id": "layoutsListInlay",
-          "description": "Layouts used in the Content section of ILIAS.",
-          "itemGroups": [
-            {
-              "id": "listInlayOverview",
-              "title": "Overview",
-              "items": []
-            }
-          ]
-        },
-        {
           "title": "Carousel",
           "id": "layoutsCarousel",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "description": "Arrange a list of visually interesting items into a horizontal strip or arc, and let the user scroll or swipe the image thumbnails back and forth to view them. Enlarge the center item, if appropriate.",
           "itemGroups": [
             {
               "id": "carouselOverview",
               "title": "Overview",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Timeline",
-          "id": "layoutsTimeline",
-          "description": "Layouts used in the Content section of ILIAS.",
-          "itemGroups": [
-            {
-              "id": "timelineOverview",
-              "title": "Overview",
-              "items": []
+              "items": [
+                {
+                  "id": "carouselBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/layoutsCarousel/carouselOverview/carouselBase",
+                  "path": "/layouts/layoutsCarousel/carouselOverview/carouselBase"
+                }
+              ]
             }
           ]
         },
         {
           "title": "Alternative Views",
           "id": "layoutsAlternativeViews",
-          "description": "Layouts used in the Content section of ILIAS.",
+          "description": "Let the user choose among alternative views that are substantially different from the default view.",
           "itemGroups": [
             {
               "id": "alternativeViewsOverview",
               "title": "Overview",
-              "items": []
+              "items": [
+                {
+                  "id": "alternativeViewsBase",
+                  "title": "Base Example",
+                  "description": "external",
+                  "context": "external",
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase",
+                  "path": "/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase"
+                }
+              ]
             }
           ]
         }

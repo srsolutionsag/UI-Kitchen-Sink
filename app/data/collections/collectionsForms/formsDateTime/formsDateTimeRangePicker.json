@@ -1,0 +1,12 @@
+{
+  "id": "formsDateTimeRangePicker",
+  "title": "Date Time Range Picker",
+  "state": "Proposal",
+  "description": "Form item to let the user pick a date/time range.",
+  "context": "Use where are range From - To is needed. Often used in filters.",
+  "guiClass": "ilDateTimeInputGUI",
+  "status":"Proposal",
+  "relations":{
+    "isA": "formsDateTimePicker"
+  }
+}

@@ -15,8 +15,5 @@
             "description":"Todo, add description",
             "state":"Proposal"
         }
-    ],
-    "guiClass": "Todo",
-    "uses": "",
-    "usedBy": []
+    ]
 }

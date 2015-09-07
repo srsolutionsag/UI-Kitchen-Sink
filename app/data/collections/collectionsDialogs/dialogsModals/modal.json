@@ -1,0 +1,13 @@
+{
+  "id": "modal",
+  "title": "Modal",
+  "description": "Base form of a modal adopted from ",
+  "guiClass": "ilModalGUI",
+  "state": "Implemented for 5.1",
+  "relations": {
+        "isA":"dialog",
+        "mustUse":[
+            "buttonDefault"
+        ]
+  }
+}

@@ -141,22 +141,32 @@
                     "description": "Description of this sub Category",
                     "itemGroups": [
                         {
-                            "title": "Item Group 1",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup1"
+                          "id":"listsBaseLists",
+                          "title": "Ordered Lists"
                         },
                         {
-                            "title": "Item Group 2",
-                            "description": "Description of this Item Group",
-                            "id":"itemGroup2"
+                          "id":"listsOrderedLists",
+                          "title": "Ordered Lists"
+                        },
+                        {
+                          "id":"listsUnorderedLists",
+                          "title": "UnorderedLists"
                         }
                     ]
                 },
                 {
                     "title": "Images",
                     "id":"elementsImages",
-                    "description": "Description of this sub Category",
+                    "description": "Types of Images to be used in ILIAS",
                     "itemGroups": [
+                      {
+                        "id":"imagesThumbnails",
+                        "title": "Thumbnails"
+                      },
+                      {
+                        "id":"imagesIcons",
+                        "title": "Icons"
+                      }
                     ]
                 },
                 {
@@ -184,69 +194,66 @@
                 {
                     "title": "Navigation",
                     "id":"collectionsNavigation",
-                    "description": "Elements used to navigate",
+                    "description": "Elements used to navigate.",
                     "itemGroups": [
                         {
-                            "title": "Navbars",
-                            "description": "Deviations of the Bootstrap Navbar",
-                            "id":"navbars"
+                          "id":"navigationNavbars",
+                          "title": "Navbars"
                         },
                         {
-                            "title": "Fat Menus",
-                            "description": "Deviations of the Bootstrap Navbar",
-                            "id":"navbars"
+                          "id":"navigationFatMenus",
+                          "title": "Fat Menus"
                         },
                         {
-                            "title": "Tabs",
-                            "description": "Deviations of Bootstrap tabs",
-                            "id":"tabs"
+                          "id":"navigationTabs",
+                          "title": "Tabs"
                         },
                         {
-                            "id":"tree",
-                            "title": "Two Panels Selector",
+                            "id":"navigationTree",
                             "description": "Deviations of the jsTree"
                         },
                         {
-                            "title": "Breadcrumbs",
-                            "description": "Deviations of Bootstrap Breadcrums",
-                            "id":"breacrumbs"
+                          "id":"navigationBreacrumbs",
+                          "title": "Breadcrumbs"
                         }
                     ]
                 },
                 {
                     "title": "Forms",
                     "id":"collectionsForms",
-                    "description": "Types of forms to be used in ILIAS",
+                    "description": "Types of forms and form items to be used in ILIAS",
                     "itemGroups": [
                         {
-                            "title": "Binary Choice",
-                            "description": "Forms with file upload elements",
-                            "id":"fileUpload"
+                          "id":"formsBinaryChoice",
+                          "title": "Binary Choice"
                         },
                         {
-                            "title": "One of N",
-                            "description": "Forms with date or color picker",
-                            "id":"dateColorPicker"
+                          "id":"formsOneofN",
+                          "title": "One of N"
                         },
                         {
-                            "title": "N of N",
-                            "description": "Forms with date or color picker",
-                            "id":"dateColorPicker"
+                            "id":"formsNofN",
+                            "title": "N of N"
                         },
                         {
-                            "title": "Text",
-                            "description": "Forms with date or color picker",
-                            "id":"dateColorPicker"
+                          "id":"formsText",
+                          "title": "Text"
                         },
                         {
-                            "title": "Numbers",
-                            "description": "Forms with date or color picker",
-                            "id":"dateColorPicker"
+                          "id":"formsNumbers",
+                          "title": "Numbers"
                         },
                         {
-                            "title": "Date/Time",
-                            "description": "Forms with date or color picker",
-                            "id":"dateColorPicker"
+                          "id":"formsDateTime",
+                          "title": "Date/Time"
+                        },
+                        {
+                          "id":"formsWYSIWYG",
+                          "title": "WYSIWYG"
+                        },
+                        {
+                          "id":"formsFileUpload",
+                          "title": "File Upload"
                         }
                     ]
                 },
@@ -256,20 +263,18 @@
                     "description": "Types of tables to be used in ILIAS",
                     "itemGroups": [
                         {
-                            "title": "Basic Table",
-                            "description": "The standard ILIAS Form",
-                            "id":"basicTable"
+                          "id":"tableBase",
+                          "title": "Basic Table"
                         },
                         {
-                            "title": "Table Filter",
-                            "description": "Forms with file upload elements",
-                            "id":"filteredTable"
+                          "id":"tableFilter",
+                          "title": "Table Filter"
                         }
                     ]
                 },
                 {
                     "title": "Dialogs",
-                    "id":"dialogsCategory",
+                    "id":"collectionsDialogs",
                     "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
                     "itemGroups": [
                         {
@@ -289,203 +294,101 @@
                 {
                     "title": "Actions",
                     "id":"collectionsActions",
-                    "description": "Elements used to navigate",
+                    "description": "Components used to initiate actions of some sort. Other components used for navigation, those components to no just redirect to user to some other part of the application, but actually let the user manipulate the data.",
                     "itemGroups": [
                         {
-                            "title": "Button Groups",
-                            "description": "Deviations of the Bootstrap Navbar",
-                            "id":"navbars"
+                          "id":"actionsButtonGroups",
+                          "title": "Button Groups"
                         },
                         {
-                            "title": "Hover Tools",
-                            "description": "Deviations of Bootstrap tabs",
-                            "id":"tabs"
-                        },
-                        {
-                            "title": "Action Panels",
-                            "description": "Deviations of the jsTree",
-                            "id":"tree"
-                        },
-                        {
-                            "title": "Previews",
-                            "description": "Deviations of Bootstrap Breadcrums",
-                            "id":"breacrumbs"
-                        },
-                        {
-                            "title": "Previews",
-                            "description": "Deviations of Bootstrap Breadcrums",
-                            "id":"breacrumbs"
+                          "id":"actionsToolbar",
+                          "title": "Toolbar"
                         }
                     ]
                 },
                 {
                     "title": "Callouts",
-                    "id":"dialogsCategory",
-                    "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
+                    "id":"collectionsCallouts",
+                    "description": "Callouts give the user easily visible feedback of some sort.",
                     "itemGroups": [
                         {
-                            "title": "Progress Bars",
-                            "id":"dialogsOverview"
+                          "id":"calloutsProgressBars",
+                          "title": "Progress Bars"
                         },
                         {
-                            "title": "Alerts",
-                            "id":"dialogsModals"
+                          "id":"calloutsAlerts",
+                          "title": "Alerts"
                         },
                         {
-                            "title": "Tooltips",
-                            "id":"dialogsNonModals"
+                          "id":"calloutsTooltips",
+                          "title": "Tooltips"
                         }
                     ]
                 },
                 {
                     "title": "Containers",
                     "id":"collectionsContainers",
-                    "description": "Types of forms to be used in ILIAS",
+                    "description": "Containers build a frame around other components. They group items to make them easy to identify as cluster.",
                     "itemGroups": [
                         {
                             "id":"containersPanels",
-                            "title": "Panels",
-                            "description": "Panels to stack content into"
+                            "title": "Panels"
                         },
                         {
                             "id":"containersLists",
-                            "title": "Container List",
-                            "description": "Blocks that can be used to group elements in views"
+                            "title": "Container List"
 
                         },
                         {
                             "title": "Accordion",
-                            "id":"containersAccordion",
-                            "description": "Layouts used in the Content section of ILIAS.",
-                            "itemGroups": [
-                                {
-                                    "title": "Overview",
-                                    "id":"structureGrids",
-                                    "description": "Description of this Item Group"
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Collapsible Panels",
-                            "id":"layoutsGridOfEquals",
-                            "description": "Layouts used in the Content section of ILIAS.",
-                            "itemGroups": [
-                                {
-                                    "title": "Overview",
-                                    "id":"structureGrids",
-                                    "description": "Description of this Item Group"
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Movable Panels",
-                            "id":"layoutsGridOfEquals",
-                            "description": "Layouts used in the Content section of ILIAS.",
-                            "itemGroups": [
-                                {
-                                    "title": "Overview",
-                                    "id":"structureGrids",
-                                    "description": "Description of this Item Group"
-                                }
-                            ]
+                            "id":"containersAccordion"
                         }
-
-                    ]
-                },
-                {
-                    "title": "Media",
-                    "id":"collectionsContent",
-                    "description": "Types of forms to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                            "id":"contentContainerLists",
-                            "title": "Container Lists",
-                            "description": "Container Lists to show Repository Items"
-                        },
-                        {
-                            "title": "contentBlocks",
-                            "description": "Blocks that can be used to group elements in views"
-
-                        },
-                        {
-                            "title": "contentPanels",
-                            "description": "Blocks that can be used to group elements in views"
-                        }
-
                     ]
                 },
                 {
                     "title": "Calendars",
                     "id":"collectionsCalendar",
-                    "description": "Types of forms to be used in ILIAS",
+                    "description": "Calendars to view appointements",
                     "itemGroups": [
                         {
-                            "id":"contentContainerLists",
-                            "title": "Container Lists",
-                            "description": "Container Lists to show Repository Items"
-                        },
-                        {
-                            "title": "contentBlocks",
-                            "description": "Blocks that can be used to group elements in views"
-
-                        },
-                        {
-                            "title": "contentPanels",
-                            "description": "Blocks that can be used to group elements in views"
+                          "id":"calendarsBase",
+                          "title": "Base Calendar"
                         }
-
                     ]
                 },
                 {
                     "title": "Charts",
-                    "id":"collectionsCalendar",
-                    "description": "Types of forms to be used in ILIAS",
+                    "id":"collectionsCharts",
+                    "description": "Charts used to display large amount of data in limited space.",
                     "itemGroups": [
                         {
-                            "id":"Radial Table",
-                            "title": "Container Lists",
-                            "description": "Container Lists to show Repository Items"
+                            "id":"chartsRadialTable",
+                            "title": "Radial Table"
                         },
                         {
-                            "title": "Multy Y-Graph",
-                            "description": "Blocks that can be used to group elements in views"
-
+                          "id":"chartschartsMultyYGraph",
+                          "title": "Multy Y-Graph"
                         },
                         {
-                            "title": "Treemap",
-                            "description": "Blocks that can be used to group elements in views"
+                          "id":"chartsTreemap",
+                          "title": "Treemap"
                         },
                         {
-                            "title": "Small Multiples",
-                            "description": "Blocks that can be used to group elements in views"
+                          "id":"chartsSmallMultiples",
+                          "title": "Small Multiples"
                         }
 
                     ]
                 },
                 {
-                    "title": "Maps",
-                    "id":"collectionsCalendar",
-                    "description": "Types of forms to be used in ILIAS",
+                  "title": "Maps",
+                  "id":"collectionsMaps",
+                    "description": "Used to show locations.",
                     "itemGroups": [
                         {
-                            "id":"Radial Table",
-                            "title": "Container Lists",
-                            "description": "Container Lists to show Repository Items"
-                        },
-                        {
-                            "title": "Multy Y-Graph",
-                            "description": "Blocks that can be used to group elements in views"
-
-                        },
-                        {
-                            "title": "contentPanels",
-                            "description": "Blocks that can be used to group elements in views"
-                        },
-                        {
-                            "title": "Small Multiples",
-                            "description": "Blocks that can be used to group elements in views"
+                            "id":"mapsGoogleMaps",
+                            "title": "Google Maps"
                         }
-
                     ]
                 }
             ]
@@ -589,20 +492,9 @@
                     ]
                 },
                 {
-                    "title": "List Inlay",
-                    "id":"layoutsListInlay",
-                    "description": "Layouts used in the Content section of ILIAS.",
-                    "itemGroups": [
-                      {
-                        "id":"listInlayOverview",
-                        "title": "Overview"
-                      }
-                    ]
-                },
-                {
                     "title": "Carousel",
                     "id":"layoutsCarousel",
-                    "description": "Layouts used in the Content section of ILIAS.",
+                    "description": "Arrange a list of visually interesting items into a horizontal strip or arc, and let the user scroll or swipe the image thumbnails back and forth to view them. Enlarge the center item, if appropriate.",
                     "itemGroups": [
                         {
                           "id":"carouselOverview",
@@ -611,20 +503,9 @@
                     ]
                 },
                 {
-                    "title": "Timeline",
-                    "id":"layoutsTimeline",
-                    "description": "Layouts used in the Content section of ILIAS.",
-                    "itemGroups": [
-                        {
-                          "id":"timelineOverview",
-                          "title": "Overview"
-                        }
-                    ]
-                },
-                {
                   "title": "Alternative Views",
                   "id":"layoutsAlternativeViews",
-                  "description": "Layouts used in the Content section of ILIAS.",
+                  "description": "Let the user choose among alternative views that are substantially different from the default view.",
                   "itemGroups": [
                     {
                       "id":"alternativeViewsOverview",
