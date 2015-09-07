@@ -1206,18 +1206,50 @@
               "id": "gridContainers",
               "items": [
                 {
-                  "id": "centerStageBase",
+                  "id": "1_gridContainer",
                   "title": "Default",
-                  "description": "Put the most important part of the content into the largest subsection of the section; cluster secondary tools and content around it in smaller panels.",
+                  "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
                   "context": "Use a container as outer element, wherever to boostrap grid system is to be used.",
                   "state": "Implemented for 5.0",
+                  "lessVariables": [
+                    {
+                      "title": "container-tablet",
+                      "description": "The size of the container on a tablet",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-sm",
+                      "description": "Same as container-tablet",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-desktop",
+                      "description": "The size of the container on a desktop",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-md",
+                      "description": "Same as container-desktop",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-large-desktop",
+                      "description": "The size of the container on a tablet",
+                      "state": "Implemented for 5.0"
+                    },
+                    {
+                      "title": "container-lg",
+                      "description": "Same as container-large-desktop",
+                      "state": "Implemented for 5.0"
+                    }
+                  ],
                   "relations": {
                     "mayUse": [
                       "gridRow"
                     ]
                   },
-                  "fullPath": "app/data/elements/elementsGrid/gridContainers/centerStageBase",
-                  "path": "/elements/elementsGrid/gridContainers/centerStageBase"
+                  "fullPath": "app/data/elements/elementsGrid/gridContainers/1_gridContainer",
+                  "path": "/elements/elementsGrid/gridContainers/1_gridContainer"
                 },
                 {
                   "id": "gridContainerFluid",
