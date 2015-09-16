@@ -5,6 +5,8 @@ module.exports = function(grunt) {
 
     var dataDir = 'app/data';
     var jsonOutputPath = dataDir+'/entries.json';
+
+    var lessVariablesPath = "app/less/variables.less";
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -234,8 +236,117 @@ module.exports = function(grunt) {
         grunt.log.writeln('UI-Kitchen-Sink '+state+' at http://'+host+":"+port);
     });
 
-    grunt.registerTask('default', ['connect:server','info:started','watch']);
-    grunt.registerTask('buildEntries', ['buildEntriesJson']);
+
+    var getTreeFromVariableLess = function(){
+        var Parser = require("simple-text-parser"),
+            parser = new Parser();
+
+        // Getting less Categories
+        parser.addRule(/\/\/\s--\s(.*)/g, function(lessLine) {
+            // Get the variable minus @
+            var regexCategory = /\/\/\s--\s(.*)/g;
+            var category = regexCategory.exec(lessLine);
+
+            if(category){
+                return { 'category': category[1]};
+            }
+        });
+
+        // Getting less section
+        parser.addRule(/\/\/==\s(.*)/g, function(lessLine) {
+            // Get the variable minus @
+            var regexGroup = /\/\/==\s(.*)/g;
+            var group = regexGroup.exec(lessLine);
+            if(group){
+                return { 'group': group[1]};
+            }
+        });
+
+
+        // Define a rule using a regular expression
+        parser.addRule(/\/\/##\s(.*)/g, function(lessLine) {
+            // Get the variable minus @
+            var regexGroupDescription = /\/\/##\s(.*)/g;
+            var groupDescription = regexGroupDescription.exec(lessLine);
+
+            if(groupDescription){
+                return { 'groupDescription': groupDescription[1]};
+            }
+        });
+
+        // Define a rule using a regular expression
+        parser.addRule(/\/\/\*\*\s(.*)/g, function(lessLine) {
+            // Get the variable minus @
+            var regexVariableDescription = /\/\/\*\*\s(.*)/g;
+            var variableDescription = regexVariableDescription.exec(lessLine);
+
+            if(variableDescription){
+                return { 'variableDescription': variableDescription[1]};
+            }
+
+        });
+
+        // Define a rule using a regular expression
+        parser.addRule(/@(.*)/g, function(lessLine) {
+            // Get the variable minus @
+            var regexVariable = /(?:@)(.*)(?:\:)/g;
+            var variable = regexVariable.exec(lessLine);
+
+            // Get the value
+            var regexValue = /(?::)(.*)(?:;)/g;
+            var value = regexValue.exec(lessLine);
+
+            if(!variable){
+                grunt.log.error('@ without defined variable: '+lessLine);
+            }
+
+            if(!value){
+                grunt.log.error('Variable '+variable[1]+"is missing a value");
+            }
+
+            return { 'variable': variable[1], 'value': value[1]};
+        });
+        return parser.toTree(grunt.file.read(lessVariablesPath).toString());
+    }
+    //grunt.registerTask('default', ['connect:server','info:started','watch']);
+    //grunt.registerTask('buildEntries', ['buildEntriesJson']);
+    grunt.registerTask('tester', 'Testing...', function(state){
+        var tempLessVariables = getTreeFromVariableLess();
+
+        var lessVariables = [];
+        var currentCategory = false;
+        var currentGroup = false;
+        for(var index in tempLessVariables){
+            var item = tempLessVariables[index];
+
+
+            if(item.category){
+                lessVariables[item.category] = {};
+                lessVariables[item.category].title = item.category;
+                lessVariables[item.category].items = [];
+                currentCategory = item.category;
+            }
+            if(item.group && currentCategory){
+                lessVariables[currentCategory].items[item.group] = {};
+                lessVariables[currentCategory].items[item.group].title = item.group;
+                lessVariables[currentCategory].items[item.group].variables = [];
+                currentGroup = item.group;
+            }else if(item.group){
+                grunt.log.error('Group '+item.group+' is defined before a category. Please define your category (marker: // -- Category Title) first.');
+
+            }
+
+            if(item.groupDescription && currentGroup && currentCategory){
+                lessVariables[currentCategory].items[item.group].description = item.group;
+            }else if(item.groupDescription){
+                grunt.log.error('Group description '+item.groupDescription+' is defined before a group. Please define your group (marker: //==  Group Title) first.');
+
+            }
+        }
+        console.log(lessVariables);
+    });
+
+    grunt.registerTask('test', ['tester']);
 
 
 };
