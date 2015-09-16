@@ -1,0 +1,22 @@
+{
+  "id": "formArea",
+  "order": 10,
+  "title": "Form Area",
+  "description":"external",
+  "translations":{
+    "german":{
+      "title":"Formularbereich"
+    }
+  },
+  "context":"Each form MUST contain at least one area.",
+  "state": "Proposal",
+  "guiClass": "ilFormGUI",
+  "relations":{
+    "mustUse":[
+      "formSection"
+    ],
+    "mayUse":[
+      "buttonDefault"
+    ]
+  }
+}
