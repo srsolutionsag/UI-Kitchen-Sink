@@ -164,6 +164,9 @@ module.exports = function(grunt) {
 
                 jsonObject.path = jsonObject.fullPath.substr(this.data.dataDir.length);
 
+                if(jsonObject.order === undefined){
+                    jsonObject.order = 100;
+                }
                 //var jsonObjectProperties = JSON.stringify(Object.getOwnPropertyNames (jsonObject));
                 if(false){//jsonObjectProperties != templateProperties){
                     grunt.log.error("Warning: "+jsonPath+" has invalid properties and will not be added to: "+this.data.jsonOutputPath);
@@ -172,6 +175,11 @@ module.exports = function(grunt) {
                 } else{
                     tempJsonObjects.push(jsonObject);
                 }
+                tempJsonObjects.sort(function(a,b)
+                    {
+                        return a.order - b.order;
+                    }
+                );
             }
             this.finalOutput.categories[categoryIndex].subCategories[subCategoryIndex].itemGroups[itemGroupIndex].items = tempJsonObjects;
         };
