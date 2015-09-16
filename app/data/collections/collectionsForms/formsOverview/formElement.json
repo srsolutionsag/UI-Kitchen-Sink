@@ -1,0 +1,17 @@
+{
+  "id": "formElement",
+  "order": 30,
+  "title": "Form Element",
+  "type": "abstract",
+  "description":"Todo",
+  "translations":{
+    "german":{
+      "title":"Formularelement"
+    }
+  },
+  "context":"Todo",
+  "state": "Proposal",
+  "guiClass": "ilFormGUI",
+  "relations":{
+  }
+}

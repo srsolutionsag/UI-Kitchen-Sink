@@ -24,21 +24,24 @@
                   "title": "Categories",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewTerms/termsCategories",
-                  "path": "/information/informationOverview/overviewTerms/termsCategories"
+                  "path": "/information/informationOverview/overviewTerms/termsCategories",
+                  "order": 100
                 },
                 {
                   "id": "termsKeyWords",
                   "title": "Key Words",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewTerms/termsKeyWords",
-                  "path": "/information/informationOverview/overviewTerms/termsKeyWords"
+                  "path": "/information/informationOverview/overviewTerms/termsKeyWords",
+                  "order": 100
                 },
                 {
                   "id": "termsStates",
                   "title": "States",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewTerms/termsStates",
-                  "path": "/information/informationOverview/overviewTerms/termsStates"
+                  "path": "/information/informationOverview/overviewTerms/termsStates",
+                  "order": 100
                 }
               ]
             },
@@ -51,35 +54,40 @@
                   "title": "New Element",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowAddElements",
-                  "path": "/information/informationOverview/overviewWorkflows/workflowAddElements"
+                  "path": "/information/informationOverview/overviewWorkflows/workflowAddElements",
+                  "order": 100
                 },
                 {
                   "id": "workflowChangeElements",
                   "title": "Change Element",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowChangeElements",
-                  "path": "/information/informationOverview/overviewWorkflows/workflowChangeElements"
+                  "path": "/information/informationOverview/overviewWorkflows/workflowChangeElements",
+                  "order": 100
                 },
                 {
                   "id": "workflowImportElements",
                   "title": "Import Element",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowImportElements",
-                  "path": "/information/informationOverview/overviewWorkflows/workflowImportElements"
+                  "path": "/information/informationOverview/overviewWorkflows/workflowImportElements",
+                  "order": 100
                 },
                 {
                   "id": "z_workflowChecklist",
                   "title": "Checklist",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowChecklist",
-                  "path": "/information/informationOverview/overviewWorkflows/z_workflowChecklist"
+                  "path": "/information/informationOverview/overviewWorkflows/z_workflowChecklist",
+                  "order": 100
                 },
                 {
                   "id": "z_workflowTemplate",
                   "title": "Template",
                   "type": "html",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowTemplate",
-                  "path": "/information/informationOverview/overviewWorkflows/z_workflowTemplate"
+                  "path": "/information/informationOverview/overviewWorkflows/z_workflowTemplate",
+                  "order": 100
                 }
               ]
             }
@@ -104,7 +112,8 @@
                   "title": "Aria Roles",
                   "type": "html",
                   "fullPath": "app/data/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
-                  "path": "/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles"
+                  "path": "/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
+                  "order": 100
                 }
               ]
             }
@@ -124,21 +133,24 @@
                   "title": "About LESS",
                   "type": "html",
                   "fullPath": "app/data/information/overviewLess/lessOverview/aboutLess",
-                  "path": "/information/overviewLess/lessOverview/aboutLess"
+                  "path": "/information/overviewLess/lessOverview/aboutLess",
+                  "order": 100
                 },
                 {
                   "id": "lessILIAS",
                   "title": "Less in ILIAS",
                   "type": "html",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessILIAS",
-                  "path": "/information/overviewLess/lessOverview/lessILIAS"
+                  "path": "/information/overviewLess/lessOverview/lessILIAS",
+                  "order": 100
                 },
                 {
                   "id": "lessNamingConventions",
                   "title": "Less Naming Conventions",
                   "type": "html",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessNamingConventions",
-                  "path": "/information/overviewLess/lessOverview/lessNamingConventions"
+                  "path": "/information/overviewLess/lessOverview/lessNamingConventions",
+                  "order": 100
                 }
               ]
             },
@@ -186,7 +198,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessBaseVariables/01_lessVariablesTypography",
-                  "path": "/information/overviewLess/lessBaseVariables/01_lessVariablesTypography"
+                  "path": "/information/overviewLess/lessBaseVariables/01_lessVariablesTypography",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesColors",
@@ -230,7 +243,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesColors",
-                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesColors"
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesColors",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesComponents",
@@ -241,7 +255,8 @@
                     "bootstrap": []
                   },
                   "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesComponents",
-                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesComponents"
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesComponents",
+                  "order": 100
                 },
                 {
                   "id": "lessMediaQueries",
@@ -277,7 +292,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessMediaQueries",
-                  "path": "/information/overviewLess/lessBaseVariables/lessMediaQueries"
+                  "path": "/information/overviewLess/lessBaseVariables/lessMediaQueries",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesZIndex",
@@ -331,7 +347,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesZIndex",
-                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesZIndex"
+                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesZIndex",
+                  "order": 100
                 }
               ]
             },
@@ -444,7 +461,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons"
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesGrid",
@@ -516,21 +534,24 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesGrid",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesGrid"
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesGrid",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesImages",
                   "title": "Images",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesImages",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesImages"
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesImages",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesLists",
                   "title": "Lists",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesLists",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesLists"
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesLists",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesTypography",
@@ -644,7 +665,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesTypography"
+                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesTypography",
+                  "order": 100
                 }
               ]
             },
@@ -653,81 +675,92 @@
               "id": "lessCollectionVariables",
               "items": [
                 {
+                  "id": "lessVariablesDialogs",
+                  "title": "Dialogs",
+                  "type": "less",
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesDialogs",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesDialogs",
+                  "order": 100
+                },
+                {
                   "id": "lessVariablesActions",
                   "title": "Actions",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesActions",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesActions"
-                },
-                {
-                  "id": "lessVariablesCalendars",
-                  "title": "Calendars",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCalendars",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCalendars"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesActions",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesCallouts",
                   "title": "Callouts",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCallouts",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCallouts"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCallouts",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesCharts",
                   "title": "Charts",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCharts",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCharts"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCharts",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesContainers",
                   "title": "Containers",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesContainers",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesContainers"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesContainers",
+                  "order": 100
                 },
                 {
-                  "id": "lessVariablesDialogs",
-                  "title": "Dialogs",
+                  "id": "lessVariablesCalendars",
+                  "title": "Calendars",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesDialogs",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesDialogs"
+                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCalendars",
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCalendars",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesForms",
                   "title": "Forms",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesMaps",
                   "title": "Maps",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesMaps",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMaps"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMaps",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesMedia",
                   "title": "Media",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesMedia",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMedia"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMedia",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesNavigation",
                   "title": "Navigation",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesNavigation",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesNavigation"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesNavigation",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesTables",
                   "title": "Tables",
                   "type": "less",
                   "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTables",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTables"
+                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTables",
+                  "order": 100
                 }
               ]
             },
@@ -750,7 +783,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesContent",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesContent"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesContent",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesFooter",
@@ -767,7 +801,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesFooter",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesFooter"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesFooter",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesHeader",
@@ -829,7 +864,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeader",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeader"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeader",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesHeaderBranding",
@@ -921,7 +957,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesHeaderMainMenu",
@@ -1033,7 +1070,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesHeaderTopNavigation",
@@ -1140,7 +1178,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation",
+                  "order": 100
                 },
                 {
                   "id": "lessVariablesSidebars",
@@ -1157,7 +1196,8 @@
                     ]
                   },
                   "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesSidebars",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesSidebars"
+                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesSidebars",
+                  "order": 100
                 }
               ]
             }
@@ -1182,7 +1222,8 @@
                   "title": "Javascript Guidelines",
                   "type": "html",
                   "fullPath": "app/data/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
-                  "path": "/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines"
+                  "path": "/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
+                  "order": 100
                 }
               ]
             }
@@ -1249,7 +1290,8 @@
                     ]
                   },
                   "fullPath": "app/data/elements/elementsGrid/gridContainers/1_gridContainer",
-                  "path": "/elements/elementsGrid/gridContainers/1_gridContainer"
+                  "path": "/elements/elementsGrid/gridContainers/1_gridContainer",
+                  "order": 100
                 },
                 {
                   "id": "gridContainerFluid",
@@ -1261,7 +1303,8 @@
                     "isA": "1_gridContainer"
                   },
                   "fullPath": "app/data/elements/elementsGrid/gridContainers/gridContainerFluid",
-                  "path": "/elements/elementsGrid/gridContainers/gridContainerFluid"
+                  "path": "/elements/elementsGrid/gridContainers/gridContainerFluid",
+                  "order": 100
                 }
               ]
             },
@@ -1282,7 +1325,8 @@
                     ]
                   },
                   "fullPath": "app/data/elements/elementsGrid/gridRows/gridRow",
-                  "path": "/elements/elementsGrid/gridRows/gridRow"
+                  "path": "/elements/elementsGrid/gridRows/gridRow",
+                  "order": 100
                 }
               ]
             },
@@ -1325,7 +1369,8 @@
                   "state": "Implemented for 5.0",
                   "relations": {},
                   "fullPath": "app/data/elements/elementsGrid/gridColumns/gridColumn",
-                  "path": "/elements/elementsGrid/gridColumns/gridColumn"
+                  "path": "/elements/elementsGrid/gridColumns/gridColumn",
+                  "order": 100
                 }
               ]
             }
@@ -1385,7 +1430,8 @@
                     }
                   ],
                   "fullPath": "app/data/elements/elementsTypography/typographyOverview/baseText",
-                  "path": "/elements/elementsTypography/typographyOverview/baseText"
+                  "path": "/elements/elementsTypography/typographyOverview/baseText",
+                  "order": 100
                 }
               ]
             },
@@ -1465,7 +1511,8 @@
                     "isA": "baseText"
                   },
                   "fullPath": "app/data/elements/elementsTypography/typographyHeadings/typographyHeadings",
-                  "path": "/elements/elementsTypography/typographyHeadings/typographyHeadings"
+                  "path": "/elements/elementsTypography/typographyHeadings/typographyHeadings",
+                  "order": 100
                 }
               ]
             },
@@ -1491,7 +1538,8 @@
                     "isA": "baseText"
                   },
                   "fullPath": "app/data/elements/elementsTypography/typographyCode/typographyCode",
-                  "path": "/elements/elementsTypography/typographyCode/typographyCode"
+                  "path": "/elements/elementsTypography/typographyCode/typographyCode",
+                  "order": 100
                 }
               ]
             }
@@ -1514,7 +1562,8 @@
                   "context": "You MIGHT use simple lists if you have a limited number of items to display.",
                   "state": "Implemented for 5.0",
                   "fullPath": "app/data/elements/elementsLists/listsBaseLists/1_baseList",
-                  "path": "/elements/elementsLists/listsBaseLists/1_baseList"
+                  "path": "/elements/elementsLists/listsBaseLists/1_baseList",
+                  "order": 100
                 }
               ]
             },
@@ -1572,7 +1621,8 @@
                   ],
                   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
                   "fullPath": "app/data/elements/elementsButtons/buttonOverview/button",
-                  "path": "/elements/elementsButtons/buttonOverview/button"
+                  "path": "/elements/elementsButtons/buttonOverview/button",
+                  "order": 100
                 }
               ]
             },
@@ -1598,7 +1648,8 @@
                     "isA": "button"
                   },
                   "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonDefault",
-                  "path": "/elements/elementsButtons/buttonTypes/buttonDefault"
+                  "path": "/elements/elementsButtons/buttonTypes/buttonDefault",
+                  "order": 100
                 },
                 {
                   "id": "buttonPrimary",
@@ -1618,7 +1669,8 @@
                     "isA": "button"
                   },
                   "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonPrimary",
-                  "path": "/elements/elementsButtons/buttonTypes/buttonPrimary"
+                  "path": "/elements/elementsButtons/buttonTypes/buttonPrimary",
+                  "order": 100
                 }
               ]
             }
@@ -1669,6 +1721,121 @@
           "description": "Types of forms and form items to be used in ILIAS",
           "itemGroups": [
             {
+              "id": "formsOverview",
+              "title": "Overview",
+              "items": [
+                {
+                  "id": "formBase",
+                  "order": 0,
+                  "title": "Base Form",
+                  "translations": {
+                    "german": {
+                      "title": "Standarformular"
+                    }
+                  },
+                  "description": "A form is divided into area which are further divided into sections. Each form MUST have a header and a footer section containing the buttons to save or cancel the input of the form.",
+                  "context": "A form SHOULD be used whenever data input is needed from the user.",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {
+                    "mustUse": [
+                      "formFooter",
+                      "formArea"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formBase",
+                  "path": "/collections/collectionsForms/formsOverview/formBase"
+                },
+                {
+                  "id": "formArea",
+                  "order": 10,
+                  "title": "Form Area",
+                  "description": "external",
+                  "translations": {
+                    "german": {
+                      "title": "Formularbereich"
+                    }
+                  },
+                  "context": "Each form MUST contain at least one area.",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {
+                    "mustUse": [
+                      "formSection"
+                    ],
+                    "mayUse": [
+                      "buttonDefault"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formArea",
+                  "path": "/collections/collectionsForms/formsOverview/formArea"
+                },
+                {
+                  "id": "formSection",
+                  "order": 20,
+                  "title": "Form Section",
+                  "description": "external",
+                  "translations": {
+                    "german": {
+                      "title": "Formularabschnitt"
+                    }
+                  },
+                  "context": "An area of a form MUST at least contain one section. Ideally the SHOULD contain between 2 and 5 sections. A section might also contain a subform that can be triggered by either checkbox or a combobox.",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {
+                    "mustUse": [
+                      "formElement"
+                    ],
+                    "mayUse": [
+                      "formSubForm"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formSection",
+                  "path": "/collections/collectionsForms/formsOverview/formSection"
+                },
+                {
+                  "id": "formElement",
+                  "order": 30,
+                  "title": "Form Element",
+                  "type": "abstract",
+                  "description": "Todo",
+                  "translations": {
+                    "german": {
+                      "title": "Formularelement"
+                    }
+                  },
+                  "context": "Todo",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {},
+                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formElement",
+                  "path": "/collections/collectionsForms/formsOverview/formElement"
+                },
+                {
+                  "id": "formFooter",
+                  "title": "Form Footer",
+                  "translations": {
+                    "german": {
+                      "title": "Formularfusszeile"
+                    }
+                  },
+                  "description": "The footer encloses the form. It holds a description of the identifier for mandatory fields and contains the save (left) and cancel (right) button to store or drop changes.",
+                  "context": "Each form MUST contain a footer section.",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {
+                    "mustUse": [
+                      "buttonDefault"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formFooter",
+                  "path": "/collections/collectionsForms/formsOverview/formFooter",
+                  "order": 100
+                }
+              ]
+            },
+            {
               "id": "formsBinaryChoice",
               "title": "Binary Choice",
               "items": []
@@ -1706,7 +1873,8 @@
                   "guiClass": "ilDateTimeInputGUI",
                   "status": "proposal",
                   "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimePicker",
-                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimePicker"
+                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimePicker",
+                  "order": 100
                 },
                 {
                   "id": "formsDateTimeRangePicker",
@@ -1720,7 +1888,8 @@
                     "isA": "formsDateTimePicker"
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker",
-                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker"
+                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker",
+                  "order": 100
                 }
               ]
             },
@@ -1740,7 +1909,8 @@
                   "description": "Current version of the File Upload.",
                   "guiClass": "ilFileUploadGUI",
                   "fullPath": "app/data/collections/collectionsForms/formsFileUpload/formsFileUpload",
-                  "path": "/collections/collectionsForms/formsFileUpload/formsFileUpload"
+                  "path": "/collections/collectionsForms/formsFileUpload/formsFileUpload",
+                  "order": 100
                 }
               ]
             }
@@ -1768,7 +1938,8 @@
                   "lessVariables": "Less Variable used of the new item",
                   "status": "Proposal",
                   "fullPath": "app/data/collections/collectionsTables/tableFilter/tableFilter",
-                  "path": "/collections/collectionsTables/tableFilter/tableFilter"
+                  "path": "/collections/collectionsTables/tableFilter/tableFilter",
+                  "order": 100
                 }
               ]
             }
@@ -1790,7 +1961,8 @@
                   "description": "external",
                   "state": "Implemented for 5.0",
                   "fullPath": "app/data/collections/collectionsDialogs/dialogsOverview/dialog",
-                  "path": "/collections/collectionsDialogs/dialogsOverview/dialog"
+                  "path": "/collections/collectionsDialogs/dialogsOverview/dialog",
+                  "order": 100
                 }
               ]
             },
@@ -1811,7 +1983,8 @@
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsDialogs/dialogsModals/modal",
-                  "path": "/collections/collectionsDialogs/dialogsModals/modal"
+                  "path": "/collections/collectionsDialogs/dialogsModals/modal",
+                  "order": 100
                 },
                 {
                   "id": "modalWithForm",
@@ -1827,7 +2000,8 @@
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsDialogs/dialogsModals/modalWithForm",
-                  "path": "/collections/collectionsDialogs/dialogsModals/modalWithForm"
+                  "path": "/collections/collectionsDialogs/dialogsModals/modalWithForm",
+                  "order": 100
                 }
               ]
             },
@@ -1859,7 +2033,8 @@
                   "guiClass": "ilToolbarGUI",
                   "state": "Implemented for 5.1",
                   "fullPath": "app/data/collections/collectionsActions/actionsToolbar/toolbar",
-                  "path": "/collections/collectionsActions/actionsToolbar/toolbar"
+                  "path": "/collections/collectionsActions/actionsToolbar/toolbar",
+                  "order": 100
                 }
               ]
             }
@@ -1930,7 +2105,8 @@
                   "state": "Proposal",
                   "relations": {},
                   "fullPath": "app/data/collections/collectionsContainers/containersPanels/panelBase",
-                  "path": "/collections/collectionsContainers/containersPanels/panelBase"
+                  "path": "/collections/collectionsContainers/containersPanels/panelBase",
+                  "order": 100
                 }
               ]
             },
@@ -2022,7 +2198,8 @@
                   "isIframe": true,
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
-                  "path": "/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview"
+                  "path": "/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
+                  "order": 100
                 }
               ]
             },
@@ -2032,7 +2209,8 @@
               "id": "header",
               "items": [
                 {
-                  "id": "0_iliasHeaderOverview",
+                  "id": "iliasHeaderOverview",
+                  "order": 0,
                   "title": "Overview",
                   "isIframe": true,
                   "description": "Overview of the ILIAS header area.",
@@ -2089,8 +2267,8 @@
                       "state": "Proposal"
                     }
                   ],
-                  "fullPath": "app/data/layouts/mainStructure/header/0_iliasHeaderOverview",
-                  "path": "/layouts/mainStructure/header/0_iliasHeaderOverview"
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderOverview",
+                  "path": "/layouts/mainStructure/header/iliasHeaderOverview"
                 },
                 {
                   "id": "iliasHeaderBranding",
@@ -2111,7 +2289,8 @@
                     }
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
-                  "path": "/layouts/mainStructure/header/iliasHeaderBranding"
+                  "path": "/layouts/mainStructure/header/iliasHeaderBranding",
+                  "order": 100
                 },
                 {
                   "id": "iliasHeaderMainMenu",
@@ -2132,7 +2311,8 @@
                     }
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
-                  "path": "/layouts/mainStructure/header/iliasHeaderMainMenu"
+                  "path": "/layouts/mainStructure/header/iliasHeaderMainMenu",
+                  "order": 100
                 },
                 {
                   "id": "iliasHeaderTopNav",
@@ -2153,7 +2333,8 @@
                     }
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
-                  "path": "/layouts/mainStructure/header/iliasHeaderTopNav"
+                  "path": "/layouts/mainStructure/header/iliasHeaderTopNav",
+                  "order": 100
                 }
               ]
             },
@@ -2164,6 +2345,7 @@
               "items": [
                 {
                   "id": "0_iliasContentOverview",
+                  "order": 0,
                   "isIframe": true,
                   "title": "Overview",
                   "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
@@ -2211,7 +2393,8 @@
                     }
                   ],
                   "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
-                  "path": "/layouts/mainStructure/content/iliasContentCenter"
+                  "path": "/layouts/mainStructure/content/iliasContentCenter",
+                  "order": 100
                 },
                 {
                   "id": "iliasContentSidebars",
@@ -2222,7 +2405,8 @@
                   "state": "Proposal",
                   "lessVariables": [],
                   "fullPath": "app/data/layouts/mainStructure/content/iliasContentSidebars",
-                  "path": "/layouts/mainStructure/content/iliasContentSidebars"
+                  "path": "/layouts/mainStructure/content/iliasContentSidebars",
+                  "order": 100
                 }
               ]
             },
@@ -2260,7 +2444,8 @@
                   "isIframe": true,
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/mainStructure/footer/iliasMainStructureFooter",
-                  "path": "/layouts/mainStructure/footer/iliasMainStructureFooter"
+                  "path": "/layouts/mainStructure/footer/iliasMainStructureFooter",
+                  "order": 100
                 }
               ]
             }
@@ -2289,7 +2474,8 @@
                     ]
                   },
                   "fullPath": "app/data/layouts/layoutsCenterStage/centerStageOverview/centerStageBase",
-                  "path": "/layouts/layoutsCenterStage/centerStageOverview/centerStageBase"
+                  "path": "/layouts/layoutsCenterStage/centerStageOverview/centerStageBase",
+                  "order": 100
                 }
               ]
             }
@@ -2321,7 +2507,8 @@
                     ]
                   },
                   "fullPath": "app/data/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase",
-                  "path": "/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase"
+                  "path": "/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase",
+                  "order": 100
                 }
               ]
             }
@@ -2343,7 +2530,8 @@
                   "context": "external",
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase",
-                  "path": "/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase"
+                  "path": "/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase",
+                  "order": 100
                 }
               ]
             }
@@ -2365,7 +2553,8 @@
                   "context": "external",
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/layoutsWizards/wizardsOverview/wizardsBase",
-                  "path": "/layouts/layoutsWizards/wizardsOverview/wizardsBase"
+                  "path": "/layouts/layoutsWizards/wizardsOverview/wizardsBase",
+                  "order": 100
                 }
               ]
             }
@@ -2387,7 +2576,8 @@
                   "context": "external",
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/layoutsJoyrides/joyridesOverview/joyridesBase",
-                  "path": "/layouts/layoutsJoyrides/joyridesOverview/joyridesBase"
+                  "path": "/layouts/layoutsJoyrides/joyridesOverview/joyridesBase",
+                  "order": 100
                 }
               ]
             }
@@ -2409,7 +2599,8 @@
                   "context": "external",
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/layoutsDrilldown/drilldownOverview/drilldownBase",
-                  "path": "/layouts/layoutsDrilldown/drilldownOverview/drilldownBase"
+                  "path": "/layouts/layoutsDrilldown/drilldownOverview/drilldownBase",
+                  "order": 100
                 }
               ]
             }
@@ -2431,7 +2622,8 @@
                   "context": "external",
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/layoutsCarousel/carouselOverview/carouselBase",
-                  "path": "/layouts/layoutsCarousel/carouselOverview/carouselBase"
+                  "path": "/layouts/layoutsCarousel/carouselOverview/carouselBase",
+                  "order": 100
                 }
               ]
             }
@@ -2453,7 +2645,8 @@
                   "context": "external",
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase",
-                  "path": "/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase"
+                  "path": "/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase",
+                  "order": 100
                 }
               ]
             }

@@ -1,7 +1,10 @@
 <div class="well">
-    <span ng-bind-html="entry.description"></span>
-    <p ng-if="entry.context"></p>
-    <em ng-bind-html="entry.context">rendered as italicized text</em>
+    <p ng-bind-html="entry.description"></p>
+    <span ng-if="entry.context">
+        <p><em ng-bind-html="entry.context"></em></p>
+    </span>
+
+    <b>German Title: {{entry.translations.german.title}}</b>
 </div>
 
 <div class="alert alert-{{stateType}}" role="alert">

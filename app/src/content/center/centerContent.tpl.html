@@ -34,7 +34,7 @@
             </tabs-content>
 
             <!-- Tabs sub Section ================================================== -->
-            <div ng-if="tabSelected.type!='html'">
+            <div ng-if="tabSelected.type!='html' && showSubTabs">
                 <tabs-content type="sub-tabs">
                     <tabs-categories ng-repeat="(index,entry) in tabSelected.items"
                                      index="index"

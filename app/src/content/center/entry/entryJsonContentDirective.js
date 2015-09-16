@@ -19,6 +19,11 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
 
             scope.stateType = state.getStateAlert(scope.entry.state);
 
+            if(!scope.entry.translations || !scope.entry.translations.german.title){
+                scope.entry.translations = {};
+                scope.entry.translations.german = {};
+                scope.entry.translations.german.title = scope.entry.title;
+            }
 
             if(scope.entry.lessVariables && scope.entry.lessVariables.length === 0){
                 scope.entry.lessVariables = undefined;

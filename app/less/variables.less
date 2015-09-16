@@ -99,19 +99,19 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical:     6px;
-@padding-base-horizontal:   12px;
+@padding-base-vertical:     3px;
+@padding-base-horizontal:   8px;
 
-@padding-large-vertical:    10px;
-@padding-large-horizontal:  16px;
+@padding-large-vertical:    6px;
+@padding-large-horizontal:  12px;
 
-@padding-small-vertical:    5px;
-@padding-small-horizontal:  10px;
+@padding-small-vertical:    3px;
+@padding-small-horizontal:  6px;
 
 @padding-xs-vertical:       1px;
 @padding-xs-horizontal:     5px;
 
-@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-large:         1.33;
 @line-height-small:         1.5;
 
 @border-radius-base:        0px;
@@ -418,6 +418,12 @@
 //** Disabled cursor for form controls and buttons.
 @cursor-disabled:                not-allowed;
 
+
+@ilFormInputFontSize: @font-size-small;
+@input-height-base:	(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2);
+
+@ilFormColor:            	#808080;
+@ilFormBgColor:            	#fdfdfd;
 
 //== Tables
 //
@@ -1062,7 +1068,9 @@
 
 @ilFormColor:            	#808080;
 @ilFormBgColor:            	#fdfdfd;
-
+@il-form-area-devider: 1px dashed lighten(@gray-light,20%);
+@il-form-required-label-color: @brand-danger;
+@il-form-required-label-symbol: "*";
 /* ILIAS variables candidates */
 @ilMainMenuColor:			lighten(@brand-primary, 10%);
 @ilButtonFontSize: 	@font-size-small;

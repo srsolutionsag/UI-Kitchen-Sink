@@ -1,0 +1,20 @@
+{
+  "id": "formBase",
+  "order": 0,
+  "title": "Base Form",
+  "translations":{
+    "german":{
+      "title":"Standarformular"
+    }
+  },
+  "description":"A form is divided into area which are further divided into sections. Each form MUST have a header and a footer section containing the buttons to save or cancel the input of the form.",
+  "context":"A form SHOULD be used whenever data input is needed from the user.",
+  "state": "Proposal",
+  "guiClass": "ilFormGUI",
+  "relations":{
+    "mustUse":[
+      "formFooter",
+      "formArea"
+    ]
+  }
+}

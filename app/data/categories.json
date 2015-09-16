@@ -224,6 +224,10 @@
                     "description": "Types of forms and form items to be used in ILIAS",
                     "itemGroups": [
                         {
+                            "id":"formsOverview",
+                            "title": "Overview"
+                        },
+                        {
                           "id":"formsBinaryChoice",
                           "title": "Binary Choice"
                         },

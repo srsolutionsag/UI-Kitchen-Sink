@@ -1,0 +1,30 @@
+.il-form-header{
+  margin-bottom: @padding-large-vertical;
+  border-bottom: @il-form-area-devider;
+
+  padding-top: @padding-large-vertical;
+  padding-bottom: @padding-large-vertical;
+}
+
+.il-form-group{
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: @padding-large-vertical;
+  padding-bottom: @padding-large-vertical;
+}
+
+.form-group.il-form-required .control-label:before, .il-form-required-label:before {
+  color: @il-form-required-label-color;
+  content: "@{il-form-required-label-symbol} ";
+}
+
+.help-block {
+  margin-bottom: 0px;
+}
+
+@media (min-width: @screen-sm-min) {
+  .il-form-cmds{
+    text-align: right;
+  }
+}
