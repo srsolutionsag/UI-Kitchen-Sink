@@ -315,9 +315,11 @@ module.exports = function(grunt) {
             return { 'variable': variable[1], 'value': value[1]};
         });
         return parser.toTree(grunt.file.read(lessVariablesPath).toString());
-    }
-    //grunt.registerTask('default', ['connect:server','info:started','watch']);
-    //grunt.registerTask('buildEntries', ['buildEntriesJson']);
+    };
+
+    grunt.registerTask('default', ['connect:server','info:started','watch']);
+    grunt.registerTask('buildEntries', ['buildEntriesJson']);
+
     grunt.registerTask('tester', 'Testing...', function(state){
         var tempLessVariables = getTreeFromVariableLess();
 
@@ -354,7 +356,7 @@ module.exports = function(grunt) {
         console.log(lessVariables);
     });
 
-    grunt.registerTask('test', ['tester']);
+    //grunt.registerTask('test', ['tester']);
 
 
 };
