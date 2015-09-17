@@ -16,7 +16,7 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
 
         $scope.showSubTabs = true;
 
-        if($scope.tabSelected.items.length <= 1){
+        if(!$scope.tabSelected.items || $scope.tabSelected.items.length <= 1){
             $scope.showSubTabs = false;
         }
 
