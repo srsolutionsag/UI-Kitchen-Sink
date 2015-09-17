@@ -2,16 +2,15 @@
   "id": "formElement",
   "order": 30,
   "title": "Form Element",
-  "type": "abstract",
-  "description":"Todo",
   "translations":{
     "german":{
       "title":"Formularelement"
     }
   },
-  "context":"Todo",
+  "type": "abstract",
+  "description":"Form elements are used to get input from the user. Depending on the type of input, a different type of form element is needed. Check among the different categories of input type to find the best fitting form element of all available choices.",
+  "context":"Each section contains exactly one form element.",
   "state": "Proposal",
-  "guiClass": "ilFormGUI",
   "relations":{
   }
 }

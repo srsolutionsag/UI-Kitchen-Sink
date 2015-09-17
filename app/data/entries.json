@@ -1788,26 +1788,47 @@
                       "formElement"
                     ],
                     "mayUse": [
-                      "formSubForm"
+                      "formSubform"
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formSection",
                   "path": "/collections/collectionsForms/formsOverview/formSection"
                 },
                 {
+                  "id": "formSubform",
+                  "title": "Subform",
+                  "order": 25,
+                  "translations": {
+                    "german": {
+                      "title": "Unterformular"
+                    }
+                  },
+                  "description": "Sections might contain complete forms called subforms. Subforms are special forms.",
+                  "context": "Subforms are made visible by enabling either a checkbox or an option in a combobox",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {
+                    "isA": "form",
+                    "mustUse": [
+                      "buttonDefault"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formSubform",
+                  "path": "/collections/collectionsForms/formsOverview/formSubform"
+                },
+                {
                   "id": "formElement",
                   "order": 30,
                   "title": "Form Element",
-                  "type": "abstract",
-                  "description": "Todo",
                   "translations": {
                     "german": {
                       "title": "Formularelement"
                     }
                   },
-                  "context": "Todo",
+                  "type": "abstract",
+                  "description": "Form elements are used to get input from the user. Depending on the type of input, a different type of form element is needed. Check among the different categories of input type to find the best fitting form element of all available choices.",
+                  "context": "Each section contains exactly one form element.",
                   "state": "Proposal",
-                  "guiClass": "ilFormGUI",
                   "relations": {},
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formElement",
                   "path": "/collections/collectionsForms/formsOverview/formElement"
@@ -1838,7 +1859,32 @@
             {
               "id": "formsBinaryChoice",
               "title": "Binary Choice",
-              "items": []
+              "items": [
+                {
+                  "id": "checkbox",
+                  "title": "Checkbox",
+                  "translations": {
+                    "german": {
+                      "title": "Checkbox"
+                    }
+                  },
+                  "description": "Box that has either status 'checked' or 'unchecked'.",
+                  "context": "A checkbox MUST be used if a binary choice (E.g. yes or no) is asked for. You MUST NOT use two radio buttons or a drop-down list with two choices for scenario.",
+                  "state": "Proposal",
+                  "guiClass": "ilFormGUI",
+                  "relations": {
+                    "mustUse": [
+                      "formElement"
+                    ],
+                    "mayUse": [
+                      "formSubform"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsForms/formsBinaryChoice/checkbox",
+                  "path": "/collections/collectionsForms/formsBinaryChoice/checkbox",
+                  "order": 100
+                }
+              ]
             },
             {
               "id": "formsOneofN",

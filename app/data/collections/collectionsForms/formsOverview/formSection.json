@@ -16,7 +16,7 @@
       "formElement"
     ],
     "mayUse":[
-      "formSubForm"
+      "formSubform"
     ]
   }
 }

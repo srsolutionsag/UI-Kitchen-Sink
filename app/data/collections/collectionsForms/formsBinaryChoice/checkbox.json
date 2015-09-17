@@ -1,0 +1,21 @@
+{
+  "id": "checkbox",
+  "title": "Checkbox",
+  "translations":{
+    "german":{
+      "title":"Checkbox"
+    }
+  },
+  "description":"Box that has either status 'checked' or 'unchecked'.",
+  "context":"A checkbox MUST be used if a binary choice (E.g. yes or no) is asked for. You MUST NOT use two radio buttons or a drop-down list with two choices for scenario.",
+  "state": "Proposal",
+  "guiClass": "ilFormGUI",
+  "relations":{
+    "mustUse":[
+      "formElement"
+    ],
+    "mayUse":[
+      "formSubform"
+    ]
+  }
+}
