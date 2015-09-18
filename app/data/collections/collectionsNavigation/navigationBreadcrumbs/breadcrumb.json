@@ -1,0 +1,22 @@
+{
+  "id": "breadcrumb",
+  "title": "Breadcrumb",
+  "translations":{
+    "german":{
+      "title":"Breadcrumb"
+    }
+  },
+  "type":"png",
+  "description":"external",
+  "context":"Breadcrumbs MUST be displayed in the realm of the RBAC.",
+  "state": "To be revised",
+  "guiClass": "ilLocatorGUI",
+  "relations":{
+    "mustUse":[
+      "formElement"
+    ],
+    "mayUse":[
+      "formSubform"
+    ]
+  }
+}

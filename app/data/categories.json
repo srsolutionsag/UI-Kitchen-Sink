@@ -197,6 +197,10 @@
                     "description": "Elements used to navigate.",
                     "itemGroups": [
                         {
+                          "id":"navigationBreadcrumbs",
+                          "title": "Breadcrumbs"
+                        },
+                        {
                           "id":"navigationNavbars",
                           "title": "Navbars"
                         },
@@ -210,11 +214,7 @@
                         },
                         {
                             "id":"navigationTree",
-                            "description": "Deviations of the jsTree"
-                        },
-                        {
-                          "id":"navigationBreacrumbs",
-                          "title": "Breadcrumbs"
+                            "title": "Tree"
                         }
                     ]
                 },

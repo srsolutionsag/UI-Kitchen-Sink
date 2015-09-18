@@ -1689,6 +1689,37 @@
           "description": "Elements used to navigate.",
           "itemGroups": [
             {
+              "id": "navigationBreadcrumbs",
+              "title": "Breadcrumbs",
+              "items": [
+                {
+                  "id": "breadcrumb",
+                  "title": "Breadcrumb",
+                  "translations": {
+                    "german": {
+                      "title": "Breadcrumb"
+                    }
+                  },
+                  "type": "png",
+                  "description": "external",
+                  "context": "Breadcrumbs MUST be displayed in the realm of the RBAC.",
+                  "state": "To be revised",
+                  "guiClass": "ilLocatorGUI",
+                  "relations": {
+                    "mustUse": [
+                      "formElement"
+                    ],
+                    "mayUse": [
+                      "formSubform"
+                    ]
+                  },
+                  "fullPath": "app/data/collections/collectionsNavigation/navigationBreadcrumbs/breadcrumb",
+                  "path": "/collections/collectionsNavigation/navigationBreadcrumbs/breadcrumb",
+                  "order": 100
+                }
+              ]
+            },
+            {
               "id": "navigationNavbars",
               "title": "Navbars",
               "items": []
@@ -1705,12 +1736,7 @@
             },
             {
               "id": "navigationTree",
-              "description": "Deviations of the jsTree",
-              "items": []
-            },
-            {
-              "id": "navigationBreacrumbs",
-              "title": "Breadcrumbs",
+              "title": "Tree",
               "items": []
             }
           ]
