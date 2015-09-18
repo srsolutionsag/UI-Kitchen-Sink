@@ -29,12 +29,12 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
                 scope.entry.lessVariables = undefined;
             }
 
-            if(scope.entry.type == "abstract"){
+            if(scope.entry.type == "abstract" || scope.entry.type == "png"){
                 scope.renderHtml = false;
             }
 
             var basePath = scope.tabPath+'/'+scope.entry.id;
-
+            scope.pngPath = '/'+basePath+".png";
             if(scope.entry.description == "external"){
                 scope.descriptionPath = basePath +'.description.html';
 
