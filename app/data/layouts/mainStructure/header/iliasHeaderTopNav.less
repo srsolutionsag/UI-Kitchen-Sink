@@ -13,6 +13,8 @@
     float: @il-header-top-nav-float;
     display: block;
     position: relative;
+    height: @il-header-top-nav-box-min-height-sm;
+
   }
   > li > a {
     margin-right: @il-header-top-nav-box-margin-right-sm;
@@ -58,6 +60,9 @@
     left: @il-header-top-nav-left;
     right: @il-header-top-nav-right;
 
+    > li {
+      height: @il-header-top-nav-box-min-height;
+    }
 
     > li > a {
       min-height: @il-header-top-nav-box-min-height;

@@ -3,6 +3,8 @@
   "title": "Sidebars",
   "type": "less",
   "description":"Variables used to customize the ILIAS Sidebars",
+  "state": "static",
+
   "variables":{
     "ilias":[
       {

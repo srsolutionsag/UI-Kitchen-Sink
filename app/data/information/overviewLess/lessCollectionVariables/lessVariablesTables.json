@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesTables",
   "title": "Tables",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

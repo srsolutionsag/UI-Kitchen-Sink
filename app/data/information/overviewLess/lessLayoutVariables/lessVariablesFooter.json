@@ -3,6 +3,8 @@
   "title": "Footer",
   "type": "less",
   "description":"Variables used to customize the ILIAS Footer",
+  "state": "static",
+
   "variables":{
     "ilias":[
       {

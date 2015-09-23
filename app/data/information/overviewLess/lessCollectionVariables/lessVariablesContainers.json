@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesContainers",
   "title": "Containers",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

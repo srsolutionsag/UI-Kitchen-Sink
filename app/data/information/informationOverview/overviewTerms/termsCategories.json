@@ -1,5 +1,6 @@
 {
     "id": "termsCategories",
     "title": "Categories",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

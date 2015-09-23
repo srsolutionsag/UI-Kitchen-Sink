@@ -1,5 +1,6 @@
 {
     "id": "z_workflowChecklist",
     "title": "Checklist",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

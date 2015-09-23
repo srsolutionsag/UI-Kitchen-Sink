@@ -3,6 +3,8 @@
   "title": "Content Section",
   "type": "less",
   "description":"Variables used to customize the ILIAS Content section",
+  "state": "static",
+
   "variables":{
     "ilias":[
       {

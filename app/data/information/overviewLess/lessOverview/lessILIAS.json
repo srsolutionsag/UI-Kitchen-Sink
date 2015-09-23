@@ -1,5 +1,7 @@
 {
     "id": "lessILIAS",
     "title": "Less in ILIAS",
-    "type": "html"
+    "type": "html",
+    "state": "static"
+
 }

@@ -1,42 +1,43 @@
 {
-  "id": "lessVariablesColors",
-  "title": "Colors",
-  "type": "less",
-  "description":"Color definitions to be used.",
-  "variables":{
-      "ilias":[
-          {
-              "title":"brand-secondary",
-              "description":"Todo: Exact description of where to use brand-secondary",
-              "state":"Implemented for 5.0"
-          }
-      ],
-      "bootstrap":[
-          {
-              "title":"brand-primary",
-              "description":"Exact description of where to use brand-primary",
-              "state":"Implemented for 5.0"
-          },
-          {
-              "title":"brand-success",
-              "description":"Color used to display success messages",
-              "state":"Proposal"
-          },
-          {
-              "title":"brand-info",
-              "description":"Color used to display info messages",
-              "state":"Proposal"
-          },
-          {
-              "title":"brand-warning",
-              "description":"Color used to display warning messages",
-              "state":"Proposal"
-          },
-          {
-              "title":"brand-danger",
-              "description":"Color used to display danger messages",
-              "state":"Proposal"
-          }
-      ]
-  }
+    "id": "lessVariablesColors",
+    "title": "Colors",
+    "type": "less",
+    "description":"Color definitions to be used.",
+    "state": "static",
+    "variables":{
+        "ilias":[
+            {
+                "title":"brand-secondary",
+                "description":"Todo: Exact description of where to use brand-secondary",
+                "state":"Implemented for 5.0"
+            }
+        ],
+        "bootstrap":[
+            {
+                "title":"brand-primary",
+                "description":"Exact description of where to use brand-primary",
+                "state":"Implemented for 5.0"
+            },
+            {
+                "title":"brand-success",
+                "description":"Color used to display success messages",
+                "state":"Proposal"
+            },
+            {
+                "title":"brand-info",
+                "description":"Color used to display info messages",
+                "state":"Proposal"
+            },
+            {
+                "title":"brand-warning",
+                "description":"Color used to display warning messages",
+                "state":"Proposal"
+            },
+            {
+                "title":"brand-danger",
+                "description":"Color used to display danger messages",
+                "state":"Proposal"
+            }
+        ]
+    }
 }

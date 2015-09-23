@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesCallouts",
   "title": "Callouts",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

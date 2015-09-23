@@ -1,5 +1,6 @@
 {
   "id": "lessVariablesLists",
   "title": "Lists",
-  "type": "less"
+  "type": "less",
+  "state": "static"
 }

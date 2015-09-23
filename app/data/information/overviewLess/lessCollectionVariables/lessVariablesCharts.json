@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesCharts",
   "title": "Charts",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

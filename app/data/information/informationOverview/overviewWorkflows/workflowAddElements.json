@@ -1,5 +1,6 @@
 {
     "id": "workflowAddElements",
     "title": "New Element",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

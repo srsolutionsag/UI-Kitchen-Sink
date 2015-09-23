@@ -1,8 +1,9 @@
 {
-  "id": "lessVariablesButtons",
-  "title": "Buttons",
-  "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
-  "type": "less",
+    "id": "lessVariablesButtons",
+    "title": "Buttons",
+    "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
+    "type": "less",
+    "state": "static",
     "variables":{
         "bootstrap":[
             {

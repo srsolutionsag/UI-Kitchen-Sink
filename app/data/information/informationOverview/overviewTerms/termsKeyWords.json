@@ -1,5 +1,6 @@
 {
     "id": "termsKeyWords",
     "title": "Key Words",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

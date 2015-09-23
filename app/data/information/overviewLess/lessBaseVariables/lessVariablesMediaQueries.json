@@ -1,7 +1,8 @@
 {
-    "id": "lessMediaQueries",
+    "id": "lessVariablesMediaQueries",
     "title": "Media Queries",
     "type": "less",
+    "state": "static",
     "description":"Define the breakpoints at which your layout will change, adapting to different screen sizes.",
     "variables":{
         "bootstrap":[

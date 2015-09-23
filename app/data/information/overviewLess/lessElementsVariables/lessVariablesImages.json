@@ -1,5 +1,6 @@
 {
   "id": "lessVariablesImages",
   "title": "Images",
-  "type": "less"
+  "type": "less",
+  "state": "static"
 }

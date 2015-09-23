@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesActions",
   "title": "Actions",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

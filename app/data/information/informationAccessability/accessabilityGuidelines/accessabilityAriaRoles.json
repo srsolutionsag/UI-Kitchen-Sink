@@ -1,5 +1,6 @@
 {
     "id": "accessabilityAriaRoles",
     "title": "Aria Roles",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

@@ -1,5 +1,6 @@
 {
     "id": "workflowImportElements",
     "title": "Import Element",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

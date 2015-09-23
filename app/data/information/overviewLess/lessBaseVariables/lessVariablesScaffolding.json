@@ -1,8 +1,10 @@
 {
-  "id": "01_lessVariablesTypography",
-  "title": "Scaffolding",
-  "description":"Bootstrap Variables for the most basic styles",
-  "type": "less",
+    "id": "lessVariablesTypography",
+    "order": 1,
+    "title": "Scaffolding",
+    "description":"Bootstrap Variables for the most basic styles",
+    "type": "less",
+    "state": "static",
     "variables":{
         "bootstrap":[
             {

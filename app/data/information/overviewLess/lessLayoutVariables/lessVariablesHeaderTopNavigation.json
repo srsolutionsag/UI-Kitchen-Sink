@@ -3,7 +3,9 @@
   "title": "Header Top Navigation",
   "type": "less",
   "description":"Variables used to customize the ILIAS Header section",
-  "variables":{
+    "state": "static",
+
+    "variables":{
       "ilias":[
           {
               "title":"l-header-top-nav-top",

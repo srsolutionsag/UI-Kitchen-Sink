@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesCalendars",
   "title": "Calendars",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

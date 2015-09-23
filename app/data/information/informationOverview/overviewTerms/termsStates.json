@@ -1,5 +1,6 @@
 {
     "id": "termsStates",
     "title": "States",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

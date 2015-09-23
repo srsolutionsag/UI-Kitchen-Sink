@@ -1,70 +1,72 @@
 {
-    "id": "lessVariablesGrid",
-    "title": "Grid System",
-    "type": "less",
-    "description":"Variables used to define the responsive grid and container sizes",
-    "variables":{
-        "bootstrap":[
-          {
-            "title":"container-tablet",
-            "value":"720px + @grid-gutter-width",
-            "description":"The size of the container on a tablet",
-            "state":"Implemented for 5.0"
-          },
-          {
-            "title":"container-sm",
-            "value":"@container-tablet",
-            "description":"Same as container-tablet",
-            "state":"Implemented for 5.0"
-          },
-          {
-            "title":"container-desktop",
-            "value":"940px + @grid-gutter-width",
-            "description":"The size of the container on a desktop",
-            "state":"Implemented for 5.0"
-          },
-          {
-            "title":"container-md",
-            "value":"@container-desktop",
-            "description":"Same as container-desktop",
-            "state":"Implemented for 5.0"
-          },
-          {
-            "title":"container-large-desktop",
-            "value":"1140px + @grid-gutter-width",
-            "description":"The size of the container on a tablet",
-            "state":"Implemented for 5.0"
-          },
-          {
-            "title":"container-lg",
-            "value":"@container-large-desktop",
-            "description":"Same as container-large-desktop",
-            "state":"Implemented for 5.0"
-          },
-            {
-                "title":"grid-columns",
-                "value":"12",
-                "description":"Number of columns in the grid",
-                "state":"Implemented for 5.0"
-            },
-            {
-                "title":"grid-gutter-width",
-                "value":"30px",
-                "description":"Padding between columns. Gets divided in half for the left and right",
-                "state":"Implemented for 5.0"
-            },
-            {
-                "title":"grid-float-breakpoint",
-                "value":"@screen-sm-min",
-                "description":"Point at which the navbar becomes uncollapsed",
-                "state":"Implemented for 5.0"
-            },
-            {
-                "title":"grid-float-breakpoint-max",
-                "value":"(@grid-float-breakpoint - 1)",
-                "description":"Point at which the navbar begins collapsing",
-                "state":"Implemented for 5.0"
-            }
-        ]
-    }
+  "id": "lessVariablesGrid",
+  "title": "Grid System",
+  "type": "less",
+  "description":"Variables used to define the responsive grid and container sizes",
+  "state": "static",
+
+  "variables":{
+    "bootstrap":[
+      {
+        "title":"container-tablet",
+        "value":"720px + @grid-gutter-width",
+        "description":"The size of the container on a tablet",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"container-sm",
+        "value":"@container-tablet",
+        "description":"Same as container-tablet",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"container-desktop",
+        "value":"940px + @grid-gutter-width",
+        "description":"The size of the container on a desktop",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"container-md",
+        "value":"@container-desktop",
+        "description":"Same as container-desktop",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"container-large-desktop",
+        "value":"1140px + @grid-gutter-width",
+        "description":"The size of the container on a tablet",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"container-lg",
+        "value":"@container-large-desktop",
+        "description":"Same as container-large-desktop",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"grid-columns",
+        "value":"12",
+        "description":"Number of columns in the grid",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"grid-gutter-width",
+        "value":"30px",
+        "description":"Padding between columns. Gets divided in half for the left and right",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"grid-float-breakpoint",
+        "value":"@screen-sm-min",
+        "description":"Point at which the navbar becomes uncollapsed",
+        "state":"Implemented for 5.0"
+      },
+      {
+        "title":"grid-float-breakpoint-max",
+        "value":"(@grid-float-breakpoint - 1)",
+        "description":"Point at which the navbar begins collapsing",
+        "state":"Implemented for 5.0"
+      }
+    ]
+  }
 }

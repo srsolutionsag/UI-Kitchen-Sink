@@ -1,5 +1,7 @@
 {
     "id": "lessNamingConventions",
     "title": "Less Naming Conventions",
-    "type": "html"
+    "type": "html",
+    "state": "static"
+
 }

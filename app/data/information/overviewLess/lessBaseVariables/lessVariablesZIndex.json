@@ -1,8 +1,9 @@
 {
-  "id": "lessVariablesZIndex",
-  "title": "Z-Index",
-  "description": "Warning from the Bootstrap documentation: Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together.",
-  "type": "less",
+    "id": "lessVariablesZIndex",
+    "title": "Z-Index",
+    "description": "Warning from the Bootstrap documentation: Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together.",
+    "type": "less",
+    "state": "static",
     "variables":{
         "bootstrap":[
             {

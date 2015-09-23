@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesForms",
   "title": "Forms",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }

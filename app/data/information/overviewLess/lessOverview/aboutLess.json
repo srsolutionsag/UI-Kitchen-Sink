@@ -1,5 +1,6 @@
 {
     "id": "aboutLess",
     "title": "About LESS",
-    "type": "html"
+    "type": "html",
+    "state": "static"
 }

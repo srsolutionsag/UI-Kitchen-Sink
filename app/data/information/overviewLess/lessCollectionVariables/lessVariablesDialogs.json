@@ -1,5 +1,7 @@
 {
   "id": "lessVariablesDialogs",
   "title": "Dialogs",
-  "type": "less"
+  "type": "less",
+  "state": "static"
+
 }
