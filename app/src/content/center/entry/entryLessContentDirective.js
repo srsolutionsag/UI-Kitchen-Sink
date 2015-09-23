@@ -1,4 +1,4 @@
-module.directive('entryLessContent', function (state) {
+module.directive('entryLessContent', function () {
     return {
         restrict: 'AEC',
         scope: {

@@ -1,4 +1,4 @@
-module.directive('tabsCategories', function () {
+module.directive('tabsCategories', function (Entries) {
     return {
         restrict: 'AEC',
         scope: {
@@ -9,11 +9,16 @@ module.directive('tabsCategories', function () {
             subCategoryId: "@",
             index: "@",
             onTabSelected:"&",
-            tabActive: '@'
+            tabActive: '@',
+            state: '@'
         },
         templateUrl: 'app/src/content/center/tab/tabsCategories.tpl.html',
         replace: true,
         link: function(scope, element){
+            scope.visible = true;
+            if(scope.state){
+                scope.visible = Entries.isEntryStateVisible(scope.state);
+            }
             scope.$watch("tabActive",function(newValue,oldValue) {
                 if(scope.tabActive == "true"){
                     scope.active = "active";

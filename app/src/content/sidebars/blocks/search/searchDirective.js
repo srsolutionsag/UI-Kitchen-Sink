@@ -20,7 +20,7 @@ module.directive('search', function ($location, Entries) {
                 }
             };
 
-            scope.$watch("categories",function(newValue,oldValue) {
+            scope.initSearch = function (){
                 if(scope.categories == "{}"){
                     return;
                 }
@@ -62,17 +62,18 @@ module.directive('search', function ($location, Entries) {
                             });
                             for(var itemIndex in itemGroup.items){
                                 var item= itemGroup.items[itemIndex];
-                                data[categoryIndex].children[subCategoryIndex].children[itemGroupIndex].children.push({
-                                    id: item.id,
-                                    categoryId: category.id,
-                                    subCategoryId: subCategory.id,
-                                    itemGroupId: itemGroup.id,
-                                    itemId: item.id,
-                                    state: item.state,
-                                    text: item.title,
-                                    type: "",
-                                    children: []
-                                });
+                                if(Entries.isEntryStateVisible(item.state))
+                                    data[categoryIndex].children[subCategoryIndex].children[itemGroupIndex].children.push({
+                                        id: item.id,
+                                        categoryId: category.id,
+                                        subCategoryId: subCategory.id,
+                                        itemGroupId: itemGroup.id,
+                                        itemId: item.id,
+                                        state: item.state,
+                                        text: item.title,
+                                        type: "",
+                                        children: []
+                                    });
                             }
                         }
                     }
@@ -81,24 +82,10 @@ module.directive('search', function ($location, Entries) {
                 function formatResult(data,container) {
                     var html = data.text;
                     if(data.itemId !== undefined){
-                        var stateType = "";
                         if(data.state === undefined){
                             data.state = "Empty";
                         }
-                        switch(data.state){
-                            case "Empty":
-                            case "Concept":
-                                stateType = "danger";
-                                break;
-                            case "Proposal":
-                                stateType = "warning";
-                                break;
-                            case "Implemented":
-                                stateType = "info";
-                                break;
-                            default:
-                                stateType = "success";
-                        }
+                        var stateType = Entries.getStateAlert(data.state);
                         html = "<div class='alert il-search-alert alert-"+stateType+"'>"+html+"</div>";
                     }
 
@@ -132,6 +119,14 @@ module.directive('search', function ($location, Entries) {
                         scope.selectedElement = e.added;
                         scope.$apply();
                     });
+            };
+
+            scope.$watch("categories",function(newValue,oldValue) {
+                scope.initSearch();
+            });
+            scope.$on("visibilityChange",function() {
+                console.log("test");
+                scope.initSearch();
             });
         }
     };

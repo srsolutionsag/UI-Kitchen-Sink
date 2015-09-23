@@ -1,4 +1,4 @@
-module.directive('lessVariable', function (state, Entries) {
+module.directive('lessVariable', function (Entries) {
     return {
         restrict: 'AEC',
         scope: {
@@ -10,7 +10,7 @@ module.directive('lessVariable', function (state, Entries) {
         link: function (scope, element) {
             scope.relations = false;
             scope.getStateAlert = function(s){
-                return state.getStateAlert(s);
+                return Entries.getStateAlert(s);
             };
             if(scope.showRelations){
                 scope.relations = Entries.returnLessVariableUsages(scope.variable.title);

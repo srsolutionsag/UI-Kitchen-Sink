@@ -21,17 +21,23 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
         }
 
         if($scope.tabSelected.type != "html"){
-            $scope.subTabSelected = $scope.tabSelected.items[subTabIndex];
-            if(!$scope.subTabSelected){
+            var index = subTabIndex;
+            do{
+                $scope.subTabSelected = $scope.tabSelected.items[index];
+                index++;
+            }while($scope.subTabSelected && $scope.tabSelected.items[index] && !Entries.isEntryStateVisible($scope.subTabSelected.state));
+            subTabIndex = index;
+
+            if((!$scope.subTabSelected || !Entries.isEntryStateVisible($scope.subTabSelected.state))){
                 $scope.subTabSelected = {};
-                $scope.subTabSelected.title = "Empty Entry";
-                $scope.subTabSelected.description = "Todo";
+                $scope.subTabSelected.title = "Empty";
+                $scope.subTabSelected.description = "There is currently no entry listed in this section. Currently you display only entries with state: '"+ Entries.getVisibility()+"'.";
                 $scope.subTabSelected.id = "noID";
+                $scope.subTabSelected.state = "None";
             }else{
                 $scope.subTabSelected.index = subTabIndex;
             }
         }
-        console.log($scope.tabSelected);
         $scope.tabSelected.path = 'app/data/'+$scope.categorySelected.id+'/'+$scope.subCategorySelected.id+'/'+$scope.tabSelected.id;
     };
     $scope.setContent(Entries.categoryIndexSelected,Entries.subCategoryIndexSelected,Entries.tabIndexSelected,Entries.subTabIndexSelected);

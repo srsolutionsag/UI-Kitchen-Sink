@@ -7,6 +7,76 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
     this.subCategoryIndexSelected = 0;
     this.tabIndexSelected = 0;
     this.subTabIndexSelected = 0;
+    this.visibility = 'all';
+
+    this.changeVisibility = function(visiblity){
+        this.visibility = visiblity;
+    };
+
+    this.getVisibility = function(){
+        return this.visibility;
+    };
+
+    this.isEntryStateVisible = function(state){
+        if(!state){
+            return false;
+        }
+        if(state == 'static'){
+            return true;
+        }
+        if(this.visibility == 'all'){
+            return true;
+        }
+        else if(this.visibility == 'implemented'){
+            switch(state.toLowerCase()){
+                case "implemented":
+                case "implemented for 5.0":
+                case "implemented for 5.1":
+                case "implemented for 5.2":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+        else if(this.visibility == 'accepted'){
+            if(state.toLowerCase() == 'accepted'){
+                return true;
+            }
+        }
+        else if(this.visibility == 'proposal'){
+            if(state.toLowerCase() == 'proposal'){
+                return true;
+            }
+        }
+        else if(this.visibility == 'toRevise'){
+            if(state.toLowerCase() == 'to be revised'){
+                return true;
+            }
+        }
+        return false;
+    };
+
+    this.getStateAlert = function (state) {
+        if(!state){
+            return "danger";
+        }
+
+        switch(state.toLowerCase()){
+            case "static":
+                return "default";
+            case "proposal":
+            case "concept":
+                return "warning";
+            case "accepted":
+                return "info";
+            case "implemented for 5.0":
+            case "implemented for 5.1":
+            case "implemented for 5.2":
+                return "success";
+            default:
+                return "danger";
+        }
+    };
 
     this.changeSelection = function (categoryIndex,subCategoryIndex,tabIndex,subTabIndex) {
         this.categoryIndexSelected = categoryIndex;
@@ -60,19 +130,28 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
 
         if(component.relations){
             if(component.relations.isA){
-                relations.isA = this.getComponentById(component.relations.isA);
+                var tempComponent = this.getComponentById(component.relations.isA);
+                if(this.isEntryStateVisible(tempComponent.state)){
+                    relations.isA  =tempComponent;
+                }
             }
             if(component.relations.mustUse){
                 relations.mustUse = {};
                 for(var indexMust in component.relations.mustUse){
-                    relations.mustUse[indexMust] = this.getComponentById(component.relations.mustUse[indexMust]);
+                    var tempComponentMust = this.getComponentById(component.relations.mustUse[indexMust]);
+                    if(this.isEntryStateVisible(tempComponentMust.state)){
+                        relations.mustUse[indexMust]  = tempComponentMust;
+                    }
                 }
             }
 
             if(component.relations.mayUse){
                 relations.mayUse = {};
                 for(var indexMay in component.relations.mayUse){
-                    relations.mayUse[indexMay] = this.getComponentById(component.relations.mayUse[indexMay]);
+                    var tempComponentMay = this.getComponentById(component.relations.mayUse[indexMay]);
+                    if(this.isEntryStateVisible(tempComponentMay.state)){
+                        relations.mayUse[indexMay]  =tempComponentMay;
+                    }
                 }
             }
         }
@@ -93,7 +172,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                         this.tabIndexSelected = itemGroupIndex;
                         for(var itemIndex in itemGroup.items){
                             var item = itemGroup.items[itemIndex];
-                            if(item.relations){
+                            if(item.relations && this.isEntryStateVisible(item.state)){
                                 if(item.relations.isA == component.id){
                                     var child = {
                                         "category" : {

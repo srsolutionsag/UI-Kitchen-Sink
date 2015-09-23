@@ -1,0 +1,14 @@
+<li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" id="ilVisibilityDropdown">
+        <span class="glyphicon glyphicon-eye-open"></span>
+    </a>
+    <span class="caret"></span>
+    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="ilVisibilityDropdown">
+        <header-top-nav-visibity-item text="Show All" visibility="all" is-active="{{activeItem=='all'}}"></header-top-nav-visibity-item>
+        <li role="separator" class="divider"></li>
+        <header-top-nav-visibity-item text="Show Implented" visibility="implemented" is-active="{{activeItem=='implemented'}}"></header-top-nav-visibity-item>
+        <header-top-nav-visibity-item text="Show Accepted" visibility="accepted" is-active="{{activeItem=='accepted'}}"></header-top-nav-visibity-item>
+        <header-top-nav-visibity-item text="Show Proposal" visibility="proposal" is-active="{{activeItem=='proposal'}}"></header-top-nav-visibity-item>
+        <header-top-nav-visibity-item text="Show to be revised" visibility="toBeRevised" is-active="{{activeItem=='toBeRevised'}}"></header-top-nav-visibity-item>
+    </ul>
+</li>

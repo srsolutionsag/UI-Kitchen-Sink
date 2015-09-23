@@ -4,7 +4,9 @@ module.directive('headerTopNav', function () {
         scope: {},
         transclude: true,
         templateUrl: 'app/src/header/headerTopNav/headerTopNav.tpl.html',
-        replace: true,
-        link: function(scope, element){ }
+        replace: false,
+        link: function(scope, element){
+
+        }
     };
 });

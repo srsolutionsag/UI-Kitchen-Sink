@@ -44,7 +44,9 @@
                                      category-id="{{categorySelected.id}}"
                                      sub-category-id="{{subCategorySelected.id}}"
                                      tab-active="{{entry.index==subTabSelected.index}}"
-                                     on-tab-selected="onTabSelected(tabIndex,index)">
+                                     on-tab-selected="onTabSelected(tabIndex,index)"
+                                     state="{{entry.state}}"
+                            >
                     </tabs-categories>
                 </tabs-content>
             </div>

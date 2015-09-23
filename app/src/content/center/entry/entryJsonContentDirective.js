@@ -1,4 +1,4 @@
-module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
+module.directive('entryJsonContent', function ($http,Entries,$timeout) {
     return {
         restrict: 'AEC',
         scope: {
@@ -13,11 +13,10 @@ module.directive('entryJsonContent', function ($http,state,Entries,$timeout) {
                 scope.entry.state = "Empty";
             }
             scope.entry.fullRelations  = Entries.getComponentRelations(scope.entry);
-            console.log(scope.entry.fullRelations.isA);
             scope.stateType = "success";
             scope.renderHtml = true;
 
-            scope.stateType = state.getStateAlert(scope.entry.state);
+            scope.stateType = Entries.getStateAlert(scope.entry.state);
 
             if(!scope.entry.translations || !scope.entry.translations.german.title){
                 scope.entry.translations = {};
