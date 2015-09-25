@@ -1,0 +1,2855 @@
+[
+  {
+    "id": "lessBaseVariables",
+    "title": "Base Variables",
+    "items": [
+      {
+        "title": "Colors",
+        "description": "Gray and brand colors for use across Bootstrap.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "gray-base",
+            "value": "#000"
+          },
+          {
+            "title": "gray-darker",
+            "value": "lighten(@gray-base, 13.5%)"
+          },
+          {
+            "title": "gray-dark",
+            "value": "lighten(@gray-base, 20%)"
+          },
+          {
+            "title": "gray",
+            "value": "lighten(@gray-base, 33.5%)"
+          },
+          {
+            "title": "gray-light",
+            "value": "lighten(@gray-base, 46.7%)"
+          },
+          {
+            "title": "gray-lighter",
+            "value": "lighten(@gray-base, 93.5%)"
+          },
+          {
+            "title": "brand-primary",
+            "value": "rgb(76, 101, 134)"
+          },
+          {
+            "title": "brand-secondary",
+            "value": "rgb(110, 160, 60)"
+          },
+          {
+            "title": "brand-success",
+            "value": "rgb(110, 160, 60)"
+          },
+          {
+            "title": "brand-info",
+            "value": "rgb(220, 180, 150)"
+          },
+          {
+            "title": "brand-warning",
+            "value": "rgb(250, 130, 40)"
+          },
+          {
+            "title": "brand-danger",
+            "value": "rgb(250, 130, 40)"
+          }
+        ]
+      },
+      {
+        "title": "Scaffolding",
+        "description": "Settings for some of the most global styles.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Background color for `<body>`."
+          },
+          {
+            "title": "body-bg",
+            "value": "#fff"
+          },
+          {
+            "description": "Global text color on `<body>`.",
+            "title": "text-color",
+            "value": "@gray-dark"
+          },
+          {
+            "description": "Global textual link color.",
+            "title": "link-color",
+            "value": "@brand-primary"
+          },
+          {
+            "description": "Link hover color set via `darken()` function.",
+            "title": "link-hover-color",
+            "value": "darken(@link-color, 15%)"
+          },
+          {
+            "description": "Link hover decoration.",
+            "title": "link-hover-decoration",
+            "value": "underline"
+          }
+        ]
+      },
+      {
+        "title": "Media queries breakpoints",
+        "description": "Define the breakpoints at which your layout will change, adapting to different screen sizes.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Deprecated `@screen-xs` as of v3.0.1"
+          },
+          {
+            "title": "screen-xs",
+            "value": "480px"
+          },
+          {
+            "description": "Deprecated `@screen-xs-min` as of v3.2.0",
+            "title": "screen-xs-min",
+            "value": "@screen-xs"
+          },
+          {
+            "description": "Deprecated `@screen-phone` as of v3.0.1",
+            "title": "screen-phone",
+            "value": "@screen-xs-min"
+          },
+          {
+            "description": "Deprecated `@screen-sm` as of v3.0.1",
+            "title": "screen-sm",
+            "value": "768px"
+          },
+          {
+            "title": "screen-sm-min",
+            "value": "@screen-sm"
+          },
+          {
+            "description": "Deprecated `@screen-tablet` as of v3.0.1",
+            "title": "screen-tablet",
+            "value": "@screen-sm-min"
+          },
+          {
+            "description": "Deprecated `@screen-md` as of v3.0.1",
+            "title": "screen-md",
+            "value": "992px"
+          },
+          {
+            "title": "screen-md-min",
+            "value": "@screen-md"
+          },
+          {
+            "description": "Deprecated `@screen-desktop` as of v3.0.1",
+            "title": "screen-desktop",
+            "value": "@screen-md-min"
+          },
+          {
+            "description": "Deprecated `@screen-lg` as of v3.0.1",
+            "title": "screen-lg",
+            "value": "1200px"
+          },
+          {
+            "title": "screen-lg-min",
+            "value": "@screen-lg"
+          },
+          {
+            "description": "Deprecated `@screen-lg-desktop` as of v3.0.1",
+            "title": "screen-lg-desktop",
+            "value": "@screen-lg-min"
+          },
+          {
+            "title": "screen-xs-max",
+            "value": "(@screen-sm-min - 1)"
+          },
+          {
+            "title": "screen-sm-max",
+            "value": "(@screen-md-min - 1)"
+          },
+          {
+            "title": "screen-md-max",
+            "value": "(@screen-lg-min - 1)"
+          },
+          {
+            "title": "zindex-navbar",
+            "value": "1000"
+          },
+          {
+            "title": "zindex-dropdown",
+            "value": "1000"
+          },
+          {
+            "title": "zindex-popover",
+            "value": "1060"
+          },
+          {
+            "title": "zindex-tooltip",
+            "value": "1070"
+          },
+          {
+            "title": "zindex-navbar-fixed",
+            "value": "1030"
+          },
+          {
+            "title": "zindex-modal-background",
+            "value": "1040"
+          },
+          {
+            "title": "zindex-modal",
+            "value": "1050"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "description": "Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "padding-base-vertical",
+            "value": "3px"
+          },
+          {
+            "title": "padding-base-horizontal",
+            "value": "8px"
+          },
+          {
+            "title": "padding-large-vertical",
+            "value": "6px"
+          },
+          {
+            "title": "padding-large-horizontal",
+            "value": "12px"
+          },
+          {
+            "title": "padding-small-vertical",
+            "value": "3px"
+          },
+          {
+            "title": "padding-small-horizontal",
+            "value": "6px"
+          },
+          {
+            "title": "padding-xs-vertical",
+            "value": "1px"
+          },
+          {
+            "title": "padding-xs-horizontal",
+            "value": "5px"
+          },
+          {
+            "title": "line-height-large",
+            "value": "1.33"
+          },
+          {
+            "title": "line-height-small",
+            "value": "1.5"
+          },
+          {
+            "title": "border-radius-base",
+            "value": "0px"
+          },
+          {
+            "title": "border-radius-large",
+            "value": "0px"
+          },
+          {
+            "title": "border-radius-small",
+            "value": "0px"
+          },
+          {
+            "description": "Global color for active items (e.g., navs or dropdowns).",
+            "title": "component-active-color",
+            "value": "#fff"
+          },
+          {
+            "description": "Global background color for active items (e.g., navs or dropdowns).",
+            "title": "component-active-bg",
+            "value": "@brand-primary"
+          },
+          {
+            "description": "Width of the `border` for generating carets that indicator dropdowns.",
+            "title": "caret-width-base",
+            "value": "4px"
+          },
+          {
+            "description": "Carets increase slightly in size for larger components.",
+            "title": "caret-width-large",
+            "value": "5px"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lessElementsVariables",
+    "title": "Elements Variables",
+    "items": [
+      {
+        "title": "Grid system",
+        "description": "Define the maximum width of `.container` for different screen sizes.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Number of columns in the grid."
+          },
+          {
+            "title": "grid-columns",
+            "value": "12"
+          },
+          {
+            "description": "Padding between columns. Gets divided in half for the left and right.",
+            "title": "grid-gutter-width",
+            "value": "30px"
+          },
+          {
+            "description": "Point at which the navbar becomes uncollapsed.",
+            "title": "grid-float-breakpoint",
+            "value": "@screen-sm-min"
+          },
+          {
+            "description": "Point at which the navbar begins collapsing.",
+            "title": "grid-float-breakpoint-max",
+            "value": "(@grid-float-breakpoint - 1)"
+          },
+          {
+            "title": "container-tablet",
+            "value": "(720px + @grid-gutter-width)"
+          },
+          {
+            "description": "For `@screen-sm-min` and up.",
+            "title": "container-sm",
+            "value": "@container-tablet"
+          },
+          {
+            "title": "container-desktop",
+            "value": "(940px + @grid-gutter-width)"
+          },
+          {
+            "description": "For `@screen-md-min` and up.",
+            "title": "container-md",
+            "value": "@container-desktop"
+          },
+          {
+            "title": "container-large-desktop",
+            "value": "(1140px + @grid-gutter-width)"
+          },
+          {
+            "description": "For `@screen-lg-min` and up.",
+            "title": "container-lg",
+            "value": "@container-large-desktop"
+          }
+        ]
+      },
+      {
+        "title": "Typography",
+        "description": "Font, line-height, and color for body text, headings, and more.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "font-family-sans-serif",
+            "value": "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+          },
+          {
+            "title": "font-family-serif",
+            "value": "Georgia, \"Times New Roman\", Times, serif"
+          },
+          {
+            "description": "Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.",
+            "title": "font-family-monospace",
+            "value": "Menlo, Monaco, Consolas, \"Courier New\", monospace"
+          },
+          {
+            "title": "font-family-base",
+            "value": "@font-family-sans-serif"
+          },
+          {
+            "title": "font-size-base",
+            "value": "14px"
+          },
+          {
+            "title": "font-size-large",
+            "value": "ceil((@font-size-base * 1.25))"
+          },
+          {
+            "title": "font-size-small",
+            "value": "ceil((@font-size-base * 0.85))"
+          },
+          {
+            "title": "font-size-h1",
+            "value": "floor((@font-size-base * 2.6))"
+          },
+          {
+            "title": "font-size-h2",
+            "value": "floor((@font-size-base * 2.15))"
+          },
+          {
+            "title": "font-size-h3",
+            "value": "ceil((@font-size-base * 1.7))"
+          },
+          {
+            "title": "font-size-h4",
+            "value": "ceil((@font-size-base * 1.25))"
+          },
+          {
+            "title": "font-size-h5",
+            "value": "@font-size-base"
+          },
+          {
+            "title": "font-size-h6",
+            "value": "ceil((@font-size-base * 0.85))"
+          },
+          {
+            "description": "Unit-less `line-height` for use in components like buttons.",
+            "title": "line-height-base",
+            "value": "1.428571429"
+          },
+          {
+            "description": "Computed \"line-height\" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.",
+            "title": "line-height-computed",
+            "value": "floor((@font-size-base * @line-height-base))"
+          },
+          {
+            "description": "By default, this inherits from the `<body>`.",
+            "title": "headings-font-family",
+            "value": "inherit"
+          },
+          {
+            "title": "headings-font-weight",
+            "value": "500"
+          },
+          {
+            "title": "headings-line-height",
+            "value": "1.1"
+          },
+          {
+            "title": "headings-color",
+            "value": "inherit"
+          }
+        ]
+      },
+      {
+        "title": "Images",
+        "description": "Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Load fonts from this directory."
+          },
+          {
+            "title": "icon-font-path",
+            "value": "\"../fonts/\""
+          },
+          {
+            "description": "File name for all font files.",
+            "title": "icon-font-name",
+            "value": "\"glyphicons-halflings-regular\""
+          },
+          {
+            "description": "Element ID within SVG icon file.",
+            "title": "icon-font-svg-id",
+            "value": "\"glyphicons_halflingsregular\""
+          }
+        ]
+      },
+      {
+        "title": "Buttons",
+        "description": "For each of Bootstrap's buttons, define text, background and border color.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "btn-font-weight",
+            "value": "normal"
+          },
+          {
+            "title": "btn-default-color",
+            "value": "#333"
+          },
+          {
+            "title": "btn-default-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "btn-default-border",
+            "value": "#ccc"
+          },
+          {
+            "title": "btn-primary-color",
+            "value": "#fff"
+          },
+          {
+            "title": "btn-primary-bg",
+            "value": "@brand-primary"
+          },
+          {
+            "title": "btn-primary-border",
+            "value": "darken(@btn-primary-bg, 5%)"
+          },
+          {
+            "title": "btn-success-color",
+            "value": "#fff"
+          },
+          {
+            "title": "btn-success-bg",
+            "value": "@brand-success"
+          },
+          {
+            "title": "btn-success-border",
+            "value": "darken(@btn-success-bg, 5%)"
+          },
+          {
+            "title": "btn-info-color",
+            "value": "#fff"
+          },
+          {
+            "title": "btn-info-bg",
+            "value": "@brand-info"
+          },
+          {
+            "title": "btn-info-border",
+            "value": "darken(@btn-info-bg, 5%)"
+          },
+          {
+            "title": "btn-warning-color",
+            "value": "#fff"
+          },
+          {
+            "title": "btn-warning-bg",
+            "value": "@brand-warning"
+          },
+          {
+            "title": "btn-warning-border",
+            "value": "darken(@btn-warning-bg, 5%)"
+          },
+          {
+            "title": "btn-danger-color",
+            "value": "#fff"
+          },
+          {
+            "title": "btn-danger-bg",
+            "value": "@brand-danger"
+          },
+          {
+            "title": "btn-danger-border",
+            "value": "darken(@btn-danger-bg, 5%)"
+          },
+          {
+            "title": "btn-link-disabled-color",
+            "value": "@gray-light"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lessCollectionsVariables",
+    "title": "Collections Variables",
+    "items": [
+      {
+        "title": "Navigation",
+        "description": "Dropdown menu container and contents.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Background for the dropdown menu."
+          },
+          {
+            "title": "dropdown-bg",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "description": "Dropdown menu `border-color`.",
+            "title": "dropdown-border",
+            "value": "rgba(0, 0, 0, 0.15)"
+          },
+          {
+            "description": "Dropdown menu `border-color` **for IE8**.",
+            "title": "dropdown-fallback-border",
+            "value": "rgb(204, 204, 204)"
+          },
+          {
+            "description": "Divider color for between dropdown items.",
+            "title": "dropdown-divider-bg",
+            "value": "rgb(229, 229, 229)"
+          },
+          {
+            "description": "Dropdown link text color.",
+            "title": "dropdown-link-color",
+            "value": "@gray-dark"
+          },
+          {
+            "description": "Hover color for dropdown links.",
+            "title": "dropdown-link-hover-color",
+            "value": "darken(@gray-dark, 5%)"
+          },
+          {
+            "description": "Hover background for dropdown links.",
+            "title": "dropdown-link-hover-bg",
+            "value": "@il-sidebar-bg-color"
+          },
+          {
+            "description": "Active dropdown menu item text color.",
+            "title": "dropdown-link-active-color",
+            "value": "@component-active-color"
+          },
+          {
+            "description": "Active dropdown menu item background color.",
+            "title": "dropdown-link-active-bg",
+            "value": "rgb(65, 189, 157)"
+          },
+          {
+            "description": "Disabled dropdown menu item background color.",
+            "title": "dropdown-link-disabled-color",
+            "value": "rgb(116, 121, 133)"
+          },
+          {
+            "description": "Text color for headers within dropdown menus.",
+            "title": "dropdown-header-color",
+            "value": "rgb(116, 121, 133)"
+          },
+          {
+            "description": "Deprecated `@dropdown-caret-color` as of v3.1.0",
+            "title": "dropdown-caret-color",
+            "value": "rgb(0, 0, 0)"
+          }
+        ]
+      },
+      {
+        "title": "Navbar",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "navbar-height",
+            "value": "44px"
+          },
+          {
+            "title": "navbar-margin-bottom",
+            "value": "@line-height-computed"
+          },
+          {
+            "title": "navbar-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "title": "navbar-padding-horizontal",
+            "value": "floor((@grid-gutter-width / 2))"
+          },
+          {
+            "title": "navbar-padding-vertical",
+            "value": "((@navbar-height - @line-height-computed) / 2)"
+          },
+          {
+            "title": "navbar-collapse-max-height",
+            "value": "340px"
+          },
+          {
+            "title": "navbar-default-color",
+            "value": "#777"
+          },
+          {
+            "title": "navbar-default-bg",
+            "value": "#f8f8f8"
+          },
+          {
+            "title": "navbar-default-border",
+            "value": "darken(@navbar-default-bg, 6.5%)"
+          },
+          {
+            "title": "navbar-default-link-color",
+            "value": "#777"
+          },
+          {
+            "title": "navbar-default-link-hover-color",
+            "value": "#333"
+          },
+          {
+            "title": "navbar-default-link-hover-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "navbar-default-link-active-color",
+            "value": "#555"
+          },
+          {
+            "title": "navbar-default-link-active-bg",
+            "value": "darken(@navbar-default-bg, 6.5%)"
+          },
+          {
+            "title": "navbar-default-link-disabled-color",
+            "value": "#ccc"
+          },
+          {
+            "title": "navbar-default-link-disabled-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "navbar-default-brand-color",
+            "value": "@navbar-default-link-color"
+          },
+          {
+            "title": "navbar-default-brand-hover-color",
+            "value": "darken(@navbar-default-brand-color, 10%)"
+          },
+          {
+            "title": "navbar-default-brand-hover-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "navbar-default-toggle-hover-bg",
+            "value": "#ddd"
+          },
+          {
+            "title": "navbar-default-toggle-icon-bar-bg",
+            "value": "#888"
+          },
+          {
+            "title": "navbar-default-toggle-border-color",
+            "value": "#ddd"
+          },
+          {
+            "title": "navbar-inverse-color",
+            "value": "lighten(@gray-light, 15%)"
+          },
+          {
+            "title": "navbar-inverse-bg",
+            "value": "#222"
+          },
+          {
+            "title": "navbar-inverse-border",
+            "value": "darken(@navbar-inverse-bg, 10%)"
+          },
+          {
+            "title": "navbar-inverse-link-color",
+            "value": "lighten(@gray-light, 15%)"
+          },
+          {
+            "title": "navbar-inverse-link-hover-color",
+            "value": "#fff"
+          },
+          {
+            "title": "navbar-inverse-link-hover-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "navbar-inverse-link-active-color",
+            "value": "@navbar-inverse-link-hover-color"
+          },
+          {
+            "title": "navbar-inverse-link-active-bg",
+            "value": "darken(@navbar-inverse-bg, 10%)"
+          },
+          {
+            "title": "navbar-inverse-link-disabled-color",
+            "value": "#444"
+          },
+          {
+            "title": "navbar-inverse-link-disabled-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "navbar-inverse-brand-color",
+            "value": "@navbar-inverse-link-color"
+          },
+          {
+            "title": "navbar-inverse-brand-hover-color",
+            "value": "#fff"
+          },
+          {
+            "title": "navbar-inverse-brand-hover-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "navbar-inverse-toggle-hover-bg",
+            "value": "#333"
+          },
+          {
+            "title": "navbar-inverse-toggle-icon-bar-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "navbar-inverse-toggle-border-color",
+            "value": "#333"
+          },
+          {
+            "title": "nav-link-padding",
+            "value": "10px 15px"
+          },
+          {
+            "title": "nav-link-hover-bg",
+            "value": "@gray-lighter"
+          },
+          {
+            "title": "nav-disabled-link-color",
+            "value": "@gray-light"
+          },
+          {
+            "title": "nav-disabled-link-hover-color",
+            "value": "@gray-light"
+          },
+          {
+            "title": "nav-tabs-border-color",
+            "value": "#ddd"
+          },
+          {
+            "title": "nav-tabs-link-hover-border-color",
+            "value": "@gray-lighter"
+          },
+          {
+            "title": "nav-tabs-active-link-hover-bg",
+            "value": "@body-bg"
+          },
+          {
+            "title": "nav-tabs-active-link-hover-color",
+            "value": "@gray"
+          },
+          {
+            "title": "nav-tabs-active-link-hover-border-color",
+            "value": "#ddd"
+          },
+          {
+            "title": "nav-tabs-justified-link-border-color",
+            "value": "#ddd"
+          },
+          {
+            "title": "nav-tabs-justified-active-link-border-color",
+            "value": "@body-bg"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "`<input>` background color"
+          },
+          {
+            "title": "input-bg",
+            "value": "#fff"
+          },
+          {
+            "description": "`<input disabled>` background color",
+            "title": "input-bg-disabled",
+            "value": "@gray-lighter"
+          },
+          {
+            "description": "Text color for `<input>`s",
+            "title": "input-color",
+            "value": "@gray"
+          },
+          {
+            "description": "`<input>` border color",
+            "title": "input-border",
+            "value": "#ccc"
+          },
+          {
+            "description": "Default `.form-control` border radius",
+            "title": "input-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "description": "Large `.form-control` border radius",
+            "title": "input-border-radius-large",
+            "value": "@border-radius-large"
+          },
+          {
+            "description": "Small `.form-control` border radius",
+            "title": "input-border-radius-small",
+            "value": "@border-radius-small"
+          },
+          {
+            "description": "Border color for inputs on focus",
+            "title": "input-border-focus",
+            "value": "#66afe9"
+          },
+          {
+            "description": "Placeholder text color",
+            "title": "input-color-placeholder",
+            "value": "#999"
+          },
+          {
+            "description": "Default `.form-control` height",
+            "title": "input-height-base",
+            "value": "(@line-height-computed + (@padding-base-vertical * 2) + 2)"
+          },
+          {
+            "description": "Large `.form-control` height",
+            "title": "input-height-large",
+            "value": "(ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2)"
+          },
+          {
+            "description": "Small `.form-control` height",
+            "title": "input-height-small",
+            "value": "(floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2)"
+          },
+          {
+            "description": "`.form-group` margin",
+            "title": "form-group-margin-bottom",
+            "value": "15px"
+          },
+          {
+            "title": "legend-color",
+            "value": "@gray-dark"
+          },
+          {
+            "title": "legend-border-color",
+            "value": "#e5e5e5"
+          },
+          {
+            "description": "Background color for textual input addons",
+            "title": "input-group-addon-bg",
+            "value": "@gray-lighter"
+          },
+          {
+            "description": "Border color for textual input addons",
+            "title": "input-group-addon-border-color",
+            "value": "@input-border"
+          },
+          {
+            "description": "Disabled cursor for form controls and buttons.",
+            "title": "cursor-disabled",
+            "value": "not-allowed"
+          },
+          {
+            "title": "ilFormInputFontSize",
+            "value": "@font-size-small"
+          },
+          {
+            "title": "input-height-base",
+            "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)"
+          },
+          {
+            "title": "ilFormColor",
+            "value": "#808080"
+          },
+          {
+            "title": "ilFormBgColor",
+            "value": "#fdfdfd"
+          }
+        ]
+      },
+      {
+        "title": "Tables",
+        "description": "Customizes the `.table` component with basic values, each used across all table variations.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Padding for `<th>`s and `<td>`s."
+          },
+          {
+            "title": "table-cell-padding",
+            "value": "8px"
+          },
+          {
+            "description": "Padding for cells in `.table-condensed`.",
+            "title": "table-condensed-cell-padding",
+            "value": "5px"
+          },
+          {
+            "description": "Default background color used for all tables.",
+            "title": "table-bg",
+            "value": "transparent"
+          },
+          {
+            "description": "Background color used for `.table-striped`.",
+            "title": "table-bg-accent",
+            "value": "#f9f9f9"
+          },
+          {
+            "description": "Background color used for `.table-hover`.",
+            "title": "table-bg-hover",
+            "value": "#f5f5f5"
+          },
+          {
+            "title": "table-bg-active",
+            "value": "@table-bg-hover"
+          },
+          {
+            "description": "Border color for table and cell borders.",
+            "title": "table-border-color",
+            "value": "#ddd"
+          },
+          {
+            "title": "pagination-color",
+            "value": "@link-color"
+          },
+          {
+            "title": "pagination-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "pagination-border",
+            "value": "#ddd"
+          },
+          {
+            "title": "pagination-hover-color",
+            "value": "@link-hover-color"
+          },
+          {
+            "title": "pagination-hover-bg",
+            "value": "@gray-lighter"
+          },
+          {
+            "title": "pagination-hover-border",
+            "value": "#ddd"
+          },
+          {
+            "title": "pagination-active-color",
+            "value": "#fff"
+          },
+          {
+            "title": "pagination-active-bg",
+            "value": "@brand-primary"
+          },
+          {
+            "title": "pagination-active-border",
+            "value": "@brand-primary"
+          },
+          {
+            "title": "pagination-disabled-color",
+            "value": "@gray-light"
+          },
+          {
+            "title": "pagination-disabled-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "pagination-disabled-border",
+            "value": "#ddd"
+          }
+        ]
+      },
+      {
+        "title": "Callouts",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "nav-pills-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "title": "nav-pills-active-link-hover-bg",
+            "value": "@component-active-bg"
+          },
+          {
+            "title": "nav-pills-active-link-hover-color",
+            "value": "@component-active-color"
+          },
+          {
+            "title": "pager-bg",
+            "value": "@pagination-bg"
+          },
+          {
+            "title": "pager-border",
+            "value": "@pagination-border"
+          },
+          {
+            "title": "pager-border-radius",
+            "value": "15px"
+          },
+          {
+            "title": "pager-hover-bg",
+            "value": "@pagination-hover-bg"
+          },
+          {
+            "title": "pager-active-bg",
+            "value": "@pagination-active-bg"
+          },
+          {
+            "title": "pager-active-color",
+            "value": "@pagination-active-color"
+          },
+          {
+            "title": "pager-disabled-color",
+            "value": "@pagination-disabled-color"
+          }
+        ]
+      },
+      {
+        "title": "Structure",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "jumbotron-padding",
+            "value": "30px"
+          },
+          {
+            "title": "jumbotron-color",
+            "value": "inherit"
+          },
+          {
+            "title": "jumbotron-bg",
+            "value": "@gray-lighter"
+          },
+          {
+            "title": "jumbotron-heading-color",
+            "value": "inherit"
+          },
+          {
+            "title": "jumbotron-font-size",
+            "value": "ceil((@font-size-base * 1.5))"
+          }
+        ]
+      },
+      {
+        "title": "Form states and alerts",
+        "description": "Define colors for form feedback states and, by default, alerts.",
+        "type": "less",
+        "state": "static",
+        "variables": []
+      },
+      {
+        "title": "Form states and alerts",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "state-success-text",
+            "value": "rgb(56, 149, 124)"
+          },
+          {
+            "title": "state-success-bg",
+            "value": "rgb(199, 230, 222)"
+          },
+          {
+            "title": "state-success-border",
+            "value": "darken(spin(@state-success-bg, -10), 5%)"
+          },
+          {
+            "title": "state-info-text",
+            "value": "rgb(78, 107, 159)"
+          },
+          {
+            "title": "state-info-bg",
+            "value": "rgb(228, 232, 239)"
+          },
+          {
+            "title": "state-info-border",
+            "value": "darken(spin(@state-info-bg, -10), 7%)"
+          },
+          {
+            "title": "state-warning-text",
+            "value": "rgb(138, 109, 59)"
+          },
+          {
+            "title": "state-warning-bg",
+            "value": "rgb(247, 244, 192)"
+          },
+          {
+            "title": "state-warning-border",
+            "value": "darken(spin(@state-warning-bg, -10), 5%)"
+          },
+          {
+            "title": "state-danger-text",
+            "value": "rgb(179, 62, 99)"
+          },
+          {
+            "title": "state-danger-bg",
+            "value": "rgb(244, 212, 220)"
+          },
+          {
+            "title": "state-danger-border",
+            "value": "darken(spin(@state-danger-bg, -10), 5%)"
+          }
+        ]
+      },
+      {
+        "title": "Tooltips",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Tooltip max width"
+          },
+          {
+            "title": "tooltip-max-width",
+            "value": "200px"
+          },
+          {
+            "description": "Tooltip text color",
+            "title": "tooltip-color",
+            "value": "#fff"
+          },
+          {
+            "description": "Tooltip background color",
+            "title": "tooltip-bg",
+            "value": "#000"
+          },
+          {
+            "title": "tooltip-opacity",
+            "value": ".9"
+          },
+          {
+            "description": "Tooltip arrow width",
+            "title": "tooltip-arrow-width",
+            "value": "5px"
+          },
+          {
+            "description": "Tooltip arrow color",
+            "title": "tooltip-arrow-color",
+            "value": "@tooltip-bg"
+          }
+        ]
+      },
+      {
+        "title": "Popovers",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Popover body background color"
+          },
+          {
+            "title": "popover-bg",
+            "value": "#fff"
+          },
+          {
+            "description": "Popover maximum width",
+            "title": "popover-max-width",
+            "value": "276px"
+          },
+          {
+            "description": "Popover border color",
+            "title": "popover-border-color",
+            "value": "rgba(0,0,0,.2)"
+          },
+          {
+            "description": "Popover fallback border color",
+            "title": "popover-fallback-border-color",
+            "value": "#ccc"
+          },
+          {
+            "description": "Popover title background color",
+            "title": "popover-title-bg",
+            "value": "darken(@popover-bg, 3%)"
+          },
+          {
+            "description": "Popover arrow width",
+            "title": "popover-arrow-width",
+            "value": "10px"
+          },
+          {
+            "description": "Popover arrow color",
+            "title": "popover-arrow-color",
+            "value": "@popover-bg"
+          },
+          {
+            "description": "Popover outer arrow width",
+            "title": "popover-arrow-outer-width",
+            "value": "(@popover-arrow-width + 1)"
+          },
+          {
+            "description": "Popover outer arrow color",
+            "title": "popover-arrow-outer-color",
+            "value": "fadein(@popover-border-color, 5%)"
+          },
+          {
+            "description": "Popover outer arrow fallback color",
+            "title": "popover-arrow-outer-fallback-color",
+            "value": "darken(@popover-fallback-border-color, 20%)"
+          }
+        ]
+      },
+      {
+        "title": "Labels",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Default label background color"
+          },
+          {
+            "title": "label-default-bg",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Primary label background color",
+            "title": "label-primary-bg",
+            "value": "@brand-primary"
+          },
+          {
+            "description": "Success label background color",
+            "title": "label-success-bg",
+            "value": "@brand-success"
+          },
+          {
+            "description": "Info label background color",
+            "title": "label-info-bg",
+            "value": "@brand-info"
+          },
+          {
+            "description": "Warning label background color",
+            "title": "label-warning-bg",
+            "value": "@brand-warning"
+          },
+          {
+            "description": "Danger label background color",
+            "title": "label-danger-bg",
+            "value": "@brand-danger"
+          },
+          {
+            "description": "Default label text color",
+            "title": "label-color",
+            "value": "#fff"
+          },
+          {
+            "description": "Default text color of a linked label",
+            "title": "label-link-hover-color",
+            "value": "#fff"
+          }
+        ]
+      },
+      {
+        "title": "Modals",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Padding applied to the modal body"
+          },
+          {
+            "title": "modal-inner-padding",
+            "value": "15px"
+          },
+          {
+            "description": "Padding applied to the modal title",
+            "title": "modal-title-padding",
+            "value": "15px"
+          },
+          {
+            "description": "Modal title line-height",
+            "title": "modal-title-line-height",
+            "value": "@line-height-base"
+          },
+          {
+            "description": "Background color of modal content area",
+            "title": "modal-content-bg",
+            "value": "#fff"
+          },
+          {
+            "description": "Modal content border color",
+            "title": "modal-content-border-color",
+            "value": "rgba(0,0,0,.2)"
+          },
+          {
+            "description": "Modal content border color **for IE8**",
+            "title": "modal-content-fallback-border-color",
+            "value": "#999"
+          },
+          {
+            "description": "Modal backdrop background color",
+            "title": "modal-backdrop-bg",
+            "value": "#000"
+          },
+          {
+            "description": "Modal backdrop opacity",
+            "title": "modal-backdrop-opacity",
+            "value": ".5"
+          },
+          {
+            "description": "Modal header border color",
+            "title": "modal-header-border-color",
+            "value": "#e5e5e5"
+          },
+          {
+            "description": "Modal footer border color",
+            "title": "modal-footer-border-color",
+            "value": "@modal-header-border-color"
+          },
+          {
+            "title": "modal-lg",
+            "value": "900px"
+          },
+          {
+            "title": "modal-md",
+            "value": "600px"
+          },
+          {
+            "title": "modal-sm",
+            "value": "300px"
+          }
+        ]
+      },
+      {
+        "title": "Alerts",
+        "description": "Define alert colors, border radius, and padding.",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "alert-padding",
+            "value": "15px"
+          },
+          {
+            "title": "alert-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "title": "alert-link-font-weight",
+            "value": "bold"
+          },
+          {
+            "title": "alert-success-bg",
+            "value": "@state-success-bg"
+          },
+          {
+            "title": "alert-success-text",
+            "value": "@state-success-text"
+          },
+          {
+            "title": "alert-success-border",
+            "value": "@state-success-border"
+          },
+          {
+            "title": "alert-info-bg",
+            "value": "@state-info-bg"
+          },
+          {
+            "title": "alert-info-text",
+            "value": "@state-info-text"
+          },
+          {
+            "title": "alert-info-border",
+            "value": "@state-info-border"
+          },
+          {
+            "title": "alert-warning-bg",
+            "value": "@state-warning-bg"
+          },
+          {
+            "title": "alert-warning-text",
+            "value": "@state-warning-text"
+          },
+          {
+            "title": "alert-warning-border",
+            "value": "@state-warning-border"
+          },
+          {
+            "title": "alert-danger-bg",
+            "value": "@state-danger-bg"
+          },
+          {
+            "title": "alert-danger-text",
+            "value": "@state-danger-text"
+          },
+          {
+            "title": "alert-danger-border",
+            "value": "@state-danger-border"
+          }
+        ]
+      },
+      {
+        "title": "Progress bars",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Background color of the whole progress component"
+          },
+          {
+            "title": "progress-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "description": "Progress bar text color",
+            "title": "progress-bar-color",
+            "value": "#fff"
+          },
+          {
+            "description": "Variable for setting rounded corners on progress bar.",
+            "title": "progress-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "description": "Default progress bar color",
+            "title": "progress-bar-bg",
+            "value": "@brand-primary"
+          },
+          {
+            "description": "Success progress bar color",
+            "title": "progress-bar-success-bg",
+            "value": "@brand-success"
+          },
+          {
+            "description": "Warning progress bar color",
+            "title": "progress-bar-warning-bg",
+            "value": "@brand-warning"
+          },
+          {
+            "description": "Danger progress bar color",
+            "title": "progress-bar-danger-bg",
+            "value": "@brand-danger"
+          },
+          {
+            "description": "Info progress bar color",
+            "title": "progress-bar-info-bg",
+            "value": "@brand-info"
+          }
+        ]
+      },
+      {
+        "title": "List group",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Background color on `.list-group-item`"
+          },
+          {
+            "title": "list-group-bg",
+            "value": "#fff"
+          },
+          {
+            "description": "`.list-group-item` border color",
+            "title": "list-group-border",
+            "value": "#ddd"
+          },
+          {
+            "description": "List group border radius",
+            "title": "list-group-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "description": "Background color of single list items on hover",
+            "title": "list-group-hover-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "description": "Text color of active list items",
+            "title": "list-group-active-color",
+            "value": "@component-active-color"
+          },
+          {
+            "description": "Background color of active list items",
+            "title": "list-group-active-bg",
+            "value": "@component-active-bg"
+          },
+          {
+            "description": "Border color of active list elements",
+            "title": "list-group-active-border",
+            "value": "@list-group-active-bg"
+          },
+          {
+            "description": "Text color for content within active list items",
+            "title": "list-group-active-text-color",
+            "value": "lighten(@list-group-active-bg, 40%)"
+          },
+          {
+            "description": "Text color of disabled list items",
+            "title": "list-group-disabled-color",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Background color of disabled list items",
+            "title": "list-group-disabled-bg",
+            "value": "@gray-lighter"
+          },
+          {
+            "description": "Text color for content within disabled list items",
+            "title": "list-group-disabled-text-color",
+            "value": "@list-group-disabled-color"
+          },
+          {
+            "title": "list-group-link-color",
+            "value": "#555"
+          },
+          {
+            "title": "list-group-link-hover-color",
+            "value": "@list-group-link-color"
+          },
+          {
+            "title": "list-group-link-heading-color",
+            "value": "#333"
+          }
+        ]
+      },
+      {
+        "title": "Panels",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "panel-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "panel-body-padding",
+            "value": "15px"
+          },
+          {
+            "title": "panel-heading-padding",
+            "value": "10px 15px"
+          },
+          {
+            "title": "panel-footer-padding",
+            "value": "@panel-heading-padding"
+          },
+          {
+            "title": "panel-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "description": "Border color for elements within panels",
+            "title": "panel-inner-border",
+            "value": "#ddd"
+          },
+          {
+            "title": "panel-footer-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "title": "panel-default-text",
+            "value": "@gray-dark"
+          },
+          {
+            "title": "panel-default-border",
+            "value": "#ddd"
+          },
+          {
+            "title": "panel-default-heading-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "title": "panel-primary-text",
+            "value": "#fff"
+          },
+          {
+            "title": "panel-primary-border",
+            "value": "@brand-primary"
+          },
+          {
+            "title": "panel-primary-heading-bg",
+            "value": "@brand-primary"
+          },
+          {
+            "title": "panel-success-text",
+            "value": "@state-success-text"
+          },
+          {
+            "title": "panel-success-border",
+            "value": "@state-success-border"
+          },
+          {
+            "title": "panel-success-heading-bg",
+            "value": "@state-success-bg"
+          },
+          {
+            "title": "panel-info-text",
+            "value": "@state-info-text"
+          },
+          {
+            "title": "panel-info-border",
+            "value": "@state-info-border"
+          },
+          {
+            "title": "panel-info-heading-bg",
+            "value": "@state-info-bg"
+          },
+          {
+            "title": "panel-warning-text",
+            "value": "@state-warning-text"
+          },
+          {
+            "title": "panel-warning-border",
+            "value": "@state-warning-border"
+          },
+          {
+            "title": "panel-warning-heading-bg",
+            "value": "@state-warning-bg"
+          },
+          {
+            "title": "panel-danger-text",
+            "value": "@state-danger-text"
+          },
+          {
+            "title": "panel-danger-border",
+            "value": "@state-danger-border"
+          },
+          {
+            "title": "panel-danger-heading-bg",
+            "value": "@state-danger-bg"
+          }
+        ]
+      },
+      {
+        "title": "Thumbnails",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Padding around the thumbnail image"
+          },
+          {
+            "title": "thumbnail-padding",
+            "value": "4px"
+          },
+          {
+            "description": "Thumbnail background color",
+            "title": "thumbnail-bg",
+            "value": "@body-bg"
+          },
+          {
+            "description": "Thumbnail border color",
+            "title": "thumbnail-border",
+            "value": "#ddd"
+          },
+          {
+            "description": "Thumbnail border radius",
+            "title": "thumbnail-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "description": "Custom text color for thumbnail captions",
+            "title": "thumbnail-caption-color",
+            "value": "@text-color"
+          },
+          {
+            "description": "Padding around the thumbnail caption",
+            "title": "thumbnail-caption-padding",
+            "value": "9px"
+          }
+        ]
+      },
+      {
+        "title": "Wells",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "well-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "title": "well-border",
+            "value": "darken(@well-bg, 7%)"
+          }
+        ]
+      },
+      {
+        "title": "Badges",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "badge-color",
+            "value": "#fff"
+          },
+          {
+            "description": "Linked badge text color on hover",
+            "title": "badge-link-hover-color",
+            "value": "#fff"
+          },
+          {
+            "title": "badge-bg",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Badge text color in active nav link",
+            "title": "badge-active-color",
+            "value": "@link-color"
+          },
+          {
+            "description": "Badge background color in active nav link",
+            "title": "badge-active-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "badge-font-weight",
+            "value": "bold"
+          },
+          {
+            "title": "badge-line-height",
+            "value": "1"
+          },
+          {
+            "title": "badge-border-radius",
+            "value": "10px"
+          }
+        ]
+      },
+      {
+        "title": "Breadcrumbs",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "breadcrumb-padding-vertical",
+            "value": "8px"
+          },
+          {
+            "title": "breadcrumb-padding-horizontal",
+            "value": "15px"
+          },
+          {
+            "description": "Breadcrumb background color",
+            "title": "breadcrumb-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "description": "Breadcrumb text color",
+            "title": "breadcrumb-color",
+            "value": "#ccc"
+          },
+          {
+            "description": "Text color of current page in the breadcrumb",
+            "title": "breadcrumb-active-color",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Textual separator for between breadcrumb elements",
+            "title": "breadcrumb-separator",
+            "value": "\"/\""
+          }
+        ]
+      },
+      {
+        "title": "Carousel",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "carousel-text-shadow",
+            "value": "0 1px 2px rgba(0,0,0,.6)"
+          },
+          {
+            "title": "carousel-control-color",
+            "value": "#fff"
+          },
+          {
+            "title": "carousel-control-width",
+            "value": "15%"
+          },
+          {
+            "title": "carousel-control-opacity",
+            "value": ".5"
+          },
+          {
+            "title": "carousel-control-font-size",
+            "value": "20px"
+          },
+          {
+            "title": "carousel-indicator-active-bg",
+            "value": "#fff"
+          },
+          {
+            "title": "carousel-indicator-border-color",
+            "value": "#fff"
+          },
+          {
+            "title": "carousel-caption-color",
+            "value": "#fff"
+          }
+        ]
+      },
+      {
+        "title": "Close",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "close-font-weight",
+            "value": "bold"
+          },
+          {
+            "title": "close-color",
+            "value": "#000"
+          },
+          {
+            "title": "close-text-shadow",
+            "value": "0 1px 0 #fff"
+          }
+        ]
+      },
+      {
+        "title": "Code",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "code-color",
+            "value": "#c7254e"
+          },
+          {
+            "title": "code-bg",
+            "value": "#f9f2f4"
+          },
+          {
+            "title": "kbd-color",
+            "value": "#fff"
+          },
+          {
+            "title": "kbd-bg",
+            "value": "#333"
+          },
+          {
+            "title": "pre-bg",
+            "value": "#f5f5f5"
+          },
+          {
+            "title": "pre-color",
+            "value": "@gray-dark"
+          },
+          {
+            "title": "pre-border-color",
+            "value": "#ccc"
+          },
+          {
+            "title": "pre-scrollable-max-height",
+            "value": "340px"
+          }
+        ]
+      },
+      {
+        "title": "Type",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "description": "Horizontal offset for forms and lists."
+          },
+          {
+            "title": "component-offset-horizontal",
+            "value": "180px"
+          },
+          {
+            "description": "Text muted color",
+            "title": "text-muted",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Abbreviations and acronyms border color",
+            "title": "abbr-border-color",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Headings small color",
+            "title": "headings-small-color",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Blockquote small color",
+            "title": "blockquote-small-color",
+            "value": "@gray-light"
+          },
+          {
+            "description": "Blockquote font size",
+            "title": "blockquote-font-size",
+            "value": "(@font-size-base * 1.25)"
+          },
+          {
+            "description": "Blockquote border color",
+            "title": "blockquote-border-color",
+            "value": "@gray-lighter"
+          },
+          {
+            "description": "Page header border color",
+            "title": "page-header-border-color",
+            "value": "@gray-lighter"
+          },
+          {
+            "description": "Width of horizontal description list titles",
+            "title": "dl-horizontal-offset",
+            "value": "@component-offset-horizontal"
+          },
+          {
+            "description": "Horizontal line color.",
+            "title": "hr-border",
+            "value": "@gray-lighter"
+          },
+          {
+            "title": "hr-border",
+            "value": "@gray-lighter"
+          },
+          {
+            "title": "navbar-inverse-color",
+            "value": "lighten(@gray-light, 15%)"
+          },
+          {
+            "title": "navbar-inverse-bg",
+            "value": "darken(@il-header-bg, 20%)"
+          },
+          {
+            "title": "navbar-inverse-border",
+            "value": "darken(@navbar-inverse-bg, 10%)"
+          },
+          {
+            "title": "navbar-inverse-link-color",
+            "value": "lighten(@gray-light, 15%)"
+          },
+          {
+            "title": "navbar-inverse-link-hover-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "navbar-inverse-link-hover-bg",
+            "value": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "title": "navbar-inverse-link-active-color",
+            "value": "@navbar-inverse-link-hover-color"
+          },
+          {
+            "title": "navbar-inverse-link-active-bg",
+            "value": "darken(@navbar-inverse-bg, 10%)"
+          },
+          {
+            "title": "navbar-inverse-link-disabled-color",
+            "value": "rgb(68, 68, 68)"
+          },
+          {
+            "title": "navbar-inverse-link-disabled-bg",
+            "value": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "title": "navbar-inverse-brand-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "navbar-inverse-brand-hover-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "navbar-inverse-brand-hover-bg",
+            "value": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "title": "navbar-inverse-toggle-hover-bg",
+            "value": "rgb(51, 51, 51)"
+          },
+          {
+            "title": "navbar-inverse-toggle-icon-bar-bg",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "navbar-inverse-toggle-border-color",
+            "value": "rgb(51, 51, 51)"
+          }
+        ]
+      },
+      {
+        "title": "Iconography",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "icon-font-path",
+            "value": "\"/libs/bootstrap/dist/fonts/\""
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Fonts",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "web-font-path",
+            "value": "\"/app/static/fonts/\""
+          }
+        ]
+      },
+      {
+        "title": "Typography",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "font-family-sans-serif",
+            "value": "'Open Sans', Verdana, Arial, Helvetica, sans-serif"
+          },
+          {
+            "title": "font-size-base",
+            "value": "14px"
+          },
+          {
+            "title": "font-size-large",
+            "value": "ceil((@font-size-base * 1.25))"
+          },
+          {
+            "title": "font-size-small",
+            "value": "ceil((@font-size-base * 0.85))"
+          },
+          {
+            "title": "font-size-h1",
+            "value": "floor((@font-size-base * 1.6))"
+          },
+          {
+            "title": "font-size-h2",
+            "value": "floor((@font-size-base * 1.4))"
+          },
+          {
+            "title": "font-size-h3",
+            "value": "ceil((@font-size-base * 1.3))"
+          },
+          {
+            "title": "font-size-h4",
+            "value": "ceil((@font-size-base * 1.2))"
+          },
+          {
+            "title": "font-size-h5",
+            "value": "ceil((@font-size-base * 1.1))"
+          },
+          {
+            "title": "font-size-h6",
+            "value": "@font-size-base"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Main",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-background-images-path",
+            "value": "\"/app/static/img/\""
+          },
+          {
+            "title": "il-content-bg",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "il-icons-size-lg",
+            "value": "45px"
+          }
+        ]
+      },
+      {
+        "title": "Icons",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-logo-color1",
+            "value": "@brand-primary"
+          },
+          {
+            "title": "il-logo-color2",
+            "value": "@brand-primary"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-height",
+            "value": "115px"
+          },
+          {
+            "title": "il-header-bg",
+            "value": "rgb(31, 37, 50)"
+          },
+          {
+            "title": "il-header-border-vertical",
+            "value": "0"
+          },
+          {
+            "title": "il-header-border-horizontal",
+            "value": "0"
+          },
+          {
+            "title": "il-header-border-top",
+            "value": "@il-header-border-vertical solid transparent;//currently implemented as transparent border due to abolute positioning"
+          },
+          {
+            "title": "il-header-border-bottom",
+            "value": "@il-header-border-vertical solid transparent"
+          },
+          {
+            "title": "il-header-border-left",
+            "value": "@il-header-border-horizontal solid transparent"
+          },
+          {
+            "title": "il-header-border-right",
+            "value": "@il-header-border-horizontal solid transparent"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header small",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-height-sm",
+            "value": "@navbar-height"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header Top Nav",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-top-nav-top",
+            "value": "0px"
+          },
+          {
+            "title": "il-header-top-nav-left",
+            "value": "auto"
+          },
+          {
+            "title": "il-header-top-nav-right",
+            "value": "@padding-base-horizontal"
+          },
+          {
+            "title": "il-header-top-nav-float",
+            "value": "right"
+          },
+          {
+            "title": "il-header-top-nav-box-margin-right",
+            "value": "2px"
+          },
+          {
+            "title": "il-header-top-nav-box-min-height",
+            "value": "50px"
+          },
+          {
+            "title": "il-header-top-nav-box-min-width",
+            "value": "50px"
+          },
+          {
+            "title": "il-header-top-nav-box-font-size",
+            "value": "20px"
+          },
+          {
+            "title": "il-header-top-nav-box-color",
+            "value": "lighten(@il-header-bg, 70%)"
+          },
+          {
+            "title": "il-header-top-nav-box-hover-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "il-header-top-nav-box-bg",
+            "value": "lighten(@il-header-bg, 20%)"
+          },
+          {
+            "title": "il-header-top-nav-box-hover-bg",
+            "value": "lighten(@il-header-bg, 42%)"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header Top Nav small",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-top-nav-top-sm",
+            "value": "0"
+          },
+          {
+            "title": "il-header-top-nav-left-sm",
+            "value": "0"
+          },
+          {
+            "title": "il-header-top-nav-right-sm",
+            "value": "@padding-base-horizontal"
+          },
+          {
+            "title": "il-header-top-nav-box-margin-right-sm",
+            "value": "1px"
+          },
+          {
+            "title": "il-header-top-nav-box-min-height-sm",
+            "value": "@il-header-height-sm"
+          },
+          {
+            "title": "il-header-top-nav-box-min-width-sm",
+            "value": "@il-header-height-sm"
+          },
+          {
+            "title": "il-header-top-nav-box-font-size-sm",
+            "value": "15px"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header Branding",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-branding-top",
+            "value": "@padding-large-vertical"
+          },
+          {
+            "title": "il-header-branding-left",
+            "value": "@padding-base-horizontal"
+          },
+          {
+            "title": "il-header-branding-right",
+            "value": "0"
+          },
+          {
+            "title": "il-header-branding-height",
+            "value": "auto"
+          },
+          {
+            "title": "il-header-branding-right",
+            "value": "auto"
+          },
+          {
+            "title": "il-header-branding-bg",
+            "value": "transparent"
+          },
+          {
+            "title": "il-header-branding-font-size",
+            "value": "30px"
+          },
+          {
+            "title": "il-header-branding-logo-font-size",
+            "value": "@il-header-branding-font-size * 1.5"
+          },
+          {
+            "title": "il-header-branding-text-logo-padding",
+            "value": "@padding-large-horizontal"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header Branding sm",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-branding-top-sm",
+            "value": "@padding-small-vertical"
+          },
+          {
+            "title": "il-header-branding-left-sm",
+            "value": "@padding-base-horizontal"
+          },
+          {
+            "title": "il-header-branding-right-sm",
+            "value": "0"
+          },
+          {
+            "title": "il-header-branding-height-sm",
+            "value": "auto"
+          },
+          {
+            "title": "il-header-branding-right-sm",
+            "value": "auto"
+          },
+          {
+            "title": "il-header-branding-font-size-sm",
+            "value": "0"
+          },
+          {
+            "title": "il-header-branding-logo-font-size-sm",
+            "value": "32px"
+          },
+          {
+            "title": "il-header-branding-text-logo-padding-sm",
+            "value": "@padding-small-horizontal"
+          },
+          {
+            "title": "il-header-branding-text-display-sm",
+            "value": "none"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header Main Menu",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-main-border-width",
+            "value": "0px"
+          },
+          {
+            "title": "il-header-main-menu-top",
+            "value": "@il-header-height - @navbar-height - @il-header-border-vertical - 2 * @il-header-main-border-width"
+          },
+          {
+            "title": "il-header-main-menu-left",
+            "value": "0"
+          },
+          {
+            "title": "il-header-main-menu-right",
+            "value": "0"
+          },
+          {
+            "title": "il-header-main-menu-float",
+            "value": "left"
+          },
+          {
+            "title": "il-header-main-menu-color",
+            "value": "rgb(31, 37, 50)"
+          },
+          {
+            "title": "il-header-main-menu-active-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "il-header-main-menu-open-color",
+            "value": "@navbar-inverse-color"
+          },
+          {
+            "title": "il-header-main-menu-bg",
+            "value": "@navbar-inverse-bg"
+          },
+          {
+            "title": "il-header-main-menu-active-bg",
+            "value": "rgb(65, 189, 157)"
+          },
+          {
+            "title": "il-header-main-menu-open-bg",
+            "value": "rgb(31, 37, 50)"
+          },
+          {
+            "title": "il-header-main-menu-border",
+            "value": "0"
+          },
+          {
+            "title": "il-header-main-menu-border-radius",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Header Main Menu sm",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-header-main-menu-border-sm",
+            "value": "0px"
+          },
+          {
+            "title": "il-header-main-menu-border-width-sm",
+            "value": "0"
+          },
+          {
+            "title": "il-header-main-menu-top-sm",
+            "value": "0"
+          },
+          {
+            "title": "il-header-main-menu-left-sm",
+            "value": "50px"
+          },
+          {
+            "title": "il-header-main-menu-right-sm",
+            "value": "auto"
+          },
+          {
+            "title": "il-header-main-menu-border-radius-sm",
+            "value": "0;//@border-radius-base"
+          },
+          {
+            "title": "il-header-main-menu-border-sm",
+            "value": "@il-header-main-menu-border-width-sm solid darken(@il-header-main-menu-bg, 10%)"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS content grid",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-sidebar-closed-xs",
+            "value": "0"
+          },
+          {
+            "title": "il-sidebar-closed-sm",
+            "value": "1"
+          },
+          {
+            "title": "il-sidebar-closed-md",
+            "value": "1"
+          },
+          {
+            "title": "il-sidebar-closed-lg",
+            "value": "2"
+          },
+          {
+            "title": "il-sidebar-open-xs",
+            "value": "6"
+          },
+          {
+            "title": "il-sidebar-open-sm",
+            "value": "4"
+          },
+          {
+            "title": "il-sidebar-open-md",
+            "value": "3"
+          },
+          {
+            "title": "il-sidebar-open-lg",
+            "value": "3"
+          },
+          {
+            "title": "il-content-bg-color",
+            "value": "white"
+          },
+          {
+            "title": "il-content-padding-top",
+            "value": "@il-content-padding"
+          },
+          {
+            "title": "il-content-padding-bottom",
+            "value": "@il-content-padding"
+          },
+          {
+            "title": "il-content-padding",
+            "value": "15px"
+          },
+          {
+            "title": "il-content-min-height",
+            "value": "600px"
+          },
+          {
+            "title": "il-toolbar-link-gap",
+            "value": "15px"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "description": "@input-border-radius:\t0;",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "input-border",
+            "value": "#ccc"
+          },
+          {
+            "title": "input-border-focus",
+            "value": "lighten(@brand-primary, 20%)"
+          },
+          {
+            "title": "ilFormInputFontSize",
+            "value": "@font-size-small"
+          },
+          {
+            "title": "input-height-base",
+            "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)"
+          },
+          {
+            "title": "ilFormColor",
+            "value": "#808080"
+          },
+          {
+            "title": "ilFormBgColor",
+            "value": "#fdfdfd"
+          },
+          {
+            "title": "il-form-area-devider",
+            "value": "1px dashed lighten(@gray-light,20%)"
+          },
+          {
+            "title": "il-form-required-label-color",
+            "value": "@brand-danger"
+          },
+          {
+            "title": "il-form-required-label-symbol",
+            "value": "\"*\""
+          },
+          {
+            "title": "ilMainMenuColor",
+            "value": "lighten(@brand-primary, 10%)"
+          },
+          {
+            "title": "ilButtonFontSize",
+            "value": "@font-size-small"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Sidebar",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-sidebar-padding-bottom",
+            "value": "15px"
+          },
+          {
+            "title": "il-sidebar-bg-color",
+            "value": "rgb(244, 244, 246)"
+          },
+          {
+            "title": "il-sidebar-hover-bg-color",
+            "value": "rgb(252, 55, 104)"
+          },
+          {
+            "title": "il-sidebar-body-bg-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "il-sidebar-block-active-border-width",
+            "value": "4px"
+          },
+          {
+            "title": "il-sidebar-block-active-border-color",
+            "value": "@dropdown-link-active-bg"
+          },
+          {
+            "title": "il-sidebar-heading-link-color",
+            "value": "rgb(139, 151, 158)"
+          },
+          {
+            "title": "il-sidebar-heading-link-hover-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "il-sidebar-padding-content",
+            "value": "50px"
+          },
+          {
+            "title": "il-sidebar-padding-content-sm",
+            "value": "20px"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Block",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-panel-sortable-placeholder-panel-bg",
+            "value": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "title": "il-panel-sortable-placeholder-panel-border-radius",
+            "value": "@border-radius-base"
+          },
+          {
+            "title": "il-panel-sortable-placeholder-border",
+            "value": "3px #C0C0C0 dashed"
+          },
+          {
+            "title": "il-panel-sortable-placeholder-height",
+            "value": "45px"
+          }
+        ]
+      },
+      {
+        "title": "Flaps",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-flap-icon-font-size-lg",
+            "value": "30px"
+          },
+          {
+            "title": "il-flap-minified-width",
+            "value": "@il-flap-icon-font-size-lg + 2*@padding-large-horizontal"
+          },
+          {
+            "title": "il-flap-text-font-size-lg",
+            "value": "@il-flap-icon-font-size-lg/1.2"
+          },
+          {
+            "title": "il-flap-hover-size-lg",
+            "value": "@il-flap-text-font-size-lg*8"
+          },
+          {
+            "title": "il-flap-animation-speed",
+            "value": "0.3s"
+          },
+          {
+            "title": "il-sidebar-toggle-button-link-color",
+            "value": "@link-color"
+          },
+          {
+            "title": "il-sidebar-toggle-button-bg-color",
+            "value": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "title": "il-sidebar-toggle-button-link-hover-color",
+            "value": "rgb(255, 255, 255)"
+          },
+          {
+            "title": "il-sidebar-toggle-button-bg-hover-color",
+            "value": "@btn-primary-bg"
+          },
+          {
+            "title": "il-sidebar-toggle-button-height",
+            "value": "75px"
+          },
+          {
+            "title": "il-sidebar-toggle-button-width",
+            "value": "@il-sidebar-toggle-button-height/2"
+          },
+          {
+            "title": "il-sidebar-toggle-button-font-size",
+            "value": "@font-size-large"
+          }
+        ]
+      },
+      {
+        "title": "Explorer",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "theme-name",
+            "value": "default"
+          },
+          {
+            "title": "hovered-bg-color",
+            "value": "@dropdown-link-hover-bg"
+          },
+          {
+            "title": "hovered-shadow-color",
+            "value": "@dropdown-link-hover-bg"
+          },
+          {
+            "title": "disabled-color",
+            "value": "@dropdown-link-disabled-color"
+          },
+          {
+            "title": "disabled-bg-color",
+            "value": "@dropdown-link-disabled-color"
+          },
+          {
+            "title": "clicked-bg-color",
+            "value": "@dropdown-link-active-bg"
+          },
+          {
+            "title": "clicked-shadow-color",
+            "value": "@dropdown-link-active-bg"
+          },
+          {
+            "title": "clicked-gradient-color-1",
+            "value": "@dropdown-link-active-bg"
+          },
+          {
+            "title": "clicked-gradient-color-2",
+            "value": "@dropdown-link-active-bg"
+          },
+          {
+            "title": "il-explorer-clicked-color",
+            "value": "@dropdown-link-active-color"
+          },
+          {
+            "title": "search-result-color",
+            "value": "rgb(139, 0, 0)"
+          },
+          {
+            "title": "mobile-wholerow-bg-color",
+            "value": "rgb(235, 235, 235)"
+          },
+          {
+            "title": "mobile-wholerow-shadow",
+            "value": "rgb(102, 102, 102)"
+          },
+          {
+            "title": "mobile-wholerow-bordert",
+            "value": "rgba(255, 255, 255, 0.7)"
+          },
+          {
+            "title": "mobile-wholerow-borderb",
+            "value": "rgba(64, 64, 64, 0.2)"
+          },
+          {
+            "title": "responsive",
+            "value": "true"
+          },
+          {
+            "title": "image-path",
+            "value": "\"@{il-background-images-path}services/explorer/\""
+          },
+          {
+            "title": "base-height",
+            "value": "@input-height-base"
+          },
+          {
+            "title": "il-btn-default-color",
+            "value": "rgb(255, 255, 255)"
+          }
+        ]
+      },
+      {
+        "title": "ILIAS Footer",
+        "description": "Description missing",
+        "type": "less",
+        "state": "static",
+        "variables": [
+          {
+            "title": "il-footer-bg",
+            "value": "@navbar-inverse-bg"
+          },
+          {
+            "title": "il-footer-color",
+            "value": "@navbar-inverse-color"
+          },
+          {
+            "title": "il-footer-height",
+            "value": "45px"
+          },
+          {
+            "title": "il-footer-padding-horizontal",
+            "value": "@navbar-padding-horizontal"
+          },
+          {
+            "title": "il-footer-padding-vertical",
+            "value": "@navbar-padding-vertical"
+          }
+        ]
+      }
+    ]
+  }
+]

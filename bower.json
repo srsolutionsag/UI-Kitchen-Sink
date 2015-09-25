@@ -12,7 +12,9 @@
     "blueimp-file-upload": "latest",
     "highlightjs": "~8",
     "angular-highlightjs": "latest",
-    "eonasdan-bootstrap-datetimepicker": "latest"
+    "eonasdan-bootstrap-datetimepicker": "latest",
+    "d3": "latest",
+    "d3.fisheye": "latest"
   },
   "resolutions": {
     "angular": "1.3.15"

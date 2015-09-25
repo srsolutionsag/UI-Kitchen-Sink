@@ -1,17 +1,6 @@
 <div class="well">{{item.description}}</div>
-<div ng-if="item.variables.ilias">
-    <h4>ILIAS</h4>
-    <div ng-repeat="(id,variable) in item.variables.ilias" >
-        <less-variable
-                variable="variable"
-                show-relations="true"
-                >
-        </less-variable>
-    </div>
-</div>
-<div ng-if="item.variables.bootstrap">
-    <h4>Bootstrap</h4>
-    <div ng-repeat="(id,variable) in item.variables.bootstrap">
+<div ng-if="item.variables">
+    <div ng-repeat="(id,variable) in item.variables" >
         <less-variable
                 variable="variable"
                 show-relations="true"

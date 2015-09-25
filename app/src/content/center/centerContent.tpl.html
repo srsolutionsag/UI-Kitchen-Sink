@@ -53,14 +53,17 @@
 
 
             <!-- Entry Section ================================================== -->
-            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type=='html'">
-                <entry-html-content
+            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type=='html' || tabSelected.type=='visualization'">
+                <entry-html-content ng-if="tabSelected.type=='html'"
                     item="tabSelected"
                     index="{{index}}"
                     tab-path="{{tabSelected.path}}">
                 </entry-html-content>
+                <entry-visualization-content ng-if="tabSelected.type=='visualization'"
+                                    visualization-type={{tabSelected.id}}>
+                </entry-visualization-content>
             </div>
-            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type!='html'">
+            <div class="il-content-center-body-section panel-body" ng-if="tabSelected.type!='html' && tabSelected.type!='visualization'">
                 <div ng-switch on="subTabSelected.type">
                     <div ng-switch-when="less">
                         <entry-less-content

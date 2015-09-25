@@ -12,7 +12,7 @@
   "state": "Proposal",
   "guiClass": "ilFormGUI",
   "relations":{
-    "isA": "form",
+    "isA": "formBase",
     "mustUse":[
       "buttonDefault"
     ]

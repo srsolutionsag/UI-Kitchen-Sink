@@ -23,6 +23,7 @@
                   "id": "termsCategories",
                   "title": "Categories",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewTerms/termsCategories",
                   "path": "/information/informationOverview/overviewTerms/termsCategories",
                   "order": 100
@@ -31,6 +32,7 @@
                   "id": "termsKeyWords",
                   "title": "Key Words",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewTerms/termsKeyWords",
                   "path": "/information/informationOverview/overviewTerms/termsKeyWords",
                   "order": 100
@@ -39,6 +41,7 @@
                   "id": "termsStates",
                   "title": "States",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewTerms/termsStates",
                   "path": "/information/informationOverview/overviewTerms/termsStates",
                   "order": 100
@@ -53,6 +56,7 @@
                   "id": "workflowAddElements",
                   "title": "New Element",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowAddElements",
                   "path": "/information/informationOverview/overviewWorkflows/workflowAddElements",
                   "order": 100
@@ -61,6 +65,7 @@
                   "id": "workflowChangeElements",
                   "title": "Change Element",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowChangeElements",
                   "path": "/information/informationOverview/overviewWorkflows/workflowChangeElements",
                   "order": 100
@@ -69,6 +74,7 @@
                   "id": "workflowImportElements",
                   "title": "Import Element",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowImportElements",
                   "path": "/information/informationOverview/overviewWorkflows/workflowImportElements",
                   "order": 100
@@ -77,6 +83,7 @@
                   "id": "z_workflowChecklist",
                   "title": "Checklist",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowChecklist",
                   "path": "/information/informationOverview/overviewWorkflows/z_workflowChecklist",
                   "order": 100
@@ -85,6 +92,7 @@
                   "id": "z_workflowTemplate",
                   "title": "Template",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowTemplate",
                   "path": "/information/informationOverview/overviewWorkflows/z_workflowTemplate",
                   "order": 100
@@ -111,6 +119,7 @@
                   "id": "accessabilityAriaRoles",
                   "title": "Aria Roles",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
                   "path": "/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
                   "order": 100
@@ -132,6 +141,7 @@
                   "id": "aboutLess",
                   "title": "About LESS",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/overviewLess/lessOverview/aboutLess",
                   "path": "/information/overviewLess/lessOverview/aboutLess",
                   "order": 100
@@ -140,6 +150,7 @@
                   "id": "lessILIAS",
                   "title": "Less in ILIAS",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessILIAS",
                   "path": "/information/overviewLess/lessOverview/lessILIAS",
                   "order": 100
@@ -148,6 +159,7 @@
                   "id": "lessNamingConventions",
                   "title": "Less Naming Conventions",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessNamingConventions",
                   "path": "/information/overviewLess/lessOverview/lessNamingConventions",
                   "order": 100
@@ -155,1049 +167,3439 @@
               ]
             },
             {
-              "title": "Base",
-              "id": "lessBaseVariables",
+              "id": "lessBaseVariablesCategory",
+              "title": "Base Variables",
               "items": [
                 {
-                  "id": "01_lessVariablesTypography",
-                  "title": "Scaffolding",
-                  "description": "Bootstrap Variables for the most basic styles",
-                  "type": "less",
-                  "variables": {
-                    "bootstrap": [
-                      {
-                        "title": "body-bg",
-                        "description": "Background color for `<body>`",
-                        "value": "#fff",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "text-color",
-                        "description": "Global text color on `<body>`",
-                        "value": "@gray-dark",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "link-color",
-                        "description": "Global textual link color",
-                        "value": "@brand-primary",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "link-hover-color",
-                        "description": "Link hover color set via `darken()` function",
-                        "value": "darken(@link-color, 15%)",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "link-hover-decoration",
-                        "description": "Link hover decoration.",
-                        "value": "underline",
-                        "state": "Implemented for 5.0"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/01_lessVariablesTypography",
-                  "path": "/information/overviewLess/lessBaseVariables/01_lessVariablesTypography",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesColors",
+                  "id": "lessColorsVariablesGroup",
                   "title": "Colors",
+                  "description": "Gray and brand colors for use across Bootstrap.",
                   "type": "less",
-                  "description": "Color definitions to be used.",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "brand-secondary",
-                        "description": "Todo: Exact description of where to use brand-secondary",
-                        "state": "Implemented for 5.0"
-                      }
-                    ],
-                    "bootstrap": [
-                      {
-                        "title": "brand-primary",
-                        "description": "Exact description of where to use brand-primary",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "brand-success",
-                        "description": "Color used to display success messages",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "brand-info",
-                        "description": "Color used to display info messages",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "brand-warning",
-                        "description": "Color used to display warning messages",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "brand-danger",
-                        "description": "Color used to display danger messages",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesColors",
-                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesColors",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "gray-base",
+                      "state": "implemented",
+                      "value": "#000"
+                    },
+                    {
+                      "title": "gray-darker",
+                      "state": "implemented",
+                      "value": "lighten(@gray-base, 13.5%)"
+                    },
+                    {
+                      "title": "gray-dark",
+                      "state": "implemented",
+                      "value": "lighten(@gray-base, 20%)"
+                    },
+                    {
+                      "title": "gray",
+                      "state": "implemented",
+                      "value": "lighten(@gray-base, 33.5%)"
+                    },
+                    {
+                      "title": "gray-light",
+                      "state": "implemented",
+                      "value": "lighten(@gray-base, 46.7%)"
+                    },
+                    {
+                      "title": "gray-lighter",
+                      "state": "implemented",
+                      "value": "lighten(@gray-base, 93.5%)"
+                    },
+                    {
+                      "title": "brand-primary",
+                      "state": "implemented",
+                      "value": "rgb(76, 101, 134)"
+                    },
+                    {
+                      "title": "brand-secondary",
+                      "state": "implemented",
+                      "value": "rgb(110, 160, 60)"
+                    },
+                    {
+                      "title": "brand-success",
+                      "state": "implemented",
+                      "value": "rgb(110, 160, 60)"
+                    },
+                    {
+                      "title": "brand-info",
+                      "state": "implemented",
+                      "value": "rgb(220, 180, 150)"
+                    },
+                    {
+                      "title": "brand-warning",
+                      "state": "implemented",
+                      "value": "rgb(250, 130, 40)"
+                    },
+                    {
+                      "title": "brand-danger",
+                      "state": "implemented",
+                      "value": "rgb(250, 130, 40)"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesComponents",
+                  "id": "lessScaffoldingVariablesGroup",
+                  "title": "Scaffolding",
+                  "description": "Settings for some of the most global styles.",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Background color for `<body>`.",
+                      "title": "body-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Global text color on `<body>`.",
+                      "title": "text-color",
+                      "state": "implemented",
+                      "value": "@gray-dark"
+                    },
+                    {
+                      "description": "Global textual link color.",
+                      "title": "link-color",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "description": "Link hover color set via `darken()` function.",
+                      "title": "link-hover-color",
+                      "state": "implemented",
+                      "value": "darken(@link-color, 15%)"
+                    },
+                    {
+                      "description": "Link hover decoration.",
+                      "title": "link-hover-decoration",
+                      "state": "implemented",
+                      "value": "underline"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessMediaQueriesBreakpointsVariablesGroup",
+                  "title": "Media queries breakpoints",
+                  "description": "Define the breakpoints at which your layout will change, adapting to different screen sizes.",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Deprecated `@screen-xs` as of v3.0.1",
+                      "title": "screen-xs",
+                      "state": "implemented",
+                      "value": "480px"
+                    },
+                    {
+                      "description": "Deprecated `@screen-xs-min` as of v3.2.0",
+                      "title": "screen-xs-min",
+                      "state": "implemented",
+                      "value": "@screen-xs"
+                    },
+                    {
+                      "description": "Deprecated `@screen-phone` as of v3.0.1",
+                      "title": "screen-phone",
+                      "state": "implemented",
+                      "value": "@screen-xs-min"
+                    },
+                    {
+                      "description": "Deprecated `@screen-sm` as of v3.0.1",
+                      "title": "screen-sm",
+                      "state": "implemented",
+                      "value": "768px"
+                    },
+                    {
+                      "title": "screen-sm-min",
+                      "state": "implemented",
+                      "value": "@screen-sm"
+                    },
+                    {
+                      "description": "Deprecated `@screen-tablet` as of v3.0.1",
+                      "title": "screen-tablet",
+                      "state": "implemented",
+                      "value": "@screen-sm-min"
+                    },
+                    {
+                      "description": "Deprecated `@screen-md` as of v3.0.1",
+                      "title": "screen-md",
+                      "state": "implemented",
+                      "value": "992px"
+                    },
+                    {
+                      "title": "screen-md-min",
+                      "state": "implemented",
+                      "value": "@screen-md"
+                    },
+                    {
+                      "description": "Deprecated `@screen-desktop` as of v3.0.1",
+                      "title": "screen-desktop",
+                      "state": "implemented",
+                      "value": "@screen-md-min"
+                    },
+                    {
+                      "description": "Deprecated `@screen-lg` as of v3.0.1",
+                      "title": "screen-lg",
+                      "state": "implemented",
+                      "value": "1200px"
+                    },
+                    {
+                      "title": "screen-lg-min",
+                      "state": "implemented",
+                      "value": "@screen-lg"
+                    },
+                    {
+                      "description": "Deprecated `@screen-lg-desktop` as of v3.0.1",
+                      "title": "screen-lg-desktop",
+                      "state": "implemented",
+                      "value": "@screen-lg-min"
+                    },
+                    {
+                      "title": "screen-xs-max",
+                      "state": "implemented",
+                      "value": "(@screen-sm-min - 1)"
+                    },
+                    {
+                      "title": "screen-sm-max",
+                      "state": "implemented",
+                      "value": "(@screen-md-min - 1)"
+                    },
+                    {
+                      "title": "screen-md-max",
+                      "state": "implemented",
+                      "value": "(@screen-lg-min - 1)"
+                    },
+                    {
+                      "title": "zindex-navbar",
+                      "state": "implemented",
+                      "value": "1000"
+                    },
+                    {
+                      "title": "zindex-dropdown",
+                      "state": "implemented",
+                      "value": "1000"
+                    },
+                    {
+                      "title": "zindex-popover",
+                      "state": "implemented",
+                      "value": "1060"
+                    },
+                    {
+                      "title": "zindex-tooltip",
+                      "state": "implemented",
+                      "value": "1070"
+                    },
+                    {
+                      "title": "zindex-navbar-fixed",
+                      "state": "implemented",
+                      "value": "1030"
+                    },
+                    {
+                      "title": "zindex-modal-background",
+                      "state": "implemented",
+                      "value": "1040"
+                    },
+                    {
+                      "title": "zindex-modal",
+                      "state": "implemented",
+                      "value": "1050"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessComponentsVariablesGroup",
                   "title": "Components",
                   "description": "Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).",
                   "type": "less",
-                  "variables": {
-                    "bootstrap": []
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesComponents",
-                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesComponents",
-                  "order": 100
-                },
-                {
-                  "id": "lessMediaQueries",
-                  "title": "Media Queries",
-                  "type": "less",
-                  "description": "Define the breakpoints at which your layout will change, adapting to different screen sizes.",
-                  "variables": {
-                    "bootstrap": [
-                      {
-                        "title": "screen-xs-min",
-                        "description": "Pixels that define the breaking point that is equal or larger than 480px",
-                        "value": "480px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "screen-sm-min",
-                        "description": "Pixels that define the breaking point that is equal or larger than 768px",
-                        "value": "768px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "screen-md-min",
-                        "description": "Pixels that define the breaking point that is equal or larger than 992px",
-                        "value": "992px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "screen-lg-min",
-                        "description": "Pixels that define the breaking point that is equal or larger than 1200px",
-                        "value": "1200px",
-                        "state": "Implemented for 5.0"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessMediaQueries",
-                  "path": "/information/overviewLess/lessBaseVariables/lessMediaQueries",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesZIndex",
-                  "title": "Z-Index",
-                  "description": "Warning from the Bootstrap documentation: Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together.",
-                  "type": "less",
-                  "variables": {
-                    "bootstrap": [
-                      {
-                        "title": "zindex-navbar",
-                        "description": "z-index of the navbar",
-                        "value": "1000",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "zindex-dropdown",
-                        "description": "z-index of the dropdowns",
-                        "value": "1000",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "zindex-popover",
-                        "description": "z-index for popovers",
-                        "value": "1060",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "zindex-tooltip",
-                        "description": "z-index for tooltips",
-                        "value": "1070",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "zindex-navbar-fixed",
-                        "description": "z-index of the for the fixed navbar",
-                        "value": "1030",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "zindex-modal-background",
-                        "description": "z-index for the background of modals",
-                        "value": "1040",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "zindex-modal",
-                        "description": "z-index of modals",
-                        "value": "1050",
-                        "state": "Implemented for 5.0"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessBaseVariables/lessVariablesZIndex",
-                  "path": "/information/overviewLess/lessBaseVariables/lessVariablesZIndex",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "padding-base-vertical",
+                      "state": "implemented",
+                      "value": "3px"
+                    },
+                    {
+                      "title": "padding-base-horizontal",
+                      "state": "implemented",
+                      "value": "8px"
+                    },
+                    {
+                      "title": "padding-large-vertical",
+                      "state": "implemented",
+                      "value": "6px"
+                    },
+                    {
+                      "title": "padding-large-horizontal",
+                      "state": "implemented",
+                      "value": "12px"
+                    },
+                    {
+                      "title": "padding-small-vertical",
+                      "state": "implemented",
+                      "value": "3px"
+                    },
+                    {
+                      "title": "padding-small-horizontal",
+                      "state": "implemented",
+                      "value": "6px"
+                    },
+                    {
+                      "title": "padding-xs-vertical",
+                      "state": "implemented",
+                      "value": "1px"
+                    },
+                    {
+                      "title": "padding-xs-horizontal",
+                      "state": "implemented",
+                      "value": "5px"
+                    },
+                    {
+                      "title": "line-height-large",
+                      "state": "implemented",
+                      "value": "1.33"
+                    },
+                    {
+                      "title": "line-height-small",
+                      "state": "implemented",
+                      "value": "1.5"
+                    },
+                    {
+                      "title": "border-radius-base",
+                      "state": "implemented",
+                      "value": "0px"
+                    },
+                    {
+                      "title": "border-radius-large",
+                      "state": "implemented",
+                      "value": "0px"
+                    },
+                    {
+                      "title": "border-radius-small",
+                      "state": "implemented",
+                      "value": "0px"
+                    },
+                    {
+                      "description": "Global color for active items (e.g., navs or dropdowns).",
+                      "title": "component-active-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Global background color for active items (e.g., navs or dropdowns).",
+                      "title": "component-active-bg",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "description": "Width of the `border` for generating carets that indicator dropdowns.",
+                      "title": "caret-width-base",
+                      "state": "implemented",
+                      "value": "4px"
+                    },
+                    {
+                      "description": "Carets increase slightly in size for larger components.",
+                      "title": "caret-width-large",
+                      "state": "implemented",
+                      "value": "5px"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "title": "Elements",
-              "id": "lessElementsVariables",
+              "id": "lessElementsVariablesCategory",
+              "title": "Elements Variables",
               "items": [
                 {
-                  "id": "lessVariablesButtons",
-                  "title": "Buttons",
-                  "description": "All variables listed here are currently not used in ILIAS. Instead the Buttons are directly created via mixins and the brand-primary and brand-secondary colors.",
+                  "id": "lessGridSystemVariablesGroup",
+                  "title": "Grid system",
+                  "description": "Define the maximum width of `.container` for different screen sizes.",
                   "type": "less",
-                  "variables": {
-                    "bootstrap": [
-                      {
-                        "title": "btn-link-disabled-color",
-                        "description": "Implemented in variables.less in Bootstrap but not used, colors are injected in Button/delos.less manualy directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-font-weight",
-                        "description": "Implemented in variables.less in Bootstrap but not used. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-default-color",
-                        "description": "Implemented in variables.less in ILIAS but not used, color 'white' directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-default-border",
-                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-default-bg",
-                        "description": "Implemented in variables.less in ILIAS but not used, color brand-primary is used directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-primary-color",
-                        "description": "Implemented in variables.less in Bootstrap but not used, color 'white' directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-primary-bg",
-                        "description": "Implemented in variables.less in Bootstrap but not used, color brand-secondary is used directly instead. This should be fixed.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-success-border",
-                        "description": "No usage of btn-success known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-success-color",
-                        "description": "No usage of btn-success known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-success-bg",
-                        "description": "No usage of btn-success known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-info-border",
-                        "description": "No usage of btn-info known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-info-color",
-                        "description": "No usage of btn-info known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-info-bg",
-                        "description": "No usage of btn-info known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-warning-border",
-                        "description": "No usage of btn-warning known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-warning-color",
-                        "description": "No usage of btn-warning known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-warning-bg",
-                        "description": "No usage of btn-warning known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-danger-border",
-                        "description": "No usage of btn-danger known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-danger-color",
-                        "description": "No usage of btn-danger known.",
-                        "state": "Not Used"
-                      },
-                      {
-                        "title": "btn-danger-bg",
-                        "description": "No usage of btn-danger known.",
-                        "state": "Not Used"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesButtons",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesButtons",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Number of columns in the grid.",
+                      "title": "grid-columns",
+                      "state": "implemented",
+                      "value": "12"
+                    },
+                    {
+                      "description": "Padding between columns. Gets divided in half for the left and right.",
+                      "title": "grid-gutter-width",
+                      "state": "implemented",
+                      "value": "30px"
+                    },
+                    {
+                      "description": "Point at which the navbar becomes uncollapsed.",
+                      "title": "grid-float-breakpoint",
+                      "state": "implemented",
+                      "value": "@screen-sm-min"
+                    },
+                    {
+                      "description": "Point at which the navbar begins collapsing.",
+                      "title": "grid-float-breakpoint-max",
+                      "state": "implemented",
+                      "value": "(@grid-float-breakpoint - 1)"
+                    },
+                    {
+                      "title": "container-tablet",
+                      "state": "implemented",
+                      "value": "(720px + @grid-gutter-width)"
+                    },
+                    {
+                      "description": "For `@screen-sm-min` and up.",
+                      "title": "container-sm",
+                      "state": "implemented",
+                      "value": "@container-tablet"
+                    },
+                    {
+                      "title": "container-desktop",
+                      "state": "implemented",
+                      "value": "(940px + @grid-gutter-width)"
+                    },
+                    {
+                      "description": "For `@screen-md-min` and up.",
+                      "title": "container-md",
+                      "state": "implemented",
+                      "value": "@container-desktop"
+                    },
+                    {
+                      "title": "container-large-desktop",
+                      "state": "implemented",
+                      "value": "(1140px + @grid-gutter-width)"
+                    },
+                    {
+                      "description": "For `@screen-lg-min` and up.",
+                      "title": "container-lg",
+                      "state": "implemented",
+                      "value": "@container-large-desktop"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesGrid",
-                  "title": "Grid System",
-                  "type": "less",
-                  "description": "Variables used to define the responsive grid and container sizes",
-                  "variables": {
-                    "bootstrap": [
-                      {
-                        "title": "container-tablet",
-                        "value": "720px + @grid-gutter-width",
-                        "description": "The size of the container on a tablet",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "container-sm",
-                        "value": "@container-tablet",
-                        "description": "Same as container-tablet",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "container-desktop",
-                        "value": "940px + @grid-gutter-width",
-                        "description": "The size of the container on a desktop",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "container-md",
-                        "value": "@container-desktop",
-                        "description": "Same as container-desktop",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "container-large-desktop",
-                        "value": "1140px + @grid-gutter-width",
-                        "description": "The size of the container on a tablet",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "container-lg",
-                        "value": "@container-large-desktop",
-                        "description": "Same as container-large-desktop",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "grid-columns",
-                        "value": "12",
-                        "description": "Number of columns in the grid",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "grid-gutter-width",
-                        "value": "30px",
-                        "description": "Padding between columns. Gets divided in half for the left and right",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "grid-float-breakpoint",
-                        "value": "@screen-sm-min",
-                        "description": "Point at which the navbar becomes uncollapsed",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "grid-float-breakpoint-max",
-                        "value": "(@grid-float-breakpoint - 1)",
-                        "description": "Point at which the navbar begins collapsing",
-                        "state": "Implemented for 5.0"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesGrid",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesGrid",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesImages",
-                  "title": "Images",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesImages",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesImages",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesLists",
-                  "title": "Lists",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesLists",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesLists",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesTypography",
+                  "id": "lessTypographyVariablesGroup",
                   "title": "Typography",
-                  "description": "Less Variables used to change fonts and fonts sizes",
+                  "description": "Font, line-height, and color for body text, headings, and more.",
                   "type": "less",
-                  "variables": {
-                    "bootstrap": [
-                      {
-                        "title": "font-family-base",
-                        "description": "Default font",
-                        "value": "@font-family-sans-serif",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-base",
-                        "description": "Bootstrap's global default font-size is 14px, with a line-height of 1.428. This is applied to the <body> and all paragraphs. In addition, <p> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).",
-                        "value": "14px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "line-height-base",
-                        "description": "Unit-less `line-height` for use in components like buttons.",
-                        "value": "1.428571429 (=20/14)",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "line-height-computed",
-                        "description": "Computed 'line-height' (`font-size` * `line-height`) for use with `margin`, `padding`, etc.",
-                        "value": "floor((@font-size-base * @line-height-base))",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-family-sans-serif",
-                        "description": "Default font for sans-serfis",
-                        "value": "@font-family-sans-serif:  'Helvetica Neue', Helvetica, Arial, sans-serif;",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-family-serif",
-                        "description": "Default font for serfis",
-                        "value": "Georgia, 'Times New Roman', Times, serif",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-family-monospace",
-                        "description": "Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`",
-                        "value": "Menlo, Monaco, Consolas, 'Courier New', monospace;",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-h1",
-                        "description": "Size for h1",
-                        "value": "floor((@font-size-base * 2.6)); // ~36px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-h2",
-                        "description": "Size for h2",
-                        "value": "floor((@font-size-base * 2.15)); // ~30px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-h3",
-                        "description": "Size for h3",
-                        "value": "ceil((@font-size-base * 1.7)); // ~24px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-h4",
-                        "description": "Size for h4",
-                        "value": "ceil((@font-size-base * 1.25)); // ~18px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-h5",
-                        "description": "Size for h5",
-                        "value": "@font-size-base",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "font-size-h6",
-                        "description": "Size for h6",
-                        "value": "ceil((@font-size-base * 0.85)); // ~12px",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "headings-font-family",
-                        "description": "By default, this inherits from the `<body>`",
-                        "value": "inherit",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "headings-font-weight",
-                        "description": "Font weight for headings",
-                        "value": "500",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "headings-line-height",
-                        "description": "Line height for headings",
-                        "value": "1.1",
-                        "state": "Implemented for 5.0"
-                      },
-                      {
-                        "title": "headings-color",
-                        "description": "By default, this inherits from the `<body>`",
-                        "value": "inherit",
-                        "state": "Implemented for 5.0"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessElementsVariables/lessVariablesTypography",
-                  "path": "/information/overviewLess/lessElementsVariables/lessVariablesTypography",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "font-family-sans-serif",
+                      "state": "implemented",
+                      "value": "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+                    },
+                    {
+                      "title": "font-family-serif",
+                      "state": "implemented",
+                      "value": "Georgia, \"Times New Roman\", Times, serif"
+                    },
+                    {
+                      "description": "Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.",
+                      "title": "font-family-monospace",
+                      "state": "implemented",
+                      "value": "Menlo, Monaco, Consolas, \"Courier New\", monospace"
+                    },
+                    {
+                      "title": "font-family-base",
+                      "state": "implemented",
+                      "value": "@font-family-sans-serif"
+                    },
+                    {
+                      "title": "font-size-base",
+                      "state": "implemented",
+                      "value": "14px"
+                    },
+                    {
+                      "title": "font-size-large",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.25))"
+                    },
+                    {
+                      "title": "font-size-small",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 0.85))"
+                    },
+                    {
+                      "title": "font-size-h1",
+                      "state": "implemented",
+                      "value": "floor((@font-size-base * 2.6))"
+                    },
+                    {
+                      "title": "font-size-h2",
+                      "state": "implemented",
+                      "value": "floor((@font-size-base * 2.15))"
+                    },
+                    {
+                      "title": "font-size-h3",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.7))"
+                    },
+                    {
+                      "title": "font-size-h4",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.25))"
+                    },
+                    {
+                      "title": "font-size-h5",
+                      "state": "implemented",
+                      "value": "@font-size-base"
+                    },
+                    {
+                      "title": "font-size-h6",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 0.85))"
+                    },
+                    {
+                      "description": "Unit-less `line-height` for use in components like buttons.",
+                      "title": "line-height-base",
+                      "state": "implemented",
+                      "value": "1.428571429"
+                    },
+                    {
+                      "description": "Computed \"line-height\" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.",
+                      "title": "line-height-computed",
+                      "state": "implemented",
+                      "value": "floor((@font-size-base * @line-height-base))"
+                    },
+                    {
+                      "description": "By default, this inherits from the `<body>`.",
+                      "title": "headings-font-family",
+                      "state": "implemented",
+                      "value": "inherit"
+                    },
+                    {
+                      "title": "headings-font-weight",
+                      "state": "implemented",
+                      "value": "500"
+                    },
+                    {
+                      "title": "headings-line-height",
+                      "state": "implemented",
+                      "value": "1.1"
+                    },
+                    {
+                      "title": "headings-color",
+                      "state": "implemented",
+                      "value": "inherit"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessImagesVariablesGroup",
+                  "title": "Images",
+                  "description": "Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Load fonts from this directory.",
+                      "title": "icon-font-path",
+                      "state": "implemented",
+                      "value": "\"../fonts/\""
+                    },
+                    {
+                      "description": "File name for all font files.",
+                      "title": "icon-font-name",
+                      "state": "implemented",
+                      "value": "\"glyphicons-halflings-regular\""
+                    },
+                    {
+                      "description": "Element ID within SVG icon file.",
+                      "title": "icon-font-svg-id",
+                      "state": "implemented",
+                      "value": "\"glyphicons_halflingsregular\""
+                    }
+                  ]
+                },
+                {
+                  "id": "lessButtonsVariablesGroup",
+                  "title": "Buttons",
+                  "description": "For each of Bootstrap's buttons, define text, background and border color.",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "btn-font-weight",
+                      "state": "implemented",
+                      "value": "normal"
+                    },
+                    {
+                      "title": "btn-default-color",
+                      "state": "implemented",
+                      "value": "#333"
+                    },
+                    {
+                      "title": "btn-default-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "btn-default-border",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "title": "btn-primary-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "btn-primary-bg",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "title": "btn-primary-border",
+                      "state": "implemented",
+                      "value": "darken(@btn-primary-bg, 5%)"
+                    },
+                    {
+                      "title": "btn-success-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "btn-success-bg",
+                      "state": "implemented",
+                      "value": "@brand-success"
+                    },
+                    {
+                      "title": "btn-success-border",
+                      "state": "implemented",
+                      "value": "darken(@btn-success-bg, 5%)"
+                    },
+                    {
+                      "title": "btn-info-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "btn-info-bg",
+                      "state": "implemented",
+                      "value": "@brand-info"
+                    },
+                    {
+                      "title": "btn-info-border",
+                      "state": "implemented",
+                      "value": "darken(@btn-info-bg, 5%)"
+                    },
+                    {
+                      "title": "btn-warning-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "btn-warning-bg",
+                      "state": "implemented",
+                      "value": "@brand-warning"
+                    },
+                    {
+                      "title": "btn-warning-border",
+                      "state": "implemented",
+                      "value": "darken(@btn-warning-bg, 5%)"
+                    },
+                    {
+                      "title": "btn-danger-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "btn-danger-bg",
+                      "state": "implemented",
+                      "value": "@brand-danger"
+                    },
+                    {
+                      "title": "btn-danger-border",
+                      "state": "implemented",
+                      "value": "darken(@btn-danger-bg, 5%)"
+                    },
+                    {
+                      "title": "btn-link-disabled-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "title": "Collections",
-              "id": "lessCollectionVariables",
+              "id": "lessCollectionsVariablesCategory",
+              "title": "Collections Variables",
               "items": [
                 {
-                  "id": "lessVariablesDialogs",
-                  "title": "Dialogs",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesDialogs",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesDialogs",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesActions",
-                  "title": "Actions",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesActions",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesActions",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesCallouts",
-                  "title": "Callouts",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCallouts",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCallouts",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesCharts",
-                  "title": "Charts",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCharts",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCharts",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesContainers",
-                  "title": "Containers",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesContainers",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesContainers",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesCalendars",
-                  "title": "Calendars",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesCalendars",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesCalendars",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesForms",
-                  "title": "Forms",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesForms",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesForms",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesMaps",
-                  "title": "Maps",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesMaps",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMaps",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesMedia",
-                  "title": "Media",
-                  "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesMedia",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesMedia",
-                  "order": 100
-                },
-                {
-                  "id": "lessVariablesNavigation",
+                  "id": "lessNavigationVariablesGroup",
                   "title": "Navigation",
+                  "description": "Dropdown menu container and contents.",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesNavigation",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesNavigation",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Background for the dropdown menu.",
+                      "title": "dropdown-bg",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "description": "Dropdown menu `border-color`.",
+                      "title": "dropdown-border",
+                      "state": "implemented",
+                      "value": "rgba(0, 0, 0, 0.15)"
+                    },
+                    {
+                      "description": "Dropdown menu `border-color` **for IE8**.",
+                      "title": "dropdown-fallback-border",
+                      "state": "implemented",
+                      "value": "rgb(204, 204, 204)"
+                    },
+                    {
+                      "description": "Divider color for between dropdown items.",
+                      "title": "dropdown-divider-bg",
+                      "state": "implemented",
+                      "value": "rgb(229, 229, 229)"
+                    },
+                    {
+                      "description": "Dropdown link text color.",
+                      "title": "dropdown-link-color",
+                      "state": "implemented",
+                      "value": "@gray-dark"
+                    },
+                    {
+                      "description": "Hover color for dropdown links.",
+                      "title": "dropdown-link-hover-color",
+                      "state": "implemented",
+                      "value": "darken(@gray-dark, 5%)"
+                    },
+                    {
+                      "description": "Hover background for dropdown links.",
+                      "title": "dropdown-link-hover-bg",
+                      "state": "implemented",
+                      "value": "@il-sidebar-bg-color"
+                    },
+                    {
+                      "description": "Active dropdown menu item text color.",
+                      "title": "dropdown-link-active-color",
+                      "state": "implemented",
+                      "value": "@component-active-color"
+                    },
+                    {
+                      "description": "Active dropdown menu item background color.",
+                      "title": "dropdown-link-active-bg",
+                      "state": "implemented",
+                      "value": "rgb(65, 189, 157)"
+                    },
+                    {
+                      "description": "Disabled dropdown menu item background color.",
+                      "title": "dropdown-link-disabled-color",
+                      "state": "implemented",
+                      "value": "rgb(116, 121, 133)"
+                    },
+                    {
+                      "description": "Text color for headers within dropdown menus.",
+                      "title": "dropdown-header-color",
+                      "state": "implemented",
+                      "value": "rgb(116, 121, 133)"
+                    },
+                    {
+                      "description": "Deprecated `@dropdown-caret-color` as of v3.1.0",
+                      "title": "dropdown-caret-color",
+                      "state": "implemented",
+                      "value": "rgb(0, 0, 0)"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesTables",
+                  "id": "lessNavbarVariablesGroup",
+                  "title": "Navbar",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "navbar-height",
+                      "state": "implemented",
+                      "value": "44px"
+                    },
+                    {
+                      "title": "navbar-margin-bottom",
+                      "state": "implemented",
+                      "value": "@line-height-computed"
+                    },
+                    {
+                      "title": "navbar-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "title": "navbar-padding-horizontal",
+                      "state": "implemented",
+                      "value": "floor((@grid-gutter-width / 2))"
+                    },
+                    {
+                      "title": "navbar-padding-vertical",
+                      "state": "implemented",
+                      "value": "((@navbar-height - @line-height-computed) / 2)"
+                    },
+                    {
+                      "title": "navbar-collapse-max-height",
+                      "state": "implemented",
+                      "value": "340px"
+                    },
+                    {
+                      "title": "navbar-default-color",
+                      "state": "implemented",
+                      "value": "#777"
+                    },
+                    {
+                      "title": "navbar-default-bg",
+                      "state": "implemented",
+                      "value": "#f8f8f8"
+                    },
+                    {
+                      "title": "navbar-default-border",
+                      "state": "implemented",
+                      "value": "darken(@navbar-default-bg, 6.5%)"
+                    },
+                    {
+                      "title": "navbar-default-link-color",
+                      "state": "implemented",
+                      "value": "#777"
+                    },
+                    {
+                      "title": "navbar-default-link-hover-color",
+                      "state": "implemented",
+                      "value": "#333"
+                    },
+                    {
+                      "title": "navbar-default-link-hover-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "navbar-default-link-active-color",
+                      "state": "implemented",
+                      "value": "#555"
+                    },
+                    {
+                      "title": "navbar-default-link-active-bg",
+                      "state": "implemented",
+                      "value": "darken(@navbar-default-bg, 6.5%)"
+                    },
+                    {
+                      "title": "navbar-default-link-disabled-color",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "title": "navbar-default-link-disabled-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "navbar-default-brand-color",
+                      "state": "implemented",
+                      "value": "@navbar-default-link-color"
+                    },
+                    {
+                      "title": "navbar-default-brand-hover-color",
+                      "state": "implemented",
+                      "value": "darken(@navbar-default-brand-color, 10%)"
+                    },
+                    {
+                      "title": "navbar-default-brand-hover-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "navbar-default-toggle-hover-bg",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "navbar-default-toggle-icon-bar-bg",
+                      "state": "implemented",
+                      "value": "#888"
+                    },
+                    {
+                      "title": "navbar-default-toggle-border-color",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "navbar-inverse-color",
+                      "state": "implemented",
+                      "value": "lighten(@gray-light, 15%)"
+                    },
+                    {
+                      "title": "navbar-inverse-bg",
+                      "state": "implemented",
+                      "value": "#222"
+                    },
+                    {
+                      "title": "navbar-inverse-border",
+                      "state": "implemented",
+                      "value": "darken(@navbar-inverse-bg, 10%)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-color",
+                      "state": "implemented",
+                      "value": "lighten(@gray-light, 15%)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-hover-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "navbar-inverse-link-hover-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "navbar-inverse-link-active-color",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-link-hover-color"
+                    },
+                    {
+                      "title": "navbar-inverse-link-active-bg",
+                      "state": "implemented",
+                      "value": "darken(@navbar-inverse-bg, 10%)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-disabled-color",
+                      "state": "implemented",
+                      "value": "#444"
+                    },
+                    {
+                      "title": "navbar-inverse-link-disabled-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "navbar-inverse-brand-color",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-link-color"
+                    },
+                    {
+                      "title": "navbar-inverse-brand-hover-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "navbar-inverse-brand-hover-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "navbar-inverse-toggle-hover-bg",
+                      "state": "implemented",
+                      "value": "#333"
+                    },
+                    {
+                      "title": "navbar-inverse-toggle-icon-bar-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "navbar-inverse-toggle-border-color",
+                      "state": "implemented",
+                      "value": "#333"
+                    },
+                    {
+                      "title": "nav-link-padding",
+                      "state": "implemented",
+                      "value": "10px 15px"
+                    },
+                    {
+                      "title": "nav-link-hover-bg",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "title": "nav-disabled-link-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "title": "nav-disabled-link-hover-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "title": "nav-tabs-border-color",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "nav-tabs-link-hover-border-color",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "title": "nav-tabs-active-link-hover-bg",
+                      "state": "implemented",
+                      "value": "@body-bg"
+                    },
+                    {
+                      "title": "nav-tabs-active-link-hover-color",
+                      "state": "implemented",
+                      "value": "@gray"
+                    },
+                    {
+                      "title": "nav-tabs-active-link-hover-border-color",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "nav-tabs-justified-link-border-color",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "nav-tabs-justified-active-link-border-color",
+                      "state": "implemented",
+                      "value": "@body-bg"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessFormsVariablesGroup",
+                  "title": "Forms",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "`<input>` background color",
+                      "title": "input-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "`<input disabled>` background color",
+                      "title": "input-bg-disabled",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "description": "Text color for `<input>`s",
+                      "title": "input-color",
+                      "state": "implemented",
+                      "value": "@gray"
+                    },
+                    {
+                      "description": "`<input>` border color",
+                      "title": "input-border",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "description": "Default `.form-control` border radius",
+                      "title": "input-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "description": "Large `.form-control` border radius",
+                      "title": "input-border-radius-large",
+                      "state": "implemented",
+                      "value": "@border-radius-large"
+                    },
+                    {
+                      "description": "Small `.form-control` border radius",
+                      "title": "input-border-radius-small",
+                      "state": "implemented",
+                      "value": "@border-radius-small"
+                    },
+                    {
+                      "description": "Border color for inputs on focus",
+                      "title": "input-border-focus",
+                      "state": "implemented",
+                      "value": "#66afe9"
+                    },
+                    {
+                      "description": "Placeholder text color",
+                      "title": "input-color-placeholder",
+                      "state": "implemented",
+                      "value": "#999"
+                    },
+                    {
+                      "description": "Default `.form-control` height",
+                      "title": "input-height-base",
+                      "state": "implemented",
+                      "value": "(@line-height-computed + (@padding-base-vertical * 2) + 2)"
+                    },
+                    {
+                      "description": "Large `.form-control` height",
+                      "title": "input-height-large",
+                      "state": "implemented",
+                      "value": "(ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2)"
+                    },
+                    {
+                      "description": "Small `.form-control` height",
+                      "title": "input-height-small",
+                      "state": "implemented",
+                      "value": "(floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2)"
+                    },
+                    {
+                      "description": "`.form-group` margin",
+                      "title": "form-group-margin-bottom",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "title": "legend-color",
+                      "state": "implemented",
+                      "value": "@gray-dark"
+                    },
+                    {
+                      "title": "legend-border-color",
+                      "state": "implemented",
+                      "value": "#e5e5e5"
+                    },
+                    {
+                      "description": "Background color for textual input addons",
+                      "title": "input-group-addon-bg",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "description": "Border color for textual input addons",
+                      "title": "input-group-addon-border-color",
+                      "state": "implemented",
+                      "value": "@input-border"
+                    },
+                    {
+                      "description": "Disabled cursor for form controls and buttons.",
+                      "title": "cursor-disabled",
+                      "state": "implemented",
+                      "value": "not-allowed"
+                    },
+                    {
+                      "title": "ilFormInputFontSize",
+                      "state": "implemented",
+                      "value": "@font-size-small"
+                    },
+                    {
+                      "title": "input-height-base",
+                      "state": "implemented",
+                      "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)"
+                    },
+                    {
+                      "title": "ilFormColor",
+                      "state": "implemented",
+                      "value": "#808080"
+                    },
+                    {
+                      "title": "ilFormBgColor",
+                      "state": "implemented",
+                      "value": "#fdfdfd"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessTablesVariablesGroup",
                   "title": "Tables",
+                  "description": "Customizes the `.table` component with basic values, each used across all table variations.",
                   "type": "less",
-                  "fullPath": "app/data/information/overviewLess/lessCollectionVariables/lessVariablesTables",
-                  "path": "/information/overviewLess/lessCollectionVariables/lessVariablesTables",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "title": "Layouts",
-              "id": "lessLayoutVariables",
-              "items": [
-                {
-                  "id": "lessVariablesContent",
-                  "title": "Content Section",
-                  "type": "less",
-                  "description": "Variables used to customize the ILIAS Content section",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "Todo",
-                        "description": "Todo",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesContent",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesContent",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Padding for `<th>`s and `<td>`s.",
+                      "title": "table-cell-padding",
+                      "state": "implemented",
+                      "value": "8px"
+                    },
+                    {
+                      "description": "Padding for cells in `.table-condensed`.",
+                      "title": "table-condensed-cell-padding",
+                      "state": "implemented",
+                      "value": "5px"
+                    },
+                    {
+                      "description": "Default background color used for all tables.",
+                      "title": "table-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "description": "Background color used for `.table-striped`.",
+                      "title": "table-bg-accent",
+                      "state": "implemented",
+                      "value": "#f9f9f9"
+                    },
+                    {
+                      "description": "Background color used for `.table-hover`.",
+                      "title": "table-bg-hover",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "title": "table-bg-active",
+                      "state": "implemented",
+                      "value": "@table-bg-hover"
+                    },
+                    {
+                      "description": "Border color for table and cell borders.",
+                      "title": "table-border-color",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "pagination-color",
+                      "state": "implemented",
+                      "value": "@link-color"
+                    },
+                    {
+                      "title": "pagination-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "pagination-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "pagination-hover-color",
+                      "state": "implemented",
+                      "value": "@link-hover-color"
+                    },
+                    {
+                      "title": "pagination-hover-bg",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "title": "pagination-hover-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "pagination-active-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "pagination-active-bg",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "title": "pagination-active-border",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "title": "pagination-disabled-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "title": "pagination-disabled-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "pagination-disabled-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesFooter",
-                  "title": "Footer",
+                  "id": "lessCalloutsVariablesGroup",
+                  "title": "Callouts",
+                  "description": "Description missing",
                   "type": "less",
-                  "description": "Variables used to customize the ILIAS Footer",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "Todo",
-                        "description": "Todo",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesFooter",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesFooter",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "nav-pills-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "title": "nav-pills-active-link-hover-bg",
+                      "state": "implemented",
+                      "value": "@component-active-bg"
+                    },
+                    {
+                      "title": "nav-pills-active-link-hover-color",
+                      "state": "implemented",
+                      "value": "@component-active-color"
+                    },
+                    {
+                      "title": "pager-bg",
+                      "state": "implemented",
+                      "value": "@pagination-bg"
+                    },
+                    {
+                      "title": "pager-border",
+                      "state": "implemented",
+                      "value": "@pagination-border"
+                    },
+                    {
+                      "title": "pager-border-radius",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "title": "pager-hover-bg",
+                      "state": "implemented",
+                      "value": "@pagination-hover-bg"
+                    },
+                    {
+                      "title": "pager-active-bg",
+                      "state": "implemented",
+                      "value": "@pagination-active-bg"
+                    },
+                    {
+                      "title": "pager-active-color",
+                      "state": "implemented",
+                      "value": "@pagination-active-color"
+                    },
+                    {
+                      "title": "pager-disabled-color",
+                      "state": "implemented",
+                      "value": "@pagination-disabled-color"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesHeader",
-                  "title": "Header Main",
+                  "id": "lessStructureVariablesGroup",
+                  "title": "Structure",
+                  "description": "Description missing",
                   "type": "less",
-                  "description": "Variables used to customize the ILIAS Header section",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "il-header-height",
-                        "description": "Total height of all three header sections",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-height-sm",
-                        "description": "Total height of all three header sections in the responsive view",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-bg",
-                        "description": "Background color of the header section",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-vertical",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-horizontal",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-top",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-vertical",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-bottom",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-left",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-right",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeader",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeader",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "jumbotron-padding",
+                      "state": "implemented",
+                      "value": "30px"
+                    },
+                    {
+                      "title": "jumbotron-color",
+                      "state": "implemented",
+                      "value": "inherit"
+                    },
+                    {
+                      "title": "jumbotron-bg",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "title": "jumbotron-heading-color",
+                      "state": "implemented",
+                      "value": "inherit"
+                    },
+                    {
+                      "title": "jumbotron-font-size",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.5))"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesHeaderBranding",
-                  "title": "Header Branding",
+                  "id": "lessFormStatesAndAlertsVariablesGroup",
+                  "title": "Form states and alerts",
+                  "description": "Define colors for form feedback states and, by default, alerts.",
                   "type": "less",
-                  "description": "Variables used to customize the ILIAS Header section",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "il-header-branding-top",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-left",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-right",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-height",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-top-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-left-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-right-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-height-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-height-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-font-size",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-font-size-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-logo-size",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-logo-size-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-text-logo-padding",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-text-logo-padding-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-branding-bg",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderBranding",
-                  "order": 100
+                  "state": "static",
+                  "variables": []
                 },
                 {
-                  "id": "lessVariablesHeaderMainMenu",
-                  "title": "Header Main Menu",
+                  "id": "lessFormStatesAndAlertsVariablesGroup",
+                  "title": "Form states and alerts",
+                  "description": "Description missing",
                   "type": "less",
-                  "description": "Variables used to customize the ILIAS Header section",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "il-header-main-border-width",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-border-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-border-width-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-top",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-top-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-left",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-left-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-right",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-right-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-float",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-color",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-active-color",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-open-color",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-bg",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-active-bg",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-open-bg",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-border",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-border-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-border-radius",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-main-menu-border-radius-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderMainMenu",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "state-success-text",
+                      "state": "implemented",
+                      "value": "rgb(56, 149, 124)"
+                    },
+                    {
+                      "title": "state-success-bg",
+                      "state": "implemented",
+                      "value": "rgb(199, 230, 222)"
+                    },
+                    {
+                      "title": "state-success-border",
+                      "state": "implemented",
+                      "value": "darken(spin(@state-success-bg, -10), 5%)"
+                    },
+                    {
+                      "title": "state-info-text",
+                      "state": "implemented",
+                      "value": "rgb(78, 107, 159)"
+                    },
+                    {
+                      "title": "state-info-bg",
+                      "state": "implemented",
+                      "value": "rgb(228, 232, 239)"
+                    },
+                    {
+                      "title": "state-info-border",
+                      "state": "implemented",
+                      "value": "darken(spin(@state-info-bg, -10), 7%)"
+                    },
+                    {
+                      "title": "state-warning-text",
+                      "state": "implemented",
+                      "value": "rgb(138, 109, 59)"
+                    },
+                    {
+                      "title": "state-warning-bg",
+                      "state": "implemented",
+                      "value": "rgb(247, 244, 192)"
+                    },
+                    {
+                      "title": "state-warning-border",
+                      "state": "implemented",
+                      "value": "darken(spin(@state-warning-bg, -10), 5%)"
+                    },
+                    {
+                      "title": "state-danger-text",
+                      "state": "implemented",
+                      "value": "rgb(179, 62, 99)"
+                    },
+                    {
+                      "title": "state-danger-bg",
+                      "state": "implemented",
+                      "value": "rgb(244, 212, 220)"
+                    },
+                    {
+                      "title": "state-danger-border",
+                      "state": "implemented",
+                      "value": "darken(spin(@state-danger-bg, -10), 5%)"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesHeaderTopNavigation",
-                  "title": "Header Top Navigation",
+                  "id": "lessTooltipsVariablesGroup",
+                  "title": "Tooltips",
+                  "description": "Description missing",
                   "type": "less",
-                  "description": "Variables used to customize the ILIAS Header section",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "l-header-top-nav-top",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-top-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-left",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-left-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-right",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-border-right-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-float",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-margin-right",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-margin-right-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-min-width",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-min-width-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-min-height",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-min-height-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-font-size",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-font-size-sm",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-color",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-hover-color",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-bg",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      },
-                      {
-                        "title": "il-header-top-nav-box-hover-bg",
-                        "description": "Todo, add description",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesHeaderTopNavigation",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Tooltip max width",
+                      "title": "tooltip-max-width",
+                      "state": "implemented",
+                      "value": "200px"
+                    },
+                    {
+                      "description": "Tooltip text color",
+                      "title": "tooltip-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Tooltip background color",
+                      "title": "tooltip-bg",
+                      "state": "implemented",
+                      "value": "#000"
+                    },
+                    {
+                      "title": "tooltip-opacity",
+                      "state": "implemented",
+                      "value": ".9"
+                    },
+                    {
+                      "description": "Tooltip arrow width",
+                      "title": "tooltip-arrow-width",
+                      "state": "implemented",
+                      "value": "5px"
+                    },
+                    {
+                      "description": "Tooltip arrow color",
+                      "title": "tooltip-arrow-color",
+                      "state": "implemented",
+                      "value": "@tooltip-bg"
+                    }
+                  ]
                 },
                 {
-                  "id": "lessVariablesSidebars",
-                  "title": "Sidebars",
+                  "id": "lessPopoversVariablesGroup",
+                  "title": "Popovers",
+                  "description": "Description missing",
                   "type": "less",
-                  "description": "Variables used to customize the ILIAS Sidebars",
-                  "variables": {
-                    "ilias": [
-                      {
-                        "title": "Todo",
-                        "description": "Todo",
-                        "state": "Proposal"
-                      }
-                    ]
-                  },
-                  "fullPath": "app/data/information/overviewLess/lessLayoutVariables/lessVariablesSidebars",
-                  "path": "/information/overviewLess/lessLayoutVariables/lessVariablesSidebars",
-                  "order": 100
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Popover body background color",
+                      "title": "popover-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Popover maximum width",
+                      "title": "popover-max-width",
+                      "state": "implemented",
+                      "value": "276px"
+                    },
+                    {
+                      "description": "Popover border color",
+                      "title": "popover-border-color",
+                      "state": "implemented",
+                      "value": "rgba(0,0,0,.2)"
+                    },
+                    {
+                      "description": "Popover fallback border color",
+                      "title": "popover-fallback-border-color",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "description": "Popover title background color",
+                      "title": "popover-title-bg",
+                      "state": "implemented",
+                      "value": "darken(@popover-bg, 3%)"
+                    },
+                    {
+                      "description": "Popover arrow width",
+                      "title": "popover-arrow-width",
+                      "state": "implemented",
+                      "value": "10px"
+                    },
+                    {
+                      "description": "Popover arrow color",
+                      "title": "popover-arrow-color",
+                      "state": "implemented",
+                      "value": "@popover-bg"
+                    },
+                    {
+                      "description": "Popover outer arrow width",
+                      "title": "popover-arrow-outer-width",
+                      "state": "implemented",
+                      "value": "(@popover-arrow-width + 1)"
+                    },
+                    {
+                      "description": "Popover outer arrow color",
+                      "title": "popover-arrow-outer-color",
+                      "state": "implemented",
+                      "value": "fadein(@popover-border-color, 5%)"
+                    },
+                    {
+                      "description": "Popover outer arrow fallback color",
+                      "title": "popover-arrow-outer-fallback-color",
+                      "state": "implemented",
+                      "value": "darken(@popover-fallback-border-color, 20%)"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessLabelsVariablesGroup",
+                  "title": "Labels",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Default label background color",
+                      "title": "label-default-bg",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Primary label background color",
+                      "title": "label-primary-bg",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "description": "Success label background color",
+                      "title": "label-success-bg",
+                      "state": "implemented",
+                      "value": "@brand-success"
+                    },
+                    {
+                      "description": "Info label background color",
+                      "title": "label-info-bg",
+                      "state": "implemented",
+                      "value": "@brand-info"
+                    },
+                    {
+                      "description": "Warning label background color",
+                      "title": "label-warning-bg",
+                      "state": "implemented",
+                      "value": "@brand-warning"
+                    },
+                    {
+                      "description": "Danger label background color",
+                      "title": "label-danger-bg",
+                      "state": "implemented",
+                      "value": "@brand-danger"
+                    },
+                    {
+                      "description": "Default label text color",
+                      "title": "label-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Default text color of a linked label",
+                      "title": "label-link-hover-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessModalsVariablesGroup",
+                  "title": "Modals",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Padding applied to the modal body",
+                      "title": "modal-inner-padding",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "description": "Padding applied to the modal title",
+                      "title": "modal-title-padding",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "description": "Modal title line-height",
+                      "title": "modal-title-line-height",
+                      "state": "implemented",
+                      "value": "@line-height-base"
+                    },
+                    {
+                      "description": "Background color of modal content area",
+                      "title": "modal-content-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Modal content border color",
+                      "title": "modal-content-border-color",
+                      "state": "implemented",
+                      "value": "rgba(0,0,0,.2)"
+                    },
+                    {
+                      "description": "Modal content border color **for IE8**",
+                      "title": "modal-content-fallback-border-color",
+                      "state": "implemented",
+                      "value": "#999"
+                    },
+                    {
+                      "description": "Modal backdrop background color",
+                      "title": "modal-backdrop-bg",
+                      "state": "implemented",
+                      "value": "#000"
+                    },
+                    {
+                      "description": "Modal backdrop opacity",
+                      "title": "modal-backdrop-opacity",
+                      "state": "implemented",
+                      "value": ".5"
+                    },
+                    {
+                      "description": "Modal header border color",
+                      "title": "modal-header-border-color",
+                      "state": "implemented",
+                      "value": "#e5e5e5"
+                    },
+                    {
+                      "description": "Modal footer border color",
+                      "title": "modal-footer-border-color",
+                      "state": "implemented",
+                      "value": "@modal-header-border-color"
+                    },
+                    {
+                      "title": "modal-lg",
+                      "state": "implemented",
+                      "value": "900px"
+                    },
+                    {
+                      "title": "modal-md",
+                      "state": "implemented",
+                      "value": "600px"
+                    },
+                    {
+                      "title": "modal-sm",
+                      "state": "implemented",
+                      "value": "300px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessAlertsVariablesGroup",
+                  "title": "Alerts",
+                  "description": "Define alert colors, border radius, and padding.",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "alert-padding",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "title": "alert-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "title": "alert-link-font-weight",
+                      "state": "implemented",
+                      "value": "bold"
+                    },
+                    {
+                      "title": "alert-success-bg",
+                      "state": "implemented",
+                      "value": "@state-success-bg"
+                    },
+                    {
+                      "title": "alert-success-text",
+                      "state": "implemented",
+                      "value": "@state-success-text"
+                    },
+                    {
+                      "title": "alert-success-border",
+                      "state": "implemented",
+                      "value": "@state-success-border"
+                    },
+                    {
+                      "title": "alert-info-bg",
+                      "state": "implemented",
+                      "value": "@state-info-bg"
+                    },
+                    {
+                      "title": "alert-info-text",
+                      "state": "implemented",
+                      "value": "@state-info-text"
+                    },
+                    {
+                      "title": "alert-info-border",
+                      "state": "implemented",
+                      "value": "@state-info-border"
+                    },
+                    {
+                      "title": "alert-warning-bg",
+                      "state": "implemented",
+                      "value": "@state-warning-bg"
+                    },
+                    {
+                      "title": "alert-warning-text",
+                      "state": "implemented",
+                      "value": "@state-warning-text"
+                    },
+                    {
+                      "title": "alert-warning-border",
+                      "state": "implemented",
+                      "value": "@state-warning-border"
+                    },
+                    {
+                      "title": "alert-danger-bg",
+                      "state": "implemented",
+                      "value": "@state-danger-bg"
+                    },
+                    {
+                      "title": "alert-danger-text",
+                      "state": "implemented",
+                      "value": "@state-danger-text"
+                    },
+                    {
+                      "title": "alert-danger-border",
+                      "state": "implemented",
+                      "value": "@state-danger-border"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessProgressBarsVariablesGroup",
+                  "title": "Progress bars",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Background color of the whole progress component",
+                      "title": "progress-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "description": "Progress bar text color",
+                      "title": "progress-bar-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Variable for setting rounded corners on progress bar.",
+                      "title": "progress-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "description": "Default progress bar color",
+                      "title": "progress-bar-bg",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "description": "Success progress bar color",
+                      "title": "progress-bar-success-bg",
+                      "state": "implemented",
+                      "value": "@brand-success"
+                    },
+                    {
+                      "description": "Warning progress bar color",
+                      "title": "progress-bar-warning-bg",
+                      "state": "implemented",
+                      "value": "@brand-warning"
+                    },
+                    {
+                      "description": "Danger progress bar color",
+                      "title": "progress-bar-danger-bg",
+                      "state": "implemented",
+                      "value": "@brand-danger"
+                    },
+                    {
+                      "description": "Info progress bar color",
+                      "title": "progress-bar-info-bg",
+                      "state": "implemented",
+                      "value": "@brand-info"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessListGroupVariablesGroup",
+                  "title": "List group",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Background color on `.list-group-item`",
+                      "title": "list-group-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "`.list-group-item` border color",
+                      "title": "list-group-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "description": "List group border radius",
+                      "title": "list-group-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "description": "Background color of single list items on hover",
+                      "title": "list-group-hover-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "description": "Text color of active list items",
+                      "title": "list-group-active-color",
+                      "state": "implemented",
+                      "value": "@component-active-color"
+                    },
+                    {
+                      "description": "Background color of active list items",
+                      "title": "list-group-active-bg",
+                      "state": "implemented",
+                      "value": "@component-active-bg"
+                    },
+                    {
+                      "description": "Border color of active list elements",
+                      "title": "list-group-active-border",
+                      "state": "implemented",
+                      "value": "@list-group-active-bg"
+                    },
+                    {
+                      "description": "Text color for content within active list items",
+                      "title": "list-group-active-text-color",
+                      "state": "implemented",
+                      "value": "lighten(@list-group-active-bg, 40%)"
+                    },
+                    {
+                      "description": "Text color of disabled list items",
+                      "title": "list-group-disabled-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Background color of disabled list items",
+                      "title": "list-group-disabled-bg",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "description": "Text color for content within disabled list items",
+                      "title": "list-group-disabled-text-color",
+                      "state": "implemented",
+                      "value": "@list-group-disabled-color"
+                    },
+                    {
+                      "title": "list-group-link-color",
+                      "state": "implemented",
+                      "value": "#555"
+                    },
+                    {
+                      "title": "list-group-link-hover-color",
+                      "state": "implemented",
+                      "value": "@list-group-link-color"
+                    },
+                    {
+                      "title": "list-group-link-heading-color",
+                      "state": "implemented",
+                      "value": "#333"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessPanelsVariablesGroup",
+                  "title": "Panels",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "panel-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "panel-body-padding",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "title": "panel-heading-padding",
+                      "state": "implemented",
+                      "value": "10px 15px"
+                    },
+                    {
+                      "title": "panel-footer-padding",
+                      "state": "implemented",
+                      "value": "@panel-heading-padding"
+                    },
+                    {
+                      "title": "panel-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "description": "Border color for elements within panels",
+                      "title": "panel-inner-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "panel-footer-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "title": "panel-default-text",
+                      "state": "implemented",
+                      "value": "@gray-dark"
+                    },
+                    {
+                      "title": "panel-default-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "title": "panel-default-heading-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "title": "panel-primary-text",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "panel-primary-border",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "title": "panel-primary-heading-bg",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "title": "panel-success-text",
+                      "state": "implemented",
+                      "value": "@state-success-text"
+                    },
+                    {
+                      "title": "panel-success-border",
+                      "state": "implemented",
+                      "value": "@state-success-border"
+                    },
+                    {
+                      "title": "panel-success-heading-bg",
+                      "state": "implemented",
+                      "value": "@state-success-bg"
+                    },
+                    {
+                      "title": "panel-info-text",
+                      "state": "implemented",
+                      "value": "@state-info-text"
+                    },
+                    {
+                      "title": "panel-info-border",
+                      "state": "implemented",
+                      "value": "@state-info-border"
+                    },
+                    {
+                      "title": "panel-info-heading-bg",
+                      "state": "implemented",
+                      "value": "@state-info-bg"
+                    },
+                    {
+                      "title": "panel-warning-text",
+                      "state": "implemented",
+                      "value": "@state-warning-text"
+                    },
+                    {
+                      "title": "panel-warning-border",
+                      "state": "implemented",
+                      "value": "@state-warning-border"
+                    },
+                    {
+                      "title": "panel-warning-heading-bg",
+                      "state": "implemented",
+                      "value": "@state-warning-bg"
+                    },
+                    {
+                      "title": "panel-danger-text",
+                      "state": "implemented",
+                      "value": "@state-danger-text"
+                    },
+                    {
+                      "title": "panel-danger-border",
+                      "state": "implemented",
+                      "value": "@state-danger-border"
+                    },
+                    {
+                      "title": "panel-danger-heading-bg",
+                      "state": "implemented",
+                      "value": "@state-danger-bg"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessThumbnailsVariablesGroup",
+                  "title": "Thumbnails",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Padding around the thumbnail image",
+                      "title": "thumbnail-padding",
+                      "state": "implemented",
+                      "value": "4px"
+                    },
+                    {
+                      "description": "Thumbnail background color",
+                      "title": "thumbnail-bg",
+                      "state": "implemented",
+                      "value": "@body-bg"
+                    },
+                    {
+                      "description": "Thumbnail border color",
+                      "title": "thumbnail-border",
+                      "state": "implemented",
+                      "value": "#ddd"
+                    },
+                    {
+                      "description": "Thumbnail border radius",
+                      "title": "thumbnail-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "description": "Custom text color for thumbnail captions",
+                      "title": "thumbnail-caption-color",
+                      "state": "implemented",
+                      "value": "@text-color"
+                    },
+                    {
+                      "description": "Padding around the thumbnail caption",
+                      "title": "thumbnail-caption-padding",
+                      "state": "implemented",
+                      "value": "9px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessWellsVariablesGroup",
+                  "title": "Wells",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "well-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "title": "well-border",
+                      "state": "implemented",
+                      "value": "darken(@well-bg, 7%)"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessBadgesVariablesGroup",
+                  "title": "Badges",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "badge-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "description": "Linked badge text color on hover",
+                      "title": "badge-link-hover-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "badge-bg",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Badge text color in active nav link",
+                      "title": "badge-active-color",
+                      "state": "implemented",
+                      "value": "@link-color"
+                    },
+                    {
+                      "description": "Badge background color in active nav link",
+                      "title": "badge-active-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "badge-font-weight",
+                      "state": "implemented",
+                      "value": "bold"
+                    },
+                    {
+                      "title": "badge-line-height",
+                      "state": "implemented",
+                      "value": "1"
+                    },
+                    {
+                      "title": "badge-border-radius",
+                      "state": "implemented",
+                      "value": "10px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessBreadcrumbsVariablesGroup",
+                  "title": "Breadcrumbs",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "breadcrumb-padding-vertical",
+                      "state": "implemented",
+                      "value": "8px"
+                    },
+                    {
+                      "title": "breadcrumb-padding-horizontal",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "description": "Breadcrumb background color",
+                      "title": "breadcrumb-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "description": "Breadcrumb text color",
+                      "title": "breadcrumb-color",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "description": "Text color of current page in the breadcrumb",
+                      "title": "breadcrumb-active-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Textual separator for between breadcrumb elements",
+                      "title": "breadcrumb-separator",
+                      "state": "implemented",
+                      "value": "\"/\""
+                    }
+                  ]
+                },
+                {
+                  "id": "lessCarouselVariablesGroup",
+                  "title": "Carousel",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "carousel-text-shadow",
+                      "state": "implemented",
+                      "value": "0 1px 2px rgba(0,0,0,.6)"
+                    },
+                    {
+                      "title": "carousel-control-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "carousel-control-width",
+                      "state": "implemented",
+                      "value": "15%"
+                    },
+                    {
+                      "title": "carousel-control-opacity",
+                      "state": "implemented",
+                      "value": ".5"
+                    },
+                    {
+                      "title": "carousel-control-font-size",
+                      "state": "implemented",
+                      "value": "20px"
+                    },
+                    {
+                      "title": "carousel-indicator-active-bg",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "carousel-indicator-border-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "carousel-caption-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessCloseVariablesGroup",
+                  "title": "Close",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "close-font-weight",
+                      "state": "implemented",
+                      "value": "bold"
+                    },
+                    {
+                      "title": "close-color",
+                      "state": "implemented",
+                      "value": "#000"
+                    },
+                    {
+                      "title": "close-text-shadow",
+                      "state": "implemented",
+                      "value": "0 1px 0 #fff"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessCodeVariablesGroup",
+                  "title": "Code",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "code-color",
+                      "state": "implemented",
+                      "value": "#c7254e"
+                    },
+                    {
+                      "title": "code-bg",
+                      "state": "implemented",
+                      "value": "#f9f2f4"
+                    },
+                    {
+                      "title": "kbd-color",
+                      "state": "implemented",
+                      "value": "#fff"
+                    },
+                    {
+                      "title": "kbd-bg",
+                      "state": "implemented",
+                      "value": "#333"
+                    },
+                    {
+                      "title": "pre-bg",
+                      "state": "implemented",
+                      "value": "#f5f5f5"
+                    },
+                    {
+                      "title": "pre-color",
+                      "state": "implemented",
+                      "value": "@gray-dark"
+                    },
+                    {
+                      "title": "pre-border-color",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "title": "pre-scrollable-max-height",
+                      "state": "implemented",
+                      "value": "340px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessTypeVariablesGroup",
+                  "title": "Type",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "description": "Horizontal offset for forms and lists.",
+                      "title": "component-offset-horizontal",
+                      "state": "implemented",
+                      "value": "180px"
+                    },
+                    {
+                      "description": "Text muted color",
+                      "title": "text-muted",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Abbreviations and acronyms border color",
+                      "title": "abbr-border-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Headings small color",
+                      "title": "headings-small-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Blockquote small color",
+                      "title": "blockquote-small-color",
+                      "state": "implemented",
+                      "value": "@gray-light"
+                    },
+                    {
+                      "description": "Blockquote font size",
+                      "title": "blockquote-font-size",
+                      "state": "implemented",
+                      "value": "(@font-size-base * 1.25)"
+                    },
+                    {
+                      "description": "Blockquote border color",
+                      "title": "blockquote-border-color",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "description": "Page header border color",
+                      "title": "page-header-border-color",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "description": "Width of horizontal description list titles",
+                      "title": "dl-horizontal-offset",
+                      "state": "implemented",
+                      "value": "@component-offset-horizontal"
+                    },
+                    {
+                      "description": "Horizontal line color.",
+                      "title": "hr-border",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "title": "hr-border",
+                      "state": "implemented",
+                      "value": "@gray-lighter"
+                    },
+                    {
+                      "title": "navbar-inverse-color",
+                      "state": "implemented",
+                      "value": "lighten(@gray-light, 15%)"
+                    },
+                    {
+                      "title": "navbar-inverse-bg",
+                      "state": "implemented",
+                      "value": "darken(@il-header-bg, 20%)"
+                    },
+                    {
+                      "title": "navbar-inverse-border",
+                      "state": "implemented",
+                      "value": "darken(@navbar-inverse-bg, 10%)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-color",
+                      "state": "implemented",
+                      "value": "lighten(@gray-light, 15%)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-hover-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-hover-bg",
+                      "state": "implemented",
+                      "value": "rgba(0, 0, 0, 0)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-active-color",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-link-hover-color"
+                    },
+                    {
+                      "title": "navbar-inverse-link-active-bg",
+                      "state": "implemented",
+                      "value": "darken(@navbar-inverse-bg, 10%)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-disabled-color",
+                      "state": "implemented",
+                      "value": "rgb(68, 68, 68)"
+                    },
+                    {
+                      "title": "navbar-inverse-link-disabled-bg",
+                      "state": "implemented",
+                      "value": "rgba(0, 0, 0, 0)"
+                    },
+                    {
+                      "title": "navbar-inverse-brand-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "navbar-inverse-brand-hover-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "navbar-inverse-brand-hover-bg",
+                      "state": "implemented",
+                      "value": "rgba(0, 0, 0, 0)"
+                    },
+                    {
+                      "title": "navbar-inverse-toggle-hover-bg",
+                      "state": "implemented",
+                      "value": "rgb(51, 51, 51)"
+                    },
+                    {
+                      "title": "navbar-inverse-toggle-icon-bar-bg",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "navbar-inverse-toggle-border-color",
+                      "state": "implemented",
+                      "value": "rgb(51, 51, 51)"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessIconographyVariablesGroup",
+                  "title": "Iconography",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "icon-font-path",
+                      "state": "implemented",
+                      "value": "\"/libs/bootstrap/dist/fonts/\""
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASFontsVariablesGroup",
+                  "title": "ILIAS Fonts",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "web-font-path",
+                      "state": "implemented",
+                      "value": "\"/app/static/fonts/\""
+                    }
+                  ]
+                },
+                {
+                  "id": "lessTypographyVariablesGroup",
+                  "title": "Typography",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "font-family-sans-serif",
+                      "state": "implemented",
+                      "value": "'Open Sans', Verdana, Arial, Helvetica, sans-serif"
+                    },
+                    {
+                      "title": "font-size-base",
+                      "state": "implemented",
+                      "value": "14px"
+                    },
+                    {
+                      "title": "font-size-large",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.25))"
+                    },
+                    {
+                      "title": "font-size-small",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 0.85))"
+                    },
+                    {
+                      "title": "font-size-h1",
+                      "state": "implemented",
+                      "value": "floor((@font-size-base * 1.6))"
+                    },
+                    {
+                      "title": "font-size-h2",
+                      "state": "implemented",
+                      "value": "floor((@font-size-base * 1.4))"
+                    },
+                    {
+                      "title": "font-size-h3",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.3))"
+                    },
+                    {
+                      "title": "font-size-h4",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.2))"
+                    },
+                    {
+                      "title": "font-size-h5",
+                      "state": "implemented",
+                      "value": "ceil((@font-size-base * 1.1))"
+                    },
+                    {
+                      "title": "font-size-h6",
+                      "state": "implemented",
+                      "value": "@font-size-base"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASMainVariablesGroup",
+                  "title": "ILIAS Main",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-background-images-path",
+                      "state": "implemented",
+                      "value": "\"/app/static/img/\""
+                    },
+                    {
+                      "title": "il-content-bg",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "il-icons-size-lg",
+                      "state": "implemented",
+                      "value": "45px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessIconsVariablesGroup",
+                  "title": "Icons",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-logo-color1",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    },
+                    {
+                      "title": "il-logo-color2",
+                      "state": "implemented",
+                      "value": "@brand-primary"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderVariablesGroup",
+                  "title": "ILIAS Header",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-height",
+                      "state": "implemented",
+                      "value": "115px"
+                    },
+                    {
+                      "title": "il-header-bg",
+                      "state": "implemented",
+                      "value": "rgb(31, 37, 50)"
+                    },
+                    {
+                      "title": "il-header-border-vertical",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-border-horizontal",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-border-top",
+                      "state": "implemented",
+                      "value": "@il-header-border-vertical solid transparent;//currently implemented as transparent border due to abolute positioning"
+                    },
+                    {
+                      "title": "il-header-border-bottom",
+                      "state": "implemented",
+                      "value": "@il-header-border-vertical solid transparent"
+                    },
+                    {
+                      "title": "il-header-border-left",
+                      "state": "implemented",
+                      "value": "@il-header-border-horizontal solid transparent"
+                    },
+                    {
+                      "title": "il-header-border-right",
+                      "state": "implemented",
+                      "value": "@il-header-border-horizontal solid transparent"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderSmallVariablesGroup",
+                  "title": "ILIAS Header small",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-height-sm",
+                      "state": "implemented",
+                      "value": "@navbar-height"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderTopNavVariablesGroup",
+                  "title": "ILIAS Header Top Nav",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-top-nav-top",
+                      "state": "implemented",
+                      "value": "0px"
+                    },
+                    {
+                      "title": "il-header-top-nav-left",
+                      "state": "implemented",
+                      "value": "auto"
+                    },
+                    {
+                      "title": "il-header-top-nav-right",
+                      "state": "implemented",
+                      "value": "@padding-base-horizontal"
+                    },
+                    {
+                      "title": "il-header-top-nav-float",
+                      "state": "implemented",
+                      "value": "right"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-margin-right",
+                      "state": "implemented",
+                      "value": "2px"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-min-height",
+                      "state": "implemented",
+                      "value": "50px"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-min-width",
+                      "state": "implemented",
+                      "value": "50px"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-font-size",
+                      "state": "implemented",
+                      "value": "20px"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-color",
+                      "state": "implemented",
+                      "value": "lighten(@il-header-bg, 70%)"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-hover-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-bg",
+                      "state": "implemented",
+                      "value": "lighten(@il-header-bg, 20%)"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-hover-bg",
+                      "state": "implemented",
+                      "value": "lighten(@il-header-bg, 42%)"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderTopNavSmallVariablesGroup",
+                  "title": "ILIAS Header Top Nav small",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-top-nav-top-sm",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-top-nav-left-sm",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-top-nav-right-sm",
+                      "state": "implemented",
+                      "value": "@padding-base-horizontal"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-margin-right-sm",
+                      "state": "implemented",
+                      "value": "1px"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-min-height-sm",
+                      "state": "implemented",
+                      "value": "@il-header-height-sm"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-min-width-sm",
+                      "state": "implemented",
+                      "value": "@il-header-height-sm"
+                    },
+                    {
+                      "title": "il-header-top-nav-box-font-size-sm",
+                      "state": "implemented",
+                      "value": "15px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderBrandingVariablesGroup",
+                  "title": "ILIAS Header Branding",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-branding-top",
+                      "state": "implemented",
+                      "value": "@padding-large-vertical"
+                    },
+                    {
+                      "title": "il-header-branding-left",
+                      "state": "implemented",
+                      "value": "@padding-base-horizontal"
+                    },
+                    {
+                      "title": "il-header-branding-right",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-branding-height",
+                      "state": "implemented",
+                      "value": "auto"
+                    },
+                    {
+                      "title": "il-header-branding-right",
+                      "state": "implemented",
+                      "value": "auto"
+                    },
+                    {
+                      "title": "il-header-branding-bg",
+                      "state": "implemented",
+                      "value": "transparent"
+                    },
+                    {
+                      "title": "il-header-branding-font-size",
+                      "state": "implemented",
+                      "value": "30px"
+                    },
+                    {
+                      "title": "il-header-branding-logo-font-size",
+                      "state": "implemented",
+                      "value": "@il-header-branding-font-size * 1.5"
+                    },
+                    {
+                      "title": "il-header-branding-text-logo-padding",
+                      "state": "implemented",
+                      "value": "@padding-large-horizontal"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderBrandingSmVariablesGroup",
+                  "title": "ILIAS Header Branding sm",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-branding-top-sm",
+                      "state": "implemented",
+                      "value": "@padding-small-vertical"
+                    },
+                    {
+                      "title": "il-header-branding-left-sm",
+                      "state": "implemented",
+                      "value": "@padding-base-horizontal"
+                    },
+                    {
+                      "title": "il-header-branding-right-sm",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-branding-height-sm",
+                      "state": "implemented",
+                      "value": "auto"
+                    },
+                    {
+                      "title": "il-header-branding-right-sm",
+                      "state": "implemented",
+                      "value": "auto"
+                    },
+                    {
+                      "title": "il-header-branding-font-size-sm",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-branding-logo-font-size-sm",
+                      "state": "implemented",
+                      "value": "32px"
+                    },
+                    {
+                      "title": "il-header-branding-text-logo-padding-sm",
+                      "state": "implemented",
+                      "value": "@padding-small-horizontal"
+                    },
+                    {
+                      "title": "il-header-branding-text-display-sm",
+                      "state": "implemented",
+                      "value": "none"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderMainMenuVariablesGroup",
+                  "title": "ILIAS Header Main Menu",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-main-border-width",
+                      "state": "implemented",
+                      "value": "0px"
+                    },
+                    {
+                      "title": "il-header-main-menu-top",
+                      "state": "implemented",
+                      "value": "@il-header-height - @navbar-height - @il-header-border-vertical - 2 * @il-header-main-border-width"
+                    },
+                    {
+                      "title": "il-header-main-menu-left",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-main-menu-right",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-main-menu-float",
+                      "state": "implemented",
+                      "value": "left"
+                    },
+                    {
+                      "title": "il-header-main-menu-color",
+                      "state": "implemented",
+                      "value": "rgb(31, 37, 50)"
+                    },
+                    {
+                      "title": "il-header-main-menu-active-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "il-header-main-menu-open-color",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-color"
+                    },
+                    {
+                      "title": "il-header-main-menu-bg",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-bg"
+                    },
+                    {
+                      "title": "il-header-main-menu-active-bg",
+                      "state": "implemented",
+                      "value": "rgb(65, 189, 157)"
+                    },
+                    {
+                      "title": "il-header-main-menu-open-bg",
+                      "state": "implemented",
+                      "value": "rgb(31, 37, 50)"
+                    },
+                    {
+                      "title": "il-header-main-menu-border",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-main-menu-border-radius",
+                      "state": "implemented",
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASHeaderMainMenuSmVariablesGroup",
+                  "title": "ILIAS Header Main Menu sm",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-header-main-menu-border-sm",
+                      "state": "implemented",
+                      "value": "0px"
+                    },
+                    {
+                      "title": "il-header-main-menu-border-width-sm",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-main-menu-top-sm",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-header-main-menu-left-sm",
+                      "state": "implemented",
+                      "value": "50px"
+                    },
+                    {
+                      "title": "il-header-main-menu-right-sm",
+                      "state": "implemented",
+                      "value": "auto"
+                    },
+                    {
+                      "title": "il-header-main-menu-border-radius-sm",
+                      "state": "implemented",
+                      "value": "0;//@border-radius-base"
+                    },
+                    {
+                      "title": "il-header-main-menu-border-sm",
+                      "state": "implemented",
+                      "value": "@il-header-main-menu-border-width-sm solid darken(@il-header-main-menu-bg, 10%)"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASContentGridVariablesGroup",
+                  "title": "ILIAS content grid",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-sidebar-closed-xs",
+                      "state": "implemented",
+                      "value": "0"
+                    },
+                    {
+                      "title": "il-sidebar-closed-sm",
+                      "state": "implemented",
+                      "value": "1"
+                    },
+                    {
+                      "title": "il-sidebar-closed-md",
+                      "state": "implemented",
+                      "value": "1"
+                    },
+                    {
+                      "title": "il-sidebar-closed-lg",
+                      "state": "implemented",
+                      "value": "2"
+                    },
+                    {
+                      "title": "il-sidebar-open-xs",
+                      "state": "implemented",
+                      "value": "6"
+                    },
+                    {
+                      "title": "il-sidebar-open-sm",
+                      "state": "implemented",
+                      "value": "4"
+                    },
+                    {
+                      "title": "il-sidebar-open-md",
+                      "state": "implemented",
+                      "value": "3"
+                    },
+                    {
+                      "title": "il-sidebar-open-lg",
+                      "state": "implemented",
+                      "value": "3"
+                    },
+                    {
+                      "title": "il-content-bg-color",
+                      "state": "implemented",
+                      "value": "white"
+                    },
+                    {
+                      "title": "il-content-padding-top",
+                      "state": "implemented",
+                      "value": "@il-content-padding"
+                    },
+                    {
+                      "title": "il-content-padding-bottom",
+                      "state": "implemented",
+                      "value": "@il-content-padding"
+                    },
+                    {
+                      "title": "il-content-padding",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "title": "il-content-min-height",
+                      "state": "implemented",
+                      "value": "600px"
+                    },
+                    {
+                      "title": "il-toolbar-link-gap",
+                      "state": "implemented",
+                      "value": "15px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessFormsVariablesGroup",
+                  "title": "Forms",
+                  "description": "@input-border-radius:\t0;",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "input-border",
+                      "state": "implemented",
+                      "value": "#ccc"
+                    },
+                    {
+                      "title": "input-border-focus",
+                      "state": "implemented",
+                      "value": "lighten(@brand-primary, 20%)"
+                    },
+                    {
+                      "title": "ilFormInputFontSize",
+                      "state": "implemented",
+                      "value": "@font-size-small"
+                    },
+                    {
+                      "title": "input-height-base",
+                      "state": "implemented",
+                      "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)"
+                    },
+                    {
+                      "title": "ilFormColor",
+                      "state": "implemented",
+                      "value": "#808080"
+                    },
+                    {
+                      "title": "ilFormBgColor",
+                      "state": "implemented",
+                      "value": "#fdfdfd"
+                    },
+                    {
+                      "title": "il-form-area-devider",
+                      "state": "implemented",
+                      "value": "1px dashed lighten(@gray-light,20%)"
+                    },
+                    {
+                      "title": "il-form-required-label-color",
+                      "state": "implemented",
+                      "value": "@brand-danger"
+                    },
+                    {
+                      "title": "il-form-required-label-symbol",
+                      "state": "implemented",
+                      "value": "\"*\""
+                    },
+                    {
+                      "title": "ilMainMenuColor",
+                      "state": "implemented",
+                      "value": "lighten(@brand-primary, 10%)"
+                    },
+                    {
+                      "title": "ilButtonFontSize",
+                      "state": "implemented",
+                      "value": "@font-size-small"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASSidebarVariablesGroup",
+                  "title": "ILIAS Sidebar",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-sidebar-padding-bottom",
+                      "state": "implemented",
+                      "value": "15px"
+                    },
+                    {
+                      "title": "il-sidebar-bg-color",
+                      "state": "implemented",
+                      "value": "rgb(244, 244, 246)"
+                    },
+                    {
+                      "title": "il-sidebar-hover-bg-color",
+                      "state": "implemented",
+                      "value": "rgb(252, 55, 104)"
+                    },
+                    {
+                      "title": "il-sidebar-body-bg-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "il-sidebar-block-active-border-width",
+                      "state": "implemented",
+                      "value": "4px"
+                    },
+                    {
+                      "title": "il-sidebar-block-active-border-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-active-bg"
+                    },
+                    {
+                      "title": "il-sidebar-heading-link-color",
+                      "state": "implemented",
+                      "value": "rgb(139, 151, 158)"
+                    },
+                    {
+                      "title": "il-sidebar-heading-link-hover-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "il-sidebar-padding-content",
+                      "state": "implemented",
+                      "value": "50px"
+                    },
+                    {
+                      "title": "il-sidebar-padding-content-sm",
+                      "state": "implemented",
+                      "value": "20px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASBlockVariablesGroup",
+                  "title": "ILIAS Block",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-panel-sortable-placeholder-panel-bg",
+                      "state": "implemented",
+                      "value": "rgba(0, 0, 0, 0)"
+                    },
+                    {
+                      "title": "il-panel-sortable-placeholder-panel-border-radius",
+                      "state": "implemented",
+                      "value": "@border-radius-base"
+                    },
+                    {
+                      "title": "il-panel-sortable-placeholder-border",
+                      "state": "implemented",
+                      "value": "3px #C0C0C0 dashed"
+                    },
+                    {
+                      "title": "il-panel-sortable-placeholder-height",
+                      "state": "implemented",
+                      "value": "45px"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessFlapsVariablesGroup",
+                  "title": "Flaps",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-flap-icon-font-size-lg",
+                      "state": "implemented",
+                      "value": "30px"
+                    },
+                    {
+                      "title": "il-flap-minified-width",
+                      "state": "implemented",
+                      "value": "@il-flap-icon-font-size-lg + 2*@padding-large-horizontal"
+                    },
+                    {
+                      "title": "il-flap-text-font-size-lg",
+                      "state": "implemented",
+                      "value": "@il-flap-icon-font-size-lg/1.2"
+                    },
+                    {
+                      "title": "il-flap-hover-size-lg",
+                      "state": "implemented",
+                      "value": "@il-flap-text-font-size-lg*8"
+                    },
+                    {
+                      "title": "il-flap-animation-speed",
+                      "state": "implemented",
+                      "value": "0.3s"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-link-color",
+                      "state": "implemented",
+                      "value": "@link-color"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-bg-color",
+                      "state": "implemented",
+                      "value": "rgba(0, 0, 0, 0)"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-link-hover-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-bg-hover-color",
+                      "state": "implemented",
+                      "value": "@btn-primary-bg"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-height",
+                      "state": "implemented",
+                      "value": "75px"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-width",
+                      "state": "implemented",
+                      "value": "@il-sidebar-toggle-button-height/2"
+                    },
+                    {
+                      "title": "il-sidebar-toggle-button-font-size",
+                      "state": "implemented",
+                      "value": "@font-size-large"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessExplorerVariablesGroup",
+                  "title": "Explorer",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "theme-name",
+                      "state": "implemented",
+                      "value": "default"
+                    },
+                    {
+                      "title": "hovered-bg-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-hover-bg"
+                    },
+                    {
+                      "title": "hovered-shadow-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-hover-bg"
+                    },
+                    {
+                      "title": "disabled-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-disabled-color"
+                    },
+                    {
+                      "title": "disabled-bg-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-disabled-color"
+                    },
+                    {
+                      "title": "clicked-bg-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-active-bg"
+                    },
+                    {
+                      "title": "clicked-shadow-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-active-bg"
+                    },
+                    {
+                      "title": "clicked-gradient-color-1",
+                      "state": "implemented",
+                      "value": "@dropdown-link-active-bg"
+                    },
+                    {
+                      "title": "clicked-gradient-color-2",
+                      "state": "implemented",
+                      "value": "@dropdown-link-active-bg"
+                    },
+                    {
+                      "title": "il-explorer-clicked-color",
+                      "state": "implemented",
+                      "value": "@dropdown-link-active-color"
+                    },
+                    {
+                      "title": "search-result-color",
+                      "state": "implemented",
+                      "value": "rgb(139, 0, 0)"
+                    },
+                    {
+                      "title": "mobile-wholerow-bg-color",
+                      "state": "implemented",
+                      "value": "rgb(235, 235, 235)"
+                    },
+                    {
+                      "title": "mobile-wholerow-shadow",
+                      "state": "implemented",
+                      "value": "rgb(102, 102, 102)"
+                    },
+                    {
+                      "title": "mobile-wholerow-bordert",
+                      "state": "implemented",
+                      "value": "rgba(255, 255, 255, 0.7)"
+                    },
+                    {
+                      "title": "mobile-wholerow-borderb",
+                      "state": "implemented",
+                      "value": "rgba(64, 64, 64, 0.2)"
+                    },
+                    {
+                      "title": "responsive",
+                      "state": "implemented",
+                      "value": "true"
+                    },
+                    {
+                      "title": "image-path",
+                      "state": "implemented",
+                      "value": "\"@{il-background-images-path}services/explorer/\""
+                    },
+                    {
+                      "title": "base-height",
+                      "state": "implemented",
+                      "value": "@input-height-base"
+                    },
+                    {
+                      "title": "il-btn-default-color",
+                      "state": "implemented",
+                      "value": "rgb(255, 255, 255)"
+                    }
+                  ]
+                },
+                {
+                  "id": "lessILIASFooterVariablesGroup",
+                  "title": "ILIAS Footer",
+                  "description": "Description missing",
+                  "type": "less",
+                  "state": "static",
+                  "variables": [
+                    {
+                      "title": "il-footer-bg",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-bg"
+                    },
+                    {
+                      "title": "il-footer-color",
+                      "state": "implemented",
+                      "value": "@navbar-inverse-color"
+                    },
+                    {
+                      "title": "il-footer-height",
+                      "state": "implemented",
+                      "value": "45px"
+                    },
+                    {
+                      "title": "il-footer-padding-horizontal",
+                      "state": "implemented",
+                      "value": "@navbar-padding-horizontal"
+                    },
+                    {
+                      "title": "il-footer-padding-vertical",
+                      "state": "implemented",
+                      "value": "@navbar-padding-vertical"
+                    }
+                  ]
                 }
               ]
             }
@@ -1221,11 +3623,37 @@
                   "id": "javascriptGuidelines",
                   "title": "Javascript Guidelines",
                   "type": "html",
+                  "state": "static",
                   "fullPath": "app/data/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
                   "path": "/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
                   "order": 100
                 }
               ]
+            }
+          ]
+        },
+        {
+          "title": "Visualizations",
+          "id": "overviewVisualizations",
+          "description": "Visualizations to display the structure of less and entry dependencies.",
+          "itemGroups": [
+            {
+              "title": "Less",
+              "id": "visualizationLess",
+              "type": "visualization",
+              "items": []
+            },
+            {
+              "title": "Entries",
+              "id": "visualizationEntries",
+              "type": "visualization",
+              "items": []
+            },
+            {
+              "title": "Less/Entries",
+              "id": "visualizationLessEntries",
+              "type": "visualization",
+              "items": []
             }
           ]
         }
@@ -1827,7 +4255,7 @@
                   "state": "Proposal",
                   "guiClass": "ilFormGUI",
                   "relations": {
-                    "isA": "form",
+                    "isA": "formBase",
                     "mustUse": [
                       "buttonDefault"
                     ]
@@ -2279,7 +4707,7 @@
                   "title": "Overview",
                   "isIframe": true,
                   "description": "Overview of the ILIAS header area.",
-                  "state": "proposal",
+                  "state": "Proposal",
                   "lessVariables": [
                     {
                       "title": "il-header-height",

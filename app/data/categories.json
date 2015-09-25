@@ -49,22 +49,6 @@
                         {
                             "title": "Overview",
                             "id":"lessOverview"
-                        },
-                        {
-                            "title": "Base",
-                            "id":"lessBaseVariables"
-                        },
-                        {
-                            "title": "Elements",
-                            "id":"lessElementsVariables"
-                        },
-                        {
-                            "title": "Collections",
-                            "id":"lessCollectionVariables"
-                        },
-                        {
-                            "title": "Layouts",
-                            "id":"lessLayoutVariables"
                         }
                     ]
                 },
@@ -81,6 +65,28 @@
                         {
                             "title": "Guidelines",
                             "id":"javascriptGuidelines"
+                        }
+                    ]
+                },
+                {
+                    "title": "Visualizations",
+                    "id":"overviewVisualizations",
+                    "description": "Visualizations to display the structure of less and entry dependencies.",
+                    "itemGroups": [
+                        {
+                            "title": "Less",
+                            "id":"visualizationLess",
+                            "type": "visualization"
+                        },
+                        {
+                            "title": "Entries",
+                            "id":"visualizationEntries",
+                            "type": "visualization"
+                        },
+                        {
+                            "title": "Less/Entries",
+                            "id":"visualizationLessEntries",
+                            "type": "visualization"
                         }
                     ]
                 }

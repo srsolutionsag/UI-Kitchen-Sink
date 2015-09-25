@@ -16,11 +16,11 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
 
         $scope.showSubTabs = true;
 
-        if(!$scope.tabSelected.items || $scope.tabSelected.items.length <= 1){
+        if(!$scope.tabSelected.items || $scope.tabSelected.items.length <= 1 || $scope.tabSelected.type == "visualization"){
             $scope.showSubTabs = false;
         }
 
-        if($scope.tabSelected.type != "html"){
+        if($scope.tabSelected.type != "html" && $scope.tabSelected.type != "visualization"){
             var index = subTabIndex;
             do{
                 $scope.subTabSelected = $scope.tabSelected.items[index];

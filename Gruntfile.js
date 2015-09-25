@@ -83,8 +83,8 @@ module.exports = function(grunt) {
         //Automatically detect file changes and take according actions
         watch: {
             default: {
-                files: [ 'Gruntfile.js','app/less/**/*.less','app/less/services/**/**/*.less', 'app/data/**/*.*','app/**/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
-                tasks: [ 'jshint','less_imports','less','includeSource', 'wiredep','buildEntriesJson'],
+                files: [ 'Gruntfile.js','app/less/**/*.less','app/less/services/**/**/*.less', 'app/data/**/*.*','app/**/*.js','tasks/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
+                tasks: [ 'jshint','less_imports','less','includeSource', 'wiredep','buildEntriesJson','addLessVariablesFromFile','startServerInfo'],
                 options: {
                     atBegin: true,
                     debounceDelay: 550
@@ -100,6 +100,27 @@ module.exports = function(grunt) {
                 jsonTemplatePath: dataDir+'/entry.template.json',
                 jsonOutputPath: jsonOutputPath
             }
+        },
+        //Reads entries from variables.less file
+        addLessVariablesFromFile: {
+            default: {
+                dataDir: dataDir,
+                lessVariablesPath: lessVariablesPath,
+                jsonOutputPath: jsonOutputPath,
+                jsonVariablesIndex:{
+                    first: 0,
+                    second: 2
+                }
+
+            }
+        },
+        //Display Info about server state
+        startServerInfo: {
+            default: {
+                state:"started",
+                host: host,
+                port: port
+            }
         }
 
     });
@@ -112,251 +133,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-less-imports');
 
-    grunt.registerMultiTask('buildEntriesJson', 'Builds the json data structure for the entries', function(test){
-        this.deleteFolders = grunt.option('deleteFolders');
-        this.structure = grunt.file.readJSON(this.data.dataDir+'/categories.json');
-        this.finalOutput = this.structure;
-
-        this.existingFoldersAsArray = grunt.file.expand(this.data.dataDir+'/**/','!'+this.data.dataDir+'/');
-        this.existingFolders = {};
+    grunt.task.loadTasks("tasks/");
 
 
-        this.createFolderIfNotExists = function(path){
-            if(typeof this.existingFolders[path] === 'undefined'){
-                grunt.log.writeln('Creating new folder: '+path);
-                grunt.file.mkdir(path);
-                this.existingFolders[path]  = {};
-                this.existingFolders[path].stillExists = true;
-            } else{
-                this.existingFolders[path].stillExists = true;
-            }
-        };
-
-        this.generateJsonsForDirectory = function(path){
-            var existingHtmlsAsArray = grunt.file.expand(path+'/*.html');
-            /**
-            if(existingHtmlsAsArray.length === 0){
-                grunt.file.copy(this.data.htmlTemplatePath,path+'/example.html');
-                existingHtmlsAsArray = grunt.file.expand(path+'/*.html');
-            }**/
-
-            for(var id in existingHtmlsAsArray){
-                var targetJsonPath = existingHtmlsAsArray[id].substring(0,existingHtmlsAsArray[id].length-5)+'.json';
-                /**
-                if(!grunt.file.exists(targetJsonPath)){
-                    grunt.log.writeln('Creating new json from template: '+targetJsonPath);
-                    var templateEntry = grunt.file.readJSON(this.data.jsonTemplatePath);
-                    var fileName = targetJsonPath.replace(/^.*[\\\/]/, '');
-                    templateEntry.id = fileName.substring(0,fileName.length-5);
-                    grunt.file.write(targetJsonPath, JSON.stringify(templateEntry,null,2));
-                }**/
-            }
-        };
-
-        this.addJsonsToOutputForDirectory = function(path,categoryIndex,subCategoryIndex,itemGroupIndex){
-            var templateJson = grunt.file.readJSON(this.data.jsonTemplatePath);
-            var templateProperties = JSON.stringify(Object.getOwnPropertyNames (templateJson));
-
-            var existingJsonsAsArray = grunt.file.expand(path+'*.json');
-            var tempJsonObjects = [];
-            for(var id in existingJsonsAsArray){
-                var jsonPath = existingJsonsAsArray[id];
-                var jsonObject = grunt.file.readJSON(jsonPath);
-                jsonObject.fullPath = path+jsonObject.id;
-
-                jsonObject.path = jsonObject.fullPath.substr(this.data.dataDir.length);
-
-                if(jsonObject.order === undefined){
-                    jsonObject.order = 100;
-                }
-                //var jsonObjectProperties = JSON.stringify(Object.getOwnPropertyNames (jsonObject));
-                if(false){//jsonObjectProperties != templateProperties){
-                    grunt.log.error("Warning: "+jsonPath+" has invalid properties and will not be added to: "+this.data.jsonOutputPath);
-                    grunt.log.error("---> Expected: "+templateProperties);
-                    grunt.log.error("---> but got:  "+jsonObjectProperties);
-                } else{
-                    tempJsonObjects.push(jsonObject);
-                }
-                tempJsonObjects.sort(function(a,b)
-                    {
-                        return a.order - b.order;
-                    }
-                );
-            }
-            this.finalOutput.categories[categoryIndex].subCategories[subCategoryIndex].itemGroups[itemGroupIndex].items = tempJsonObjects;
-        };
-
-
-        for(var objectId in this.existingFoldersAsArray){
-            this.existingFolders[this.existingFoldersAsArray[objectId]] = {};
-            this.existingFolders[this.existingFoldersAsArray[objectId]].stillExists = false;
-        }
-
-
-        for(var categoryIndex in this.structure.categories){
-            var category = this.structure.categories[categoryIndex];
-            var categoryPath = this.data.dataDir+'/'+category.id+'/';
-            this.createFolderIfNotExists(categoryPath);
-
-            for(var subCategoryIndex in category.subCategories){
-                var subCategory = category.subCategories[subCategoryIndex];
-                var subCategoryPath = categoryPath+subCategory.id+'/';
-                this.createFolderIfNotExists(subCategoryPath);
-
-                for(var itemGroupIndex in subCategory.itemGroups){
-                    var itemGroup = subCategory.itemGroups[itemGroupIndex];
-                    var itemGroupPath = subCategoryPath+itemGroup.id+'/';
-                    this.createFolderIfNotExists(itemGroupPath);
-                    if(itemGroup.type != "html"){
-                        this.generateJsonsForDirectory(itemGroupPath);
-                        this.addJsonsToOutputForDirectory(itemGroupPath,categoryIndex,subCategoryIndex,itemGroupIndex);
-                    }
-                    else{
-                        var existingHtmlsAsArray = grunt.file.expand(itemGroupPath+'/*.html');
-                        if(existingHtmlsAsArray.length === 0){
-                            grunt.file.copy(this.data.htmlTemplatePath,itemGroupPath+'/'+itemGroup.id+'.html');
-                        }
-
-                    }
-
-                }
-            }
-        }
-
-        for(var path in this.existingFolders){
-            if(!this.existingFolders[path].stillExists){
-                if(grunt.option('deleteFolders')){
-                    grunt.log.writeln('Deleting Folder: path'+": "+path);
-                    if(grunt.file.exists(path)){
-                        grunt.file.delete(path);
-                    }
-                } else{
-                    grunt.log.error('The following folder is orphaned (is not listed in categories.json): '+path);
-                    grunt.log.error("---> You can permanently delete orphaned folders by running: 'grunt buildEntries --deleteFolders=true'");
-                }
-
-            }
-        }
-        grunt.file.write(this.data.jsonOutputPath, JSON.stringify(this.finalOutput, null, 2));
-    });
-
-    grunt.registerTask('info', 'Info about server', function(state){
-        grunt.log.writeln('UI-Kitchen-Sink '+state+' at http://'+host+":"+port);
-    });
-
-
-    var getTreeFromVariableLess = function(){
-        var Parser = require("simple-text-parser"),
-            parser = new Parser();
-
-        // Getting less Categories
-        parser.addRule(/\/\/\s--\s(.*)/g, function(lessLine) {
-            // Get the variable minus @
-            var regexCategory = /\/\/\s--\s(.*)/g;
-            var category = regexCategory.exec(lessLine);
-
-            if(category){
-                return { 'category': category[1]};
-            }
-        });
-
-        // Getting less section
-        parser.addRule(/\/\/==\s(.*)/g, function(lessLine) {
-            // Get the variable minus @
-            var regexGroup = /\/\/==\s(.*)/g;
-            var group = regexGroup.exec(lessLine);
-            if(group){
-                return { 'group': group[1]};
-            }
-        });
-
-
-        // Define a rule using a regular expression
-        parser.addRule(/\/\/##\s(.*)/g, function(lessLine) {
-            // Get the variable minus @
-            var regexGroupDescription = /\/\/##\s(.*)/g;
-            var groupDescription = regexGroupDescription.exec(lessLine);
-
-            if(groupDescription){
-                return { 'groupDescription': groupDescription[1]};
-            }
-        });
-
-        // Define a rule using a regular expression
-        parser.addRule(/\/\/\*\*\s(.*)/g, function(lessLine) {
-            // Get the variable minus @
-            var regexVariableDescription = /\/\/\*\*\s(.*)/g;
-            var variableDescription = regexVariableDescription.exec(lessLine);
-
-            if(variableDescription){
-                return { 'variableDescription': variableDescription[1]};
-            }
-
-        });
-
-        // Define a rule using a regular expression
-        parser.addRule(/@(.*)/g, function(lessLine) {
-            // Get the variable minus @
-            var regexVariable = /(?:@)(.*)(?:\:)/g;
-            var variable = regexVariable.exec(lessLine);
-
-            // Get the value
-            var regexValue = /(?::)(.*)(?:;)/g;
-            var value = regexValue.exec(lessLine);
-
-            if(!variable){
-                grunt.log.error('@ without defined variable: '+lessLine);
-            }
-
-            if(!value){
-                grunt.log.error('Variable '+variable[1]+"is missing a value");
-            }
-
-            return { 'variable': variable[1], 'value': value[1]};
-        });
-        return parser.toTree(grunt.file.read(lessVariablesPath).toString());
-    };
-
-    grunt.registerTask('default', ['connect:server','info:started','watch']);
-    grunt.registerTask('buildEntries', ['buildEntriesJson']);
-
-    grunt.registerTask('tester', 'Testing...', function(state){
-        var tempLessVariables = getTreeFromVariableLess();
-
-        var lessVariables = [];
-        var currentCategory = false;
-        var currentGroup = false;
-        for(var index in tempLessVariables){
-            var item = tempLessVariables[index];
-
-
-            if(item.category){
-                lessVariables[item.category] = {};
-                lessVariables[item.category].title = item.category;
-                lessVariables[item.category].items = [];
-                currentCategory = item.category;
-            }
-            if(item.group && currentCategory){
-                lessVariables[currentCategory].items[item.group] = {};
-                lessVariables[currentCategory].items[item.group].title = item.group;
-                lessVariables[currentCategory].items[item.group].variables = [];
-                currentGroup = item.group;
-            }else if(item.group){
-                grunt.log.error('Group '+item.group+' is defined before a category. Please define your category (marker: // -- Category Title) first.');
-
-            }
-
-            if(item.groupDescription && currentGroup && currentCategory){
-                lessVariables[currentCategory].items[item.group].description = item.group;
-            }else if(item.groupDescription){
-                grunt.log.error('Group description '+item.groupDescription+' is defined before a group. Please define your group (marker: //==  Group Title) first.');
-
-            }
-        }
-        console.log(lessVariables);
-    });
-
-    //grunt.registerTask('test', ['tester']);
-
+    grunt.registerTask('default', ['connect:server','watch']);
+    grunt.registerTask('buildEntries', ['buildEntriesJson','addLessVariablesFromFile']);
 
 };

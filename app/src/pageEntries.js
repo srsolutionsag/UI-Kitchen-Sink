@@ -69,6 +69,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                 return "warning";
             case "accepted":
                 return "info";
+            case "implemented":
             case "implemented for 5.0":
             case "implemented for 5.1":
             case "implemented for 5.2":
@@ -344,6 +345,57 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
             return false;
         }
         return lessUsages;
+    };
+
+    this.getEntriesRelationsNetwork = function(){
+        var links = [];
+        var nodes = [];
+        this.categories.forEach(function(category){
+            category.subCategories.forEach(function(subCategory){
+                subCategory.itemGroups.forEach(function(itemGroup){
+                    if(itemGroup.items){
+                        itemGroup.items.forEach(function(item){
+                            if(item.type != "html" && item.type != "less"){
+                                nodes.push({
+                                    id: item.id,
+                                    title: itemGroup.title +": "+item.title,
+                                    category: subCategory.id
+                                });
+                                if(item.relations && item.relations.isA){
+                                    links.push({
+                                        source: {id : item.id},
+                                        target: {id :item.relations.isA},
+                                        relation: "isA"
+                                    });
+                                }
+                                if(item.relations && item.relations.mustUse){
+                                    for(var mustUseIndex in item.relations.mustUse){
+                                        links.push({
+                                            source: {id :item.id},
+                                            target: {id :item.relations.mustUse[mustUseIndex]},
+                                            relation: "mustUse"
+                                        });
+                                    }
+                                }
+                                if(item.relations && item.relations.mayUse){
+                                    for(var mayUseIndex in item.relations.mayUse){
+                                        links.push({
+                                            source: {id :item.id},
+                                            target: {id :item.relations.mayUse[mayUseIndex]},
+                                            relation: "mayUse"
+                                        });
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+        });
+        return {
+            "links": links,
+            "nodes": nodes
+        };
     };
 
     this.promisedData = function() {

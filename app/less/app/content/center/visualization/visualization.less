@@ -1,0 +1,51 @@
+.uiks-visualisation {
+  svg{
+    width: 100%;
+    max-height: 60vh;
+    overflow: scroll;
+
+    .link {
+      fill: none;
+      stroke: #666;
+      stroke-width: 1.5px;
+    }
+
+    .link.isA {
+      stroke: black;
+    }
+
+    .link.mustUse {
+      stroke: grey;
+    }
+
+    .link.mayUse {
+      stroke: grey;
+      stroke-dasharray: 0,2 1;
+    }
+
+    circle {
+      fill: #ccc;
+      stroke: #333;
+      stroke-width: 1.5px;
+    }
+    .node text {
+    }
+    .legend{
+      overflow: scroll;
+    }
+  }
+  form{
+    display: inline;
+
+    h3 {
+      font-style: italic;
+      float: left;
+    }
+    input{
+      width: 200px;
+      float: left;
+    }
+  }
+
+}
+
