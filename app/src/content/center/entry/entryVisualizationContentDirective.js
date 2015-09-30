@@ -7,7 +7,19 @@ module.directive('entryVisualizationContent', function (Entries) {
         templateUrl: 'app/src/content/center/entry/entryVisualizationContent.tpl.html',
         replace: true,
         link: function (scope, element) {
-            var graph = Entries.getEntriesRelationsNetwork();
+            console.log(scope.visualizationType);
+
+            var graph = [];
+
+            switch(scope.visualizationType){
+                case "visualizationLess":
+                    graph = Entries.getLessRelationsNetwork();
+                    break;
+                case "visualizationEntries":
+                    graph = Entries.getEntriesRelationsNetwork();
+                    break;
+            }
+
 
 
             var findNode = function(id, nodes) {
@@ -94,12 +106,14 @@ module.directive('entryVisualizationContent', function (Entries) {
 
             });
 
+            var charge = 3000;
+            var linkDistance = charge/20;
             var force = d3.layout.force();
             //Set up the force layout
             force.nodes(graph.nodes)
                 .links(graph.links)
-                .charge(-2000)
-                .linkDistance(100)
+                .charge(-charge)
+                .linkDistance(linkDistance)
                 .linkStrength(1)
                 .size([width, height]);
 
@@ -156,18 +170,35 @@ module.directive('entryVisualizationContent', function (Entries) {
                         .on('mouseenter', highlightNodes)
                         .on('mouseleave', unhighlightNodes);
                     group.insert("circle")
-                        .attr("r", 8)
+                        .attr("r", 20)
                         .style("fill", function (element) {
                             return color(element.category);
                         });
                     group.append("text")
-                        .attr("dx", 10)
-                        .attr("dy", ".35em")
+                        .attr("dx", function(element){
+                            return -element.category.length*3.7;
+                        })
+                        .attr("dy", "-2.5em")
                         .text(function(element) {
+                            return element.category+":";
+                        })
+                        .style("stroke", "black");
+                    group.append("text")
+                        .attr("dx", function(element){
+                            var length = element.title.length;
+                            if(length > 20){
+                                length = 20;
+                            }
+                            return -length*3.7;
+                        })
+                        .attr("dy", "-1.5em")
+                        .text(function(element) {
+                            if(element.title.length > 25){
+                                return element.title.slice(0, 0) + "..." + element.title.slice(element.title.length-25+3);
+                            }
                             return element.title;
                         })
-                        .style("stroke", "gray");
-
+                        .style("stroke", "black");
                     force.on("tick", function () {
                         link.attr("x1", function (d) {
                             return d.source.x;
@@ -193,34 +224,6 @@ module.directive('entryVisualizationContent', function (Entries) {
                             return d.y;
                         });
 
-                        var q = d3.geom.quadtree(nodes),
-                            i = 0,
-                            n = nodes.length;
-
-                        while (++i < n) q.visit(collide(nodes[i]));
-                        function collide(node) {
-                            var r = node.radius + 50,
-                                nx1 = node.x - r,
-                                nx2 = node.x + r,
-                                ny1 = node.y - r,
-                                ny2 = node.y + r;
-                            return function(quad, x1, y1, x2, y2) {
-                                if (quad.point && (quad.point !== node)) {
-                                    var x = node.x - quad.point.x,
-                                        y = node.y - quad.point.y,
-                                        l = Math.sqrt(x * x + y * y),
-                                        r = node.radius + quad.point.radius;
-                                    if (l < r) {
-                                        l = (l - r) / l * .5;
-                                        node.x -= x *= l;
-                                        node.y -= y *= l;
-                                        quad.point.x += x;
-                                        quad.point.y += y;
-                                    }
-                                }
-                                return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-                            };
-                            };
                     });
 
                     force.start();
@@ -337,11 +340,12 @@ module.directive('entryVisualizationContent', function (Entries) {
 
             // create the zoom listener
             var zoomListener = d3.behavior.zoom()
-                .scaleExtent([0.1, 3])
+                .scaleExtent([0.05, 3])
                 .on("zoom", zoomHandler);
 
 // function for handling zoom event
             function zoomHandler() {
+                console.log(d3.event.scale);
                 container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
             }
 

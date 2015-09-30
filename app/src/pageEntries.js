@@ -358,8 +358,8 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                             if(item.type != "html" && item.type != "less"){
                                 nodes.push({
                                     id: item.id,
-                                    title: itemGroup.title +": "+item.title,
-                                    category: subCategory.id
+                                    title: item.title,
+                                    category: subCategory.title
                                 });
                                 if(item.relations && item.relations.isA){
                                     links.push({
@@ -386,6 +386,47 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                                         });
                                     }
                                 }
+                            }
+                        });
+                    }
+                });
+            });
+        });
+        return {
+            "links": links,
+            "nodes": nodes
+        };
+    };
+
+    this.getLessRelationsNetwork = function(){
+        var links = [];
+        var nodes = [];
+        this.categories.forEach(function(category){
+            category.subCategories.forEach(function(subCategory){
+                subCategory.itemGroups.forEach(function(itemGroup){
+                    if(itemGroup.items){
+                        itemGroup.items.forEach(function(item){
+                            if(item.type == "less"){
+                                item.variables.forEach(function(variable){
+                                    nodes.push({
+                                        id: variable.title,
+                                        title: variable.title,
+                                        category: item.title
+                                    });
+                                    if(variable.relations){
+                                        for(var relationIndex in variable.relations){
+                                            if(variable.relations[relationIndex]){
+                                                links.push({
+                                                    source: {id :variable.title},
+                                                    target: {id :variable.relations[relationIndex]},
+                                                    relation: "uses"
+                                                });
+                                            }
+
+                                        }
+                                    }
+                                    console.log(variable);
+                                });
                             }
                         });
                     }

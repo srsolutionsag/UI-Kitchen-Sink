@@ -84,7 +84,7 @@ module.exports = function(grunt) {
         watch: {
             default: {
                 files: [ 'Gruntfile.js','app/less/**/*.less','app/less/services/**/**/*.less', 'app/data/**/*.*','app/**/*.js','tasks/*.js', 'app/**/*.html',dataDir+'/**/*.json','!'+jsonOutputPath],
-                tasks: [ 'jshint','less_imports','less','includeSource', 'wiredep','buildEntriesJson','addLessVariablesFromFile','startServerInfo'],
+                tasks: [ 'jshint','less_imports','less','includeSource', 'wiredep','buildEntriesJson','addLessVariablesFromFile','addLessRelationsFromEntries','startServerInfo'],
                 options: {
                     atBegin: true,
                     debounceDelay: 550
@@ -114,6 +114,13 @@ module.exports = function(grunt) {
 
             }
         },
+        //Reads entries from variables.less file
+        addLessRelationsFromEntries: {
+            default: {
+                dataDir: dataDir,
+                jsonOutputPath: jsonOutputPath
+            }
+        },
         //Display Info about server state
         startServerInfo: {
             default: {
@@ -137,6 +144,7 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('default', ['connect:server','watch']);
-    grunt.registerTask('buildEntries', ['buildEntriesJson','addLessVariablesFromFile']);
+    grunt.registerTask('buildEntries', ['buildEntriesJson','addLessVariablesFromFile','addLessRelationsFromEntries']);
+    grunt.registerTask('test', ['addLessVariablesFromFile']);
 
 };
