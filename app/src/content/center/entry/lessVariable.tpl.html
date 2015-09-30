@@ -1,6 +1,9 @@
-<div class="alert alert-{{getStateAlert(variable.state)}}" role="alert" data-toggle="popover" placement="bottom" data-target="#{{variable.title}}Usages">
-    <p>
+<div class="alert alert-{{getStateAlert(variable.state)}}" role="alert" data-toggle="popover" placement="bottom" data-target="#{{variable.title}}Usages" ng-if="show">
+    <p ng-if="showRelations">
         <strong>{{variable.title}}: </strong>{{variable.value}}; <span ng-if="variable.description">//{{variable.description}}</span>
+    </p>
+    <p ng-if="!showRelations">
+        <a href="{{variable.path}}"><strong>{{variable.title}}: </strong>{{variable.value}};</a>
     </p>
     <p ng-if="relations">
         Used in:

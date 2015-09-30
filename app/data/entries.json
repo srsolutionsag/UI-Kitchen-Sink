@@ -4971,66 +4971,9 @@
                   "description": "Headings to be used in ILIAS",
                   "state": "Implemented for 5.0",
                   "lessVariables": [
-                    {
-                      "title": "font-size-h1",
-                      "description": "Size for h1",
-                      "value": "floor((@font-size-base * 2.6)); // ~36px",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-size-h2",
-                      "description": "Size for h2",
-                      "value": "floor((@font-size-base * 2.15)); // ~30px",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-size-h3",
-                      "description": "Size for h3",
-                      "value": "ceil((@font-size-base * 1.7)); // ~24px",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-size-h4",
-                      "description": "Size for h4",
-                      "value": "ceil((@font-size-base * 1.25)); // ~18px",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-size-h5",
-                      "description": "Size for h5",
-                      "value": "@font-size-base",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-size-h6",
-                      "description": "Size for h6",
-                      "value": "ceil((@font-size-base * 0.85)); // ~12px",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "headings-font-family",
-                      "description": "By default, this inherits from the `<body>`",
-                      "value": "inherit",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "headings-font-weight",
-                      "description": "Font weight for headings",
-                      "value": "500",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "headings-line-height",
-                      "description": "Line height for headings",
-                      "value": "1.1",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "headings-color",
-                      "description": "By default, this inherits from the `<body>`",
-                      "value": "inherit",
-                      "state": "Implemented for 5.0"
-                    }
+                    "font-size-h3",
+                    "gray-light",
+                    "brand-warning"
                   ],
                   "relations": {
                     "isA": "baseText"
@@ -5137,13 +5080,6 @@
                   "description": "Buttons are either of an input elemen (with some cmd) or or a link (with some href). So far ILIAS does not support the <button> type.",
                   "context": "Use buttons to initiate an action of some sort. If an action is temporarily not available, actions (buttons) might be disabled by setting as type 'disabled'.",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "il-button-color",
-                      "description": "Text Color of the button",
-                      "state": "Proposal"
-                    }
-                  ],
                   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
                   "fullPath": "app/data/elements/elementsButtons/buttonOverview/button",
                   "path": "/elements/elementsButtons/buttonOverview/button",
@@ -5161,20 +5097,24 @@
                   "description": "Default Button in ILIAS. Buttons are either of type input (with some cmd) or link (with some href).",
                   "context": "This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance.",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "brand-primary",
-                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value.",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
                   "relations": {
                     "isA": "button"
                   },
                   "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonDefault",
                   "path": "/elements/elementsButtons/buttonTypes/buttonDefault",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": [
+                    "il-btn-default-color",
+                    "brand-primary",
+                    "color",
+                    "background",
+                    "border",
+                    "padding-vertical",
+                    "padding-horizontal",
+                    "font-size",
+                    "line-height"
+                  ]
                 },
                 {
                   "id": "buttonPrimary",
@@ -5182,20 +5122,17 @@
                   "description": "The 'Primary Button' is special emphasized button that marks to most important action on a view. There should only be one 'Primary Button' per page and each use must be confirmed by the JF. In Toolbars primary actions will be sticky, meaning they will not be disappear in the responsive view.",
                   "context": "According to <a href='http://www.ilias.de/docu/goto_docu_wiki_wpage_1441_1357.html'>Emphasized Buttons for Primary Action</a> 'Buttons for a common and important next action that tend to be overlooked, should get a special emphasized style'. This style is currently named as 'Primary Button'.",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "brand-secondary",
-                      "description": "Background and border color of the button. The hover-bg color is also a version (darken 10%) of this color value",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
                   "relations": {
                     "isA": "button"
                   },
                   "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonPrimary",
                   "path": "/elements/elementsButtons/buttonTypes/buttonPrimary",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": [
+                    "btn-primary-color",
+                    "brand-secondary"
+                  ]
                 }
               ]
             }
@@ -5288,7 +5225,11 @@
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formBase",
-                  "path": "/collections/collectionsForms/formsOverview/formBase"
+                  "path": "/collections/collectionsForms/formsOverview/formBase",
+                  "lessVariables": [
+                    "il-form-required-label-color",
+                    ""
+                  ]
                 },
                 {
                   "id": "formArea",
@@ -5312,7 +5253,11 @@
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formArea",
-                  "path": "/collections/collectionsForms/formsOverview/formArea"
+                  "path": "/collections/collectionsForms/formsOverview/formArea",
+                  "lessVariables": [
+                    "padding-large-vertical",
+                    "il-form-area-devider"
+                  ]
                 },
                 {
                   "id": "formSection",
@@ -5336,7 +5281,8 @@
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formSection",
-                  "path": "/collections/collectionsForms/formsOverview/formSection"
+                  "path": "/collections/collectionsForms/formsOverview/formSection",
+                  "lessVariables": []
                 },
                 {
                   "id": "formSubform",
@@ -5358,7 +5304,8 @@
                     ]
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formSubform",
-                  "path": "/collections/collectionsForms/formsOverview/formSubform"
+                  "path": "/collections/collectionsForms/formsOverview/formSubform",
+                  "lessVariables": []
                 },
                 {
                   "id": "formElement",
@@ -5396,7 +5343,11 @@
                   },
                   "fullPath": "app/data/collections/collectionsForms/formsOverview/formFooter",
                   "path": "/collections/collectionsForms/formsOverview/formFooter",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": [
+                    "padding-large-vertical",
+                    "il-form-area-devider"
+                  ]
                 }
               ]
             },
@@ -5464,7 +5415,10 @@
                   "status": "proposal",
                   "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimePicker",
                   "path": "/collections/collectionsForms/formsDateTime/formsDateTimePicker",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": [
+                    "import"
+                  ]
                 },
                 {
                   "id": "formsDateTimeRangePicker",
@@ -5500,7 +5454,8 @@
                   "guiClass": "ilFileUploadGUI",
                   "fullPath": "app/data/collections/collectionsForms/formsFileUpload/formsFileUpload",
                   "path": "/collections/collectionsForms/formsFileUpload/formsFileUpload",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": []
                 }
               ]
             }
@@ -5525,7 +5480,7 @@
                   "title": "Table Filter",
                   "state": "Proposal",
                   "description": "Proposal of table filter",
-                  "lessVariables": "Less Variable used of the new item",
+                  "lessVariables": [],
                   "status": "Proposal",
                   "fullPath": "app/data/collections/collectionsTables/tableFilter/tableFilter",
                   "path": "/collections/collectionsTables/tableFilter/tableFilter",
@@ -5624,7 +5579,14 @@
                   "state": "Implemented for 5.1",
                   "fullPath": "app/data/collections/collectionsActions/actionsToolbar/toolbar",
                   "path": "/collections/collectionsActions/actionsToolbar/toolbar",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": [
+                    "il-toolbar-link-gap",
+                    "media",
+                    "padding-base-vertical",
+                    "navbar-default-border",
+                    "input-height-base"
+                  ]
                 }
               ]
             }
@@ -5806,56 +5768,16 @@
                   "description": "Overview of the ILIAS header area.",
                   "state": "Proposal",
                   "lessVariables": [
-                    {
-                      "title": "il-header-height",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-height-sm",
-                      "description": "Total height of all three header sections in the responsive view",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-bg",
-                      "description": "Background color of the header section",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-border-vertical",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-border-horizontal",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-border-top",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-border-bottom",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-border-left",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-header-border-right",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "zindex-navbar-fixed",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    }
+                    "il-header-height-sm",
+                    "il-header-bg",
+                    "il-header-border-top",
+                    "il-header-border-bottom",
+                    "il-header-border-left",
+                    "il-header-border-right",
+                    "zindex-navbar-fixed",
+                    "media",
+                    "screen-sm-min",
+                    "il-header-height"
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderOverview",
                   "path": "/layouts/mainStructure/header/iliasHeaderOverview"
@@ -5867,16 +5789,24 @@
                   "description": "The branding area SHOULD contain the logo of the application and its title.",
                   "state": "Proposal",
                   "lessVariables": [
-                    {
-                      "title": "il-header-border-right",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "zindex-navbar-fixed",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    }
+                    "il-header-branding-top-sm",
+                    "il-header-branding-left-sm",
+                    "il-header-branding-right-sm",
+                    "il-header-branding-height-sm",
+                    "il-header-branding-bg",
+                    "il-header-branding-text-display-sm",
+                    "il-header-branding-font-size-sm",
+                    "il-header-branding-text-logo-padding-sm",
+                    "il-header-branding-logo-font-size-sm",
+                    "media",
+                    "screen-sm-min",
+                    "il-header-branding-top",
+                    "il-header-branding-left",
+                    "il-header-branding-right",
+                    "il-header-branding-height",
+                    "il-header-branding-font-size",
+                    "il-header-branding-text-logo-padding",
+                    "il-header-branding-logo-font-size"
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
                   "path": "/layouts/mainStructure/header/iliasHeaderBranding",
@@ -5889,16 +5819,25 @@
                   "description": "The main menu handles the main navigation in ILIAS.",
                   "state": "Proposal",
                   "lessVariables": [
-                    {
-                      "title": "il-header-border-right",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "zindex-navbar-fixed",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    }
+                    "il-header-main-menu-top-sm",
+                    "il-header-main-menu-left-sm",
+                    "il-header-main-menu-right-sm",
+                    "il-header-main-menu-color",
+                    "il-header-main-menu-border-sm",
+                    "il-header-main-menu-border-radius-sm",
+                    "il-header-height-sm",
+                    "il-header-main-menu-bg",
+                    "media",
+                    "screen-sm-min",
+                    "il-header-main-menu-float",
+                    "il-header-main-menu-active-color",
+                    "il-header-main-menu-active-bg",
+                    "il-header-main-menu-open-color",
+                    "il-header-main-menu-open-bg",
+                    "il-header-main-menu-top",
+                    "il-header-main-menu-left",
+                    "il-header-main-menu-right",
+                    "il-header-main-menu-border"
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
                   "path": "/layouts/mainStructure/header/iliasHeaderMainMenu",
@@ -5911,16 +5850,27 @@
                   "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen.",
                   "state": "Proposal",
                   "lessVariables": [
-                    {
-                      "title": "il-header-border-right",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "zindex-navbar-fixed",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    }
+                    "il-header-top-nav-top-sm",
+                    "il-header-top-nav-left-sm",
+                    "il-header-top-nav-right-sm",
+                    "il-header-top-nav-float",
+                    "il-header-top-nav-box-min-height-sm",
+                    "il-header-top-nav-box-margin-right-sm",
+                    "il-header-top-nav-box-min-width-sm",
+                    "il-header-top-nav-box-font-size-sm",
+                    "il-header-top-nav-box-bg",
+                    "il-header-top-nav-box-color",
+                    "il-header-top-nav-box-hover-color",
+                    "il-header-top-nav-box-hover-bg",
+                    "media",
+                    "screen-sm-min",
+                    "il-header-top-nav-top",
+                    "il-header-top-nav-left",
+                    "il-header-top-nav-right",
+                    "il-header-top-nav-box-min-height",
+                    "il-header-top-nav-box-min-width",
+                    "il-header-top-nav-box-margin-right",
+                    "il-header-top-nav-box-font-size"
                   ],
                   "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
                   "path": "/layouts/mainStructure/header/iliasHeaderTopNav",
@@ -5966,21 +5916,8 @@
                   "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
                   "state": "Proposal",
                   "lessVariables": [
-                    {
-                      "title": "il-header-height-sm",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-footer-height",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-content-bg-color",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    }
+                    "il-content-min-height",
+                    "il-content-bg"
                   ],
                   "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
                   "path": "/layouts/mainStructure/content/iliasContentCenter",
@@ -5993,7 +5930,34 @@
                   "description": "The right sidebar could be used to provide the user meta-information about ILIAS such as mail, global calendar, help, tree etc.. The right sidebar could be used to provide content specific meta information such as tags, comments etc..",
                   "context": " The sidebars are accessible at all time.",
                   "state": "Proposal",
-                  "lessVariables": [],
+                  "lessVariables": [
+                    "media",
+                    "screen-sm-min",
+                    "il-panel-sortable-placeholder-panel-bg",
+                    "il-panel-sortable-placeholder-border",
+                    "il-panel-sortable-placeholder-panel-border-radius",
+                    "line-height-computed",
+                    "il-panel-sortable-placeholder-height",
+                    "il-footer-height",
+                    "grid-gutter-width",
+                    "il-sidebar-body-bg-color",
+                    "il-sidebar-bg-color",
+                    "padding-large-horizontal",
+                    "il-sidebar-hover-bg-color",
+                    "il-sidebar-heading-link-hover-color",
+                    "il-sidebar-heading-link-color",
+                    "il-flap-icon-font-size-lg",
+                    "il-flap-text-font-size-lg",
+                    "il-flap-hover-size-lg",
+                    "il-flap-animation-speed",
+                    "il-sidebar-block-active-border-width",
+                    "il-sidebar-block-active-border-color",
+                    "il-flap-minified-width",
+                    "il-sidebar-toggle-button-height",
+                    "il-sidebar-toggle-button-width",
+                    "il-header-height-sm",
+                    "il-header-height"
+                  ],
                   "fullPath": "app/data/layouts/mainStructure/content/iliasContentSidebars",
                   "path": "/layouts/mainStructure/content/iliasContentSidebars",
                   "order": 100
@@ -6010,26 +5974,11 @@
                   "title": "Overview",
                   "description": "The footer mostly displays some meta information about the page.",
                   "lessVariables": [
-                    {
-                      "title": "il-footer-height",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-footer-color",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-footer-padding-horizontal",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-footer-padding-vertical",
-                      "description": "Todo, add description",
-                      "state": "Proposal"
-                    }
+                    "il-footer-height",
+                    "il-footer-color",
+                    "il-footer-bg",
+                    "il-footer-padding-horizontal",
+                    "il-footer-padding-vertical"
                   ],
                   "isIframe": true,
                   "state": "Proposal",

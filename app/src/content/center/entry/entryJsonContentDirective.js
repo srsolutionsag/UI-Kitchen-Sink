@@ -9,6 +9,7 @@ module.directive('entryJsonContent', function ($http,Entries,$timeout) {
         templateUrl: 'app/src/content/center/entry/entryJsonContent.tpl.html',
         replace: false,
         link: function (scope, element) {
+            console.log(scope.entry.lessVariables);
             if(scope.entry.state === undefined){
                 scope.entry.state = "Empty";
             }

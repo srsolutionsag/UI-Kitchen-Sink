@@ -9,15 +9,24 @@ module.directive('lessVariable', function (Entries) {
         replace: false,
         link: function (scope, element) {
             scope.relations = false;
-            scope.getStateAlert = function(s){
-                return Entries.getStateAlert(s);
-            };
+            scope.show = true;
             if(scope.showRelations){
                 scope.relations = Entries.returnLessVariableUsages(scope.variable.title);
 
             }else{
-                //scope.link = Entries.getComponentById(scope.variable.title);
+                scope.variable = Entries.getComponentById(scope.variable);
+                if(! scope.variable){
+                    scope.show = false;
+                }
+                console.log(scope.relations);
+
             }
+
+            scope.getStateAlert = function(s){
+                return Entries.getStateAlert(s);
+            };
         }
+
+
     };
 });

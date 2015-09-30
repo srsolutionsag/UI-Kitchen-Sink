@@ -289,6 +289,15 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                                     };
                                 }
                             }
+                            if(item.type == 'less'){
+                                for(var variableIndex in item.variables){
+                                    var variable = item.variables[variableIndex];
+                                    if(variable.title == componentId){
+                                        variable.path = "#/content/"+category.id+"/"+subCategory.id+"/"+itemGroup.id+"/"+item.id;
+                                        return variable;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -314,8 +323,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                             if(item.type != 'less' && item.type != 'html'){
                                 for(var variableIndex in item.lessVariables)
                                 {
-                                    var lessVariable = item.lessVariables[variableIndex];
-                                    if(lessVariable.title == lessId){
+                                    if(item.lessVariables[variableIndex] == lessId){
                                         var lessUsage = {
                                             "category" : {
                                                 "id":category.id,
@@ -330,7 +338,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                                                 "title": itemGroup.title
                                             },
                                             "item" : item,
-                                            "variable": lessVariable
+                                            "title": item.lessVariables[variableIndex]
                                         };
                                         lessUsages[item.id] = lessUsage;
                                     }

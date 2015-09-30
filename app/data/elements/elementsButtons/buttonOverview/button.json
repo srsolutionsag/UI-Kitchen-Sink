@@ -5,11 +5,5 @@
   "description": "Buttons are either of an input elemen (with some cmd) or or a link (with some href). So far ILIAS does not support the <button> type.",
   "context": "Use buttons to initiate an action of some sort. If an action is temporarily not available, actions (buttons) might be disabled by setting as type 'disabled'.",
   "state": "Implemented for 5.0",
-  "lessVariables": [{
-          "title": "il-button-color",
-          "description": "Text Color of the button",
-          "state": "Proposal"
-      }
-  ],
   "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)"
 }

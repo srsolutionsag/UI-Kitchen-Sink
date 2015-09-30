@@ -8,9 +8,20 @@ module.exports = function(grunt) {
         this.finalOutput = this.structure;
 
         this.getTreeFromVariableLess = function(lessFile){
-            console.log(lessFile);
-            var regexReference = /(?:@)([a-zA-Z_-]*)/g;
-            console.log(regexReference.exec(lessFile));
+            var references = [];
+            var reference = false;
+            do{
+                var regexReference = /(?:@)([a-zA-Z0-9_-]*)/g;
+                var reference = regexReference.exec(lessFile);
+                if(reference){
+                    var ref = new RegExp(reference[0], 'g');
+                    lessFile = lessFile.replace(ref,'');
+                    references.push(reference[1]);
+                }
+
+            }while(reference);
+
+            return references;
         };
 
         this.structure.categories.forEach(function(category,categoryIndex){
@@ -21,8 +32,7 @@ module.exports = function(grunt) {
                             var path = item.fullPath+".less";
                             console.log(path);
                             if(grunt.file.exists(path)){
-                                console.log(grunt.file.read(path).toString());
-                                self.getTreeFromVariableLess(grunt.file.read(path).toString());
+                                item.lessVariables = self.getTreeFromVariableLess(grunt.file.read(path).toString());
                             }
                         });
                     }
