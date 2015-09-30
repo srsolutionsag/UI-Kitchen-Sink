@@ -68,7 +68,7 @@ module.directive('entryVisualizationContent', function (Entries) {
             var legendTop = 25;
             var boxWidth = 10;
             var legendSpacing = 25;
-            var legend = container.append("g")
+            var legend = svg.append("g")
                 .attr("class", "legend")
                 .attr("x", legendLeft)
                 .attr("y", legendTop);
@@ -112,7 +112,7 @@ module.directive('entryVisualizationContent', function (Entries) {
                     node = node.data([]);
                     node.exit().remove();
 
-                    force.start();
+
 
                     force.nodes(nodes)
                         .links(links);
@@ -192,35 +192,6 @@ module.directive('entryVisualizationContent', function (Entries) {
                         }).attr("y", function (d) {
                             return d.y;
                         });
-
-                        var q = d3.geom.quadtree(nodes),
-                            i = 0,
-                            n = nodes.length;
-
-                        while (++i < n) q.visit(collide(nodes[i]));
-                        function collide(node) {
-                            var r = node.radius + 50,
-                                nx1 = node.x - r,
-                                nx2 = node.x + r,
-                                ny1 = node.y - r,
-                                ny2 = node.y + r;
-                            return function(quad, x1, y1, x2, y2) {
-                                if (quad.point && (quad.point !== node)) {
-                                    var x = node.x - quad.point.x,
-                                        y = node.y - quad.point.y,
-                                        l = Math.sqrt(x * x + y * y),
-                                        r = node.radius + quad.point.radius;
-                                    if (l < r) {
-                                        l = (l - r) / l * .5;
-                                        node.x -= x *= l;
-                                        node.y -= y *= l;
-                                        quad.point.x += x;
-                                        quad.point.y += y;
-                                    }
-                                }
-                                return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-                            };
-                            };
                     });
 
                     force.start();
@@ -338,12 +309,21 @@ module.directive('entryVisualizationContent', function (Entries) {
             // create the zoom listener
             var zoomListener = d3.behavior.zoom()
                 .scaleExtent([0.1, 3])
-                .on("zoom", zoomHandler);
+                .on("zoom", function(){
+                    console.log( d3.event.translate[1]);
+                    var newLegendTop = d3.event.translate[1];
+                    var minTop = legendTop - d3.select('.legend').node().getBBox().height + Number(d3.select("svg").style("height").replace("px", ""))-50;
+                    console.log(minTop);
 
-// function for handling zoom event
-            function zoomHandler() {
-                container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-            }
+                    if(newLegendTop > legendTop){
+                        newLegendTop = legendTop;
+                    }else if( newLegendTop < minTop){
+                        newLegendTop = minTop;
+                    }
+                    legend.attr("transform","translate(" + [legendLeft,newLegendTop] + ")scale(" + 1 + ")");
+                    container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                });
+
 
             // apply the zoom behavior to the svg image
             zoomListener(svg);
