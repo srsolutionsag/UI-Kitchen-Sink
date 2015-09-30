@@ -2,6 +2,8 @@
 
 module.exports = function(grunt) {
     grunt.registerMultiTask('buildEntriesJson', 'Builds the json data structure for the entries', function(){
+        var self = this;
+
         this.deleteFolders = grunt.option('deleteFolders');
         this.structure = grunt.file.readJSON(this.data.dataDir+'/categories.json');
         this.finalOutput = this.structure;
@@ -82,23 +84,20 @@ module.exports = function(grunt) {
         }
 
 
-        for(var categoryIndex in this.structure.categories){
-            var category = this.structure.categories[categoryIndex];
-            var categoryPath = this.data.dataDir+'/'+category.id+'/';
-            this.createFolderIfNotExists(categoryPath);
+        this.structure.categories.forEach(function(category,categoryIndex){
+            var categoryPath = self.data.dataDir+'/'+category.id+'/';
+            self.createFolderIfNotExists(categoryPath);
 
-            for(var subCategoryIndex in category.subCategories){
-                var subCategory = category.subCategories[subCategoryIndex];
+            category.subCategories.forEach(function(subCategory,subCategoryIndex){
                 var subCategoryPath = categoryPath+subCategory.id+'/';
-                this.createFolderIfNotExists(subCategoryPath);
+                self.createFolderIfNotExists(subCategoryPath);
 
-                for(var itemGroupIndex in subCategory.itemGroups){
-                    var itemGroup = subCategory.itemGroups[itemGroupIndex];
+                subCategory.itemGroups.forEach(function(itemGroup,itemGroupIndex){
                     var itemGroupPath = subCategoryPath+itemGroup.id+'/';
-                    this.createFolderIfNotExists(itemGroupPath);
+                    self.createFolderIfNotExists(itemGroupPath);
                     if(itemGroup.type != "html"){
-                        this.generateJsonsForDirectory(itemGroupPath);
-                        this.addJsonsToOutputForDirectory(itemGroupPath,categoryIndex,subCategoryIndex,itemGroupIndex);
+                        self.generateJsonsForDirectory(itemGroupPath);
+                        self.addJsonsToOutputForDirectory(itemGroupPath,categoryIndex,subCategoryIndex,itemGroupIndex);
                     }
                     else{
                         var existingHtmlsAsArray = grunt.file.expand(itemGroupPath+'/*.html');
@@ -107,10 +106,9 @@ module.exports = function(grunt) {
                         }
 
                     }
-
-                }
-            }
-        }
+                });
+            });
+        });
 
         for(var path in this.existingFolders){
             if(!this.existingFolders[path].stillExists){

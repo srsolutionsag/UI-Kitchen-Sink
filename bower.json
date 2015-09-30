@@ -14,7 +14,8 @@
     "angular-highlightjs": "latest",
     "eonasdan-bootstrap-datetimepicker": "latest",
     "d3": "latest",
-    "d3.fisheye": "latest"
+    "d3.fisheye": "latest",
+    "node-htmlparser": "latest"
   },
   "resolutions": {
     "angular": "1.3.15"

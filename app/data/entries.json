@@ -180,62 +180,84 @@
                     {
                       "title": "gray-base",
                       "state": "implemented",
-                      "value": "#000"
+                      "value": "#000",
+                      "relations": []
                     },
                     {
                       "title": "gray-darker",
                       "state": "implemented",
-                      "value": "lighten(@gray-base, 13.5%)"
+                      "value": "lighten(@gray-base, 13.5%)",
+                      "relations": [
+                        "gray-base"
+                      ]
                     },
                     {
                       "title": "gray-dark",
                       "state": "implemented",
-                      "value": "lighten(@gray-base, 20%)"
+                      "value": "lighten(@gray-base, 20%)",
+                      "relations": [
+                        "gray-base"
+                      ]
                     },
                     {
                       "title": "gray",
                       "state": "implemented",
-                      "value": "lighten(@gray-base, 33.5%)"
+                      "value": "lighten(@gray-base, 33.5%)",
+                      "relations": [
+                        "gray-base"
+                      ]
                     },
                     {
                       "title": "gray-light",
                       "state": "implemented",
-                      "value": "lighten(@gray-base, 46.7%)"
+                      "value": "lighten(@gray-base, 46.7%)",
+                      "relations": [
+                        "gray-base"
+                      ]
                     },
                     {
                       "title": "gray-lighter",
                       "state": "implemented",
-                      "value": "lighten(@gray-base, 93.5%)"
+                      "value": "lighten(@gray-base, 93.5%)",
+                      "relations": [
+                        "gray-base"
+                      ]
                     },
                     {
                       "title": "brand-primary",
                       "state": "implemented",
-                      "value": "rgb(76, 101, 134)"
+                      "value": "rgb(76, 101, 134)",
+                      "relations": []
                     },
                     {
                       "title": "brand-secondary",
                       "state": "implemented",
-                      "value": "rgb(110, 160, 60)"
+                      "value": "rgb(110, 160, 60)",
+                      "relations": []
                     },
                     {
                       "title": "brand-success",
                       "state": "implemented",
-                      "value": "rgb(110, 160, 60)"
+                      "value": "rgb(110, 160, 60)",
+                      "relations": []
                     },
                     {
                       "title": "brand-info",
                       "state": "implemented",
-                      "value": "rgb(220, 180, 150)"
+                      "value": "rgb(220, 180, 150)",
+                      "relations": []
                     },
                     {
                       "title": "brand-warning",
                       "state": "implemented",
-                      "value": "rgb(250, 130, 40)"
+                      "value": "rgb(250, 130, 40)",
+                      "relations": []
                     },
                     {
                       "title": "brand-danger",
                       "state": "implemented",
-                      "value": "rgb(250, 130, 40)"
+                      "value": "rgb(250, 130, 40)",
+                      "relations": []
                     }
                   ]
                 },
@@ -250,31 +272,42 @@
                       "description": "Background color for `<body>`.",
                       "title": "body-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Global text color on `<body>`.",
                       "title": "text-color",
                       "state": "implemented",
-                      "value": "@gray-dark"
+                      "value": "@gray-dark",
+                      "relations": [
+                        "gray-dark"
+                      ]
                     },
                     {
                       "description": "Global textual link color.",
                       "title": "link-color",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "description": "Link hover color set via `darken()` function.",
                       "title": "link-hover-color",
                       "state": "implemented",
-                      "value": "darken(@link-color, 15%)"
+                      "value": "darken(@link-color, 15%)",
+                      "relations": [
+                        "link-color"
+                      ]
                     },
                     {
                       "description": "Link hover decoration.",
                       "title": "link-hover-decoration",
                       "state": "implemented",
-                      "value": "underline"
+                      "value": "underline",
+                      "relations": []
                     }
                   ]
                 },
@@ -289,120 +322,164 @@
                       "description": "Deprecated `@screen-xs` as of v3.0.1",
                       "title": "screen-xs",
                       "state": "implemented",
-                      "value": "480px"
+                      "value": "480px",
+                      "relations": []
                     },
                     {
                       "description": "Deprecated `@screen-xs-min` as of v3.2.0",
                       "title": "screen-xs-min",
                       "state": "implemented",
-                      "value": "@screen-xs"
+                      "value": "@screen-xs",
+                      "relations": [
+                        "screen-xs"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-phone` as of v3.0.1",
                       "title": "screen-phone",
                       "state": "implemented",
-                      "value": "@screen-xs-min"
+                      "value": "@screen-xs-min",
+                      "relations": [
+                        "screen-xs-min"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-sm` as of v3.0.1",
                       "title": "screen-sm",
                       "state": "implemented",
-                      "value": "768px"
+                      "value": "768px",
+                      "relations": []
                     },
                     {
                       "title": "screen-sm-min",
                       "state": "implemented",
-                      "value": "@screen-sm"
+                      "value": "@screen-sm",
+                      "relations": [
+                        "screen-sm"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-tablet` as of v3.0.1",
                       "title": "screen-tablet",
                       "state": "implemented",
-                      "value": "@screen-sm-min"
+                      "value": "@screen-sm-min",
+                      "relations": [
+                        "screen-sm-min"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-md` as of v3.0.1",
                       "title": "screen-md",
                       "state": "implemented",
-                      "value": "992px"
+                      "value": "992px",
+                      "relations": []
                     },
                     {
                       "title": "screen-md-min",
                       "state": "implemented",
-                      "value": "@screen-md"
+                      "value": "@screen-md",
+                      "relations": [
+                        "screen-md"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-desktop` as of v3.0.1",
                       "title": "screen-desktop",
                       "state": "implemented",
-                      "value": "@screen-md-min"
+                      "value": "@screen-md-min",
+                      "relations": [
+                        "screen-md-min"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-lg` as of v3.0.1",
                       "title": "screen-lg",
                       "state": "implemented",
-                      "value": "1200px"
+                      "value": "1200px",
+                      "relations": []
                     },
                     {
                       "title": "screen-lg-min",
                       "state": "implemented",
-                      "value": "@screen-lg"
+                      "value": "@screen-lg",
+                      "relations": [
+                        "screen-lg"
+                      ]
                     },
                     {
                       "description": "Deprecated `@screen-lg-desktop` as of v3.0.1",
                       "title": "screen-lg-desktop",
                       "state": "implemented",
-                      "value": "@screen-lg-min"
+                      "value": "@screen-lg-min",
+                      "relations": [
+                        "screen-lg-min"
+                      ]
                     },
                     {
                       "title": "screen-xs-max",
                       "state": "implemented",
-                      "value": "(@screen-sm-min - 1)"
+                      "value": "(@screen-sm-min - 1)",
+                      "relations": [
+                        "screen-sm-min"
+                      ]
                     },
                     {
                       "title": "screen-sm-max",
                       "state": "implemented",
-                      "value": "(@screen-md-min - 1)"
+                      "value": "(@screen-md-min - 1)",
+                      "relations": [
+                        "screen-md-min"
+                      ]
                     },
                     {
                       "title": "screen-md-max",
                       "state": "implemented",
-                      "value": "(@screen-lg-min - 1)"
+                      "value": "(@screen-lg-min - 1)",
+                      "relations": [
+                        "screen-lg-min"
+                      ]
                     },
                     {
                       "title": "zindex-navbar",
                       "state": "implemented",
-                      "value": "1000"
+                      "value": "1000",
+                      "relations": []
                     },
                     {
                       "title": "zindex-dropdown",
                       "state": "implemented",
-                      "value": "1000"
+                      "value": "1000",
+                      "relations": []
                     },
                     {
                       "title": "zindex-popover",
                       "state": "implemented",
-                      "value": "1060"
+                      "value": "1060",
+                      "relations": []
                     },
                     {
                       "title": "zindex-tooltip",
                       "state": "implemented",
-                      "value": "1070"
+                      "value": "1070",
+                      "relations": []
                     },
                     {
                       "title": "zindex-navbar-fixed",
                       "state": "implemented",
-                      "value": "1030"
+                      "value": "1030",
+                      "relations": []
                     },
                     {
                       "title": "zindex-modal-background",
                       "state": "implemented",
-                      "value": "1040"
+                      "value": "1040",
+                      "relations": []
                     },
                     {
                       "title": "zindex-modal",
                       "state": "implemented",
-                      "value": "1050"
+                      "value": "1050",
+                      "relations": []
                     }
                   ]
                 },
@@ -416,91 +493,110 @@
                     {
                       "title": "padding-base-vertical",
                       "state": "implemented",
-                      "value": "3px"
+                      "value": "3px",
+                      "relations": []
                     },
                     {
                       "title": "padding-base-horizontal",
                       "state": "implemented",
-                      "value": "8px"
+                      "value": "8px",
+                      "relations": []
                     },
                     {
                       "title": "padding-large-vertical",
                       "state": "implemented",
-                      "value": "6px"
+                      "value": "6px",
+                      "relations": []
                     },
                     {
                       "title": "padding-large-horizontal",
                       "state": "implemented",
-                      "value": "12px"
+                      "value": "12px",
+                      "relations": []
                     },
                     {
                       "title": "padding-small-vertical",
                       "state": "implemented",
-                      "value": "3px"
+                      "value": "3px",
+                      "relations": []
                     },
                     {
                       "title": "padding-small-horizontal",
                       "state": "implemented",
-                      "value": "6px"
+                      "value": "6px",
+                      "relations": []
                     },
                     {
                       "title": "padding-xs-vertical",
                       "state": "implemented",
-                      "value": "1px"
+                      "value": "1px",
+                      "relations": []
                     },
                     {
                       "title": "padding-xs-horizontal",
                       "state": "implemented",
-                      "value": "5px"
+                      "value": "5px",
+                      "relations": []
                     },
                     {
                       "title": "line-height-large",
                       "state": "implemented",
-                      "value": "1.33"
+                      "value": "1.33",
+                      "relations": []
                     },
                     {
                       "title": "line-height-small",
                       "state": "implemented",
-                      "value": "1.5"
+                      "value": "1.5",
+                      "relations": []
                     },
                     {
                       "title": "border-radius-base",
                       "state": "implemented",
-                      "value": "0px"
+                      "value": "0px",
+                      "relations": []
                     },
                     {
                       "title": "border-radius-large",
                       "state": "implemented",
-                      "value": "0px"
+                      "value": "0px",
+                      "relations": []
                     },
                     {
                       "title": "border-radius-small",
                       "state": "implemented",
-                      "value": "0px"
+                      "value": "0px",
+                      "relations": []
                     },
                     {
                       "description": "Global color for active items (e.g., navs or dropdowns).",
                       "title": "component-active-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Global background color for active items (e.g., navs or dropdowns).",
                       "title": "component-active-bg",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "description": "Width of the `border` for generating carets that indicator dropdowns.",
                       "title": "caret-width-base",
                       "state": "implemented",
-                      "value": "4px"
+                      "value": "4px",
+                      "relations": []
                     },
                     {
                       "description": "Carets increase slightly in size for larger components.",
                       "title": "caret-width-large",
                       "state": "implemented",
-                      "value": "5px"
+                      "value": "5px",
+                      "relations": []
                     }
                   ]
                 }
@@ -521,58 +617,84 @@
                       "description": "Number of columns in the grid.",
                       "title": "grid-columns",
                       "state": "implemented",
-                      "value": "12"
+                      "value": "12",
+                      "relations": []
                     },
                     {
                       "description": "Padding between columns. Gets divided in half for the left and right.",
                       "title": "grid-gutter-width",
                       "state": "implemented",
-                      "value": "30px"
+                      "value": "30px",
+                      "relations": []
                     },
                     {
                       "description": "Point at which the navbar becomes uncollapsed.",
                       "title": "grid-float-breakpoint",
                       "state": "implemented",
-                      "value": "@screen-sm-min"
+                      "value": "@screen-sm-min",
+                      "relations": [
+                        "screen-sm-min"
+                      ]
                     },
                     {
                       "description": "Point at which the navbar begins collapsing.",
                       "title": "grid-float-breakpoint-max",
                       "state": "implemented",
-                      "value": "(@grid-float-breakpoint - 1)"
+                      "value": "(@grid-float-breakpoint - 1)",
+                      "relations": [
+                        "grid-float-breakpoint"
+                      ]
                     },
                     {
                       "title": "container-tablet",
                       "state": "implemented",
-                      "value": "(720px + @grid-gutter-width)"
+                      "value": "(720px + @grid-gutter-width)",
+                      "relations": [
+                        "grid-gutter-width"
+                      ]
                     },
                     {
                       "description": "For `@screen-sm-min` and up.",
                       "title": "container-sm",
                       "state": "implemented",
-                      "value": "@container-tablet"
+                      "value": "@container-tablet",
+                      "relations": [
+                        "container-tablet"
+                      ]
                     },
                     {
                       "title": "container-desktop",
                       "state": "implemented",
-                      "value": "(940px + @grid-gutter-width)"
+                      "value": "(940px + @grid-gutter-width)",
+                      "relations": [
+                        "grid-gutter-width"
+                      ]
                     },
                     {
                       "description": "For `@screen-md-min` and up.",
                       "title": "container-md",
                       "state": "implemented",
-                      "value": "@container-desktop"
+                      "value": "@container-desktop",
+                      "relations": [
+                        "container-desktop"
+                      ]
                     },
                     {
                       "title": "container-large-desktop",
                       "state": "implemented",
-                      "value": "(1140px + @grid-gutter-width)"
+                      "value": "(1140px + @grid-gutter-width)",
+                      "relations": [
+                        "grid-gutter-width"
+                      ]
                     },
                     {
                       "description": "For `@screen-lg-min` and up.",
                       "title": "container-lg",
                       "state": "implemented",
-                      "value": "@container-large-desktop"
+                      "value": "@container-large-desktop",
+                      "relations": [
+                        "container-large-desktop"
+                      ]
                     }
                   ]
                 },
@@ -586,101 +708,141 @@
                     {
                       "title": "font-family-sans-serif",
                       "state": "implemented",
-                      "value": "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+                      "value": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+                      "relations": []
                     },
                     {
                       "title": "font-family-serif",
                       "state": "implemented",
-                      "value": "Georgia, \"Times New Roman\", Times, serif"
+                      "value": "Georgia, \"Times New Roman\", Times, serif",
+                      "relations": []
                     },
                     {
                       "description": "Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.",
                       "title": "font-family-monospace",
                       "state": "implemented",
-                      "value": "Menlo, Monaco, Consolas, \"Courier New\", monospace"
+                      "value": "Menlo, Monaco, Consolas, \"Courier New\", monospace",
+                      "relations": []
                     },
                     {
                       "title": "font-family-base",
                       "state": "implemented",
-                      "value": "@font-family-sans-serif"
+                      "value": "@font-family-sans-serif",
+                      "relations": [
+                        "font-family-sans-serif"
+                      ]
                     },
                     {
                       "title": "font-size-base",
                       "state": "implemented",
-                      "value": "14px"
+                      "value": "14px",
+                      "relations": []
                     },
                     {
                       "title": "font-size-large",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.25))"
+                      "value": "ceil((@font-size-base * 1.25))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-small",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 0.85))"
+                      "value": "ceil((@font-size-base * 0.85))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h1",
                       "state": "implemented",
-                      "value": "floor((@font-size-base * 2.6))"
+                      "value": "floor((@font-size-base * 2.6))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h2",
                       "state": "implemented",
-                      "value": "floor((@font-size-base * 2.15))"
+                      "value": "floor((@font-size-base * 2.15))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h3",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.7))"
+                      "value": "ceil((@font-size-base * 1.7))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h4",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.25))"
+                      "value": "ceil((@font-size-base * 1.25))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h5",
                       "state": "implemented",
-                      "value": "@font-size-base"
+                      "value": "@font-size-base",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h6",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 0.85))"
+                      "value": "ceil((@font-size-base * 0.85))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "description": "Unit-less `line-height` for use in components like buttons.",
                       "title": "line-height-base",
                       "state": "implemented",
-                      "value": "1.428571429"
+                      "value": "1.428571429",
+                      "relations": []
                     },
                     {
                       "description": "Computed \"line-height\" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.",
                       "title": "line-height-computed",
                       "state": "implemented",
-                      "value": "floor((@font-size-base * @line-height-base))"
+                      "value": "floor((@font-size-base * @line-height-base))",
+                      "relations": [
+                        "font-size-base",
+                        "line-height-base"
+                      ]
                     },
                     {
                       "description": "By default, this inherits from the `<body>`.",
                       "title": "headings-font-family",
                       "state": "implemented",
-                      "value": "inherit"
+                      "value": "inherit",
+                      "relations": []
                     },
                     {
                       "title": "headings-font-weight",
                       "state": "implemented",
-                      "value": "500"
+                      "value": "500",
+                      "relations": []
                     },
                     {
                       "title": "headings-line-height",
                       "state": "implemented",
-                      "value": "1.1"
+                      "value": "1.1",
+                      "relations": []
                     },
                     {
                       "title": "headings-color",
                       "state": "implemented",
-                      "value": "inherit"
+                      "value": "inherit",
+                      "relations": []
                     }
                   ]
                 },
@@ -695,19 +857,22 @@
                       "description": "Load fonts from this directory.",
                       "title": "icon-font-path",
                       "state": "implemented",
-                      "value": "\"../fonts/\""
+                      "value": "\"../fonts/\"",
+                      "relations": []
                     },
                     {
                       "description": "File name for all font files.",
                       "title": "icon-font-name",
                       "state": "implemented",
-                      "value": "\"glyphicons-halflings-regular\""
+                      "value": "\"glyphicons-halflings-regular\"",
+                      "relations": []
                     },
                     {
                       "description": "Element ID within SVG icon file.",
                       "title": "icon-font-svg-id",
                       "state": "implemented",
-                      "value": "\"glyphicons_halflingsregular\""
+                      "value": "\"glyphicons_halflingsregular\"",
+                      "relations": []
                     }
                   ]
                 },
@@ -721,102 +886,144 @@
                     {
                       "title": "btn-font-weight",
                       "state": "implemented",
-                      "value": "normal"
+                      "value": "normal",
+                      "relations": []
                     },
                     {
                       "title": "btn-default-color",
                       "state": "implemented",
-                      "value": "#333"
+                      "value": "#333",
+                      "relations": []
                     },
                     {
                       "title": "btn-default-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "btn-default-border",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "title": "btn-primary-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "btn-primary-bg",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "btn-primary-border",
                       "state": "implemented",
-                      "value": "darken(@btn-primary-bg, 5%)"
+                      "value": "darken(@btn-primary-bg, 5%)",
+                      "relations": [
+                        "btn-primary-bg"
+                      ]
                     },
                     {
                       "title": "btn-success-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "btn-success-bg",
                       "state": "implemented",
-                      "value": "@brand-success"
+                      "value": "@brand-success",
+                      "relations": [
+                        "brand-success"
+                      ]
                     },
                     {
                       "title": "btn-success-border",
                       "state": "implemented",
-                      "value": "darken(@btn-success-bg, 5%)"
+                      "value": "darken(@btn-success-bg, 5%)",
+                      "relations": [
+                        "btn-success-bg"
+                      ]
                     },
                     {
                       "title": "btn-info-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "btn-info-bg",
                       "state": "implemented",
-                      "value": "@brand-info"
+                      "value": "@brand-info",
+                      "relations": [
+                        "brand-info"
+                      ]
                     },
                     {
                       "title": "btn-info-border",
                       "state": "implemented",
-                      "value": "darken(@btn-info-bg, 5%)"
+                      "value": "darken(@btn-info-bg, 5%)",
+                      "relations": [
+                        "btn-info-bg"
+                      ]
                     },
                     {
                       "title": "btn-warning-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "btn-warning-bg",
                       "state": "implemented",
-                      "value": "@brand-warning"
+                      "value": "@brand-warning",
+                      "relations": [
+                        "brand-warning"
+                      ]
                     },
                     {
                       "title": "btn-warning-border",
                       "state": "implemented",
-                      "value": "darken(@btn-warning-bg, 5%)"
+                      "value": "darken(@btn-warning-bg, 5%)",
+                      "relations": [
+                        "btn-warning-bg"
+                      ]
                     },
                     {
                       "title": "btn-danger-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "btn-danger-bg",
                       "state": "implemented",
-                      "value": "@brand-danger"
+                      "value": "@brand-danger",
+                      "relations": [
+                        "brand-danger"
+                      ]
                     },
                     {
                       "title": "btn-danger-border",
                       "state": "implemented",
-                      "value": "darken(@btn-danger-bg, 5%)"
+                      "value": "darken(@btn-danger-bg, 5%)",
+                      "relations": [
+                        "btn-danger-bg"
+                      ]
                     },
                     {
                       "title": "btn-link-disabled-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     }
                   ]
                 }
@@ -837,73 +1044,93 @@
                       "description": "Background for the dropdown menu.",
                       "title": "dropdown-bg",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "description": "Dropdown menu `border-color`.",
                       "title": "dropdown-border",
                       "state": "implemented",
-                      "value": "rgba(0, 0, 0, 0.15)"
+                      "value": "rgba(0, 0, 0, 0.15)",
+                      "relations": []
                     },
                     {
                       "description": "Dropdown menu `border-color` **for IE8**.",
                       "title": "dropdown-fallback-border",
                       "state": "implemented",
-                      "value": "rgb(204, 204, 204)"
+                      "value": "rgb(204, 204, 204)",
+                      "relations": []
                     },
                     {
                       "description": "Divider color for between dropdown items.",
                       "title": "dropdown-divider-bg",
                       "state": "implemented",
-                      "value": "rgb(229, 229, 229)"
+                      "value": "rgb(229, 229, 229)",
+                      "relations": []
                     },
                     {
                       "description": "Dropdown link text color.",
                       "title": "dropdown-link-color",
                       "state": "implemented",
-                      "value": "@gray-dark"
+                      "value": "@gray-dark",
+                      "relations": [
+                        "gray-dark"
+                      ]
                     },
                     {
                       "description": "Hover color for dropdown links.",
                       "title": "dropdown-link-hover-color",
                       "state": "implemented",
-                      "value": "darken(@gray-dark, 5%)"
+                      "value": "darken(@gray-dark, 5%)",
+                      "relations": [
+                        "gray-dark"
+                      ]
                     },
                     {
                       "description": "Hover background for dropdown links.",
                       "title": "dropdown-link-hover-bg",
                       "state": "implemented",
-                      "value": "@il-sidebar-bg-color"
+                      "value": "@il-sidebar-bg-color",
+                      "relations": [
+                        "il-sidebar-bg-color"
+                      ]
                     },
                     {
                       "description": "Active dropdown menu item text color.",
                       "title": "dropdown-link-active-color",
                       "state": "implemented",
-                      "value": "@component-active-color"
+                      "value": "@component-active-color",
+                      "relations": [
+                        "component-active-color"
+                      ]
                     },
                     {
                       "description": "Active dropdown menu item background color.",
                       "title": "dropdown-link-active-bg",
                       "state": "implemented",
-                      "value": "rgb(65, 189, 157)"
+                      "value": "rgb(65, 189, 157)",
+                      "relations": []
                     },
                     {
                       "description": "Disabled dropdown menu item background color.",
                       "title": "dropdown-link-disabled-color",
                       "state": "implemented",
-                      "value": "rgb(116, 121, 133)"
+                      "value": "rgb(116, 121, 133)",
+                      "relations": []
                     },
                     {
                       "description": "Text color for headers within dropdown menus.",
                       "title": "dropdown-header-color",
                       "state": "implemented",
-                      "value": "rgb(116, 121, 133)"
+                      "value": "rgb(116, 121, 133)",
+                      "relations": []
                     },
                     {
                       "description": "Deprecated `@dropdown-caret-color` as of v3.1.0",
                       "title": "dropdown-caret-color",
                       "state": "implemented",
-                      "value": "rgb(0, 0, 0)"
+                      "value": "rgb(0, 0, 0)",
+                      "relations": []
                     }
                   ]
                 },
@@ -917,247 +1144,339 @@
                     {
                       "title": "navbar-height",
                       "state": "implemented",
-                      "value": "44px"
+                      "value": "44px",
+                      "relations": []
                     },
                     {
                       "title": "navbar-margin-bottom",
                       "state": "implemented",
-                      "value": "@line-height-computed"
+                      "value": "@line-height-computed",
+                      "relations": [
+                        "line-height-computed"
+                      ]
                     },
                     {
                       "title": "navbar-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "title": "navbar-padding-horizontal",
                       "state": "implemented",
-                      "value": "floor((@grid-gutter-width / 2))"
+                      "value": "floor((@grid-gutter-width / 2))",
+                      "relations": [
+                        "grid-gutter-width"
+                      ]
                     },
                     {
                       "title": "navbar-padding-vertical",
                       "state": "implemented",
-                      "value": "((@navbar-height - @line-height-computed) / 2)"
+                      "value": "((@navbar-height - @line-height-computed) / 2)",
+                      "relations": [
+                        "navbar-height",
+                        "line-height-computed"
+                      ]
                     },
                     {
                       "title": "navbar-collapse-max-height",
                       "state": "implemented",
-                      "value": "340px"
+                      "value": "340px",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-color",
                       "state": "implemented",
-                      "value": "#777"
+                      "value": "#777",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-bg",
                       "state": "implemented",
-                      "value": "#f8f8f8"
+                      "value": "#f8f8f8",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-border",
                       "state": "implemented",
-                      "value": "darken(@navbar-default-bg, 6.5%)"
+                      "value": "darken(@navbar-default-bg, 6.5%)",
+                      "relations": [
+                        "navbar-default-bg"
+                      ]
                     },
                     {
                       "title": "navbar-default-link-color",
                       "state": "implemented",
-                      "value": "#777"
+                      "value": "#777",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-link-hover-color",
                       "state": "implemented",
-                      "value": "#333"
+                      "value": "#333",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-link-hover-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-link-active-color",
                       "state": "implemented",
-                      "value": "#555"
+                      "value": "#555",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-link-active-bg",
                       "state": "implemented",
-                      "value": "darken(@navbar-default-bg, 6.5%)"
+                      "value": "darken(@navbar-default-bg, 6.5%)",
+                      "relations": [
+                        "navbar-default-bg"
+                      ]
                     },
                     {
                       "title": "navbar-default-link-disabled-color",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-link-disabled-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-brand-color",
                       "state": "implemented",
-                      "value": "@navbar-default-link-color"
+                      "value": "@navbar-default-link-color",
+                      "relations": [
+                        "navbar-default-link-color"
+                      ]
                     },
                     {
                       "title": "navbar-default-brand-hover-color",
                       "state": "implemented",
-                      "value": "darken(@navbar-default-brand-color, 10%)"
+                      "value": "darken(@navbar-default-brand-color, 10%)",
+                      "relations": [
+                        "navbar-default-brand-color"
+                      ]
                     },
                     {
                       "title": "navbar-default-brand-hover-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-toggle-hover-bg",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-toggle-icon-bar-bg",
                       "state": "implemented",
-                      "value": "#888"
+                      "value": "#888",
+                      "relations": []
                     },
                     {
                       "title": "navbar-default-toggle-border-color",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-color",
                       "state": "implemented",
-                      "value": "lighten(@gray-light, 15%)"
+                      "value": "lighten(@gray-light, 15%)",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-bg",
                       "state": "implemented",
-                      "value": "#222"
+                      "value": "#222",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-border",
                       "state": "implemented",
-                      "value": "darken(@navbar-inverse-bg, 10%)"
+                      "value": "darken(@navbar-inverse-bg, 10%)",
+                      "relations": [
+                        "navbar-inverse-bg"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-color",
                       "state": "implemented",
-                      "value": "lighten(@gray-light, 15%)"
+                      "value": "lighten(@gray-light, 15%)",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-hover-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-link-hover-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-link-active-color",
                       "state": "implemented",
-                      "value": "@navbar-inverse-link-hover-color"
+                      "value": "@navbar-inverse-link-hover-color",
+                      "relations": [
+                        "navbar-inverse-link-hover-color"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-active-bg",
                       "state": "implemented",
-                      "value": "darken(@navbar-inverse-bg, 10%)"
+                      "value": "darken(@navbar-inverse-bg, 10%)",
+                      "relations": [
+                        "navbar-inverse-bg"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-disabled-color",
                       "state": "implemented",
-                      "value": "#444"
+                      "value": "#444",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-link-disabled-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-brand-color",
                       "state": "implemented",
-                      "value": "@navbar-inverse-link-color"
+                      "value": "@navbar-inverse-link-color",
+                      "relations": [
+                        "navbar-inverse-link-color"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-brand-hover-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-brand-hover-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-toggle-hover-bg",
                       "state": "implemented",
-                      "value": "#333"
+                      "value": "#333",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-toggle-icon-bar-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-toggle-border-color",
                       "state": "implemented",
-                      "value": "#333"
+                      "value": "#333",
+                      "relations": []
                     },
                     {
                       "title": "nav-link-padding",
                       "state": "implemented",
-                      "value": "10px 15px"
+                      "value": "10px 15px",
+                      "relations": []
                     },
                     {
                       "title": "nav-link-hover-bg",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "title": "nav-disabled-link-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "nav-disabled-link-hover-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "nav-tabs-border-color",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "nav-tabs-link-hover-border-color",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "title": "nav-tabs-active-link-hover-bg",
                       "state": "implemented",
-                      "value": "@body-bg"
+                      "value": "@body-bg",
+                      "relations": [
+                        "body-bg"
+                      ]
                     },
                     {
                       "title": "nav-tabs-active-link-hover-color",
                       "state": "implemented",
-                      "value": "@gray"
+                      "value": "@gray",
+                      "relations": [
+                        "gray"
+                      ]
                     },
                     {
                       "title": "nav-tabs-active-link-hover-border-color",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "nav-tabs-justified-link-border-color",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "nav-tabs-justified-active-link-border-color",
                       "state": "implemented",
-                      "value": "@body-bg"
+                      "value": "@body-bg",
+                      "relations": [
+                        "body-bg"
+                      ]
                     }
                   ]
                 },
@@ -1172,127 +1491,182 @@
                       "description": "`<input>` background color",
                       "title": "input-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "`<input disabled>` background color",
                       "title": "input-bg-disabled",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "description": "Text color for `<input>`s",
                       "title": "input-color",
                       "state": "implemented",
-                      "value": "@gray"
+                      "value": "@gray",
+                      "relations": [
+                        "gray"
+                      ]
                     },
                     {
                       "description": "`<input>` border color",
                       "title": "input-border",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "description": "Default `.form-control` border radius",
                       "title": "input-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "description": "Large `.form-control` border radius",
                       "title": "input-border-radius-large",
                       "state": "implemented",
-                      "value": "@border-radius-large"
+                      "value": "@border-radius-large",
+                      "relations": [
+                        "border-radius-large"
+                      ]
                     },
                     {
                       "description": "Small `.form-control` border radius",
                       "title": "input-border-radius-small",
                       "state": "implemented",
-                      "value": "@border-radius-small"
+                      "value": "@border-radius-small",
+                      "relations": [
+                        "border-radius-small"
+                      ]
                     },
                     {
                       "description": "Border color for inputs on focus",
                       "title": "input-border-focus",
                       "state": "implemented",
-                      "value": "#66afe9"
+                      "value": "#66afe9",
+                      "relations": []
                     },
                     {
                       "description": "Placeholder text color",
                       "title": "input-color-placeholder",
                       "state": "implemented",
-                      "value": "#999"
+                      "value": "#999",
+                      "relations": []
                     },
                     {
                       "description": "Default `.form-control` height",
                       "title": "input-height-base",
                       "state": "implemented",
-                      "value": "(@line-height-computed + (@padding-base-vertical * 2) + 2)"
+                      "value": "(@line-height-computed + (@padding-base-vertical * 2) + 2)",
+                      "relations": [
+                        "line-height-computed",
+                        "padding-base-vertical"
+                      ]
                     },
                     {
                       "description": "Large `.form-control` height",
                       "title": "input-height-large",
                       "state": "implemented",
-                      "value": "(ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2)"
+                      "value": "(ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2)",
+                      "relations": [
+                        "font-size-large",
+                        "line-height-large",
+                        "padding-large-vertical"
+                      ]
                     },
                     {
                       "description": "Small `.form-control` height",
                       "title": "input-height-small",
                       "state": "implemented",
-                      "value": "(floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2)"
+                      "value": "(floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2)",
+                      "relations": [
+                        "font-size-small",
+                        "line-height-small",
+                        "padding-small-vertical"
+                      ]
                     },
                     {
                       "description": "`.form-group` margin",
                       "title": "form-group-margin-bottom",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "title": "legend-color",
                       "state": "implemented",
-                      "value": "@gray-dark"
+                      "value": "@gray-dark",
+                      "relations": [
+                        "gray-dark"
+                      ]
                     },
                     {
                       "title": "legend-border-color",
                       "state": "implemented",
-                      "value": "#e5e5e5"
+                      "value": "#e5e5e5",
+                      "relations": []
                     },
                     {
                       "description": "Background color for textual input addons",
                       "title": "input-group-addon-bg",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "description": "Border color for textual input addons",
                       "title": "input-group-addon-border-color",
                       "state": "implemented",
-                      "value": "@input-border"
+                      "value": "@input-border",
+                      "relations": [
+                        "input-border"
+                      ]
                     },
                     {
                       "description": "Disabled cursor for form controls and buttons.",
                       "title": "cursor-disabled",
                       "state": "implemented",
-                      "value": "not-allowed"
+                      "value": "not-allowed",
+                      "relations": []
                     },
                     {
                       "title": "ilFormInputFontSize",
                       "state": "implemented",
-                      "value": "@font-size-small"
+                      "value": "@font-size-small",
+                      "relations": [
+                        "font-size-small"
+                      ]
                     },
                     {
                       "title": "input-height-base",
                       "state": "implemented",
-                      "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)"
+                      "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)",
+                      "relations": [
+                        "ilFormInputFontSize",
+                        "line-height-base",
+                        "padding-base-vertical"
+                      ]
                     },
                     {
                       "title": "ilFormColor",
                       "state": "implemented",
-                      "value": "#808080"
+                      "value": "#808080",
+                      "relations": []
                     },
                     {
                       "title": "ilFormBgColor",
                       "state": "implemented",
-                      "value": "#fdfdfd"
+                      "value": "#fdfdfd",
+                      "relations": []
                     }
                   ]
                 },
@@ -1307,102 +1681,135 @@
                       "description": "Padding for `<th>`s and `<td>`s.",
                       "title": "table-cell-padding",
                       "state": "implemented",
-                      "value": "8px"
+                      "value": "8px",
+                      "relations": []
                     },
                     {
                       "description": "Padding for cells in `.table-condensed`.",
                       "title": "table-condensed-cell-padding",
                       "state": "implemented",
-                      "value": "5px"
+                      "value": "5px",
+                      "relations": []
                     },
                     {
                       "description": "Default background color used for all tables.",
                       "title": "table-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "description": "Background color used for `.table-striped`.",
                       "title": "table-bg-accent",
                       "state": "implemented",
-                      "value": "#f9f9f9"
+                      "value": "#f9f9f9",
+                      "relations": []
                     },
                     {
                       "description": "Background color used for `.table-hover`.",
                       "title": "table-bg-hover",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "title": "table-bg-active",
                       "state": "implemented",
-                      "value": "@table-bg-hover"
+                      "value": "@table-bg-hover",
+                      "relations": [
+                        "table-bg-hover"
+                      ]
                     },
                     {
                       "description": "Border color for table and cell borders.",
                       "title": "table-border-color",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "pagination-color",
                       "state": "implemented",
-                      "value": "@link-color"
+                      "value": "@link-color",
+                      "relations": [
+                        "link-color"
+                      ]
                     },
                     {
                       "title": "pagination-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "pagination-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "pagination-hover-color",
                       "state": "implemented",
-                      "value": "@link-hover-color"
+                      "value": "@link-hover-color",
+                      "relations": [
+                        "link-hover-color"
+                      ]
                     },
                     {
                       "title": "pagination-hover-bg",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "title": "pagination-hover-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "pagination-active-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "pagination-active-bg",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "pagination-active-border",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "pagination-disabled-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "pagination-disabled-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "pagination-disabled-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     }
                   ]
                 },
@@ -1416,52 +1823,80 @@
                     {
                       "title": "nav-pills-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "title": "nav-pills-active-link-hover-bg",
                       "state": "implemented",
-                      "value": "@component-active-bg"
+                      "value": "@component-active-bg",
+                      "relations": [
+                        "component-active-bg"
+                      ]
                     },
                     {
                       "title": "nav-pills-active-link-hover-color",
                       "state": "implemented",
-                      "value": "@component-active-color"
+                      "value": "@component-active-color",
+                      "relations": [
+                        "component-active-color"
+                      ]
                     },
                     {
                       "title": "pager-bg",
                       "state": "implemented",
-                      "value": "@pagination-bg"
+                      "value": "@pagination-bg",
+                      "relations": [
+                        "pagination-bg"
+                      ]
                     },
                     {
                       "title": "pager-border",
                       "state": "implemented",
-                      "value": "@pagination-border"
+                      "value": "@pagination-border",
+                      "relations": [
+                        "pagination-border"
+                      ]
                     },
                     {
                       "title": "pager-border-radius",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "title": "pager-hover-bg",
                       "state": "implemented",
-                      "value": "@pagination-hover-bg"
+                      "value": "@pagination-hover-bg",
+                      "relations": [
+                        "pagination-hover-bg"
+                      ]
                     },
                     {
                       "title": "pager-active-bg",
                       "state": "implemented",
-                      "value": "@pagination-active-bg"
+                      "value": "@pagination-active-bg",
+                      "relations": [
+                        "pagination-active-bg"
+                      ]
                     },
                     {
                       "title": "pager-active-color",
                       "state": "implemented",
-                      "value": "@pagination-active-color"
+                      "value": "@pagination-active-color",
+                      "relations": [
+                        "pagination-active-color"
+                      ]
                     },
                     {
                       "title": "pager-disabled-color",
                       "state": "implemented",
-                      "value": "@pagination-disabled-color"
+                      "value": "@pagination-disabled-color",
+                      "relations": [
+                        "pagination-disabled-color"
+                      ]
                     }
                   ]
                 },
@@ -1475,27 +1910,36 @@
                     {
                       "title": "jumbotron-padding",
                       "state": "implemented",
-                      "value": "30px"
+                      "value": "30px",
+                      "relations": []
                     },
                     {
                       "title": "jumbotron-color",
                       "state": "implemented",
-                      "value": "inherit"
+                      "value": "inherit",
+                      "relations": []
                     },
                     {
                       "title": "jumbotron-bg",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "title": "jumbotron-heading-color",
                       "state": "implemented",
-                      "value": "inherit"
+                      "value": "inherit",
+                      "relations": []
                     },
                     {
                       "title": "jumbotron-font-size",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.5))"
+                      "value": "ceil((@font-size-base * 1.5))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     }
                   ]
                 },
@@ -1517,62 +1961,82 @@
                     {
                       "title": "state-success-text",
                       "state": "implemented",
-                      "value": "rgb(56, 149, 124)"
+                      "value": "rgb(56, 149, 124)",
+                      "relations": []
                     },
                     {
                       "title": "state-success-bg",
                       "state": "implemented",
-                      "value": "rgb(199, 230, 222)"
+                      "value": "rgb(199, 230, 222)",
+                      "relations": []
                     },
                     {
                       "title": "state-success-border",
                       "state": "implemented",
-                      "value": "darken(spin(@state-success-bg, -10), 5%)"
+                      "value": "darken(spin(@state-success-bg, -10), 5%)",
+                      "relations": [
+                        "state-success-bg"
+                      ]
                     },
                     {
                       "title": "state-info-text",
                       "state": "implemented",
-                      "value": "rgb(78, 107, 159)"
+                      "value": "rgb(78, 107, 159)",
+                      "relations": []
                     },
                     {
                       "title": "state-info-bg",
                       "state": "implemented",
-                      "value": "rgb(228, 232, 239)"
+                      "value": "rgb(228, 232, 239)",
+                      "relations": []
                     },
                     {
                       "title": "state-info-border",
                       "state": "implemented",
-                      "value": "darken(spin(@state-info-bg, -10), 7%)"
+                      "value": "darken(spin(@state-info-bg, -10), 7%)",
+                      "relations": [
+                        "state-info-bg"
+                      ]
                     },
                     {
                       "title": "state-warning-text",
                       "state": "implemented",
-                      "value": "rgb(138, 109, 59)"
+                      "value": "rgb(138, 109, 59)",
+                      "relations": []
                     },
                     {
                       "title": "state-warning-bg",
                       "state": "implemented",
-                      "value": "rgb(247, 244, 192)"
+                      "value": "rgb(247, 244, 192)",
+                      "relations": []
                     },
                     {
                       "title": "state-warning-border",
                       "state": "implemented",
-                      "value": "darken(spin(@state-warning-bg, -10), 5%)"
+                      "value": "darken(spin(@state-warning-bg, -10), 5%)",
+                      "relations": [
+                        "state-warning-bg"
+                      ]
                     },
                     {
                       "title": "state-danger-text",
                       "state": "implemented",
-                      "value": "rgb(179, 62, 99)"
+                      "value": "rgb(179, 62, 99)",
+                      "relations": []
                     },
                     {
                       "title": "state-danger-bg",
                       "state": "implemented",
-                      "value": "rgb(244, 212, 220)"
+                      "value": "rgb(244, 212, 220)",
+                      "relations": []
                     },
                     {
                       "title": "state-danger-border",
                       "state": "implemented",
-                      "value": "darken(spin(@state-danger-bg, -10), 5%)"
+                      "value": "darken(spin(@state-danger-bg, -10), 5%)",
+                      "relations": [
+                        "state-danger-bg"
+                      ]
                     }
                   ]
                 },
@@ -1587,36 +2051,44 @@
                       "description": "Tooltip max width",
                       "title": "tooltip-max-width",
                       "state": "implemented",
-                      "value": "200px"
+                      "value": "200px",
+                      "relations": []
                     },
                     {
                       "description": "Tooltip text color",
                       "title": "tooltip-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Tooltip background color",
                       "title": "tooltip-bg",
                       "state": "implemented",
-                      "value": "#000"
+                      "value": "#000",
+                      "relations": []
                     },
                     {
                       "title": "tooltip-opacity",
                       "state": "implemented",
-                      "value": ".9"
+                      "value": ".9",
+                      "relations": []
                     },
                     {
                       "description": "Tooltip arrow width",
                       "title": "tooltip-arrow-width",
                       "state": "implemented",
-                      "value": "5px"
+                      "value": "5px",
+                      "relations": []
                     },
                     {
                       "description": "Tooltip arrow color",
                       "title": "tooltip-arrow-color",
                       "state": "implemented",
-                      "value": "@tooltip-bg"
+                      "value": "@tooltip-bg",
+                      "relations": [
+                        "tooltip-bg"
+                      ]
                     }
                   ]
                 },
@@ -1631,61 +2103,81 @@
                       "description": "Popover body background color",
                       "title": "popover-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Popover maximum width",
                       "title": "popover-max-width",
                       "state": "implemented",
-                      "value": "276px"
+                      "value": "276px",
+                      "relations": []
                     },
                     {
                       "description": "Popover border color",
                       "title": "popover-border-color",
                       "state": "implemented",
-                      "value": "rgba(0,0,0,.2)"
+                      "value": "rgba(0,0,0,.2)",
+                      "relations": []
                     },
                     {
                       "description": "Popover fallback border color",
                       "title": "popover-fallback-border-color",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "description": "Popover title background color",
                       "title": "popover-title-bg",
                       "state": "implemented",
-                      "value": "darken(@popover-bg, 3%)"
+                      "value": "darken(@popover-bg, 3%)",
+                      "relations": [
+                        "popover-bg"
+                      ]
                     },
                     {
                       "description": "Popover arrow width",
                       "title": "popover-arrow-width",
                       "state": "implemented",
-                      "value": "10px"
+                      "value": "10px",
+                      "relations": []
                     },
                     {
                       "description": "Popover arrow color",
                       "title": "popover-arrow-color",
                       "state": "implemented",
-                      "value": "@popover-bg"
+                      "value": "@popover-bg",
+                      "relations": [
+                        "popover-bg"
+                      ]
                     },
                     {
                       "description": "Popover outer arrow width",
                       "title": "popover-arrow-outer-width",
                       "state": "implemented",
-                      "value": "(@popover-arrow-width + 1)"
+                      "value": "(@popover-arrow-width + 1)",
+                      "relations": [
+                        "popover-arrow-width"
+                      ]
                     },
                     {
                       "description": "Popover outer arrow color",
                       "title": "popover-arrow-outer-color",
                       "state": "implemented",
-                      "value": "fadein(@popover-border-color, 5%)"
+                      "value": "fadein(@popover-border-color, 5%)",
+                      "relations": [
+                        "popover-border-color"
+                      ]
                     },
                     {
                       "description": "Popover outer arrow fallback color",
                       "title": "popover-arrow-outer-fallback-color",
                       "state": "implemented",
-                      "value": "darken(@popover-fallback-border-color, 20%)"
+                      "value": "darken(@popover-fallback-border-color, 20%)",
+                      "relations": [
+                        "popover-fallback-border-color"
+                      ]
                     }
                   ]
                 },
@@ -1700,49 +2192,69 @@
                       "description": "Default label background color",
                       "title": "label-default-bg",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Primary label background color",
                       "title": "label-primary-bg",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "description": "Success label background color",
                       "title": "label-success-bg",
                       "state": "implemented",
-                      "value": "@brand-success"
+                      "value": "@brand-success",
+                      "relations": [
+                        "brand-success"
+                      ]
                     },
                     {
                       "description": "Info label background color",
                       "title": "label-info-bg",
                       "state": "implemented",
-                      "value": "@brand-info"
+                      "value": "@brand-info",
+                      "relations": [
+                        "brand-info"
+                      ]
                     },
                     {
                       "description": "Warning label background color",
                       "title": "label-warning-bg",
                       "state": "implemented",
-                      "value": "@brand-warning"
+                      "value": "@brand-warning",
+                      "relations": [
+                        "brand-warning"
+                      ]
                     },
                     {
                       "description": "Danger label background color",
                       "title": "label-danger-bg",
                       "state": "implemented",
-                      "value": "@brand-danger"
+                      "value": "@brand-danger",
+                      "relations": [
+                        "brand-danger"
+                      ]
                     },
                     {
                       "description": "Default label text color",
                       "title": "label-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Default text color of a linked label",
                       "title": "label-link-hover-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     }
                   ]
                 },
@@ -1757,76 +2269,93 @@
                       "description": "Padding applied to the modal body",
                       "title": "modal-inner-padding",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "description": "Padding applied to the modal title",
                       "title": "modal-title-padding",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "description": "Modal title line-height",
                       "title": "modal-title-line-height",
                       "state": "implemented",
-                      "value": "@line-height-base"
+                      "value": "@line-height-base",
+                      "relations": [
+                        "line-height-base"
+                      ]
                     },
                     {
                       "description": "Background color of modal content area",
                       "title": "modal-content-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Modal content border color",
                       "title": "modal-content-border-color",
                       "state": "implemented",
-                      "value": "rgba(0,0,0,.2)"
+                      "value": "rgba(0,0,0,.2)",
+                      "relations": []
                     },
                     {
                       "description": "Modal content border color **for IE8**",
                       "title": "modal-content-fallback-border-color",
                       "state": "implemented",
-                      "value": "#999"
+                      "value": "#999",
+                      "relations": []
                     },
                     {
                       "description": "Modal backdrop background color",
                       "title": "modal-backdrop-bg",
                       "state": "implemented",
-                      "value": "#000"
+                      "value": "#000",
+                      "relations": []
                     },
                     {
                       "description": "Modal backdrop opacity",
                       "title": "modal-backdrop-opacity",
                       "state": "implemented",
-                      "value": ".5"
+                      "value": ".5",
+                      "relations": []
                     },
                     {
                       "description": "Modal header border color",
                       "title": "modal-header-border-color",
                       "state": "implemented",
-                      "value": "#e5e5e5"
+                      "value": "#e5e5e5",
+                      "relations": []
                     },
                     {
                       "description": "Modal footer border color",
                       "title": "modal-footer-border-color",
                       "state": "implemented",
-                      "value": "@modal-header-border-color"
+                      "value": "@modal-header-border-color",
+                      "relations": [
+                        "modal-header-border-color"
+                      ]
                     },
                     {
                       "title": "modal-lg",
                       "state": "implemented",
-                      "value": "900px"
+                      "value": "900px",
+                      "relations": []
                     },
                     {
                       "title": "modal-md",
                       "state": "implemented",
-                      "value": "600px"
+                      "value": "600px",
+                      "relations": []
                     },
                     {
                       "title": "modal-sm",
                       "state": "implemented",
-                      "value": "300px"
+                      "value": "300px",
+                      "relations": []
                     }
                   ]
                 },
@@ -1840,77 +2369,118 @@
                     {
                       "title": "alert-padding",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "title": "alert-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "title": "alert-link-font-weight",
                       "state": "implemented",
-                      "value": "bold"
+                      "value": "bold",
+                      "relations": []
                     },
                     {
                       "title": "alert-success-bg",
                       "state": "implemented",
-                      "value": "@state-success-bg"
+                      "value": "@state-success-bg",
+                      "relations": [
+                        "state-success-bg"
+                      ]
                     },
                     {
                       "title": "alert-success-text",
                       "state": "implemented",
-                      "value": "@state-success-text"
+                      "value": "@state-success-text",
+                      "relations": [
+                        "state-success-text"
+                      ]
                     },
                     {
                       "title": "alert-success-border",
                       "state": "implemented",
-                      "value": "@state-success-border"
+                      "value": "@state-success-border",
+                      "relations": [
+                        "state-success-border"
+                      ]
                     },
                     {
                       "title": "alert-info-bg",
                       "state": "implemented",
-                      "value": "@state-info-bg"
+                      "value": "@state-info-bg",
+                      "relations": [
+                        "state-info-bg"
+                      ]
                     },
                     {
                       "title": "alert-info-text",
                       "state": "implemented",
-                      "value": "@state-info-text"
+                      "value": "@state-info-text",
+                      "relations": [
+                        "state-info-text"
+                      ]
                     },
                     {
                       "title": "alert-info-border",
                       "state": "implemented",
-                      "value": "@state-info-border"
+                      "value": "@state-info-border",
+                      "relations": [
+                        "state-info-border"
+                      ]
                     },
                     {
                       "title": "alert-warning-bg",
                       "state": "implemented",
-                      "value": "@state-warning-bg"
+                      "value": "@state-warning-bg",
+                      "relations": [
+                        "state-warning-bg"
+                      ]
                     },
                     {
                       "title": "alert-warning-text",
                       "state": "implemented",
-                      "value": "@state-warning-text"
+                      "value": "@state-warning-text",
+                      "relations": [
+                        "state-warning-text"
+                      ]
                     },
                     {
                       "title": "alert-warning-border",
                       "state": "implemented",
-                      "value": "@state-warning-border"
+                      "value": "@state-warning-border",
+                      "relations": [
+                        "state-warning-border"
+                      ]
                     },
                     {
                       "title": "alert-danger-bg",
                       "state": "implemented",
-                      "value": "@state-danger-bg"
+                      "value": "@state-danger-bg",
+                      "relations": [
+                        "state-danger-bg"
+                      ]
                     },
                     {
                       "title": "alert-danger-text",
                       "state": "implemented",
-                      "value": "@state-danger-text"
+                      "value": "@state-danger-text",
+                      "relations": [
+                        "state-danger-text"
+                      ]
                     },
                     {
                       "title": "alert-danger-border",
                       "state": "implemented",
-                      "value": "@state-danger-border"
+                      "value": "@state-danger-border",
+                      "relations": [
+                        "state-danger-border"
+                      ]
                     }
                   ]
                 },
@@ -1925,49 +2495,69 @@
                       "description": "Background color of the whole progress component",
                       "title": "progress-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "description": "Progress bar text color",
                       "title": "progress-bar-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Variable for setting rounded corners on progress bar.",
                       "title": "progress-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "description": "Default progress bar color",
                       "title": "progress-bar-bg",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "description": "Success progress bar color",
                       "title": "progress-bar-success-bg",
                       "state": "implemented",
-                      "value": "@brand-success"
+                      "value": "@brand-success",
+                      "relations": [
+                        "brand-success"
+                      ]
                     },
                     {
                       "description": "Warning progress bar color",
                       "title": "progress-bar-warning-bg",
                       "state": "implemented",
-                      "value": "@brand-warning"
+                      "value": "@brand-warning",
+                      "relations": [
+                        "brand-warning"
+                      ]
                     },
                     {
                       "description": "Danger progress bar color",
                       "title": "progress-bar-danger-bg",
                       "state": "implemented",
-                      "value": "@brand-danger"
+                      "value": "@brand-danger",
+                      "relations": [
+                        "brand-danger"
+                      ]
                     },
                     {
                       "description": "Info progress bar color",
                       "title": "progress-bar-info-bg",
                       "state": "implemented",
-                      "value": "@brand-info"
+                      "value": "@brand-info",
+                      "relations": [
+                        "brand-info"
+                      ]
                     }
                   ]
                 },
@@ -1982,82 +2572,114 @@
                       "description": "Background color on `.list-group-item`",
                       "title": "list-group-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "`.list-group-item` border color",
                       "title": "list-group-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "description": "List group border radius",
                       "title": "list-group-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "description": "Background color of single list items on hover",
                       "title": "list-group-hover-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "description": "Text color of active list items",
                       "title": "list-group-active-color",
                       "state": "implemented",
-                      "value": "@component-active-color"
+                      "value": "@component-active-color",
+                      "relations": [
+                        "component-active-color"
+                      ]
                     },
                     {
                       "description": "Background color of active list items",
                       "title": "list-group-active-bg",
                       "state": "implemented",
-                      "value": "@component-active-bg"
+                      "value": "@component-active-bg",
+                      "relations": [
+                        "component-active-bg"
+                      ]
                     },
                     {
                       "description": "Border color of active list elements",
                       "title": "list-group-active-border",
                       "state": "implemented",
-                      "value": "@list-group-active-bg"
+                      "value": "@list-group-active-bg",
+                      "relations": [
+                        "list-group-active-bg"
+                      ]
                     },
                     {
                       "description": "Text color for content within active list items",
                       "title": "list-group-active-text-color",
                       "state": "implemented",
-                      "value": "lighten(@list-group-active-bg, 40%)"
+                      "value": "lighten(@list-group-active-bg, 40%)",
+                      "relations": [
+                        "list-group-active-bg"
+                      ]
                     },
                     {
                       "description": "Text color of disabled list items",
                       "title": "list-group-disabled-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Background color of disabled list items",
                       "title": "list-group-disabled-bg",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "description": "Text color for content within disabled list items",
                       "title": "list-group-disabled-text-color",
                       "state": "implemented",
-                      "value": "@list-group-disabled-color"
+                      "value": "@list-group-disabled-color",
+                      "relations": [
+                        "list-group-disabled-color"
+                      ]
                     },
                     {
                       "title": "list-group-link-color",
                       "state": "implemented",
-                      "value": "#555"
+                      "value": "#555",
+                      "relations": []
                     },
                     {
                       "title": "list-group-link-hover-color",
                       "state": "implemented",
-                      "value": "@list-group-link-color"
+                      "value": "@list-group-link-color",
+                      "relations": [
+                        "list-group-link-color"
+                      ]
                     },
                     {
                       "title": "list-group-link-heading-color",
                       "state": "implemented",
-                      "value": "#333"
+                      "value": "#333",
+                      "relations": []
                     }
                   ]
                 },
@@ -2071,128 +2693,187 @@
                     {
                       "title": "panel-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "panel-body-padding",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "title": "panel-heading-padding",
                       "state": "implemented",
-                      "value": "10px 15px"
+                      "value": "10px 15px",
+                      "relations": []
                     },
                     {
                       "title": "panel-footer-padding",
                       "state": "implemented",
-                      "value": "@panel-heading-padding"
+                      "value": "@panel-heading-padding",
+                      "relations": [
+                        "panel-heading-padding"
+                      ]
                     },
                     {
                       "title": "panel-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "description": "Border color for elements within panels",
                       "title": "panel-inner-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "panel-footer-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "title": "panel-default-text",
                       "state": "implemented",
-                      "value": "@gray-dark"
+                      "value": "@gray-dark",
+                      "relations": [
+                        "gray-dark"
+                      ]
                     },
                     {
                       "title": "panel-default-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "title": "panel-default-heading-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "title": "panel-primary-text",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "panel-primary-border",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "panel-primary-heading-bg",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "panel-success-text",
                       "state": "implemented",
-                      "value": "@state-success-text"
+                      "value": "@state-success-text",
+                      "relations": [
+                        "state-success-text"
+                      ]
                     },
                     {
                       "title": "panel-success-border",
                       "state": "implemented",
-                      "value": "@state-success-border"
+                      "value": "@state-success-border",
+                      "relations": [
+                        "state-success-border"
+                      ]
                     },
                     {
                       "title": "panel-success-heading-bg",
                       "state": "implemented",
-                      "value": "@state-success-bg"
+                      "value": "@state-success-bg",
+                      "relations": [
+                        "state-success-bg"
+                      ]
                     },
                     {
                       "title": "panel-info-text",
                       "state": "implemented",
-                      "value": "@state-info-text"
+                      "value": "@state-info-text",
+                      "relations": [
+                        "state-info-text"
+                      ]
                     },
                     {
                       "title": "panel-info-border",
                       "state": "implemented",
-                      "value": "@state-info-border"
+                      "value": "@state-info-border",
+                      "relations": [
+                        "state-info-border"
+                      ]
                     },
                     {
                       "title": "panel-info-heading-bg",
                       "state": "implemented",
-                      "value": "@state-info-bg"
+                      "value": "@state-info-bg",
+                      "relations": [
+                        "state-info-bg"
+                      ]
                     },
                     {
                       "title": "panel-warning-text",
                       "state": "implemented",
-                      "value": "@state-warning-text"
+                      "value": "@state-warning-text",
+                      "relations": [
+                        "state-warning-text"
+                      ]
                     },
                     {
                       "title": "panel-warning-border",
                       "state": "implemented",
-                      "value": "@state-warning-border"
+                      "value": "@state-warning-border",
+                      "relations": [
+                        "state-warning-border"
+                      ]
                     },
                     {
                       "title": "panel-warning-heading-bg",
                       "state": "implemented",
-                      "value": "@state-warning-bg"
+                      "value": "@state-warning-bg",
+                      "relations": [
+                        "state-warning-bg"
+                      ]
                     },
                     {
                       "title": "panel-danger-text",
                       "state": "implemented",
-                      "value": "@state-danger-text"
+                      "value": "@state-danger-text",
+                      "relations": [
+                        "state-danger-text"
+                      ]
                     },
                     {
                       "title": "panel-danger-border",
                       "state": "implemented",
-                      "value": "@state-danger-border"
+                      "value": "@state-danger-border",
+                      "relations": [
+                        "state-danger-border"
+                      ]
                     },
                     {
                       "title": "panel-danger-heading-bg",
                       "state": "implemented",
-                      "value": "@state-danger-bg"
+                      "value": "@state-danger-bg",
+                      "relations": [
+                        "state-danger-bg"
+                      ]
                     }
                   ]
                 },
@@ -2207,37 +2888,49 @@
                       "description": "Padding around the thumbnail image",
                       "title": "thumbnail-padding",
                       "state": "implemented",
-                      "value": "4px"
+                      "value": "4px",
+                      "relations": []
                     },
                     {
                       "description": "Thumbnail background color",
                       "title": "thumbnail-bg",
                       "state": "implemented",
-                      "value": "@body-bg"
+                      "value": "@body-bg",
+                      "relations": [
+                        "body-bg"
+                      ]
                     },
                     {
                       "description": "Thumbnail border color",
                       "title": "thumbnail-border",
                       "state": "implemented",
-                      "value": "#ddd"
+                      "value": "#ddd",
+                      "relations": []
                     },
                     {
                       "description": "Thumbnail border radius",
                       "title": "thumbnail-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "description": "Custom text color for thumbnail captions",
                       "title": "thumbnail-caption-color",
                       "state": "implemented",
-                      "value": "@text-color"
+                      "value": "@text-color",
+                      "relations": [
+                        "text-color"
+                      ]
                     },
                     {
                       "description": "Padding around the thumbnail caption",
                       "title": "thumbnail-caption-padding",
                       "state": "implemented",
-                      "value": "9px"
+                      "value": "9px",
+                      "relations": []
                     }
                   ]
                 },
@@ -2251,12 +2944,16 @@
                     {
                       "title": "well-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "title": "well-border",
                       "state": "implemented",
-                      "value": "darken(@well-bg, 7%)"
+                      "value": "darken(@well-bg, 7%)",
+                      "relations": [
+                        "well-bg"
+                      ]
                     }
                   ]
                 },
@@ -2270,45 +2967,57 @@
                     {
                       "title": "badge-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "description": "Linked badge text color on hover",
                       "title": "badge-link-hover-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "badge-bg",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Badge text color in active nav link",
                       "title": "badge-active-color",
                       "state": "implemented",
-                      "value": "@link-color"
+                      "value": "@link-color",
+                      "relations": [
+                        "link-color"
+                      ]
                     },
                     {
                       "description": "Badge background color in active nav link",
                       "title": "badge-active-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "badge-font-weight",
                       "state": "implemented",
-                      "value": "bold"
+                      "value": "bold",
+                      "relations": []
                     },
                     {
                       "title": "badge-line-height",
                       "state": "implemented",
-                      "value": "1"
+                      "value": "1",
+                      "relations": []
                     },
                     {
                       "title": "badge-border-radius",
                       "state": "implemented",
-                      "value": "10px"
+                      "value": "10px",
+                      "relations": []
                     }
                   ]
                 },
@@ -2322,36 +3031,44 @@
                     {
                       "title": "breadcrumb-padding-vertical",
                       "state": "implemented",
-                      "value": "8px"
+                      "value": "8px",
+                      "relations": []
                     },
                     {
                       "title": "breadcrumb-padding-horizontal",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "description": "Breadcrumb background color",
                       "title": "breadcrumb-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "description": "Breadcrumb text color",
                       "title": "breadcrumb-color",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "description": "Text color of current page in the breadcrumb",
                       "title": "breadcrumb-active-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Textual separator for between breadcrumb elements",
                       "title": "breadcrumb-separator",
                       "state": "implemented",
-                      "value": "\"/\""
+                      "value": "\"/\"",
+                      "relations": []
                     }
                   ]
                 },
@@ -2365,42 +3082,50 @@
                     {
                       "title": "carousel-text-shadow",
                       "state": "implemented",
-                      "value": "0 1px 2px rgba(0,0,0,.6)"
+                      "value": "0 1px 2px rgba(0,0,0,.6)",
+                      "relations": []
                     },
                     {
                       "title": "carousel-control-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "carousel-control-width",
                       "state": "implemented",
-                      "value": "15%"
+                      "value": "15%",
+                      "relations": []
                     },
                     {
                       "title": "carousel-control-opacity",
                       "state": "implemented",
-                      "value": ".5"
+                      "value": ".5",
+                      "relations": []
                     },
                     {
                       "title": "carousel-control-font-size",
                       "state": "implemented",
-                      "value": "20px"
+                      "value": "20px",
+                      "relations": []
                     },
                     {
                       "title": "carousel-indicator-active-bg",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "carousel-indicator-border-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "carousel-caption-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     }
                   ]
                 },
@@ -2414,17 +3139,20 @@
                     {
                       "title": "close-font-weight",
                       "state": "implemented",
-                      "value": "bold"
+                      "value": "bold",
+                      "relations": []
                     },
                     {
                       "title": "close-color",
                       "state": "implemented",
-                      "value": "#000"
+                      "value": "#000",
+                      "relations": []
                     },
                     {
                       "title": "close-text-shadow",
                       "state": "implemented",
-                      "value": "0 1px 0 #fff"
+                      "value": "0 1px 0 #fff",
+                      "relations": []
                     }
                   ]
                 },
@@ -2438,42 +3166,52 @@
                     {
                       "title": "code-color",
                       "state": "implemented",
-                      "value": "#c7254e"
+                      "value": "#c7254e",
+                      "relations": []
                     },
                     {
                       "title": "code-bg",
                       "state": "implemented",
-                      "value": "#f9f2f4"
+                      "value": "#f9f2f4",
+                      "relations": []
                     },
                     {
                       "title": "kbd-color",
                       "state": "implemented",
-                      "value": "#fff"
+                      "value": "#fff",
+                      "relations": []
                     },
                     {
                       "title": "kbd-bg",
                       "state": "implemented",
-                      "value": "#333"
+                      "value": "#333",
+                      "relations": []
                     },
                     {
                       "title": "pre-bg",
                       "state": "implemented",
-                      "value": "#f5f5f5"
+                      "value": "#f5f5f5",
+                      "relations": []
                     },
                     {
                       "title": "pre-color",
                       "state": "implemented",
-                      "value": "@gray-dark"
+                      "value": "@gray-dark",
+                      "relations": [
+                        "gray-dark"
+                      ]
                     },
                     {
                       "title": "pre-border-color",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "title": "pre-scrollable-max-height",
                       "state": "implemented",
-                      "value": "340px"
+                      "value": "340px",
+                      "relations": []
                     }
                   ]
                 },
@@ -2488,146 +3226,205 @@
                       "description": "Horizontal offset for forms and lists.",
                       "title": "component-offset-horizontal",
                       "state": "implemented",
-                      "value": "180px"
+                      "value": "180px",
+                      "relations": []
                     },
                     {
                       "description": "Text muted color",
                       "title": "text-muted",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Abbreviations and acronyms border color",
                       "title": "abbr-border-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Headings small color",
                       "title": "headings-small-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Blockquote small color",
                       "title": "blockquote-small-color",
                       "state": "implemented",
-                      "value": "@gray-light"
+                      "value": "@gray-light",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "description": "Blockquote font size",
                       "title": "blockquote-font-size",
                       "state": "implemented",
-                      "value": "(@font-size-base * 1.25)"
+                      "value": "(@font-size-base * 1.25)",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "description": "Blockquote border color",
                       "title": "blockquote-border-color",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "description": "Page header border color",
                       "title": "page-header-border-color",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "description": "Width of horizontal description list titles",
                       "title": "dl-horizontal-offset",
                       "state": "implemented",
-                      "value": "@component-offset-horizontal"
+                      "value": "@component-offset-horizontal",
+                      "relations": [
+                        "component-offset-horizontal"
+                      ]
                     },
                     {
                       "description": "Horizontal line color.",
                       "title": "hr-border",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "title": "hr-border",
                       "state": "implemented",
-                      "value": "@gray-lighter"
+                      "value": "@gray-lighter",
+                      "relations": [
+                        "gray-lighter"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-color",
                       "state": "implemented",
-                      "value": "lighten(@gray-light, 15%)"
+                      "value": "lighten(@gray-light, 15%)",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-bg",
                       "state": "implemented",
-                      "value": "darken(@il-header-bg, 20%)"
+                      "value": "darken(@il-header-bg, 20%)",
+                      "relations": [
+                        "il-header-bg"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-border",
                       "state": "implemented",
-                      "value": "darken(@navbar-inverse-bg, 10%)"
+                      "value": "darken(@navbar-inverse-bg, 10%)",
+                      "relations": [
+                        "navbar-inverse-bg"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-color",
                       "state": "implemented",
-                      "value": "lighten(@gray-light, 15%)"
+                      "value": "lighten(@gray-light, 15%)",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-hover-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-link-hover-bg",
                       "state": "implemented",
-                      "value": "rgba(0, 0, 0, 0)"
+                      "value": "rgba(0, 0, 0, 0)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-link-active-color",
                       "state": "implemented",
-                      "value": "@navbar-inverse-link-hover-color"
+                      "value": "@navbar-inverse-link-hover-color",
+                      "relations": [
+                        "navbar-inverse-link-hover-color"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-active-bg",
                       "state": "implemented",
-                      "value": "darken(@navbar-inverse-bg, 10%)"
+                      "value": "darken(@navbar-inverse-bg, 10%)",
+                      "relations": [
+                        "navbar-inverse-bg"
+                      ]
                     },
                     {
                       "title": "navbar-inverse-link-disabled-color",
                       "state": "implemented",
-                      "value": "rgb(68, 68, 68)"
+                      "value": "rgb(68, 68, 68)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-link-disabled-bg",
                       "state": "implemented",
-                      "value": "rgba(0, 0, 0, 0)"
+                      "value": "rgba(0, 0, 0, 0)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-brand-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-brand-hover-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-brand-hover-bg",
                       "state": "implemented",
-                      "value": "rgba(0, 0, 0, 0)"
+                      "value": "rgba(0, 0, 0, 0)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-toggle-hover-bg",
                       "state": "implemented",
-                      "value": "rgb(51, 51, 51)"
+                      "value": "rgb(51, 51, 51)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-toggle-icon-bar-bg",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "navbar-inverse-toggle-border-color",
                       "state": "implemented",
-                      "value": "rgb(51, 51, 51)"
+                      "value": "rgb(51, 51, 51)",
+                      "relations": []
                     }
                   ]
                 },
@@ -2641,7 +3438,8 @@
                     {
                       "title": "icon-font-path",
                       "state": "implemented",
-                      "value": "\"/libs/bootstrap/dist/fonts/\""
+                      "value": "\"/libs/bootstrap/dist/fonts/\"",
+                      "relations": []
                     }
                   ]
                 },
@@ -2655,7 +3453,8 @@
                     {
                       "title": "web-font-path",
                       "state": "implemented",
-                      "value": "\"/app/static/fonts/\""
+                      "value": "\"/app/static/fonts/\"",
+                      "relations": []
                     }
                   ]
                 },
@@ -2669,52 +3468,78 @@
                     {
                       "title": "font-family-sans-serif",
                       "state": "implemented",
-                      "value": "'Open Sans', Verdana, Arial, Helvetica, sans-serif"
+                      "value": "'Open Sans', Verdana, Arial, Helvetica, sans-serif",
+                      "relations": []
                     },
                     {
                       "title": "font-size-base",
                       "state": "implemented",
-                      "value": "14px"
+                      "value": "14px",
+                      "relations": []
                     },
                     {
                       "title": "font-size-large",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.25))"
+                      "value": "ceil((@font-size-base * 1.25))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-small",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 0.85))"
+                      "value": "ceil((@font-size-base * 0.85))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h1",
                       "state": "implemented",
-                      "value": "floor((@font-size-base * 1.6))"
+                      "value": "floor((@font-size-base * 1.6))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h2",
                       "state": "implemented",
-                      "value": "floor((@font-size-base * 1.4))"
+                      "value": "floor((@font-size-base * 1.4))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h3",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.3))"
+                      "value": "ceil((@font-size-base * 1.3))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h4",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.2))"
+                      "value": "ceil((@font-size-base * 1.2))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h5",
                       "state": "implemented",
-                      "value": "ceil((@font-size-base * 1.1))"
+                      "value": "ceil((@font-size-base * 1.1))",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     },
                     {
                       "title": "font-size-h6",
                       "state": "implemented",
-                      "value": "@font-size-base"
+                      "value": "@font-size-base",
+                      "relations": [
+                        "font-size-base"
+                      ]
                     }
                   ]
                 },
@@ -2728,17 +3553,20 @@
                     {
                       "title": "il-background-images-path",
                       "state": "implemented",
-                      "value": "\"/app/static/img/\""
+                      "value": "\"/app/static/img/\"",
+                      "relations": []
                     },
                     {
                       "title": "il-content-bg",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "il-icons-size-lg",
                       "state": "implemented",
-                      "value": "45px"
+                      "value": "45px",
+                      "relations": []
                     }
                   ]
                 },
@@ -2752,12 +3580,18 @@
                     {
                       "title": "il-logo-color1",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "il-logo-color2",
                       "state": "implemented",
-                      "value": "@brand-primary"
+                      "value": "@brand-primary",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     }
                   ]
                 },
@@ -2771,42 +3605,58 @@
                     {
                       "title": "il-header-height",
                       "state": "implemented",
-                      "value": "115px"
+                      "value": "115px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-bg",
                       "state": "implemented",
-                      "value": "rgb(31, 37, 50)"
+                      "value": "rgb(31, 37, 50)",
+                      "relations": []
                     },
                     {
                       "title": "il-header-border-vertical",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-border-horizontal",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-border-top",
                       "state": "implemented",
-                      "value": "@il-header-border-vertical solid transparent;//currently implemented as transparent border due to abolute positioning"
+                      "value": "@il-header-border-vertical solid transparent;//currently implemented as transparent border due to abolute positioning",
+                      "relations": [
+                        "il-header-border-vertical"
+                      ]
                     },
                     {
                       "title": "il-header-border-bottom",
                       "state": "implemented",
-                      "value": "@il-header-border-vertical solid transparent"
+                      "value": "@il-header-border-vertical solid transparent",
+                      "relations": [
+                        "il-header-border-vertical"
+                      ]
                     },
                     {
                       "title": "il-header-border-left",
                       "state": "implemented",
-                      "value": "@il-header-border-horizontal solid transparent"
+                      "value": "@il-header-border-horizontal solid transparent",
+                      "relations": [
+                        "il-header-border-horizontal"
+                      ]
                     },
                     {
                       "title": "il-header-border-right",
                       "state": "implemented",
-                      "value": "@il-header-border-horizontal solid transparent"
+                      "value": "@il-header-border-horizontal solid transparent",
+                      "relations": [
+                        "il-header-border-horizontal"
+                      ]
                     }
                   ]
                 },
@@ -2820,7 +3670,10 @@
                     {
                       "title": "il-header-height-sm",
                       "state": "implemented",
-                      "value": "@navbar-height"
+                      "value": "@navbar-height",
+                      "relations": [
+                        "navbar-height"
+                      ]
                     }
                   ]
                 },
@@ -2834,62 +3687,82 @@
                     {
                       "title": "il-header-top-nav-top",
                       "state": "implemented",
-                      "value": "0px"
+                      "value": "0px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-left",
                       "state": "implemented",
-                      "value": "auto"
+                      "value": "auto",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-right",
                       "state": "implemented",
-                      "value": "@padding-base-horizontal"
+                      "value": "@padding-base-horizontal",
+                      "relations": [
+                        "padding-base-horizontal"
+                      ]
                     },
                     {
                       "title": "il-header-top-nav-float",
                       "state": "implemented",
-                      "value": "right"
+                      "value": "right",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-margin-right",
                       "state": "implemented",
-                      "value": "2px"
+                      "value": "2px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-min-height",
                       "state": "implemented",
-                      "value": "50px"
+                      "value": "50px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-min-width",
                       "state": "implemented",
-                      "value": "50px"
+                      "value": "50px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-font-size",
                       "state": "implemented",
-                      "value": "20px"
+                      "value": "20px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-color",
                       "state": "implemented",
-                      "value": "lighten(@il-header-bg, 70%)"
+                      "value": "lighten(@il-header-bg, 70%)",
+                      "relations": [
+                        "il-header-bg"
+                      ]
                     },
                     {
                       "title": "il-header-top-nav-box-hover-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-bg",
                       "state": "implemented",
-                      "value": "lighten(@il-header-bg, 20%)"
+                      "value": "lighten(@il-header-bg, 20%)",
+                      "relations": [
+                        "il-header-bg"
+                      ]
                     },
                     {
                       "title": "il-header-top-nav-box-hover-bg",
                       "state": "implemented",
-                      "value": "lighten(@il-header-bg, 42%)"
+                      "value": "lighten(@il-header-bg, 42%)",
+                      "relations": [
+                        "il-header-bg"
+                      ]
                     }
                   ]
                 },
@@ -2903,37 +3776,50 @@
                     {
                       "title": "il-header-top-nav-top-sm",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-left-sm",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-right-sm",
                       "state": "implemented",
-                      "value": "@padding-base-horizontal"
+                      "value": "@padding-base-horizontal",
+                      "relations": [
+                        "padding-base-horizontal"
+                      ]
                     },
                     {
                       "title": "il-header-top-nav-box-margin-right-sm",
                       "state": "implemented",
-                      "value": "1px"
+                      "value": "1px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-top-nav-box-min-height-sm",
                       "state": "implemented",
-                      "value": "@il-header-height-sm"
+                      "value": "@il-header-height-sm",
+                      "relations": [
+                        "il-header-height-sm"
+                      ]
                     },
                     {
                       "title": "il-header-top-nav-box-min-width-sm",
                       "state": "implemented",
-                      "value": "@il-header-height-sm"
+                      "value": "@il-header-height-sm",
+                      "relations": [
+                        "il-header-height-sm"
+                      ]
                     },
                     {
                       "title": "il-header-top-nav-box-font-size-sm",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     }
                   ]
                 },
@@ -2947,47 +3833,64 @@
                     {
                       "title": "il-header-branding-top",
                       "state": "implemented",
-                      "value": "@padding-large-vertical"
+                      "value": "@padding-large-vertical",
+                      "relations": [
+                        "padding-large-vertical"
+                      ]
                     },
                     {
                       "title": "il-header-branding-left",
                       "state": "implemented",
-                      "value": "@padding-base-horizontal"
+                      "value": "@padding-base-horizontal",
+                      "relations": [
+                        "padding-base-horizontal"
+                      ]
                     },
                     {
                       "title": "il-header-branding-right",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-height",
                       "state": "implemented",
-                      "value": "auto"
+                      "value": "auto",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-right",
                       "state": "implemented",
-                      "value": "auto"
+                      "value": "auto",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-bg",
                       "state": "implemented",
-                      "value": "transparent"
+                      "value": "transparent",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-font-size",
                       "state": "implemented",
-                      "value": "30px"
+                      "value": "30px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-logo-font-size",
                       "state": "implemented",
-                      "value": "@il-header-branding-font-size * 1.5"
+                      "value": "@il-header-branding-font-size * 1.5",
+                      "relations": [
+                        "il-header-branding-font-size"
+                      ]
                     },
                     {
                       "title": "il-header-branding-text-logo-padding",
                       "state": "implemented",
-                      "value": "@padding-large-horizontal"
+                      "value": "@padding-large-horizontal",
+                      "relations": [
+                        "padding-large-horizontal"
+                      ]
                     }
                   ]
                 },
@@ -3001,47 +3904,62 @@
                     {
                       "title": "il-header-branding-top-sm",
                       "state": "implemented",
-                      "value": "@padding-small-vertical"
+                      "value": "@padding-small-vertical",
+                      "relations": [
+                        "padding-small-vertical"
+                      ]
                     },
                     {
                       "title": "il-header-branding-left-sm",
                       "state": "implemented",
-                      "value": "@padding-base-horizontal"
+                      "value": "@padding-base-horizontal",
+                      "relations": [
+                        "padding-base-horizontal"
+                      ]
                     },
                     {
                       "title": "il-header-branding-right-sm",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-height-sm",
                       "state": "implemented",
-                      "value": "auto"
+                      "value": "auto",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-right-sm",
                       "state": "implemented",
-                      "value": "auto"
+                      "value": "auto",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-font-size-sm",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-logo-font-size-sm",
                       "state": "implemented",
-                      "value": "32px"
+                      "value": "32px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-branding-text-logo-padding-sm",
                       "state": "implemented",
-                      "value": "@padding-small-horizontal"
+                      "value": "@padding-small-horizontal",
+                      "relations": [
+                        "padding-small-horizontal"
+                      ]
                     },
                     {
                       "title": "il-header-branding-text-display-sm",
                       "state": "implemented",
-                      "value": "none"
+                      "value": "none",
+                      "relations": []
                     }
                   ]
                 },
@@ -3055,67 +3973,89 @@
                     {
                       "title": "il-header-main-border-width",
                       "state": "implemented",
-                      "value": "0px"
+                      "value": "0px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-top",
                       "state": "implemented",
-                      "value": "@il-header-height - @navbar-height - @il-header-border-vertical - 2 * @il-header-main-border-width"
+                      "value": "@il-header-height - @navbar-height - @il-header-border-vertical - 2 * @il-header-main-border-width",
+                      "relations": [
+                        "il-header-height",
+                        "navbar-height",
+                        "il-header-border-vertical",
+                        "il-header-main-border-width"
+                      ]
                     },
                     {
                       "title": "il-header-main-menu-left",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-right",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-float",
                       "state": "implemented",
-                      "value": "left"
+                      "value": "left",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-color",
                       "state": "implemented",
-                      "value": "rgb(31, 37, 50)"
+                      "value": "rgb(31, 37, 50)",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-active-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-open-color",
                       "state": "implemented",
-                      "value": "@navbar-inverse-color"
+                      "value": "@navbar-inverse-color",
+                      "relations": [
+                        "navbar-inverse-color"
+                      ]
                     },
                     {
                       "title": "il-header-main-menu-bg",
                       "state": "implemented",
-                      "value": "@navbar-inverse-bg"
+                      "value": "@navbar-inverse-bg",
+                      "relations": [
+                        "navbar-inverse-bg"
+                      ]
                     },
                     {
                       "title": "il-header-main-menu-active-bg",
                       "state": "implemented",
-                      "value": "rgb(65, 189, 157)"
+                      "value": "rgb(65, 189, 157)",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-open-bg",
                       "state": "implemented",
-                      "value": "rgb(31, 37, 50)"
+                      "value": "rgb(31, 37, 50)",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-border",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-border-radius",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     }
                   ]
                 },
@@ -3129,37 +4069,49 @@
                     {
                       "title": "il-header-main-menu-border-sm",
                       "state": "implemented",
-                      "value": "0px"
+                      "value": "0px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-border-width-sm",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-top-sm",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-left-sm",
                       "state": "implemented",
-                      "value": "50px"
+                      "value": "50px",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-right-sm",
                       "state": "implemented",
-                      "value": "auto"
+                      "value": "auto",
+                      "relations": []
                     },
                     {
                       "title": "il-header-main-menu-border-radius-sm",
                       "state": "implemented",
-                      "value": "0;//@border-radius-base"
+                      "value": "0;//@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "title": "il-header-main-menu-border-sm",
                       "state": "implemented",
-                      "value": "@il-header-main-menu-border-width-sm solid darken(@il-header-main-menu-bg, 10%)"
+                      "value": "@il-header-main-menu-border-width-sm solid darken(@il-header-main-menu-bg, 10%)",
+                      "relations": [
+                        "il-header-main-menu-border-width-sm",
+                        "il-header-main-menu-bg"
+                      ]
                     }
                   ]
                 },
@@ -3173,72 +4125,90 @@
                     {
                       "title": "il-sidebar-closed-xs",
                       "state": "implemented",
-                      "value": "0"
+                      "value": "0",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-closed-sm",
                       "state": "implemented",
-                      "value": "1"
+                      "value": "1",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-closed-md",
                       "state": "implemented",
-                      "value": "1"
+                      "value": "1",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-closed-lg",
                       "state": "implemented",
-                      "value": "2"
+                      "value": "2",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-open-xs",
                       "state": "implemented",
-                      "value": "6"
+                      "value": "6",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-open-sm",
                       "state": "implemented",
-                      "value": "4"
+                      "value": "4",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-open-md",
                       "state": "implemented",
-                      "value": "3"
+                      "value": "3",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-open-lg",
                       "state": "implemented",
-                      "value": "3"
+                      "value": "3",
+                      "relations": []
                     },
                     {
                       "title": "il-content-bg-color",
                       "state": "implemented",
-                      "value": "white"
+                      "value": "white",
+                      "relations": []
                     },
                     {
                       "title": "il-content-padding-top",
                       "state": "implemented",
-                      "value": "@il-content-padding"
+                      "value": "@il-content-padding",
+                      "relations": [
+                        "il-content-padding"
+                      ]
                     },
                     {
                       "title": "il-content-padding-bottom",
                       "state": "implemented",
-                      "value": "@il-content-padding"
+                      "value": "@il-content-padding",
+                      "relations": [
+                        "il-content-padding"
+                      ]
                     },
                     {
                       "title": "il-content-padding",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "title": "il-content-min-height",
                       "state": "implemented",
-                      "value": "600px"
+                      "value": "600px",
+                      "relations": []
                     },
                     {
                       "title": "il-toolbar-link-gap",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     }
                   ]
                 },
@@ -3252,57 +4222,84 @@
                     {
                       "title": "input-border",
                       "state": "implemented",
-                      "value": "#ccc"
+                      "value": "#ccc",
+                      "relations": []
                     },
                     {
                       "title": "input-border-focus",
                       "state": "implemented",
-                      "value": "lighten(@brand-primary, 20%)"
+                      "value": "lighten(@brand-primary, 20%)",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "ilFormInputFontSize",
                       "state": "implemented",
-                      "value": "@font-size-small"
+                      "value": "@font-size-small",
+                      "relations": [
+                        "font-size-small"
+                      ]
                     },
                     {
                       "title": "input-height-base",
                       "state": "implemented",
-                      "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)"
+                      "value": "(floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2)",
+                      "relations": [
+                        "ilFormInputFontSize",
+                        "line-height-base",
+                        "padding-base-vertical"
+                      ]
                     },
                     {
                       "title": "ilFormColor",
                       "state": "implemented",
-                      "value": "#808080"
+                      "value": "#808080",
+                      "relations": []
                     },
                     {
                       "title": "ilFormBgColor",
                       "state": "implemented",
-                      "value": "#fdfdfd"
+                      "value": "#fdfdfd",
+                      "relations": []
                     },
                     {
                       "title": "il-form-area-devider",
                       "state": "implemented",
-                      "value": "1px dashed lighten(@gray-light,20%)"
+                      "value": "1px dashed lighten(@gray-light,20%)",
+                      "relations": [
+                        "gray-light"
+                      ]
                     },
                     {
                       "title": "il-form-required-label-color",
                       "state": "implemented",
-                      "value": "@brand-danger"
+                      "value": "@brand-danger",
+                      "relations": [
+                        "brand-danger"
+                      ]
                     },
                     {
                       "title": "il-form-required-label-symbol",
                       "state": "implemented",
-                      "value": "\"*\""
+                      "value": "\"*\"",
+                      "relations": []
                     },
                     {
                       "title": "ilMainMenuColor",
                       "state": "implemented",
-                      "value": "lighten(@brand-primary, 10%)"
+                      "value": "lighten(@brand-primary, 10%)",
+                      "relations": [
+                        "brand-primary"
+                      ]
                     },
                     {
                       "title": "ilButtonFontSize",
                       "state": "implemented",
-                      "value": "@font-size-small"
+                      "value": "@font-size-small",
+                      "relations": [
+                        "font-size-small"
+                      ]
                     }
                   ]
                 },
@@ -3316,52 +4313,64 @@
                     {
                       "title": "il-sidebar-padding-bottom",
                       "state": "implemented",
-                      "value": "15px"
+                      "value": "15px",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-bg-color",
                       "state": "implemented",
-                      "value": "rgb(244, 244, 246)"
+                      "value": "rgb(244, 244, 246)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-hover-bg-color",
                       "state": "implemented",
-                      "value": "rgb(252, 55, 104)"
+                      "value": "rgb(252, 55, 104)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-body-bg-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-block-active-border-width",
                       "state": "implemented",
-                      "value": "4px"
+                      "value": "4px",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-block-active-border-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-active-bg"
+                      "value": "@dropdown-link-active-bg",
+                      "relations": [
+                        "dropdown-link-active-bg"
+                      ]
                     },
                     {
                       "title": "il-sidebar-heading-link-color",
                       "state": "implemented",
-                      "value": "rgb(139, 151, 158)"
+                      "value": "rgb(139, 151, 158)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-heading-link-hover-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-padding-content",
                       "state": "implemented",
-                      "value": "50px"
+                      "value": "50px",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-padding-content-sm",
                       "state": "implemented",
-                      "value": "20px"
+                      "value": "20px",
+                      "relations": []
                     }
                   ]
                 },
@@ -3375,22 +4384,28 @@
                     {
                       "title": "il-panel-sortable-placeholder-panel-bg",
                       "state": "implemented",
-                      "value": "rgba(0, 0, 0, 0)"
+                      "value": "rgba(0, 0, 0, 0)",
+                      "relations": []
                     },
                     {
                       "title": "il-panel-sortable-placeholder-panel-border-radius",
                       "state": "implemented",
-                      "value": "@border-radius-base"
+                      "value": "@border-radius-base",
+                      "relations": [
+                        "border-radius-base"
+                      ]
                     },
                     {
                       "title": "il-panel-sortable-placeholder-border",
                       "state": "implemented",
-                      "value": "3px #C0C0C0 dashed"
+                      "value": "3px #C0C0C0 dashed",
+                      "relations": []
                     },
                     {
                       "title": "il-panel-sortable-placeholder-height",
                       "state": "implemented",
-                      "value": "45px"
+                      "value": "45px",
+                      "relations": []
                     }
                   ]
                 },
@@ -3404,62 +4419,89 @@
                     {
                       "title": "il-flap-icon-font-size-lg",
                       "state": "implemented",
-                      "value": "30px"
+                      "value": "30px",
+                      "relations": []
                     },
                     {
                       "title": "il-flap-minified-width",
                       "state": "implemented",
-                      "value": "@il-flap-icon-font-size-lg + 2*@padding-large-horizontal"
+                      "value": "@il-flap-icon-font-size-lg + 2*@padding-large-horizontal",
+                      "relations": [
+                        "il-flap-icon-font-size-lg",
+                        "padding-large-horizontal"
+                      ]
                     },
                     {
                       "title": "il-flap-text-font-size-lg",
                       "state": "implemented",
-                      "value": "@il-flap-icon-font-size-lg/1.2"
+                      "value": "@il-flap-icon-font-size-lg/1.2",
+                      "relations": [
+                        "il-flap-icon-font-size-lg"
+                      ]
                     },
                     {
                       "title": "il-flap-hover-size-lg",
                       "state": "implemented",
-                      "value": "@il-flap-text-font-size-lg*8"
+                      "value": "@il-flap-text-font-size-lg*8",
+                      "relations": [
+                        "il-flap-text-font-size-lg"
+                      ]
                     },
                     {
                       "title": "il-flap-animation-speed",
                       "state": "implemented",
-                      "value": "0.3s"
+                      "value": "0.3s",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-toggle-button-link-color",
                       "state": "implemented",
-                      "value": "@link-color"
+                      "value": "@link-color",
+                      "relations": [
+                        "link-color"
+                      ]
                     },
                     {
                       "title": "il-sidebar-toggle-button-bg-color",
                       "state": "implemented",
-                      "value": "rgba(0, 0, 0, 0)"
+                      "value": "rgba(0, 0, 0, 0)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-toggle-button-link-hover-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-toggle-button-bg-hover-color",
                       "state": "implemented",
-                      "value": "@btn-primary-bg"
+                      "value": "@btn-primary-bg",
+                      "relations": [
+                        "btn-primary-bg"
+                      ]
                     },
                     {
                       "title": "il-sidebar-toggle-button-height",
                       "state": "implemented",
-                      "value": "75px"
+                      "value": "75px",
+                      "relations": []
                     },
                     {
                       "title": "il-sidebar-toggle-button-width",
                       "state": "implemented",
-                      "value": "@il-sidebar-toggle-button-height/2"
+                      "value": "@il-sidebar-toggle-button-height/2",
+                      "relations": [
+                        "il-sidebar-toggle-button-height"
+                      ]
                     },
                     {
                       "title": "il-sidebar-toggle-button-font-size",
                       "state": "implemented",
-                      "value": "@font-size-large"
+                      "value": "@font-size-large",
+                      "relations": [
+                        "font-size-large"
+                      ]
                     }
                   ]
                 },
@@ -3473,97 +4515,138 @@
                     {
                       "title": "theme-name",
                       "state": "implemented",
-                      "value": "default"
+                      "value": "default",
+                      "relations": []
                     },
                     {
                       "title": "hovered-bg-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-hover-bg"
+                      "value": "@dropdown-link-hover-bg",
+                      "relations": [
+                        "dropdown-link-hover-bg"
+                      ]
                     },
                     {
                       "title": "hovered-shadow-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-hover-bg"
+                      "value": "@dropdown-link-hover-bg",
+                      "relations": [
+                        "dropdown-link-hover-bg"
+                      ]
                     },
                     {
                       "title": "disabled-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-disabled-color"
+                      "value": "@dropdown-link-disabled-color",
+                      "relations": [
+                        "dropdown-link-disabled-color"
+                      ]
                     },
                     {
                       "title": "disabled-bg-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-disabled-color"
+                      "value": "@dropdown-link-disabled-color",
+                      "relations": [
+                        "dropdown-link-disabled-color"
+                      ]
                     },
                     {
                       "title": "clicked-bg-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-active-bg"
+                      "value": "@dropdown-link-active-bg",
+                      "relations": [
+                        "dropdown-link-active-bg"
+                      ]
                     },
                     {
                       "title": "clicked-shadow-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-active-bg"
+                      "value": "@dropdown-link-active-bg",
+                      "relations": [
+                        "dropdown-link-active-bg"
+                      ]
                     },
                     {
                       "title": "clicked-gradient-color-1",
                       "state": "implemented",
-                      "value": "@dropdown-link-active-bg"
+                      "value": "@dropdown-link-active-bg",
+                      "relations": [
+                        "dropdown-link-active-bg"
+                      ]
                     },
                     {
                       "title": "clicked-gradient-color-2",
                       "state": "implemented",
-                      "value": "@dropdown-link-active-bg"
+                      "value": "@dropdown-link-active-bg",
+                      "relations": [
+                        "dropdown-link-active-bg"
+                      ]
                     },
                     {
                       "title": "il-explorer-clicked-color",
                       "state": "implemented",
-                      "value": "@dropdown-link-active-color"
+                      "value": "@dropdown-link-active-color",
+                      "relations": [
+                        "dropdown-link-active-color"
+                      ]
                     },
                     {
                       "title": "search-result-color",
                       "state": "implemented",
-                      "value": "rgb(139, 0, 0)"
+                      "value": "rgb(139, 0, 0)",
+                      "relations": []
                     },
                     {
                       "title": "mobile-wholerow-bg-color",
                       "state": "implemented",
-                      "value": "rgb(235, 235, 235)"
+                      "value": "rgb(235, 235, 235)",
+                      "relations": []
                     },
                     {
                       "title": "mobile-wholerow-shadow",
                       "state": "implemented",
-                      "value": "rgb(102, 102, 102)"
+                      "value": "rgb(102, 102, 102)",
+                      "relations": []
                     },
                     {
                       "title": "mobile-wholerow-bordert",
                       "state": "implemented",
-                      "value": "rgba(255, 255, 255, 0.7)"
+                      "value": "rgba(255, 255, 255, 0.7)",
+                      "relations": []
                     },
                     {
                       "title": "mobile-wholerow-borderb",
                       "state": "implemented",
-                      "value": "rgba(64, 64, 64, 0.2)"
+                      "value": "rgba(64, 64, 64, 0.2)",
+                      "relations": []
                     },
                     {
                       "title": "responsive",
                       "state": "implemented",
-                      "value": "true"
+                      "value": "true",
+                      "relations": []
                     },
                     {
                       "title": "image-path",
                       "state": "implemented",
-                      "value": "\"@{il-background-images-path}services/explorer/\""
+                      "value": "\"@{il-background-images-path}services/explorer/\"",
+                      "relations": [
+                        ""
+                      ]
                     },
                     {
                       "title": "base-height",
                       "state": "implemented",
-                      "value": "@input-height-base"
+                      "value": "@input-height-base",
+                      "relations": [
+                        "input-height-base"
+                      ]
                     },
                     {
                       "title": "il-btn-default-color",
                       "state": "implemented",
-                      "value": "rgb(255, 255, 255)"
+                      "value": "rgb(255, 255, 255)",
+                      "relations": []
                     }
                   ]
                 },
@@ -3577,27 +4660,41 @@
                     {
                       "title": "il-footer-bg",
                       "state": "implemented",
-                      "value": "@navbar-inverse-bg"
+                      "value": "@navbar-inverse-bg",
+                      "relations": [
+                        "navbar-inverse-bg"
+                      ]
                     },
                     {
                       "title": "il-footer-color",
                       "state": "implemented",
-                      "value": "@navbar-inverse-color"
+                      "value": "@navbar-inverse-color",
+                      "relations": [
+                        "navbar-inverse-color"
+                      ]
                     },
                     {
                       "title": "il-footer-height",
                       "state": "implemented",
-                      "value": "45px"
+                      "value": "45px",
+                      "relations": []
                     },
                     {
                       "title": "il-footer-padding-horizontal",
                       "state": "implemented",
-                      "value": "@navbar-padding-horizontal"
+                      "value": "@navbar-padding-horizontal",
+                      "relations": [
+                        "navbar-padding-horizontal"
+                      ]
                     },
                     {
                       "title": "il-footer-padding-vertical",
                       "state": "implemented",
-                      "value": "@navbar-padding-vertical"
+                      "value": "@navbar-padding-vertical + @navbar-padding-horizontal",
+                      "relations": [
+                        "navbar-padding-vertical",
+                        "navbar-padding-horizontal"
+                      ]
                     }
                   ]
                 }

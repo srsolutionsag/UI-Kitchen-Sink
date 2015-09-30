@@ -12,6 +12,8 @@ module.exports = function(grunt) {
         this.structure = grunt.file.readJSON(this.data.jsonOutputPath);
         this.finalOutput = this.structure;
 
+        var self = this;
+
         this.getTreeFromVariableLess = function(){
             var Parser = require("simple-text-parser"),
                 parser = new Parser();
@@ -61,7 +63,21 @@ module.exports = function(grunt) {
 
                 // Get the value
                 var regexValue = /(?::)(.*)(?:;)/g;
-                var value = regexValue.exec(lessLine);
+                var value = regexValue.exec(lessLine)[1].trim();
+
+                // Get the value
+                var tempValue = value;
+                var references = [];
+                var reference = false;
+                do{
+                    var regexReference = /(?:@)([a-zA-Z0-9_-]*)/g;
+                    var reference = regexReference.exec(tempValue);
+                    if(reference){
+                        tempValue = tempValue.replace(reference[0],'');
+                        references.push(reference[1]);
+                    }
+
+                }while(reference);
 
                 if(!variable){
                     grunt.log.error('@ without defined variable: '+lessLine);
@@ -71,7 +87,7 @@ module.exports = function(grunt) {
                     grunt.log.error('Variable '+variable[1]+"is missing a value");
                 }
 
-                return { 'variable': variable[1], 'value': value[1].trim()};
+                return { 'variable': variable[1], 'value': value, 'relations': references};
             });
             return parser.toTree(grunt.file.read(this.data.lessVariablesPath).toString());
         };
@@ -83,10 +99,7 @@ module.exports = function(grunt) {
         var currentGroupIndex = false;
         var currentVariableIndex = false;
 
-        for(var index in tempLessVariables){
-            var item = tempLessVariables[index];
-
-
+        tempLessVariables.forEach(function(item){
             if(item.category){
                 currentCategoryIndex = lessVariables.length;
                 lessVariables[currentCategoryIndex] = {
@@ -130,7 +143,7 @@ module.exports = function(grunt) {
                 currentVariableIndex = lessVariables[currentCategoryIndex].items[currentGroupIndex].variables.length;
                 lessVariables[currentCategoryIndex].items[currentGroupIndex].variables[currentVariableIndex] = {};
 
-                grunt.log.error('Variable '+item.variable+' is defined before a description. Please describe your variable (marker: //**  Description) first.');
+                //grunt.log.error('Variable '+item.variable+' is defined before a description. Please describe your variable (marker: //**  Description) first.');
             }
             if(item.variable && currentGroupIndex !== false && currentCategoryIndex !== false && currentVariableIndex !== false){
                 lessVariables[currentCategoryIndex].items[currentGroupIndex].variables[currentVariableIndex].title = item.variable;
@@ -141,16 +154,20 @@ module.exports = function(grunt) {
                     grunt.log.error('Variable '+item.variable+' has no valid value assigned.');
 
                 }
+                if(item.relations){
+                    lessVariables[currentCategoryIndex].items[currentGroupIndex].variables[currentVariableIndex].relations = item.relations;
+                }
                 currentVariableIndex = false;
             }
 
 
-        }
-        for(var index in lessVariables){
-            var existingLessEntries = this.finalOutput.categories[this.data.jsonVariablesIndex.first].subCategories[this.data.jsonVariablesIndex.second].itemGroups.length;
-            this.finalOutput.categories[this.data.jsonVariablesIndex.first].subCategories[this.data.jsonVariablesIndex.second].itemGroups[existingLessEntries] = lessVariables[index];
+        });
 
-        }
+        lessVariables.forEach(function(variable){
+            var existingLessEntries = self.finalOutput.categories[self.data.jsonVariablesIndex.first].subCategories[self.data.jsonVariablesIndex.second].itemGroups.length;
+            self.finalOutput.categories[self.data.jsonVariablesIndex.first].subCategories[self.data.jsonVariablesIndex.second].itemGroups[existingLessEntries] = variable;
+        });
+
         grunt.file.write(this.data.jsonOutputPath, JSON.stringify(this.finalOutput, null, 2));
     });
 };
