@@ -70,7 +70,7 @@ module.exports = function(grunt) {
                 var references = [];
                 var reference = false;
                 do{
-                    var regexReference = /(?:@)([a-zA-Z_-]*)/g;
+                    var regexReference = /(?:@)([a-zA-Z0-9_-]*)/g;
                     var reference = regexReference.exec(tempValue);
                     if(reference){
                         tempValue = tempValue.replace(reference[0],'');
