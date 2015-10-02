@@ -7,7 +7,17 @@ module.directive('entryVisualizationContent', function (Entries) {
         templateUrl: 'app/src/content/center/entry/entryVisualizationContent.tpl.html',
         replace: true,
         link: function (scope, element) {
-            var graph = Entries.getEntriesRelationsNetwork();
+            var graph = [];
+
+            switch(scope.visualizationType){
+                case "visualizationLess":
+                    graph = Entries.getLessRelationsNetwork();
+                    break;
+                case "visualizationEntries":
+                    graph = Entries.getEntriesRelationsNetwork();
+                    break;
+            }
+
 
 
             var findNode = function(id, nodes) {
@@ -94,12 +104,14 @@ module.directive('entryVisualizationContent', function (Entries) {
 
             });
 
+            var charge = 3000;
+            var linkDistance = charge/20;
             var force = d3.layout.force();
             //Set up the force layout
             force.nodes(graph.nodes)
                 .links(graph.links)
-                .charge(-2000)
-                .linkDistance(100)
+                .charge(-charge)
+                .linkDistance(linkDistance)
                 .linkStrength(1)
                 .size([width, height]);
 
@@ -112,7 +124,7 @@ module.directive('entryVisualizationContent', function (Entries) {
                     node = node.data([]);
                     node.exit().remove();
 
-
+                    force.start();
 
                     force.nodes(nodes)
                         .links(links);
@@ -156,18 +168,35 @@ module.directive('entryVisualizationContent', function (Entries) {
                         .on('mouseenter', highlightNodes)
                         .on('mouseleave', unhighlightNodes);
                     group.insert("circle")
-                        .attr("r", 8)
+                        .attr("r", 20)
                         .style("fill", function (element) {
                             return color(element.category);
                         });
                     group.append("text")
-                        .attr("dx", 10)
-                        .attr("dy", ".35em")
+                        .attr("dx", function(element){
+                            return -element.category.length*3.7;
+                        })
+                        .attr("dy", "-2.5em")
                         .text(function(element) {
+                            return element.category+":";
+                        })
+                        .style("stroke", "black");
+                    group.append("text")
+                        .attr("dx", function(element){
+                            var length = element.title.length;
+                            if(length > 20){
+                                length = 20;
+                            }
+                            return -length*3.7;
+                        })
+                        .attr("dy", "-1.5em")
+                        .text(function(element) {
+                            if(element.title.length > 25){
+                                return element.title.slice(0, 0) + "..." + element.title.slice(element.title.length-25+3);
+                            }
                             return element.title;
                         })
-                        .style("stroke", "gray");
-
+                        .style("stroke", "black");
                     force.on("tick", function () {
                         link.attr("x1", function (d) {
                             return d.source.x;
@@ -192,6 +221,7 @@ module.directive('entryVisualizationContent', function (Entries) {
                         }).attr("y", function (d) {
                             return d.y;
                         });
+
                     });
 
                     force.start();
@@ -306,14 +336,12 @@ module.directive('entryVisualizationContent', function (Entries) {
                 toggle = 0;
             }
 
-            // create the zoom listener
+
             var zoomListener = d3.behavior.zoom()
                 .scaleExtent([0.1, 3])
                 .on("zoom", function(){
-                    console.log( d3.event.translate[1]);
                     var newLegendTop = d3.event.translate[1];
                     var minTop = legendTop - d3.select('.legend').node().getBBox().height + Number(d3.select("svg").style("height").replace("px", ""))-50;
-                    console.log(minTop);
 
                     if(newLegendTop > legendTop){
                         newLegendTop = legendTop;
@@ -323,7 +351,6 @@ module.directive('entryVisualizationContent', function (Entries) {
                     legend.attr("transform","translate(" + [legendLeft,newLegendTop] + ")scale(" + 1 + ")");
                     container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
                 });
-
 
             // apply the zoom behavior to the svg image
             zoomListener(svg);
@@ -343,7 +370,36 @@ module.directive('entryVisualizationContent', function (Entries) {
                     .attr("x2", function(d) { return d.target.fisheye.x; })
                     .attr("y2", function(d) { return d.target.fisheye.y; });
             });**/
-        }
 
+            var optArray = [];
+            for (var i = 0; i < graph.nodes.length - 1; i++) {
+                optArray.push(graph.nodes[i].title);
+            }
+            optArray = optArray.sort();
+
+            console.log(optArray);
+
+            $("#visualizationSearch").autocomplete({
+                source: optArray
+            });
+
+            scope.searchNode = function(selectedVal) {
+                var selectedVal = document.getElementById('visualizationSearch').value;
+
+                var node = svg.selectAll(".node");
+
+                var selected = node.filter(function (d, i) {
+                    return d.title != selectedVal;
+                });
+                console.log(selectedVal);
+                selected.style("opacity", "0");
+                var link = svg.selectAll(".link");
+                link.style("opacity", "0");
+                d3.selectAll(".node, .link").transition()
+                    .duration(5000)
+                    .style("opacity", 1);
+
+            };
+        }
     };
 });

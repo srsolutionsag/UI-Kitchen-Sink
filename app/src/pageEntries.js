@@ -433,7 +433,6 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
 
                                         }
                                     }
-                                    console.log(variable);
                                 });
                             }
                         });

@@ -1,8 +1,11 @@
 <div class="uiks-visualisation">
+    <div class="ui-widget">
+        <input id="visualizationSearch" ng-model="visualizationSearch" autocomplete="on">
+        <button type="button"  ng-click="searchNode(visualizationSearch)">Search</button>
+    </div>
     <form>
         <h3> Link threshold 0 </h3>
         <input type="range" id="thersholdSlider" name="points" value="0" min="0" max="3" ng-model="thersholdSlider" ng-change="threshold(thersholdSlider)">
         <h3>3</h3>
     </form>
-
 </div>
