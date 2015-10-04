@@ -2,7 +2,6 @@
     "id": "iliasMainStructureOverview",
     "title": "Overview",
     "description": "The main layout of the ILIAS Page contains three sections: the header section, the content section and the footer section.",
-    "lessVariables": [],
     "isIframe": true,
     "state": "Proposal"
 }

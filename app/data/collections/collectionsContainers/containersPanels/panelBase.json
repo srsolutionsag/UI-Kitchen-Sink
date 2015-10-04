@@ -3,32 +3,6 @@
     "title": "Default",
     "description": "Description of Panels",
     "context":"Content of Panels",
-    "lessVariables":[
-        {
-            "title":"grid-columns",
-            "value":"12",
-            "description":"Number of columns in the grid",
-            "state":"Implemented for 5.0"
-        },
-        {
-            "title":"grid-gutter-width",
-            "value":"30px",
-            "description":"Padding between columns. Gets divided in half for the left and right",
-            "state":"Implemented for 5.0"
-        },
-        {
-            "title":"grid-float-breakpoint",
-            "value":"@screen-sm-min",
-            "description":"Point at which the navbar becomes uncollapsed",
-            "state":"Implemented for 5.0"
-        },
-        {
-            "title":"grid-float-breakpoint-max",
-            "value":"(@grid-float-breakpoint - 1)",
-            "description":"Point at which the navbar begins collapsing",
-            "state":"Implemented for 5.0"
-        }
-    ],
     "state": "Proposal",
     "relations": {
     }

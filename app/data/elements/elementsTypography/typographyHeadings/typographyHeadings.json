@@ -3,61 +3,6 @@
     "title": "Default",
     "description": "Headings to be used in ILIAS",
     "state": "Implemented for 5.0",
-    "lessVariables": [
-        {
-            "title": "font-size-h1",
-            "description": "Size for h1",
-            "value":"floor((@font-size-base * 2.6)); // ~36px",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "font-size-h2",
-            "description": "Size for h2",
-            "value":"floor((@font-size-base * 2.15)); // ~30px",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "font-size-h3",
-            "description": "Size for h3",
-            "value":"ceil((@font-size-base * 1.7)); // ~24px",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "font-size-h4",
-            "description": "Size for h4",
-            "value":"ceil((@font-size-base * 1.25)); // ~18px",
-            "state": "Implemented for 5.0"
-        },
-        {
-            "title": "font-size-h5",
-            "description": "Size for h5",
-            "value":"@font-size-base",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "font-size-h6",
-            "description": "Size for h6",
-            "value":"ceil((@font-size-base * 0.85)); // ~12px",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "headings-font-family",
-            "description": "By default, this inherits from the `<body>`",
-            "value":"inherit",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "headings-font-weight",
-            "description": "Font weight for headings",
-            "value":"500",
-            "state": "Implemented for 5.0"
-        },
-        {
-            "title": "headings-line-height",
-            "description": "Line height for headings",
-            "value":"1.1",
-            "state": "Implemented for 5.0"
-        },{
-            "title": "headings-color",
-            "description": "By default, this inherits from the `<body>`",
-            "value":"inherit",
-            "state": "Implemented for 5.0"
-        }
-    ],
     "relations":{
         "isA":"baseText"
     }

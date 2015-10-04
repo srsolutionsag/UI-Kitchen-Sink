@@ -2,28 +2,6 @@
     "id": "iliasMainStructureFooter",
     "title": "Overview",
     "description": "The footer mostly displays some meta information about the page.",
-    "lessVariables": [
-        {
-            "title":"il-footer-height",
-            "description":"Todo, add description",
-            "state":"Proposal"
-        },
-        {
-            "title":"il-footer-color",
-            "description":"Todo, add description",
-            "state":"Proposal"
-        },
-        {
-            "title":"il-footer-padding-horizontal",
-            "description":"Todo, add description",
-            "state":"Proposal"
-        },
-        {
-            "title":"il-footer-padding-vertical",
-            "description":"Todo, add description",
-            "state":"Proposal"
-        }
-    ],
     "isIframe": true,
     "state": "Proposal"
 }

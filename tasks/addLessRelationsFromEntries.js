@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                 if(reference){
                     var ref = new RegExp(reference[0], 'g');
                     lessFile = lessFile.replace(ref,'');
+                    if(reference[1] != "import" && reference[1] != "media")
                     references.push(reference[1]);
                 }
 

@@ -4777,38 +4777,6 @@
                   "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
                   "context": "Use a container as outer element, wherever to boostrap grid system is to be used.",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "container-tablet",
-                      "description": "The size of the container on a tablet",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-sm",
-                      "description": "Same as container-tablet",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-desktop",
-                      "description": "The size of the container on a desktop",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-md",
-                      "description": "Same as container-desktop",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-large-desktop",
-                      "description": "The size of the container on a tablet",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "container-lg",
-                      "description": "Same as container-large-desktop",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "relations": {
                     "mayUse": [
                       "gridRow"
@@ -4865,32 +4833,6 @@
                   "title": "Default",
                   "description": "Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows. Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4. Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.",
                   "context": "Columns MUST be placed inside a row",
-                  "lessVariables": [
-                    {
-                      "title": "grid-columns",
-                      "value": "12",
-                      "description": "Number of columns in the grid",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "grid-gutter-width",
-                      "value": "30px",
-                      "description": "Padding between columns. Gets divided in half for the left and right",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "grid-float-breakpoint",
-                      "value": "@screen-sm-min",
-                      "description": "Point at which the navbar becomes uncollapsed",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "grid-float-breakpoint-max",
-                      "value": "(@grid-float-breakpoint - 1)",
-                      "description": "Point at which the navbar begins collapsing",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "state": "Implemented for 5.0",
                   "relations": {},
                   "fullPath": "app/data/elements/elementsGrid/gridColumns/gridColumn",
@@ -4916,44 +4858,6 @@
                   "title": "Base version of Text",
                   "description": "Base version of Text in ILIAS.",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "font-family-base",
-                      "description": "Default font",
-                      "value": "@font-family-sans-serif",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-size-base",
-                      "description": "Bootstrap's global default font-size is 14px, with a line-height of 1.428. This is applied to the <body> and all paragraphs. In addition, <p> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).",
-                      "value": "14px",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "line-height-base",
-                      "description": "Unit-less `line-height` for use in components like buttons.",
-                      "value": "1.428571429 (=20/14)",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "line-height-computed",
-                      "description": "Computed 'line-height' (`font-size` * `line-height`) for use with `margin`, `padding`, etc.",
-                      "value": "floor((@font-size-base * @line-height-base))",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-family-sans-serif",
-                      "description": "Default font for sans-serfis",
-                      "value": "@font-family-sans-serif:  'Helvetica Neue', Helvetica, Arial, sans-serif;",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "font-family-serif",
-                      "description": "Default font for serfis",
-                      "value": "Georgia, 'Times New Roman', Times, serif",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "fullPath": "app/data/elements/elementsTypography/typographyOverview/baseText",
                   "path": "/elements/elementsTypography/typographyOverview/baseText",
                   "order": 100
@@ -4970,17 +4874,17 @@
                   "title": "Default",
                   "description": "Headings to be used in ILIAS",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    "font-size-h3",
-                    "gray-light",
-                    "brand-warning"
-                  ],
                   "relations": {
                     "isA": "baseText"
                   },
                   "fullPath": "app/data/elements/elementsTypography/typographyHeadings/typographyHeadings",
                   "path": "/elements/elementsTypography/typographyHeadings/typographyHeadings",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": [
+                    "font-size-h3",
+                    "gray-light",
+                    "brand-warning"
+                  ]
                 }
               ]
             },
@@ -4994,14 +4898,6 @@
                   "title": "Default",
                   "description": "Fonts used in the  'code' or 'pre' tag",
                   "state": "Implemented for 5.0",
-                  "lessVariables": [
-                    {
-                      "title": "font-family-monospace",
-                      "description": "Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`",
-                      "value": "Menlo, Monaco, Consolas, 'Courier New', monospace;",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "relations": {
                     "isA": "baseText"
                   },
@@ -5106,14 +5002,7 @@
                   "order": 100,
                   "lessVariables": [
                     "il-btn-default-color",
-                    "brand-primary",
-                    "color",
-                    "background",
-                    "border",
-                    "padding-vertical",
-                    "padding-horizontal",
-                    "font-size",
-                    "line-height"
+                    "brand-primary"
                   ]
                 },
                 {
@@ -5416,9 +5305,7 @@
                   "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimePicker",
                   "path": "/collections/collectionsForms/formsDateTime/formsDateTimePicker",
                   "order": 100,
-                  "lessVariables": [
-                    "import"
-                  ]
+                  "lessVariables": []
                 },
                 {
                   "id": "formsDateTimeRangePicker",
@@ -5582,7 +5469,6 @@
                   "order": 100,
                   "lessVariables": [
                     "il-toolbar-link-gap",
-                    "media",
                     "padding-base-vertical",
                     "navbar-default-border",
                     "input-height-base"
@@ -5628,32 +5514,6 @@
                   "title": "Default",
                   "description": "Description of Panels",
                   "context": "Content of Panels",
-                  "lessVariables": [
-                    {
-                      "title": "grid-columns",
-                      "value": "12",
-                      "description": "Number of columns in the grid",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "grid-gutter-width",
-                      "value": "30px",
-                      "description": "Padding between columns. Gets divided in half for the left and right",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "grid-float-breakpoint",
-                      "value": "@screen-sm-min",
-                      "description": "Point at which the navbar becomes uncollapsed",
-                      "state": "Implemented for 5.0"
-                    },
-                    {
-                      "title": "grid-float-breakpoint-max",
-                      "value": "(@grid-float-breakpoint - 1)",
-                      "description": "Point at which the navbar begins collapsing",
-                      "state": "Implemented for 5.0"
-                    }
-                  ],
                   "state": "Proposal",
                   "relations": {},
                   "fullPath": "app/data/collections/collectionsContainers/containersPanels/panelBase",
@@ -5746,12 +5606,12 @@
                   "id": "iliasMainStructureOverview",
                   "title": "Overview",
                   "description": "The main layout of the ILIAS Page contains three sections: the header section, the content section and the footer section.",
-                  "lessVariables": [],
                   "isIframe": true,
                   "state": "Proposal",
                   "fullPath": "app/data/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
                   "path": "/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
-                  "order": 100
+                  "order": 100,
+                  "lessVariables": []
                 }
               ]
             },
@@ -5767,6 +5627,8 @@
                   "isIframe": true,
                   "description": "Overview of the ILIAS header area.",
                   "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderOverview",
+                  "path": "/layouts/mainStructure/header/iliasHeaderOverview",
                   "lessVariables": [
                     "il-header-height-sm",
                     "il-header-bg",
@@ -5775,12 +5637,9 @@
                     "il-header-border-left",
                     "il-header-border-right",
                     "zindex-navbar-fixed",
-                    "media",
                     "screen-sm-min",
                     "il-header-height"
-                  ],
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderOverview",
-                  "path": "/layouts/mainStructure/header/iliasHeaderOverview"
+                  ]
                 },
                 {
                   "id": "iliasHeaderBranding",
@@ -5788,6 +5647,9 @@
                   "isIframe": true,
                   "description": "The branding area SHOULD contain the logo of the application and its title.",
                   "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
+                  "path": "/layouts/mainStructure/header/iliasHeaderBranding",
+                  "order": 100,
                   "lessVariables": [
                     "il-header-branding-top-sm",
                     "il-header-branding-left-sm",
@@ -5798,7 +5660,6 @@
                     "il-header-branding-font-size-sm",
                     "il-header-branding-text-logo-padding-sm",
                     "il-header-branding-logo-font-size-sm",
-                    "media",
                     "screen-sm-min",
                     "il-header-branding-top",
                     "il-header-branding-left",
@@ -5807,10 +5668,7 @@
                     "il-header-branding-font-size",
                     "il-header-branding-text-logo-padding",
                     "il-header-branding-logo-font-size"
-                  ],
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
-                  "path": "/layouts/mainStructure/header/iliasHeaderBranding",
-                  "order": 100
+                  ]
                 },
                 {
                   "id": "iliasHeaderMainMenu",
@@ -5818,6 +5676,9 @@
                   "isIframe": true,
                   "description": "The main menu handles the main navigation in ILIAS.",
                   "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
+                  "path": "/layouts/mainStructure/header/iliasHeaderMainMenu",
+                  "order": 100,
                   "lessVariables": [
                     "il-header-main-menu-top-sm",
                     "il-header-main-menu-left-sm",
@@ -5827,7 +5688,6 @@
                     "il-header-main-menu-border-radius-sm",
                     "il-header-height-sm",
                     "il-header-main-menu-bg",
-                    "media",
                     "screen-sm-min",
                     "il-header-main-menu-float",
                     "il-header-main-menu-active-color",
@@ -5838,10 +5698,7 @@
                     "il-header-main-menu-left",
                     "il-header-main-menu-right",
                     "il-header-main-menu-border"
-                  ],
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
-                  "path": "/layouts/mainStructure/header/iliasHeaderMainMenu",
-                  "order": 100
+                  ]
                 },
                 {
                   "id": "iliasHeaderTopNav",
@@ -5849,6 +5706,9 @@
                   "isIframe": true,
                   "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen.",
                   "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
+                  "path": "/layouts/mainStructure/header/iliasHeaderTopNav",
+                  "order": 100,
                   "lessVariables": [
                     "il-header-top-nav-top-sm",
                     "il-header-top-nav-left-sm",
@@ -5862,7 +5722,6 @@
                     "il-header-top-nav-box-color",
                     "il-header-top-nav-box-hover-color",
                     "il-header-top-nav-box-hover-bg",
-                    "media",
                     "screen-sm-min",
                     "il-header-top-nav-top",
                     "il-header-top-nav-left",
@@ -5871,10 +5730,7 @@
                     "il-header-top-nav-box-min-width",
                     "il-header-top-nav-box-margin-right",
                     "il-header-top-nav-box-font-size"
-                  ],
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
-                  "path": "/layouts/mainStructure/header/iliasHeaderTopNav",
-                  "order": 100
+                  ]
                 }
               ]
             },
@@ -5890,23 +5746,6 @@
                   "title": "Overview",
                   "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
                   "state": "Proposal",
-                  "lessVariables": [
-                    {
-                      "title": "il-header-height-sm",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-footer-height",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    },
-                    {
-                      "title": "il-content-bg-color",
-                      "description": "Total height of all three header sections",
-                      "state": "Proposal"
-                    }
-                  ],
                   "fullPath": "app/data/layouts/mainStructure/content/0_iliasContentOverview",
                   "path": "/layouts/mainStructure/content/0_iliasContentOverview"
                 },
@@ -5915,13 +5754,13 @@
                   "title": "Center Content",
                   "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
                   "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
+                  "path": "/layouts/mainStructure/content/iliasContentCenter",
+                  "order": 100,
                   "lessVariables": [
                     "il-content-min-height",
                     "il-content-bg"
-                  ],
-                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
-                  "path": "/layouts/mainStructure/content/iliasContentCenter",
-                  "order": 100
+                  ]
                 },
                 {
                   "id": "iliasContentSidebars",
@@ -5930,8 +5769,10 @@
                   "description": "The right sidebar could be used to provide the user meta-information about ILIAS such as mail, global calendar, help, tree etc.. The right sidebar could be used to provide content specific meta information such as tags, comments etc..",
                   "context": " The sidebars are accessible at all time.",
                   "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentSidebars",
+                  "path": "/layouts/mainStructure/content/iliasContentSidebars",
+                  "order": 100,
                   "lessVariables": [
-                    "media",
                     "screen-sm-min",
                     "il-panel-sortable-placeholder-panel-bg",
                     "il-panel-sortable-placeholder-border",
@@ -5957,10 +5798,7 @@
                     "il-sidebar-toggle-button-width",
                     "il-header-height-sm",
                     "il-header-height"
-                  ],
-                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentSidebars",
-                  "path": "/layouts/mainStructure/content/iliasContentSidebars",
-                  "order": 100
+                  ]
                 }
               ]
             },
@@ -5973,18 +5811,18 @@
                   "id": "iliasMainStructureFooter",
                   "title": "Overview",
                   "description": "The footer mostly displays some meta information about the page.",
+                  "isIframe": true,
+                  "state": "Proposal",
+                  "fullPath": "app/data/layouts/mainStructure/footer/iliasMainStructureFooter",
+                  "path": "/layouts/mainStructure/footer/iliasMainStructureFooter",
+                  "order": 100,
                   "lessVariables": [
                     "il-footer-height",
                     "il-footer-color",
                     "il-footer-bg",
                     "il-footer-padding-horizontal",
                     "il-footer-padding-vertical"
-                  ],
-                  "isIframe": true,
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/footer/iliasMainStructureFooter",
-                  "path": "/layouts/mainStructure/footer/iliasMainStructureFooter",
-                  "order": 100
+                  ]
                 }
               ]
             }

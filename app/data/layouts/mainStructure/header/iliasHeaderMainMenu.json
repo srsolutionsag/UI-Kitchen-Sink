@@ -3,17 +3,5 @@
     "title": "Main Menu",
     "isIframe": true,
     "description": "The main menu handles the main navigation in ILIAS.",
-    "state":"Proposal",
-    "lessVariables": [
-        {
-            "title":"il-header-border-right",
-            "description":"Todo, add description",
-            "state":"Proposal"
-        },
-        {
-            "title":"zindex-navbar-fixed",
-            "description":"Todo, add description",
-            "state":"Proposal"
-        }
-    ]
+    "state":"Proposal"
 }

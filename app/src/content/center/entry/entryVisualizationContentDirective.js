@@ -7,18 +7,7 @@ module.directive('entryVisualizationContent', function (Entries) {
         templateUrl: 'app/src/content/center/entry/entryVisualizationContent.tpl.html',
         replace: true,
         link: function (scope, element) {
-            var graph = [];
-
-            switch(scope.visualizationType){
-                case "visualizationLess":
-                    graph = Entries.getLessRelationsNetwork();
-                    break;
-                case "visualizationEntries":
-                    graph = Entries.getEntriesRelationsNetwork();
-                    break;
-            }
-
-
+            var graph = Entries.getEntriesRelationsNetwork(scope.visualizationType);
 
             var findNode = function(id, nodes) {
                 for (var i in nodes) {
@@ -32,10 +21,12 @@ module.directive('entryVisualizationContent', function (Entries) {
             };
 
             var setNodes = function (link,nodes) {
+                console.log(link.source.id);
                 var source = findNode(link.source.id, nodes);
                 var target = findNode(link.target.id, nodes);
 
                 if(!source){
+                    console.log(link);
                     console.error("Invalid source " + link.source + " in relation with target " + link.target);
                 }
                 if(!target){
@@ -117,7 +108,6 @@ module.directive('entryVisualizationContent', function (Entries) {
 
                 //Restart the visualisation after any node and link changes
                 scope.restart = function(nodes,links) {
-
                     link = link.data([]);
                     link.exit().remove();
 
@@ -165,7 +155,7 @@ module.directive('entryVisualizationContent', function (Entries) {
                     var group = node.enter().append("g")
                         .attr("class", "node")
                         .call(force.drag)
-                        .on('mouseenter', highlightNodes)
+                        .on('mouseenter', function(d){highlightNodes(d);})
                         .on('mouseleave', unhighlightNodes);
                     group.insert("circle")
                         .attr("r", 20)
@@ -223,7 +213,8 @@ module.directive('entryVisualizationContent', function (Entries) {
                         });
 
                     });
-
+                    var n = 30;
+                    for (var i = 0; i < n; ++i) force.tick();
                     force.start();
 
 
@@ -316,9 +307,7 @@ module.directive('entryVisualizationContent', function (Entries) {
             function neighboring(a, b) {
                 return linkedByIndex[a.index + "," + b.index];
             }
-            function highlightNodes() {
-                    //Reduce the opacity of all but the neighbouring nodes
-                    d = d3.select(this).node().__data__;
+            function highlightNodes(d) {
                     node.transition().duration(1000).style("opacity", function (o) {
                         return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
                     });
@@ -328,12 +317,9 @@ module.directive('entryVisualizationContent', function (Entries) {
 
             }
             function unhighlightNodes() {
-                //Reduce the op
-                toggle = 1;
                 //Put them back to opacity=1
                 node.transition().duration(500).style("opacity", 1);
                 link.transition().duration(1000).style("opacity", 1);
-                toggle = 0;
             }
 
 
@@ -377,27 +363,25 @@ module.directive('entryVisualizationContent', function (Entries) {
             }
             optArray = optArray.sort();
 
-            console.log(optArray);
-
             $("#visualizationSearch").autocomplete({
                 source: optArray
             });
 
-            scope.searchNode = function(selectedVal) {
+            scope.searchNode = function() {
                 var selectedVal = document.getElementById('visualizationSearch').value;
 
-                var node = svg.selectAll(".node");
 
                 var selected = node.filter(function (d, i) {
-                    return d.title != selectedVal;
+                    if(d.title == selectedVal){
+                        highlightNodes(d);
+                        zoomListener.scale(1);
+                        zoomListener.translate([((-1)*d.x+width/2), ((-1)*d.y+height/2)]);
+                        container.attr("transform", "translate(" + ((-1)*d.x+width/2) +","+ ((-1)*d.y+height/2) + ")");
+
+                    }
+
                 });
-                console.log(selectedVal);
-                selected.style("opacity", "0");
-                var link = svg.selectAll(".link");
-                link.style("opacity", "0");
-                d3.selectAll(".node, .link").transition()
-                    .duration(5000)
-                    .style("opacity", 1);
+
 
             };
         }

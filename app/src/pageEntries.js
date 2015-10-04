@@ -355,15 +355,16 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
         return lessUsages;
     };
 
-    this.getEntriesRelationsNetwork = function(){
+    this.getEntriesRelationsNetwork = function(type){
         var links = [];
         var nodes = [];
+        console.log(type);
         this.categories.forEach(function(category){
             category.subCategories.forEach(function(subCategory){
                 subCategory.itemGroups.forEach(function(itemGroup){
                     if(itemGroup.items){
                         itemGroup.items.forEach(function(item){
-                            if(item.type != "html" && item.type != "less"){
+                            if(item.type != "html" && item.type != "less" && (type=="visualizationEntries" || type=="visualizationLessEntries")){
                                 nodes.push({
                                     id: item.id,
                                     title: item.title,
@@ -394,27 +395,20 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                                         });
                                     }
                                 }
+                                if(item.lessVariables && type=="visualizationLessEntries"){
+                                    item.lessVariables.forEach(function(variable){
+                                        if(variable){
+                                            console.log(variable);
+                                            links.push({
+                                                source: {id :variable},
+                                                target: {id :item.id},
+                                                relation: "lessUse"
+                                            });
+                                        }
+                                    });
+                                }
                             }
-                        });
-                    }
-                });
-            });
-        });
-        return {
-            "links": links,
-            "nodes": nodes
-        };
-    };
-
-    this.getLessRelationsNetwork = function(){
-        var links = [];
-        var nodes = [];
-        this.categories.forEach(function(category){
-            category.subCategories.forEach(function(subCategory){
-                subCategory.itemGroups.forEach(function(itemGroup){
-                    if(itemGroup.items){
-                        itemGroup.items.forEach(function(item){
-                            if(item.type == "less"){
+                            if(item.type == "less" && (type=="visualizationLess" || type=="visualizationLessEntries")){
                                 item.variables.forEach(function(variable){
                                     nodes.push({
                                         id: variable.title,
