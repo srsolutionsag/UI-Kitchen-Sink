@@ -47,5 +47,39 @@
     }
   }
 
+
+
 }
 
+.ui-widget-content {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  color: #222222;
+  width: 200px;
+  height: auto;
+  max-height: 200px;
+  overflow: scroll;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+  .ui-menu-item {
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    min-height: 0;
+    list-style: none;
+    padding-left: 15px;
+    /* support: IE7; */
+    /* support: IE10, see #8844; */
+  }
+
+  .ui-menu-item:hover {
+    color: @il-header-main-menu-active-color;
+    background-color: @il-header-main-menu-active-bg;
+  }
+
+}
+.ui-autocomplete-input{
+  width: 200px;
+}
