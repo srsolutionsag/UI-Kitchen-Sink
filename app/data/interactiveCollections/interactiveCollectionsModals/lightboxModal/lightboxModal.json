@@ -1,0 +1,44 @@
+{
+  "id": "roundTripModal",
+  "title": "Round-Trip Modal",
+  "type": "",
+  "phpClass": "ilModalGUI",
+  "externalLibrary": {
+    "name": "Bootstrap Modal",
+    "href": "http://getbootstrap.com/javascript/#modals"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "Round-Trip Modals are to be used if the context would be lost by performing this action otherwise. Round-Trip Modals accommodate sub-workflows within an overriding workflow. The Round-Trip Modal ensures that the users does not leave the trajectory of the overriding workflow. This is typically the case if an ILIAS service is called for while in working in an object."
+    },
+    {
+      "id": "composition",
+      "content": "Round-Trip Modals are completed by a small well defined sequence of 2 steps max. that might be displayed on a sequence of different modals connected through some “next” Button."
+    },
+    {
+      "id": "effect",
+      "content": "Round-Trip Modals perform sub-workflow involving some kind of user input. Sub-workflow is completed and user is returned to starting point allowing for continuing the overriding workflow."
+    }
+  ],
+  "background": "http://quince.infragistics.com/Patterns/Modal%20Panel.aspx",
+  "context": "Adding an Internal Link in the ILIAS Page Editor is done with a Modal. The overriding workflow is “page editing” the sub-workflow is “adding internal link”.",
+  "featureWikiReferences":[
+  ],
+  "rules":[
+    "Round-Trip Modals MUST contain at least two buttons at the bottom of the modala: a button to cancel (right) the workflow and a button to finish or reach the next step in the workflow (left).",
+    "Round-Trip Modals SHOULD be used, if the user would lose the context otherwise. If the action can be performed within the same context (e.g. add a post in a forum, edit a wiki page), a Round-Trip Modal MUST NOT be used.",
+    "When the workflow is completed, Round-Trip Modals SHOULD show the same view as was displayed when initiating the Modal.",
+    "Round-Trip Modals SHOULD NOT be used to add new items of any kind since adding item is a linear workflow redirecting to the newly added item setting- or content-tab.",
+    "Round-Trip Modals SHOULD NOT be used to perform complex workflows."
+  ],
+  "relations": {
+    "isA": ["baseModal"],
+    "mustUse": [
+    ],
+    "mayUse":[
+    ]
+  }
+}

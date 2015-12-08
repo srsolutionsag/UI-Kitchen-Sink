@@ -1,0 +1,8 @@
+{
+  "id": "iliasContentSidebars",
+  "title": "Sidebars",
+  "isIframe": "true",
+  "description": "The right sidebar could be used to provide the user meta-information about ILIAS such as mail, global calendar, help, tree etc.. The right sidebar could be used to provide content specific meta information such as tags, comments etc..",
+  "context": " The sidebars are accessible at all time.",
+  "state": "Proposal"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "baseCounter",
+  "title": "Base Counter",
+  "type": "abstract",
+  "phpClass": "none",
+  "externalLibrary": {
+    "name": "Bootstrap Badge",
+    "href": "http://getbootstrap.com/components/#badges"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "Counters inform users about the quantity of items indicated by a glyph."
+    },
+    {
+      "id": "composition",
+      "content": "Counters consist of a number and some background color and are placed on the ‘end of the line’ in reading direction of the item they state the count for."
+    },
+    {
+      "id": "effect",
+      "content": "Counters convey information, they are not interactive."
+    },
+    {
+      "id": "rivalElements",
+      "content": "Counters inform users about the quantity of items indicated by a glyph."
+    }
+  ],
+  "background": "",
+  "context": "",
+  "featureWikiReferences":[
+
+  ],
+  "rules":[
+    "A Counter MUST only be used in combination with a glyph.",
+    "A Counter MUST contain exactly one number greater than zero and no other characters."
+  ],
+  "relations": {
+    "isA": "",
+    "mustUse": [
+    ],
+    "mayUse":[
+    ]
+  }
+}

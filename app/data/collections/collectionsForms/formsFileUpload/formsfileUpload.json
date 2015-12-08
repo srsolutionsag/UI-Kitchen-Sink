@@ -1,7 +1,0 @@
-{
-  "id": "formsFileUpload",
-  "title": "File Upload",
-  "state": "Deprecated",
-  "description": "Current version of the File Upload.",
-  "guiClass": "ilFileUploadGUI"
-}

@@ -1,9 +1,0 @@
-{
-  "id": "formsDateTimePicker",
-  "title": "Date Time picker",
-  "state": "Proposal",
-  "description": "Form item to pick a date and/or time.",
-  "context": "Use whenever a date or/and time is needed from the user.",
-  "guiClass": "ilDateTimeInputGUI",
-  "status": "proposal"
-}

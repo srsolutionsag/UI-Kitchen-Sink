@@ -1,9 +1,0 @@
-{
-    "id": "panelBase",
-    "title": "Default",
-    "description": "Description of Panels",
-    "context":"Content of Panels",
-    "state": "Proposal",
-    "relations": {
-    }
-}

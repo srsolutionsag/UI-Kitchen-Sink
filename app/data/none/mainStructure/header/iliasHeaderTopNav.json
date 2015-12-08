@@ -1,0 +1,7 @@
+{
+    "id": "iliasHeaderTopNav",
+    "title": "Top Nav",
+    "isIframe": true,
+    "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen.",
+    "state":"Proposal"
+}

@@ -1,7 +1,0 @@
-{
-    "id": "toolbar",
-    "title": "Toolbar",
-    "description": "Complete description to be found at: <a href='http://www.ilias.de/docu/goto_docu_frm_3814_3100.html'>http://www.ilias.de/docu/goto_docu_frm_3814_3100.html</a>",
-    "guiClass": "ilToolbarGUI",
-    "state": "Implemented for 5.1"
-}
