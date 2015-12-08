@@ -16,37 +16,9 @@
               "type": "html"
             },
             {
-              "id": "overviewTerms",
-              "title": "Terms",
-              "items": [
-                {
-                  "id": "termsCategories",
-                  "title": "Categories",
-                  "type": "html",
-                  "state": "static",
-                  "fullPath": "app/data/information/informationOverview/overviewTerms/termsCategories",
-                  "path": "/information/informationOverview/overviewTerms/termsCategories",
-                  "order": 100
-                },
-                {
-                  "id": "termsKeyWords",
-                  "title": "Key Words",
-                  "type": "html",
-                  "state": "static",
-                  "fullPath": "app/data/information/informationOverview/overviewTerms/termsKeyWords",
-                  "path": "/information/informationOverview/overviewTerms/termsKeyWords",
-                  "order": 100
-                },
-                {
-                  "id": "termsStates",
-                  "title": "States",
-                  "type": "html",
-                  "state": "static",
-                  "fullPath": "app/data/information/informationOverview/overviewTerms/termsStates",
-                  "path": "/information/informationOverview/overviewTerms/termsStates",
-                  "order": 100
-                }
-              ]
+              "id": "overviewTaxonomy",
+              "title": "Taxonomy",
+              "type": "html"
             },
             {
               "id": "overviewWorkflows",
@@ -56,7 +28,7 @@
                   "id": "workflowAddElements",
                   "title": "New Element",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowAddElements",
                   "path": "/information/informationOverview/overviewWorkflows/workflowAddElements",
                   "order": 100
@@ -65,7 +37,7 @@
                   "id": "workflowChangeElements",
                   "title": "Change Element",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowChangeElements",
                   "path": "/information/informationOverview/overviewWorkflows/workflowChangeElements",
                   "order": 100
@@ -74,7 +46,7 @@
                   "id": "workflowImportElements",
                   "title": "Import Element",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/workflowImportElements",
                   "path": "/information/informationOverview/overviewWorkflows/workflowImportElements",
                   "order": 100
@@ -83,21 +55,17 @@
                   "id": "z_workflowChecklist",
                   "title": "Checklist",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowChecklist",
                   "path": "/information/informationOverview/overviewWorkflows/z_workflowChecklist",
                   "order": 100
-                },
-                {
-                  "id": "z_workflowTemplate",
-                  "title": "Template",
-                  "type": "html",
-                  "state": "static",
-                  "fullPath": "app/data/information/informationOverview/overviewWorkflows/z_workflowTemplate",
-                  "path": "/information/informationOverview/overviewWorkflows/z_workflowTemplate",
-                  "order": 100
                 }
               ]
+            },
+            {
+              "id": "overviewTemplate",
+              "title": "Template",
+              "type": "html"
             }
           ]
         },
@@ -119,7 +87,7 @@
                   "id": "accessabilityAriaRoles",
                   "title": "Aria Roles",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
                   "path": "/information/informationAccessability/accessabilityGuidelines/accessabilityAriaRoles",
                   "order": 100
@@ -141,7 +109,7 @@
                   "id": "aboutLess",
                   "title": "About LESS",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/overviewLess/lessOverview/aboutLess",
                   "path": "/information/overviewLess/lessOverview/aboutLess",
                   "order": 100
@@ -150,7 +118,7 @@
                   "id": "lessILIAS",
                   "title": "Less in ILIAS",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessILIAS",
                   "path": "/information/overviewLess/lessOverview/lessILIAS",
                   "order": 100
@@ -159,7 +127,7 @@
                   "id": "lessNamingConventions",
                   "title": "Less Naming Conventions",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/overviewLess/lessOverview/lessNamingConventions",
                   "path": "/information/overviewLess/lessOverview/lessNamingConventions",
                   "order": 100
@@ -4720,7 +4688,7 @@
                   "id": "javascriptGuidelines",
                   "title": "Javascript Guidelines",
                   "type": "html",
-                  "state": "static",
+                  "statusEntry": "static",
                   "fullPath": "app/data/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
                   "path": "/information/overviewJavascript/javascriptGuidelines/javascriptGuidelines",
                   "order": 100
@@ -4735,14 +4703,14 @@
           "description": "Visualizations to display the structure of less and entry dependencies.",
           "itemGroups": [
             {
-              "title": "Less",
-              "id": "visualizationLess",
+              "title": "Entries",
+              "id": "visualizationEntries",
               "type": "visualization",
               "items": []
             },
             {
-              "title": "Entries",
-              "id": "visualizationEntries",
+              "title": "Less",
+              "id": "visualizationLess",
               "type": "visualization",
               "items": []
             },
@@ -4757,275 +4725,158 @@
       ]
     },
     {
-      "title": "Elements",
-      "id": "elements",
-      "description": "Description of this Category",
+      "title": "Static Elements",
+      "id": "staticElements",
       "subCategories": [
         {
-          "id": "elementsGrid",
-          "title": "Grid",
-          "description": "Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts. In ILIAS the Bootstrap Grid MUST be used for all arrangements of components in a grid like structure.",
+          "title": "Counters",
+          "id": "staticElementsCounters",
+          "description": "",
           "itemGroups": [
             {
-              "title": "Containers",
-              "description": "All rows must be placed inside a container",
-              "id": "gridContainers",
+              "id": "baseCounter",
+              "title": "Base Counter",
               "items": [
                 {
-                  "id": "1_gridContainer",
-                  "title": "Default",
-                  "description": "Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
-                  "context": "Use a container as outer element, wherever to boostrap grid system is to be used.",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "mayUse": [
-                      "gridRow"
-                    ]
-                  },
-                  "fullPath": "app/data/elements/elementsGrid/gridContainers/1_gridContainer",
-                  "path": "/elements/elementsGrid/gridContainers/1_gridContainer",
-                  "order": 100
-                },
-                {
-                  "id": "gridContainerFluid",
-                  "title": "Fluid",
-                  "description": "All rows of the grid system must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.",
-                  "context": "Turn any fixed-width grid layout into a full-width layout by changing your outermost .container to .container-fluid. There should only be one fluid container in the DOM of ILIAS.",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "isA": "1_gridContainer"
-                  },
-                  "fullPath": "app/data/elements/elementsGrid/gridContainers/gridContainerFluid",
-                  "path": "/elements/elementsGrid/gridContainers/gridContainerFluid",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "title": "Rows",
-              "description": "Rows are used to create horizontal groups of columns",
-              "id": "gridRows",
-              "items": [
-                {
-                  "id": "gridRow",
-                  "title": "Default",
-                  "description": "Rows are used to create horizontal groups of columns.",
-                  "context": "Rows MUST be placed inside a container",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "mayUse": [
-                      "gridColumn"
-                    ]
-                  },
-                  "fullPath": "app/data/elements/elementsGrid/gridRows/gridRow",
-                  "path": "/elements/elementsGrid/gridRows/gridRow",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "title": "Columns",
-              "description": "Columns create gutters with padding",
-              "id": "gridColumns",
-              "items": [
-                {
-                  "id": "gridColumn",
-                  "title": "Default",
-                  "description": "Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows. Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4. Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.",
-                  "context": "Columns MUST be placed inside a row",
-                  "state": "Implemented for 5.0",
-                  "relations": {},
-                  "fullPath": "app/data/elements/elementsGrid/gridColumns/gridColumn",
-                  "path": "/elements/elementsGrid/gridColumns/gridColumn",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Typography",
-          "id": "elementsTypography",
-          "description": "Typography to be used in ILIAS",
-          "itemGroups": [
-            {
-              "id": "typographyOverview",
-              "title": "Overview",
-              "description": "Overview of typography elements",
-              "items": [
-                {
-                  "id": "baseText",
-                  "title": "Base version of Text",
-                  "description": "Base version of Text in ILIAS.",
-                  "state": "Implemented for 5.0",
-                  "fullPath": "app/data/elements/elementsTypography/typographyOverview/baseText",
-                  "path": "/elements/elementsTypography/typographyOverview/baseText",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "id": "typographyHeadings",
-              "title": "Headings",
-              "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "typographyHeadings",
-                  "title": "Default",
-                  "description": "Headings to be used in ILIAS",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "isA": "baseText"
-                  },
-                  "fullPath": "app/data/elements/elementsTypography/typographyHeadings/typographyHeadings",
-                  "path": "/elements/elementsTypography/typographyHeadings/typographyHeadings",
-                  "order": 100,
-                  "lessVariables": [
-                    "font-size-h3",
-                    "gray-light",
-                    "brand-warning"
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "Code",
-              "description": "Description of this Item Group",
-              "id": "typographyCode",
-              "items": [
-                {
-                  "id": "typographyCode",
-                  "title": "Default",
-                  "description": "Fonts used in the  'code' or 'pre' tag",
-                  "state": "Implemented for 5.0",
-                  "relations": {
-                    "isA": "baseText"
-                  },
-                  "fullPath": "app/data/elements/elementsTypography/typographyCode/typographyCode",
-                  "path": "/elements/elementsTypography/typographyCode/typographyCode",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Lists",
-          "id": "elementsLists",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "id": "listsBaseLists",
-              "title": "Ordered Lists",
-              "items": [
-                {
-                  "id": "1_baseList",
-                  "title": "Base version of Lists",
+                  "id": "baseCounter",
+                  "title": "Base Counter",
                   "type": "abstract",
-                  "description": "Simple lists that can be ordered or unordered.",
-                  "context": "You MIGHT use simple lists if you have a limited number of items to display.",
-                  "state": "Implemented for 5.0",
-                  "fullPath": "app/data/elements/elementsLists/listsBaseLists/1_baseList",
-                  "path": "/elements/elementsLists/listsBaseLists/1_baseList",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "id": "listsOrderedLists",
-              "title": "Ordered Lists",
-              "items": []
-            },
-            {
-              "id": "listsUnorderedLists",
-              "title": "UnorderedLists",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Images",
-          "id": "elementsImages",
-          "description": "Types of Images to be used in ILIAS",
-          "itemGroups": [
-            {
-              "id": "imagesThumbnails",
-              "title": "Thumbnails",
-              "items": []
-            },
-            {
-              "id": "imagesIcons",
-              "title": "Icons",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Buttons",
-          "id": "elementsButtons",
-          "description": "Description of this sub Category",
-          "itemGroups": [
-            {
-              "id": "buttonOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "button",
-                  "title": "Button",
-                  "type": "abstract",
-                  "description": "Buttons are either of an input elemen (with some cmd) or or a link (with some href). So far ILIAS does not support the <button> type.",
-                  "context": "Use buttons to initiate an action of some sort. If an action is temporarily not available, actions (buttons) might be disabled by setting as type 'disabled'.",
-                  "state": "Implemented for 5.0",
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-                  "fullPath": "app/data/elements/elementsButtons/buttonOverview/button",
-                  "path": "/elements/elementsButtons/buttonOverview/button",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "id": "buttonTypes",
-              "title": "Types",
-              "items": [
-                {
-                  "id": "buttonDefault",
-                  "title": "Default",
-                  "description": "Default Button in ILIAS. Buttons are either of type input (with some cmd) or link (with some href).",
-                  "context": "This is the most commonly used button instance in ILIAS and should be used, whenever there is not a good reason to use a special instance.",
-                  "state": "Implemented for 5.0",
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
+                  "phpClass": "none",
                   "externalLibrary": {
-                    "name": "Bootstrap",
-                    "link": "http://getbootstrap.com/javascript/#buttons"
+                    "name": "Bootstrap Badge",
+                    "href": "http://getbootstrap.com/components/#badges"
                   },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "Counters inform users about the quantity of items indicated by a glyph."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "Counters consist of a number and some background color and are placed on the ‘end of the line’ in reading direction of the item they state the count for."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "Counters convey information, they are not interactive."
+                    },
+                    {
+                      "id": "rivalElements",
+                      "content": "Counters inform users about the quantity of items indicated by a glyph."
+                    }
+                  ],
+                  "background": "",
+                  "context": "",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "A Counter MUST only be used in combination with a glyph.",
+                    "A Counter MUST contain exactly one number greater than zero and no other characters."
+                  ],
                   "relations": {
-                    "isA": "button"
+                    "isA": [],
+                    "mustUse": [],
+                    "mayUse": []
                   },
-                  "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonDefault",
-                  "path": "/elements/elementsButtons/buttonTypes/buttonDefault",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-btn-default-color",
-                    "brand-primary"
-                  ]
-                },
+                  "fullPath": "app/data/staticElements/staticElementsCounters/baseCounter/baseCounter",
+                  "path": "/staticElements/staticElementsCounters/baseCounter/baseCounter",
+                  "order": 100
+                }
+              ]
+            },
+            {
+              "id": "noveltyCounter",
+              "title": "Novelty Counter",
+              "items": [
                 {
-                  "id": "buttonPrimary",
-                  "title": "Primary",
-                  "description": "The 'Primary Button' is special emphasized button that marks to most important action on a view. There should only be one 'Primary Button' per page and each use must be confirmed by the JF. In Toolbars primary actions will be sticky, meaning they will not be disappear in the responsive view.",
-                  "context": "According to <a href='http://www.ilias.de/docu/goto_docu_wiki_wpage_1441_1357.html'>Emphasized Buttons for Primary Action</a> 'Buttons for a common and important next action that tend to be overlooked, should get a special emphasized style'. This style is currently named as 'Primary Button'.",
-                  "state": "Implemented for 5.0",
-                  "guiClass": "ilLinkButton (ilButton), ilSubmitButton (ilButton)",
-                  "relations": {
-                    "isA": "button"
+                  "id": "noveltyCounter",
+                  "title": "Novelty Counter",
+                  "type": "concrete",
+                  "phpClass": "none",
+                  "externalLibrary": {
+                    "name": "Bootstrap Badge",
+                    "href": "http://getbootstrap.com/components/#badges"
                   },
-                  "fullPath": "app/data/elements/elementsButtons/buttonTypes/buttonPrimary",
-                  "path": "/elements/elementsButtons/buttonTypes/buttonPrimary",
-                  "order": 100,
-                  "lessVariables": [
-                    "btn-primary-color",
-                    "brand-secondary"
-                  ]
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "Novelty counters inform users about the arrival or creation of new items of the kind indicated by the accompanying glyph."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "The Novelty Counter is an obtrusive counter."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "They count down  / disappear as soon as the change has been consulted by the user."
+                    }
+                  ],
+                  "background": "",
+                  "context": "",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "There MUST be a way for the user to consult the changes indicated by the Counter. After the consultation, the Novelty Counter SHOULD disappear or the number it contains is reduced by one. Depending on the content, the reduced number might be added in an additional Status Counter.",
+                    "The Novelty Counter MUST be displayed on the top at the ‘end of the line’ in reading direction of the item it accompanies. This would be top right for latin script and top left for arabic script.",
+                    "The Novelty Counter SHOULD have an obtrusive background color such as red or orange.",
+                    "MAY be used together with the Status Counter."
+                  ],
+                  "relations": {
+                    "isA": "baseCounter",
+                    "mustUse": [],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/staticElements/staticElementsCounters/noveltyCounter/noveltyCounter",
+                  "path": "/staticElements/staticElementsCounters/noveltyCounter/noveltyCounter",
+                  "order": 100
+                }
+              ]
+            },
+            {
+              "id": "statusCounter",
+              "title": "Status Counter",
+              "items": [
+                {
+                  "id": "statusCounter",
+                  "title": "Status Counter",
+                  "type": "concrete",
+                  "phpClass": "none",
+                  "externalLibrary": {
+                    "name": "Bootstrap Badge",
+                    "href": "http://getbootstrap.com/components/#badges"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "The Status Counter is used to display information about the total number of some items like users active on the system or total amount of comments."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "The Status Counter is a non-obtrusive Counter."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "Status Counters convey information, they are not interactive."
+                    }
+                  ],
+                  "background": "",
+                  "context": "",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "The Status Counter MUST be displayed on the lower right of the item it accompanies.",
+                    "The Status Counter SHOULD have an non-obtrusive background color such as grey."
+                  ],
+                  "relations": {
+                    "isA": "baseCounter",
+                    "mustUse": [],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/staticElements/staticElementsCounters/statusCounter/statusCounter",
+                  "path": "/staticElements/staticElementsCounters/statusCounter/statusCounter",
+                  "order": 100
                 }
               ]
             }
@@ -5034,1002 +4885,282 @@
       ]
     },
     {
-      "title": "Collections",
-      "id": "collections",
-      "description": "Description of this Category",
+      "title": "Interactive Elements",
+      "id": "interactiveElements",
       "subCategories": [
         {
-          "title": "Navigation",
-          "id": "collectionsNavigation",
-          "description": "Elements used to navigate.",
+          "title": "Empty",
+          "id": "emptyStaticCollections",
+          "description": "No Entries yet",
           "itemGroups": [
             {
-              "id": "navigationBreadcrumbs",
-              "title": "Breadcrumbs",
-              "items": [
-                {
-                  "id": "breadcrumb",
-                  "title": "Breadcrumb",
-                  "translations": {
-                    "german": {
-                      "title": "Breadcrumb"
-                    }
-                  },
-                  "type": "png",
-                  "description": "external",
-                  "context": "Breadcrumbs MUST be displayed in the realm of the RBAC.",
-                  "state": "To be revised",
-                  "guiClass": "ilLocatorGUI",
-                  "relations": {},
-                  "fullPath": "app/data/collections/collectionsNavigation/navigationBreadcrumbs/breadcrumb",
-                  "path": "/collections/collectionsNavigation/navigationBreadcrumbs/breadcrumb",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "id": "navigationNavbars",
-              "title": "Navbars",
-              "items": []
-            },
-            {
-              "id": "navigationFatMenus",
-              "title": "Fat Menus",
-              "items": []
-            },
-            {
-              "id": "navigationTabs",
-              "title": "Tabs",
-              "items": []
-            },
-            {
-              "id": "navigationTree",
-              "title": "Tree",
+              "id": "empty",
+              "title": "Empty",
               "items": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": " Static Collections",
+      "id": "staticCollections",
+      "subCategories": [
         {
-          "title": "Forms",
-          "id": "collectionsForms",
-          "description": "Types of forms and form items to be used in ILIAS",
+          "title": "Empty",
+          "id": "emptyStaticCollections",
+          "description": "No Entries yet",
           "itemGroups": [
             {
-              "id": "formsOverview",
-              "title": "Overview",
+              "id": "empty",
+              "title": "Empty",
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": " Interactive Collections",
+      "id": "interactiveCollections",
+      "subCategories": [
+        {
+          "title": "Modals",
+          "id": "interactiveCollectionsModals",
+          "description": "",
+          "itemGroups": [
+            {
+              "id": "baseModal",
+              "title": "Base Modal",
               "items": [
                 {
-                  "id": "formBase",
-                  "order": 0,
-                  "title": "Base Form",
-                  "translations": {
-                    "german": {
-                      "title": "Standarformular"
-                    }
-                  },
-                  "description": "A form is divided into area which are further divided into sections. Each form MUST have a header and a footer section containing the buttons to save or cancel the input of the form.",
-                  "context": "A form SHOULD be used whenever data input is needed from the user.",
-                  "state": "Proposal",
-                  "guiClass": "ilFormGUI",
-                  "relations": {
-                    "mustUse": [
-                      "formFooter",
-                      "formArea"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formBase",
-                  "path": "/collections/collectionsForms/formsOverview/formBase",
-                  "lessVariables": [
-                    "il-form-required-label-color",
-                    ""
-                  ]
-                },
-                {
-                  "id": "formArea",
-                  "order": 10,
-                  "title": "Form Area",
-                  "description": "external",
-                  "translations": {
-                    "german": {
-                      "title": "Formularbereich"
-                    }
-                  },
-                  "context": "Each form MUST contain at least one area.",
-                  "state": "Proposal",
-                  "guiClass": "ilFormGUI",
-                  "relations": {
-                    "mustUse": [
-                      "formSection"
-                    ],
-                    "mayUse": [
-                      "buttonDefault"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formArea",
-                  "path": "/collections/collectionsForms/formsOverview/formArea",
-                  "lessVariables": [
-                    "padding-large-vertical",
-                    "il-form-area-devider"
-                  ]
-                },
-                {
-                  "id": "formSection",
-                  "order": 20,
-                  "title": "Form Section",
-                  "description": "external",
-                  "translations": {
-                    "german": {
-                      "title": "Formularabschnitt"
-                    }
-                  },
-                  "context": "An area of a form MUST at least contain one section. Ideally the SHOULD contain between 2 and 5 sections. A section might also contain a subform that can be triggered by either checkbox or a combobox.",
-                  "state": "Proposal",
-                  "guiClass": "ilFormGUI",
-                  "relations": {
-                    "mustUse": [
-                      "formElement"
-                    ],
-                    "mayUse": [
-                      "formSubform"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formSection",
-                  "path": "/collections/collectionsForms/formsOverview/formSection",
-                  "lessVariables": []
-                },
-                {
-                  "id": "formSubform",
-                  "title": "Subform",
-                  "order": 25,
-                  "translations": {
-                    "german": {
-                      "title": "Unterformular"
-                    }
-                  },
-                  "description": "Sections might contain complete forms called subforms. Subforms are special forms.",
-                  "context": "Subforms are made visible by enabling either a checkbox or an option in a combobox",
-                  "state": "Proposal",
-                  "guiClass": "ilFormGUI",
-                  "relations": {
-                    "isA": "formBase",
-                    "mustUse": [
-                      "buttonDefault"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formSubform",
-                  "path": "/collections/collectionsForms/formsOverview/formSubform",
-                  "lessVariables": []
-                },
-                {
-                  "id": "formElement",
-                  "order": 30,
-                  "title": "Form Element",
-                  "translations": {
-                    "german": {
-                      "title": "Formularelement"
-                    }
-                  },
+                  "id": "baseModal",
+                  "title": "Base Modal",
                   "type": "abstract",
-                  "description": "Form elements are used to get input from the user. Depending on the type of input, a different type of form element is needed. Check among the different categories of input type to find the best fitting form element of all available choices.",
-                  "context": "Each section contains exactly one form element.",
-                  "state": "Proposal",
-                  "relations": {},
-                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formElement",
-                  "path": "/collections/collectionsForms/formsOverview/formElement"
-                },
-                {
-                  "id": "formFooter",
-                  "title": "Form Footer",
-                  "translations": {
-                    "german": {
-                      "title": "Formularfusszeile"
+                  "phpClass": "ilModalGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap Modal",
+                    "href": "http://getbootstrap.com/javascript/#modals"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "The Modal forces users to focus on the task at hand."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "A Modal is a full-screen dialog on top of the greyed-out ILIAS screen. The Modal consists of a header with a close button and a typography modal title, a content section and might have a footer."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "All controls of the original context are inaccessible until the Modal is completed. Upon completion the user returns to the original context."
+                    },
+                    {
+                      "id": "rivalElements",
+                      "content": "Modals have some relations to popovers. The main difference between the two is the disruptive nature of the Modal and the larger amount of data that might be displayed inside a modal. Also popovers perform mostly action to add or consult metadata of an item while Modals manipulate or focus items or their sub-items directly."
                     }
-                  },
-                  "description": "The footer encloses the form. It holds a description of the identifier for mandatory fields and contains the save (left) and cancel (right) button to store or drop changes.",
-                  "context": "Each form MUST contain a footer section.",
-                  "state": "Proposal",
-                  "guiClass": "ilFormGUI",
+                  ],
+                  "background": "http://quince.infragistics.com/Patterns/Modal%20Panel.aspx",
+                  "context": "",
+                  "featureWikiReferences": [
+                    "DR 5.2 - Pushing Modals",
+                    "DR 5.1 - Issue 02: Keep Drop-Downs in Viewport / Overlay handling"
+                  ],
+                  "rules": [
+                    "The main purpose of the Modals MUST NOT be navigational. But Modals MAY be dialogue of one or two steps and thus encompass “next”-buttons  or the like.",
+                    "Modals MUST NOT contain other modals (Modal in Modal).",
+                    "Modals SHOULD not be used to perform complex workflows.",
+                    "Modals MUST be closable by a little “x”-button on the right side of the header.",
+                    "Modals MUST contain a title in the header."
+                  ],
                   "relations": {
-                    "mustUse": [
-                      "buttonDefault"
-                    ]
+                    "isA": [],
+                    "mustUse": [],
+                    "mayUse": []
                   },
-                  "fullPath": "app/data/collections/collectionsForms/formsOverview/formFooter",
-                  "path": "/collections/collectionsForms/formsOverview/formFooter",
-                  "order": 100,
-                  "lessVariables": [
-                    "padding-large-vertical",
-                    "il-form-area-devider"
-                  ]
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsModals/baseModal/baseModal",
+                  "path": "/interactiveCollections/interactiveCollectionsModals/baseModal/baseModal",
+                  "order": 100
                 }
               ]
             },
             {
-              "id": "formsBinaryChoice",
-              "title": "Binary Choice",
+              "id": "roundTripModal",
+              "title": "Round Trip Modal",
               "items": [
                 {
-                  "id": "checkbox",
-                  "title": "Checkbox",
-                  "translations": {
-                    "german": {
-                      "title": "Checkbox"
+                  "id": "roundTripModal",
+                  "title": "Round-Trip Modal",
+                  "type": "",
+                  "phpClass": "ilModalGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap Modal",
+                    "href": "http://getbootstrap.com/javascript/#modals"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "Round-Trip Modals are to be used if the context would be lost by performing this action otherwise. Round-Trip Modals accommodate sub-workflows within an overriding workflow. The Round-Trip Modal ensures that the users does not leave the trajectory of the overriding workflow. This is typically the case if an ILIAS service is called for while in working in an object."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "Round-Trip Modals are completed by a small well defined sequence of 2 steps max. that might be displayed on a sequence of different modals connected through some “next” Button."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "Round-Trip Modals perform sub-workflow involving some kind of user input. Sub-workflow is completed and user is returned to starting point allowing for continuing the overriding workflow."
                     }
-                  },
-                  "description": "Box that has either status 'checked' or 'unchecked'. A checkbox is used to govern a state, action, or value that can either be on or off. The checkbox MUST always state something positive.",
-                  "context": "A checkbox MUST be used if a binary choice (E.g. yes or no) is asked for. You MUST NOT use two radio buttons or a drop-down list with two choices for scenario.",
-                  "state": "Proposal",
-                  "guiClass": "ilFormGUI",
-                  "relations": {
-                    "mustUse": [
-                      "formElement"
-                    ],
-                    "mayUse": [
-                      "formSubform"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/collectionsForms/formsBinaryChoice/checkbox",
-                  "path": "/collections/collectionsForms/formsBinaryChoice/checkbox",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "id": "formsOneofN",
-              "title": "One of N",
-              "items": []
-            },
-            {
-              "id": "formsNofN",
-              "title": "N of N",
-              "items": []
-            },
-            {
-              "id": "formsText",
-              "title": "Text",
-              "items": []
-            },
-            {
-              "id": "formsNumbers",
-              "title": "Numbers",
-              "items": []
-            },
-            {
-              "id": "formsDateTime",
-              "title": "Date/Time",
-              "items": [
-                {
-                  "id": "formsDateTimePicker",
-                  "title": "Date Time picker",
-                  "state": "Proposal",
-                  "description": "Form item to pick a date and/or time.",
-                  "context": "Use whenever a date or/and time is needed from the user.",
-                  "guiClass": "ilDateTimeInputGUI",
-                  "status": "proposal",
-                  "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimePicker",
-                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimePicker",
-                  "order": 100,
-                  "lessVariables": []
-                },
-                {
-                  "id": "formsDateTimeRangePicker",
-                  "title": "Date Time Range Picker",
-                  "state": "Proposal",
-                  "description": "Form item to let the user pick a date/time range.",
-                  "context": "Use where are range From - To is needed. Often used in filters.",
-                  "guiClass": "ilDateTimeInputGUI",
-                  "status": "Proposal",
-                  "relations": {
-                    "isA": "formsDateTimePicker"
-                  },
-                  "fullPath": "app/data/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker",
-                  "path": "/collections/collectionsForms/formsDateTime/formsDateTimeRangePicker",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "id": "formsWYSIWYG",
-              "title": "WYSIWYG",
-              "items": []
-            },
-            {
-              "id": "formsFileUpload",
-              "title": "File Upload",
-              "items": [
-                {
-                  "id": "formsFileUpload",
-                  "title": "File Upload",
-                  "state": "Deprecated",
-                  "description": "Current version of the File Upload.",
-                  "guiClass": "ilFileUploadGUI",
-                  "fullPath": "app/data/collections/collectionsForms/formsFileUpload/formsFileUpload",
-                  "path": "/collections/collectionsForms/formsFileUpload/formsFileUpload",
-                  "order": 100,
-                  "lessVariables": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Tables",
-          "id": "collectionsTables",
-          "description": "Types of tables to be used in ILIAS",
-          "itemGroups": [
-            {
-              "id": "tableBase",
-              "title": "Basic Table",
-              "items": []
-            },
-            {
-              "id": "tableFilter",
-              "title": "Table Filter",
-              "items": [
-                {
-                  "id": "tableFilter",
-                  "title": "Table Filter",
-                  "state": "Proposal",
-                  "description": "Proposal of table filter",
-                  "lessVariables": [],
-                  "status": "Proposal",
-                  "fullPath": "app/data/collections/collectionsTables/tableFilter/tableFilter",
-                  "path": "/collections/collectionsTables/tableFilter/tableFilter",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Dialogs",
-          "id": "collectionsDialogs",
-          "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
-          "itemGroups": [
-            {
-              "title": "Overview",
-              "id": "dialogsOverview",
-              "items": [
-                {
-                  "id": "dialog",
-                  "title": "Dialog",
-                  "type": "abstract",
-                  "description": "external",
-                  "state": "Implemented for 5.0",
-                  "fullPath": "app/data/collections/collectionsDialogs/dialogsOverview/dialog",
-                  "path": "/collections/collectionsDialogs/dialogsOverview/dialog",
-                  "order": 100
-                }
-              ]
-            },
-            {
-              "title": "Modals",
-              "id": "dialogsModals",
-              "items": [
-                {
-                  "id": "modal",
-                  "title": "Modal",
-                  "description": "Base form of a modal adopted from ",
-                  "guiClass": "ilModalGUI",
-                  "state": "Implemented for 5.1",
-                  "relations": {
-                    "isA": "dialog",
-                    "mustUse": [
-                      "buttonDefault"
-                    ]
-                  },
-                  "fullPath": "app/data/collections/collectionsDialogs/dialogsModals/modal",
-                  "path": "/collections/collectionsDialogs/dialogsModals/modal",
-                  "order": 100
-                },
-                {
-                  "id": "modalWithForm",
-                  "title": "Modal with Form",
-                  "description": "A modal containing a form",
-                  "state": "Implemented for 5.1",
+                  ],
+                  "background": "http://quince.infragistics.com/Patterns/Modal%20Panel.aspx",
+                  "context": "Adding an Internal Link in the ILIAS Page Editor is done with a Modal. The overriding workflow is “page editing” the sub-workflow is “adding internal link”.",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "Round-Trip Modals MUST contain at least two buttons at the bottom of the modala: a button to cancel (right) the workflow and a button to finish or reach the next step in the workflow (left).",
+                    "Round-Trip Modals SHOULD be used, if the user would lose the context otherwise. If the action can be performed within the same context (e.g. add a post in a forum, edit a wiki page), a Round-Trip Modal MUST NOT be used.",
+                    "When the workflow is completed, Round-Trip Modals SHOULD show the same view as was displayed when initiating the Modal.",
+                    "Round-Trip Modals SHOULD NOT be used to add new items of any kind since adding item is a linear workflow redirecting to the newly added item setting- or content-tab.",
+                    "Round-Trip Modals SHOULD NOT be used to perform complex workflows."
+                  ],
                   "relations": {
                     "isA": [
-                      "modal"
+                      "baseModal"
                     ],
-                    "mustUse": [
-                      "buttonPrimary"
-                    ]
+                    "mustUse": [],
+                    "mayUse": []
                   },
-                  "fullPath": "app/data/collections/collectionsDialogs/dialogsModals/modalWithForm",
-                  "path": "/collections/collectionsDialogs/dialogsModals/modalWithForm",
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsModals/roundTripModal/roundTripModal",
+                  "path": "/interactiveCollections/interactiveCollectionsModals/roundTripModal/roundTripModal",
                   "order": 100
                 }
               ]
             },
             {
-              "title": "Non-Modals",
-              "id": "dialogsNonModals",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Actions",
-          "id": "collectionsActions",
-          "description": "Components used to initiate actions of some sort. Other components used for navigation, those components to no just redirect to user to some other part of the application, but actually let the user manipulate the data.",
-          "itemGroups": [
-            {
-              "id": "actionsButtonGroups",
-              "title": "Button Groups",
-              "items": []
-            },
-            {
-              "id": "actionsToolbar",
-              "title": "Toolbar",
+              "id": "interruptiveModal",
+              "title": "Interruptive Modal",
               "items": [
                 {
-                  "id": "toolbar",
-                  "title": "Toolbar",
-                  "description": "Complete description to be found at: <a href='http://www.ilias.de/docu/goto_docu_frm_3814_3100.html'>http://www.ilias.de/docu/goto_docu_frm_3814_3100.html</a>",
-                  "guiClass": "ilToolbarGUI",
-                  "state": "Implemented for 5.1",
-                  "fullPath": "app/data/collections/collectionsActions/actionsToolbar/toolbar",
-                  "path": "/collections/collectionsActions/actionsToolbar/toolbar",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-toolbar-link-gap",
-                    "padding-base-vertical",
-                    "navbar-default-border",
-                    "input-height-base"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Callouts",
-          "id": "collectionsCallouts",
-          "description": "Callouts give the user easily visible feedback of some sort.",
-          "itemGroups": [
-            {
-              "id": "calloutsProgressBars",
-              "title": "Progress Bars",
-              "items": []
-            },
-            {
-              "id": "calloutsAlerts",
-              "title": "Alerts",
-              "items": []
-            },
-            {
-              "id": "calloutsTooltips",
-              "title": "Tooltips",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Containers",
-          "id": "collectionsContainers",
-          "description": "Containers build a frame around other components. They group items to make them easy to identify as cluster.",
-          "itemGroups": [
-            {
-              "id": "containersPanels",
-              "title": "Panels",
-              "items": [
-                {
-                  "id": "panelBase",
-                  "title": "Default",
-                  "description": "Description of Panels",
-                  "context": "Content of Panels",
-                  "state": "Proposal",
-                  "relations": {},
-                  "fullPath": "app/data/collections/collectionsContainers/containersPanels/panelBase",
-                  "path": "/collections/collectionsContainers/containersPanels/panelBase",
+                  "id": "interruptiveModal",
+                  "title": "Interruptive Modal",
+                  "type": "",
+                  "phpClass": "ilModalGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap Modal",
+                    "href": "http://getbootstrap.com/javascript/#modals"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "An Interruptive Modal disrupts the user in critical situation, forcing him or her to focus on the task at hand."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "The Modal states why this situation needs attention and may point out consequences."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "All controls of the original context are inaccessible until the Modal is completed. Upon completion the user returns to the original context."
+                    }
+                  ],
+                  "background": "http://quince.infragistics.com/Patterns/Modal%20Panel.aspx",
+                  "context": "Interruptive Modals are currently used to submit or delete answers in a test before turning to using the test-related controls.",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "Due to the heavily disruptive nature of this type of Modal it MUST be restricted to critical situations (e.g. loss of data).",
+                    "All delete-actions are critical situations and MUST be implemented as an Interruptive Modal.",
+                    "Interruptive Modals MUST contain a Default Button continuing the action that initiated the Modal (e.g. Delete the Item) on the left side of the footer of the modal and a button canceling the action on the right side of the footer as Default Button.",
+                    "The Cancel Button in the footer and the Close Button in the header MUST NOT perform any additional action than closing the confirmation screen."
+                  ],
+                  "relations": {
+                    "isA": [
+                      "baseModal"
+                    ],
+                    "mustUse": [],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsModals/interruptiveModal/interruptiveModal",
+                  "path": "/interactiveCollections/interactiveCollectionsModals/interruptiveModal/interruptiveModal",
                   "order": 100
                 }
               ]
             },
             {
-              "id": "containersLists",
-              "title": "Container List",
-              "items": []
-            },
-            {
-              "title": "Accordion",
-              "id": "containersAccordion",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Calendars",
-          "id": "collectionsCalendar",
-          "description": "Calendars to view appointements",
-          "itemGroups": [
-            {
-              "id": "calendarsBase",
-              "title": "Base Calendar",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Charts",
-          "id": "collectionsCharts",
-          "description": "Charts used to display large amount of data in limited space.",
-          "itemGroups": [
-            {
-              "id": "chartsRadialTable",
-              "title": "Radial Table",
-              "items": []
-            },
-            {
-              "id": "chartschartsMultyYGraph",
-              "title": "Multy Y-Graph",
-              "items": []
-            },
-            {
-              "id": "chartsTreemap",
-              "title": "Treemap",
-              "items": []
-            },
-            {
-              "id": "chartsSmallMultiples",
-              "title": "Small Multiples",
-              "items": []
-            }
-          ]
-        },
-        {
-          "title": "Maps",
-          "id": "collectionsMaps",
-          "description": "Used to show locations.",
-          "itemGroups": [
-            {
-              "id": "mapsGoogleMaps",
-              "title": "Google Maps",
-              "items": []
+              "id": "lightboxModal",
+              "title": "Lightbox Modal",
+              "items": [
+                {
+                  "id": "lightboxModal",
+                  "title": "Lightbox Modal",
+                  "type": "",
+                  "phpClass": "ilModalGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap Modal",
+                    "href": "http://getbootstrap.com/javascript/#modals"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "The Lightbox Modal displays a full of data such as documents, images or a movie inside a Lightbox."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "If multiple pages or images are to be displayed in one Lightbox Modal, they can flipped through."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "Lightbox Modals are activated by clicking the Full View Glyphicon, the Title of the object or it’s Thumbnail."
+                    },
+                    {
+                      "id": "rivalElements",
+                      "content": "Preview Popovers have some relation to Lightbox Modals. Preview Popovers only display parts or a reduced level of detail of the data to be previewed while Lightbox Modals display a complete view."
+                    }
+                  ],
+                  "background": "http://quince.infragistics.com/Patterns/Modal%20Panel.aspx",
+                  "context": "Mediacast Objects are presented inside a Lightbox Modals.",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "Lightbox Modals MUST contain a Closing Button on the top right and a title above the presented item.",
+                    "Lightobx Modals MUST contain a title above the presented item.",
+                    "Lightbox Modals SHOULD contain a descriptional text below the presented items.",
+                    "Multiple images or pages inside a Lightbox Modals MUST be presented in carousel like manner allowing to flickr through items."
+                  ],
+                  "relations": {
+                    "isA": [
+                      "baseModal"
+                    ],
+                    "mustUse": [],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsModals/lightboxModal/lightboxModal",
+                  "path": "/interactiveCollections/interactiveCollectionsModals/lightboxModal/lightboxModal",
+                  "order": 100
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "title": "Layouts",
+      "title": " Layouts",
       "id": "layouts",
-      "description": "Description of this Category",
       "subCategories": [
         {
-          "title": "Main Structure",
-          "id": "mainStructure",
-          "description": "Main skeleton of the ILIAS Dom structure",
+          "title": "Empty",
+          "id": "emptylayouts",
+          "description": "No Entries yet",
           "itemGroups": [
             {
-              "title": "ILIAS Main Structure",
-              "id": "iliasMainStructure",
-              "description": "Description of this Item Group",
-              "items": [
-                {
-                  "id": "iliasMainStructureOverview",
-                  "title": "Overview",
-                  "description": "The main layout of the ILIAS Page contains three sections: the header section, the content section and the footer section.",
-                  "isIframe": true,
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
-                  "path": "/layouts/mainStructure/iliasMainStructure/iliasMainStructureOverview",
-                  "order": 100,
-                  "lessVariables": []
-                }
-              ]
-            },
-            {
-              "title": "Header",
-              "description": "Description of this Item Group",
-              "id": "header",
-              "items": [
-                {
-                  "id": "iliasHeaderOverview",
-                  "order": 0,
-                  "title": "Overview",
-                  "isIframe": true,
-                  "description": "Overview of the ILIAS header area.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderOverview",
-                  "path": "/layouts/mainStructure/header/iliasHeaderOverview",
-                  "lessVariables": [
-                    "il-header-height-sm",
-                    "il-header-bg",
-                    "il-header-border-top",
-                    "il-header-border-bottom",
-                    "il-header-border-left",
-                    "il-header-border-right",
-                    "zindex-navbar-fixed",
-                    "screen-sm-min",
-                    "il-header-height"
-                  ]
-                },
-                {
-                  "id": "iliasHeaderBranding",
-                  "title": "Branding",
-                  "isIframe": true,
-                  "description": "The branding area SHOULD contain the logo of the application and its title.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderBranding",
-                  "path": "/layouts/mainStructure/header/iliasHeaderBranding",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-header-branding-top-sm",
-                    "il-header-branding-left-sm",
-                    "il-header-branding-right-sm",
-                    "il-header-branding-height-sm",
-                    "il-header-branding-bg",
-                    "il-header-branding-text-display-sm",
-                    "il-header-branding-font-size-sm",
-                    "il-header-branding-text-logo-padding-sm",
-                    "il-header-branding-logo-font-size-sm",
-                    "screen-sm-min",
-                    "il-header-branding-top",
-                    "il-header-branding-left",
-                    "il-header-branding-right",
-                    "il-header-branding-height",
-                    "il-header-branding-font-size",
-                    "il-header-branding-text-logo-padding",
-                    "il-header-branding-logo-font-size"
-                  ]
-                },
-                {
-                  "id": "iliasHeaderMainMenu",
-                  "title": "Main Menu",
-                  "isIframe": true,
-                  "description": "The main menu handles the main navigation in ILIAS.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderMainMenu",
-                  "path": "/layouts/mainStructure/header/iliasHeaderMainMenu",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-header-main-menu-top-sm",
-                    "il-header-main-menu-left-sm",
-                    "il-header-main-menu-right-sm",
-                    "il-header-main-menu-color",
-                    "il-header-main-menu-border-sm",
-                    "il-header-main-menu-border-radius-sm",
-                    "il-header-height-sm",
-                    "il-header-main-menu-bg",
-                    "screen-sm-min",
-                    "il-header-main-menu-float",
-                    "il-header-main-menu-active-color",
-                    "il-header-main-menu-active-bg",
-                    "il-header-main-menu-open-color",
-                    "il-header-main-menu-open-bg",
-                    "il-header-main-menu-top",
-                    "il-header-main-menu-left",
-                    "il-header-main-menu-right",
-                    "il-header-main-menu-border"
-                  ]
-                },
-                {
-                  "id": "iliasHeaderTopNav",
-                  "title": "Top Nav",
-                  "isIframe": true,
-                  "description": "The Top Nav area holds links and dropdowns for search, user specific action such as logout/login, settings, mail etc. It should be placed at the top right of the screen.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/header/iliasHeaderTopNav",
-                  "path": "/layouts/mainStructure/header/iliasHeaderTopNav",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-header-top-nav-top-sm",
-                    "il-header-top-nav-left-sm",
-                    "il-header-top-nav-right-sm",
-                    "il-header-top-nav-float",
-                    "il-header-top-nav-box-min-height-sm",
-                    "il-header-top-nav-box-margin-right-sm",
-                    "il-header-top-nav-box-min-width-sm",
-                    "il-header-top-nav-box-font-size-sm",
-                    "il-header-top-nav-box-bg",
-                    "il-header-top-nav-box-color",
-                    "il-header-top-nav-box-hover-color",
-                    "il-header-top-nav-box-hover-bg",
-                    "screen-sm-min",
-                    "il-header-top-nav-top",
-                    "il-header-top-nav-left",
-                    "il-header-top-nav-right",
-                    "il-header-top-nav-box-min-height",
-                    "il-header-top-nav-box-min-width",
-                    "il-header-top-nav-box-margin-right",
-                    "il-header-top-nav-box-font-size"
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "Content",
-              "description": "Description of this Item Group",
-              "id": "content",
-              "items": [
-                {
-                  "id": "0_iliasContentOverview",
-                  "order": 0,
-                  "isIframe": true,
-                  "title": "Overview",
-                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/content/0_iliasContentOverview",
-                  "path": "/layouts/mainStructure/content/0_iliasContentOverview"
-                },
-                {
-                  "id": "iliasContentCenter",
-                  "title": "Center Content",
-                  "description": "The content section is devided into a left and right sidebar and the center content. Between those ist empty space. Important, the current example is only a very raw draft. JS logic is done by the UI-Kitchen-Sink via angularJS. The example presented bellow is therefore only static. See the sidebars of the Kitchen-Sink for a working example.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentCenter",
-                  "path": "/layouts/mainStructure/content/iliasContentCenter",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-content-min-height",
-                    "il-content-bg"
-                  ]
-                },
-                {
-                  "id": "iliasContentSidebars",
-                  "title": "Sidebars",
-                  "isIframe": "true",
-                  "description": "The right sidebar could be used to provide the user meta-information about ILIAS such as mail, global calendar, help, tree etc.. The right sidebar could be used to provide content specific meta information such as tags, comments etc..",
-                  "context": " The sidebars are accessible at all time.",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/content/iliasContentSidebars",
-                  "path": "/layouts/mainStructure/content/iliasContentSidebars",
-                  "order": 100,
-                  "lessVariables": [
-                    "screen-sm-min",
-                    "il-panel-sortable-placeholder-panel-bg",
-                    "il-panel-sortable-placeholder-border",
-                    "il-panel-sortable-placeholder-panel-border-radius",
-                    "line-height-computed",
-                    "il-panel-sortable-placeholder-height",
-                    "il-footer-height",
-                    "grid-gutter-width",
-                    "il-sidebar-body-bg-color",
-                    "il-sidebar-bg-color",
-                    "padding-large-horizontal",
-                    "il-sidebar-hover-bg-color",
-                    "il-sidebar-heading-link-hover-color",
-                    "il-sidebar-heading-link-color",
-                    "il-flap-icon-font-size-lg",
-                    "il-flap-text-font-size-lg",
-                    "il-flap-hover-size-lg",
-                    "il-flap-animation-speed",
-                    "il-sidebar-block-active-border-width",
-                    "il-sidebar-block-active-border-color",
-                    "il-flap-minified-width",
-                    "il-sidebar-toggle-button-height",
-                    "il-sidebar-toggle-button-width",
-                    "il-header-height-sm",
-                    "il-header-height"
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "Footer",
-              "description": "Description of this Item Group",
-              "id": "footer",
-              "items": [
-                {
-                  "id": "iliasMainStructureFooter",
-                  "title": "Overview",
-                  "description": "The footer mostly displays some meta information about the page.",
-                  "isIframe": true,
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/mainStructure/footer/iliasMainStructureFooter",
-                  "path": "/layouts/mainStructure/footer/iliasMainStructureFooter",
-                  "order": 100,
-                  "lessVariables": [
-                    "il-footer-height",
-                    "il-footer-color",
-                    "il-footer-bg",
-                    "il-footer-padding-horizontal",
-                    "il-footer-padding-vertical"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Center Stage",
-          "id": "layoutsCenterStage",
-          "description": "A big central stage in the middle of the content.",
-          "itemGroups": [
-            {
-              "id": "centerStageOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "centerStageBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "relations": {
-                    "mustUse": [
-                      "gridContainerFluid",
-                      "gridColumn",
-                      "gridRow"
-                    ]
-                  },
-                  "fullPath": "app/data/layouts/layoutsCenterStage/centerStageOverview/centerStageBase",
-                  "path": "/layouts/layoutsCenterStage/centerStageOverview/centerStageBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Grid of Equals",
-          "id": "layoutsGridOfEquals",
-          "description": "Items order in a matrix in equal size and shape.",
-          "itemGroups": [
-            {
-              "id": "gridOfEqualsOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "gridOfEqualsBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "relations": {
-                    "mustUse": [
-                      "gridContainerFluid",
-                      "gridColumn",
-                      "gridRow"
-                    ],
-                    "mayUse": [
-                      "panelBase"
-                    ]
-                  },
-                  "fullPath": "app/data/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase",
-                  "path": "/layouts/layoutsGridOfEquals/gridOfEqualsOverview/gridOfEqualsBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Responsive Disclosure",
-          "id": "layoutsResponsiveDisclosure",
-          "description": "Starting with a very minimal UI, guide a user through a series of steps by showing more of the UI as he completes each step.",
-          "itemGroups": [
-            {
-              "id": "responsiveDisclosureOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "responsiveDisclosureBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase",
-                  "path": "/layouts/layoutsResponsiveDisclosure/responsiveDisclosureOverview/responsiveDisclosureBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Wizards",
-          "id": "layoutsWizards",
-          "description": "Lead the user through the interface step by step to do tasks in a prescribed order.",
-          "itemGroups": [
-            {
-              "id": "wizardsOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "wizardsBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/layoutsWizards/wizardsOverview/wizardsBase",
-                  "path": "/layouts/layoutsWizards/wizardsOverview/wizardsBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Joyrides",
-          "id": "layoutsJoyrides",
-          "description": "Help the user by step by step guiding through a new complex workflow.",
-          "itemGroups": [
-            {
-              "id": "joyridesOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "joyridesBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/layoutsJoyrides/joyridesOverview/joyridesBase",
-                  "path": "/layouts/layoutsJoyrides/joyridesOverview/joyridesBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Drilldown",
-          "id": "layoutsDrilldown",
-          "description": "When the user selects an item from the list, show the details or contents of that item in the window, replacing the list.",
-          "itemGroups": [
-            {
-              "id": "drilldownOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "drilldownBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/layoutsDrilldown/drilldownOverview/drilldownBase",
-                  "path": "/layouts/layoutsDrilldown/drilldownOverview/drilldownBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Carousel",
-          "id": "layoutsCarousel",
-          "description": "Arrange a list of visually interesting items into a horizontal strip or arc, and let the user scroll or swipe the image thumbnails back and forth to view them. Enlarge the center item, if appropriate.",
-          "itemGroups": [
-            {
-              "id": "carouselOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "carouselBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/layoutsCarousel/carouselOverview/carouselBase",
-                  "path": "/layouts/layoutsCarousel/carouselOverview/carouselBase",
-                  "order": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Alternative Views",
-          "id": "layoutsAlternativeViews",
-          "description": "Let the user choose among alternative views that are substantially different from the default view.",
-          "itemGroups": [
-            {
-              "id": "alternativeViewsOverview",
-              "title": "Overview",
-              "items": [
-                {
-                  "id": "alternativeViewsBase",
-                  "title": "Base Example",
-                  "description": "external",
-                  "context": "external",
-                  "state": "Proposal",
-                  "fullPath": "app/data/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase",
-                  "path": "/layouts/layoutsAlternativeViews/alternativeViewsOverview/alternativeViewsBase",
-                  "order": 100
-                }
-              ]
+              "id": "empty",
+              "title": "Empty",
+              "items": []
             }
           ]
         }

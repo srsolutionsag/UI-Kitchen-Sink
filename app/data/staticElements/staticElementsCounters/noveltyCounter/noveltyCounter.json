@@ -1,7 +1,7 @@
 {
-  "id": "baseCounter",
-  "title": "Base Counter",
-  "type": "abstract",
+  "id": "noveltyCounter",
+  "title": "Novelty Counter",
+  "type": "concrete",
   "phpClass": "none",
   "externalLibrary": {
     "name": "Bootstrap Badge",
@@ -12,19 +12,15 @@
   "description": [
     {
       "id": "purpose",
-      "content": "Counters inform users about the quantity of items indicated by a glyph."
+      "content": "Novelty counters inform users about the arrival or creation of new items of the kind indicated by the accompanying glyph."
     },
     {
       "id": "composition",
-      "content": "Counters consist of a number and some background color and are placed on the ‘end of the line’ in reading direction of the item they state the count for."
+      "content": "The Novelty Counter is an obtrusive counter."
     },
     {
       "id": "effect",
-      "content": "Counters convey information, they are not interactive."
-    },
-    {
-      "id": "rivalElements",
-      "content": "Counters inform users about the quantity of items indicated by a glyph."
+      "content": "They count down  / disappear as soon as the change has been consulted by the user."
     }
   ],
   "background": "",
@@ -33,11 +29,13 @@
 
   ],
   "rules":[
-    "A Counter MUST only be used in combination with a glyph.",
-    "A Counter MUST contain exactly one number greater than zero and no other characters."
+    "There MUST be a way for the user to consult the changes indicated by the Counter. After the consultation, the Novelty Counter SHOULD disappear or the number it contains is reduced by one. Depending on the content, the reduced number might be added in an additional Status Counter.",
+    "The Novelty Counter MUST be displayed on the top at the ‘end of the line’ in reading direction of the item it accompanies. This would be top right for latin script and top left for arabic script.",
+    "The Novelty Counter SHOULD have an obtrusive background color such as red or orange.",
+    "MAY be used together with the Status Counter."
   ],
   "relations": {
-    "isA": "",
+    "isA": "baseCounter",
     "mustUse": [
     ],
     "mayUse":[

@@ -1,6 +1,6 @@
 {
-  "id": "roundTripModal",
-  "title": "Round-Trip Modal",
+  "id": "interruptiveModal",
+  "title": "Interruptive Modal",
   "type": "",
   "phpClass": "ilModalGUI",
   "externalLibrary": {
@@ -12,27 +12,26 @@
   "description": [
     {
       "id": "purpose",
-      "content": "Round-Trip Modals are to be used if the context would be lost by performing this action otherwise. Round-Trip Modals accommodate sub-workflows within an overriding workflow. The Round-Trip Modal ensures that the users does not leave the trajectory of the overriding workflow. This is typically the case if an ILIAS service is called for while in working in an object."
+      "content": "An Interruptive Modal disrupts the user in critical situation, forcing him or her to focus on the task at hand."
     },
     {
       "id": "composition",
-      "content": "Round-Trip Modals are completed by a small well defined sequence of 2 steps max. that might be displayed on a sequence of different modals connected through some “next” Button."
+      "content": "The Modal states why this situation needs attention and may point out consequences."
     },
     {
       "id": "effect",
-      "content": "Round-Trip Modals perform sub-workflow involving some kind of user input. Sub-workflow is completed and user is returned to starting point allowing for continuing the overriding workflow."
+      "content": "All controls of the original context are inaccessible until the Modal is completed. Upon completion the user returns to the original context."
     }
   ],
   "background": "http://quince.infragistics.com/Patterns/Modal%20Panel.aspx",
-  "context": "Adding an Internal Link in the ILIAS Page Editor is done with a Modal. The overriding workflow is “page editing” the sub-workflow is “adding internal link”.",
+  "context": "Interruptive Modals are currently used to submit or delete answers in a test before turning to using the test-related controls.",
   "featureWikiReferences":[
   ],
   "rules":[
-    "Round-Trip Modals MUST contain at least two buttons at the bottom of the modala: a button to cancel (right) the workflow and a button to finish or reach the next step in the workflow (left).",
-    "Round-Trip Modals SHOULD be used, if the user would lose the context otherwise. If the action can be performed within the same context (e.g. add a post in a forum, edit a wiki page), a Round-Trip Modal MUST NOT be used.",
-    "When the workflow is completed, Round-Trip Modals SHOULD show the same view as was displayed when initiating the Modal.",
-    "Round-Trip Modals SHOULD NOT be used to add new items of any kind since adding item is a linear workflow redirecting to the newly added item setting- or content-tab.",
-    "Round-Trip Modals SHOULD NOT be used to perform complex workflows."
+    "Due to the heavily disruptive nature of this type of Modal it MUST be restricted to critical situations (e.g. loss of data).",
+    "All delete-actions are critical situations and MUST be implemented as an Interruptive Modal.",
+    "Interruptive Modals MUST contain a Default Button continuing the action that initiated the Modal (e.g. Delete the Item) on the left side of the footer of the modal and a button canceling the action on the right side of the footer as Default Button.",
+    "The Cancel Button in the footer and the Close Button in the header MUST NOT perform any additional action than closing the confirmation screen."
   ],
   "relations": {
     "isA": ["baseModal"],

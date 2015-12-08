@@ -1,7 +1,0 @@
-{
-    "id": "lessVariablesTypography",
-    "title": "Typography",
-    "description": "Less Variables used to change fonts and fonts sizes",
-    "type": "less",
-    "state": "static"
-}

@@ -1,17 +1,17 @@
-<div class="well">
-    <p ng-bind-html="entry.description"></p>
-    <span ng-if="entry.context">
-        <p><em ng-bind-html="entry.context"></em></p>
-    </span>
-
-    <b>German Title: {{entry.translations.german.title}}</b>
-</div>
-
 <div class="alert alert-{{stateType}}" role="alert">
-    <p class="lead">State: {{entry.state}}</p>
-    <p ng-if="entry.guiClass">GUI-Class: {{entry.guiClass}}</p>
-    <p ng-if="entry.type == 'abstract'">Abstract Component</p>
+    <div class="lead">State</div>
+    <dl class="dl-horizontal">
+        <dt>Entry State</dt>
+        <dd>{{entry.statusEntry}}</dd>
+        <dt>Implementation State</dt>
+        <dd>{{entry.statusImplementation}}</dd>
+        <dt>PHP-Class</dt>
+        <dd>{{entry.phpClass}}</dd>
+        <dt>External Library</dt>
+        <dd><a href="{{entry.externalLibrary.href}}" target="blank">{{entry.externalLibrary.name}}</a></dd>
+    </dl>
 </div>
+
 <div class="panel panel-default" ng-if="renderHtml">
     <div id="{{index}}-html-example" class="uiks-content-demo-container panel-body">
         <iframe id='{{index}}-iframe-example' src="{{htmlPath}}" width="100%" height="500px" ng-if="entry.isIframe"> </iframe>
@@ -23,7 +23,90 @@
         <img class="img-responsive" ng-src="{{pngPath}}" alt="png-example"/>
     </div>
 </div>
+
+
 <div class="panel-group" id="accordion{{index}}" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingDescription">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseDescription{{index}}" aria-expanded="true" aria-controls="collapseDescription">
+                    Description
+                </a>
+            </h4>
+        </div>
+        <div id="collapseDescription{{index}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingDescription">
+            <div class="panel-body">
+                <dl class="dl-horizontal">
+                    <span ng-repeat="(id,item) in entry.description">
+                        <span ng-if="item.id == 'purpose'">
+                            <dt>Purpose</dt>
+                            <dd>{{item.content}}</dd>
+                        </span>
+                        <span ng-if="item.id  == 'composition'">
+                            <dt>Composition</dt>
+                            <dd>{{item.content}}</dd>
+                        </span>
+                        <span ng-if="item.id  == 'effect'">
+                            <dt>Effect</dt>
+                            <dd>{{item.content}}</dd>
+                        </span>
+                        <span ng-if="item.id  == 'rivalElements'">
+                            <dt>Rivial Elements</dt>
+                            <dd>{{item.content}}</dd>
+                        </span>
+                    </span>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingRules">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseRules{{index}}" aria-expanded="true" aria-controls="collapseRules">
+                    Rules
+                </a>
+            </h4>
+        </div>
+        <div id="collapseRules{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRules">
+            <div class="panel-body">
+                <dl class="dl-horizontal">
+                    <ul>
+                    <span ng-repeat="(id,item) in entry.rules">
+                            <li>{{item}}</li>
+                    </span>
+                    </ul>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" ng-if="entry.context">
+        <div class="panel-heading" role="tab" id="headingContext">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapseContext{{index}}" aria-expanded="true" aria-controls="collapseContext">
+                    Context
+                </a>
+            </h4>
+        </div>
+        <div id="collapseContext{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingContext">
+            <div class="panel-body">
+                <p>{{entry.context}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" ng-if="entry.background">
+        <div class="panel-heading" role="tab" id="headingbackground">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion{{index}}" data-target="#collapsebackground{{index}}" aria-expanded="true" aria-controls="collapsebackground">
+                    Background
+                </a>
+            </h4>
+        </div>
+        <div id="collapsebackground{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingbackground">
+            <div class="panel-body">
+                <p>{{entry.background}}</p>
+            </div>
+        </div>
+    </div>
     <div class="panel panel-default" ng-if="renderHtml">
         <div class="panel-heading" role="tab" id="headingZero">
             <h4 class="panel-title">
@@ -92,5 +175,5 @@
             </div>
         </div>
     </div>
-    <entry-relations entry="entry"></entry-relations>
+    <entry-relations ng-if="entry.relations" entry="entry"></entry-relations>
 </div>

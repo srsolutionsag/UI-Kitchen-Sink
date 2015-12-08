@@ -1,5 +1,5 @@
 {
-  "id": "noveltyCounter",
+  "id": "statusCounter",
   "title": "Status Counter",
   "type": "concrete",
   "phpClass": "none",
@@ -12,15 +12,15 @@
   "description": [
     {
       "id": "purpose",
-      "content": "Novelty counters inform users about the arrival or creation of new items of the kind indicated by the accompanying glyph."
+      "content": "The Status Counter is used to display information about the total number of some items like users active on the system or total amount of comments."
     },
     {
       "id": "composition",
-      "content": "The Novelty Counter is an obtrusive counter."
+      "content": "The Status Counter is a non-obtrusive Counter."
     },
     {
       "id": "effect",
-      "content": "They count down  / disappear as soon as the change has been consulted by the user."
+      "content": "Status Counters convey information, they are not interactive."
     }
   ],
   "background": "",
@@ -29,10 +29,8 @@
 
   ],
   "rules":[
-    "There MUST be a way for the user to consult the changes indicated by the Counter. After the consultation, the Novelty Counter SHOULD disappear or the number it contains is reduced by one. Depending on the content, the reduced number might be added in an additional Status Counter.",
-    "The Novelty Counter MUST be displayed on the top at the ‘end of the line’ in reading direction of the item it accompanies. This would be top right for latin script and top left for arabic script.",
-    "The Novelty Counter SHOULD have an obtrusive background color such as red or orange.",
-    "MAY be used together with the Status Counter."
+    "The Status Counter MUST be displayed on the lower right of the item it accompanies.",
+    "The Status Counter SHOULD have an non-obtrusive background color such as grey."
   ],
   "relations": {
     "isA": "baseCounter",

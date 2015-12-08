@@ -25,10 +25,10 @@ angular.module('uiKitchenSink').controller('CenterContentController', function($
             do{
                 $scope.subTabSelected = $scope.tabSelected.items[index];
                 index++;
-            }while($scope.subTabSelected && $scope.tabSelected.items[index] && !Entries.isEntryStateVisible($scope.subTabSelected.state));
+            }while($scope.subTabSelected && $scope.tabSelected.items[index] && !Entries.isEntryStateVisible($scope.subTabSelected.statusEntry));
             subTabIndex = index;
 
-            if((!$scope.subTabSelected || !Entries.isEntryStateVisible($scope.subTabSelected.state))){
+            if((!$scope.subTabSelected || !Entries.isEntryStateVisible($scope.subTabSelected.statusEntry))){
                 $scope.subTabSelected = {};
                 $scope.subTabSelected.title = "Empty";
                 $scope.subTabSelected.description = "There is currently no entry listed in this section. Currently you display only entries with state: '"+ Entries.getVisibility()+"'.";

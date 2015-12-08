@@ -39,7 +39,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
             }
         }
         else if(this.visibility == 'accepted'){
-            if(state.toLowerCase() == 'accepted'){
+            if(state.toLowerCase() == 'accepted by jf'){
                 return true;
             }
         }
@@ -65,14 +65,12 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
             case "static":
                 return "default";
             case "proposal":
-            case "concept":
+            case "to be revised":
+            case "to be implemented":
                 return "warning";
-            case "accepted":
+            case "proposed":
                 return "info";
-            case "implemented":
-            case "implemented for 5.0":
-            case "implemented for 5.1":
-            case "implemented for 5.2":
+            case "accepted":
                 return "success";
             default:
                 return "danger";
@@ -131,16 +129,17 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
 
         if(component.relations){
             if(component.relations.isA){
-                var tempComponent = this.getComponentById(component.relations.isA);
-                if(this.isEntryStateVisible(tempComponent.state)){
-                    relations.isA  =tempComponent;
+                var tempComponentIsA = this.getComponentById(component.relations.isA);
+                if(tempComponentIsA.item && this.isEntryStateVisible(tempComponentIsA.item.statusEntry)){
+                    console.log(relations.isA);
+                    relations.isA  =tempComponentIsA;
                 }
             }
             if(component.relations.mustUse){
                 relations.mustUse = {};
                 for(var indexMust in component.relations.mustUse){
                     var tempComponentMust = this.getComponentById(component.relations.mustUse[indexMust]);
-                    if(this.isEntryStateVisible(tempComponentMust.state)){
+                    if(this.isEntryStateVisible(tempComponentMust.item.statusEntry)){
                         relations.mustUse[indexMust]  = tempComponentMust;
                     }
                 }
@@ -150,7 +149,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                 relations.mayUse = {};
                 for(var indexMay in component.relations.mayUse){
                     var tempComponentMay = this.getComponentById(component.relations.mayUse[indexMay]);
-                    if(this.isEntryStateVisible(tempComponentMay.state)){
+                    if(this.isEntryStateVisible(tempComponentMay.item.statusEntry)){
                         relations.mayUse[indexMay]  =tempComponentMay;
                     }
                 }
@@ -173,7 +172,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                         this.tabIndexSelected = itemGroupIndex;
                         for(var itemIndex in itemGroup.items){
                             var item = itemGroup.items[itemIndex];
-                            if(item.relations && this.isEntryStateVisible(item.state)){
+                            if(item.relations && this.isEntryStateVisible(item.statusEntry)){
                                 if(item.relations.isA == component.id){
                                     var child = {
                                         "category" : {
@@ -358,7 +357,6 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
     this.getEntriesRelationsNetwork = function(type){
         var links = [];
         var nodes = [];
-        console.log(type);
         this.categories.forEach(function(category){
             category.subCategories.forEach(function(subCategory){
                 subCategory.itemGroups.forEach(function(itemGroup){
@@ -370,7 +368,7 @@ angular.module('uiKitchenSink').factory('Entries', function ($http,$q,$rootScope
                                     title: item.title,
                                     category: subCategory.title
                                 });
-                                if(item.relations && item.relations.isA){
+                                if(item.relations && item.relations.isA && item.relations.isA.length > 0){
                                     links.push({
                                         source: {id : item.id},
                                         target: {id :item.relations.isA},

@@ -16,12 +16,19 @@
                             "type": "html"
                         },
                         {
-                            "id":"overviewTerms",
-                            "title": "Terms"
+                            "id":"overviewTaxonomy",
+                            "title": "Taxonomy",
+                            "type": "html"
                         },
                         {
                             "id":"overviewWorkflows",
                             "title": "Workflows"
+                        },
+                        {
+                            "id":"overviewTemplate",
+                            "title": "Template",
+                            "type": "html"
+
                         }
                     ]
                 },
@@ -74,13 +81,13 @@
                     "description": "Visualizations to display the structure of less and entry dependencies.",
                     "itemGroups": [
                         {
-                            "title": "Less",
-                            "id":"visualizationLess",
+                            "title": "Entries",
+                            "id":"visualizationEntries",
                             "type": "visualization"
                         },
                         {
-                            "title": "Entries",
-                            "id":"visualizationEntries",
+                            "title": "Less",
+                            "id":"visualizationLess",
                             "type": "visualization"
                         },
                         {
@@ -93,435 +100,107 @@
             ]
         },
         {
-            "title": "Elements",
-            "id":"elements",
-            "description": "Description of this Category",
+            "title": "Static Elements",
+            "id":"staticElements",
             "subCategories": [
                 {
-                    "id":"elementsGrid",
-                    "title": "Grid",
-                    "description": "Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts. In ILIAS the Bootstrap Grid MUST be used for all arrangements of components in a grid like structure.",
+                    "title": "Counters",
+                    "id":"staticElementsCounters",
+                    "description": "",
                     "itemGroups": [
                         {
-                            "title": "Containers",
-                            "description": "All rows must be placed inside a container",
-                            "id":"gridContainers"
+                          "id":"baseCounter",
+                          "title": "Base Counter"
                         },
                         {
-                            "title": "Rows",
-                            "description": "Rows are used to create horizontal groups of columns",
-                            "id":"gridRows"
+                          "id":"noveltyCounter",
+                          "title": "Novelty Counter"
                         },
                         {
-                            "title": "Columns",
-                            "description": "Columns create gutters with padding",
-                            "id":"gridColumns"
-                        }
-                    ]
-                },
-                {
-                    "title": "Typography",
-                    "id":"elementsTypography",
-                    "description": "Typography to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                            "id":"typographyOverview",
-                            "title": "Overview",
-                            "description": "Overview of typography elements"
-                        },
-                        {
-                            "id":"typographyHeadings",
-                            "title": "Headings",
-                            "description": "Description of this Item Group"
-                        },
-                        {
-                            "title": "Code",
-                            "description": "Description of this Item Group",
-                            "id":"typographyCode"
-                        }
-                    ]
-                },
-                {
-                    "title": "Lists",
-                    "id":"elementsLists",
-                    "description": "Description of this sub Category",
-                    "itemGroups": [
-                        {
-                          "id":"listsBaseLists",
-                          "title": "Ordered Lists"
-                        },
-                        {
-                          "id":"listsOrderedLists",
-                          "title": "Ordered Lists"
-                        },
-                        {
-                          "id":"listsUnorderedLists",
-                          "title": "UnorderedLists"
-                        }
-                    ]
-                },
-                {
-                    "title": "Images",
-                    "id":"elementsImages",
-                    "description": "Types of Images to be used in ILIAS",
-                    "itemGroups": [
-                      {
-                        "id":"imagesThumbnails",
-                        "title": "Thumbnails"
-                      },
-                      {
-                        "id":"imagesIcons",
-                        "title": "Icons"
-                      }
-                    ]
-                },
-                {
-                    "title": "Buttons",
-                    "id":"elementsButtons",
-                    "description": "Description of this sub Category",
-                    "itemGroups": [
-                        {
-                          "id":"buttonOverview",
-                          "title": "Overview"
-                        },
-                        {
-                          "id":"buttonTypes",
-                          "title": "Types"
+                            "id":"statusCounter",
+                            "title": "Status Counter"
                         }
                     ]
                 }
             ]
         },
         {
-            "title": "Collections",
-            "id": "collections",
-            "description": "Description of this Category",
+            "title": "Interactive Elements",
+            "id": "interactiveElements",
             "subCategories": [
                 {
-                    "title": "Navigation",
-                    "id":"collectionsNavigation",
-                    "description": "Elements used to navigate.",
+                    "title": "Empty",
+                    "id":"emptyStaticCollections",
+                    "description": "No Entries yet",
                     "itemGroups": [
                         {
-                          "id":"navigationBreadcrumbs",
-                          "title": "Breadcrumbs"
-                        },
-                        {
-                          "id":"navigationNavbars",
-                          "title": "Navbars"
-                        },
-                        {
-                          "id":"navigationFatMenus",
-                          "title": "Fat Menus"
-                        },
-                        {
-                          "id":"navigationTabs",
-                          "title": "Tabs"
-                        },
-                        {
-                            "id":"navigationTree",
-                            "title": "Tree"
-                        }
-                    ]
-                },
-                {
-                    "title": "Forms",
-                    "id":"collectionsForms",
-                    "description": "Types of forms and form items to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                            "id":"formsOverview",
-                            "title": "Overview"
-                        },
-                        {
-                          "id":"formsBinaryChoice",
-                          "title": "Binary Choice"
-                        },
-                        {
-                          "id":"formsOneofN",
-                          "title": "One of N"
-                        },
-                        {
-                            "id":"formsNofN",
-                            "title": "N of N"
-                        },
-                        {
-                          "id":"formsText",
-                          "title": "Text"
-                        },
-                        {
-                          "id":"formsNumbers",
-                          "title": "Numbers"
-                        },
-                        {
-                          "id":"formsDateTime",
-                          "title": "Date/Time"
-                        },
-                        {
-                          "id":"formsWYSIWYG",
-                          "title": "WYSIWYG"
-                        },
-                        {
-                          "id":"formsFileUpload",
-                          "title": "File Upload"
-                        }
-                    ]
-                },
-                {
-                    "title": "Tables",
-                    "id":"collectionsTables",
-                    "description": "Types of tables to be used in ILIAS",
-                    "itemGroups": [
-                        {
-                          "id":"tableBase",
-                          "title": "Basic Table"
-                        },
-                        {
-                          "id":"tableFilter",
-                          "title": "Table Filter"
-                        }
-                    ]
-                },
-                {
-                    "title": "Dialogs",
-                    "id":"collectionsDialogs",
-                    "description": "A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.",
-                    "itemGroups": [
-                        {
-                            "title": "Overview",
-                            "id":"dialogsOverview"
-                        },
-                        {
-                            "title": "Modals",
-                            "id":"dialogsModals"
-                        },
-                        {
-                            "title": "Non-Modals",
-                            "id":"dialogsNonModals"
-                        }
-                    ]
-                },
-                {
-                    "title": "Actions",
-                    "id":"collectionsActions",
-                    "description": "Components used to initiate actions of some sort. Other components used for navigation, those components to no just redirect to user to some other part of the application, but actually let the user manipulate the data.",
-                    "itemGroups": [
-                        {
-                          "id":"actionsButtonGroups",
-                          "title": "Button Groups"
-                        },
-                        {
-                          "id":"actionsToolbar",
-                          "title": "Toolbar"
-                        }
-                    ]
-                },
-                {
-                    "title": "Callouts",
-                    "id":"collectionsCallouts",
-                    "description": "Callouts give the user easily visible feedback of some sort.",
-                    "itemGroups": [
-                        {
-                          "id":"calloutsProgressBars",
-                          "title": "Progress Bars"
-                        },
-                        {
-                          "id":"calloutsAlerts",
-                          "title": "Alerts"
-                        },
-                        {
-                          "id":"calloutsTooltips",
-                          "title": "Tooltips"
-                        }
-                    ]
-                },
-                {
-                    "title": "Containers",
-                    "id":"collectionsContainers",
-                    "description": "Containers build a frame around other components. They group items to make them easy to identify as cluster.",
-                    "itemGroups": [
-                        {
-                            "id":"containersPanels",
-                            "title": "Panels"
-                        },
-                        {
-                            "id":"containersLists",
-                            "title": "Container List"
-
-                        },
-                        {
-                            "title": "Accordion",
-                            "id":"containersAccordion"
-                        }
-                    ]
-                },
-                {
-                    "title": "Calendars",
-                    "id":"collectionsCalendar",
-                    "description": "Calendars to view appointements",
-                    "itemGroups": [
-                        {
-                          "id":"calendarsBase",
-                          "title": "Base Calendar"
-                        }
-                    ]
-                },
-                {
-                    "title": "Charts",
-                    "id":"collectionsCharts",
-                    "description": "Charts used to display large amount of data in limited space.",
-                    "itemGroups": [
-                        {
-                            "id":"chartsRadialTable",
-                            "title": "Radial Table"
-                        },
-                        {
-                          "id":"chartschartsMultyYGraph",
-                          "title": "Multy Y-Graph"
-                        },
-                        {
-                          "id":"chartsTreemap",
-                          "title": "Treemap"
-                        },
-                        {
-                          "id":"chartsSmallMultiples",
-                          "title": "Small Multiples"
-                        }
-
-                    ]
-                },
-                {
-                  "title": "Maps",
-                  "id":"collectionsMaps",
-                    "description": "Used to show locations.",
-                    "itemGroups": [
-                        {
-                            "id":"mapsGoogleMaps",
-                            "title": "Google Maps"
+                            "id":"empty",
+                            "title": "Empty"
                         }
                     ]
                 }
             ]
         },
         {
-            "title": "Layouts",
+            "title": " Static Collections",
+            "id": "staticCollections",
+            "subCategories": [
+                {
+                    "title": "Empty",
+                    "id":"emptyStaticCollections",
+                    "description": "No Entries yet",
+                    "itemGroups": [
+                        {
+                            "id":"empty",
+                            "title": "Empty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": " Interactive Collections",
+            "id": "interactiveCollections",
+            "subCategories": [
+                {
+                    "title": "Modals",
+                    "id":"interactiveCollectionsModals",
+                    "description": "",
+                    "itemGroups": [
+                        {
+                            "id":"baseModal",
+                            "title": "Base Modal"
+                        },
+                        {
+                            "id":"roundTripModal",
+                            "title": "Round Trip Modal"
+                        },
+                        {
+                            "id":"interruptiveModal",
+                            "title": "Interruptive Modal"
+                        },
+                        {
+                            "id":"lightboxModal",
+                            "title": "Lightbox Modal"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": " Layouts",
             "id": "layouts",
-            "description": "Description of this Category",
             "subCategories": [
                 {
-                    "title": "Main Structure",
-                    "id":"mainStructure",
-                    "description": "Main skeleton of the ILIAS Dom structure",
+                    "title": "Empty",
+                    "id":"emptylayouts",
+                    "description": "No Entries yet",
                     "itemGroups": [
                         {
-                            "title": "ILIAS Main Structure",
-                            "id":"iliasMainStructure",
-                            "description": "Description of this Item Group"
-                        },
-                        {
-                            "title": "Header",
-                            "description": "Description of this Item Group",
-                            "id":"header"
-                        },
-                        {
-                            "title": "Content",
-                            "description": "Description of this Item Group",
-                            "id":"content"
-                        },
-                        {
-                            "title": "Footer",
-                            "description": "Description of this Item Group",
-                            "id":"footer"
+                            "id":"empty",
+                            "title": "Empty"
                         }
                     ]
-                },
-                {
-                    "title": "Center Stage",
-                    "id":"layoutsCenterStage",
-                    "description": "A big central stage in the middle of the content.",
-                    "itemGroups": [
-                        {
-                          "id":"centerStageOverview",
-                          "title": "Overview"
-                        }
-                    ]
-                },
-                {
-                    "title": "Grid of Equals",
-                    "id":"layoutsGridOfEquals",
-                    "description": "Items order in a matrix in equal size and shape.",
-                    "itemGroups": [
-                        {
-                            "id":"gridOfEqualsOverview",
-                            "title": "Overview"
-                        }
-                    ]
-                },
-                {
-                    "title": "Responsive Disclosure",
-                    "id":"layoutsResponsiveDisclosure",
-                    "description": "Starting with a very minimal UI, guide a user through a series of steps by showing more of the UI as he completes each step.",
-                    "itemGroups": [
-                        {
-                          "id":"responsiveDisclosureOverview",
-                          "title": "Overview"
-                        }
-                    ]
-                },
-                {
-                    "title": "Wizards",
-                    "id":"layoutsWizards",
-                    "description": "Lead the user through the interface step by step to do tasks in a prescribed order.",
-                    "itemGroups": [
-                        {
-                          "id":"wizardsOverview",
-                          "title": "Overview"
-                        }
-                    ]
-                },
-                {
-                  "title": "Joyrides",
-                  "id":"layoutsJoyrides",
-                  "description": "Help the user by step by step guiding through a new complex workflow.",
-                  "itemGroups": [
-                    {
-                      "id":"joyridesOverview",
-                      "title": "Overview"
-                    }
-                  ]
-                },
-                {
-                    "title": "Drilldown",
-                    "id":"layoutsDrilldown",
-                    "description": "When the user selects an item from the list, show the details or contents of that item in the window, replacing the list.",
-                    "itemGroups": [
-                        {
-                          "id":"drilldownOverview",
-                          "title": "Overview"
-                        }
-                    ]
-                },
-                {
-                    "title": "Carousel",
-                    "id":"layoutsCarousel",
-                    "description": "Arrange a list of visually interesting items into a horizontal strip or arc, and let the user scroll or swipe the image thumbnails back and forth to view them. Enlarge the center item, if appropriate.",
-                    "itemGroups": [
-                        {
-                          "id":"carouselOverview",
-                          "title": "Overview"
-                        }
-                    ]
-                },
-                {
-                  "title": "Alternative Views",
-                  "id":"layoutsAlternativeViews",
-                  "description": "Let the user choose among alternative views that are substantially different from the default view.",
-                  "itemGroups": [
-                    {
-                      "id":"alternativeViewsOverview",
-                      "title": "Overview"
-                    }
-                  ]
                 }
             ]
         }

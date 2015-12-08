@@ -1,9 +1,0 @@
-{
-    "id": "typographyCode",
-    "title": "Default",
-    "description": "Fonts used in the  'code' or 'pre' tag",
-    "state": "Implemented for 5.0",
-    "relations":{
-        "isA": "baseText"
-    }
-}

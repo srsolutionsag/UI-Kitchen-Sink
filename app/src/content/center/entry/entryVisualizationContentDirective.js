@@ -21,10 +21,11 @@ module.directive('entryVisualizationContent', function (Entries) {
             };
 
             var setNodes = function (link,nodes) {
-                console.log(link.source.id);
+                console.log(link, nodes);
                 var source = findNode(link.source.id, nodes);
                 var target = findNode(link.target.id, nodes);
 
+                console.log(target);
                 if(!source){
                     console.log(link);
                     console.error("Invalid source " + link.source + " in relation with target " + link.target);
@@ -83,7 +84,7 @@ module.directive('entryVisualizationContent', function (Entries) {
                             .attr("y", legendSpacing*(counter+1))
                             .attr("width", boxWidth)
                             .attr("height", boxWidth)
-                            .style("fill", function(d) { return color(subCategory.id); });
+                            .style("fill", function(d) { return color(subCategory.title); });
 
                         legend.append("text")
                             .attr("x", legendLeft+legendSpacing)

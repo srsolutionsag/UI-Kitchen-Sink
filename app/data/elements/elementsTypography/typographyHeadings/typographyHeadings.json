@@ -1,9 +1,0 @@
-{
-    "id": "typographyHeadings",
-    "title": "Default",
-    "description": "Headings to be used in ILIAS",
-    "state": "Implemented for 5.0",
-    "relations":{
-        "isA":"baseText"
-    }
-}

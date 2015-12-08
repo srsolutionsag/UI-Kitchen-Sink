@@ -2,5 +2,5 @@
     "id": "workflowChangeElements",
     "title": "Change Element",
     "type": "html",
-    "state": "static"
+    "statusEntry": "static"
 }
