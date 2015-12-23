@@ -28,7 +28,7 @@
   "featureWikiReferences":[
   ],
   "rules":[
-    "Round-Trip Modals MUST contain at least two buttons at the bottom of the modala: a button to cancel (right) the workflow and a button to finish or reach the next step in the workflow (left).",
+    "Round-Trip Modals MUST contain at least two buttons at the bottom of the modals: a button to cancel (right) the workflow and a button to finish or reach the next step in the workflow (left).",
     "Round-Trip Modals SHOULD be used, if the user would lose the context otherwise. If the action can be performed within the same context (e.g. add a post in a forum, edit a wiki page), a Round-Trip Modal MUST NOT be used.",
     "When the workflow is completed, Round-Trip Modals SHOULD show the same view as was displayed when initiating the Modal.",
     "Round-Trip Modals SHOULD NOT be used to add new items of any kind since adding item is a linear workflow redirecting to the newly added item setting- or content-tab.",

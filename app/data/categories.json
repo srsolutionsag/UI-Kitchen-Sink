@@ -184,6 +184,29 @@
                             "title": "Lightbox Modal"
                         }
                     ]
+                },
+                {
+                    "title": "Forms",
+                    "id":"interactiveCollectionsForms",
+                    "description": "",
+                    "itemGroups": [
+                        {
+                            "id":"baseForm",
+                            "title": "Form"
+                        },
+                        {
+                            "id":"titledFormSection",
+                            "title": "Titled Form Section"
+                        },
+                        {
+                            "id":"formSetting",
+                            "title": "Form Setting"
+                        },
+                        {
+                            "id":"formSubsetting",
+                            "title": "Form Subsetting"
+                        }
+                    ]
                 }
             ]
         },
