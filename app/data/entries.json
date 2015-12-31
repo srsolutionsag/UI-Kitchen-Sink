@@ -5154,22 +5154,225 @@
             {
               "id": "baseForm",
               "title": "Form",
-              "items": []
+              "items": [
+                {
+                  "id": "baseForm",
+                  "title": "Form",
+                  "type": "",
+                  "phpClass": "ilFormGUI, ilPropertyFormGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap forms-horizontal",
+                    "href": "http://getbootstrap.com/css/#forms-horizontal"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "Forms are used for creating content of sub-items or for configuring objects or services."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "A form is divided into areas which are further divided into sections containing settings with selection or input controls."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "Users manipulate input in settings and save the form to apply the settings to the object or service."
+                    }
+                  ],
+                  "background": "",
+                  "context": "Forms are usually placed in a tabbed content area.",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "Each form MUST contain at least one titled form section.",
+                    "Forms MUST NOT be used on the same content screen as tables.",
+                    "Forms MUST NOT be used on the same content screen as toolbars."
+                  ],
+                  "relations": {
+                    "isA": [],
+                    "mustUse": [
+                      "titledFormSection"
+                    ],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsForms/baseForm/baseForm",
+                  "path": "/interactiveCollections/interactiveCollectionsForms/baseForm/baseForm",
+                  "order": 100
+                }
+              ]
             },
             {
               "id": "titledFormSection",
               "title": "Titled Form Section",
-              "items": []
+              "items": [
+                {
+                  "id": "titledFormSection",
+                  "title": "Titled Form Section",
+                  "type": "",
+                  "phpClass": "ilFormGUI, ilPropertyFormGUI, ilFormSectionHeaderGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap forms-horizontal",
+                    "href": "http://getbootstrap.com/css/#forms-horizontal"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "A titled form section subdivides a form allowing users to browse the screen. Titled Form Sections are stacked. The stacking reflects perceived relevance and  is kept consistent across objects thus learners are “familiar” with forms."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "At least one titled form section is used in every form. A title states the purpose shared by all settings of the titled form section. The section visually groups settings."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "This element has no effect in terms of clicking."
+                    }
+                  ],
+                  "background": "Tidwell ‘Designing Interfaces’ proposed the pattern of ‘Titled Sections’ and describes it as: “Define separate sections of content by giving each one a visually strong title, separating the sections visually, … “. She further explains that those section should be grouped by topic or task. According to Tidwell is content that is sectioned neatly into chunks easier to grasp since the human visual system is always looking for bigger patterns. In ILIAS such sections in a form are called titled form sections.",
+                  "context": "All settings-tabs in ILIAS contain forms. Most of the administration panel is made of forms. Putting content into sub-items oftentimes makes use of forms i.e. putting content into a test question.",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "A Titled Form Section MUST contain a title.",
+                    "The title SHOULD summarize the contained settings accurately from a user’s perspective.",
+                    "The title SHOULD contain less than 30 characters.",
+                    "The titles MUST be cross-checked with similar forms in other objects or services to ensure consistency throughout ILIAS.",
+                    "In doubt consistency in titles SHOULD be prioritized over accuracy.",
+                    "Proper Titled Form Sections SHOULD comprise 2 to 5 Settings.",
+                    "More than 5 Settings SHOULD be split into two areas unless this would tamper with the “familiar” information architecture of forms.",
+                    "There MUST NOT be a Setting without an enclosing Titled Form Section. If necessary a Titled Form Section MAY contain only one single Setting.",
+                    "The first and last titled form section of a form MUST contain a “Save” and “Cancel” button for the form. “Save” is left and “Cancel” is right.",
+                    "In some rare exceptions the buttons MAY be named differently: if “Save” or “Cancel”  are clearly a misleading since the action is more than storing the data into the database. “Send Mail” would be an example of this."
+                  ],
+                  "relations": {
+                    "isA": [],
+                    "mustUse": [
+                      "formSetting"
+                    ],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsForms/titledFormSection/titledFormSection",
+                  "path": "/interactiveCollections/interactiveCollectionsForms/titledFormSection/titledFormSection",
+                  "order": 100
+                }
+              ]
             },
             {
               "id": "formSetting",
               "title": "Form Setting",
-              "items": []
+              "items": [
+                {
+                  "id": "formSetting",
+                  "title": "Form Setting",
+                  "type": "",
+                  "phpClass": "ilPopertyFormGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap forms-horizontal",
+                    "href": "http://getbootstrap.com/css/#forms-horizontal"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "A setting is used to collect one specific piece of information from the  user."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "A setting is composed of an identifier on the left and an input element on the right. It may contain a by-line (explanatory text) below the input element."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "The effect depends on the control-type of the input element."
+                    }
+                  ],
+                  "background": "",
+                  "context": "Settings are used in forms of the settings-tab, in forms of the administration panel and when üputting content into a sub-item.",
+                  "featureWikiReferences": [],
+                  "rules": [
+                    "A setting MUST contained by a Titled Form Section.",
+                    "A setting MUST use an identifier and an input element.",
+                    "An identifier MUST be composed of one single term or a very short phrase. The identifier is an eye catcher for users skimming the form.",
+                    "An identifier MUST avoid lingo. Intelligibility by occasional users is prioritized over technical accuracy. The accurate technical expression is to be mentioned in the by-line.",
+                    "An identifier MUST make a positive statement. If the purpose of the setting is inherently negative, use Verbs as “Limit..”, “Lock..”.",
+                    "Wording and structure (sequence and control) MUST be consistent with identifiers in other objects. If you feel a wording needs to be changed, then you MUST propose it to the JF.",
+                    "A by-line (explanatory text) MAY be added below the input element on the right side. If by-lines are provided they MUST be informative, not merely repeating the identifier’s or input element’s content. If no informative description can be devised, no description is needed.",
+                    "A by-line MUST clearly state what effect the Setting produces and explain, why this might be important and what it can be used for.",
+                    "A by-line MUST be placed directly underneath the option it describes. Bulk by-lines underneath a stack of option explaining all of the options in one paragraph MUST NOT be used.",
+                    "A by-line SHOULD NOT address the user directly. Addressing users directly is reserved for cases of high risk of severe mis-configuration.",
+                    "A by-line MUST be grammatically complete sentence with a period (.) at the end.",
+                    "By-lines SHOULD be short with no more than 25 words.",
+                    "By-lines SHOULD NOT use any formatting in descriptions (bold, italic or similar).",
+                    "If by-lines refer to other tabs or options or tables by name, that reference should be made in quotation marks:  ‘Info’-tab /  \"Info\"-Reiter, button ‘Show Test Results’ / Button \"Testergebnisse anzeigen\",  ‘Table of Detailed Test Results’  /  \"Tabelle mit detaillierten Testergebnissen\". Use proper quotation marks, not apostrophs. Use single quotation marks for english language and double quotation maks for german language. ",
+                    "By-lines MUST NOT feature parentheses since they greatly diminish readability.",
+                    "By-lines SHOULD NOT start with terms such as: If this option is set …, If this setting is active …, Choose this setting if … or This setting …. Rather state what happens directly: Participants get / make  / can …, Point in time after which… or ILIAS will monitor …."
+                  ],
+                  "relations": {
+                    "isA": [],
+                    "mustUse": [],
+                    "mayUse": [
+                      "formSubsetting"
+                    ]
+                  },
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsForms/formSetting/formSetting",
+                  "path": "/interactiveCollections/interactiveCollectionsForms/formSetting/formSetting",
+                  "order": 100
+                }
+              ]
             },
             {
               "id": "formSubsetting",
               "title": "Form Subsetting",
-              "items": []
+              "items": [
+                {
+                  "id": "formSubsetting",
+                  "title": "Form Subsetting",
+                  "type": "",
+                  "phpClass": "ilFormGUI, ilSubEnabledFormPropertyGUI",
+                  "externalLibrary": {
+                    "name": "Bootstrap forms-horizontal",
+                    "href": "http://getbootstrap.com/css/#forms-horizontal"
+                  },
+                  "statusEntry": "Accepted by JF",
+                  "statusImplementation": "To be implemented",
+                  "description": [
+                    {
+                      "id": "purpose",
+                      "content": "Settings can be nested allowing for settings-dependent further configuration."
+                    },
+                    {
+                      "id": "composition",
+                      "content": "Subsettings are underneath the Setting they depend on. The Subsetting is indented to visually confirm said dependence."
+                    },
+                    {
+                      "id": "effect",
+                      "content": "Subsettings are revealed after enabling the selection control of a setting. If the setting is not enabled, the subsetting remains hidden."
+                    }
+                  ],
+                  "background": "",
+                  "context": "",
+                  "featureWikiReferences": [
+                    "http://www.ilias.de/docu/goto_docu_wiki_wpage_3495_1357.html"
+                  ],
+                  "rules": [
+                    "Subsetting MUST NOT be enabled by any other form element than a checkbox or a radio input group.",
+                    "Subsettings MUST bear an identifier.",
+                    "Subsettings of a setting can be stacked. The most relevant subsetting MUST be the first subsetting in the stack. The least relevant comes last in the stack.",
+                    "There MUST NOT be a nesting of more than one subsetting (see Jour Fixe comment in feature wiki reference). The only exception to this rule is the required quantification of a subsetting by a date or number. These exceptions MUST individually accepted by the Jour Fixe."
+                  ],
+                  "relations": {
+                    "isA": [],
+                    "mustUse": [
+                      "titledFormSection"
+                    ],
+                    "mayUse": []
+                  },
+                  "fullPath": "app/data/interactiveCollections/interactiveCollectionsForms/formSubsetting/formSubsetting",
+                  "path": "/interactiveCollections/interactiveCollectionsForms/formSubsetting/formSubsetting",
+                  "order": 100
+                }
+              ]
             }
           ]
         }

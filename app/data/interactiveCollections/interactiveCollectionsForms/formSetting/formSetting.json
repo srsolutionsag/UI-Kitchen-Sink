@@ -1,0 +1,55 @@
+{
+  "id": "formSetting",
+  "title": "Form Setting",
+  "type": "",
+  "phpClass": "ilPopertyFormGUI",
+  "externalLibrary": {
+    "name": "Bootstrap forms-horizontal",
+    "href": "http://getbootstrap.com/css/#forms-horizontal"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "A setting is used to collect one specific piece of information from the  user."
+    },
+    {
+      "id": "composition",
+      "content": "A setting is composed of an identifier on the left and an input element on the right. It may contain a by-line (explanatory text) below the input element."
+    },
+    {
+      "id": "effect",
+      "content": "The effect depends on the control-type of the input element."
+    }
+  ],
+  "background": "",
+  "context": "Settings are used in forms of the settings-tab, in forms of the administration panel and when üputting content into a sub-item.",
+  "featureWikiReferences":[
+  ],
+  "rules":[
+    "A setting MUST contained by a Titled Form Section.",
+    "A setting MUST use an identifier and an input element.",
+    "An identifier MUST be composed of one single term or a very short phrase. The identifier is an eye catcher for users skimming the form.",
+    "An identifier MUST avoid lingo. Intelligibility by occasional users is prioritized over technical accuracy. The accurate technical expression is to be mentioned in the by-line.",
+    "An identifier MUST make a positive statement. If the purpose of the setting is inherently negative, use Verbs as “Limit..”, “Lock..”.",
+    "Wording and structure (sequence and control) MUST be consistent with identifiers in other objects. If you feel a wording needs to be changed, then you MUST propose it to the JF.",
+    "A by-line (explanatory text) MAY be added below the input element on the right side. If by-lines are provided they MUST be informative, not merely repeating the identifier’s or input element’s content. If no informative description can be devised, no description is needed.",
+    "A by-line MUST clearly state what effect the Setting produces and explain, why this might be important and what it can be used for.",
+    "A by-line MUST be placed directly underneath the option it describes. Bulk by-lines underneath a stack of option explaining all of the options in one paragraph MUST NOT be used.",
+    "A by-line SHOULD NOT address the user directly. Addressing users directly is reserved for cases of high risk of severe mis-configuration.",
+    "A by-line MUST be grammatically complete sentence with a period (.) at the end.",
+    "By-lines SHOULD be short with no more than 25 words.",
+    "By-lines SHOULD NOT use any formatting in descriptions (bold, italic or similar).",
+    "If by-lines refer to other tabs or options or tables by name, that reference should be made in quotation marks:  ‘Info’-tab /  \"Info\"-Reiter, button ‘Show Test Results’ / Button \"Testergebnisse anzeigen\",  ‘Table of Detailed Test Results’  /  \"Tabelle mit detaillierten Testergebnissen\". Use proper quotation marks, not apostrophs. Use single quotation marks for english language and double quotation maks for german language. ",
+    "By-lines MUST NOT feature parentheses since they greatly diminish readability.",
+    "By-lines SHOULD NOT start with terms such as: If this option is set …, If this setting is active …, Choose this setting if … or This setting …. Rather state what happens directly: Participants get / make  / can …, Point in time after which… or ILIAS will monitor …."
+  ],
+  "relations": {
+    "isA": [],
+    "mustUse": [
+    ],
+    "mayUse":["formSubsetting"
+    ]
+  }
+}

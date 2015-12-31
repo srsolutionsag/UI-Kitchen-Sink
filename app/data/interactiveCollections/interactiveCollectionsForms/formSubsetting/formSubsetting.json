@@ -1,0 +1,43 @@
+{
+  "id": "formSubsetting",
+  "title": "Form Subsetting",
+  "type": "",
+  "phpClass": "ilFormGUI, ilSubEnabledFormPropertyGUI",
+  "externalLibrary": {
+    "name": "Bootstrap forms-horizontal",
+    "href": "http://getbootstrap.com/css/#forms-horizontal"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "Settings can be nested allowing for settings-dependent further configuration."
+    },
+    {
+      "id": "composition",
+      "content": "Subsettings are underneath the Setting they depend on. The Subsetting is indented to visually confirm said dependence."
+    },
+    {
+      "id": "effect",
+      "content": "Subsettings are revealed after enabling the selection control of a setting. If the setting is not enabled, the subsetting remains hidden."
+    }
+  ],
+  "background": "",
+  "context": "",
+  "featureWikiReferences":["http://www.ilias.de/docu/goto_docu_wiki_wpage_3495_1357.html"
+  ],
+  "rules":[
+    "Subsetting MUST NOT be enabled by any other form element than a checkbox or a radio input group.",
+    "Subsettings MUST bear an identifier.",
+    "Subsettings of a setting can be stacked. The most relevant subsetting MUST be the first subsetting in the stack. The least relevant comes last in the stack.",
+    "There MUST NOT be a nesting of more than one subsetting (see Jour Fixe comment in feature wiki reference). The only exception to this rule is the required quantification of a subsetting by a date or number. These exceptions MUST individually accepted by the Jour Fixe."
+  ],
+  "relations": {
+    "isA": [],
+    "mustUse": ["titledFormSection"
+    ],
+    "mayUse":[
+    ]
+  }
+}

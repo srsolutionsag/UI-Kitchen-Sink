@@ -1,0 +1,42 @@
+{
+  "id": "baseForm",
+  "title": "Form",
+  "type": "",
+  "phpClass": "ilFormGUI, ilPropertyFormGUI",
+  "externalLibrary": {
+    "name": "Bootstrap forms-horizontal",
+    "href": "http://getbootstrap.com/css/#forms-horizontal"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "Forms are used for creating content of sub-items or for configuring objects or services."
+    },
+    {
+      "id": "composition",
+      "content": "A form is divided into areas which are further divided into sections containing settings with selection or input controls."
+    },
+    {
+      "id": "effect",
+      "content": "Users manipulate input in settings and save the form to apply the settings to the object or service."
+    }
+  ],
+  "background": "",
+  "context": "Forms are usually placed in a tabbed content area.",
+  "featureWikiReferences":[
+  ],
+  "rules":[
+    "Each form MUST contain at least one titled form section.",
+    "Forms MUST NOT be used on the same content screen as tables.",
+    "Forms MUST NOT be used on the same content screen as toolbars."
+  ],
+  "relations": {
+    "isA": [],
+    "mustUse": ["titledFormSection"
+    ],
+    "mayUse":[
+    ]
+  }
+}
