@@ -121,6 +121,25 @@
                             "title": "Status Counter"
                         }
                     ]
+                },
+                {
+                    "title": "TestUI",
+                    "id":"staticTestUI",
+                    "description": "",
+                    "itemGroups": [
+                        {
+                            "id":"testCase1",
+                            "title": "Test Case 1"
+                        },
+                        {
+                            "id":"testCase2",
+                            "title": "Test Case 2"
+                        },
+                        {
+                            "id":"testCase 3",
+                            "title": "Test Case 3"
+                        }
+                    ]
                 }
             ]
         },

@@ -7,7 +7,6 @@ module.directive('entryRelations', function ($http,Entries) {
         templateUrl: 'app/src/content/center/entry/entryRelations.tpl.html',
         replace: true,
         link: function (scope, element) {
-            console.log(scope.entry);
         }
 
     };

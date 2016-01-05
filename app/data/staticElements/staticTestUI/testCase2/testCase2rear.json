@@ -1,0 +1,48 @@
+{
+  "id": "testCase2",
+  "title": "Test Case 2",
+  "type": "",
+  "phpClass": "ilFormGUI, ilPropertyFormGUI, ilFormSectionHeaderGUI",
+  "externalLibrary": {
+    "name": "Bootstrap forms-horizontal",
+    "href": "http://getbootstrap.com/css/#forms-horizontal"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "A titled form section subdivides a form allowing users to browse the screen. Titled Form Sections are stacked. The stacking reflects perceived relevance and  is kept consistent across objects thus learners are “familiar” with forms."
+    },
+    {
+      "id": "composition",
+      "content": "At least one titled form section is used in every form. A title states the purpose shared by all settings of the titled form section. The section visually groups settings."
+    },
+    {
+      "id": "effect",
+      "content": "This element has no effect in terms of clicking."
+    }
+  ],
+    "background": "Tidwell ‘Designing Interfaces’ proposed the pattern of ‘Titled Sections’ and describes it as: “Define separate sections of content by giving each one a visually strong title, separating the sections visually, … “. She further explains that those section should be grouped by topic or task. According to Tidwell is content that is sectioned neatly into chunks easier to grasp since the human visual system is always looking for bigger patterns. In ILIAS such sections in a form are called titled form sections.",
+    "context": "All settings-tabs in ILIAS contain forms. Most of the administration panel is made of forms. Putting content into sub-items oftentimes makes use of forms i.e. putting content into a test question.",
+    "featureWikiReferences":[
+  ],
+  "selector":".dropdown",
+  "rules":[
+    "The title SHOULD contain less than 30 characters.",
+    "The titles MUST be cross-checked with similar forms in other objects or services to ensure consistency throughout ILIAS.",
+    "In doubt consistency in titles SHOULD be prioritized over accuracy.",
+    "Proper Titled Form Sections SHOULD comprise 2 to 5 Settings.",
+    "More than 5 Settings SHOULD be split into two areas unless this would tamper with the “familiar” information architecture of forms.",
+    "There MUST NOT be a Setting without an enclosing Titled Form Section. If necessary a Titled Form Section MAY contain only one single Setting.",
+    "The first and last titled form section of a form MUST contain a “Save” and “Cancel” button for the form. “Save” is left and “Cancel” is right.",
+    "In some rare exceptions the buttons MAY be named differently: if “Save” or “Cancel”  are clearly a misleading since the action is more than storing the data into the database. “Send Mail” would be an example of this."
+  ],
+  "relations": {
+    "isA": [],
+    "mustUse": ["formSetting"
+    ],
+    "mayUse":[
+    ]
+  }
+}

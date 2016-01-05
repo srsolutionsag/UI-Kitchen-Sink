@@ -1,0 +1,50 @@
+{
+  "id": "testCase1-2",
+  "title": "Test Case 1.2",
+  "type": "",
+  "phpClass": "ilFormGUI, ilPropertyFormGUI, ilFormSectionHeaderGUI",
+  "externalLibrary": {
+    "name": "Bootstrap forms-horizontal",
+    "href": "http://getbootstrap.com/css/#forms-horizontal"
+  },
+  "statusEntry": "Accepted by JF",
+  "statusImplementation": "To be implemented",
+  "description": [
+    {
+      "id": "purpose",
+      "content": "A titled form section subdivides a form allowing users to browse the screen. Titled Form Sections are stacked. The stacking reflects perceived relevance and  is kept consistent across objects thus learners are “familiar” with forms."
+    },
+    {
+      "id": "composition",
+      "content": "At least one titled form section is used in every form. A title states the purpose shared by all settings of the titled form section. The section visually groups settings."
+    },
+    {
+      "id": "effect",
+      "content": "This element has no effect in terms of clicking."
+    }
+  ],
+    "background": "Tidwell ‘Designing Interfaces’ proposed the pattern of ‘Titled Sections’ and describes it as: “Define separate sections of content by giving each one a visually strong title, separating the sections visually, … “. She further explains that those section should be grouped by topic or task. According to Tidwell is content that is sectioned neatly into chunks easier to grasp since the human visual system is always looking for bigger patterns. In ILIAS such sections in a form are called titled form sections.",
+    "context": "All settings-tabs in ILIAS contain forms. Most of the administration panel is made of forms. Putting content into sub-items oftentimes makes use of forms i.e. putting content into a test question.",
+    "featureWikiReferences":[
+  ],
+  "selector":".il-testing",
+  "rules":[
+    {
+      "message": "Test 1",
+      "type":"contain",
+      "subtype":"text",
+      "amount":"1",
+      "contentId":"",
+      "content": "Testing rolf",
+      "level": "MUST",
+      "not":""
+    }
+  ],
+  "relations": {
+    "isA": [],
+    "mustUse": ["formSetting"
+    ],
+    "mayUse":[
+    ]
+  }
+}

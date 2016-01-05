@@ -28,7 +28,6 @@ module.directive('entryJsonContent', function ($http,Entries,$timeout) {
 
             var basePath = scope.tabPath+'/'+scope.entry.id;
 
-            console.log(scope.entry.id);
             scope.pngPath = '/'+basePath+".png";
 
 
